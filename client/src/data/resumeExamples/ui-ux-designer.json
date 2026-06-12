@@ -1,0 +1,27 @@
+{
+  "seo": { "title": "UI/UX Designer Resume Examples & Portfolio Guide 2026", "description": "Write a perfect UX Designer resume in 2026. Includes Figma skills, portfolio tips, and a complete product designer resume example that passes ATS.", "slug": "ui-ux-designer", "keywords": "UX designer resume, UI designer resume, figma designer resume, product designer portfolio, UX researcher resume 2026", "ogTitle": "UI/UX Designer Resume Examples 2026", "ogDescription": "Build a design portfolio and resume that lands interviews at Airbnb, Figma, and top product companies." },
+  "hero": { "title": "UI/UX Designer Resume Examples", "description": "Your design portfolio speaks louder than your resume — but your resume still needs to get you past the ATS and onto the hiring manager's desk. Here's exactly how to do it." },
+  "score": { "atsScore": 93, "readability": "Excellent", "keywordMatch": "High" },
+  "keywords": ["Figma", "UX Research", "User Testing", "Design System", "Wireframing", "Prototyping", "Usability Testing", "Interaction Design", "Accessibility (WCAG)", "Design Thinking", "Information Architecture", "A/B Testing"],
+  "mistakes": [
+    "Submitting a resume without a portfolio link — no design portfolio = instant rejection.",
+    "Using a flashy, complex resume layout with columns and icons — this breaks ATS parsing. Keep it simple and text-based.",
+    "Listing Photoshop as a primary tool in 2026 — the industry has moved to Figma. List Figma prominently."
+  ],
+  "tips": [
+    "Your portfolio URL must be at the very top of your resume — this is the most important element.",
+    "Quantify design impact: 'Redesigned checkout flow, reducing cart abandonment by 18%'.",
+    "Include your Figma proficiency level and list the types of projects you've designed (SaaS dashboards, mobile apps, design systems)."
+  ],
+  "exampleResume": {
+    "name": "Ana Rodriguez",
+    "title": "Senior Product Designer",
+    "summary": "Senior Product Designer with 6+ years creating intuitive, data-driven user experiences for SaaS and consumer apps. Led a checkout redesign that reduced abandonment by 24% and drove $3.2M additional annual revenue. Strong in UX research, design systems, and cross-functional collaboration.",
+    "experience": [
+      { "company": "GrowthSaaS Inc.", "role": "Senior Product Designer", "date": "2021 - Present", "bullets": ["Led end-to-end redesign of checkout flow (Figma, Maze user testing), reducing cart abandonment by 24% and contributing $3.2M in additional ARR.", "Built and maintained a 120-component Figma design system adopted by 8 engineering teams, reducing design-to-development time by 35%.", "Conducted 60+ user interviews and 12 usability tests, informing a product roadmap that increased feature adoption by 41%."] },
+      { "company": "Digital Agency XYZ", "role": "UI/UX Designer", "date": "2018 - 2021", "bullets": ["Designed mobile apps and web platforms for 25+ clients in healthcare, FinTech, and e-commerce.", "Created accessible designs (WCAG AA compliant) for a government platform serving 500k users."] }
+    ],
+    "education": [{ "degree": "B.F.A. Interaction Design", "school": "Parsons School of Design", "date": "2014 - 2018" }],
+    "skills": "Figma, Prototyping, User Research, Usability Testing, Design Systems, Interaction Design, Accessibility (WCAG 2.2), Maze, Hotjar, Lottie Animations, Miro | Certifications: Google UX Design Certificate, NN/g UX Certificate"
+  }
+}

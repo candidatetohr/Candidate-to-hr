@@ -1,0 +1,36 @@
+{
+  "seo": {
+    "title": "Top 50 Behavioral Interview Questions 2026 | STAR Method Answers",
+    "description": "Master the top 50 behavioral interview questions for 2026. Includes STAR method answers for leadership, conflict resolution, failure, and teamwork questions.",
+    "slug": "behavioral",
+    "keywords": "behavioral interview questions 2026, STAR method interview, tell me about yourself interview, leadership interview questions, weakness interview question"
+  },
+  "hero": { "title": "Behavioral Interview Questions 2026", "description": "The definitive behavioral interview preparation guide. Master the STAR method with example answers for the 50 most common behavioral questions asked at top tech companies.", "count": 50, "topic": "Behavioral", "difficulty": "All Levels" },
+  "categories": [
+    { "name": "Leadership & Influence", "questions": [
+      { "q": "Tell me about a time you led a team through a difficult situation.", "a": "STAR: Situation: our team was behind on a critical product launch with a hard deadline. Task: as tech lead, I needed to rescue the project without burning out the team. Action: I facilitated an emergency scope review, cut non-essential features by 40%, created daily standups for blockers, and personally took on the highest-risk technical components. Result: shipped on time, post-launch NPS was our highest ever." },
+      { "q": "Describe a time you had to influence without authority.", "a": "Focus on: how you built relationships and trust first, used data and logic rather than position power, found common ground with the other person's goals, and were willing to compromise. Structure as STAR. Interviewers look for empathy, communication skills, and strategic thinking." },
+      { "q": "Tell me about a time you disagreed with a manager.", "a": "Show: you voiced your concern respectfully and with data, you understood their perspective, you committed to the decision once made. Don't: bad-mouth your manager. Do: show professional courage paired with intellectual humility. End with what you learned from the experience." }
+    ]},
+    { "name": "Problem Solving & Failure", "questions": [
+      { "q": "Tell me about your biggest failure and what you learned.", "a": "Be genuine — interviewers can spot fake failures. Choose a real failure with real impact. Structure: what happened, your role, the consequences, what you did to fix it, what you changed afterward. The growth insight at the end is the most important part. Companies want people who learn, not people who are perfect." },
+      { "q": "Describe a time you had to solve a problem with incomplete information.", "a": "Show: you identified what information was critical vs nice-to-have, made reasonable assumptions explicitly, built in checkpoints to validate assumptions, and moved decisively despite ambiguity. This tests your bias for action and structured thinking under uncertainty." },
+      { "q": "Tell me about a time you handled a production incident.", "a": "Cover: detection → triage → communication → resolution → post-mortem. Show you stayed calm, communicated proactively to stakeholders, focused on mitigation first (not root cause), and ran a blameless post-mortem afterward. Quantify impact: 'We restored 99.9% uptime within 47 minutes, affecting 8,000 users.'" }
+    ]},
+    { "name": "Collaboration & Conflict", "questions": [
+      { "q": "Tell me about a time you had a conflict with a coworker.", "a": "DO: show empathy, active listening, seeking to understand before being understood, finding a resolution that served the team. DON'T: bad-mouth the coworker, portray yourself as 100% right, say there was no conflict. The best answers show conflict as a catalyst for a better outcome and stronger relationship." },
+      { "q": "How do you handle working with someone difficult?", "a": "Strong answer: start by understanding their perspective and what's driving their behavior. Communicate directly and privately. Focus on shared goals rather than differences. Seek common ground. Escalate only as a last resort. Always frame in terms of what's best for the team and the project, not personal preferences." }
+    ]},
+    { "name": "Self-Awareness", "questions": [
+      { "q": "What is your greatest weakness?", "a": "Rules: be genuine (not 'I work too hard'), show self-awareness, demonstrate active improvement. Example structure: 'I used to struggle with [specific weakness]. I recognized this when [concrete example]. I've been actively working on it by [specific action], and I've seen improvement in [measurable way]. It's still an area I'm developing.' Avoid weaknesses that are core to the job." },
+      { "q": "Tell me about yourself.", "a": "The 90-second pitch. Structure: Present (what you do now + key accomplishment), Past (relevant background that built to this point), Future (why this role excites you). Keep it professional. Don't recite your resume — synthesize it. End with enthusiasm about the specific opportunity. Practice until it sounds natural, not memorized." }
+    ]}
+  ],
+  "topTips": [
+    "Prepare 8-10 strong STAR stories that can flex to cover different question types.",
+    "Quantify every result you can: '18% reduction', '$2M impact', 'team of 5 engineers'.",
+    "For Amazon: map your stories to Leadership Principles before the interview.",
+    "Never badmouth former employers or colleagues — it raises red flags about your professionalism.",
+    "Practice out loud with a timer — most behavioral answers should be 90-180 seconds, not 5+ minutes."
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "seo": { "title": "Business Analyst Resume Examples & ATS Templates 2026", "description": "Write a perfect Business Analyst resume in 2026. Includes CBAP keywords, process mapping skills, and a complete BA resume example that passes ATS.", "slug": "business-analyst", "keywords": "business analyst resume, BA resume template, CBAP resume, business analysis resume, agile business analyst resume 2026", "ogTitle": "Business Analyst Resume Examples 2026", "ogDescription": "The exact BA resume template that lands consulting and tech industry interviews." },
+  "hero": { "title": "Business Analyst Resume Examples", "description": "Your BA skills translate complex business problems into solutions. Your resume should do the same — translate your experience into clear, quantified impact that ATS and hiring managers love." },
+  "score": { "atsScore": 94, "readability": "Excellent", "keywordMatch": "High" },
+  "keywords": ["Requirements Gathering", "Business Requirements Document (BRD)", "User Stories", "Agile", "Scrum", "JIRA", "Process Mapping", "BPMN", "SQL", "Stakeholder Management", "UAT", "Gap Analysis", "CBAP"],
+  "mistakes": [
+    "Listing responsibilities without business outcomes (e.g., 'Gathered requirements' vs 'Gathered and documented requirements for a $3M ERP implementation, delivered on time and under budget').",
+    "Forgetting to mention domain expertise — industry knowledge (FinTech, Healthcare, Insurance) is a major differentiator.",
+    "Not listing tools — JIRA, Confluence, Visio, SQL are expected. Omitting them hurts ATS scores."
+  ],
+  "tips": [
+    "Quantify project scope: 'led requirements for a $5M digital transformation' signals seniority.",
+    "Mention specific methodologies: Agile/Scrum, Waterfall, SAFe, or a hybrid approach.",
+    "Include your CBAP, ECBA, or CSPO certification prominently — these are ATS keywords for BA roles."
+  ],
+  "exampleResume": {
+    "name": "Sarah Thompson",
+    "title": "Senior Business Analyst",
+    "summary": "CBAP-certified Senior Business Analyst with 7+ years of experience across FinTech and insurance industries. Led requirements gathering for $15M+ digital transformation initiatives. Expert in Agile methodologies, process optimization, and stakeholder management.",
+    "experience": [
+      { "company": "TechFinance Corp", "role": "Senior Business Analyst", "date": "2020 - Present", "bullets": ["Led requirements elicitation for a core banking system replacement ($12M budget), documenting 200+ functional requirements across 6 stakeholder groups.", "Facilitated 40+ JAD sessions and stakeholder workshops, identifying $2.1M in process inefficiencies through As-Is/To-Be analysis.", "Reduced UAT defect rate by 35% by implementing structured test case reviews aligned with business requirements."] },
+      { "company": "InsuranceTech Ltd.", "role": "Business Analyst", "date": "2017 - 2020", "bullets": ["Documented end-to-end claims processing BRD for an insurance portal serving 500k policyholders.", "Implemented Agile ceremonies and backlog management in JIRA, improving sprint velocity by 28%."] }
+    ],
+    "education": [{ "degree": "B.B.A. Information Systems", "school": "University of Michigan", "date": "2013 - 2017" }],
+    "skills": "Requirements Gathering, BRD/FRD Writing, Agile/Scrum, JIRA, Confluence, BPMN (Visio/Lucidchart), SQL, Stakeholder Management, UAT, Gap Analysis | Certifications: CBAP, CSPO"
+  }
+}

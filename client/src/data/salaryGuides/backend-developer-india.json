@@ -1,0 +1,34 @@
+{
+  "seo": {
+    "title": "Backend Developer Salary in India 2026 | Node.js Python Java Pay",
+    "description": "Backend Developer salary in India for 2026. Salary breakdown for Node.js, Python, Java, and Spring Boot developers by experience, city, and company type.",
+    "slug": "backend-developer-india",
+    "keywords": "backend developer salary india, node.js developer salary india, java developer salary india, python backend salary 2026",
+    "ogTitle": "Backend Developer Salary in India (2026)",
+    "ogDescription": "Node.js, Python, Java backend developer salaries in India. Complete 2026 guide."
+  },
+  "hero": { "title": "Backend Developer Salary in India (2026)", "description": "Backend development remains one of the most in-demand and well-compensated skills in India's tech industry. From Node.js and Python to Java and Go, here's exactly what backend developers earn across the country in 2026.", "averageSalary": "₹16.0 Lakhs / year" },
+  "experience": [
+    { "level": "Fresher (0-1 Year)", "salary": "₹6,00,000 - ₹10,00,000", "notes": "Strong API development skills with PostgreSQL and REST/GraphQL command the best fresher packages." },
+    { "level": "Mid-Level (2-4 Years)", "salary": "₹14,00,000 - ₹25,00,000", "notes": "Backend developers with microservices architecture, Docker, and cloud experience (AWS/Azure) are highly sought." },
+    { "level": "Senior (5-8 Years)", "salary": "₹28,00,000 - ₹50,00,000", "notes": "Senior engineers who can design scalable distributed systems and lead technical teams command premium packages." },
+    { "level": "Principal / Architect (9+ Years)", "salary": "₹55,00,000 - ₹1,00,00,000+", "notes": "Backend architects who define system architecture at scale. Often includes ESOPs in funded startups." }
+  ],
+  "byCity": [
+    { "city": "Bangalore", "salary": "₹19.0 Lakhs", "premium": "+19%" },
+    { "city": "Hyderabad", "salary": "₹16.5 Lakhs", "premium": "+3%" },
+    { "city": "Pune", "salary": "₹15.0 Lakhs", "premium": "-6%" },
+    { "city": "Mumbai", "salary": "₹17.0 Lakhs", "premium": "+6%" },
+    { "city": "Delhi NCR", "salary": "₹16.8 Lakhs", "premium": "+5%" },
+    { "city": "Chennai", "salary": "₹14.0 Lakhs", "premium": "-12%" }
+  ],
+  "topCompanies": [
+    { "company": "Microsoft India", "salary": "₹35L - ₹75L", "type": "Big Tech" },
+    { "company": "Meesho / ShareChat", "salary": "₹22L - ₹45L", "type": "Unicorn Startup" },
+    { "company": "Infosys / Wipro", "salary": "₹8L - ₹18L", "type": "IT Services" },
+    { "company": "CRED / Groww", "salary": "₹25L - ₹55L", "type": "FinTech" },
+    { "company": "OYO / Byju's", "salary": "₹18L - ₹35L", "type": "Consumer Tech" },
+    { "company": "PhonePe", "salary": "₹22L - ₹48L", "type": "Payments" }
+  ],
+  "futureOutlook": "Backend developers with Go or Rust expertise will see the highest salary growth by 2028. The shift to microservices and event-driven architectures ensures strong demand. Backend engineers who understand distributed systems and cloud-native patterns will command 25% above market rate."
+}

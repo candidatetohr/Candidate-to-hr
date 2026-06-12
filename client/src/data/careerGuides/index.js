@@ -1,0 +1,59 @@
+export const careerGuideCategories = [
+  {
+    id: "how-to-become-data-scientist",
+    title: "How to Become a Data Scientist in 2026",
+    description: "The ultimate 7-step guide to breaking into Data Science without a Ph.D.",
+    topic: "Data & AI",
+    readTime: "8 min read"
+  },
+  {
+    id: "how-to-become-software-engineer",
+    title: "How to Become a Software Engineer (Self-Taught)",
+    description: "A complete blueprint from zero coding knowledge to your first $100k role.",
+    topic: "Development",
+    readTime: "12 min read"
+  },
+  {
+    id: "best-careers-after-btech-cse",
+    title: "Best Careers After B.Tech CSE",
+    description: "Confused about what to do after graduation? Explore the top 10 career paths.",
+    topic: "Career Advice",
+    readTime: "6 min read"
+  },
+  {
+    id: "skills-to-learn-in-2026",
+    title: "Top 5 High-Income Skills to Learn in 2026",
+    description: "Future-proof your career by mastering these high-demand technical skills.",
+    topic: "Career Advice",
+    readTime: "5 min read"
+  },
+  {
+    id: "how-to-get-a-job-without-experience",
+    title: "How to Get a Tech Job Without Experience (2026 Guide)",
+    description: "The proven 7-step playbook to landing your first tech job with zero industry experience.",
+    topic: "Career Advice",
+    readTime: "10 min read"
+  },
+  {
+    id: "ats-resume-tips",
+    title: "How to Beat the ATS in 2026",
+    description: "75% of resumes are auto-rejected before a human reads them. Here's how to get past it.",
+    topic: "Resume Tips",
+    readTime: "8 min read"
+  },
+  {
+    id: "highest-paying-tech-jobs-2026",
+    title: "The 10 Highest Paying Tech Jobs in 2026",
+    description: "Real salary data for the 10 best-compensated tech roles and how to land them.",
+    topic: "Career Advice",
+    readTime: "7 min read"
+  },
+  {
+    id: "how-to-negotiate-salary",
+    title: "How to Negotiate Your Salary in 2026",
+    description: "Most candidates leave $10k-$50k on the table. Here's the exact negotiation script.",
+    topic: "Career Advice",
+    readTime: "9 min read"
+  }
+];
+

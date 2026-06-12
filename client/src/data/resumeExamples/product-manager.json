@@ -1,0 +1,80 @@
+{
+  "seo": {
+    "title": "Product Manager Resume Examples & ATS Templates 2026",
+    "description": "Learn how to write a perfect Product Manager resume that passes the ATS. Discover the top keywords, common mistakes, and view a complete 100/100 resume example.",
+    "slug": "product-manager",
+    "keywords": "product manager resume, product management resume template, ats resume, product manager skills",
+    "ogTitle": "How to Write a Product Manager Resume in 2026",
+    "ogDescription": "Steal our exact resume template that landed roles at top tech companies."
+  },
+  "hero": {
+    "title": "Product Manager Resume Examples",
+    "description": "Stop getting auto-rejected by the ATS. Here is the exact resume structure, keywords, and action verbs you need to land interviews in 2026."
+  },
+  "score": {
+    "atsScore": 98,
+    "readability": "Excellent",
+    "keywordMatch": "High"
+  },
+  "keywords": [
+    "Product Development",
+    "Agile Methodologies",
+    "Product Roadmap",
+    "Market Analysis",
+    "Competitive Analysis",
+    "Customer Feedback",
+    "Data-Driven Decision Making",
+    "Cross-Functional Team Management",
+    "Prioritization",
+    "Stakeholder Management"
+  ],
+  "mistakes": [
+    "Using generic terms like 'responsible for' instead of action verbs like 'Managed' or 'Developed'.",
+    "Listing features instead of benefits (e.g., 'Launched a new feature' instead of 'Increased user engagement by 25% through a new feature').",
+    "Failing to quantify impact (e.g., 'Improved customer satisfaction' instead of 'Improved customer satisfaction ratings by 15% through targeted product enhancements')."
+  ],
+  "tips": [
+    "Tailor your resume to the specific job description, highlighting relevant skills and experiences.",
+    "Use specific metrics and data to demonstrate the impact of your work.",
+    "Include relevant certifications, such as CSPO or AIPMM, to demonstrate expertise."
+  ],
+  "exampleResume": {
+    "name": "Emily Chen",
+    "title": "Product Manager",
+    "summary": "Results-driven Product Manager with 5+ years of experience developing and launching successful products. Proven track record of driving growth through data-driven decision making and cross-functional team collaboration.",
+    "experience": [
+      {
+        "company": "TechCorp",
+        "role": "Product Manager",
+        "date": "2022 - Present",
+        "bullets": [
+          "Developed and executed a product roadmap that resulted in a 30% increase in sales revenue.",
+          "Collaborated with cross-functional teams to launch a new product feature, resulting in a 25% increase in user engagement.",
+          "Conducted market analysis and competitive research to inform product development and go-to-market strategies."
+        ]
+      },
+      {
+        "company": "Startup Inc.",
+        "role": "Associate Product Manager",
+        "date": "2020 - 2022",
+        "bullets": [
+          "Assisted in the development and launch of a new product, resulting in a 20% increase in customer acquisition.",
+          "Worked closely with the engineering team to prioritize and develop new features, resulting in a 15% increase in customer satisfaction."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "MBA",
+        "school": "University of California",
+        "date": "2018 - 2020"
+      },
+      {
+        "degree": "B.S. in Computer Science",
+        "school": "Stanford University",
+        "date": "2014 - 2018"
+      }
+    ],
+    "skills": "Product Development, Agile Methodologies, Product Roadmap, Market Analysis, Competitive Analysis, Customer Feedback, Data-Driven Decision Making, Cross-Functional Team Management, Prioritization, Stakeholder Management"
+  }
+}

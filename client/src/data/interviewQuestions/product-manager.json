@@ -1,0 +1,36 @@
+{
+  "seo": {
+    "title": "Top 50 Product Manager Interview Questions 2026 | PM Prep Guide",
+    "description": "Master the top 50 Product Manager interview questions for 2026. Covers product design, metrics, estimation, strategy, prioritization, and behavioral questions.",
+    "slug": "product-manager",
+    "keywords": "product manager interview questions 2026, PM interview prep, product design interview, metrics interview questions, product strategy interview"
+  },
+  "hero": { "title": "Product Manager Interview Questions 2026", "description": "Complete PM interview preparation guide. Covers all 8 PM interview question types with frameworks, structured approaches, and example answers for top tech companies.", "count": 50, "topic": "Product", "difficulty": "Intermediate to Advanced" },
+  "categories": [
+    { "name": "Product Design", "questions": [
+      { "q": "Design an alarm clock app for blind users.", "a": "Framework: Clarify → Define user → List pain points → Prioritize features → Discuss trade-offs. Users: completely blind, low vision. Pain points: can't see time, can't read small text. Core features: voice time announcement, haptic patterns for different alarms, voice-set alarms, large tactile interface, screen reader compatibility. Differentiator: braille display integration for smartwatches." },
+      { "q": "How would you improve YouTube's homepage?", "a": "Structure: define success metric (watch time, session length) → understand current problems (irrelevant recommendations, low discoverability of new creators) → propose features (better topic filtering, 'New Creators' section, multi-format feeds, time-of-day personalization) → trade-offs (recommendation diversity vs exploitation, privacy vs personalization)." },
+      { "q": "You're a PM at Netflix. How would you reduce churn?", "a": "First, define churn and measure it. Identify churn segments: recent subscribers, long-term subscribers, specific demographics. Root causes: content gaps, competitor content, price sensitivity, poor recommendations. Proposed solutions: personalized 'new this week for you', cheaper ad-supported plan, better offline downloads, social features, early cancellation survey + targeted win-back offers." }
+    ]},
+    { "name": "Metrics & Analytics", "questions": [
+      { "q": "Your key metric (DAU) dropped 20% overnight. Walk me through your investigation.", "a": "First: check if it's a data issue (logging, instrumentation, timezone bug). Then: segment the drop (platform, geography, user segment, feature). Check for external factors (competitor launch, outage, App Store issue). Check recent releases (did we ship something yesterday?). Quantify impact. Then propose solutions based on root cause." },
+      { "q": "How would you measure the success of the Instagram Stories feature?", "a": "Primary: Stories views per DAU, Stories creation rate, Story completion rate (watched vs abandoned). Engagement: replies to Stories, DMs from Stories. Adoption: % of users who have created at least 1 Story. Business: time spent in app, impact on feed scroll rate. Counter-metrics: does Stories cannibalize feed engagement or add incremental value?" },
+      { "q": "What is a North Star metric and how do you choose one?", "a": "The North Star metric is the single metric that best captures the core value your product delivers to customers. It should: reflect customer value (not vanity), be measurable, lead to long-term business outcomes. Examples: Airbnb = Nights Booked, Spotify = Time Listening, Slack = Messages Sent. Bad: Revenue (lags value), Page Views (doesn't reflect value)." }
+    ]},
+    { "name": "Prioritization & Strategy", "questions": [
+      { "q": "How do you prioritize features when you have more requests than capacity?", "a": "RICE framework: Reach × Impact × Confidence / Effort. Use data to score each. Consider strategic alignment with company OKRs. Talk to customers to validate assumptions. Separate 'urgent' from 'important' (stakeholder pressure vs user value). Communicate the prioritization rationale clearly to stakeholders — transparency prevents politics." },
+      { "q": "How would you build a roadmap for a new feature area?", "a": "Discovery: user interviews (10-15), data analysis of current behavior, competitive landscape. Define: clear problem statement and success metrics. Plan: Now/Next/Later buckets. Now = validated, high priority. Next = directionally clear. Later = exploratory. Review cadence (quarterly). Keep it flexible — roadmaps are hypotheses, not commitments." }
+    ]},
+    { "name": "Estimation", "questions": [
+      { "q": "Estimate the number of Uber rides per day in New York City.", "a": "Population of NYC: 8.3M. Active ride-hailers (40%): 3.3M people. Rides per active user per week: 2 rides avg. Daily users: 3.3M × (2/7) = ~940k ride sessions. Uber's market share in NYC (~40%): 940k × 0.4 = ~375k rides/day. Cross-check: NYC has ~70k taxis + rideshare vehicles, 375k rides / 70k vehicles ≈ 5.3 rides/vehicle/day. Reasonable. Answer: ~375k - 400k rides/day." },
+      { "q": "How many piano tuners are there in Chicago?", "a": "This is a Fermi estimation. Chicago population: 2.7M → ~1M households. Households with pianos (5%): 50k. Pianos tuned per year (once/2yr avg): 25k tunings. Tunings per tuner per day: 4. Working days/year: 250. Tunings per tuner per year: 1,000. Tuners needed: 25,000/1,000 = 25 tuners. Answer: approximately 25-35 piano tuners." }
+    ]}
+  ],
+  "topTips": [
+    "ALWAYS start product design questions by clarifying the goal and target user — never jump to solutions.",
+    "For metrics questions, think in funnels: acquisition → activation → retention → revenue → referral.",
+    "For estimation questions, state your assumptions clearly — accuracy matters less than your reasoning process.",
+    "Behavioral questions: use STAR format (Situation, Task, Action, Result) with quantified outcomes.",
+    "Know your frameworks: RICE, ICE, CIRCLES, North Star, HEART — but don't robotically apply them."
+  ]
+}

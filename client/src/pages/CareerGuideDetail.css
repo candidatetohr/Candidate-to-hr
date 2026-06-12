@@ -1,0 +1,64 @@
+.guide-detail-page {
+  color: var(--text-primary);
+  min-height: 100vh;
+}
+
+.article-content .prose {
+  color: var(--text-secondary);
+  font-size: 1.125rem;
+  line-height: 1.8;
+}
+
+.article-content .prose h1,
+.article-content .prose h2,
+.article-content .prose h3 {
+  color: var(--text-primary);
+  margin-top: 2em;
+  margin-bottom: 1em;
+  font-weight: 700;
+}
+
+.article-content .prose p {
+  margin-bottom: 1.5em;
+}
+
+.article-content .prose ul,
+.article-content .prose ol {
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+  padding-left: 1.5em;
+}
+
+.article-content .prose li {
+  margin-bottom: 0.5em;
+}
+
+.article-content .prose strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.article-content .prose em {
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.article-content .prose code {
+  background: var(--border-default);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  font-size: 0.9em;
+  color: #f472b6;
+}
+
+/* Fallbacks */
+.text-5xl { font-size: 3rem; }
+.leading-tight { line-height: 1.25; }
+.text-xl { font-size: 1.25rem; }
+.text-slate-500 { color: #64748b; }
+.text-3xl { font-size: 1.875rem; }
+.text-fuchsia-400 { color: #e879f9; }
+.my-10 { margin-top: 2.5rem; margin-bottom: 2.5rem; }
+.mt-16 { margin-top: 4rem; }
+.sticky { position: sticky; }
+.top-24 { top: 6rem; }

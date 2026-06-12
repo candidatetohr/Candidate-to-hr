@@ -1,0 +1,67 @@
+{
+  "seo": {
+    "title": "Top 100+ Data Science Interview Questions & Answers (2026) | Candidatetohr",
+    "description": "Master your next data science technical interview with our comprehensive list of data science interview questions, spanning from beginner fundamentals to advanced machine learning and deep learning concepts.",
+    "slug": "data-science",
+    "keywords": "data science interview questions, data scientist interview, data science career, machine learning interview questions",
+    "ogTitle": "Data Science Interview Questions & Answers",
+    "ogDescription": "Practice the top data science questions asked by FAANG and top tech companies, covering data preprocessing, modeling, and visualization."
+  },
+  "hero": {
+    "title": "Data Science Interview Questions",
+    "description": "From data wrangling to advanced neural networks and natural language processing. Use the practice mode to hide answers and test your knowledge."
+  },
+  "questions": {
+    "beginner": [
+      {
+        "id": "ds-b-1",
+        "q": "What is the difference between supervised and unsupervised learning?",
+        "a": "Supervised learning involves training a model on labeled data to make predictions, whereas unsupervised learning involves training a model on unlabeled data to discover patterns or relationships."
+      },
+      {
+        "id": "ds-b-2",
+        "q": "What is the role of a data scientist in a company?",
+        "a": "A data scientist is responsible for collecting, analyzing, and interpreting complex data to gain insights and inform business decisions, often using machine learning, statistical modeling, and data visualization techniques."
+      },
+      {
+        "id": "ds-b-3",
+        "q": "What are the key steps in the data science workflow?",
+        "a": "The key steps in the data science workflow include problem definition, data collection, data cleaning and preprocessing, exploratory data analysis, modeling, evaluation, and deployment."
+      }
+    ],
+    "intermediate": [
+      {
+        "id": "ds-i-1",
+        "q": "How do you handle missing values in a dataset?",
+        "a": "There are several strategies for handling missing values, including listwise deletion, pairwise deletion, mean/median imputation, regression imputation, and multiple imputation, each with its own strengths and weaknesses."
+      },
+      {
+        "id": "ds-i-2",
+        "q": "What is the concept of overfitting in machine learning?",
+        "a": "Overfitting occurs when a model is too complex and fits the training data too closely, resulting in poor performance on new, unseen data. Techniques such as regularization, early stopping, and cross-validation can help prevent overfitting."
+      },
+      {
+        "id": "ds-i-3",
+        "q": "What is the difference between a decision tree and a random forest?",
+        "a": "A decision tree is a single tree-based model, whereas a random forest is an ensemble model that combines the predictions of multiple decision trees, reducing overfitting and improving overall performance."
+      }
+    ],
+    "advanced": [
+      {
+        "id": "ds-a-1",
+        "q": "How do you implement a neural network from scratch?",
+        "a": "Implementing a neural network from scratch involves defining the architecture, initializing weights and biases, implementing forward and backward propagation, and training the model using an optimization algorithm such as stochastic gradient descent."
+      },
+      {
+        "id": "ds-a-2",
+        "q": "What is the concept of transfer learning in deep learning?",
+        "a": "Transfer learning involves using a pre-trained model as a starting point for a new task, fine-tuning the weights and biases to adapt to the new data and task, often resulting in faster training and improved performance."
+      },
+      {
+        "id": "ds-a-3",
+        "q": "How do you evaluate the performance of a machine learning model?",
+        "a": "Evaluating the performance of a machine learning model involves using metrics such as accuracy, precision, recall, F1 score, mean squared error, and R-squared, as well as techniques such as cross-validation and bootstrapping to estimate performance on unseen data."
+      }
+    ]
+  }
+}

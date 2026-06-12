@@ -1,0 +1,76 @@
+/* Reusing base layout classes from RoadmapHub.css via global styles or explicit layout classes */
+
+.layout-sidebar-right {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.interview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.int-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  border-radius: 12px;
+  padding: 24px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.int-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(59, 130, 246, 0.3);
+}
+
+.int-card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.int-topic {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.int-card h3 {
+  margin: 0 0 12px 0;
+  font-size: 1.25rem;
+  color: var(--text-primary);
+}
+
+.int-card p {
+  margin: 0 0 24px 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  flex: 1;
+}
+
+.int-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #3b82f6;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-default);
+}
+
+@media (max-width: 900px) {
+  .layout-sidebar-right {
+    grid-template-columns: 1fr;
+  }
+}

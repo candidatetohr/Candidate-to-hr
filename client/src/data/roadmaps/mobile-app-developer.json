@@ -1,0 +1,92 @@
+{
+  "seo": {
+    "title": "Mobile App Developer Roadmap 2026 - React Native & Flutter | Candidatetohr",
+    "description": "Complete Mobile App Developer roadmap for 2026. Master React Native and Flutter for iOS and Android development. Salary data, portfolio projects, and interview prep.",
+    "slug": "mobile-app-developer",
+    "keywords": "mobile app developer roadmap 2026, react native roadmap, flutter developer career path, iOS Android developer, cross platform mobile",
+    "ogTitle": "Mobile App Developer Roadmap 2026 - React Native & Flutter",
+    "ogDescription": "Build apps for iOS and Android. Follow our $115k Mobile App Developer roadmap."
+  },
+  "hero": {
+    "title": "Mobile App Developer Roadmap 2026",
+    "shortDescription": "Put software in everyone's pocket. Mobile developers build the apps that people use every single day — across billions of iOS and Android devices worldwide.",
+    "averageSalary": "$115,000",
+    "growthRate": "+21%",
+    "learningDuration": "6 Months",
+    "difficultyLevel": "Medium",
+    "hiringDemand": "High"
+  },
+  "overview": {
+    "whatTheyDo": "Mobile App Developers design and build native or cross-platform applications for iOS and Android devices. They work on UI/UX implementation, device-specific features (camera, GPS, notifications), and backend integration.",
+    "industriesHiring": ["Consumer Apps (Social, Gaming, Shopping)", "FinTech", "Healthcare", "Logistics", "EdTech"],
+    "responsibilities": [
+      "Building cross-platform mobile apps with React Native or Flutter.",
+      "Integrating REST APIs, GraphQL, and Firebase backends.",
+      "Implementing device features: camera, biometrics, GPS, notifications.",
+      "Optimizing app performance and reducing bundle size.",
+      "Publishing to the App Store and Google Play Store."
+    ]
+  },
+  "skillsTimeline": {
+    "beginner": ["JavaScript or Dart Fundamentals", "React Native or Flutter Basics", "Mobile UI Components", "State Management Basics", "Git"],
+    "intermediate": ["Navigation (React Navigation / GoRouter)", "State Management (Redux / Riverpod)", "REST API Integration", "Local Storage (AsyncStorage / Hive)", "Push Notifications (Firebase)"],
+    "advanced": ["Native Modules (bridging)", "App Performance Optimization", "Authentication (Biometrics, OAuth)", "CI/CD for Mobile (Fastlane, Bitrise)", "App Store Deployment"]
+  },
+  "learningPath": [
+    { "month": "Month 1: Choose Your Stack — Language Fundamentals", "description": "For React Native: master JavaScript/TypeScript. For Flutter: learn Dart. Both are quick to learn if you have programming experience. Set up your development environment (Xcode + Android Studio)." },
+    { "month": "Month 2: Mobile UI Development", "description": "Build responsive mobile layouts. Learn platform-specific design patterns (Material Design for Android, Human Interface Guidelines for iOS). Create animations with Reanimated or Flutter's animation system." },
+    { "month": "Month 3: Navigation & State Management", "description": "Implement multi-screen navigation. Master state management: Redux Toolkit for React Native or Riverpod for Flutter. Handle complex app state across screens." },
+    { "month": "Month 4: Backend Integration & Device APIs", "description": "Connect to REST APIs with Axios or Dio. Integrate Firebase (Auth, Firestore, Notifications). Access camera, GPS, biometrics, and local storage." },
+    { "month": "Month 5: Performance & Testing", "description": "Optimize app performance: reduce bundle size, implement lazy loading, fix frame drops. Write unit and widget tests. Profile with React DevTools or Flutter DevTools." },
+    { "month": "Month 6: Deployment & CI/CD", "description": "Set up Fastlane for automated builds and app store deployments. Publish to the Apple App Store and Google Play Store. Configure analytics with Mixpanel or Firebase Analytics." }
+  ],
+  "toolsAndTech": ["React Native / Flutter", "TypeScript / Dart", "Firebase", "React Navigation / GoRouter", "Redux / Riverpod", "Fastlane", "Xcode", "Android Studio", "Expo"],
+  "projects": {
+    "beginner": ["Todo App with Local Storage", "Weather App with OpenWeather API", "Currency Converter with Live Rates"],
+    "intermediate": ["Social Media App (Firebase + Image Upload)", "Food Delivery App UI + Ordering Flow", "Fitness Tracker with Local Charts"],
+    "advanced": ["Real-time Chat App with WebSockets + Push Notifications", "E-commerce App with Payment Integration (Stripe)", "Published App on Both App Store & Google Play"]
+  },
+  "certifications": [
+    "Google Associate Android Developer",
+    "Meta React Native Certificate (Coursera)",
+    "Flutter & Dart - Complete App Development Course (Udemy Angela Yu)",
+    "AWS Certified Developer (for backend integration)"
+  ],
+  "salaryInsights": [
+    { "experience": "Junior (0-1 yr)", "salary": "$70,000 - $90,000" },
+    { "experience": "Mid-Level (2-4 yrs)", "salary": "$105,000 - $130,000" },
+    { "experience": "Senior (5-8 yrs)", "salary": "$140,000 - $165,000" },
+    { "experience": "Lead / Principal (8+ yrs)", "salary": "$180,000+" }
+  ],
+  "interviewPrep": {
+    "topQuestions": [
+      "Explain the difference between React Native and native iOS/Android development.",
+      "How do you optimize a mobile app with a very long list of items?",
+      "What is the React Native Bridge and how does it work?",
+      "How do you handle offline mode in a mobile application?",
+      "How do you manage app state across navigation in React Native?"
+    ],
+    "commonMistakes": [
+      "Building apps that look great on one platform but broken on the other.",
+      "Not testing on real devices — simulators miss many real-world issues.",
+      "Ignoring app performance (janky animations kill user retention).",
+      "No published apps in the portfolio — a deployed app shows real skill."
+    ],
+    "resumeTips": {
+      "sections": ["Published Apps (App Store / Play Store Links)", "Projects", "Skills", "Experience", "Education"],
+      "keywords": ["React Native", "Flutter", "iOS", "Android", "Firebase", "Redux", "App Store", "CI/CD", "Cross-platform"],
+      "atsOptimization": "If you have a published app, put its download count prominently. Link to App Store / Play Store listings. This immediately validates your skill level."
+    }
+  },
+  "jobMarket": {
+    "futureDemand": "The global app economy exceeds $400B annually. Mobile developers remain in high demand, especially for cross-platform skills (React Native/Flutter) that enable smaller teams to ship on both platforms.",
+    "remoteOpportunities": "Very High. Mobile development is fully remote-compatible and there's a robust global freelance/contract market for iOS/Android skills."
+  },
+  "faq": [
+    { "q": "React Native or Flutter — which should I learn?", "a": "React Native if you already know JavaScript/TypeScript (larger job market). Flutter if you're starting fresh or want better performance (Google-backed, growing fast)." },
+    { "q": "Do I need a Mac to develop iOS apps?", "a": "Yes, a Mac (or cloud Mac like MacStadium) is required for Xcode and iOS simulator. Android development can be done on any OS." },
+    { "q": "Is native iOS/Android development dead?", "a": "No. Large companies (Airbnb, Uber) still maintain native teams. But cross-platform (React Native, Flutter) is the dominant choice for most companies in 2026." },
+    { "q": "How do I get my first mobile development job without experience?", "a": "Build 2-3 complete apps and publish at least one to the App Store or Play Store. A published app is the single best signal of mobile development skill." },
+    { "q": "How long to build my first mobile app?", "a": "With React Native or Flutter experience, a basic working app can be built in 1-2 weeks. A polished, published app takes 1-2 months of focused work." }
+  ]
+}

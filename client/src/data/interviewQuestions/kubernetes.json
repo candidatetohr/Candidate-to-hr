@@ -1,0 +1,33 @@
+{
+  "seo": {
+    "title": "Top 40 Kubernetes Interview Questions 2026 | K8s Engineer Prep",
+    "description": "Master the top 40 Kubernetes interview questions for 2026. Covers pods, deployments, services, networking, RBAC, Helm, and Kubernetes architecture.",
+    "slug": "kubernetes",
+    "keywords": "kubernetes interview questions 2026, K8s interview, kubectl interview, CKA interview prep, kubernetes networking interview"
+  },
+  "hero": { "title": "Kubernetes Interview Questions 2026", "description": "Essential Kubernetes interview preparation for DevOps engineers and platform engineers. Covers K8s architecture, workloads, networking, security, and Helm.", "count": 40, "topic": "DevOps", "difficulty": "Advanced" },
+  "categories": [
+    { "name": "Architecture & Components", "questions": [
+      { "q": "Explain the Kubernetes architecture (control plane vs worker nodes).", "a": "Control Plane: API Server (central hub for all communication), etcd (distributed key-value store, cluster state), Scheduler (assigns Pods to nodes), Controller Manager (maintains desired state via controllers). Worker Nodes: kubelet (runs and monitors Pods), kube-proxy (network rules), Container Runtime (Docker/containerd). All communication goes through the API Server." },
+      { "q": "What is etcd and what happens if it goes down?", "a": "etcd is Kubernetes' backing store — a distributed key-value database that stores all cluster state. If etcd goes down, the control plane stops functioning: no new scheduling, updates, or deployments. Existing Pods continue running (kubelet maintains them locally). Always run etcd with 3 or 5 replicas for HA and take regular snapshots for disaster recovery." },
+      { "q": "What is the Kubernetes Scheduler and how does it work?", "a": "The Scheduler watches for unscheduled Pods and assigns them to appropriate nodes. Filtering phase: eliminates nodes that don't meet requirements (resources, node selectors, taints). Scoring phase: ranks remaining nodes by priority (resource availability, spread). Assigns Pod to highest-scoring node. Node Affinity, Taints/Tolerations, and Pod Affinity influence scheduling decisions." }
+    ]},
+    { "name": "Workloads & Storage", "questions": [
+      { "q": "What is a Kubernetes PersistentVolume (PV) and PersistentVolumeClaim (PVC)?", "a": "PV: a piece of storage provisioned in the cluster (static or dynamic). PVC: a user's request for storage (specifying size, access modes). Kubernetes binds a PVC to a matching PV. StorageClasses enable dynamic provisioning — when a PVC is created, a PV is automatically created in the cloud (e.g., AWS EBS volume). StatefulSets use PVCs to persist data across Pod restarts." },
+      { "q": "What is a DaemonSet and when do you use it?", "a": "A DaemonSet ensures one Pod runs on every (or selected) node. Automatically adds Pods to new nodes. Used for: log collectors (Fluentd), monitoring agents (Prometheus Node Exporter), network plugins (CNI), security agents. Cannot scale horizontally like Deployments — exactly one per node." },
+      { "q": "What are Kubernetes resource requests and limits?", "a": "Requests: minimum resources a container needs (used for scheduling decisions). Limits: maximum resources a container can use. If a container exceeds CPU limit, it's throttled. If it exceeds memory limit, it's OOMKilled (Out of Memory). Best practice: always set both. QoS classes: Guaranteed (requests==limits), Burstable (limits > requests), BestEffort (no requests/limits)." }
+    ]},
+    { "name": "Networking & Security", "questions": [
+      { "q": "How does Kubernetes networking work?", "a": "Every Pod gets a unique IP. All Pods can communicate with all other Pods without NAT (flat network). Services provide stable virtual IPs. kube-proxy implements service load balancing using iptables or IPVS rules. CNI plugins (Calico, Flannel, Cilium) implement the actual network overlay. Ingress controllers handle external HTTP traffic routing." },
+      { "q": "What is RBAC in Kubernetes?", "a": "Role-Based Access Control restricts who can perform what actions on which resources. Components: Role (defines permissions within a namespace), ClusterRole (cluster-wide permissions), RoleBinding (grants Role to a user/serviceAccount in a namespace), ClusterRoleBinding. Always follow least privilege. Use ServiceAccounts for Pod identities, not user accounts." },
+      { "q": "What is a NetworkPolicy in Kubernetes?", "a": "NetworkPolicies are firewall rules for Pods, controlling which Pods can communicate with which. By default, all Pods can communicate freely. A NetworkPolicy with podSelector {} and no ingress/egress rules blocks all traffic to selected Pods. Requires a CNI plugin that supports NetworkPolicy (Calico, Cilium — NOT Flannel)." }
+    ]}
+  ],
+  "topTips": [
+    "The CKA exam is practical — practice kubectl commands until they're muscle memory.",
+    "Understand Pod lifecycle states: Pending, Running, Succeeded, Failed, Unknown, CrashLoopBackOff.",
+    "Know how to debug: kubectl describe pod, kubectl logs, kubectl exec -it, kubectl get events.",
+    "Understand Service types: ClusterIP (internal), NodePort (expose on node), LoadBalancer (cloud LB), ExternalName (DNS alias).",
+    "Practice HPA (Horizontal Pod Autoscaler) configuration — scaling based on CPU/custom metrics is commonly asked."
+  ]
+}

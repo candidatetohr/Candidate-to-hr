@@ -1,0 +1,258 @@
+.job-detail-page { padding-top: 32px; padding-bottom: 60px; }
+
+.job-detail-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+
+.job-detail-title {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 1;
+}
+
+.job-detail-icon {
+  width: 52px;
+  height: 52px;
+  background: rgba(79, 142, 247, 0.1);
+  border: 1px solid rgba(79, 142, 247, 0.2);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-blue);
+  flex-shrink: 0;
+}
+
+.job-detail-title h1 { font-size: 1.5rem; margin-bottom: 6px; }
+
+.job-detail-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.job-detail-meta span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  color: var(--text-muted);
+  text-transform: capitalize;
+}
+
+.job-detail-actions { display: flex; gap: 8px; align-items: center; flex-shrink: 0; flex-wrap: wrap; }
+
+/* Layout */
+.job-detail-layout {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 24px;
+  align-items: start;
+}
+
+/* Candidates Panel */
+.candidates-panel {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--border-subtle);
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.panel-controls { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+
+/* Rank Banner */
+.rank-banner {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px 24px;
+  background: rgba(168, 85, 247, 0.06);
+  border-bottom: 1px solid rgba(168, 85, 247, 0.15);
+}
+
+.rank-banner strong { display: block; font-size: 13px; color: var(--text-primary); margin-bottom: 4px; }
+.rank-banner p { font-size: 12px; color: var(--text-muted); margin: 0; line-height: 1.5; }
+
+/* Pipeline Tabs */
+.pipeline-tabs {
+  display: flex;
+  gap: 4px;
+  padding: 12px 24px;
+  border-bottom: 1px solid var(--border-subtle);
+  overflow-x: auto;
+}
+
+.pipeline-tab {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  background: transparent;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-full);
+  color: var(--text-muted);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: var(--transition);
+  font-family: 'Inter', sans-serif;
+}
+
+.pipeline-tab span {
+  background: var(--border-default);
+  border-radius: var(--radius-full);
+  padding: 1px 6px;
+  font-size: 11px;
+}
+
+.pipeline-tab:hover { color: var(--text-primary); border-color: var(--border-default); }
+
+.pipeline-tab.active {
+  background: rgba(79, 142, 247, 0.1);
+  border-color: rgba(79, 142, 247, 0.3);
+  color: var(--accent-blue);
+}
+
+/* Candidate List */
+.candidate-list { padding: 8px 0; }
+
+.candidate-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  cursor: pointer;
+  transition: var(--transition);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.candidate-card:last-child { border-bottom: none; }
+.candidate-card:hover { background: var(--bg-primary); }
+
+.candidate-card-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  min-width: 0;
+}
+
+.cand-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--gradient-primary);
+  color: var(--text-primary);
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.cand-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cand-email {
+  font-size: 12px;
+  color: var(--text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cand-file { font-size: 11px; color: var(--text-disabled); margin-top: 2px; }
+
+.candidate-card-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.cand-score {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+/* Job Info Panel */
+.job-info-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.job-info-stats {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  text-align: center;
+}
+
+.info-stat-value { display: block; font-size: 24px; font-weight: 800; color: var(--text-primary); }
+.info-stat-label { display: block; font-size: 11px; color: var(--text-muted); margin-top: 2px; }
+
+.info-section {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 18px;
+}
+
+.info-section h3 { font-size: 13px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 12px; }
+
+.job-desc-preview p { font-size: 13px; line-height: 1.6; color: var(--text-muted); margin-bottom: 4px; }
+
+.req-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.req-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+.salary-range { font-size: 15px; font-weight: 700; color: var(--accent-green); }
+
+@media (max-width: 900px) {
+  .job-detail-layout { grid-template-columns: 1fr; }
+  .job-info-panel { order: -1; }
+}

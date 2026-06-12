@@ -1,0 +1,25 @@
+{
+  "seo": {
+    "title": "Top 100+ SQL Interview Questions & Answers (2026) | Candidatetohr",
+    "description": "Master your next technical interview with our comprehensive list of SQL interview questions.",
+    "slug": "sql",
+    "keywords": "sql interview questions, database interview",
+    "ogTitle": "SQL Interview Questions & Answers",
+    "ogDescription": "Practice the top SQL questions asked by top tech companies."
+  },
+  "hero": {
+    "title": "SQL Interview Questions",
+    "description": "Comprehensive list of SQL interview questions. (Full list is being automatically generated...)"
+  },
+  "questions": {
+    "beginner": [
+      {
+        "id": "sql-b-1",
+        "q": "What is the difference between INNER JOIN and LEFT JOIN?",
+        "a": "INNER JOIN returns only matching rows, while LEFT JOIN returns all rows from the left table and matching rows from the right."
+      }
+    ],
+    "intermediate": [],
+    "advanced": []
+  }
+}

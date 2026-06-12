@@ -1,0 +1,93 @@
+{
+  "seo": {
+    "title": "Cloud Engineer Roadmap 2026 - AWS, Azure & GCP Career Guide | Candidatetohr",
+    "description": "Complete Cloud Engineer roadmap for 2026. Master AWS, Azure, Terraform, and cloud architecture. Salary insights, top certifications, and interview questions.",
+    "slug": "cloud-engineer",
+    "keywords": "cloud engineer roadmap 2026, AWS engineer career path, how to become cloud engineer, azure cloud roadmap, cloud architect path",
+    "ogTitle": "Cloud Engineer Roadmap 2026 - AWS, Azure & GCP",
+    "ogDescription": "Design and manage cloud infrastructure at scale. Follow our $125k Cloud Engineer roadmap."
+  },
+  "hero": {
+    "title": "Cloud Engineer Roadmap 2026",
+    "shortDescription": "Design, build, and manage the cloud infrastructure that powers the modern internet. Cloud Engineers are among the highest-certified and best-compensated professionals in tech.",
+    "averageSalary": "$125,000",
+    "growthRate": "+26%",
+    "learningDuration": "6 Months",
+    "difficultyLevel": "Medium",
+    "hiringDemand": "High"
+  },
+  "overview": {
+    "whatTheyDo": "Cloud Engineers design and manage cloud-based infrastructure. They architect scalable, secure, and cost-efficient environments on platforms like AWS, Azure, or GCP, enabling organizations to run their applications in the cloud.",
+    "industriesHiring": ["Cloud Providers & Consulting", "Enterprise IT", "FinTech & Banking", "Media & Streaming", "Healthcare"],
+    "responsibilities": [
+      "Designing cloud architectures for high availability and scalability.",
+      "Provisioning infrastructure using Terraform or CloudFormation.",
+      "Managing cloud costs, security policies, and compliance (SOC 2, HIPAA).",
+      "Migrating on-premise workloads to the cloud.",
+      "Monitoring cloud environments with CloudWatch, Datadog, or Azure Monitor."
+    ]
+  },
+  "skillsTimeline": {
+    "beginner": ["Linux Fundamentals", "Networking (VPC, Subnets, DNS)", "AWS Free Tier (EC2, S3, IAM)", "Git & CLI Tools", "Basic Python/Bash Scripting"],
+    "intermediate": ["AWS Solutions Architect Concepts", "Terraform IaC", "Databases (RDS, DynamoDB)", "Load Balancers & Auto Scaling", "CloudWatch & Monitoring"],
+    "advanced": ["Multi-cloud Architecture (AWS + Azure)", "Landing Zones & AWS Organizations", "Cost Optimization", "Cloud Security (WAF, GuardDuty, Security Hub)", "Kubernetes on Cloud (EKS/AKS/GKE)"]
+  },
+  "learningPath": [
+    { "month": "Month 1: Cloud Fundamentals & Linux", "description": "Understand cloud computing concepts (IaaS, PaaS, SaaS). Create an AWS Free Tier account. Learn core services: EC2, S3, IAM, VPC, and RDS basics." },
+    { "month": "Month 2: Networking & Security", "description": "Deep dive into VPCs, subnets, route tables, security groups, NACLs, and VPNs. Understand IAM policies, roles, and the principle of least privilege." },
+    { "month": "Month 3: Core Services Deep Dive", "description": "Master AWS compute (Lambda, ECS, EKS), storage (S3, EFS, EBS), databases (RDS, DynamoDB, ElastiCache), and messaging (SQS, SNS)." },
+    { "month": "Month 4: Infrastructure as Code", "description": "Provision entire AWS environments with Terraform. Learn modules, state management, workspaces, and how to manage IaC in a team using Atlantis or Terragrunt." },
+    { "month": "Month 5: Cloud Architecture Patterns", "description": "Study the AWS Well-Architected Framework. Design for high availability (multi-AZ), disaster recovery, and cost optimization. Practice architecture case studies." },
+    { "month": "Month 6: Kubernetes & Advanced Services", "description": "Deploy containerized workloads on Amazon EKS. Learn AWS CloudFront for CDN, WAF for security, and CloudFormation for native IaC. Prepare for AWS SAA certification." }
+  ],
+  "toolsAndTech": ["AWS (EC2, S3, Lambda, EKS, RDS)", "Terraform", "Docker", "Kubernetes", "Python/Bash", "CloudWatch", "Datadog", "Ansible", "Git"],
+  "projects": {
+    "beginner": ["Host a Static Website on S3 + CloudFront", "Set Up VPC with Public/Private Subnets", "Deploy a 3-tier Web App on EC2 + RDS"],
+    "intermediate": ["Serverless REST API with Lambda + API Gateway + DynamoDB", "Multi-environment Terraform Configuration (dev/staging/prod)", "Auto-scaling Web App with ALB + EC2 + RDS"],
+    "advanced": ["Multi-region Disaster Recovery Architecture", "Cloud-native Kubernetes Platform on EKS with GitOps", "AWS Landing Zone with Organizations, SCPs, and ControlTower"]
+  },
+  "certifications": [
+    "AWS Certified Solutions Architect - Associate (SAA-C03)",
+    "AWS Certified Solutions Architect - Professional",
+    "HashiCorp Certified: Terraform Associate",
+    "Microsoft Certified: Azure Solutions Architect Expert",
+    "Google Cloud Professional Cloud Architect"
+  ],
+  "salaryInsights": [
+    { "experience": "Junior (0-1 yr)", "salary": "$80,000 - $100,000" },
+    { "experience": "Mid-Level (2-4 yrs)", "salary": "$115,000 - $140,000" },
+    { "experience": "Senior (5-8 yrs)", "salary": "$150,000 - $180,000" },
+    { "experience": "Cloud Architect (8+ yrs)", "salary": "$200,000+" }
+  ],
+  "interviewPrep": {
+    "topQuestions": [
+      "What is the difference between a Security Group and a NACL in AWS?",
+      "Explain the AWS shared responsibility model.",
+      "How would you design a highly available and fault-tolerant architecture for a web application?",
+      "What is the difference between RDS Multi-AZ and Read Replicas?",
+      "How do you manage cloud costs for a growing engineering organization?"
+    ],
+    "commonMistakes": [
+      "Not understanding networking fundamentals before jumping to cloud.",
+      "Using root account credentials instead of IAM roles.",
+      "Not enabling multi-AZ for production databases.",
+      "Skipping infrastructure as code for manual console configurations."
+    ],
+    "resumeTips": {
+      "sections": ["Certifications", "Experience", "Technical Skills", "Projects", "Education"],
+      "keywords": ["AWS", "Terraform", "Cloud Architecture", "Kubernetes", "IaC", "VPC", "Lambda", "High Availability"],
+      "atsOptimization": "Lead with certifications (AWS SAA is a strong signal). Mention cost savings you've achieved: 'reduced cloud spend by 35% through right-sizing'."
+    }
+  },
+  "jobMarket": {
+    "futureDemand": "Cloud adoption is accelerating globally. Companies migrating from on-premise to cloud need experienced engineers, making this one of the most stable and growing career paths.",
+    "remoteOpportunities": "Very High. Cloud engineering is inherently location-independent. Many roles offer $150-300/hr for senior cloud architects as contractors."
+  },
+  "faq": [
+    { "q": "Which cloud certification should I get first?", "a": "AWS Certified Solutions Architect - Associate (SAA-C03) is the most recognized and valued entry-level cloud certification globally." },
+    { "q": "AWS vs Azure vs GCP — which should I focus on?", "a": "AWS for general tech/startup roles, Azure for enterprise/Microsoft environments, GCP for ML/data-heavy workloads." },
+    { "q": "Do I need a coding background to become a cloud engineer?", "a": "Basic scripting (Python/Bash) is mandatory. Deep software engineering skills are not required, but they help significantly." },
+    { "q": "What is serverless and when should you use it?", "a": "Serverless (AWS Lambda) runs code without managing servers. Use it for event-driven, stateless functions. Avoid for long-running tasks or very high traffic that makes it expensive." },
+    { "q": "Is cloud engineering the same as DevOps?", "a": "They overlap significantly. Cloud engineers focus on infrastructure architecture. DevOps focuses on deployment pipelines and developer experience. Many roles combine both." }
+  ]
+}

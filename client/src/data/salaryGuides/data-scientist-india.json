@@ -1,0 +1,35 @@
+{
+  "seo": {
+    "title": "Data Scientist Salary in India 2026 | Freshers to Seniors",
+    "description": "Discover the exact Data Scientist salary in India for 2026. Breakdowns by experience, city (Bangalore, Pune, Hyderabad), and top paying companies like Google and Amazon.",
+    "slug": "data-scientist-india",
+    "keywords": "data scientist salary india, machine learning salary, AI salary bangalore, fresher data scientist salary",
+    "ogTitle": "Data Scientist Salary in India (2026)",
+    "ogDescription": "See how much Data Scientists actually earn in India, from freshers to 10+ years experience."
+  },
+  "hero": {
+    "title": "Data Scientist Salary in India",
+    "description": "Data Science remains one of the highest-paying domains in India. Here is the comprehensive 2026 salary guide across experience levels, cities, and top employers.",
+    "averageSalary": "₹14.5 Lakhs / year"
+  },
+  "experience": [
+    { "level": "Fresher (0-1 Years)", "salary": "₹6,00,000 - ₹10,00,000", "notes": "Highly dependent on college tier (IIT/NIT vs Tier 3) and internship experience." },
+    { "level": "Mid-Level (2-4 Years)", "salary": "₹12,00,000 - ₹20,00,000", "notes": "Requires strong command over SQL, Python, and basic ML deployment." },
+    { "level": "Senior (5-8 Years)", "salary": "₹25,00,000 - ₹40,00,000", "notes": "Expected to lead data strategies and mentor junior data scientists." },
+    { "level": "Lead / Principal (9+ Years)", "salary": "₹45,00,000 - ₹80,00,000+", "notes": "Often includes heavy ESOPs (stock options) in product-based companies." }
+  ],
+  "byCity": [
+    { "city": "Bangalore", "salary": "₹16.5 Lakhs", "premium": "+15%" },
+    { "city": "Hyderabad", "salary": "₹15.0 Lakhs", "premium": "+5%" },
+    { "city": "Pune", "salary": "₹13.5 Lakhs", "premium": "-5%" },
+    { "city": "Gurgaon / NCR", "salary": "₹14.8 Lakhs", "premium": "+2%" },
+    { "city": "Chennai", "salary": "₹12.5 Lakhs", "premium": "-10%" }
+  ],
+  "topCompanies": [
+    { "company": "Google India", "salary": "₹35L - ₹60L", "type": "FAANG" },
+    { "company": "Amazon India", "salary": "₹30L - ₹55L", "type": "FAANG" },
+    { "company": "Flipkart / Myntra", "salary": "₹25L - ₹45L", "type": "E-commerce" },
+    { "company": "TCS / Infosys", "salary": "₹6L - ₹12L", "type": "Service Based" }
+  ],
+  "futureOutlook": "With the rise of Generative AI, the demand for traditional Data Scientists who can also engineer LLM pipelines is skyrocketing. Salaries for hybrid AI/Data Science roles in India are expected to grow by another 25% by 2028."
+}

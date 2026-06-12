@@ -1,0 +1,25 @@
+{
+  "seo": {
+    "title": "Top System Design Interview Questions (2026) | Candidatetohr",
+    "description": "Master your next technical interview with our comprehensive list of System Design interview questions.",
+    "slug": "system-design",
+    "keywords": "system design interview questions",
+    "ogTitle": "System Design Interview Questions",
+    "ogDescription": "Practice the top System Design questions asked by FAANG."
+  },
+  "hero": {
+    "title": "System Design Interview Questions",
+    "description": "Comprehensive list of System Design questions. (Full list is being automatically generated...)"
+  },
+  "questions": {
+    "beginner": [
+      {
+        "id": "sd-b-1",
+        "q": "What is a load balancer?",
+        "a": "A load balancer acts as the 'traffic cop' sitting in front of your servers and routing client requests across all servers capable of fulfilling those requests."
+      }
+    ],
+    "intermediate": [],
+    "advanced": []
+  }
+}

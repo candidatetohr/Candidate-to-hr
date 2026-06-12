@@ -1,0 +1,94 @@
+{
+  "seo": {
+    "title": "Game Developer Roadmap 2026 - Unity, Unreal Engine Career Guide | Candidatetohr",
+    "description": "Complete Game Developer roadmap for 2026. Master Unity (C#) or Unreal Engine (C++), game physics, AI, and publishing. Salary data and portfolio tips included.",
+    "slug": "game-developer",
+    "keywords": "game developer roadmap 2026, unity developer career path, unreal engine roadmap, how to become game developer, game development career",
+    "ogTitle": "Game Developer Roadmap 2026 - Unity & Unreal Engine",
+    "ogDescription": "Build games played by millions. Follow our $100k Game Developer roadmap covering Unity, Unreal, and game design."
+  },
+  "hero": {
+    "title": "Game Developer Roadmap 2026",
+    "shortDescription": "Create the interactive worlds that billions of people escape to. Game developers blend programming, math, art direction, and design to build experiences unlike any other medium.",
+    "averageSalary": "$100,000",
+    "growthRate": "+15%",
+    "learningDuration": "8 Months",
+    "difficultyLevel": "Hard",
+    "hiringDemand": "Medium"
+  },
+  "overview": {
+    "whatTheyDo": "Game Developers design and code video games across mobile, PC, and console platforms. They implement game mechanics, physics, AI behaviors, rendering pipelines, and multiplayer systems using engines like Unity or Unreal Engine.",
+    "industriesHiring": ["AAA Game Studios (EA, Ubisoft, Activision)", "Mobile Game Companies", "Indie Development", "AR/VR Companies", "Serious Gaming & EdTech"],
+    "responsibilities": [
+      "Implementing game mechanics, player controllers, and game loops.",
+      "Building AI behaviors for NPCs using state machines and behavior trees.",
+      "Optimizing game performance for target hardware (FPS, draw calls, memory).",
+      "Integrating multiplayer networking with relay servers or peer-to-peer.",
+      "Publishing games to Steam, App Store, or console platforms."
+    ]
+  },
+  "skillsTimeline": {
+    "beginner": ["C# (for Unity) or C++ (for Unreal)", "Unity or Unreal Engine Basics", "Game Loop Fundamentals", "2D/3D Vector Math", "Git for Game Projects (Git LFS)"],
+    "intermediate": ["Physics Systems & Collisions", "Game AI (State Machines, Pathfinding A*)", "Audio Integration (FMOD/Wwise)", "Animation Systems", "UI/UX for Games"],
+    "advanced": ["Shader Programming (HLSL/GLSL)", "Multiplayer Networking (Netcode, Mirror, Photon)", "Performance Optimization (Profiler, LOD, Batching)", "Procedural Generation", "Platform Publishing (Steam, App Store, PS5)"]
+  },
+  "learningPath": [
+    { "month": "Month 1: Programming Fundamentals", "description": "Learn C# for Unity (or C++ for Unreal). Focus on OOP, variables, loops, functions, and data structures relevant to game dev. Set up Unity or Unreal." },
+    { "month": "Month 2: Engine Fundamentals", "description": "Learn the chosen engine deeply: scene hierarchy, components, physics, input systems, and the camera. Build a simple Pong or Flappy Bird clone." },
+    { "month": "Month 3: 2D Game Development", "description": "Build a complete 2D game: sprite animation, tile maps, collision detection, score system, and game state management (menu, play, game over screens)." },
+    { "month": "Month 4: 3D Game Development", "description": "Transition to 3D: 3D physics, character controllers, camera systems, 3D animation with Mecanim/Animation Blueprint, and lighting systems." },
+    { "month": "Month 5: Game AI & Polish", "description": "Implement NPC AI with State Machines and NavMesh pathfinding (A*). Add particle effects, post-processing effects, screen shake, and sound design basics." },
+    { "month": "Month 6: Advanced Features", "description": "Write custom shaders with HLSL. Add basic multiplayer with Photon or Mirror. Implement save systems, achievements, and analytics." },
+    { "month": "Month 7: Complete Game Project", "description": "Build and polish a complete, publishable game. This is your portfolio centerpiece. Get playtesting feedback and iterate on game feel." },
+    { "month": "Month 8: Publishing & Portfolio", "description": "Publish your game to Steam (Greenlight/Direct) or App Store. Document your development process with a devlog. Apply to game studios with your portfolio." }
+  ],
+  "toolsAndTech": ["Unity 6 (C#)", "Unreal Engine 5 (C++)", "Blender (3D modeling)", "Photoshop / Aseprite", "FMOD", "Git + Git LFS", "Photon (Multiplayer)", "Steam SDK"],
+  "projects": {
+    "beginner": ["Flappy Bird Clone (2D Physics)", "Simple Platformer (Mario-style, 10 levels)", "3D FPS Controller with Shooting"],
+    "intermediate": ["2D RPG with Inventory, Dialogue & Quests", "Tower Defense Game with Pathfinding AI", "3D Third-Person Adventure Game"],
+    "advanced": ["Multiplayer Battle Royale Prototype (Photon)", "Procedurally Generated Dungeon Crawler", "Published Mobile Game on App Store or Google Play"]
+  },
+  "certifications": [
+    "Unity Certified User: Programmer",
+    "Unity Certified Professional: Programmer",
+    "Unreal Online Learning - Unreal Engine 5 Fundamentals",
+    "C++ Programming Certificate (for Unreal developers)"
+  ],
+  "salaryInsights": [
+    { "experience": "Junior (0-1 yr)", "salary": "$55,000 - $75,000" },
+    { "experience": "Mid-Level (2-4 yrs)", "salary": "$90,000 - $115,000" },
+    { "experience": "Senior (5-8 yrs)", "salary": "$125,000 - $150,000" },
+    { "experience": "Lead / Technical Director (10+ yrs)", "salary": "$170,000+" }
+  ],
+  "interviewPrep": {
+    "topQuestions": [
+      "Explain the difference between Update() and FixedUpdate() in Unity.",
+      "How would you implement an object pooling system for a bullet-heavy shooter?",
+      "What is the difference between a rigidbody and a character controller?",
+      "How do you optimize a game that's running below 60 FPS?",
+      "Explain how you would design the architecture for a save system in an RPG."
+    ],
+    "commonMistakes": [
+      "Only making games that are tutorials/clones without original creative design.",
+      "Underestimating scope — most student games never get finished.",
+      "Not profiling performance until the game is already slow.",
+      "Neglecting game feel (juice): screen shake, particle effects, responsive controls."
+    ],
+    "resumeTips": {
+      "sections": ["Shipped Games (Store Links)", "Projects (with GitHub + Gameplay Video)", "Skills & Tools", "Experience", "Education"],
+      "keywords": ["Unity", "C#", "Unreal Engine", "Game Design", "Physics", "AI", "Shader", "Multiplayer", "Published Games"],
+      "atsOptimization": "Always include gameplay video links (YouTube). Published games with download numbers are the strongest portfolio signal. Include your itch.io or Steam profile."
+    }
+  },
+  "jobMarket": {
+    "futureDemand": "The global games market is $250B+ and growing. Mobile gaming, VR/AR, and metaverse applications ensure continued demand. However, it's a competitive field requiring strong portfolios.",
+    "remoteOpportunities": "Medium. AAA studios often prefer on-site (many in specific cities). Indie and mobile game companies are more remote-friendly."
+  },
+  "faq": [
+    { "q": "Unity or Unreal Engine — which should I learn?", "a": "Unity for mobile games, 2D games, and indie development (C# is easier). Unreal for AAA graphics and shooters (C++ is harder but more powerful). Start with Unity if you're a beginner." },
+    { "q": "Do I need art skills to be a game developer?", "a": "Not necessarily — you can use asset stores (Unity Asset Store, Fab.com for Unreal). But basic 3D modeling in Blender is a valuable addition." },
+    { "q": "Can I make money from indie games?", "a": "Yes, but it's very hard. Most games don't recoup development costs. Focus on the craft first. Platform: itch.io is good for experimental games, Steam for commercial releases." },
+    { "q": "Is game development a good career?", "a": "It's a competitive but creatively rewarding field. Entry-level salaries are lower than other software fields, but senior technical roles (engine programmers, graphics engineers) pay very well." },
+    { "q": "How important is math for game development?", "a": "Essential. Linear algebra (vectors, matrices, quaternions), trigonometry, and basic physics are used daily. The good news is game engines abstract most of it — you just need the concepts." }
+  ]
+}

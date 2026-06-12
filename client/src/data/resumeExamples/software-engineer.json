@@ -1,0 +1,75 @@
+{
+  "seo": {
+    "title": "Software Engineer Resume Examples & ATS Templates 2026",
+    "description": "Learn how to write a perfect Software Engineer resume that passes the ATS. Discover the top keywords, common mistakes, and view a complete 100/100 resume example.",
+    "slug": "software-engineer",
+    "keywords": "software engineer resume, software developer resume, software engineering resume template, ats resume",
+    "ogTitle": "How to Write a Software Engineer Resume in 2026",
+    "ogDescription": "Steal our exact resume template that landed roles at Google, Amazon, and Microsoft."
+  },
+  "hero": {
+    "title": "Software Engineer Resume Examples",
+    "description": "Stop getting auto-rejected by the ATS. Here is the exact resume structure, keywords, and action verbs you need to land interviews in 2026."
+  },
+  "score": {
+    "atsScore": 98,
+    "readability": "Excellent",
+    "keywordMatch": "High"
+  },
+  "keywords": [
+    "Cloud Computing",
+    "Artificial Intelligence",
+    "Java",
+    "Python",
+    "C++",
+    "JavaScript",
+    "Agile Development",
+    "Scrum Master",
+    "Containerization",
+    "Microservices Architecture"
+  ],
+  "mistakes": [
+    "Using outdated technologies or frameworks (e.g., Flash, AngularJS).",
+    "Listing generic skills without context (e.g., just writing 'Team player' instead of 'Collaborated with cross-functional teams to deliver a high-traffic e-commerce platform').",
+    "Failing to highlight achievements (e.g., 'Wrote clean, modular code' instead of 'Improved code quality by 30% through rigorous testing and refactoring, resulting in a 25% reduction in bugs')."
+  ],
+  "tips": [
+    "Always include a link to your GitHub profile to showcase your coding skills.",
+    "Use action verbs like 'Designed', 'Developed', 'Deployed', and 'Optimized' to describe your experience.",
+    "Quantify your achievements by using numbers and statistics (e.g., 'Increased application performance by 40% through caching and optimization')."
+  ],
+  "exampleResume": {
+    "name": "Emily Chen",
+    "title": "Software Engineer",
+    "summary": "Highly motivated Software Engineer with 5+ years of experience in developing scalable, efficient, and reliable software systems. Proven track record of delivering high-quality products using Agile methodologies and cloud-based technologies.",
+    "experience": [
+      {
+        "company": "TechCorp Inc.",
+        "role": "Senior Software Engineer",
+        "date": "2020 - Present",
+        "bullets": [
+          "Led the development of a cloud-based e-commerce platform using Java, Spring Boot, and AWS, resulting in a 50% increase in sales revenue.",
+          "Designed and implemented a microservices architecture using Docker, Kubernetes, and Apache Kafka, improving system scalability and reliability by 30%.",
+          "Collaborated with cross-functional teams to deliver a high-traffic mobile application using React Native, Node.js, and MongoDB, with a 4.5-star rating on the App Store."
+        ]
+      },
+      {
+        "company": "StartUp Studio",
+        "role": "Software Engineer",
+        "date": "2018 - 2020",
+        "bullets": [
+          "Developed a real-time analytics platform using Python, Apache Spark, and Apache Cassandra, processing 100,000+ events per second.",
+          "Optimized database queries using SQL and indexing, improving query performance by 25%."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "B.S. in Computer Science",
+        "school": "Stanford University",
+        "date": "2014 - 2018"
+      }
+    ],
+    "skills": "Java, Python, C++, JavaScript, Cloud Computing (AWS, Azure, Google Cloud), Agile Development, Scrum Master, Containerization (Docker), Microservices Architecture, Machine Learning (TensorFlow, PyTorch)"
+  }
+}

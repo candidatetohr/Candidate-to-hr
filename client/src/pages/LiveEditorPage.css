@@ -1,0 +1,375 @@
+/* Reset & Base Setup */
+.editor-page {
+  position: relative;
+  min-height: 100vh;
+  background: #0f172a;
+  color: var(--text-primary);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.editor-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.ed-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.15;
+}
+
+.ed-orb-1 { width: 500px; height: 500px; background: #3b82f6; top: -100px; left: -100px; }
+.ed-orb-2 { width: 400px; height: 400px; background: #8b5cf6; bottom: -50px; right: -100px; }
+
+/* Navigation */
+.editor-nav {
+  position: relative;
+  z-index: 10;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  background: var(--bg-card);
+  /* removed blur */
+  border-bottom: 1px solid var(--border-default);
+}
+
+.ed-back {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.ed-back:hover { color: var(--text-primary); }
+
+.ed-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.ed-logo-icon {
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-primary);
+}
+
+.ed-nav-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.ed-btn-sm { padding: 6px 12px; font-size: 0.85rem; border-radius: 6px; }
+.ed-btn-primary {
+  background: #3b82f6;
+  color: var(--text-primary);
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.ed-btn-primary:hover { background: #2563eb; }
+
+.ed-btn-ghost {
+  background: transparent;
+  color: var(--text-muted);
+  border: 1px solid var(--border-default);
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.ed-btn-ghost:hover { background: var(--border-default); color: var(--text-primary); }
+
+/* ---------------- LAYOUT ---------------- */
+.generator-layout {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  position: relative;
+  z-index: 1;
+  height: calc(100vh - 60px);
+}
+
+/* ---------------- LEFT PANEL (BRAIN DUMP) ---------------- */
+.brain-dump-panel {
+  background: var(--bg-card);
+  border-right: 1px solid var(--border-default);
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  gap: 20px;
+}
+
+.bd-header h2 {
+  font-size: 1.4rem;
+  margin: 0 0 8px 0;
+}
+
+.bd-header p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.bd-textarea {
+  flex: 1;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--border-default);
+  border-radius: 12px;
+  padding: 16px;
+  color: var(--text-primary);
+  font-size: 1rem;
+  line-height: 1.6;
+  resize: none;
+  font-family: inherit;
+  transition: border-color 0.2s;
+}
+
+.bd-textarea:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+.bd-error {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px;
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  border-radius: 8px;
+  color: #ef4444;
+  font-size: 0.85rem;
+}
+
+.bd-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.bd-generate-btn {
+  width: 100%;
+  padding: 14px;
+  justify-content: center;
+  font-size: 1.05rem;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+}
+
+.bd-generate-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.spin { animation: spin 1s linear infinite; }
+@keyframes spin { 100% { transform: rotate(360deg); } }
+
+/* ---------------- RIGHT PANEL (PREVIEW) ---------------- */
+.preview-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  overflow-y: auto;
+  background: #0b1121; /* Slightly darker to make A4 pop */
+}
+
+/* ---------------- A4 OVERLEAF PREVIEW ---------------- */
+.a4-preview {
+  width: 100%;
+  max-width: 800px;
+  background: white;
+  color: black;
+  font-family: 'Times New Roman', Times, serif; /* Classic resume font */
+  padding: 50px 60px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  min-height: 1050px; /* A4 aspect ratio approximation */
+}
+
+.empty-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: var(--bg-primary);
+  border: 2px dashed var(--border-default);
+  box-shadow: none;
+}
+
+.empty-preview p,
+.empty-preview svg {
+  color: #94a3b8 !important;
+}
+
+/* Resume Styling internals */
+.a4-preview h1, 
+.a4-preview h2, 
+.a4-preview p, 
+.a4-preview span, 
+.a4-preview li, 
+.a4-preview strong, 
+.a4-preview div {
+  color: #000000 !important;
+  opacity: 1 !important;
+}
+
+.a4-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.a4-name {
+  font-size: 24pt;
+  margin: 0 0 8px 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.a4-contact {
+  font-size: 10pt;
+}
+
+.a4-section {
+  margin-bottom: 16px;
+}
+
+.a4-section-title {
+  font-size: 12pt;
+  text-transform: uppercase;
+  border-bottom: 1px solid black;
+  margin: 0 0 8px 0;
+  padding-bottom: 4px;
+  font-weight: bold;
+}
+
+.a4-summary-text {
+  font-size: 11pt;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.a4-item {
+  margin-bottom: 12px;
+}
+
+.a4-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.a4-item-subheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 4px;
+  font-size: 11pt;
+  font-style: italic;
+}
+
+.a4-job-title {
+  font-size: 11pt;
+  font-weight: bold;
+}
+
+.a4-date {
+  font-size: 11pt;
+}
+
+.a4-company {
+  font-size: 11pt;
+  font-weight: bold;
+}
+
+.a4-tech {
+  font-style: italic;
+  font-size: 10.5pt;
+  font-weight: normal;
+}
+
+.a4-bullets {
+  margin: 0;
+  padding-left: 20px;
+  font-size: 11pt;
+}
+
+.a4-bullets li {
+  margin-bottom: 4px;
+  line-height: 1.4;
+}
+
+.a4-skills {
+  font-size: 11pt;
+  line-height: 1.5;
+}
+
+.text-muted { color: #64748b; }
+.mb-4 { margin-bottom: 16px; }
+
+/* ---------------- RESPONSIVE ---------------- */
+@media (max-width: 1024px) {
+  .generator-layout {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  .preview-panel {
+    padding: 20px;
+  }
+  .a4-preview {
+    padding: 30px;
+    min-height: auto;
+  }
+}
+
+/* Print Styles */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  .a4-preview, .a4-preview * {
+    visibility: visible;
+  }
+  .a4-preview {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    box-shadow: none;
+    padding: 0;
+  }
+}

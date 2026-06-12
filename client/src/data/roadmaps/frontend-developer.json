@@ -1,0 +1,91 @@
+{
+  "seo": {
+    "title": "Frontend Developer Roadmap 2026 - React, CSS & UI Career Guide | Candidatetohr",
+    "description": "Complete Frontend Developer roadmap for 2026. Master React, TypeScript, CSS, and web performance. Get salary data, portfolio projects, and interview tips.",
+    "slug": "frontend-developer",
+    "keywords": "frontend developer roadmap 2026, react developer roadmap, how to become frontend developer, TypeScript roadmap, UI developer path",
+    "ogTitle": "Frontend Developer Roadmap 2026 - React & TypeScript",
+    "ogDescription": "Master React, TypeScript, and modern CSS to land a $105k+ frontend developer role."
+  },
+  "hero": {
+    "title": "Frontend Developer Roadmap 2026",
+    "shortDescription": "Craft beautiful, performant user interfaces. Frontend developers bridge design and engineering to create the experiences that billions of users interact with every day.",
+    "averageSalary": "$105,000",
+    "growthRate": "+18%",
+    "learningDuration": "5 Months",
+    "difficultyLevel": "Medium",
+    "hiringDemand": "High"
+  },
+  "overview": {
+    "whatTheyDo": "Frontend Developers build the client-side of web applications — everything a user sees and interacts with. They transform design mockups into pixel-perfect, responsive, and performant web experiences.",
+    "industriesHiring": ["SaaS Companies", "E-commerce", "Media & Publishing", "Agencies", "FinTech"],
+    "responsibilities": [
+      "Converting Figma/Sketch designs into responsive React components.",
+      "Optimizing web performance (Core Web Vitals, lazy loading, code splitting).",
+      "Implementing state management with Redux, Zustand, or React Query.",
+      "Writing unit and integration tests with Jest and React Testing Library.",
+      "Collaborating with UX designers and backend engineers on API contracts."
+    ]
+  },
+  "skillsTimeline": {
+    "beginner": ["HTML5 & Semantic Markup", "CSS3 (Flexbox & Grid)", "JavaScript Fundamentals", "Responsive Design", "Git Basics"],
+    "intermediate": ["React.js & Hooks", "TypeScript", "CSS Frameworks (Tailwind)", "REST API Integration", "React Router"],
+    "advanced": ["Next.js", "State Management (Redux/Zustand)", "Web Performance (Lighthouse)", "Testing (Jest, Cypress)", "Accessibility (WCAG 2.2)", "Micro-frontends"]
+  },
+  "learningPath": [
+    { "month": "Month 1: HTML, CSS & JS Core", "description": "Build static websites with semantic HTML. Master CSS Flexbox, Grid, animations, and transitions. Learn JavaScript ES6+ fundamentals." },
+    { "month": "Month 2: React Fundamentals", "description": "Learn React components, props, state, and the component lifecycle with hooks. Build interactive UIs and fetch data from public APIs." },
+    { "month": "Month 3: TypeScript & Styling", "description": "Add TypeScript to your React projects. Master CSS-in-JS or Tailwind CSS. Learn responsive design patterns and CSS variables." },
+    { "month": "Month 4: Advanced React & State", "description": "Master React Context, Redux Toolkit, and React Query. Learn React Router v6 for multi-page apps. Implement authentication flows." },
+    { "month": "Month 5: Performance, Testing & Next.js", "description": "Optimize Core Web Vitals (LCP, FID, CLS). Write tests with Jest. Build a production app with Next.js (SSR, SSG, ISR)." }
+  ],
+  "toolsAndTech": ["React.js", "TypeScript", "Next.js", "Tailwind CSS", "Redux Toolkit", "React Query", "Jest", "Figma", "Webpack/Vite", "Git"],
+  "projects": {
+    "beginner": ["Responsive Portfolio Website", "Interactive Quiz App", "Weather Dashboard with a public API"],
+    "intermediate": ["Full-featured Todo App with React + TypeScript", "GitHub Profile Finder (React + GitHub API)", "E-commerce Product Page with Cart"],
+    "advanced": ["Blog Platform with Next.js (SSG + MDX)", "Real-time Dashboard with WebSockets", "Design System / Component Library with Storybook"]
+  },
+  "certifications": [
+    "Meta Front-End Developer Professional Certificate (Coursera)",
+    "W3C Front-End Web Developer Certificate",
+    "Google UX Design Certificate (for UI awareness)"
+  ],
+  "salaryInsights": [
+    { "experience": "Junior (0-1 yr)", "salary": "$65,000 - $85,000" },
+    { "experience": "Mid-Level (2-4 yrs)", "salary": "$95,000 - $120,000" },
+    { "experience": "Senior (5-8 yrs)", "salary": "$130,000 - $155,000" },
+    { "experience": "Lead/Principal (8+ yrs)", "salary": "$170,000+" }
+  ],
+  "interviewPrep": {
+    "topQuestions": [
+      "What is the Virtual DOM and how does React use it?",
+      "Explain the difference between useEffect and useLayoutEffect.",
+      "How do you optimize a React app with 1000+ list items?",
+      "What are CSS specificity rules?",
+      "What is the difference between localStorage, sessionStorage, and cookies?"
+    ],
+    "commonMistakes": [
+      "Not understanding JavaScript deeply before jumping to React.",
+      "Building only desktop designs without mobile-first thinking.",
+      "Not writing any tests (at least unit tests are expected at mid-level).",
+      "Ignoring accessibility (a11y) — this is increasingly asked in interviews."
+    ],
+    "resumeTips": {
+      "sections": ["Projects", "Skills", "Experience", "Education"],
+      "keywords": ["React", "TypeScript", "Next.js", "Tailwind", "Redux", "REST APIs", "Responsive Design", "Web Performance"],
+      "atsOptimization": "Link to live deployed projects (Vercel/Netlify). Include Lighthouse scores if your projects perform well (90+ is impressive)."
+    }
+  },
+  "jobMarket": {
+    "futureDemand": "Frontend development continues to grow as every business needs a web presence. React expertise specifically commands a premium in 2026.",
+    "remoteOpportunities": "Very High. Frontend roles are among the most remote-friendly in tech, with many US and EU companies hiring worldwide."
+  },
+  "faq": [
+    { "q": "Is React still the best framework to learn?", "a": "Yes. React has the largest job market in 2026. Vue and Angular are alternatives, but React skills transfer the most." },
+    { "q": "Should I learn TypeScript or JavaScript first?", "a": "Learn JavaScript fundamentals first (2-3 months). Then TypeScript — most production codebases use TypeScript now." },
+    { "q": "Do I need to know design to be a frontend developer?", "a": "Basic design sense helps. You should understand spacing, typography, and color theory. Full UX research is not required." },
+    { "q": "Is CSS hard to master?", "a": "CSS is simple to write but nuanced to master. Flexbox and Grid cover 90% of layouts. Master those two before anything else." },
+    { "q": "Do I need to know backend to get a frontend job?", "a": "No. But understanding how APIs work (HTTP, JSON, RESTful conventions) is mandatory." },
+    { "q": "What's the difference between Next.js and React?", "a": "Next.js is a production framework BUILT on React. It adds server-side rendering, file-based routing, and optimized builds." }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "seo": { "title": "Full Stack Developer Resume Examples & ATS Templates 2026", "description": "Write a perfect Full Stack Developer resume in 2026. Includes MERN/PERN stack keywords, common mistakes, and a complete resume example that passes ATS.", "slug": "full-stack-developer", "keywords": "full stack developer resume, MERN stack resume, react node.js resume, full stack engineer resume template, web developer resume 2026", "ogTitle": "Full Stack Developer Resume Examples 2026", "ogDescription": "The exact full stack resume template that lands MERN/Next.js developer interviews." },
+  "hero": { "title": "Full Stack Developer Resume Examples", "description": "Full stack developers are the Swiss Army knife of engineering. Your resume needs to show depth AND breadth — this guide shows you exactly how to present your skills for maximum impact." },
+  "score": { "atsScore": 96, "readability": "Excellent", "keywordMatch": "High" },
+  "keywords": ["React.js", "Node.js", "TypeScript", "Next.js", "PostgreSQL", "MongoDB", "REST API", "GraphQL", "Docker", "AWS", "Redis", "Express.js", "JWT Authentication", "CI/CD"],
+  "mistakes": [
+    "Listing both frontend and backend skills equally but not demonstrating you can own a full feature end-to-end.",
+    "No deployed apps in portfolio — full stack developers MUST have live, accessible projects.",
+    "Listing 'full stack developer' as a title without specifying the stack — be specific (e.g., 'Full Stack Developer (React/Node.js)')."
+  ],
+  "tips": [
+    "For each project, clearly state: frontend stack, backend stack, database, deployment — ATS crawls for this.",
+    "Highlight ownership: 'Sole developer responsible for all layers' signals you can work independently.",
+    "Link to your most polished deployed project prominently — it's your most powerful interview opener."
+  ],
+  "exampleResume": {
+    "name": "David Kim",
+    "title": "Full Stack Developer (React / Node.js)",
+    "summary": "Full Stack Developer with 4+ years of experience building production-grade web applications end-to-end. Sole engineer behind TechLaunch's SaaS platform serving 15k users. Expert in React, TypeScript, Node.js, PostgreSQL, and AWS deployment.",
+    "experience": [
+      { "company": "TechLaunch (YC W23 Startup)", "role": "Full Stack Developer", "date": "2022 - Present", "bullets": ["Sole engineer who architected and built the entire SaaS platform (React/TypeScript + Node.js/Express + PostgreSQL) from zero to 15k active users.", "Implemented Stripe billing integration generating $180k ARR. Built role-based auth system, webhooks, and automated email workflows with Resend.", "Reduced API response time by 65% through PostgreSQL query optimization, strategic indexing, and Redis caching layer."] },
+      { "company": "WebDev Agency", "role": "Junior Full Stack Developer", "date": "2020 - 2022", "bullets": ["Built 12 client web applications using React, Node.js, and MongoDB, delivering all projects on time and within budget.", "Implemented Stripe payment integrations and Google OAuth for 5 client apps."] }
+    ],
+    "education": [{ "degree": "B.S. Information Technology", "school": "Georgia Tech", "date": "2016 - 2020" }],
+    "skills": "React.js, TypeScript, Next.js, Node.js, Express.js, PostgreSQL, MongoDB, Redis, Docker, AWS (EC2, RDS, S3), GitHub Actions CI/CD, REST API, GraphQL, Stripe, WebSockets"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "seo": {
+    "title": "Software Engineer Salary in India 2026 | Freshers to Seniors",
+    "description": "Discover the exact Software Engineer salary in India for 2026. Breakdowns by experience, city (Bangalore, Pune, Hyderabad), and top paying companies like Google and Amazon.",
+    "slug": "software-engineer-india",
+    "keywords": "software engineer salary india, software developer salary, IT salary bangalore, fresher software engineer salary",
+    "ogTitle": "Software Engineer Salary in India (2026)",
+    "ogDescription": "See how much Software Engineers actually earn in India, from freshers to 10+ years experience."
+  },
+  "hero": {
+    "title": "Software Engineer Salary in India",
+    "description": "Software Engineering remains one of the most in-demand and highest-paying domains in India. Here is the comprehensive 2026 salary guide across experience levels, cities, and top employers.",
+    "averageSalary": "₹18.5 Lakhs / year"
+  },
+  "experience": [
+    {
+      "level": "Fresher (0-1 Years)",
+      "salary": "₹8,00,000 - ₹12,00,000",
+      "notes": "Highly dependent on college tier (IIT/NIT vs Tier 3) and internship experience. Proficiency in programming languages like Java, Python, or C++ is a must."
+    },
+    {
+      "level": "Mid-Level (2-4 Years)",
+      "salary": "₹15,00,000 - ₹25,00,000",
+      "notes": "Requires strong command over data structures, algorithms, and software design patterns. Experience with cloud platforms like AWS or Azure is a plus."
+    },
+    {
+      "level": "Senior (5-8 Years)",
+      "salary": "₹30,00,000 - ₹50,00,000",
+      "notes": "Expected to lead technical teams, architect software solutions, and mentor junior engineers. Expertise in DevOps, cybersecurity, or artificial intelligence is highly valued."
+    },
+    {
+      "level": "Lead / Principal (9+ Years)",
+      "salary": "₹60,00,000 - ₹1,00,00,000+",
+      "notes": "Often includes heavy ESOPs (stock options) in product-based companies. Technical vision, leadership, and strategic planning are key responsibilities at this level."
+    }
+  ],
+  "byCity": [
+    {
+      "city": "Bangalore",
+      "salary": "₹20.5 Lakhs",
+      "premium": "+10%"
+    },
+    {
+      "city": "Hyderabad",
+      "salary": "₹18.0 Lakhs",
+      "premium": "+2%"
+    },
+    {
+      "city": "Pune",
+      "salary": "₹16.5 Lakhs",
+      "premium": "-5%"
+    },
+    {
+      "city": "Gurgaon / NCR",
+      "salary": "₹19.8 Lakhs",
+      "premium": "+7%"
+    },
+    {
+      "city": "Chennai",
+      "salary": "₹15.5 Lakhs",
+      "premium": "-10%"
+    }
+  ],
+  "topCompanies": [
+    {
+      "company": "Google India",
+      "salary": "₹50L - ₹1Cr",
+      "type": "FAANG"
+    },
+    {
+      "company": "Amazon India",
+      "salary": "₹40L - ₹90L",
+      "type": "FAANG"
+    },
+    {
+      "company": "Flipkart / Myntra",
+      "salary": "₹30L - ₹60L",
+      "type": "E-commerce"
+    },
+    {
+      "company": "TCS / Infosys",
+      "salary": "₹10L - ₹20L",
+      "type": "Service Based"
+    }
+  ],
+  "futureOutlook": "With the rapid adoption of cloud computing, artificial intelligence, and cybersecurity, the demand for skilled software engineers in India is expected to surge. Salaries for software engineers with expertise in these areas are likely to grow by another 20% by 2028, making it an exciting time for professionals in this field."
+}

@@ -1,0 +1,34 @@
+{
+  "seo": {
+    "title": "Top 50 DevOps Interview Questions 2026 | CI/CD & Kubernetes Prep",
+    "description": "Master the top 50 DevOps interview questions for 2026. Covers Docker, Kubernetes, CI/CD pipelines, Terraform, monitoring, and DevSecOps with detailed answers.",
+    "slug": "devops",
+    "keywords": "devops interview questions 2026, kubernetes interview questions, docker interview, CI/CD interview, terraform interview questions"
+  },
+  "hero": { "title": "DevOps Interview Questions 2026", "description": "Comprehensive DevOps interview preparation covering containers, orchestration, infrastructure as code, CI/CD pipelines, and monitoring — for platform engineers and SREs.", "count": 50, "topic": "DevOps", "difficulty": "Intermediate to Advanced" },
+  "categories": [
+    { "name": "Docker & Containers", "questions": [
+      { "q": "What is the difference between a container and a virtual machine?", "a": "VMs virtualize hardware and run a full OS guest on top of a hypervisor. Containers virtualize the OS and share the host kernel — they're much lighter, faster to start (<1s vs minutes), and more portable. Docker containers include the app + dependencies but not the OS kernel. VMs provide stronger isolation." },
+      { "q": "Explain the Docker build process.", "a": "Docker reads a Dockerfile sequentially. Each instruction (FROM, RUN, COPY, etc.) creates a new layer. Layers are cached — unchanged layers are reused on rebuild. ORDER MATTERS: put frequently changing instructions (COPY source code) AFTER rarely changing ones (npm install) to maximize cache hits." },
+      { "q": "What is a multi-stage Docker build?", "a": "Multi-stage builds use multiple FROM statements. You build in one stage (with all build tools) and copy only the artifacts to a minimal final image. Result: production images are much smaller (e.g., Node.js: 1.2GB build stage → 150MB production). Example: build in node:20, copy dist to node:20-alpine." }
+    ]},
+    { "name": "Kubernetes", "questions": [
+      { "q": "What is the difference between a Pod, Deployment, and StatefulSet?", "a": "Pod: smallest unit, runs one or more containers. Deployment: manages stateless Pods, handles rolling updates and rollbacks. StatefulSet: manages stateful apps (databases), provides stable network identities and ordered deployment/scaling. Use Deployment for web servers; StatefulSet for Postgres, MongoDB, Kafka." },
+      { "q": "How does Kubernetes handle rolling updates?", "a": "Kubernetes updates Pods gradually using the RollingUpdate strategy. maxSurge: max new Pods above desired count during update. maxUnavailable: max Pods that can be unavailable. New ReplicaSet is scaled up while old one is scaled down. kubectl rollout undo deployment/name rolls back instantly." },
+      { "q": "What is a Kubernetes Ingress?", "a": "An Ingress is an API object that manages external HTTP/S access to services. An Ingress Controller (e.g., NGINX, Traefik) reads Ingress rules and configures a load balancer. Supports path-based and host-based routing, TLS termination, and rate limiting — replacing the need for multiple LoadBalancer services." },
+      { "q": "What is the difference between ConfigMap and Secret in Kubernetes?", "a": "ConfigMap: stores non-sensitive configuration as key-value pairs (environment variables, config files). Secret: stores sensitive data (passwords, tokens, certificates) — base64 encoded (NOT encrypted by default). For true security, use External Secrets Operator to fetch secrets from AWS Secrets Manager or HashiCorp Vault." }
+    ]},
+    { "name": "CI/CD & IaC", "questions": [
+      { "q": "What is GitOps?", "a": "GitOps is a deployment methodology where Git is the single source of truth for both application code and infrastructure configuration. Desired cluster state is stored in Git. Tools like ArgoCD or Flux automatically synchronize the live cluster state to match the Git repository. Benefits: auditability, rollbacks via git revert, declarative operations." },
+      { "q": "What is Terraform state and why is it important?", "a": "Terraform state is a file (terraform.tfstate) that maps your Terraform configuration to real-world infrastructure. Terraform uses it to track what it has created and determine what changes to make. In teams, store state remotely (S3 + DynamoDB locking) to prevent concurrent modifications. Never edit state files manually." },
+      { "q": "What is the difference between terraform plan and terraform apply?", "a": "terraform plan: dry-run that shows what changes WILL be made without executing them (additions, modifications, deletions). terraform apply: executes the planned changes. Best practice: always run plan, save the output (terraform plan -out=plan.tfplan), then apply the saved plan for consistency." }
+    ]}
+  ],
+  "topTips": [
+    "Know Kubernetes networking deeply: how a request travels from client → Ingress → Service → Pod.",
+    "Practice writing Dockerfiles that maximize layer caching.",
+    "Be able to explain what happens when a Kubernetes Pod crashes — the controller loop, restarts, CrashLoopBackOff.",
+    "Understand Terraform modules, remote state, and workspace concepts for senior interviews.",
+    "Know the 4 Golden Signals of SRE: Latency, Traffic, Errors, Saturation."
+  ]
+}

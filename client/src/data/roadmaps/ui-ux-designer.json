@@ -1,0 +1,91 @@
+{
+  "seo": {
+    "title": "UI/UX Designer Roadmap 2026 - Figma, Research & Design Career | Candidatetohr",
+    "description": "Complete UI/UX Designer roadmap for 2026. Master Figma, user research, design systems, and usability testing. Salary insights, portfolio tips, and interview prep.",
+    "slug": "ui-ux-designer",
+    "keywords": "UI UX designer roadmap 2026, how to become UX designer, Figma designer career path, product design roadmap, UX research career",
+    "ogTitle": "UI/UX Designer Roadmap 2026 - Figma & Design Thinking",
+    "ogDescription": "Create products users love. Follow our $95k UI/UX Designer roadmap with Figma, research, and design systems."
+  },
+  "hero": {
+    "title": "UI/UX Designer Roadmap 2026",
+    "shortDescription": "Design products that millions love to use. UI/UX Designers are the bridge between business goals and human needs, creating experiences that are beautiful, intuitive, and accessible.",
+    "averageSalary": "$95,000",
+    "growthRate": "+19%",
+    "learningDuration": "5 Months",
+    "difficultyLevel": "Medium",
+    "hiringDemand": "High"
+  },
+  "overview": {
+    "whatTheyDo": "UI/UX Designers research user needs, design intuitive interfaces, and validate solutions through testing. UI (User Interface) focuses on visual design and interactivity. UX (User Experience) focuses on the overall experience, usability, and problem-solving.",
+    "industriesHiring": ["SaaS & Tech", "Agencies & Consultancies", "E-commerce", "Healthcare Tech", "Media & Entertainment"],
+    "responsibilities": [
+      "Conducting user research (interviews, surveys, usability tests).",
+      "Creating wireframes, prototypes, and high-fidelity mockups in Figma.",
+      "Building and maintaining design systems and component libraries.",
+      "Collaborating with engineers to ensure designs are implemented accurately.",
+      "Analyzing user behavior with tools like Hotjar, FullStory, and Google Analytics."
+    ]
+  },
+  "skillsTimeline": {
+    "beginner": ["Design Principles (Color, Typography, Spacing)", "Figma Basics", "Wireframing", "User Research Methods", "Competitive Analysis"],
+    "intermediate": ["High-Fidelity UI Design", "Prototyping & Micro-interactions", "Design Systems", "Usability Testing", "Accessibility (WCAG 2.2)"],
+    "advanced": ["Motion Design & Animation", "Advanced User Research (Journey Maps, Service Design)", "Design Strategy & Metrics", "Cross-platform Design (Mobile + Web)", "Design Ops"]
+  },
+  "learningPath": [
+    { "month": "Month 1: Visual Design Fundamentals", "description": "Learn the core principles: typography, color theory, spacing, contrast, and hierarchy. Practice redesigning existing apps to train your design eye." },
+    { "month": "Month 2: Figma Mastery", "description": "Learn Figma from scratch. Master components, auto-layout, variables, and prototyping. Rebuild 2-3 famous app UIs from scratch in Figma." },
+    { "month": "Month 3: UX Research Methods", "description": "Learn user interview techniques, affinity mapping, customer journey mapping, and persona creation. Conduct 5 real user interviews for a chosen product problem." },
+    { "month": "Month 4: Design Systems & Prototyping", "description": "Build a design system from scratch (colors, typography, components). Create advanced interactive prototypes with micro-animations." },
+    { "month": "Month 5: Portfolio & Usability Testing", "description": "Run a full usability test with 5 users. Write a case study documenting discovery → design → testing → results. Build your design portfolio on Behance or your own website." }
+  ],
+  "toolsAndTech": ["Figma", "Adobe XD", "Maze / UserTesting (Research)", "Hotjar", "Zeroheight (Design Systems)", "Lottie Files (Animations)", "Miro"],
+  "projects": {
+    "beginner": ["Redesign a Mobile App UI (before/after case study)", "Build a Design System with 20+ Components in Figma", "Create 3 Icon Sets from Scratch"],
+    "intermediate": ["Complete UX Case Study: Food Delivery App (Research → Prototype)", "Design a SaaS Dashboard with Dark Mode", "Accessibility Audit and Redesign of an Existing Website"],
+    "advanced": ["Multi-platform Design System (Web + iOS + Android)", "End-to-end Product Design Sprint (Problem → Usability Test)", "Design an AI-powered Feature and Explain the UX Decisions"]
+  },
+  "certifications": [
+    "Google UX Design Certificate (Coursera) — Best entry-level",
+    "NN/g UX Certification (Nielsen Norman Group) — Most respected",
+    "Interaction Design Foundation (IxDF) Membership + Certificates",
+    "Figma Config Academy — Free Figma certification"
+  ],
+  "salaryInsights": [
+    { "experience": "Junior (0-1 yr)", "salary": "$60,000 - $80,000" },
+    { "experience": "Mid-Level (2-4 yrs)", "salary": "$90,000 - $110,000" },
+    { "experience": "Senior (5-8 yrs)", "salary": "$120,000 - $145,000" },
+    { "experience": "Principal / Head of Design (8+ yrs)", "salary": "$160,000+" }
+  ],
+  "interviewPrep": {
+    "topQuestions": [
+      "Walk me through your design process from discovery to delivery.",
+      "How do you handle disagreements between your design decisions and engineering constraints?",
+      "Critique this app's UX — what would you improve and why?",
+      "How do you measure whether a design is successful?",
+      "Tell me about a design decision you changed based on user testing."
+    ],
+    "commonMistakes": [
+      "A portfolio of only visually beautiful screens with no UX rationale.",
+      "Not being able to explain your research process and design decisions.",
+      "Ignoring accessibility and designing only for ideal users.",
+      "Not collaborating enough — design is a team sport."
+    ],
+    "resumeTips": {
+      "sections": ["Portfolio Link", "Experience", "Skills & Tools", "Education", "Certifications"],
+      "keywords": ["Figma", "UX Research", "User Testing", "Design System", "Wireframing", "Prototyping", "Accessibility", "Information Architecture"],
+      "atsOptimization": "Lead with your portfolio URL. Quantify design impact: 'Redesigned checkout flow, reducing drop-off by 22%.' Name the tools in every project."
+    }
+  },
+  "jobMarket": {
+    "futureDemand": "Every digital product needs great design. As UX matures, companies hire designers earlier in the product process, creating more strategic, better-paid roles.",
+    "remoteOpportunities": "Very High. Design is one of the most remote-friendly careers. Tools like Figma enable seamless remote collaboration."
+  },
+  "faq": [
+    { "q": "Is UX Design or UI Design more important to learn?", "a": "Both are needed for most roles. Start with UI (Figma, visual design). Add UX research skills to stand out. Most job postings want both." },
+    { "q": "Do I need to know how to code as a UX designer?", "a": "Not required. But knowing basic HTML/CSS makes you much more effective when working with engineers and doing design QA." },
+    { "q": "How important is a design degree?", "a": "Not very. A strong portfolio beats a degree every time in the design world. Self-taught and bootcamp designers regularly land roles at top companies." },
+    { "q": "What makes a good UX portfolio?", "a": "3-5 case studies that tell a story: problem → research → design → testing → results. Show your thinking process, not just final screens." },
+    { "q": "Figma vs Adobe XD — which should I learn?", "a": "Figma. It's the industry standard in 2026. Adobe XD has declining adoption. All modern design teams use Figma." }
+  ]
+}

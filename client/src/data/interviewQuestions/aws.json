@@ -1,0 +1,60 @@
+{
+  "seo": {
+    "title": "Top 50 AWS Interview Questions 2026 | Cloud Engineer Prep",
+    "description": "Master the top 50 AWS interview questions for 2026. Covers EC2, S3, Lambda, VPC, IAM, RDS, and cloud architecture patterns with detailed answers.",
+    "slug": "aws",
+    "keywords": "aws interview questions 2026, amazon web services interview, EC2 S3 Lambda interview questions, cloud engineer interview, AWS solutions architect interview"
+  },
+  "hero": {
+    "title": "AWS Interview Questions 2026",
+    "description": "Complete AWS interview preparation guide for cloud engineers, solutions architects, and DevOps professionals. Covers core services, networking, security, and architecture patterns.",
+    "count": 50,
+    "topic": "Cloud",
+    "difficulty": "Intermediate to Advanced"
+  },
+  "categories": [
+    {
+      "name": "Core Services",
+      "questions": [
+        { "q": "What is the difference between EC2 and Lambda?", "a": "EC2 is Infrastructure as a Service (IaaS) — you manage the virtual server, OS, runtime, and scaling. Lambda is Function as a Service (FaaS) — serverless, runs code in response to events, auto-scales, and you only pay per invocation. Use Lambda for event-driven, short-duration functions. Use EC2 for long-running processes, stateful apps, or when you need OS control." },
+        { "q": "What is S3 and what are its storage classes?", "a": "S3 (Simple Storage Service) is object storage. Storage classes (cost tiers): S3 Standard (frequent access, highest cost), S3 Standard-IA (infrequent access, cheaper), S3 Glacier Instant Retrieval (archival, ms retrieval), S3 Glacier Flexible Retrieval (hours), S3 Glacier Deep Archive (days, cheapest). Use Lifecycle Policies to automatically move objects between classes." },
+        { "q": "What is the difference between S3 and EBS?", "a": "S3 is object storage accessible via HTTP from anywhere — for storing files, backups, and static content. EBS (Elastic Block Store) is block storage attached to a single EC2 instance — like a hard drive, used for OS files, databases, and applications that need low-latency disk access." },
+        { "q": "What is an AWS Lambda cold start and how do you minimize it?", "a": "A cold start occurs when Lambda initializes a new execution environment. The first request takes 100ms-3s longer. Solutions: Provisioned Concurrency (pre-warms instances), Scheduled Pings (keep-warm), smaller deployment packages, avoid VPC unless necessary (VPC adds ~1-10s cold start), and using compiled languages (Go, Rust) instead of Python." },
+        { "q": "What is SQS and how does it differ from SNS?", "a": "SQS (Simple Queue Service) is a point-to-point message queue — one consumer processes each message. Messages are stored until consumed. SNS (Simple Notification Service) is a publish-subscribe system — one message is pushed to MULTIPLE subscribers simultaneously (fanout). Common pattern: SNS + SQS for fanout queue processing." }
+      ]
+    },
+    {
+      "name": "Networking & VPC",
+      "questions": [
+        { "q": "What is a VPC and why do you use it?", "a": "Virtual Private Cloud (VPC) is your private, isolated network within AWS. You control IP ranges (CIDR), subnets, route tables, internet access, and security. It's the network boundary for your resources, providing isolation and security from other AWS customers." },
+        { "q": "What is the difference between a Security Group and a NACL?", "a": "Security Group: stateful (return traffic automatically allowed), operates at instance level, only ALLOW rules. NACL: stateless (must explicitly allow both inbound AND outbound), operates at subnet level, supports DENY rules. NACLs are evaluated first. Use NACLs for broad subnet-level blocks, Security Groups for fine-grained instance controls." },
+        { "q": "What is the difference between a public and private subnet?", "a": "Public subnet: has a route to an Internet Gateway (IGW), resources can send/receive internet traffic. Private subnet: no route to IGW, resources cannot directly access the internet. Private subnets use a NAT Gateway (in a public subnet) for outbound-only internet access (e.g., downloading packages, calling external APIs)." },
+        { "q": "What is AWS Direct Connect?", "a": "A dedicated private network connection from your on-premise data center to AWS — bypassing the public internet. Provides consistent network performance, lower latency, and higher security compared to VPN over the internet. Used for hybrid cloud architectures and large data transfer scenarios." }
+      ]
+    },
+    {
+      "name": "IAM & Security",
+      "questions": [
+        { "q": "What is AWS IAM and what are its core components?", "a": "Identity and Access Management (IAM) controls who can access AWS services. Core components: Users (human identities), Groups (collections of users), Roles (identities for services/apps, assumed temporarily), Policies (JSON documents defining permissions), and Resource-based Policies (attached to resources like S3 buckets). Follow the principle of least privilege." },
+        { "q": "What is the AWS Shared Responsibility Model?", "a": "AWS is responsible 'of the cloud' (physical security, hardware, network infrastructure, hypervisor). Customers are responsible 'in the cloud' (OS patching, application security, IAM configuration, data encryption, security group rules). The split depends on service type: IaaS (more customer responsibility) vs SaaS/managed (less)." },
+        { "q": "What is AWS KMS?", "a": "Key Management Service — a managed service for creating and controlling cryptographic keys used to encrypt data across AWS services (S3, RDS, EBS, Secrets Manager). Supports Customer Managed Keys (CMK) and AWS Managed Keys. All key operations are logged in CloudTrail for auditing." },
+        { "q": "What is AWS GuardDuty?", "a": "A threat detection service that continuously analyzes CloudTrail logs, VPC Flow Logs, and DNS logs to detect malicious activity like cryptocurrency mining, unauthorized access, and data exfiltration. Uses ML models and threat intelligence feeds. Low operational overhead — no agents to install." }
+      ]
+    },
+    {
+      "name": "Architecture & Best Practices",
+      "questions": [
+        { "q": "What is the AWS Well-Architected Framework?", "a": "A set of best practices across 6 pillars: Operational Excellence (operations as code, small frequent changes), Security (least privilege, defense in depth), Reliability (multi-AZ, backups, chaos engineering), Performance Efficiency (right-sizing, managed services), Cost Optimization (right-size, Reserved Instances), and Sustainability (energy efficiency)." },
+        { "q": "How do you design a highly available web application on AWS?", "a": "Multi-AZ: deploy across at least 2 Availability Zones. Load Balancing: Application Load Balancer (ALB) distributes traffic. Auto Scaling: EC2 Auto Scaling Groups adjust capacity to demand. Database: RDS Multi-AZ for automatic failover. Static Assets: S3 + CloudFront CDN. DNS: Route 53 with health checks. Monitoring: CloudWatch for alarms." },
+        { "q": "What is the difference between Multi-AZ and Read Replicas in RDS?", "a": "Multi-AZ: synchronous replication to a standby in another AZ. Automatic failover (<60s) if primary fails. NOT for read scaling — standby is passive. Read Replicas: asynchronous replication. Can be promoted to standalone. Used to scale READ traffic across multiple instances. Can be in different Regions (cross-region replicas)." }
+      ]
+    }
+  ],
+  "topTips": [
+    "Know the pricing model for key services: EC2 (per hour), Lambda (per invocation + duration), S3 (per GB + requests).",
+    "Always explain the trade-offs — AWS interviewers love hearing 'it depends' followed by clear reasoning.",
+    "Practice the VPC networking on paper: subnets, route tables, IGW, NAT Gateway, Security Groups.",
+    "Understand IAM policies deeply — this is the most commonly tested security topic.",
+    "For solutions architect roles, practice designing architectures from scratch in 5 minutes (whiteboard style)."
+  ]
+}

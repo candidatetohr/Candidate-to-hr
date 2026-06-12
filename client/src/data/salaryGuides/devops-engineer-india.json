@@ -1,0 +1,34 @@
+{
+  "seo": {
+    "title": "DevOps Engineer Salary in India 2026 | Kubernetes Docker Pay",
+    "description": "DevOps Engineer salary in India for 2026. Breakdown by experience, city, and top companies. Includes AWS, Kubernetes, and Terraform specialist pay.",
+    "slug": "devops-engineer-india",
+    "keywords": "devops engineer salary india, kubernetes engineer salary india, AWS devops salary india, site reliability engineer salary india 2026",
+    "ogTitle": "DevOps Engineer Salary in India (2026)",
+    "ogDescription": "What DevOps engineers earn in India. Complete 2026 salary guide with Kubernetes and cloud breakdown."
+  },
+  "hero": { "title": "DevOps Engineer Salary in India (2026)", "description": "DevOps is one of the highest-paying tech specializations in India, with demand driven by cloud adoption across every industry. Engineers with Kubernetes, Terraform, and AWS expertise command exceptional packages.", "averageSalary": "₹19.5 Lakhs / year" },
+  "experience": [
+    { "level": "Junior DevOps (0-2 Years)", "salary": "₹7,00,000 - ₹12,00,000", "notes": "Entry-level with Docker, CI/CD, and basic cloud knowledge. Linux fundamentals are mandatory." },
+    { "level": "Mid-Level (2-5 Years)", "salary": "₹16,00,000 - ₹28,00,000", "notes": "Kubernetes, Terraform, and cloud platform expertise drive mid-level compensation significantly higher." },
+    { "level": "Senior (5-8 Years)", "salary": "₹32,00,000 - ₹55,00,000", "notes": "Senior engineers who design cloud architectures and lead platform engineering teams." },
+    { "level": "Principal SRE / Platform Lead (9+ Years)", "salary": "₹60,00,000 - ₹1,20,00,000+", "notes": "Principal engineers at product companies managing mission-critical infrastructure." }
+  ],
+  "byCity": [
+    { "city": "Bangalore", "salary": "₹22.5 Lakhs", "premium": "+15%" },
+    { "city": "Hyderabad", "salary": "₹20.0 Lakhs", "premium": "+3%" },
+    { "city": "Pune", "salary": "₹18.5 Lakhs", "premium": "-5%" },
+    { "city": "Delhi NCR", "salary": "₹20.5 Lakhs", "premium": "+5%" },
+    { "city": "Mumbai", "salary": "₹21.0 Lakhs", "premium": "+8%" },
+    { "city": "Chennai", "salary": "₹17.0 Lakhs", "premium": "-13%" }
+  ],
+  "topCompanies": [
+    { "company": "Amazon / AWS India", "salary": "₹40L - ₹90L", "type": "FAANG" },
+    { "company": "ThoughtWorks", "salary": "₹22L - ₹45L", "type": "Consulting" },
+    { "company": "Freshworks", "salary": "₹20L - ₹40L", "type": "SaaS" },
+    { "company": "Razorpay", "salary": "₹25L - ₹50L", "type": "FinTech" },
+    { "company": "Wipro / HCL", "salary": "₹9L - ₹18L", "type": "IT Services" },
+    { "company": "Ola / Rapido", "salary": "₹22L - ₹42L", "type": "Mobility" }
+  ],
+  "futureOutlook": "DevOps and Platform Engineering salaries in India will grow 25-30% by 2028, driven by cloud-first mandates across BFSI, healthcare, and e-commerce. Engineers with FinOps (cloud cost optimization) skills will earn 20% premiums as companies focus on cloud efficiency."
+}

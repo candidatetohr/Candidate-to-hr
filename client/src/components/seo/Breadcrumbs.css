@@ -1,0 +1,43 @@
+.seo-breadcrumbs {
+  margin-bottom: 24px;
+  font-size: 0.85rem;
+}
+
+.seo-breadcrumbs ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.seo-breadcrumbs li {
+  display: flex;
+  align-items: center;
+  color: var(--text-muted);
+}
+
+.seo-breadcrumbs a {
+  color: #60a5fa;
+  text-decoration: none;
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+}
+
+.seo-breadcrumbs a:hover {
+  color: #93c5fd;
+  text-decoration: underline;
+}
+
+.crumb-separator {
+  margin-right: 8px;
+  color: #475569;
+}
+
+.seo-breadcrumbs li[aria-current="page"] {
+  color: var(--text-primary);
+  font-weight: 500;
+}

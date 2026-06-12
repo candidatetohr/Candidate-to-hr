@@ -1,0 +1,87 @@
+{
+  "seo": {
+    "title": "AI Engineer Salary in India 2026 | Freshers to Seniors",
+    "description": "Discover the exact AI Engineer salary in India for 2026. Breakdowns by experience, city (Bangalore, Pune, Hyderabad), and top paying companies like Google and Amazon.",
+    "slug": "ai-engineer-india",
+    "keywords": "ai engineer salary india, machine learning engineer salary, ai salary bangalore, fresher ai engineer salary",
+    "ogTitle": "AI Engineer Salary in India (2026)",
+    "ogDescription": "See how much AI Engineers actually earn in India, from freshers to 10+ years experience."
+  },
+  "hero": {
+    "title": "AI Engineer Salary in India",
+    "description": "AI Engineering remains one of the highest-paying domains in India. Here is the comprehensive 2026 salary guide across experience levels, cities, and top employers.",
+    "averageSalary": "₹18.5 Lakhs / year"
+  },
+  "experience": [
+    {
+      "level": "Fresher (0-1 Years)",
+      "salary": "₹8,00,000 - ₹12,00,000",
+      "notes": "Highly dependent on college tier (IIT/NIT vs Tier 3) and internship experience in AI/ML."
+    },
+    {
+      "level": "Mid-Level (2-4 Years)",
+      "salary": "₹15,00,000 - ₹25,00,000",
+      "notes": "Requires strong command over Python, TensorFlow/PyTorch, and basic AI deployment."
+    },
+    {
+      "level": "Senior (5-8 Years)",
+      "salary": "₹30,00,000 - ₹50,00,000",
+      "notes": "Expected to lead AI strategies and mentor junior AI engineers."
+    },
+    {
+      "level": "Lead / Principal (9+ Years)",
+      "salary": "₹55,00,000 - ₹90,00,000+",
+      "notes": "Often includes heavy ESOPs (stock options) in product-based companies."
+    }
+  ],
+  "byCity": [
+    {
+      "city": "Bangalore",
+      "salary": "₹20.5 Lakhs",
+      "premium": "+15%"
+    },
+    {
+      "city": "Hyderabad",
+      "salary": "₹18.0 Lakhs",
+      "premium": "+5%"
+    },
+    {
+      "city": "Pune",
+      "salary": "₹16.5 Lakhs",
+      "premium": "-5%"
+    },
+    {
+      "city": "Gurgaon / NCR",
+      "salary": "₹19.2 Lakhs",
+      "premium": "+2%"
+    },
+    {
+      "city": "Chennai",
+      "salary": "₹15.5 Lakhs",
+      "premium": "-10%"
+    }
+  ],
+  "topCompanies": [
+    {
+      "company": "Google India",
+      "salary": "₹40L - ₹70L",
+      "type": "FAANG"
+    },
+    {
+      "company": "Amazon India",
+      "salary": "₹35L - ₹60L",
+      "type": "FAANG"
+    },
+    {
+      "company": "Flipkart / Myntra",
+      "salary": "₹28L - ₹45L",
+      "type": "E-commerce"
+    },
+    {
+      "company": "TCS / Infosys",
+      "salary": "₹10L - ₹18L",
+      "type": "Service Based"
+    }
+  ],
+  "futureOutlook": "With the rise of Generative AI, the demand for skilled AI Engineers who can develop and deploy AI models is skyrocketing. Salaries for AI Engineers in India are expected to grow by another 30% by 2028."
+}

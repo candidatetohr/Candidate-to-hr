@@ -1,0 +1,97 @@
+{
+  "seo": {
+    "title": "Cyber Security Roadmap 2026 - Career Path, Certifications & Salary | Candidatetohr",
+    "description": "Complete Cybersecurity roadmap for 2026. Learn ethical hacking, network security, SIEM, and cloud security. CompTIA Security+, CEH, and CISSP prep included.",
+    "slug": "cyber-security",
+    "keywords": "cybersecurity roadmap 2026, how to become cybersecurity analyst, information security career path, CompTIA Security+ roadmap, CEH roadmap",
+    "ogTitle": "Cyber Security Roadmap 2026 - From Beginner to SOC Analyst",
+    "ogDescription": "Protect the digital world. Follow our $120k Cybersecurity roadmap covering network security, ethical hacking, and cloud security."
+  },
+  "hero": {
+    "title": "Cyber Security Roadmap 2026",
+    "shortDescription": "Defend against the $8 trillion cybercrime industry. Cybersecurity professionals are among the most in-demand workers globally, with job openings far exceeding qualified candidates.",
+    "averageSalary": "$120,000",
+    "growthRate": "+32%",
+    "learningDuration": "9 Months",
+    "difficultyLevel": "Hard",
+    "hiringDemand": "Very High"
+  },
+  "overview": {
+    "whatTheyDo": "Cybersecurity professionals protect organizations from digital threats by securing networks, detecting intrusions, analyzing malware, and building defensive systems. They include SOC analysts, penetration testers, security architects, and incident responders.",
+    "industriesHiring": ["Defense & Government", "FinTech & Banking", "Healthcare", "Critical Infrastructure", "Fortune 500 Enterprises"],
+    "responsibilities": [
+      "Monitoring security events using SIEM tools (Splunk, Microsoft Sentinel).",
+      "Conducting vulnerability assessments and penetration tests.",
+      "Responding to and investigating security incidents.",
+      "Implementing and managing firewalls, IDS/IPS, and EDR tools.",
+      "Ensuring compliance with frameworks like SOC 2, ISO 27001, and NIST."
+    ]
+  },
+  "skillsTimeline": {
+    "beginner": ["Networking Fundamentals (TCP/IP, DNS, HTTP)", "Linux & Windows Administration", "Basic Scripting (Python/Bash)", "CompTIA A+ & Network+ Concepts", "Security Awareness Basics"],
+    "intermediate": ["CompTIA Security+ Domains", "SIEM Tools (Splunk, Sentinel)", "Ethical Hacking (Metasploit, Nmap, Burp Suite)", "Cloud Security Basics (AWS IAM, GCP)", "Vulnerability Scanning (Nessus)"],
+    "advanced": ["CEH or OSCP Penetration Testing", "Malware Analysis & Reverse Engineering", "Incident Response & Forensics", "Zero Trust Architecture", "CISSP Knowledge Domains"]
+  },
+  "learningPath": [
+    { "month": "Month 1: Foundations — Networking & OS", "description": "Master the OSI model, TCP/IP, DNS, HTTP/S, and common protocols. Learn Linux administration and Windows Active Directory basics." },
+    { "month": "Month 2: Security Fundamentals", "description": "Study cryptography (AES, RSA, PKI), authentication, access control, and the CIA triad. Use CompTIA Security+ study materials as your syllabus." },
+    { "month": "Month 3: Hands-on Labs (TryHackMe)", "description": "Complete the TryHackMe Jr Penetration Tester learning path. Use Kali Linux for hands-on practice: Nmap, Metasploit, Burp Suite." },
+    { "month": "Month 4: SIEM & SOC Operations", "description": "Learn to use Splunk or Microsoft Sentinel to monitor and analyze security events. Practice triage, alert investigation, and creating detection rules." },
+    { "month": "Month 5: Ethical Hacking & Pen Testing", "description": "Complete HackTheBox machines. Learn web application hacking (OWASP Top 10), Active Directory attacks, and exploitation techniques." },
+    { "month": "Month 6: Cloud Security", "description": "Study cloud security for AWS (IAM policies, CloudTrail, GuardDuty, Security Hub). Learn the AWS Shared Responsibility Model and CSPM tools." },
+    { "month": "Month 7: Incident Response & Forensics", "description": "Learn the incident response lifecycle (Identification → Containment → Eradication → Recovery). Practice memory forensics with Volatility and disk forensics with Autopsy." },
+    { "month": "Month 8: Compliance & Architecture", "description": "Study NIST CSF, SOC 2, ISO 27001, and GDPR. Learn Zero Trust Architecture and how to design security architectures for cloud-native environments." },
+    { "month": "Month 9: Certifications & Job Prep", "description": "Sit the CompTIA Security+ exam. Prepare a portfolio of CTF writeups on GitHub. Practice behavioral and technical interview questions." }
+  ],
+  "toolsAndTech": ["Kali Linux", "Nmap", "Metasploit", "Burp Suite", "Splunk", "Wireshark", "Nessus", "Autopsy", "OWASP ZAP", "Volatility"],
+  "projects": {
+    "beginner": ["Build a Home Lab with VirtualBox (Kali + Windows)", "Capture the Flag (CTF) on TryHackMe (Complete 10 rooms)", "Network Packet Analysis with Wireshark"],
+    "intermediate": ["Create a SIEM Dashboard with Splunk (Free Trial)", "Conduct a Vulnerability Assessment on a DVWA Lab", "Write a Python Script to Automate a Security Audit"],
+    "advanced": ["Full Penetration Test Report on HackTheBox Machine", "Malware Analysis Lab (Sandbox + Reverse Engineering)", "Build a Threat Intelligence Platform with MISP"]
+  },
+  "certifications": [
+    "CompTIA Security+ (SY0-701) — Best entry-level cert",
+    "Certified Ethical Hacker (CEH)",
+    "Offensive Security Certified Professional (OSCP) — Gold standard for pen testing",
+    "CISSP — For senior security architects",
+    "AWS Certified Security - Specialty"
+  ],
+  "salaryInsights": [
+    { "experience": "SOC Analyst (0-2 yr)", "salary": "$65,000 - $90,000" },
+    { "experience": "Mid-Level (2-5 yrs)", "salary": "$100,000 - $130,000" },
+    { "experience": "Senior (5-8 yrs)", "salary": "$140,000 - $175,000" },
+    { "experience": "CISO / Security Architect (10+ yrs)", "salary": "$200,000+" }
+  ],
+  "interviewPrep": {
+    "topQuestions": [
+      "Explain the difference between IDS and IPS.",
+      "What is the difference between symmetric and asymmetric encryption?",
+      "How would you respond to a ransomware attack?",
+      "What is a man-in-the-middle attack and how do you prevent it?",
+      "Explain what a SQL injection attack is and how to mitigate it."
+    ],
+    "commonMistakes": [
+      "Not understanding networking — it's the foundation of all security.",
+      "Focusing only on offensive (hacking) without understanding defensive operations.",
+      "No hands-on lab experience — certifications without practice are not enough.",
+      "Not documenting findings clearly — communication is critical in security."
+    ],
+    "resumeTips": {
+      "sections": ["Certifications", "Experience", "Skills & Tools", "Projects/CTFs", "Education"],
+      "keywords": ["SIEM", "Penetration Testing", "Incident Response", "SOC", "Vulnerability Assessment", "OWASP", "CompTIA Security+"],
+      "atsOptimization": "List your certifications at the top. Include CTF competition results, GitHub of security tools/scripts, and specific tools you've used (Splunk, Nessus, Burp Suite)."
+    }
+  },
+  "jobMarket": {
+    "futureDemand": "There is a global shortage of 3.5 million cybersecurity professionals. The field is expected to grow 32% through 2028. Demand significantly outstrips supply.",
+    "remoteOpportunities": "High. Many SOC and security consulting roles are remote. Government and defense roles often require clearances and may be on-site."
+  },
+  "faq": [
+    { "q": "Do I need a CS degree for cybersecurity?", "a": "No. CompTIA Security+, hands-on lab experience, and demonstrable skills matter far more than a degree in this field." },
+    { "q": "Is ethical hacking legal?", "a": "Yes, when done with written authorization. Never test systems you don't own or have explicit permission to test." },
+    { "q": "What is the best cybersecurity certification for beginners?", "a": "CompTIA Security+ is the industry standard entry-level certification, recognized by US DoD and most enterprises globally." },
+    { "q": "Is TryHackMe good for learning?", "a": "Excellent. TryHackMe is the best free/low-cost platform for hands-on cybersecurity training. Start with the Jr Penetration Tester path." },
+    { "q": "What is the OSCP certification?", "a": "The Offensive Security Certified Professional (OSCP) is the gold standard for penetration testers. It's a 24-hour practical exam — extremely challenging but highly respected." },
+    { "q": "How do I get my first cybersecurity job with no experience?", "a": "Get CompTIA Security+, complete TryHackMe/HackTheBox rooms, write CTF blog posts, and apply to SOC Analyst Tier 1 positions. These are the standard entry points." }
+  ]
+}

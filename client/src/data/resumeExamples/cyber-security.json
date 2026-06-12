@@ -1,0 +1,36 @@
+{
+  "seo": {
+    "title": "Cyber Security Resume Examples & ATS Templates 2026",
+    "description": "Learn how to write a perfect Cyber Security resume.",
+    "slug": "cyber-security",
+    "keywords": "cyber security resume, ats resume",
+    "ogTitle": "How to Write a Cyber Security Resume",
+    "ogDescription": "Steal our exact resume template."
+  },
+  "hero": {
+    "title": "Cyber Security Resume Examples",
+    "description": "(Full resume example is being automatically generated...)"
+  },
+  "score": {
+    "atsScore": 92,
+    "readability": "Excellent",
+    "keywordMatch": "High"
+  },
+  "keywords": [
+    "Penetration Testing", "Vulnerability Assessment", "SIEM", "Incident Response"
+  ],
+  "mistakes": [
+    "Not mentioning specific compliance frameworks (NIST, ISO 27001)."
+  ],
+  "tips": [
+    "Always list your active clearances at the very top."
+  ],
+  "exampleResume": {
+    "name": "Alex Hacker",
+    "title": "Cyber Security Analyst",
+    "summary": "Analyst with 3+ years experience. (Full example being generated...)",
+    "experience": [],
+    "education": [],
+    "skills": "SIEM, Python, Wireshark"
+  }
+}

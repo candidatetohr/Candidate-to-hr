@@ -1,0 +1,27 @@
+{
+  "seo": { "title": "DevOps Engineer Resume Examples & ATS Templates 2026", "description": "Write a perfect DevOps Engineer resume that passes ATS. Includes Kubernetes, Docker, Terraform keywords, common mistakes, and a complete resume example.", "slug": "devops-engineer", "keywords": "devops engineer resume, kubernetes resume, terraform resume, SRE resume, platform engineer resume 2026", "ogTitle": "DevOps Engineer Resume Examples 2026", "ogDescription": "The exact resume template that lands DevOps and SRE interviews at top tech companies." },
+  "hero": { "title": "DevOps Engineer Resume Examples", "description": "Land DevOps roles at FAANG and top startups. Our ATS-optimized templates highlight your infrastructure, automation, and cloud skills in the exact format hiring managers want." },
+  "score": { "atsScore": 96, "readability": "Excellent", "keywordMatch": "High" },
+  "keywords": ["Kubernetes", "Docker", "Terraform", "CI/CD", "AWS", "GitHub Actions", "Ansible", "Prometheus", "Grafana", "Helm", "GitOps", "ArgoCD", "Linux", "Python/Bash"],
+  "mistakes": [
+    "Listing tools without context (e.g., 'Used Kubernetes' vs 'Managed a 200-node Kubernetes cluster on EKS serving 5M daily requests').",
+    "No certifications listed — DevOps roles highly value AWS/CKA certifications. Lead with these.",
+    "Describing what you did, not the business impact: 'Set up CI/CD' vs 'Reduced deployment time from 45 minutes to 7 minutes, enabling 3x faster release cadence.'"
+  ],
+  "tips": [
+    "Lead with your certifications (CKA, AWS DevOps Professional) — they're the strongest first-signal for DevOps roles.",
+    "Quantify everything: uptime SLAs achieved, deployment frequency, cost savings, cluster size, scale.",
+    "Include a 'Tools & Technologies' section rather than a generic skills list — specificity wins ATS."
+  ],
+  "exampleResume": {
+    "name": "Priya Sharma",
+    "title": "Senior DevOps Engineer",
+    "summary": "Platform engineer with 6+ years of experience building and maintaining cloud-native infrastructure at scale. Certified Kubernetes Administrator and AWS Certified DevOps Engineer. Reduced infrastructure costs by $1.2M/year through right-sizing and reserved instances at TechScale.",
+    "experience": [
+      { "company": "TechScale Inc.", "role": "Senior DevOps Engineer", "date": "2021 - Present", "bullets": ["Architected and managed 3 production EKS clusters (200+ nodes) serving 10M daily requests with 99.97% uptime SLA.", "Implemented GitOps deployment pipeline (ArgoCD + GitHub Actions), reducing mean deployment time from 45 min to 6 min.", "Led FinOps initiative: right-sized EC2 instances and implemented savings plans, reducing AWS bill by $1.2M/year."] },
+      { "company": "CloudSolutions Ltd.", "role": "DevOps Engineer", "date": "2019 - 2021", "bullets": ["Built full CI/CD pipeline for 15 microservices using GitHub Actions, Docker, and AWS ECS.", "Provisioned multi-environment AWS infrastructure with Terraform, reducing provisioning time from 2 days to 20 minutes."] }
+    ],
+    "education": [{ "degree": "B.E. Computer Engineering", "school": "BITS Pilani", "date": "2015 - 2019" }],
+    "skills": "Kubernetes (EKS, GKE), Docker, Terraform, Helm, ArgoCD, GitHub Actions, AWS (EC2, EKS, RDS, S3, IAM), Prometheus, Grafana, Python, Bash, Linux, Ansible"
+  }
+}

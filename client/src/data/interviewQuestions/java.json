@@ -1,0 +1,25 @@
+{
+  "seo": {
+    "title": "Top 100+ Java Interview Questions & Answers (2026) | Candidatetohr",
+    "description": "Master your next technical interview with our comprehensive list of Java interview questions.",
+    "slug": "java",
+    "keywords": "java interview questions, java developer interview",
+    "ogTitle": "Java Interview Questions & Answers",
+    "ogDescription": "Practice the top Java questions asked by top tech companies."
+  },
+  "hero": {
+    "title": "Java Interview Questions",
+    "description": "Comprehensive list of Java interview questions. (Full list is being automatically generated...)"
+  },
+  "questions": {
+    "beginner": [
+      {
+        "id": "java-b-1",
+        "q": "What is the difference between JDK, JRE, and JVM?",
+        "a": "JDK is for development (contains compiler), JRE is for running applications, and JVM executes the bytecode."
+      }
+    ],
+    "intermediate": [],
+    "advanced": []
+  }
+}

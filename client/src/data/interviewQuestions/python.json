@@ -1,0 +1,67 @@
+{
+  "seo": {
+    "title": "Top 100+ Python Interview Questions & Answers (2026) | Candidatetohr",
+    "description": "Master your next technical interview with our comprehensive list of Python interview questions, spanning from beginner fundamentals to advanced OOP and memory management.",
+    "slug": "python",
+    "keywords": "python interview questions, python developer interview, coding interview, python oops questions",
+    "ogTitle": "Python Interview Questions & Answers",
+    "ogDescription": "Practice the top Python questions asked by FAANG and top tech companies."
+  },
+  "hero": {
+    "title": "Python Interview Questions",
+    "description": "From basic syntax to advanced concurrency and data science concepts. Use the practice mode to hide answers and test your knowledge."
+  },
+  "questions": {
+    "beginner": [
+      {
+        "id": "py-b-1",
+        "q": "What are the key features of Python?",
+        "a": "Python is an interpreted, high-level, dynamically typed, and garbage-collected language. It supports multiple programming paradigms (OOP, procedural, functional) and has a massive standard library."
+      },
+      {
+        "id": "py-b-2",
+        "q": "What is the difference between a list and a tuple?",
+        "a": "Lists are mutable (can be changed after creation) and use square brackets `[]`. Tuples are immutable (cannot be changed) and use parentheses `()`. Tuples are generally faster and safer for fixed data."
+      },
+      {
+        "id": "py-b-3",
+        "q": "What is a dictionary in Python?",
+        "a": "A dictionary is an unordered collection of key-value pairs. It is mutable, keys must be unique and immutable (like strings or numbers), and it is highly optimized for retrieving values."
+      }
+    ],
+    "intermediate": [
+      {
+        "id": "py-i-1",
+        "q": "What are decorators in Python?",
+        "a": "Decorators are functions that take another function as an argument and extend its behavior without explicitly modifying it. They are denoted by the `@decorator_name` syntax."
+      },
+      {
+        "id": "py-i-2",
+        "q": "Explain *args and **kwargs.",
+        "a": "`*args` allows a function to accept any number of positional arguments (passed as a tuple). `**kwargs` allows a function to accept any number of keyword arguments (passed as a dictionary)."
+      },
+      {
+        "id": "py-i-3",
+        "q": "What is the Global Interpreter Lock (GIL)?",
+        "a": "The GIL is a mutex that protects access to Python objects, preventing multiple threads from executing Python bytecodes at once. This makes pure Python threads unsuitable for CPU-bound tasks, though they work well for I/O-bound tasks."
+      }
+    ],
+    "advanced": [
+      {
+        "id": "py-a-1",
+        "q": "How does Python handle memory management?",
+        "a": "Python uses reference counting for memory management. When an object's reference count drops to zero, it is deallocated. It also has a cyclic garbage collector to detect and clean up reference cycles."
+      },
+      {
+        "id": "py-a-2",
+        "q": "What are metaclasses?",
+        "a": "A metaclass is a class whose instances are classes. Just as an ordinary class defines the behavior of certain objects, a metaclass defines the behavior of certain classes and their instances."
+      },
+      {
+        "id": "py-a-3",
+        "q": "Explain generators and the 'yield' keyword.",
+        "a": "Generators are functions that return an iterable sequence of items one by one rather than all at once, saving memory. They use the `yield` keyword instead of `return` to pause and resume their state."
+      }
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "seo": { "title": "Machine Learning Engineer Resume Examples & ATS Templates 2026", "description": "Write a perfect ML Engineer resume that passes ATS. Includes PyTorch, MLOps keywords, common mistakes, and a complete resume example for ML roles.", "slug": "machine-learning-engineer", "keywords": "machine learning engineer resume, ML resume template, MLOps resume, data scientist resume, deep learning resume 2026", "ogTitle": "Machine Learning Engineer Resume Examples 2026", "ogDescription": "The exact ML resume template that lands interviews at Google, OpenAI, and top AI companies." },
+  "hero": { "title": "Machine Learning Engineer Resume Examples", "description": "AI companies receive thousands of applications. This guide shows you exactly how to structure your ML resume to pass the ATS, impress technical reviewers, and land the interview." },
+  "score": { "atsScore": 95, "readability": "Excellent", "keywordMatch": "High" },
+  "keywords": ["PyTorch", "TensorFlow", "Python", "Machine Learning", "Deep Learning", "NLP", "LLM", "MLOps", "MLflow", "Docker", "AWS SageMaker", "Scikit-learn", "Transformers", "Feature Engineering"],
+  "mistakes": [
+    "Describing model architecture without mentioning business impact (e.g., 'Trained a BERT model' vs 'Fine-tuned BERT for document classification, achieving 94% F1, reducing manual review time by 60%').",
+    "No links to published models on HuggingFace Hub, GitHub, or Kaggle competition results.",
+    "Vague skills section — be specific about which frameworks (PyTorch vs TensorFlow) and what scale you've worked at."
+  ],
+  "tips": [
+    "Always include model performance metrics (AUC-ROC, F1, RMSE, perplexity) for every ML project.",
+    "Describe scale: data size, model size, inference throughput, training time — these signal seniority.",
+    "Link to HuggingFace Hub models, Kaggle notebooks, or research papers if applicable."
+  ],
+  "exampleResume": {
+    "name": "Arjun Mehta",
+    "title": "Senior Machine Learning Engineer",
+    "summary": "ML Engineer with 5+ years of experience building production NLP and recommendation systems at scale. Led deployment of a real-time fraud detection model processing 50M transactions/day at 99.9% uptime. Expertise in PyTorch, LLM fine-tuning, and MLOps on AWS SageMaker.",
+    "experience": [
+      { "company": "FinTrust Analytics", "role": "Senior ML Engineer", "date": "2021 - Present", "bullets": ["Built real-time fraud detection model (XGBoost + LSTM) processing 50M transactions/day, reducing fraud losses by $8M annually.", "Led LLM fine-tuning initiative: fine-tuned LLaMA-3 7B on proprietary data, achieving 91% accuracy on document summarization (vs 74% baseline).", "Built full MLOps pipeline (MLflow + SageMaker + Airflow) for automated retraining and A/B testing of 12 production models."] },
+      { "company": "RecoTech", "role": "ML Engineer", "date": "2019 - 2021", "bullets": ["Designed collaborative filtering recommendation system for 5M users, increasing click-through rate by 22%.", "Reduced model inference latency from 850ms to 40ms through ONNX quantization and TensorRT optimization."] }
+    ],
+    "education": [{ "degree": "M.S. Computer Science (Machine Learning)", "school": "Carnegie Mellon University", "date": "2017 - 2019" }],
+    "skills": "Python, PyTorch, TensorFlow, Scikit-learn, HuggingFace Transformers, LangChain, MLflow, AWS SageMaker, Apache Airflow, Docker, SQL, Spark"
+  }
+}

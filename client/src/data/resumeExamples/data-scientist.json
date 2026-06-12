@@ -1,0 +1,66 @@
+{
+  "seo": {
+    "title": "Data Scientist Resume Examples & ATS Templates 2026",
+    "description": "Learn how to write a perfect Data Scientist resume that passes the ATS. Discover the top keywords, common mistakes, and view a complete 100/100 resume example.",
+    "slug": "data-scientist",
+    "keywords": "data scientist resume, machine learning resume, data science resume template, ats resume",
+    "ogTitle": "How to Write a Data Scientist Resume in 2026",
+    "ogDescription": "Steal our exact resume template that landed roles at Google and Meta."
+  },
+  "hero": {
+    "title": "Data Scientist Resume Examples",
+    "description": "Stop getting auto-rejected by the ATS. Here is the exact resume structure, keywords, and action verbs you need to land interviews in 2026."
+  },
+  "score": {
+    "atsScore": 96,
+    "readability": "Excellent",
+    "keywordMatch": "High"
+  },
+  "keywords": [
+    "Predictive Modeling", "Machine Learning", "Python", "SQL", "Pandas", "Scikit-Learn", "A/B Testing", "Data Visualization", "TensorFlow", "Statistical Analysis"
+  ],
+  "mistakes": [
+    "Using colorful templates with columns (ATS systems cannot parse them).",
+    "Listing tools without context (e.g., just writing 'Python' instead of 'Used Python to build a churn prediction model').",
+    "Failing to quantify impact (e.g., 'Improved accuracy' instead of 'Improved model accuracy by 14%, saving $1.2M annually')."
+  ],
+  "tips": [
+    "Always place 'Skills' near the top if you are a junior, and 'Experience' near the top if you are senior.",
+    "Include a hyperlink to your GitHub and LinkedIn in the header.",
+    "Use standard section headers: 'Experience', 'Education', 'Projects', 'Skills'."
+  ],
+  "exampleResume": {
+    "name": "Sarah Jenkins",
+    "title": "Data Scientist",
+    "summary": "Data Scientist with 3+ years of experience building predictive models and data pipelines. Proven track record of leveraging Python and SQL to increase revenue by $2M+ through targeted ML algorithms.",
+    "experience": [
+      {
+        "company": "TechCorp Solutions",
+        "role": "Data Scientist",
+        "date": "2023 - Present",
+        "bullets": [
+          "Developed a random forest churn prediction model in Python (Scikit-Learn), reducing customer churn by 12% in Q3.",
+          "Designed and maintained 15+ automated ETL pipelines using SQL and Apache Airflow, processing 500GB of daily data.",
+          "Conducted A/B testing on pricing algorithms, resulting in a 4% increase in total revenue."
+        ]
+      },
+      {
+        "company": "DataFlow Analytics",
+        "role": "Data Analyst",
+        "date": "2021 - 2023",
+        "bullets": [
+          "Built interactive Tableau dashboards utilized by the executive team to monitor KPIs, saving 10 hours of manual reporting weekly.",
+          "Optimized slow-running SQL queries, improving database retrieval times by 40%."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "B.S. in Computer Science",
+        "school": "State University",
+        "date": "2017 - 2021"
+      }
+    ],
+    "skills": "Python, R, SQL, Machine Learning (XGBoost, Random Forest), TensorFlow, Tableau, Git, AWS"
+  }
+}

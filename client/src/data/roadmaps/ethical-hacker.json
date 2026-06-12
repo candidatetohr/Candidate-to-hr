@@ -1,0 +1,95 @@
+{
+  "seo": {
+    "title": "Ethical Hacker Roadmap 2026 - Penetration Testing Career Guide | Candidatetohr",
+    "description": "Complete Ethical Hacker roadmap for 2026. Master penetration testing, Kali Linux, OSCP, and web application hacking. Salary data and certification guide.",
+    "slug": "ethical-hacker",
+    "keywords": "ethical hacker roadmap 2026, penetration testing career path, OSCP roadmap, how to become ethical hacker, kali linux bug bounty",
+    "ogTitle": "Ethical Hacker Roadmap 2026 - Penetration Testing & OSCP",
+    "ogDescription": "Hack systems legally and get paid for it. Follow our $118k Ethical Hacker roadmap covering pen testing and bug bounties."
+  },
+  "hero": {
+    "title": "Ethical Hacker Roadmap 2026",
+    "shortDescription": "Get paid to break into systems. Ethical hackers find vulnerabilities before the bad guys do. It's one of the most exciting, intellectually challenging, and well-compensated specializations in tech.",
+    "averageSalary": "$118,000",
+    "growthRate": "+28%",
+    "learningDuration": "8 Months",
+    "difficultyLevel": "Hard",
+    "hiringDemand": "High"
+  },
+  "overview": {
+    "whatTheyDo": "Ethical Hackers (also called Penetration Testers or Red Teamers) simulate cyberattacks against an organization's systems with explicit permission. They identify vulnerabilities in networks, web apps, and systems, then report findings with remediation recommendations.",
+    "industriesHiring": ["Cybersecurity Consulting Firms", "Financial Services", "Government & Defense", "Technology Companies", "Healthcare"],
+    "responsibilities": [
+      "Planning and executing penetration tests on network, web, and mobile targets.",
+      "Exploiting vulnerabilities using tools like Metasploit, Burp Suite, and custom scripts.",
+      "Writing comprehensive technical and executive-level penetration test reports.",
+      "Conducting red team exercises simulating advanced persistent threats (APT).",
+      "Participating in bug bounty programs (HackerOne, Bugcrowd)."
+    ]
+  },
+  "skillsTimeline": {
+    "beginner": ["Networking Fundamentals (TCP/IP, DNS)", "Linux (Kali Linux)", "Python/Bash Scripting", "Web Basics (HTTP, Cookies, Sessions)", "TryHackMe Beginner Rooms"],
+    "intermediate": ["Web Application Hacking (OWASP Top 10)", "Nmap, Metasploit, Burp Suite", "Active Directory Attacks", "Buffer Overflow Basics", "HackTheBox Challenges"],
+    "advanced": ["Advanced Exploitation (Custom Payloads, AV Evasion)", "Malware Development (for Red Team)", "Physical Penetration Testing", "Social Engineering Campaigns", "OSCP Certification"]
+  },
+  "learningPath": [
+    { "month": "Month 1: Hacking Mindset & Foundations", "description": "Understand the attacker mindset. Set up Kali Linux. Master networking (Wireshark, Nmap), Linux command line, and basic Python scripting for automation." },
+    { "month": "Month 2: TryHackMe — Guided Learning", "description": "Complete TryHackMe's Jr Penetration Tester learning path. Get hands-on experience with OWASP vulnerabilities, Active Directory basics, and Metasploit." },
+    { "month": "Month 3: Web Application Hacking", "description": "Master the OWASP Top 10: SQL Injection, XSS, CSRF, SSRF, IDOR, and more. Use Burp Suite Pro for manual web application testing on DVWA and PortSwigger Web Security Academy." },
+    { "month": "Month 4: Network Penetration Testing", "description": "Perform network enumeration (Nmap, Netdiscover). Exploit network services (FTP, SSH, SMB). Learn ARP spoofing, MITM attacks, and password cracking (Hashcat, John)." },
+    { "month": "Month 5: Active Directory Attacks", "description": "Learn Windows Active Directory fundamentals. Practice attacks: Kerberoasting, Pass-the-Hash, DCSync, BloodHound for AD enumeration. Use ProLabs on HackTheBox." },
+    { "month": "Month 6: Exploitation & Post-Exploitation", "description": "Learn manual exploitation (buffer overflows, custom shellcode). Practice post-exploitation: privilege escalation, lateral movement, persistence, and data exfiltration." },
+    { "month": "Month 7: Bug Bounty & Report Writing", "description": "Submit your first bug bounty reports on HackerOne or Bugcrowd. Learn professional penetration test report writing (executive summary + technical findings)." },
+    { "month": "Month 8: OSCP Preparation", "description": "Take the PWK (Penetration Testing with Kali Linux) course from Offensive Security. Practice on the OSCP exam lab. The OSCP 24-hour exam is your credential milestone." }
+  ],
+  "toolsAndTech": ["Kali Linux", "Burp Suite Pro", "Nmap", "Metasploit Framework", "Wireshark", "Hashcat", "BloodHound", "Mimikatz", "Cobalt Strike (Red Team)", "Python"],
+  "projects": {
+    "beginner": ["Complete 20 TryHackMe Rooms (Beginner Path)", "Build a Home Hacking Lab with Kali + Metasploitable", "Solve 5 PortSwigger Web Security Academy Labs"],
+    "intermediate": ["Complete 5 HackTheBox Machines and Write Walkthroughs", "Find and Report a Bug Bounty on HackerOne (P4/P5)", "Build a Phishing Page with GoPhish for Social Engineering Lab"],
+    "advanced": ["Complete the OSCP Lab and Pass the Exam", "Red Team Engagement Simulation (Full Attack Chain)", "Discover and Responsibly Disclose a CVE (Bug in Real Software)"]
+  },
+  "certifications": [
+    "CompTIA Security+ — Best starting point",
+    "eJPT (eLearnSecurity Junior Penetration Tester) — Great entry cert",
+    "OSCP (Offensive Security Certified Professional) — Gold standard",
+    "CEH (Certified Ethical Hacker) — Widely recognized by HR",
+    "PNPT (Practical Network Penetration Tester) — Beginner-friendly practical"
+  ],
+  "salaryInsights": [
+    { "experience": "Junior Pen Tester (0-1 yr)", "salary": "$65,000 - $85,000" },
+    { "experience": "Mid-Level (2-4 yrs)", "salary": "$100,000 - $130,000" },
+    { "experience": "Senior (5-8 yrs)", "salary": "$140,000 - $175,000" },
+    { "experience": "Red Team Lead / Principal (8+ yrs)", "salary": "$200,000+" }
+  ],
+  "interviewPrep": {
+    "topQuestions": [
+      "Walk me through a penetration test methodology (phases).",
+      "What is the difference between a vulnerability scan and a penetration test?",
+      "Explain how SQL injection works and how you would exploit it.",
+      "What is Kerberoasting in Active Directory?",
+      "How do you maintain stealth during a red team engagement?"
+    ],
+    "commonMistakes": [
+      "Testing systems without explicit written authorization (this is illegal).",
+      "Not understanding the networking fundamentals behind the attacks.",
+      "Being able to run tools but not explain how the exploits work.",
+      "No practical CTF/HackTheBox experience — tool knowledge without application is not enough."
+    ],
+    "resumeTips": {
+      "sections": ["Certifications (OSCP first)", "Experience", "Skills & Tools", "CTF Achievements", "Education"],
+      "keywords": ["Penetration Testing", "OSCP", "Kali Linux", "Metasploit", "Burp Suite", "Red Team", "Web Application Testing", "OWASP"],
+      "atsOptimization": "Lead with certifications (OSCP is a massive differentiator). Include HackTheBox / TryHackMe rank. Link to CTF writeups on a blog or GitHub."
+    }
+  },
+  "jobMarket": {
+    "futureDemand": "Demand for penetration testers and red teamers is growing rapidly as mandatory security assessments become standard practice in regulated industries.",
+    "remoteOpportunities": "High. Penetration testing consulting is frequently remote. Many security firms hire globally for both internal and consultant roles."
+  },
+  "faq": [
+    { "q": "Is ethical hacking legal?", "a": "Only with explicit written authorization from the system owner. Never test systems without permission — this is a federal crime in most countries." },
+    { "q": "What is the OSCP and why is it important?", "a": "The OSCP (Offensive Security Certified Professional) is the most respected practical penetration testing certification. It's a 24-hour hands-on exam — passing it proves real skill." },
+    { "q": "Can I make money from bug bounties?", "a": "Yes. Top bug bounty hunters make $500k+ per year. Beginners can make $200-$2,000 per valid vulnerability. Most start part-time and go full-time after success." },
+    { "q": "Do I need to know programming to be an ethical hacker?", "a": "Yes. Python and Bash scripting are essential for automation. Reading and modifying exploit code requires understanding of C/C++ at a basic level." },
+    { "q": "What is the difference between a red team and a pen tester?", "a": "A penetration tester tests specific systems/apps in a scoped engagement. A red teamer simulates a full APT (Advanced Persistent Threat) attack campaign against an entire organization with a much larger scope." }
+  ]
+}

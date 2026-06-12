@@ -1,0 +1,34 @@
+{
+  "seo": {
+    "title": "Top 50 Node.js Interview Questions 2026 | Backend Engineer Prep",
+    "description": "Master the top 50 Node.js interview questions for 2026. Covers event loop, streams, cluster, Express.js, async patterns, and performance optimization.",
+    "slug": "node-js",
+    "keywords": "node.js interview questions 2026, nodejs interview, express.js interview questions, javascript backend interview, node event loop interview"
+  },
+  "hero": { "title": "Node.js Interview Questions 2026", "description": "Complete Node.js interview preparation for backend engineers. Covers the runtime internals, async patterns, REST API design, and production performance optimization.", "count": 50, "topic": "Backend", "difficulty": "Intermediate to Advanced" },
+  "categories": [
+    { "name": "Node.js Fundamentals", "questions": [
+      { "q": "What is Node.js and what makes it unique?", "a": "Node.js is a JavaScript runtime built on Chrome's V8 engine. It uses an event-driven, non-blocking I/O model, making it efficient for I/O-heavy operations (web servers, APIs). Unlike traditional multi-threaded servers, Node handles concurrent requests with a single thread using the event loop." },
+      { "q": "Explain the Node.js Event Loop.", "a": "The event loop processes async operations in phases: timers (setTimeout/setInterval), I/O callbacks, idle/prepare, poll (waiting for I/O), check (setImmediate), and close callbacks. process.nextTick() runs before the next event loop iteration. Promises (microtasks) run before the next event loop phase." },
+      { "q": "What is the difference between process.nextTick() and setImmediate()?", "a": "process.nextTick() runs BEFORE the next event loop phase (highest priority). setImmediate() runs in the check phase, AFTER I/O callbacks. If you need to run something before any I/O, use nextTick. Be careful with nextTick — excessive recursive use can starve the event loop." },
+      { "q": "What are Node.js Streams?", "a": "Streams process data in chunks rather than loading everything into memory. Types: Readable (fs.createReadStream), Writable (fs.createWriteStream), Duplex (both), Transform (modifying data as it passes). The pipe() method chains streams. Essential for handling large files efficiently without memory overflow." },
+      { "q": "How does Node.js handle CPU-intensive tasks?", "a": "Node.js is single-threaded, so CPU-intensive tasks block the event loop. Solutions: Worker Threads (Node 10.5+) for parallel CPU tasks, Child Processes (fork, spawn, exec), Cluster module to use multiple CPU cores, or offloading to a separate microservice. Never run heavy computation on the main thread." }
+    ]},
+    { "name": "Express.js & APIs", "questions": [
+      { "q": "What is middleware in Express.js?", "a": "Middleware functions have access to req, res, and next(). They execute in order and can modify request/response, end the request cycle, or call next() to pass control. Types: Application-level (app.use), Router-level, Error-handling (4 args), and Third-party (body-parser, cors, morgan)." },
+      { "q": "How do you handle errors in Express.js?", "a": "Pass errors to next(err) from async middleware. Define a global error handler with 4 parameters: (err, req, res, next). For async route handlers, use wrapper functions or express-async-errors package to catch unhandled promise rejections automatically." },
+      { "q": "What is the difference between app.use() and app.get()?", "a": "app.use() mounts middleware for ALL HTTP methods and matches any path that STARTS WITH the specified path. app.get() only matches GET requests with the EXACT path specified. Middleware registered with app.use() runs for every matching request before route handlers." }
+    ]},
+    { "name": "Performance & Security", "questions": [
+      { "q": "How do you prevent memory leaks in Node.js?", "a": "Common causes: event listeners not removed, global variables accumulating data, closed-over variables in callbacks, caches without TTL. Solutions: use WeakMap/WeakRef for caches, always remove event listeners, use heap profiling (--inspect + Chrome DevTools), and monitor process.memoryUsage()." },
+      { "q": "What is CORS and how do you handle it in Node.js?", "a": "Cross-Origin Resource Sharing prevents browsers from making requests to a different origin than the page. In Express, use the cors npm package: app.use(cors({ origin: 'https://yourapp.com' })). For APIs, configure allowed origins, methods, and headers carefully. Wildcard '*' is dangerous for authenticated APIs." }
+    ]}
+  ],
+  "topTips": [
+    "The event loop is the most important concept — draw it on paper until you can explain it clearly.",
+    "Know the difference between synchronous and asynchronous file operations and when to use each.",
+    "Practice rate limiting, input validation (Joi/Zod), and JWT auth — these come up in every senior Node.js interview.",
+    "Know how to cluster Node.js applications to use multiple CPU cores.",
+    "Be prepared to write an Express middleware from scratch in an interview."
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "seo": { "title": "Frontend Developer Resume Examples & ATS Templates 2026", "description": "Write a perfect Frontend Developer resume that passes ATS in 2026. Includes top React/TypeScript keywords, common mistakes, and a complete resume example.", "slug": "frontend-developer", "keywords": "frontend developer resume, react developer resume, UI developer resume template, frontend engineer ATS resume 2026", "ogTitle": "Frontend Developer Resume Examples 2026", "ogDescription": "The exact resume template that lands React developer interviews at top companies." },
+  "hero": { "title": "Frontend Developer Resume Examples", "description": "Your frontend portfolio is built — now make your resume match it. These templates and tips will ensure you pass the ATS and land the interview." },
+  "score": { "atsScore": 97, "readability": "Excellent", "keywordMatch": "High" },
+  "keywords": ["React.js", "TypeScript", "Next.js", "Tailwind CSS", "Redux", "REST APIs", "Responsive Design", "Performance Optimization", "Core Web Vitals", "Jest", "Webpack", "Figma"],
+  "mistakes": [
+    "Listing only technologies without showing outcomes (e.g., 'Used React' vs 'Built a React dashboard used by 50k daily active users').",
+    "No links to deployed projects or GitHub — for frontend roles, this is mandatory.",
+    "Listing every CSS framework you've touched instead of highlighting depth in 2-3 core tools."
+  ],
+  "tips": [
+    "Always include links to live demos and GitHub repos for every project.",
+    "Quantify performance improvements: 'Improved Lighthouse score from 62 to 96' is extremely impressive.",
+    "Use keywords from the specific job description in your skills section to maximize ATS match."
+  ],
+  "exampleResume": {
+    "name": "Marcus Johnson",
+    "title": "Senior Frontend Developer",
+    "summary": "Frontend engineer with 5+ years of experience building high-performance React and Next.js applications. Reduced Core Web Vitals LCP by 58% at scale. Passionate about accessibility, design systems, and developer experience.",
+    "experience": [
+      { "company": "ShopFast Inc.", "role": "Senior Frontend Engineer", "date": "2022 - Present", "bullets": ["Built the core product catalog UI with React + TypeScript, supporting 2M monthly users across 12 countries.", "Led Core Web Vitals optimization initiative, improving LCP by 58% and CLS by 82%, increasing organic search traffic by 34%.", "Designed and implemented a Figma-to-code Design System of 60+ components, reducing new feature development time by 40%."] },
+      { "company": "PixelAgency", "role": "Frontend Developer", "date": "2020 - 2022", "bullets": ["Developed 20+ responsive landing pages with Next.js and Tailwind CSS for SaaS clients, averaging 98/100 Lighthouse scores.", "Integrated Stripe payments and Google Analytics tracking, contributing to $1.2M in attributable revenue."] }
+    ],
+    "education": [{ "degree": "B.S. Computer Science", "school": "University of Texas", "date": "2016 - 2020" }],
+    "skills": "React.js, TypeScript, Next.js, Tailwind CSS, Redux Toolkit, React Query, GraphQL, Jest, Cypress, Webpack, Vite, Figma, AWS S3 + CloudFront"
+  }
+}

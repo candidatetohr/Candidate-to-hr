@@ -1,0 +1,62 @@
+.resume-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.res-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  border-radius: 12px;
+  padding: 24px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.res-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(16, 185, 129, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2), 0 0 15px rgba(16, 185, 129, 0.1);
+}
+
+.res-card-header {
+  margin-bottom: 16px;
+}
+
+.res-role {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: #10b981;
+  font-weight: 600;
+  background: rgba(16, 185, 129, 0.1);
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.res-card h3 {
+  margin: 0 0 12px 0;
+  font-size: 1.25rem;
+  color: var(--text-primary);
+}
+
+.res-card p {
+  margin: 0 0 24px 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  flex: 1;
+}
+
+.res-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #10b981;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-default);
+}

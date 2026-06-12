@@ -1,0 +1,34 @@
+{
+  "seo": {
+    "title": "Full Stack Developer Salary in USA 2026 | MERN Stack Pay Guide",
+    "description": "Full Stack Developer salary in the USA for 2026. Breakdown for MERN/PERN stack developers by experience, city, and company type. FAANG vs startup comparison.",
+    "slug": "full-stack-developer-us",
+    "keywords": "full stack developer salary usa 2026, MERN stack developer salary, react node salary usa, web developer salary usa 2026",
+    "ogTitle": "Full Stack Developer Salary in USA (2026)",
+    "ogDescription": "What full stack developers earn in America. Complete 2026 salary guide by experience and stack."
+  },
+  "hero": { "title": "Full Stack Developer Salary in USA (2026)", "description": "Full Stack Developers are among the most versatile and consistently hired engineers in America. The ability to own complete features — from database to UI — makes them especially valuable to startups and growing teams.", "averageSalary": "$140,000 / year" },
+  "experience": [
+    { "level": "Junior Full Stack (0-2 Years)", "salary": "$90,000 - $120,000", "notes": "React + Node.js + PostgreSQL proficiency with 2-3 deployed full-stack projects is the entry threshold." },
+    { "level": "Mid-Level (2-5 Years)", "salary": "$125,000 - $165,000", "notes": "Engineers who own entire features, understand scalability, and can work on both frontend and backend independently." },
+    { "level": "Senior Full Stack (5-8 Years)", "salary": "$170,000 - $220,000", "notes": "Senior developers who lead technical decisions, mentor others, and contribute to system architecture." },
+    { "level": "Staff / Lead Full Stack (8+ Years)", "salary": "$230,000 - $380,000+ TC", "notes": "Technical leads who drive engineering culture and architecture at scaling companies." }
+  ],
+  "byCity": [
+    { "city": "San Francisco Bay Area", "salary": "$185,000", "premium": "+32%" },
+    { "city": "New York City", "salary": "$160,000", "premium": "+14%" },
+    { "city": "Seattle", "salary": "$160,000", "premium": "+14%" },
+    { "city": "Remote (US)", "salary": "$148,000", "premium": "+6%" },
+    { "city": "Austin, TX", "salary": "$135,000", "premium": "-4%" },
+    { "city": "Denver / Portland", "salary": "$128,000", "premium": "-9%" }
+  ],
+  "topCompanies": [
+    { "company": "Stripe", "salary": "$210,000 - $400,000 TC", "type": "FinTech" },
+    { "company": "Shopify", "salary": "$190,000 - $360,000 TC", "type": "E-commerce" },
+    { "company": "GitHub / GitLab", "salary": "$180,000 - $350,000 TC", "type": "Dev Tools" },
+    { "company": "Series A Startups", "salary": "$140,000 - $220,000 + equity", "type": "Startup" },
+    { "company": "Consulting Firms", "salary": "$120,000 - $180,000", "type": "Consulting" },
+    { "company": "Remote-First SaaS", "salary": "$130,000 - $200,000", "type": "SaaS" }
+  ],
+  "futureOutlook": "Full stack developer salaries will grow moderately (10-15%) through 2028. The biggest salary growth will come from specialization — full stack developers who add AI/ML integration skills or become proficient in infrastructure (DevOps) will see 20-30% premiums over generalists."
+}

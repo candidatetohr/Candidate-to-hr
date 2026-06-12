@@ -1,0 +1,92 @@
+{
+  "seo": {
+    "title": "Product Manager Roadmap 2026 - Career Guide & Skills | Candidatetohr",
+    "description": "Complete Product Manager roadmap for 2026. Learn product strategy, user research, prioritization, and data analysis. Salary insights and PM interview prep.",
+    "slug": "product-manager",
+    "keywords": "product manager roadmap 2026, how to become product manager, PM career path, product management skills, product manager interview",
+    "ogTitle": "Product Manager Roadmap 2026 - From Zero to PM",
+    "ogDescription": "Lead products that millions use. Follow our $130k Product Manager roadmap with strategy, analytics, and execution skills."
+  },
+  "hero": {
+    "title": "Product Manager Roadmap 2026",
+    "shortDescription": "Be the CEO of your product. Product Managers define what gets built, why, and for whom — driving business impact through cross-functional leadership and user-centric thinking.",
+    "averageSalary": "$130,000",
+    "growthRate": "+24%",
+    "learningDuration": "6 Months",
+    "difficultyLevel": "Medium",
+    "hiringDemand": "High"
+  },
+  "overview": {
+    "whatTheyDo": "Product Managers define the vision, strategy, and roadmap for a product. They work at the intersection of technology, business, and user experience, leading cross-functional teams of engineers, designers, and marketers to build successful products.",
+    "industriesHiring": ["SaaS & Tech", "E-commerce", "FinTech", "Healthcare Tech", "Consumer Apps"],
+    "responsibilities": [
+      "Defining product vision, strategy, and OKRs aligned with business goals.",
+      "Conducting user research, interviews, and usability testing.",
+      "Prioritizing features using frameworks (RICE, MoSCoW, ICE).",
+      "Writing detailed PRDs (Product Requirements Documents) and user stories.",
+      "Analyzing product metrics (DAU, retention, conversion) and making data-driven decisions."
+    ]
+  },
+  "skillsTimeline": {
+    "beginner": ["Product Thinking Fundamentals", "Basic SQL for Analytics", "User Story Writing", "Competitive Research", "Wireframing (Figma basics)"],
+    "intermediate": ["Product Strategy & Roadmapping", "A/B Testing & Experimentation", "SQL for Product Analytics", "Agile & Scrum Mastery", "Stakeholder Communication"],
+    "advanced": ["Go-to-Market Strategy", "Pricing Strategy", "P&L Awareness", "Technical Depth (APIs, System Design basics)", "OKR Setting & Execution"]
+  },
+  "learningPath": [
+    { "month": "Month 1: Product Thinking", "description": "Read 'Inspired' by Marty Cagan and 'The Lean Startup.' Learn the product discovery process, customer empathy, and how to define a problem worth solving." },
+    { "month": "Month 2: Research & Prioritization", "description": "Learn user interview techniques and Jobs-to-be-Done (JTBD) framework. Practice writing user stories and prioritizing features with RICE scoring." },
+    { "month": "Month 3: Metrics & SQL", "description": "Learn the North Star metric framework. Master SQL for self-serve analytics: track DAU, WAU, MAU, retention curves, and funnel conversion." },
+    { "month": "Month 4: Agile & Cross-functional Execution", "description": "Learn Scrum rituals: sprint planning, standups, retros, and backlog grooming. Practice writing detailed PRDs and working with engineering teams." },
+    { "month": "Month 5: Strategy & GTM", "description": "Study competitive analysis, product positioning, and pricing strategy. Learn how to build a product roadmap that aligns with company OKRs and presents clearly to executives." },
+    { "month": "Month 6: PM Interview Prep", "description": "Practice the 8 types of PM interview questions: product design, metrics, estimation, behavioral, strategy, prioritization, technical, and root cause analysis." }
+  ],
+  "toolsAndTech": ["Jira", "Confluence", "Figma", "Mixpanel / Amplitude", "SQL", "Notion", "Miro", "Google Analytics", "A/B Testing Tools (Optimizely)"],
+  "projects": {
+    "beginner": ["Write a PRD for a Feature You Wish Existed (App Teardown)", "Conduct 5 User Interviews and Synthesize Insights", "Map Out a Competitor's Full User Journey"],
+    "intermediate": ["Build a Product Roadmap for a Fake SaaS Product", "Design and Present a Go-to-Market Strategy", "Create a Full Metrics Dashboard with SQL + Tableau"],
+    "advanced": ["End-to-end Product Case Study: Discovery to Launch (Portfolio piece)", "Build and Track OKRs for a Product from Scratch", "Lead a Simulated Sprint with Engineers and Designers"]
+  },
+  "certifications": [
+    "Product School - Product Management Certificate",
+    "Pragmatic Institute - Foundations Certification",
+    "Certified Scrum Product Owner (CSPO)",
+    "Reforge Programs - PM Growth & Strategy"
+  ],
+  "salaryInsights": [
+    { "experience": "APM / Entry (0-1 yr)", "salary": "$85,000 - $110,000" },
+    { "experience": "PM (2-4 yrs)", "salary": "$120,000 - $155,000" },
+    { "experience": "Senior PM (5-8 yrs)", "salary": "$160,000 - $195,000" },
+    { "experience": "Director / VP Product (8+ yrs)", "salary": "$220,000+" }
+  ],
+  "interviewPrep": {
+    "topQuestions": [
+      "Design an alarm clock app for blind users.",
+      "How would you improve YouTube's recommendation algorithm?",
+      "Estimate the number of Uber rides per day in New York City.",
+      "Your key metric (DAU) dropped 20% overnight. Walk me through your investigation.",
+      "Describe a product you've built or managed and how you measured success."
+    ],
+    "commonMistakes": [
+      "Jumping to solutions before deeply understanding the problem.",
+      "Giving answers without structure — always use a framework.",
+      "Not knowing basic metrics and how they relate to business outcomes.",
+      "Neglecting the technical side — PMs who understand engineering earn more trust."
+    ],
+    "resumeTips": {
+      "sections": ["Experience", "Products Shipped", "Education", "Skills"],
+      "keywords": ["Product Roadmap", "OKRs", "A/B Testing", "User Research", "Agile", "PRD", "Retention", "Conversion Rate"],
+      "atsOptimization": "Quantify everything: 'Launched feature X that increased DAU by 18%.' Lead with business impact, not tasks."
+    }
+  },
+  "jobMarket": {
+    "futureDemand": "PM roles are growing with SaaS industry expansion. Senior PMs with technical depth and data fluency command the highest salaries.",
+    "remoteOpportunities": "High. PM roles transitioned heavily to remote post-2020. Many US companies hire international PMs for associate-level positions."
+  },
+  "faq": [
+    { "q": "Do you need to be technical to be a PM?", "a": "You don't need to code, but you must understand how software is built. Learn APIs, databases, and basic system design to earn engineers' respect." },
+    { "q": "What is an APM program?", "a": "Associate Product Manager programs (Google APM, Facebook RPM) are rotational programs for new PMs. They're highly competitive but launch careers at top companies." },
+    { "q": "MBA or not for PM?", "a": "An MBA can help break into PM at large companies. But it's increasingly not required. Strong product sense, SQL skills, and a portfolio matter more at startups." },
+    { "q": "What is the best PM framework to learn?", "a": "CIRCLES method for product design questions, RICE for prioritization, and the North Star framework for metrics. These are interview staples." },
+    { "q": "How do I transition from engineering to PM?", "a": "Your engineering background is an advantage. Volunteer to write specs, work with design, and track metrics in your current role. Then apply for APM or PM roles at your company first." }
+  ]
+}

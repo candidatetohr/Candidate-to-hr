@@ -1,0 +1,91 @@
+{
+  "seo": {
+    "title": "Business Analyst Roadmap 2026 - BA Career Guide & Skills | Candidatetohr",
+    "description": "Complete Business Analyst roadmap for 2026. Learn requirements gathering, process mapping, SQL analytics, and Agile BA practices. Salary insights and CBAP prep.",
+    "slug": "business-analyst",
+    "keywords": "business analyst roadmap 2026, how to become business analyst, BA career path, CBAP certification, business analysis skills",
+    "ogTitle": "Business Analyst Roadmap 2026 - Requirements to Delivery",
+    "ogDescription": "Bridge IT and business. Follow our $88k Business Analyst roadmap covering requirements, Agile, and data analysis."
+  },
+  "hero": {
+    "title": "Business Analyst Roadmap 2026",
+    "shortDescription": "Be the translator between business problems and technical solutions. Business Analysts are critical to project success, ensuring technology investments deliver real business value.",
+    "averageSalary": "$88,000",
+    "growthRate": "+14%",
+    "learningDuration": "4 Months",
+    "difficultyLevel": "Easy",
+    "hiringDemand": "High"
+  },
+  "overview": {
+    "whatTheyDo": "Business Analysts (BAs) analyze business processes, gather requirements, and facilitate the development of software solutions that solve business problems. They work closely with both stakeholders and development teams to ensure solutions meet business needs.",
+    "industriesHiring": ["Consulting & Advisory", "Banking & Finance", "Healthcare IT", "Insurance", "Retail & E-commerce"],
+    "responsibilities": [
+      "Eliciting and documenting business requirements through interviews and workshops.",
+      "Creating BRDs (Business Requirement Documents), FRDs, and user stories.",
+      "Mapping and analyzing As-Is and To-Be business processes (BPMN).",
+      "Facilitating meetings between stakeholders and development teams.",
+      "Testing software against business requirements (UAT coordination)."
+    ]
+  },
+  "skillsTimeline": {
+    "beginner": ["Requirements Elicitation Techniques", "Use Cases & User Stories", "Business Process Modeling (BPMN)", "Excel & Data Analysis", "Stakeholder Communication"],
+    "intermediate": ["Agile BA Practices (Scrum / SAFe)", "SQL for Business Analytics", "Wireframing (Balsamiq / Figma)", "Gap Analysis & Root Cause Analysis", "JIRA / Confluence"],
+    "advanced": ["Enterprise Architecture Concepts", "Data Modeling & ERDs", "Financial Analysis & ROI Calculation", "CBAP Exam Preparation", "Change Management"]
+  },
+  "learningPath": [
+    { "month": "Month 1: BA Foundations", "description": "Learn the BA role in software projects. Study requirements elicitation (interviews, workshops, surveys, JAD sessions). Create use cases and user stories. Master Microsoft Visio or Lucidchart for process flows." },
+    { "month": "Month 2: Documentation & Process Modeling", "description": "Write professional BRDs (Business Requirement Documents) and FRDs (Functional Requirements). Learn BPMN 2.0 for process modeling. Practice As-Is / To-Be analysis." },
+    { "month": "Month 3: Agile BA & Tools", "description": "Learn how BAs function in Scrum/Kanban teams. Write epics, user stories, and acceptance criteria. Master JIRA for backlog management and Confluence for documentation." },
+    { "month": "Month 4: SQL, Data & Stakeholder Management", "description": "Learn SQL for data validation and business reporting. Practice stakeholder mapping and management strategies. Coordinate User Acceptance Testing (UAT). Prep for ECBA or CCBA certification." }
+  ],
+  "toolsAndTech": ["Microsoft Visio / Lucidchart", "JIRA & Confluence", "SQL (for self-serve analytics)", "Excel / Google Sheets", "Balsamiq (wireframing)", "Microsoft Office Suite", "Miro (workshops)"],
+  "projects": {
+    "beginner": ["Document Requirements for a Fictional E-commerce App", "Create a BPMN Process Diagram for an Online Order Fulfillment System", "Write 10 User Stories with Acceptance Criteria for a Ride-sharing App"],
+    "intermediate": ["Gap Analysis Report: Current vs Desired State for a Business Process", "Full BRD + FRD for a Healthcare Patient Portal", "Stakeholder Analysis Matrix for a Digital Transformation Project"],
+    "advanced": ["End-to-End Business Analysis Project: Discovery to UAT Sign-off", "Present an ROI Analysis for a Technology Investment", "Lead a Requirements Workshop (Simulated) and Document Outcomes"]
+  },
+  "certifications": [
+    "ECBA (Entry Certificate in Business Analysis) — Best entry-level",
+    "CCBA (Certificate of Capability in Business Analysis)",
+    "CBAP (Certified Business Analysis Professional) — Industry gold standard",
+    "PMI-PBA (Professional in Business Analysis)",
+    "Certified Scrum Product Owner (CSPO) — For Agile BA roles"
+  ],
+  "salaryInsights": [
+    { "experience": "Junior BA (0-1 yr)", "salary": "$55,000 - $72,000" },
+    { "experience": "Mid-Level BA (2-4 yrs)", "salary": "$80,000 - $100,000" },
+    { "experience": "Senior BA (5-8 yrs)", "salary": "$105,000 - $125,000" },
+    { "experience": "Lead BA / BA Manager (8+ yrs)", "salary": "$135,000+" }
+  ],
+  "interviewPrep": {
+    "topQuestions": [
+      "How do you handle conflicting requirements from different stakeholders?",
+      "Walk me through how you would perform a gap analysis.",
+      "What is the difference between functional and non-functional requirements?",
+      "Describe your experience with Agile/Scrum as a Business Analyst.",
+      "How do you ensure that the delivered solution matches the original business requirements?"
+    ],
+    "commonMistakes": [
+      "Writing requirements that are ambiguous or untestable.",
+      "Not involving stakeholders early and often enough.",
+      "Focusing only on features instead of the underlying business problem.",
+      "Neglecting non-functional requirements (performance, security, scalability)."
+    ],
+    "resumeTips": {
+      "sections": ["Experience", "Certifications", "Skills & Tools", "Education", "Projects"],
+      "keywords": ["Requirements Gathering", "BRD", "User Stories", "Agile", "Scrum", "SQL", "Stakeholder Management", "BPMN", "UAT"],
+      "atsOptimization": "Quantify your impact: 'Gathered requirements for a $2M digital transformation project.' Mention specific industries and domain knowledge."
+    }
+  },
+  "jobMarket": {
+    "futureDemand": "BA roles are growing as digital transformation accelerates across all industries. BAs with both business domain knowledge AND technical fluency (SQL, APIs) earn the highest salaries.",
+    "remoteOpportunities": "High. Business analysis can be done remotely with modern collaboration tools. Consulting firm BAs often have flexible work arrangements."
+  },
+  "faq": [
+    { "q": "Is Business Analyst a good career switch from a non-tech background?", "a": "Excellent. Former accountants, operations managers, and project coordinators transition into BA roles successfully. Domain knowledge is often more valuable than coding skills." },
+    { "q": "Do Business Analysts need to know how to code?", "a": "Not required, but SQL is strongly recommended. BAs who can query databases independently are far more valuable and better-paid." },
+    { "q": "What is the difference between a Business Analyst and a Project Manager?", "a": "BAs focus on WHAT to build (requirements). PMs focus on HOW and WHEN (timelines, resources, risks). Many projects require both." },
+    { "q": "Is CBAP certification worth it?", "a": "Yes, for senior BA roles. CBAP requires 7,500 hours of BA experience. Start with ECBA or CCBA as earlier milestones." },
+    { "q": "How important is industry domain knowledge for a BA?", "a": "Very important. Financial services BAs earn premiums for regulatory knowledge (Basel III, GDPR). Healthcare BAs benefit from HL7/FHIR knowledge." }
+  ]
+}

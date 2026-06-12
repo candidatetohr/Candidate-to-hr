@@ -1,0 +1,25 @@
+{
+  "seo": {
+    "title": "Top 100+ React Interview Questions & Answers (2026) | Candidatetohr",
+    "description": "Master your next technical interview with our comprehensive list of React interview questions.",
+    "slug": "react",
+    "keywords": "react interview questions, frontend interview",
+    "ogTitle": "React Interview Questions & Answers",
+    "ogDescription": "Practice the top React questions asked by top tech companies."
+  },
+  "hero": {
+    "title": "React.js Interview Questions",
+    "description": "Comprehensive list of React interview questions. (Full list is being automatically generated...)"
+  },
+  "questions": {
+    "beginner": [
+      {
+        "id": "react-b-1",
+        "q": "What is the Virtual DOM?",
+        "a": "The Virtual DOM is a lightweight copy of the actual DOM. React uses it to optimize rendering by batching updates and calculating the minimal set of changes needed."
+      }
+    ],
+    "intermediate": [],
+    "advanced": []
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "seo": {
+    "title": "Top 50 JavaScript Interview Questions 2026 | Answers & Examples",
+    "description": "Master the top 50 JavaScript interview questions for 2026. Covers closures, the event loop, ES6+, async/await, prototypes, and DOM manipulation with detailed answers.",
+    "slug": "javascript",
+    "keywords": "javascript interview questions 2026, JS interview questions and answers, closures javascript, event loop interview, async await interview"
+  },
+  "hero": {
+    "title": "JavaScript Interview Questions 2026",
+    "description": "The definitive guide to JavaScript interview questions. Covers everything from core fundamentals to advanced patterns used in modern React and Node.js applications.",
+    "count": 50,
+    "topic": "Programming",
+    "difficulty": "Beginner to Advanced"
+  },
+  "categories": [
+    {
+      "name": "Core Fundamentals",
+      "questions": [
+        { "q": "What is the difference between var, let, and const?", "a": "var is function-scoped and hoisted. let and const are block-scoped. const cannot be reassigned (though its object properties can be mutated). Prefer const by default, let when reassignment is needed, and avoid var." },
+        { "q": "Explain closures in JavaScript.", "a": "A closure is a function that retains access to its outer scope even after the outer function has returned. This happens because functions in JavaScript keep a reference to the lexical environment in which they were created. Example: a counter factory function returns a function that increments a private count variable." },
+        { "q": "What is hoisting?", "a": "Hoisting is JavaScript's behavior of moving variable and function declarations to the top of their scope before execution. var declarations are hoisted and initialized as undefined. let/const are hoisted but not initialized (temporal dead zone). Function declarations are fully hoisted." },
+        { "q": "What is the difference between == and ===?", "a": "== performs type coercion (e.g., '5' == 5 is true). === checks both value AND type without coercion ('5' === 5 is false). Always use === to avoid unexpected bugs." },
+        { "q": "What is event bubbling and event capturing?", "a": "Event bubbling: events propagate from the target element UP to the document root. Event capturing: events propagate DOWN from the root to the target. addEventListener's third argument (useCapture: true) switches to capturing phase." }
+      ]
+    },
+    {
+      "name": "Async JavaScript",
+      "questions": [
+        { "q": "Explain the JavaScript Event Loop.", "a": "JavaScript is single-threaded. The event loop continuously checks the call stack. When the stack is empty, it takes the first callback from the callback queue (macrotask queue) and pushes it onto the stack. Promises (microtasks) are processed before macrotasks. Order: call stack → microtask queue → macrotask queue." },
+        { "q": "What is the difference between a Promise and async/await?", "a": "async/await is syntactic sugar over Promises. Both handle async operations. async/await produces more readable code that looks synchronous. Error handling uses try/catch with async/await vs .catch() with Promises. Internally, both use the same Promise mechanism." },
+        { "q": "What is Promise.all() and when should you use it?", "a": "Promise.all() takes an array of Promises and resolves when ALL resolve, or rejects immediately if ANY rejects. Use it when you need to run multiple async operations in parallel and need all results before proceeding. Use Promise.allSettled() if you want all results regardless of rejection." },
+        { "q": "What is the difference between setTimeout and setInterval?", "a": "setTimeout executes a callback once after a specified delay. setInterval executes a callback repeatedly at a specified interval. Both are macrotasks. clearTimeout/clearInterval cancel them. Note: setTimeout(fn, 0) doesn't execute immediately — it still goes through the event loop." },
+        { "q": "What is a callback hell and how do you avoid it?", "a": "Callback hell (pyramid of doom) occurs when callbacks are nested too deeply, making code hard to read and maintain. Solutions: Named functions (instead of anonymous callbacks), Promises (.then chaining), async/await (cleanest approach)." }
+      ]
+    },
+    {
+      "name": "ES6+ Modern JavaScript",
+      "questions": [
+        { "q": "What are arrow functions and how are they different from regular functions?", "a": "Arrow functions have shorter syntax and DO NOT have their own 'this' — they inherit 'this' from the enclosing scope. They cannot be used as constructors. They don't have 'arguments' object. Best for callbacks and methods that don't need their own 'this'." },
+        { "q": "What is destructuring in JavaScript?", "a": "Destructuring extracts values from arrays or objects into variables. Array: const [a, b] = [1, 2]. Object: const {name, age} = person. Supports default values, renaming, and nested destructuring. Common in React for props and state." },
+        { "q": "What is the spread operator (...)?", "a": "Spread expands an iterable (array/object) into individual elements. Array copy: [...arr]. Merge arrays: [...a, ...b]. Object copy: {...obj}. Merge objects: {...a, ...b} (later properties override earlier). Also used for function arguments: fn(...args)." },
+        { "q": "What are JavaScript Generators?", "a": "Generator functions (function*) can pause and resume execution using the yield keyword. They return an iterator. Used for lazy evaluation, infinite sequences, and implementing async patterns. Calling next() on the iterator executes until the next yield." },
+        { "q": "What are WeakMap and WeakSet?", "a": "WeakMap and WeakSet hold weak references to their keys/values, allowing garbage collection if no other references exist. They're non-iterable. WeakMap is used for private data on objects (e.g., caching DOM element data without memory leaks)." }
+      ]
+    },
+    {
+      "name": "OOP & Prototypes",
+      "questions": [
+        { "q": "Explain prototypal inheritance in JavaScript.", "a": "Every JS object has a hidden [[Prototype]] property pointing to another object. Property lookup traverses the prototype chain until it finds the property or reaches null. Classes in ES6 are syntactic sugar over this prototype-based system. Object.create() creates an object with a specified prototype." },
+        { "q": "What is the 'this' keyword in JavaScript?", "a": "In a regular function, 'this' refers to the calling object (runtime binding). In arrow functions, 'this' is lexically bound (inherited from enclosing scope). In strict mode, 'this' is undefined in functions not called as methods. call(), apply(), and bind() explicitly set 'this'." },
+        { "q": "What is the difference between call(), apply(), and bind()?", "a": "All three set 'this' for a function. call(thisArg, arg1, arg2) invokes immediately with args listed. apply(thisArg, [args]) invokes immediately with args as array. bind(thisArg, arg1) returns a NEW function with 'this' permanently bound — useful for event handlers and callbacks." }
+      ]
+    }
+  ],
+  "topTips": [
+    "Practice coding closures and currying by hand without Google.",
+    "Draw out the event loop on paper — interviewers love when you can visualize it.",
+    "Know the difference between null, undefined, NaN, and 0 (all falsy, but different).",
+    "Practice Promise chaining and async/await error handling with try/catch.",
+    "Understand 'this' in all 4 scenarios: global, method, function, and arrow function."
+  ]
+}

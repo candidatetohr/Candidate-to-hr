@@ -1,0 +1,34 @@
+{
+  "seo": {
+    "title": "Frontend Developer Salary in India 2026 | React Developer Pay",
+    "description": "Frontend Developer salary in India 2026. See how React and TypeScript developers are paid across experience levels, cities, and top tech companies.",
+    "slug": "frontend-developer-india",
+    "keywords": "frontend developer salary india, react developer salary india, UI developer salary bangalore, web developer salary india 2026",
+    "ogTitle": "Frontend Developer Salary in India (2026)",
+    "ogDescription": "How much do React and frontend developers earn in India? Complete 2026 salary guide."
+  },
+  "hero": { "title": "Frontend Developer Salary in India (2026)", "description": "Frontend development is one of the most accessible yet highly rewarded specializations in Indian tech. Demand for React developers has surged with the explosion of SaaS startups and digital products. Here's what frontend developers earn in 2026.", "averageSalary": "₹14.0 Lakhs / year" },
+  "experience": [
+    { "level": "Fresher (0-1 Year)", "salary": "₹5,00,000 - ₹9,00,000", "notes": "Candidates with React, TypeScript, and a portfolio of deployed projects command higher fresher packages." },
+    { "level": "Mid-Level (2-4 Years)", "salary": "₹12,00,000 - ₹22,00,000", "notes": "React + TypeScript + Next.js developers with performance optimization experience are in high demand." },
+    { "level": "Senior (5-8 Years)", "salary": "₹25,00,000 - ₹40,00,000", "notes": "Senior frontend engineers who build design systems and lead UI architecture earn top packages." },
+    { "level": "Lead / Principal (9+ Years)", "salary": "₹45,00,000 - ₹80,00,000+", "notes": "Frontend architects at product companies who influence technical direction and mentor teams." }
+  ],
+  "byCity": [
+    { "city": "Bangalore", "salary": "₹16.5 Lakhs", "premium": "+18%" },
+    { "city": "Mumbai", "salary": "₹15.0 Lakhs", "premium": "+7%" },
+    { "city": "Hyderabad", "salary": "₹13.5 Lakhs", "premium": "-4%" },
+    { "city": "Pune", "salary": "₹12.8 Lakhs", "premium": "-9%" },
+    { "city": "Delhi NCR", "salary": "₹14.8 Lakhs", "premium": "+6%" },
+    { "city": "Chennai", "salary": "₹11.5 Lakhs", "premium": "-18%" }
+  ],
+  "topCompanies": [
+    { "company": "Google India", "salary": "₹40L - ₹90L", "type": "FAANG" },
+    { "company": "Razorpay", "salary": "₹22L - ₹45L", "type": "FinTech" },
+    { "company": "Swiggy / Zomato", "salary": "₹18L - ₹35L", "type": "Consumer Tech" },
+    { "company": "Atlassian India", "salary": "₹25L - ₹50L", "type": "SaaS" },
+    { "company": "Zoho", "salary": "₹10L - ₹20L", "type": "Product Company" },
+    { "company": "TCS / Wipro", "salary": "₹6L - ₹14L", "type": "IT Services" }
+  ],
+  "futureOutlook": "React and Next.js expertise will continue commanding premiums as India's SaaS ecosystem matures. Developers who combine strong UI skills with performance engineering (Core Web Vitals) and accessibility expertise will see salaries grow 20%+ by 2028."
+}

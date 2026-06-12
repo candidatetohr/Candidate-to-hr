@@ -1,0 +1,34 @@
+{
+  "seo": {
+    "title": "Data Scientist Salary in USA 2026 | FAANG vs Industry Pay",
+    "description": "Data Scientist salary in the USA for 2026. Breakdown by experience, city, company type, and specialization (ML, NLP, Computer Vision).",
+    "slug": "data-scientist-us",
+    "keywords": "data scientist salary usa 2026, data science salary FAANG, machine learning scientist salary, NLP engineer salary usa",
+    "ogTitle": "Data Scientist Salary in USA (2026)",
+    "ogDescription": "What do data scientists really earn in America? Complete 2026 salary guide by experience and company."
+  },
+  "hero": { "title": "Data Scientist Salary in USA (2026)", "description": "Data Scientists remain among the highest-paid professionals in the United States. The explosion of AI/ML applications across every industry has pushed compensation, especially for ML specialists, to record highs in 2026.", "averageSalary": "$142,000 / year" },
+  "experience": [
+    { "level": "Junior / Entry (0-2 Years)", "salary": "$100,000 - $140,000", "notes": "Strong Python + statistical modeling skills. Portfolio of ML projects and Kaggle competition experience boost entry-level offers." },
+    { "level": "Mid-Level (2-5 Years)", "salary": "$140,000 - $185,000", "notes": "Domain specialization (NLP, CV, Recommendation Systems) drives compensation significantly above generalist DS roles." },
+    { "level": "Senior (5-8 Years)", "salary": "$190,000 - $260,000", "notes": "Senior data scientists who own product metrics and lead experimentation culture. Published research is a bonus." },
+    { "level": "Principal / Research Scientist (8+ Years)", "salary": "$280,000 - $500,000+ TC", "notes": "Research scientists at AI labs (OpenAI, DeepMind, Google Brain) often earn total compensation exceeding $1M." }
+  ],
+  "byCity": [
+    { "city": "San Francisco Bay Area", "salary": "$180,000", "premium": "+27%" },
+    { "city": "Seattle", "salary": "$165,000", "premium": "+16%" },
+    { "city": "New York City", "salary": "$160,000", "premium": "+13%" },
+    { "city": "Boston / Cambridge", "salary": "$155,000", "premium": "+9%" },
+    { "city": "Remote (US)", "salary": "$148,000", "premium": "+4%" },
+    { "city": "Chicago", "salary": "$135,000", "premium": "-5%" }
+  ],
+  "topCompanies": [
+    { "company": "OpenAI / Anthropic", "salary": "$300,000 - $800,000+ TC", "type": "AI Labs" },
+    { "company": "Google DeepMind", "salary": "$250,000 - $600,000 TC", "type": "AI Research" },
+    { "company": "Meta AI", "salary": "$240,000 - $500,000 TC", "type": "FAANG" },
+    { "company": "Netflix", "salary": "$200,000 - $400,000 TC", "type": "Streaming" },
+    { "company": "Airbnb / Lyft", "salary": "$170,000 - $300,000 TC", "type": "Tech" },
+    { "company": "Hedge Funds (D.E. Shaw, Two Sigma)", "salary": "$200,000 - $1M+ TC", "type": "Finance" }
+  ],
+  "futureOutlook": "Data Scientist compensation in the US is bifurcating: generalist DS roles face more competition while ML specialists (LLMs, multimodal AI) are seeing 30-40% year-over-year salary growth. PhD holders command 20-30% premiums at top AI labs."
+}

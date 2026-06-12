@@ -1,0 +1,58 @@
+{
+  "seo": {
+    "title": "Top 50 Machine Learning Interview Questions 2026 | ML Engineer Prep",
+    "description": "Master the top 50 Machine Learning interview questions for 2026. Covers ML algorithms, deep learning, feature engineering, model evaluation, and MLOps.",
+    "slug": "machine-learning",
+    "keywords": "machine learning interview questions 2026, ML engineer interview, deep learning interview questions, data science interview, neural network interview"
+  },
+  "hero": {
+    "title": "Machine Learning Interview Questions 2026",
+    "description": "Comprehensive ML interview preparation covering classical ML, deep learning, model evaluation, and production MLOps — for data scientists and ML engineers.",
+    "count": 50,
+    "topic": "Data & AI",
+    "difficulty": "Intermediate to Advanced"
+  },
+  "categories": [
+    {
+      "name": "Classical ML",
+      "questions": [
+        { "q": "What is the bias-variance tradeoff?", "a": "Bias: error from overly simplistic assumptions (underfitting). Variance: error from sensitivity to small training data fluctuations (overfitting). High bias = poor training performance. High variance = great training performance but poor test performance. Goal: find the sweet spot. Solutions: regularization, more data, ensemble methods." },
+        { "q": "What is the difference between L1 and L2 regularization?", "a": "L1 (Lasso): adds |weights| to loss function. Drives some weights to exactly zero → feature selection. L2 (Ridge): adds weights² to loss function. Shrinks all weights but doesn't eliminate them. Elastic Net combines both. L1 is preferred when you suspect many features are irrelevant. L2 is preferred when all features are potentially useful." },
+        { "q": "Explain how gradient descent works.", "a": "An optimization algorithm that minimizes loss by iteratively moving in the direction of steepest descent (negative gradient). Update rule: w = w - learning_rate × ∂L/∂w. Variants: Batch (full dataset), Stochastic (one sample), Mini-batch (small batch — most common). Learning rate is the most critical hyperparameter." },
+        { "q": "What is cross-validation and why is it important?", "a": "Cross-validation estimates model performance on unseen data by splitting training data into k folds. Train on k-1 folds, test on the remaining fold. Repeat k times. Average the scores. k=5 or k=10 are common. Prevents overfitting to a single train/test split. Essential for hyperparameter tuning to avoid data leakage." },
+        { "q": "What is the difference between bagging and boosting?", "a": "Bagging (Bootstrap Aggregating): trains multiple models in parallel on random subsets of data. Reduces variance. Example: Random Forest. Boosting: trains models sequentially, each correcting previous errors. Reduces bias and variance. Examples: XGBoost, AdaBoost, LightGBM. Boosting typically achieves better accuracy but is more prone to overfitting." }
+      ]
+    },
+    {
+      "name": "Deep Learning",
+      "questions": [
+        { "q": "What is the vanishing gradient problem and how do you solve it?", "a": "In deep networks, gradients become extremely small as they backpropagate through layers, causing early layers to learn very slowly (or not at all). Solutions: ReLU activation (instead of sigmoid/tanh), Batch Normalization, Residual connections (ResNet), weight initialization (He/Xavier), and Gradient Clipping for RNNs." },
+        { "q": "What is Batch Normalization?", "a": "A technique that normalizes layer inputs to have mean=0 and std=1 during training. Reduces internal covariate shift. Benefits: allows higher learning rates, acts as regularization, reduces sensitivity to initialization. Applied before or after activation function (debate exists). Has learnable parameters γ and β." },
+        { "q": "Explain the Transformer architecture.", "a": "Transformers use self-attention to process input sequences in parallel (unlike RNNs which are sequential). Key components: Multi-head Self-Attention (each token attends to all others), Feed-Forward Network, Layer Normalization, Positional Encoding (since no recurrence). The foundation for BERT, GPT, and all modern LLMs." },
+        { "q": "What is dropout and how does it work?", "a": "Dropout randomly deactivates (sets to zero) a percentage of neurons during training. This prevents co-adaptation of neurons and acts as ensemble training. Dropout rate of 0.2-0.5 is common. Disabled during inference. All neurons are active but outputs are scaled by (1 - dropout_rate) to maintain expected values." }
+      ]
+    },
+    {
+      "name": "Model Evaluation",
+      "questions": [
+        { "q": "What is the ROC curve and AUC?", "a": "ROC (Receiver Operating Characteristic) curve plots True Positive Rate (Recall) vs False Positive Rate at different classification thresholds. AUC (Area Under Curve) ranges from 0.5 (random) to 1.0 (perfect). Use when classes are balanced. For imbalanced datasets, prefer Precision-Recall curve + AUC-PR instead." },
+        { "q": "How do you handle class imbalance?", "a": "Resampling: oversample minority class (SMOTE) or undersample majority class. Class weights: set class_weight='balanced' in sklearn models. Different threshold: lower the classification threshold to increase recall. Evaluation: use F1, AUC-PR instead of accuracy. Algorithm choice: tree-based models handle imbalance better than logistic regression." },
+        { "q": "What is data leakage and how do you prevent it?", "a": "Data leakage: when information from outside the training set influences model training, causing artificially high performance that doesn't generalize. Types: Target leakage (using future info), Train-test contamination (normalization on full dataset before split). Prevention: always fit transformers on training data only, then apply to test. Use sklearn Pipelines." }
+      ]
+    },
+    {
+      "name": "MLOps",
+      "questions": [
+        { "q": "What is model drift and how do you detect it?", "a": "Model drift occurs when model performance degrades in production because the real-world data distribution has changed. Data drift: input features change distribution. Concept drift: the relationship between features and target changes. Detection: monitor feature distributions (KS test, PSI), monitor prediction distributions, and track business metrics. Use Evidently AI or Whylabs for automated monitoring." },
+        { "q": "What is a feature store?", "a": "A centralized repository for storing, discovering, and serving ML features. Ensures consistency between features used in training and serving. Prevents redundant feature engineering across teams. Examples: Feast (open source), Tecton, AWS SageMaker Feature Store, Google Vertex AI Feature Store. Supports both batch and real-time feature serving." }
+      ]
+    }
+  ],
+  "topTips": [
+    "Always start answers with the intuition before the math — interviewers want to see understanding.",
+    "Know when NOT to use deep learning: when data is small, tabular, or interpretability is required.",
+    "Practice deriving the bias-variance decomposition — this separates experienced candidates from beginners.",
+    "Be able to explain your model choices in terms of business impact, not just technical metrics.",
+    "Know XGBoost/LightGBM deeply — they win most tabular ML competitions and are widely used in industry."
+  ]
+}

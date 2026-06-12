@@ -1,0 +1,93 @@
+{
+  "seo": {
+    "title": "Data Analyst Roadmap 2026 - Career Guide & Learning Path | Candidatetohr",
+    "description": "Complete Data Analyst roadmap for 2026. Learn SQL, Excel, Python, Tableau, and Power BI to land your first analyst role. Salary insights, projects, and interview questions included.",
+    "slug": "data-analyst",
+    "keywords": "data analyst roadmap 2026, how to become data analyst, data analyst learning path, SQL for analysts, tableau roadmap",
+    "ogTitle": "How to Become a Data Analyst in 2026 - Complete Roadmap",
+    "ogDescription": "Master SQL, Python, and data visualization to land an $85k+ Data Analyst role with this step-by-step roadmap."
+  },
+  "hero": {
+    "title": "Data Analyst Roadmap 2026",
+    "shortDescription": "Turn raw data into business decisions. The most accessible entry point into tech — no CS degree needed. Master SQL, Tableau, and Python to become an indispensable data analyst.",
+    "averageSalary": "$85,000",
+    "growthRate": "+15%",
+    "learningDuration": "4 Months",
+    "difficultyLevel": "Easy",
+    "hiringDemand": "High"
+  },
+  "overview": {
+    "whatTheyDo": "Data Analysts collect, process, and analyze large datasets to extract actionable insights that drive business strategy. They create dashboards, reports, and visualizations that help stakeholders make data-driven decisions.",
+    "industriesHiring": ["E-commerce & Retail", "Finance & Banking", "Healthcare", "Marketing & Advertising", "Consulting"],
+    "responsibilities": [
+      "Writing SQL queries to extract and transform data from databases.",
+      "Building interactive dashboards in Tableau, Power BI, or Looker.",
+      "Performing A/B test analysis and statistical hypothesis testing.",
+      "Presenting findings to non-technical stakeholders with clear narratives.",
+      "Cleaning and preprocessing messy real-world datasets."
+    ]
+  },
+  "skillsTimeline": {
+    "beginner": ["Excel (PivotTables, VLOOKUP)", "Basic SQL (SELECT, WHERE, GROUP BY)", "Data Types & Cleaning", "Google Sheets"],
+    "intermediate": ["Advanced SQL (JOINs, Window Functions, CTEs)", "Python with Pandas", "Tableau or Power BI", "Statistics (Mean, Variance, Distributions)"],
+    "advanced": ["A/B Testing & Hypothesis Testing", "Python Data Visualization (Matplotlib, Seaborn)", "BigQuery / Snowflake", "Machine Learning Basics for Analysts"]
+  },
+  "learningPath": [
+    { "month": "Month 1: Excel & SQL Foundations", "description": "Master Excel PivotTables, VLOOKUP, and conditional formatting. Learn SQL basics: SELECT, WHERE, GROUP BY, ORDER BY, and JOINs. Practice on Mode Analytics or HackerRank." },
+    { "month": "Month 2: Advanced SQL & Python", "description": "Level up to window functions (RANK, LEAD, LAG), CTEs, and subqueries. Start Python: learn Pandas for data manipulation and Matplotlib for basic charts." },
+    { "month": "Month 3: Data Visualization", "description": "Build professional dashboards in Tableau Public (free). Learn storytelling with data — how to design charts that answer business questions clearly." },
+    { "month": "Month 4: Statistics & Capstone Projects", "description": "Learn A/B testing, statistical significance, and basic probability. Complete 2 end-to-end projects from public datasets (Kaggle, Google BigQuery public datasets)." }
+  ],
+  "toolsAndTech": ["SQL (PostgreSQL/MySQL)", "Excel", "Python (Pandas)", "Tableau", "Power BI", "Google BigQuery", "Jupyter Notebooks", "Git"],
+  "projects": {
+    "beginner": ["Sales Performance Dashboard in Excel", "Covid-19 Data Analysis with SQL", "Netflix Movies EDA with Pandas"],
+    "intermediate": ["E-commerce Funnel Analysis Dashboard (Tableau)", "Customer Churn Analysis with Python & Seaborn", "A/B Test Results Analysis for a Hypothetical Campaign"],
+    "advanced": ["Full Business Intelligence Dashboard (Power BI + SQL)", "Cohort Analysis of SaaS Subscription Data", "Predictive Churn Model using Logistic Regression"]
+  },
+  "certifications": [
+    "Google Data Analytics Professional Certificate (Coursera)",
+    "Microsoft Power BI Data Analyst (PL-300)",
+    "Tableau Desktop Specialist",
+    "IBM Data Analyst Professional Certificate"
+  ],
+  "salaryInsights": [
+    { "experience": "Entry Level (0-1 yr)", "salary": "$55,000 - $75,000" },
+    { "experience": "Mid-Level (2-4 yrs)", "salary": "$80,000 - $100,000" },
+    { "experience": "Senior (5-8 yrs)", "salary": "$105,000 - $130,000" },
+    { "experience": "Lead/Manager (8+ yrs)", "salary": "$140,000+" }
+  ],
+  "interviewPrep": {
+    "topQuestions": [
+      "Write a SQL query to find the second highest salary in a table.",
+      "How would you detect and handle outliers in a dataset?",
+      "What is the difference between HAVING and WHERE in SQL?",
+      "Explain A/B testing and how you'd determine statistical significance.",
+      "How would you present a complex finding to a non-technical executive?"
+    ],
+    "commonMistakes": [
+      "Not cleaning data before analysis (garbage in, garbage out).",
+      "Building pretty dashboards without a clear business question.",
+      "Ignoring statistical significance when reporting test results.",
+      "Not being able to explain SQL queries out loud step-by-step."
+    ],
+    "resumeTips": {
+      "sections": ["Experience", "Projects", "Skills", "Education", "Certifications"],
+      "keywords": ["SQL", "Tableau", "Power BI", "Python", "Pandas", "A/B Testing", "Dashboards", "Data Cleaning"],
+      "atsOptimization": "Quantify impact: 'Built a dashboard tracking $2M in monthly revenue.' List specific tools and databases you've used."
+    }
+  },
+  "jobMarket": {
+    "futureDemand": "Data Analyst roles are growing 15% annually. As businesses become more data-driven, every department (marketing, finance, HR) needs dedicated analysts.",
+    "remoteOpportunities": "High. Most data analyst roles can be done fully remotely. Many companies hire globally for these positions."
+  },
+  "faq": [
+    { "q": "Is Data Analyst a good career in 2026?", "a": "Yes. It's one of the most accessible tech careers with strong pay, remote opportunities, and clear growth paths into data science or analytics engineering." },
+    { "q": "Do I need to know Python to be a data analyst?", "a": "SQL is mandatory. Python with Pandas is strongly preferred but not always required at the entry level." },
+    { "q": "What's the difference between a data analyst and data scientist?", "a": "Analysts focus on answering business questions with existing data. Scientists build predictive models and run experiments." },
+    { "q": "How long does it take to become a data analyst?", "a": "With focused study, 3-4 months is enough to land an entry-level role if you have strong SQL skills and 1-2 portfolio projects." },
+    { "q": "Which is better: Tableau or Power BI?", "a": "Power BI is more widely adopted in enterprises (especially Microsoft shops). Tableau is dominant in data-heavy companies. Learn Power BI first." },
+    { "q": "Can I become a data analyst without a math background?", "a": "Yes. You need basic statistics (mean, median, A/B testing). Advanced calculus and linear algebra are not required." },
+    { "q": "What datasets should I use for practice?", "a": "Kaggle, Google BigQuery public datasets, data.gov, and the Northwind database for SQL practice." },
+    { "q": "Is Excel still relevant for data analysts?", "a": "Yes. Many business stakeholders live in Excel. Being proficient in both Excel and Python is a competitive advantage." }
+  ]
+}
