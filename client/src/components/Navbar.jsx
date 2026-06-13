@@ -1,12 +1,14 @@
 import { useState } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
-import { motion, AnimatePresence } from 'framer-motion';
+import { m as motion, AnimatePresence, LazyMotion } from 'framer-motion';
 import {
   LayoutDashboard,
   LogOut, User, Menu, X, Zap, ChevronDown, FileText, MessageSquare, BookOpen, MapPin, DollarSign, Plus
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import './Navbar.css';
+
+const loadFeatures = () => import('../framerFeatures.js').then(res => res.default);
 
 // The new standard AdSense-friendly public navigation structure
 const publicLinks = [
@@ -33,6 +35,7 @@ export default function Navbar() {
   const initials = user?.name?.split(' ').map(n => n[0]).join('').toUpperCase().slice(0, 2);
 
   return (
+    <LazyMotion features={loadFeatures}>
     <nav className="navbar">
       <div className="navbar-inner">
         {/* Logo */}
@@ -85,7 +88,7 @@ export default function Navbar() {
 
                 <AnimatePresence>
                   {userMenuOpen && (
-                    <motion.div
+                    <m.div
                       className="user-dropdown"
                       initial={{ opacity: 0, y: -10, scale: 0.95 }}
                       animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -109,7 +112,7 @@ export default function Navbar() {
                       <button className="dropdown-item danger" onClick={handleLogout}>
                         <LogOut size={14} /> Sign Out
                       </button>
-                    </motion.div>
+                    </m.div>
                   )}
                 </AnimatePresence>
               </div>
@@ -126,7 +129,7 @@ export default function Navbar() {
       {/* Mobile Menu */}
       <AnimatePresence>
         {mobileOpen && (
-          <motion.div
+          <m.div
             className="mobile-menu"
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
@@ -165,9 +168,10 @@ export default function Navbar() {
                 </button>
               </>
             )}
-          </motion.div>
+          </m.div>
         )}
       </AnimatePresence>
     </nav>
+    </LazyMotion>
   );
 }

@@ -1,11 +1,13 @@
 import { useNavigate } from 'react-router-dom';
-import { m as motion, LazyMotion, domAnimation } from 'framer-motion';
+import { m as motion, LazyMotion } from 'framer-motion';
 import {
   Zap, Brain, Target, BarChart3, Users, Award,
   Shield, ArrowRight, CheckCircle, MessageSquare, TrendingUp,
   FileSearch, Sparkles, AlertTriangle, Map, PieChart, ShieldAlert
 } from 'lucide-react';
 import './LandingPage.css';
+
+const loadFeatures = () => import('../framerFeatures.js').then(res => res.default);
 
 const features = [
   { icon: Brain, title: 'AI Resume Analysis', desc: 'NVIDIA NIM scores every resume against your job requirements with 7 AI metrics.', color: '#4f8ef7' },
@@ -35,7 +37,7 @@ export default function LandingPage() {
   const navigate = useNavigate();
 
   return (
-    <LazyMotion features={domAnimation}>
+    <LazyMotion features={loadFeatures}>
       <div className="landing-page">
       {/* Background */}
       <div className="landing-bg">
@@ -48,7 +50,7 @@ export default function LandingPage() {
 
       {/* Hero */}
       <section className="hero-section">
-        <motion.div
+        <m.div
           className="hero-content"
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
@@ -81,10 +83,10 @@ export default function LandingPage() {
             <div><strong>7+</strong> AI features</div>
             <div><strong>NVIDIA</strong> NIM</div>
           </div>
-        </motion.div>
+        </m.div>
 
         {/* Hero Visual */}
-        <motion.div
+        <m.div
           className="hero-visual"
           initial={{ opacity: 0, x: 60 }}
           animate={{ opacity: 1, x: 0 }}
@@ -100,7 +102,7 @@ export default function LandingPage() {
                 <div className="demo-score-circle">
                   <svg width="100" height="100" style={{ transform: 'rotate(-90deg)' }}>
                     <circle cx="50" cy="50" r="42" fill="none" stroke="rgba(255,255,255,0.06)" strokeWidth="8" />
-                    <motion.circle
+                    <m.circle
                       cx="50" cy="50" r="42" fill="none" stroke="#10b981" strokeWidth="8"
                       strokeLinecap="round"
                       strokeDasharray={264}
@@ -125,7 +127,7 @@ export default function LandingPage() {
                   <div key={label} className="demo-metric">
                     <span>{label}</span>
                     <div className="demo-bar">
-                      <motion.div
+                      <m.div
                         className="demo-bar-fill"
                         initial={{ width: 0 }}
                         animate={{ width: `${value}%` }}
@@ -138,13 +140,13 @@ export default function LandingPage() {
               </div>
             </div>
           </div>
-        </motion.div>
+        </m.div>
       </section>
 
       {/* Features */}
       <section className="features-section">
         <div className="container">
-          <motion.div
+          <m.div
             className="section-header-center"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -152,11 +154,11 @@ export default function LandingPage() {
           >
             <h2>For <span className="gradient-text">Job Seekers</span> — Analyse Your Resume Free</h2>
             <p>Upload your PDF and get a full AI report in under 60 seconds. No account needed.</p>
-          </motion.div>
+          </m.div>
 
           <div className="features-grid features-grid-4">
             {candidateFeatures.map((feature, i) => (
-              <motion.div
+              <m.div
                 key={feature.title}
                 className="feature-card"
                 initial={{ opacity: 0, y: 30 }}
@@ -170,11 +172,11 @@ export default function LandingPage() {
                 </div>
                 <h3>{feature.title}</h3>
                 <p>{feature.desc}</p>
-              </motion.div>
+              </m.div>
             ))}
           </div>
 
-          <motion.div
+          <m.div
             className="candidate-cta-row"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -202,11 +204,11 @@ export default function LandingPage() {
             <button className="btn btn-outline btn-lg" onClick={() => navigate('/rejection-decoder')} style={{ color: '#ef4444', borderColor: 'rgba(239,68,68,0.3)', background: 'rgba(239,68,68,0.05)' }}>
               <AlertTriangle size={16} /> Rejection Decoder
             </button>
-          </motion.div>
+          </m.div>
 
           <div className="section-divider" />
 
-          <motion.div
+          <m.div
             className="section-header-center"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -214,11 +216,11 @@ export default function LandingPage() {
           >
             <h2>For <span className="gradient-text">Recruiters</span> — Everything you need to hire the best talent</h2>
             <p>8 AI-powered features built on NVIDIA NIM and the MERN stack</p>
-          </motion.div>
+          </m.div>
 
           <div className="features-grid">
             {features.map((feature, i) => (
-              <motion.div
+              <m.div
                 key={feature.title}
                 className="feature-card"
                 initial={{ opacity: 0, y: 30 }}
@@ -232,7 +234,7 @@ export default function LandingPage() {
                 </div>
                 <h3>{feature.title}</h3>
                 <p>{feature.desc}</p>
-              </motion.div>
+              </m.div>
             ))}
           </div>
         </div>
@@ -240,7 +242,7 @@ export default function LandingPage() {
 
       {/* CTA */}
       <section className="cta-section">
-        <motion.div
+        <m.div
           className="cta-card"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -267,7 +269,7 @@ export default function LandingPage() {
               <span key={c}><CheckCircle size={14} color="#10b981" /> {c}</span>
             ))}
           </div>
-        </motion.div>
+        </m.div>
       </section>
 
       {/* Footer */}
