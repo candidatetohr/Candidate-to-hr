@@ -43,18 +43,7 @@ export default function LandingPage() {
         <div className="bg-grid" />
       </div>
 
-      {/* Navbar */}
-      <nav className="landing-nav">
-        <div className="landing-nav-inner">
-          <div className="logo-wrapper">
-            <img src="/logo.png" alt="CandidateToHR Logo" style={{ height: '32px' }} />
-          </div>
-          <div className="landing-nav-actions">
-            <button className="btn btn-ghost" onClick={() => navigate('/login')}>Sign In</button>
-            <button className="btn btn-primary" onClick={() => navigate('/login')}>Get Started Free</button>
-          </div>
-        </div>
-      </nav>
+
 
       {/* Hero */}
       <section className="hero-section">

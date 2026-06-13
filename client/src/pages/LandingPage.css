@@ -6,6 +6,7 @@
   inset: 0;
   z-index: 0;
   pointer-events: none;
+  overflow: hidden;
 }
 
 .bg-orb {
@@ -43,35 +44,7 @@
   background-size: 60px 60px;
 }
 
-/* Nav */
-.landing-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 100;
-  background: rgba(6, 11, 24, 0.8);
-  /* removed blur */
-  border-bottom: 1px solid var(--border-subtle);
-}
 
-.landing-nav-inner {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0 24px;
-  height: 68px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.logo-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.landing-nav-actions { display: flex; gap: 10px; }
 
 /* Hero */
 .hero-section {
@@ -79,7 +52,7 @@
   z-index: 1;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 120px 24px 80px;
+  padding: 60px 24px 80px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;

@@ -6,9 +6,6 @@
   z-index: 1000;
   background: var(--bg-card);
   border-bottom: 1px solid var(--border-default);
-  height: 72px;
-  display: flex;
-  align-items: center;
 }
 
 .navbar-inner {
@@ -16,6 +13,7 @@
   margin: 0 auto;
   width: 100%;
   padding: 0 24px;
+  height: 72px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -194,6 +192,7 @@
   flex-direction: column;
   gap: 4px;
   overflow: hidden;
+  background: var(--bg-card);
 }
 
 @media (max-width: 768px) {
