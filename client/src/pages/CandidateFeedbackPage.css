@@ -453,6 +453,9 @@
 .sw-grid > div { height: fit-content; }
 
 @media (max-width: 1000px) {
+  .feedback-layout { grid-template-columns: 1fr; }
+  .feedback-sidebar { position: static; order: -1; }
+  .score-metrics { grid-template-columns: 1fr; }
   .score-overview-grid { grid-template-columns: 1fr; }
   .ai-features-grid { grid-template-columns: 1fr; }
   .score-display-row { flex-direction: column; align-items: flex-start; }

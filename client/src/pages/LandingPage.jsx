@@ -47,8 +47,7 @@ export default function LandingPage() {
       <nav className="landing-nav">
         <div className="landing-nav-inner">
           <div className="logo-wrapper">
-            <div className="logo-icon"><Zap size={16} /></div>
-            <span className="logo-text">Candidatetohr</span>
+            <img src="/logo.png" alt="CandidateToHR Logo" style={{ height: '32px' }} />
           </div>
           <div className="landing-nav-actions">
             <button className="btn btn-ghost" onClick={() => navigate('/login')}>Sign In</button>
@@ -283,9 +282,8 @@ export default function LandingPage() {
 
       {/* Footer */}
       <footer className="landing-footer">
-        <div className="logo-wrapper">
-          <div className="logo-icon"><Zap size={14} /></div>
-          <span className="logo-text">Candidatetohr</span>
+        <div className="logo-wrapper" style={{ justifyContent: 'center' }}>
+          <img src="/logo.png" alt="CandidateToHR Logo" style={{ height: '28px' }} />
         </div>
         <p>Built with MERN Stack + NVIDIA NIM AI</p>
       </footer>

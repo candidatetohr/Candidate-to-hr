@@ -255,4 +255,5 @@
 @media (max-width: 900px) {
   .job-detail-layout { grid-template-columns: 1fr; }
   .job-info-panel { order: -1; }
+  .job-info-stats { grid-template-columns: 1fr; }
 }

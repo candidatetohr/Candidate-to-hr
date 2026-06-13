@@ -35,10 +35,7 @@ export default function Navbar() {
       <div className="navbar-inner">
         {/* Logo */}
         <Link to="/" className="navbar-logo">
-          <div className="logo-icon">
-            <Zap size={16} />
-          </div>
-          <span className="logo-text">Candidatetohr</span>
+          <img src="/logo.png" alt="CandidateToHR Logo" style={{ height: '32px' }} />
         </Link>
 
         {/* Desktop Nav Links */}

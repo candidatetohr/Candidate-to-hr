@@ -53,9 +53,8 @@ export default function AuthPage() {
         transition={{ duration: 0.5 }}
       >
         {/* Logo */}
-        <div className="auth-logo">
-          <div className="logo-icon"><Zap size={20} /></div>
-          <span className="logo-text">Candidatetohr</span>
+        <div className="auth-logo" onClick={() => navigate('/')} style={{ cursor: 'pointer' }}>
+          <img src="/logo.png" alt="CandidateToHR Logo" style={{ height: '36px' }} />
         </div>
 
         <div className="auth-header">
