@@ -272,7 +272,7 @@ export default function LandingPage() {
       {/* Footer */}
       <footer className="landing-footer">
         <div className="logo-wrapper" style={{ justifyContent: 'center' }}>
-          <img src="/logo.png" alt="CandidateToHR Logo" style={{ height: '28px' }} />
+          <img src="/logo.png" alt="CandidateToHR Logo" width="28" height="28" style={{ height: '28px' }} />
         </div>
         <p>Built with MERN Stack + NVIDIA NIM AI</p>
       </footer>

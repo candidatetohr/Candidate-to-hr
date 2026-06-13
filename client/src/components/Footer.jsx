@@ -9,7 +9,7 @@ export default function Footer() {
         {/* Column 1: Brand */}
         <div className="footer-col brand-col">
           <Link to="/" className="footer-logo">
-            <img src="/logo.png" alt="CandidateToHR Logo" style={{ height: '40px' }} />
+            <img src="/logo.png" alt="CandidateToHR Logo" width="40" height="40" style={{ height: '40px' }} />
           </Link>
           <p className="footer-description">
             AI-Powered Resume Analysis & Interview Preparation

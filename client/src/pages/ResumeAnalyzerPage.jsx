@@ -287,7 +287,7 @@ export default function ResumeAnalyzerPage() {
       <nav className="az-nav">
         <button className="az-back-btn" onClick={() => navigate('/')}><ArrowLeft size={16} /> Back</button>
         <div className="az-logo" onClick={() => navigate('/')} style={{ cursor: 'pointer' }}>
-          <img src="/logo.png" alt="CandidateToHR Logo" style={{ height: '24px' }} />
+          <img src="/logo.png" alt="CandidateToHR Logo" width="24" height="24" style={{ height: '24px' }} />
         </div>
         <div style={{ display: 'flex', gap: '8px' }}>
           <button className="az-recruiter-btn az-recruiter-btn-sm" onClick={() => navigate('/live-editor')} style={{ color: '#10b981', borderColor: 'rgba(16,185,129,0.3)' }}>

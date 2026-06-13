@@ -54,7 +54,7 @@ export default function AuthPage() {
       >
         {/* Logo */}
         <div className="auth-logo" onClick={() => navigate('/')} style={{ cursor: 'pointer' }}>
-          <img src="/logo.png" alt="CandidateToHR Logo" style={{ height: '36px' }} />
+          <img src="/logo.png" alt="CandidateToHR Logo" width="36" height="36" style={{ height: '36px' }} />
         </div>
 
         <div className="auth-header">

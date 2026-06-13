@@ -37,7 +37,7 @@ export default function Navbar() {
       <div className="navbar-inner">
         {/* Logo */}
         <Link to="/" className="navbar-logo">
-          <img src="/logo.png" alt="CandidateToHR Logo" style={{ height: '32px' }} />
+          <img src="/logo.png" alt="CandidateToHR Logo" width="32" height="32" style={{ height: '32px' }} />
         </Link>
 
         {/* Desktop Nav Links */}
