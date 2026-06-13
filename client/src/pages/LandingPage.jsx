@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import { m as motion, LazyMotion, domAnimation } from 'framer-motion';
 import {
   Zap, Brain, Target, BarChart3, Users, Award,
   Shield, ArrowRight, CheckCircle, MessageSquare, TrendingUp,
@@ -35,7 +35,8 @@ export default function LandingPage() {
   const navigate = useNavigate();
 
   return (
-    <div className="landing-page">
+    <LazyMotion features={domAnimation}>
+      <div className="landing-page">
       {/* Background */}
       <div className="landing-bg">
         <div className="bg-orb orb-1" />
@@ -277,5 +278,6 @@ export default function LandingPage() {
         <p>Built with MERN Stack + NVIDIA NIM AI</p>
       </footer>
     </div>
+    </LazyMotion>
   );
 }

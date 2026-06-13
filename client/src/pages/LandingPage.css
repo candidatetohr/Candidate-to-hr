@@ -12,7 +12,6 @@
 .bg-orb {
   position: absolute;
   border-radius: 50%;
-  filter: blur(100px);
 }
 
 .orb-1 {
