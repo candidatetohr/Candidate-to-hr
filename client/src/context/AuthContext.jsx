@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, useEffect } from 'react';
+import React, { createContext, useContext, useState, useEffect } from 'react';
 import { authAPI } from '../services/api';
 import { supabase } from '../lib/supabase';
 import toast from 'react-hot-toast';
@@ -90,8 +90,12 @@ export const AuthProvider = ({ children }) => {
     localStorage.setItem('ats_user', JSON.stringify(updatedUser));
   };
 
+  const contextValue = React.useMemo(() => ({
+    user, loading, login, loginWithGoogle, register, logout, updateUser
+  }), [user, loading]);
+
   return (
-    <AuthContext.Provider value={{ user, loading, login, loginWithGoogle, register, logout, updateUser }}>
+    <AuthContext.Provider value={contextValue}>
       {children}
     </AuthContext.Provider>
   );

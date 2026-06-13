@@ -1,15 +1,16 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { Zap } from 'lucide-react';
 import './Footer.css';
 
-export default function Footer() {
+function Footer() {
   return (
     <footer className="footer">
       <div className="footer-container">
         {/* Column 1: Brand */}
         <div className="footer-col brand-col">
           <Link to="/" className="footer-logo">
-            <img src="/logo.png" alt="CandidateToHR Logo" width="40" height="40" style={{ height: '40px' }} />
+            <img src="/logo.png" alt="CandidateToHR Logo" width="40" height="40" loading="lazy" style={{ height: '40px' }} />
           </Link>
           <p className="footer-description">
             AI-Powered Resume Analysis & Interview Preparation
@@ -63,3 +64,5 @@ export default function Footer() {
     </footer>
   );
 }
+
+export default React.memo(Footer);

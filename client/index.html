@@ -8,14 +8,19 @@
     <meta name="keywords" content="ATS, applicant tracking, AI hiring, resume analysis, technical interview prep, career roadmaps, tech salaries" />
     <title>Candidatetohr — AI-Powered Applicant Tracking System & Career Hub</title>
     
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PSHZ9T8FJV"></script>
+    <!-- Google tag (gtag.js) - Deferred for Performance -->
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-PSHZ9T8FJV');
+      window.addEventListener('load', function() {
+        var script = document.createElement('script');
+        script.src = "https://www.googletagmanager.com/gtag/js?id=G-PSHZ9T8FJV";
+        script.async = true;
+        document.head.appendChild(script);
+        
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-PSHZ9T8FJV');
+      });
     </script>
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
@@ -34,6 +39,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="image" href="/logo.png" />
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" media="print" onload="this.media='all'" />
     <noscript>

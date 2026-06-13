@@ -54,7 +54,7 @@ export default function AuthPage() {
       >
         {/* Logo */}
         <div className="auth-logo" onClick={() => navigate('/')} style={{ cursor: 'pointer' }}>
-          <img src="/logo.png" alt="CandidateToHR Logo" width="36" height="36" style={{ height: '36px' }} />
+          <img src="/logo.png" alt="CandidateToHR Logo" width="36" height="36" loading="lazy" style={{ height: '36px' }} />
         </div>
 
         <div className="auth-header">
@@ -85,7 +85,7 @@ export default function AuthPage() {
           style={{ marginBottom: '1.5rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px', width: '100%', background: 'var(--bg-primary)', color: 'var(--text-primary)', border: '1px solid var(--border-default)' }}
           onClick={loginWithGoogle}
         >
-          <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" width={20} height={20} />
+          <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" width={20} height={20} loading="lazy" />
           Continue with Google
         </button>
 
