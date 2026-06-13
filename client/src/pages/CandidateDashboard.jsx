@@ -131,56 +131,7 @@ export default function CandidateDashboard() {
 
             {/* RIGHT COLUMN */}
             <div className="os-col-side">
-              
-              {/* Profile Completion Widget */}
-              <motion.div className="os-card locked-widget" variants={itemVars}>
-                <h3>Profile Completion</h3>
-                <div className="progress-bar-bg"><div className="progress-bar-fill" style={{ width: '0%' }} /></div>
-                <p className="progress-text">0% Complete</p>
-                
-                <div className="unlock-list mt-4">
-                  <p className="os-subtext">Complete your profile to unlock:</p>
-                  <ul>
-                    <li><Lock size={14} /> AI ATS Analysis</li>
-                    <li><Lock size={14} /> Smart Job Matching</li>
-                    <li><Lock size={14} /> Interview Readiness</li>
-                    <li><Lock size={14} /> Placement Probability</li>
-                    <li><Lock size={14} /> Career Twin Widget</li>
-                    <li><Lock size={14} /> Salary Simulator</li>
-                  </ul>
-                </div>
-              </motion.div>
-
-              {/* Setup Checklist */}
-              <motion.div className="os-card mt-4" variants={itemVars}>
-                <h3><Zap size={18} className="text-yellow" /> Getting Started</h3>
-                <div className="os-action-list mt-2">
-                  {checklist.map(item => (
-                    <div key={item.id} className={`os-action-item ${item.done ? 'done' : ''}`}>
-                      <div className="os-checkbox-static">
-                        {item.done ? <CheckCircle2 size={18} className="text-green" /> : <Circle size={18} className="text-muted" />}
-                      </div>
-                      <p>{item.text}</p>
-                    </div>
-                  ))}
-                </div>
-              </motion.div>
-
-              {/* Career Journey Wizard */}
-              <motion.div className="os-card os-timeline-card mt-4" variants={itemVars}>
-                <h3><Map size={18} /> Your Journey</h3>
-                <div className="os-timeline vertical-timeline">
-                  {steps.map((step, i) => (
-                    <div key={i} className={`os-timeline-step-v ${step.active ? 'active' : ''}`}>
-                      <div className="os-step-dot-v">{step.active && <CheckCircle2 size={12} />}</div>
-                      <div className="os-step-content-v">
-                        <span className="os-step-label-v">{step.label}</span>
-                      </div>
-                      {i < steps.length - 1 && <div className="os-step-line-v" />}
-                    </div>
-                  ))}
-                </div>
-              </motion.div>
+              {/* Widgets have been removed per user request */}
 
             </div>
           </div>
