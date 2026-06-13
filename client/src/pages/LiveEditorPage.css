@@ -78,6 +78,7 @@
   display: flex;
   align-items: center;
   gap: 16px;
+  flex-wrap: wrap;
 }
 
 .ed-btn-sm { padding: 6px 12px; font-size: 0.85rem; border-radius: 6px; }

@@ -346,4 +346,5 @@
 
 @media (max-width: 900px) {
   .lp-grid { grid-template-columns: 1fr; }
+  .lp-cta-box { flex-direction: column; text-align: center; gap: 1rem; }
 }

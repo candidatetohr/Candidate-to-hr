@@ -329,4 +329,5 @@
 @media (max-width: 900px) {
   .rd-grid { grid-template-columns: 1fr; }
   .rd-split-grid { grid-template-columns: 1fr; }
+  .rd-cta-box { flex-direction: column; gap: 1rem; text-align: center; }
 }

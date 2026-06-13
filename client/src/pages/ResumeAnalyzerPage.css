@@ -645,6 +645,8 @@
   .results-footer-cta { flex-direction: column; }
   .results-footer-cta .az-btn-primary { width: 100%; }
   .loading-steps { gap: 1rem; }
+  .ci-unlock-item { grid-template-columns: 1fr; text-align: center; justify-items: center; }
+  .ci-salary-grid { grid-template-columns: 1fr; }
 }
 
 /* ── Section Badge (NEW) ──────────────────────────────────────────────────── */

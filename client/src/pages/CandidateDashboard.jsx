@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { 
   Target, Zap, UploadCloud, FileText, UserPlus, 
-  Map, Lock, CheckCircle2, Circle, TrendingUp, Search, GraduationCap
+  Map, Lock, CheckCircle2, Circle, TrendingUp, Search, GraduationCap, Sparkles
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import './CandidateDashboard.css';
@@ -131,7 +131,33 @@ export default function CandidateDashboard() {
 
             {/* RIGHT COLUMN */}
             <div className="os-col-side">
-              {/* Widgets have been removed per user request */}
+              {/* ATS Resume Scanner Widget */}
+              <motion.div className="os-card" variants={itemVars} style={{ background: 'linear-gradient(145deg, var(--bg-card) 0%, rgba(59, 130, 246, 0.05) 100%)', borderColor: 'rgba(59, 130, 246, 0.2)' }}>
+                <h3><Search size={18} className="text-blue" /> ATS Scanner</h3>
+                <div style={{ textAlign: 'center', padding: '20px 0' }}>
+                  <div style={{ width: '80px', height: '80px', borderRadius: '50%', border: '4px dashed var(--border-default)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 16px', color: 'var(--text-muted)' }}>
+                    <FileText size={32} />
+                  </div>
+                  <h4 style={{ margin: '0 0 8px 0', fontSize: '1.1rem' }}>Score Not Found</h4>
+                  <p className="os-subtext" style={{ marginBottom: '20px' }}>Upload your resume to unlock your AI match score.</p>
+                  <button className="btn btn-primary" onClick={() => navigate('/analyze')} style={{ width: '100%' }}>
+                    <Sparkles size={16} /> Scan Resume Now
+                  </button>
+                </div>
+              </motion.div>
+
+              {/* AI Coach Tip */}
+              <motion.div className="os-card mt-4" variants={itemVars} style={{ background: 'var(--bg-card)', borderLeft: '4px solid #a855f7' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '12px' }}>
+                  <div style={{ background: 'rgba(168, 85, 247, 0.1)', padding: '6px', borderRadius: '8px', color: '#a855f7' }}>
+                    <Zap size={16} />
+                  </div>
+                  <span style={{ fontWeight: '700', fontSize: '0.9rem', color: 'var(--text-primary)' }}>AI Coach Tip</span>
+                </div>
+                <p style={{ margin: 0, fontSize: '0.9rem', lineHeight: '1.6', color: 'var(--text-secondary)' }}>
+                  Did you know? Including quantifiable metrics in your bullet points (e.g. <strong>"increased sales by 20%"</strong>) boosts your ATS match rate by up to 40%.
+                </p>
+              </motion.div>
 
             </div>
           </div>

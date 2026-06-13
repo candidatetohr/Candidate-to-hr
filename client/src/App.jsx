@@ -37,6 +37,7 @@ import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 import TermsPage from './pages/TermsPage';
 import DisclaimerPage from './pages/DisclaimerPage';
 import SitemapPage from './pages/SitemapPage';
+import NotFoundPage from './pages/NotFoundPage';
 
 const ProtectedRoute = ({ children }) => {
   const { user, loading } = useAuth();
@@ -100,7 +101,7 @@ export default function App() {
         <Route path="/disclaimer" element={<DisclaimerPage />} />
         <Route path="/sitemap" element={<SitemapPage />} />
         
-        <Route path="*" element={<Navigate to={user ? '/dashboard' : '/'} replace />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <Footer />
     </>

@@ -16,14 +16,12 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* Column 2: Quick Links */}
+        {/* Column 2: Company */}
         <div className="footer-col">
-          <h3>Quick Links</h3>
+          <h3>Company</h3>
           <ul>
-            <li><Link to="/">Home</Link></li>
             <li><Link to="/about">About Us</Link></li>
             <li><Link to="/contact">Contact Us</Link></li>
-            <li><Link to="/sitemap">Sitemap</Link></li>
           </ul>
         </div>
 
@@ -34,6 +32,7 @@ export default function Footer() {
             <li><Link to="/interview-questions">Interview Questions</Link></li>
             <li><Link to="/resume-examples">Resume Examples</Link></li>
             <li><Link to="/career-guides">Career Guides</Link></li>
+            <li><Link to="/salary-guides">Salary Guides</Link></li>
           </ul>
         </div>
 
@@ -46,12 +45,17 @@ export default function Footer() {
             <li><Link to="/disclaimer">Disclaimer</Link></li>
           </ul>
         </div>
+
+        {/* Column 5: Contact */}
+        <div className="footer-col">
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="mailto:Candidatetohr@gmail.com">Candidatetohr@gmail.com</a></li>
+          </ul>
+        </div>
       </div>
 
       <div className="footer-bottom">
-        <div className="footer-contact">
-          <a href="mailto:Candidatetohr@gmail.com">Candidatetohr@gmail.com</a>
-        </div>
         <div className="footer-copyright">
           &copy; {new Date().getFullYear()} CandidateToHR. All Rights Reserved.
         </div>

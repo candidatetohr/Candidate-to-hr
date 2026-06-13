@@ -7,42 +7,27 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://candidatetohr.online/login</loc>
+    <loc>https://candidatetohr.online/about</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://candidatetohr.online/analyze</loc>
+    <loc>https://candidatetohr.online/contact</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://candidatetohr.online/live-editor</loc>
+    <loc>https://candidatetohr.online/privacy</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://candidatetohr.online/interview-sim</loc>
+    <loc>https://candidatetohr.online/terms</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://candidatetohr.online/rejection-decoder</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://candidatetohr.online/learning-path</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://candidatetohr.online/placement-probability</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://candidatetohr.online/truth-detector</loc>
+    <loc>https://candidatetohr.online/disclaimer</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>

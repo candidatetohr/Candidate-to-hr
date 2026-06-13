@@ -14,6 +14,8 @@ const publicLinks = [
   { to: '/interview-questions', label: 'Interview Questions' },
   { to: '/resume-examples', label: 'Resume Examples' },
   { to: '/career-guides', label: 'Career Guides' },
+  { to: '/analyze', label: 'Resume Score' },
+  { to: '/live-editor', label: 'Resume Builder' },
 ];
 
 export default function Navbar() {
@@ -101,9 +103,9 @@ export default function Navbar() {
                       <Link to="/dashboard" className="dropdown-item" onClick={() => setUserMenuOpen(false)}>
                         <LayoutDashboard size={14} /> Dashboard
                       </Link>
-                      <button className="dropdown-item" onClick={() => setUserMenuOpen(false)}>
+                      <Link to="/profile/edit" className="dropdown-item" onClick={() => setUserMenuOpen(false)}>
                         <User size={14} /> Profile
-                      </button>
+                      </Link>
                       <button className="dropdown-item danger" onClick={handleLogout}>
                         <LogOut size={14} /> Sign Out
                       </button>

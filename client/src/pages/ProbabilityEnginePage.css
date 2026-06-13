@@ -348,4 +348,5 @@
   .prob-grid { grid-template-columns: 1fr; }
   .prob-profile-strength { flex-direction: column; text-align: center; }
   .info-block { text-align: left; }
+  .prob-row-inputs { grid-template-columns: 1fr; }
 }
