@@ -117,7 +117,7 @@ export default function Navbar() {
           )}
 
           {/* Mobile Menu Toggle */}
-          <button className="mobile-toggle" onClick={() => setMobileOpen(!mobileOpen)}>
+          <button className="mobile-toggle" aria-label="Toggle navigation menu" onClick={() => setMobileOpen(!mobileOpen)}>
             {mobileOpen ? <X size={20} /> : <Menu size={20} />}
           </button>
         </div>
