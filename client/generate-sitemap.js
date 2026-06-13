@@ -13,7 +13,7 @@ import { interviewCategories } from './src/data/interviewQuestions/index.js';
 import { resumeCategories } from './src/data/resumeExamples/index.js';
 import { careerGuideCategories } from './src/data/careerGuides/index.js';
 
-const DOMAIN = 'https://candidatetohr-example.com'; // Replace with actual domain
+const DOMAIN = 'https://candidatetohr.online'; // Replace with actual domain
 
 const staticRoutes = [
   '/',

@@ -2,422 +2,422 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://candidatetohr-example.com/</loc>
+    <loc>https://candidatetohr.online/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/login</loc>
+    <loc>https://candidatetohr.online/login</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/analyze</loc>
+    <loc>https://candidatetohr.online/analyze</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/live-editor</loc>
+    <loc>https://candidatetohr.online/live-editor</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/interview-sim</loc>
+    <loc>https://candidatetohr.online/interview-sim</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/rejection-decoder</loc>
+    <loc>https://candidatetohr.online/rejection-decoder</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/learning-path</loc>
+    <loc>https://candidatetohr.online/learning-path</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/placement-probability</loc>
+    <loc>https://candidatetohr.online/placement-probability</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/truth-detector</loc>
+    <loc>https://candidatetohr.online/truth-detector</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/roadmaps</loc>
+    <loc>https://candidatetohr.online/roadmaps</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/interview-questions</loc>
+    <loc>https://candidatetohr.online/interview-questions</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/resume-examples</loc>
+    <loc>https://candidatetohr.online/resume-examples</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/salary-guides</loc>
+    <loc>https://candidatetohr.online/salary-guides</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/career-guides</loc>
+    <loc>https://candidatetohr.online/career-guides</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/roadmaps/software-engineer</loc>
+    <loc>https://candidatetohr.online/roadmaps/software-engineer</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/roadmaps/data-scientist</loc>
+    <loc>https://candidatetohr.online/roadmaps/data-scientist</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/roadmaps/ai-engineer</loc>
+    <loc>https://candidatetohr.online/roadmaps/ai-engineer</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/roadmaps/data-analyst</loc>
+    <loc>https://candidatetohr.online/roadmaps/data-analyst</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/roadmaps/machine-learning-engineer</loc>
+    <loc>https://candidatetohr.online/roadmaps/machine-learning-engineer</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/roadmaps/full-stack-developer</loc>
+    <loc>https://candidatetohr.online/roadmaps/full-stack-developer</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/roadmaps/frontend-developer</loc>
+    <loc>https://candidatetohr.online/roadmaps/frontend-developer</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/roadmaps/backend-developer</loc>
+    <loc>https://candidatetohr.online/roadmaps/backend-developer</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/roadmaps/java-developer</loc>
+    <loc>https://candidatetohr.online/roadmaps/java-developer</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/roadmaps/python-developer</loc>
+    <loc>https://candidatetohr.online/roadmaps/python-developer</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/roadmaps/devops-engineer</loc>
+    <loc>https://candidatetohr.online/roadmaps/devops-engineer</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/roadmaps/cloud-engineer</loc>
+    <loc>https://candidatetohr.online/roadmaps/cloud-engineer</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/roadmaps/cyber-security</loc>
+    <loc>https://candidatetohr.online/roadmaps/cyber-security</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/roadmaps/ethical-hacker</loc>
+    <loc>https://candidatetohr.online/roadmaps/ethical-hacker</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/roadmaps/business-analyst</loc>
+    <loc>https://candidatetohr.online/roadmaps/business-analyst</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/roadmaps/product-manager</loc>
+    <loc>https://candidatetohr.online/roadmaps/product-manager</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/roadmaps/ui-ux-designer</loc>
+    <loc>https://candidatetohr.online/roadmaps/ui-ux-designer</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/roadmaps/blockchain-developer</loc>
+    <loc>https://candidatetohr.online/roadmaps/blockchain-developer</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/roadmaps/mobile-app-developer</loc>
+    <loc>https://candidatetohr.online/roadmaps/mobile-app-developer</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/roadmaps/game-developer</loc>
+    <loc>https://candidatetohr.online/roadmaps/game-developer</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/salary-guides/data-scientist-india</loc>
+    <loc>https://candidatetohr.online/salary-guides/data-scientist-india</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/salary-guides/software-engineer-india</loc>
+    <loc>https://candidatetohr.online/salary-guides/software-engineer-india</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/salary-guides/ai-engineer-india</loc>
+    <loc>https://candidatetohr.online/salary-guides/ai-engineer-india</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/salary-guides/product-manager-us</loc>
+    <loc>https://candidatetohr.online/salary-guides/product-manager-us</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/salary-guides/data-analyst-india</loc>
+    <loc>https://candidatetohr.online/salary-guides/data-analyst-india</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/salary-guides/frontend-developer-india</loc>
+    <loc>https://candidatetohr.online/salary-guides/frontend-developer-india</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/salary-guides/backend-developer-india</loc>
+    <loc>https://candidatetohr.online/salary-guides/backend-developer-india</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/salary-guides/devops-engineer-india</loc>
+    <loc>https://candidatetohr.online/salary-guides/devops-engineer-india</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/salary-guides/product-manager-india</loc>
+    <loc>https://candidatetohr.online/salary-guides/product-manager-india</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/salary-guides/ui-ux-designer-india</loc>
+    <loc>https://candidatetohr.online/salary-guides/ui-ux-designer-india</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/salary-guides/cyber-security-analyst-india</loc>
+    <loc>https://candidatetohr.online/salary-guides/cyber-security-analyst-india</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/salary-guides/software-engineer-us</loc>
+    <loc>https://candidatetohr.online/salary-guides/software-engineer-us</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/salary-guides/data-scientist-us</loc>
+    <loc>https://candidatetohr.online/salary-guides/data-scientist-us</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/salary-guides/ai-engineer-us</loc>
+    <loc>https://candidatetohr.online/salary-guides/ai-engineer-us</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/salary-guides/machine-learning-engineer-us</loc>
+    <loc>https://candidatetohr.online/salary-guides/machine-learning-engineer-us</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/salary-guides/devops-engineer-us</loc>
+    <loc>https://candidatetohr.online/salary-guides/devops-engineer-us</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/salary-guides/cloud-engineer-us</loc>
+    <loc>https://candidatetohr.online/salary-guides/cloud-engineer-us</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/salary-guides/full-stack-developer-us</loc>
+    <loc>https://candidatetohr.online/salary-guides/full-stack-developer-us</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/interview-questions/python</loc>
+    <loc>https://candidatetohr.online/interview-questions/python</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/interview-questions/java</loc>
+    <loc>https://candidatetohr.online/interview-questions/java</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/interview-questions/sql</loc>
+    <loc>https://candidatetohr.online/interview-questions/sql</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/interview-questions/react</loc>
+    <loc>https://candidatetohr.online/interview-questions/react</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/interview-questions/data-science</loc>
+    <loc>https://candidatetohr.online/interview-questions/data-science</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/interview-questions/system-design</loc>
+    <loc>https://candidatetohr.online/interview-questions/system-design</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/interview-questions/javascript</loc>
+    <loc>https://candidatetohr.online/interview-questions/javascript</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/interview-questions/aws</loc>
+    <loc>https://candidatetohr.online/interview-questions/aws</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/interview-questions/machine-learning</loc>
+    <loc>https://candidatetohr.online/interview-questions/machine-learning</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/interview-questions/node-js</loc>
+    <loc>https://candidatetohr.online/interview-questions/node-js</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/interview-questions/devops</loc>
+    <loc>https://candidatetohr.online/interview-questions/devops</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/interview-questions/product-manager</loc>
+    <loc>https://candidatetohr.online/interview-questions/product-manager</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/interview-questions/behavioral</loc>
+    <loc>https://candidatetohr.online/interview-questions/behavioral</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/interview-questions/kubernetes</loc>
+    <loc>https://candidatetohr.online/interview-questions/kubernetes</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/resume-examples/data-scientist</loc>
+    <loc>https://candidatetohr.online/resume-examples/data-scientist</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/resume-examples/software-engineer</loc>
+    <loc>https://candidatetohr.online/resume-examples/software-engineer</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/resume-examples/product-manager</loc>
+    <loc>https://candidatetohr.online/resume-examples/product-manager</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/resume-examples/cyber-security</loc>
+    <loc>https://candidatetohr.online/resume-examples/cyber-security</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/resume-examples/frontend-developer</loc>
+    <loc>https://candidatetohr.online/resume-examples/frontend-developer</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/resume-examples/devops-engineer</loc>
+    <loc>https://candidatetohr.online/resume-examples/devops-engineer</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/resume-examples/machine-learning-engineer</loc>
+    <loc>https://candidatetohr.online/resume-examples/machine-learning-engineer</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/resume-examples/business-analyst</loc>
+    <loc>https://candidatetohr.online/resume-examples/business-analyst</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/resume-examples/ui-ux-designer</loc>
+    <loc>https://candidatetohr.online/resume-examples/ui-ux-designer</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/resume-examples/full-stack-developer</loc>
+    <loc>https://candidatetohr.online/resume-examples/full-stack-developer</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/career-guides/how-to-become-data-scientist</loc>
+    <loc>https://candidatetohr.online/career-guides/how-to-become-data-scientist</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/career-guides/how-to-become-software-engineer</loc>
+    <loc>https://candidatetohr.online/career-guides/how-to-become-software-engineer</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/career-guides/best-careers-after-btech-cse</loc>
+    <loc>https://candidatetohr.online/career-guides/best-careers-after-btech-cse</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/career-guides/skills-to-learn-in-2026</loc>
+    <loc>https://candidatetohr.online/career-guides/skills-to-learn-in-2026</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/career-guides/how-to-get-a-job-without-experience</loc>
+    <loc>https://candidatetohr.online/career-guides/how-to-get-a-job-without-experience</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/career-guides/ats-resume-tips</loc>
+    <loc>https://candidatetohr.online/career-guides/ats-resume-tips</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/career-guides/highest-paying-tech-jobs-2026</loc>
+    <loc>https://candidatetohr.online/career-guides/highest-paying-tech-jobs-2026</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candidatetohr-example.com/career-guides/how-to-negotiate-salary</loc>
+    <loc>https://candidatetohr.online/career-guides/how-to-negotiate-salary</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
