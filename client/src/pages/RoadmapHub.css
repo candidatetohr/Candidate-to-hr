@@ -21,14 +21,7 @@
 }
 
 .hub-bg-glow {
-  position: absolute;
-  top: -150px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 800px;
-  height: 400px;
-  background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, var(--bg-card) 70%);
-  pointer-events: none;
+  display: none;
 }
 
 .hub-badge {
@@ -49,7 +42,7 @@
   font-size: 3rem;
   font-weight: 800;
   margin: 0 0 16px 0;
-  background: linear-gradient(to right, #f8fafc, #94a3b8);
+  background: linear-gradient(to right, var(--text-primary), var(--text-muted));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -106,7 +99,7 @@
 .hub-sidebar h3 {
   font-size: 1.1rem;
   margin-bottom: 16px;
-  color: #e2e8f0;
+  color: var(--text-secondary);
 }
 
 .category-list {
@@ -147,7 +140,7 @@
 
 .hub-cta-box h4 {
   margin: 0 0 8px 0;
-  color: #e2e8f0;
+  color: var(--text-secondary);
 }
 
 .hub-cta-box p {
@@ -296,7 +289,7 @@
 .stat-val {
   font-size: 0.95rem;
   font-weight: 600;
-  color: #e2e8f0;
+  color: var(--text-secondary);
 }
 
 .text-green { color: #10b981; }

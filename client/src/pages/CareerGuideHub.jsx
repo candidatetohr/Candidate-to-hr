@@ -22,7 +22,6 @@ export default function CareerGuideHub() {
       </Helmet>
 
       <section className="hub-hero">
-        <div className="hub-bg-glow"></div>
         <div className="hub-container text-center">
           <div className="hub-badge"><BookOpen size={14} /> Career Advice</div>
           <h1 className="hub-title">Tech Career Guides</h1>

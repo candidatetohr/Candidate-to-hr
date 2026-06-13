@@ -22,7 +22,6 @@ export default function SalaryHub() {
       </Helmet>
 
       <section className="hub-hero">
-        <div className="hub-bg-glow"></div>
         <div className="hub-container text-center">
           <div className="hub-badge"><DollarSign size={14} /> Compensation Data</div>
           <h1 className="hub-title">Tech Salary Guides</h1>

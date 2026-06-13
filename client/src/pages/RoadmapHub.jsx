@@ -29,7 +29,6 @@ export default function RoadmapHub() {
 
       {/* Hero Section */}
       <section className="hub-hero">
-        <div className="hub-bg-glow"></div>
         <div className="hub-container text-center">
           <div className="hub-badge">
             <Map size={14} /> Ultimate Career Hub 2026

@@ -22,7 +22,6 @@ export default function InterviewHub() {
       </Helmet>
 
       <section className="hub-hero">
-        <div className="hub-bg-glow"></div>
         <div className="hub-container text-center">
           <div className="hub-badge"><Code size={14} /> Technical Interview Prep</div>
           <h1 className="hub-title">Acing the Technical Interview</h1>

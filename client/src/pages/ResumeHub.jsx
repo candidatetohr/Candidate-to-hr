@@ -22,7 +22,6 @@ export default function ResumeHub() {
       </Helmet>
 
       <section className="hub-hero">
-        <div className="hub-bg-glow"></div>
         <div className="hub-container text-center">
           <div className="hub-badge"><FileText size={14} /> Resume Templates & Examples</div>
           <h1 className="hub-title">The Perfect Resume Examples</h1>

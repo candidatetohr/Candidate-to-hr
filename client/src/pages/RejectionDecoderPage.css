@@ -302,7 +302,7 @@
   align-items: flex-start;
   gap: 10px;
   font-size: 0.95rem;
-  color: #e2e8f0;
+  color: var(--text-secondary);
 }
 
 .rd-success-icon {

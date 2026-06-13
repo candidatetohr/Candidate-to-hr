@@ -4,7 +4,7 @@
 .sim-orb-1 { width: 500px; height: 500px; background: radial-gradient(circle, #a855f7, transparent); top: -150px; right: -100px; }
 .sim-orb-2 { width: 400px; height: 400px; background: radial-gradient(circle, #4f8ef7, transparent); bottom: 0; left: -100px; }
 
-.sim-nav { position: sticky; top: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 0.85rem 2rem; background: rgba(10,10,15,0.75); /* removed blur */ border-bottom: 1px solid var(--border-default); }
+.sim-nav { position: sticky; top: 72px; z-index: 10; display: flex; align-items: center; justify-content: space-between; padding: 0.85rem 2rem; background: rgba(10,10,15,0.75); /* removed blur */ border-bottom: 1px solid var(--border-default); }
 .sim-back { display: flex; align-items: center; gap: 6px; background: none; border: 1px solid var(--border-default); color: var(--text-secondary, #94a3b8); padding: 6px 14px; border-radius: 8px; cursor: pointer; font-size: 0.82rem; transition: all 0.2s; }
 .sim-back:hover { border-color: #a855f7; color: #a855f7; }
 .sim-logo { display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 1rem; }
@@ -56,7 +56,7 @@
 
 .sim-answer-area { margin-bottom: 1.25rem; }
 .sim-answer-label { display: block; font-size: 0.82rem; font-weight: 600; color: var(--text-secondary, #94a3b8); margin-bottom: 6px; }
-.sim-textarea { width: 100%; background: var(--bg-primary); border: 1px solid var(--border-default); border-radius: 10px; padding: 12px 14px; color: white; font-size: 0.9rem; font-family: inherit; line-height: 1.65; resize: vertical; box-sizing: border-box; transition: border-color 0.2s; }
+.sim-textarea { width: 100%; background: var(--bg-primary); border: 1px solid var(--border-default); border-radius: 10px; padding: 12px 14px; color: var(--text-primary); font-size: 0.9rem; font-family: inherit; line-height: 1.65; resize: vertical; box-sizing: border-box; transition: border-color 0.2s; }
 .sim-textarea:focus { outline: none; border-color: #a855f7; background: rgba(168,85,247,0.05); }
 
 .sim-actions { display: flex; gap: 0.75rem; align-items: center; }

@@ -135,7 +135,7 @@
 .rd-list li {
   position: relative;
   padding-left: 20px;
-  color: #e2e8f0;
+  color: var(--text-secondary);
 }
 
 .rd-list li::before {
@@ -159,7 +159,7 @@
   padding: 6px 12px;
   border-radius: 20px;
   font-size: 0.85rem;
-  color: #e2e8f0;
+  color: var(--text-secondary);
 }
 
 .rd-tag-outline {
@@ -268,7 +268,7 @@
 
 .rd-salary-exp {
   font-weight: 500;
-  color: #e2e8f0;
+  color: var(--text-secondary);
 }
 
 .rd-salary-val {
@@ -329,7 +329,7 @@
 }
 
 .rd-sticky-cta p {
-  color: #e2e8f0;
+  color: var(--text-secondary);
   margin: 0 0 20px 0;
   font-size: 0.95rem;
   line-height: 1.5;
