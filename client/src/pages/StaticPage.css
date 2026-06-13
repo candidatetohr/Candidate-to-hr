@@ -1,0 +1,78 @@
+.static-page-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px 24px;
+  min-height: calc(100vh - 400px);
+}
+
+.static-content {
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  border-radius: 12px;
+  padding: 40px;
+}
+
+.static-content h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 24px;
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--border-default);
+  padding-bottom: 16px;
+}
+
+.static-content h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 32px;
+  margin-bottom: 16px;
+  color: var(--text-primary);
+}
+
+.static-content h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 24px;
+  margin-bottom: 12px;
+  color: var(--text-primary);
+}
+
+.static-content p {
+  line-height: 1.7;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+.static-content ul {
+  padding-left: 24px;
+  margin-bottom: 24px;
+  color: var(--text-muted);
+}
+
+.static-content li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+.static-content a {
+  color: var(--primary-main);
+  text-decoration: none;
+}
+
+.static-content a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .static-page-container {
+    padding: 32px 16px;
+  }
+  
+  .static-content {
+    padding: 24px;
+  }
+  
+  .static-content h1 {
+    font-size: 1.8rem;
+  }
+}

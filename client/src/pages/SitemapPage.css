@@ -1,0 +1,83 @@
+.sitemap-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 80px 24px;
+  min-height: calc(100vh - 400px);
+}
+
+.sitemap-header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.sitemap-icon {
+  color: var(--primary-main);
+  margin-bottom: 16px;
+}
+
+.sitemap-header h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+  color: var(--text-primary);
+}
+
+.sitemap-header p {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+}
+
+.sitemap-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 32px;
+}
+
+.sitemap-section {
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  border-radius: 12px;
+  padding: 32px;
+}
+
+.sitemap-section h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--border-default);
+  padding-bottom: 12px;
+}
+
+.sitemap-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sitemap-section a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 1.05rem;
+  transition: color 0.2s;
+}
+
+.sitemap-section a:hover {
+  color: var(--primary-main);
+}
+
+@media (max-width: 768px) {
+  .sitemap-header h1 {
+    font-size: 2rem;
+  }
+  
+  .sitemap-grid {
+    grid-template-columns: 1fr;
+  }
+}

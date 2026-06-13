@@ -1,6 +1,7 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { useAuth } from './context/AuthContext';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import LandingPage from './pages/LandingPage';
 import AuthPage from './pages/AuthPage';
 import DashboardRouter from './components/DashboardRouter';
@@ -28,6 +29,14 @@ import SalaryDetail from './pages/SalaryDetail';
 import CareerGuideHub from './pages/CareerGuideHub';
 import CareerGuideDetail from './pages/CareerGuideDetail';
 
+// Legal and Static Pages
+import AboutPage from './pages/AboutPage';
+import ContactPage from './pages/ContactPage';
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
+import TermsPage from './pages/TermsPage';
+import DisclaimerPage from './pages/DisclaimerPage';
+import SitemapPage from './pages/SitemapPage';
+
 const ProtectedRoute = ({ children }) => {
   const { user, loading } = useAuth();
   if (loading) {
@@ -51,7 +60,7 @@ export default function App() {
 
   return (
     <>
-      {user && <Navbar />}
+      <Navbar />
       <Routes>
         <Route path="/" element={<PublicRoute><LandingPage /></PublicRoute>} />
         <Route path="/login" element={<PublicRoute><AuthPage /></PublicRoute>} />
@@ -81,8 +90,17 @@ export default function App() {
         <Route path="/career-guides" element={<CareerGuideHub />} />
         <Route path="/career-guides/:slug" element={<CareerGuideDetail />} />
         
+        {/* Static & Legal Pages */}
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/privacy" element={<PrivacyPolicyPage />} />
+        <Route path="/terms" element={<TermsPage />} />
+        <Route path="/disclaimer" element={<DisclaimerPage />} />
+        <Route path="/sitemap" element={<SitemapPage />} />
+        
         <Route path="*" element={<Navigate to={user ? '/dashboard' : '/'} replace />} />
       </Routes>
+      <Footer />
     </>
   );
 }

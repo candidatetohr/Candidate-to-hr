@@ -50,27 +50,13 @@
   
   --transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
   --transition-slow: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg-primary: #0B0F19;
-    --bg-secondary: #111827;
-    --bg-card: #1F2937;
-    --bg-card-hover: #374151;
-    
-    --border-subtle: #374151;
-    --border-default: #4B5563;
-    
-    --text-primary: #F9FAFB;
-    --text-secondary: #D1D5DB;
-    --text-muted: #9CA3AF;
-    --text-inverse: #111827;
-
-    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
-    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
-    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
-  }
+  /* Added missing variables */
+  --bg-tertiary: #F1F5F9;
+  --gradient-primary: linear-gradient(135deg, var(--color-primary), #3B82F6);
+  --shadow-glow-blue: 0 0 20px rgba(37, 99, 235, 0.2);
+  --shadow-glow-purple: 0 0 20px rgba(139, 92, 246, 0.2);
+  --accent-blue-light: #EFF6FF;
 }
 
 /* ─── Reset & Base ──────────────────────────────────────────────────────────*/
