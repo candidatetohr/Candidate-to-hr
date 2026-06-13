@@ -17,6 +17,7 @@ import RejectionDecoderPage from './pages/RejectionDecoderPage';
 import LearningPathPage from './pages/LearningPathPage';
 import ProbabilityEnginePage from './pages/ProbabilityEnginePage';
 import TruthDetectorPage from './pages/TruthDetectorPage';
+import ProfileEditPage from './pages/ProfileEditPage';
 
 import RoadmapHub from './pages/RoadmapHub';
 import RoadmapDetail from './pages/RoadmapDetail';
@@ -77,6 +78,7 @@ export default function App() {
         <Route path="/learning-path" element={<LearningPathPage />} />
         <Route path="/placement-probability" element={<ProbabilityEnginePage />} />
         <Route path="/truth-detector" element={<TruthDetectorPage />} />
+        <Route path="/profile/edit" element={<ProtectedRoute><ProfileEditPage /></ProtectedRoute>} />
         
         {/* SEO Hubs */}
         <Route path="/roadmaps" element={<RoadmapHub />} />

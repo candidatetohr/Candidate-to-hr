@@ -82,7 +82,7 @@ export default function CandidateDashboard() {
                   <h3>Create Resume With AI</h3>
                   <p>Generate a professional ATS-friendly resume from scratch.</p>
                 </div>
-                <div className="os-card hover-card">
+                <div className="os-card hover-card" onClick={() => navigate('/profile/edit')}>
                   <div className="icon-wrapper bg-green"><UserPlus size={24} /></div>
                   <h3>Complete Profile</h3>
                   <p>Add skills, education, projects, and career goals manually.</p>
