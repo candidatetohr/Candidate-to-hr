@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
-import { m as motion, AnimatePresence, LazyMotion } from 'framer-motion';
+import { m, AnimatePresence, LazyMotion } from 'framer-motion';
 import {
   LayoutDashboard,
   LogOut, User, Menu, X, Zap, ChevronDown, FileText, MessageSquare, BookOpen, MapPin, DollarSign, Plus

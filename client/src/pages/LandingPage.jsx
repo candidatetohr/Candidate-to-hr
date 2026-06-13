@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import { m as motion, LazyMotion } from 'framer-motion';
+import { m, LazyMotion } from 'framer-motion';
 import {
   Zap, Brain, Target, BarChart3, Users, Award,
   Shield, ArrowRight, CheckCircle, MessageSquare, TrendingUp,
