@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { useParams, Link } from 'react-router-dom';
 import SEO from '../components/SEO';
 import { ArrowLeft, ChevronDown, ChevronUp, MapPin, Target, Zap, DollarSign, BookOpen, PenTool, CheckCircle, HelpCircle } from 'lucide-react';
