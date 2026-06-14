@@ -42,6 +42,15 @@ export default function LandingPage() {
       <SEO 
         title="CandidateToHR - AI-Powered Resume & Hiring Intelligence" 
         description="CandidateToHR uses NVIDIA NIM AI to score resumes, analyze skills gaps, and optimize candidate profiles. Join for free today!"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "CandidateToHR",
+          "url": "https://www.candidatetohr.online",
+          "logo": "https://www.candidatetohr.online/logo.png",
+          "description": "AI-Powered Resume & Hiring Intelligence",
+          "sameAs": []
+        }}
       />
       <div className="landing-page">
       {/* Background */}

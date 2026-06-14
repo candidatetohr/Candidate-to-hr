@@ -4,14 +4,13 @@ import { useLocation } from 'react-router-dom';
 export default function SEO({ 
   title, 
   description, 
-  image = 'https://candidatetohr.online/og-image.jpg', 
+  image = 'https://www.candidatetohr.online/og-image.jpg', 
   type = 'website', 
   schema 
 }) {
   const location = useLocation();
-  // Using generic domain as origin, fallback to window location if missing
-  const origin = typeof window !== 'undefined' ? window.location.origin : 'https://candidatetohr.online';
-  const currentUrl = `${origin}${location.pathname}`;
+  const baseUrl = 'https://www.candidatetohr.online';
+  const currentUrl = `${baseUrl}${location.pathname}`;
 
   return (
     <Helmet>
