@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 import { Search, FileText, ChevronRight } from 'lucide-react';
 import { resumeCategories } from '../data/resumeExamples';
 import { AdBanner, SidebarAd } from '../components/monetization/Ads';
@@ -16,10 +16,7 @@ export default function ResumeHub() {
 
   return (
     <div className="hub-page">
-      <Helmet>
-        <title>ATS Resume Examples 2026 | Candidatetohr</title>
-        <meta name="description" content="Browse hundreds of ATS-friendly resume examples for Software Engineers, Data Scientists, and more." />
-      </Helmet>
+      <SEO title="ATS Resume Examples 2026 | Candidatetohr" description="Browse hundreds of ATS-friendly resume examples for Software Engineers, Data Scientists, and more." />
 
       <section className="hub-hero">
         <div className="hub-container text-center">

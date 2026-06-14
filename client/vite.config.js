@@ -1,8 +1,13 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import viteCompression from 'vite-plugin-compression'
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react(),
+    viteCompression({ algorithm: 'brotliCompress' }),
+    viteCompression({ algorithm: 'gzip' })
+  ],
   build: {
     target: 'esnext',
     sourcemap: true,

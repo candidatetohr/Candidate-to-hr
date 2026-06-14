@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 import { ArrowLeft, ChevronDown, ChevronUp, MapPin, Target, Zap, DollarSign, BookOpen, PenTool, CheckCircle, HelpCircle } from 'lucide-react';
 import './RoadmapDetail.css';
 

@@ -173,11 +173,22 @@ export default function AuthPage() {
               <button
                 type="button"
                 className="input-icon-right"
+                aria-label={showPassword ? 'Hide password' : 'Show password'}
                 onClick={() => setShowPassword(!showPassword)}
               >
                 {showPassword ? <EyeOff size={15} /> : <Eye size={15} />}
               </button>
             </div>
+            {mode === 'login' && (
+              <div style={{ textAlign: 'right', marginTop: '8px' }}>
+                <span 
+                  style={{ fontSize: '0.85rem', color: '#3b82f6', cursor: 'pointer', fontWeight: 500 }}
+                  onClick={() => navigate('/forgot-password')}
+                >
+                  Forgot Password?
+                </span>
+              </div>
+            )}
           </div>
 
           {mode === 'register' && form.role === 'recruiter' && (

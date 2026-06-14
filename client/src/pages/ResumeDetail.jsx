@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import SchemaMarkup from '../components/seo/SchemaMarkup';
 import Breadcrumbs from '../components/seo/Breadcrumbs';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 import { AdBanner, SidebarAd } from '../components/monetization/Ads';
 import { ATSCheckerCTA, ResumeBuilderCTA } from '../components/cta/PlatformCTAs';
 import { CheckCircle, XCircle, AlertTriangle } from 'lucide-react';

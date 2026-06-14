@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 import { Search, DollarSign, ChevronRight } from 'lucide-react';
 import { salaryCategories } from '../data/salaryGuides';
 import { AdBanner, SidebarAd } from '../components/monetization/Ads';
@@ -16,10 +16,7 @@ export default function SalaryHub() {
 
   return (
     <div className="hub-page">
-      <Helmet>
-        <title>Tech Salary Guides 2026 | Candidatetohr</title>
-        <meta name="description" content="Discover exact salary ranges for Software Engineers, Data Scientists, and AI Engineers across top cities and companies." />
-      </Helmet>
+      <SEO title="Tech Salary Guides 2026 | Candidatetohr" description="Discover exact salary ranges for Software Engineers, Data Scientists, and AI Engineers across top cities and companies." />
 
       <section className="hub-hero">
         <div className="hub-container text-center">

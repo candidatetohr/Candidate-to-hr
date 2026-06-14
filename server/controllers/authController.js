@@ -2,6 +2,8 @@ import User from '../models/User.js';
 import { generateToken } from '../middleware/auth.js';
 import { asyncHandler } from '../middleware/errorHandler.js';
 import { createClient } from '@supabase/supabase-js';
+import crypto from 'crypto';
+import sendEmail from '../utils/sendEmail.js';
 
 const supabaseUrl = process.env.SUPABASE_URL;
 const supabaseKey = process.env.SUPABASE_ANON_KEY;
@@ -29,29 +31,38 @@ export const register = asyncHandler(async (req, res) => {
     return res.status(400).json({ success: false, message: 'An account with this email already exists.' });
   }
 
+  // Create verification token
+  const verificationToken = crypto.randomBytes(20).toString('hex');
+
   const user = await User.create({
     name: name.trim(),
     email: email.toLowerCase().trim(),
     password,
     company: company?.trim() || '',
     role,
+    isVerified: false,
+    verificationToken
   });
 
-  const token = generateToken(user._id);
+  // Send verification email
+  const verifyUrl = `${req.protocol}://${req.get('host')}/verify-email/${verificationToken}`;
+  const message = `You are receiving this email because you registered on CandidateToHR. Please make a GET request to: \n\n ${verifyUrl}`;
 
-  res.status(201).json({
-    success: true,
-    message: 'Account created successfully.',
-    token,
-    user: {
-      _id: user._id,
-      name: user.name,
+  try {
+    await sendEmail({
       email: user.email,
-      company: user.company,
-      role: user.role,
-      createdAt: user.createdAt,
-    },
-  });
+      subject: 'CandidateToHR - Email Verification',
+      message
+    });
+    res.status(201).json({
+      success: true,
+      message: 'Account created successfully. Please check your email to verify your account.',
+    });
+  } catch (err) {
+    user.verificationToken = undefined;
+    await user.save({ validateBeforeSave: false });
+    return res.status(500).json({ success: false, message: 'Email could not be sent' });
+  }
 });
 
 // @desc    Login user
@@ -70,6 +81,10 @@ export const login = asyncHandler(async (req, res) => {
     return res.status(401).json({ success: false, message: 'Invalid email or password.' });
   }
 
+  if (!user.isVerified) {
+    return res.status(401).json({ success: false, message: 'Please verify your email before logging in.' });
+  }
+
   const token = generateToken(user._id);
 
   res.json({
@@ -85,6 +100,81 @@ export const login = asyncHandler(async (req, res) => {
       createdAt: user.createdAt,
     },
   });
+});
+
+// @desc    Verify email
+// @route   GET /api/auth/verifyemail/:token
+// @access  Public
+export const verifyEmail = asyncHandler(async (req, res) => {
+  const user = await User.findOne({ verificationToken: req.params.token });
+
+  if (!user) {
+    return res.status(400).json({ success: false, message: 'Invalid or expired verification token.' });
+  }
+
+  user.isVerified = true;
+  user.verificationToken = undefined;
+  await user.save({ validateBeforeSave: false });
+
+  res.status(200).json({ success: true, message: 'Email verified successfully. You can now log in.' });
+});
+
+// @desc    Forgot Password
+// @route   POST /api/auth/forgotpassword
+// @access  Public
+export const forgotPassword = asyncHandler(async (req, res) => {
+  const user = await User.findOne({ email: req.body.email.toLowerCase() });
+
+  if (!user) {
+    return res.status(404).json({ success: false, message: 'There is no user with that email.' });
+  }
+
+  const resetToken = crypto.randomBytes(20).toString('hex');
+
+  user.resetPasswordToken = crypto.createHash('sha256').update(resetToken).digest('hex');
+  user.resetPasswordExpire = Date.now() + 10 * 60 * 1000; // 10 minutes
+
+  await user.save({ validateBeforeSave: false });
+
+  const resetUrl = `${req.protocol}://${req.get('host')}/reset-password/${resetToken}`;
+  const message = `You are receiving this email because you requested a password reset. Please make a PUT request to: \n\n ${resetUrl}`;
+
+  try {
+    await sendEmail({
+      email: user.email,
+      subject: 'CandidateToHR - Password Reset',
+      message
+    });
+    res.status(200).json({ success: true, message: 'Email sent' });
+  } catch (err) {
+    user.resetPasswordToken = undefined;
+    user.resetPasswordExpire = undefined;
+    await user.save({ validateBeforeSave: false });
+    return res.status(500).json({ success: false, message: 'Email could not be sent' });
+  }
+});
+
+// @desc    Reset Password
+// @route   PUT /api/auth/resetpassword/:token
+// @access  Public
+export const resetPassword = asyncHandler(async (req, res) => {
+  const resetPasswordToken = crypto.createHash('sha256').update(req.params.token).digest('hex');
+
+  const user = await User.findOne({
+    resetPasswordToken,
+    resetPasswordExpire: { $gt: Date.now() }
+  });
+
+  if (!user) {
+    return res.status(400).json({ success: false, message: 'Invalid token' });
+  }
+
+  user.password = req.body.password;
+  user.resetPasswordToken = undefined;
+  user.resetPasswordExpire = undefined;
+  await user.save();
+
+  res.status(200).json({ success: true, message: 'Password reset successful.' });
 });
 
 // @desc    Get current user
@@ -130,7 +220,6 @@ export const googleAuth = asyncHandler(async (req, res) => {
     return res.status(500).json({ success: false, message: 'Supabase is not configured on the server.' });
   }
 
-  // Verify the token with Supabase
   const { data, error } = await supabase.auth.getUser(access_token);
   if (error || !data?.user) {
     return res.status(401).json({ success: false, message: 'Invalid or expired Google token.' });
@@ -140,21 +229,18 @@ export const googleAuth = asyncHandler(async (req, res) => {
   const name = data.user.user_metadata?.full_name || email.split('@')[0];
   const avatar = data.user.user_metadata?.avatar_url || null;
 
-  // Check if user exists
   let user = await User.findOne({ email });
 
   if (!user) {
-    // Create a new user (defaulting to 'candidate' role)
     user = await User.create({
       name,
       email,
       role: 'candidate',
       authProvider: 'google',
-      avatar
+      avatar,
+      isVerified: true // Google users are implicitly verified
     });
   } else {
-    // If user exists but used local auth before, we can still let them log in,
-    // or optionally update their avatar.
     if (avatar && !user.avatar) {
       user.avatar = avatar;
       await user.save();

@@ -1,13 +1,12 @@
 .ad-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  background: var(--bg-primary);
-  border: 1px dashed var(--border-default);
-  border-radius: 8px;
-  overflow: hidden;
+  align-items: center;
   margin: 20px 0;
+  width: 100%;
+  overflow: hidden;
+  /* Empty container styling until ad is loaded */
+  min-height: 10px; 
 }
 
 .ad-label {
@@ -28,20 +27,16 @@
 }
 
 /* Specific Sizes */
-.ad-banner .ad-placeholder {
+.ad-banner {
   min-height: 90px;
-  width: 100%;
-  max-width: 728px;
 }
 
-.ad-sidebar .ad-placeholder {
-  min-height: 600px;
-  width: 100%;
-  max-width: 300px;
-}
-
-.ad-inline .ad-placeholder {
+.ad-sidebar {
   min-height: 250px;
+}
+
+.ad-inline {
+  min-height: 100px;
   width: 100%;
 }
 

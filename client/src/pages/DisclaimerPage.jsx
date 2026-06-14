@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 import ReactMarkdown from 'react-markdown';
 import './StaticPage.css';
 
@@ -82,6 +82,22 @@ Users are solely responsible for:
 
 CandidateToHR serves as a supportive tool and educational resource, not a substitute for professional judgment.
 
+## Testimonials and Success Stories
+
+Any testimonials, case studies, or success stories featured on CandidateToHR represent individual experiences. They are not intended to represent or guarantee that anyone will achieve the same or similar results. Each user's success depends on their unique background, dedication, and external factors.
+
+## AI Accuracy and Hallucinations
+
+Our AI tools are built on advanced language models (such as NVIDIA NIM). However, artificial intelligence can occasionally generate incorrect, biased, or misleading information (often referred to as "hallucinations"). CandidateToHR is not responsible for any negative consequences resulting from reliance on AI-generated content.
+
+## Fair Use and Copyright
+
+This site may contain copyrighted material the use of which has not always been specifically authorized by the copyright owner. We make such material available for educational and informational purposes under the principles of "fair use." If you wish to use copyrighted material from this site for purposes that go beyond fair use, you must obtain permission from the copyright owner.
+
+## Indemnification
+
+By using CandidateToHR, you agree to indemnify, defend, and hold harmless CandidateToHR, its founders, and affiliates from and against any and all claims, liabilities, damages, losses, or expenses (including reasonable attorneys' fees) arising out of or in any way connected with your use of the website or violation of this Disclaimer.
+
 ## Changes to This Disclaimer
 
 We reserve the right to update or modify this Disclaimer at any time without prior notice.
@@ -100,10 +116,7 @@ Thank you for using CandidateToHR.
 export default function DisclaimerPage() {
   return (
     <div className="static-page-container">
-      <Helmet>
-        <title>Disclaimer | CandidateToHR</title>
-        <meta name="description" content="CandidateToHR Disclaimer regarding AI-generated content and employment outcomes." />
-      </Helmet>
+      <SEO title="Disclaimer | CandidateToHR" description="CandidateToHR Disclaimer regarding AI-generated content and employment outcomes." />
       
       <div className="static-content prose">
         <ReactMarkdown>{markdown}</ReactMarkdown>

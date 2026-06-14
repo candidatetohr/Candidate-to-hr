@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 import ReactMarkdown from 'react-markdown';
 import './StaticPage.css';
 
@@ -80,10 +80,7 @@ Thank you for choosing CandidateToHR as your career development partner.
 export default function AboutPage() {
   return (
     <div className="static-page-container">
-      <Helmet>
-        <title>About Us | CandidateToHR</title>
-        <meta name="description" content="Learn about CandidateToHR, our mission, and how we empower careers with AI." />
-      </Helmet>
+      <SEO title="About Us | CandidateToHR" description="Learn about CandidateToHR, our mission, and how we empower careers with AI." />
       
       <div className="static-content prose">
         <ReactMarkdown>{markdown}</ReactMarkdown>

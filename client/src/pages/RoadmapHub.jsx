@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 import { Search, Map, TrendingUp, Briefcase, ChevronRight, BarChart2 } from 'lucide-react';
 import { roadmapList } from '../data/roadmaps';
 import './RoadmapHub.css';
@@ -21,11 +21,7 @@ export default function RoadmapHub() {
 
   return (
     <div className="hub-page">
-      <Helmet>
-        <title>Tech Career Roadmaps 2026 | Candidatetohr</title>
-        <meta name="description" content="Discover the step-by-step career roadmaps for Software Engineering, Data Science, AI, and more. Learn exactly what to study in 2026." />
-        <meta name="keywords" content="career roadmap, software engineer roadmap, data science path, tech careers 2026" />
-      </Helmet>
+      <SEO title="Tech Career Roadmaps 2026 | Candidatetohr" description="Discover the step-by-step career roadmaps for Software Engineering, Data Science, AI, and more. Learn exactly what to study in 2026." />
 
       {/* Hero Section */}
       <section className="hub-hero">

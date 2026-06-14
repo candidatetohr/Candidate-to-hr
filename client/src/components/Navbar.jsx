@@ -80,6 +80,8 @@ export default function Navbar() {
               <div className="user-menu-wrapper">
                 <button
                   className="user-menu-trigger"
+                  aria-label="User menu"
+                  aria-expanded={userMenuOpen}
                   onClick={() => setUserMenuOpen(!userMenuOpen)}
                 >
                   <div className="user-avatar">{initials}</div>

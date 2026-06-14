@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import SchemaMarkup from '../components/seo/SchemaMarkup';
 import Breadcrumbs from '../components/seo/Breadcrumbs';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 import { AdBanner, InlineAd, SidebarAd } from '../components/monetization/Ads';
 import { MockInterviewCTA } from '../components/cta/PlatformCTAs';
 import { Eye, EyeOff } from 'lucide-react';

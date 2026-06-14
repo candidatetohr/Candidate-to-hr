@@ -4,7 +4,10 @@ import cors from 'cors';
 import helmet from 'helmet';
 import morgan from 'morgan';
 import rateLimit from 'express-rate-limit';
+import * as Sentry from '@sentry/node';
+import { nodeProfilingIntegration } from '@sentry/profiling-node';
 import { connectDB } from './config/db.js';
+import logger from './utils/logger.js';
 
 // Routes
 import authRoutes from './routes/auth.js';
@@ -22,6 +25,21 @@ import { errorHandler } from './middleware/errorHandler.js';
 
 const app = express();
 const PORT = process.env.PORT || 5000;
+
+if (process.env.SENTRY_DSN) {
+  Sentry.init({
+    dsn: process.env.SENTRY_DSN,
+    integrations: [
+      nodeProfilingIntegration(),
+    ],
+    tracesSampleRate: 1.0,
+    profilesSampleRate: 1.0,
+  });
+}
+
+// Sentry request handler must be the first middleware on the app
+app.use(Sentry.Handlers.requestHandler());
+app.use(Sentry.Handlers.tracingHandler());
 
 // ─── Security Middleware ─────────────────────────────────────────────────────
 app.use(helmet());
@@ -47,7 +65,7 @@ app.use('/api', limiter);
 // ─── Body Parsing ─────────────────────────────────────────────────────────────
 app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true, limit: '10mb' }));
-app.use(morgan('dev'));
+app.use(morgan('combined', { stream: { write: message => logger.info(message.trim()) } }));
 
 // ─── Routes ──────────────────────────────────────────────────────────────────
 app.use('/api/auth', authRoutes);
@@ -65,6 +83,9 @@ app.get('/api/health', (req, res) => {
   res.json({ success: true, message: 'ATS API is running', timestamp: new Date() });
 });
 
+// The error handler must be before any other error middleware and after all controllers
+app.use(Sentry.Handlers.errorHandler());
+
 // ─── Global Error Handler ─────────────────────────────────────────────────────
 app.use(errorHandler);
 
@@ -73,12 +94,12 @@ const start = async () => {
   try {
     await connectDB();
     app.listen(PORT, () => {
-      console.log(`\nServer started on http://localhost:${PORT}`);
-      console.log(`Environment: ${process.env.NODE_ENV}`);
-      console.log(`NVIDIA NIM: ${process.env.NVIDIA_API_KEY || process.env.NVIDIA_API_KEYS ? 'Configured' : 'NOT SET'}\n`);
+      logger.info(`Server started on http://localhost:${PORT}`);
+      logger.info(`Environment: ${process.env.NODE_ENV}`);
+      logger.info(`NVIDIA NIM: ${process.env.NVIDIA_API_KEY || process.env.NVIDIA_API_KEYS ? 'Configured' : 'NOT SET'}`);
     });
   } catch (err) {
-    console.error('Failed to start server:', err.message);
+    logger.error(`Failed to start server: ${err.message}`);
     process.exit(1);
   }
 };

@@ -4,6 +4,7 @@ import { useAuth } from './context/AuthContext';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import LandingPage from './pages/LandingPage';
+import CookieConsent from './components/CookieConsent';
 
 const AuthPage = lazy(() => import('./pages/AuthPage'));
 const DashboardRouter = lazy(() => import('./components/DashboardRouter'));
@@ -20,6 +21,10 @@ const LearningPathPage = lazy(() => import('./pages/LearningPathPage'));
 const ProbabilityEnginePage = lazy(() => import('./pages/ProbabilityEnginePage'));
 const TruthDetectorPage = lazy(() => import('./pages/TruthDetectorPage'));
 const ProfileEditPage = lazy(() => import('./pages/ProfileEditPage'));
+
+const ForgotPasswordPage = lazy(() => import('./pages/ForgotPasswordPage'));
+const ResetPasswordPage = lazy(() => import('./pages/ResetPasswordPage'));
+const VerifyEmailPage = lazy(() => import('./pages/VerifyEmailPage'));
 
 const RoadmapHub = lazy(() => import('./pages/RoadmapHub'));
 const RoadmapDetail = lazy(() => import('./pages/RoadmapDetail'));
@@ -76,6 +81,9 @@ export default function App() {
         <Routes>
           <Route path="/" element={<PublicRoute><LandingPage /></PublicRoute>} />
           <Route path="/login" element={<PublicRoute><AuthPage /></PublicRoute>} />
+          <Route path="/forgot-password" element={<PublicRoute><ForgotPasswordPage /></PublicRoute>} />
+          <Route path="/reset-password/:token" element={<PublicRoute><ResetPasswordPage /></PublicRoute>} />
+          <Route path="/verify-email/:token" element={<PublicRoute><VerifyEmailPage /></PublicRoute>} />
           <Route path="/dashboard" element={<ProtectedRoute><DashboardRouter /></ProtectedRoute>} />
           <Route path="/jobs/create" element={<ProtectedRoute><CreateJobPage /></ProtectedRoute>} />
           <Route path="/jobs/:id" element={<ProtectedRoute><JobDetailPage /></ProtectedRoute>} />
@@ -116,6 +124,7 @@ export default function App() {
       </Suspense>
       </main>
       <Footer />
+      <CookieConsent />
     </>
   );
 }

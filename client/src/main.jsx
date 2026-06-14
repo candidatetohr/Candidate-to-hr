@@ -3,16 +3,32 @@ import ReactDOM from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
 import { Toaster } from 'react-hot-toast'
 import { HelmetProvider } from 'react-helmet-async'
+import * as Sentry from '@sentry/react'
 import App from './App.jsx'
 import { AuthProvider } from './context/AuthContext.jsx'
+import ErrorBoundary from './components/ErrorBoundary.jsx'
 import './index.css'
+
+if (import.meta.env.VITE_SENTRY_DSN) {
+  Sentry.init({
+    dsn: import.meta.env.VITE_SENTRY_DSN,
+    integrations: [
+      Sentry.browserTracingIntegration(),
+      Sentry.replayIntegration(),
+    ],
+    tracesSampleRate: 1.0,
+    replaysSessionSampleRate: 0.1,
+    replaysOnErrorSampleRate: 1.0,
+  });
+}
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <HelmetProvider>
-      <BrowserRouter>
-        <AuthProvider>
-          <App />
+    <ErrorBoundary>
+      <HelmetProvider>
+        <BrowserRouter>
+          <AuthProvider>
+            <App />
           <Toaster
             position="top-right"
             toastOptions={{
@@ -35,5 +51,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         </AuthProvider>
       </BrowserRouter>
     </HelmetProvider>
+    </ErrorBoundary>
   </React.StrictMode>
 )

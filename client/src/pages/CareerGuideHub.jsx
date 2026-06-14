@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 import { Search, BookOpen, ChevronRight } from 'lucide-react';
 import { careerGuideCategories } from '../data/careerGuides';
 import { AdBanner, SidebarAd } from '../components/monetization/Ads';
@@ -16,10 +16,7 @@ export default function CareerGuideHub() {
 
   return (
     <div className="hub-page">
-      <Helmet>
-        <title>Career Guides & Blueprints 2026 | Candidatetohr</title>
-        <meta name="description" content="Step-by-step career guides for software engineering, data science, and tech roles." />
-      </Helmet>
+      <SEO title="Career Guides & Blueprints 2026 | Candidatetohr" description="Step-by-step career guides for software engineering, data science, and tech roles." />
 
       <section className="hub-hero">
         <div className="hub-container text-center">

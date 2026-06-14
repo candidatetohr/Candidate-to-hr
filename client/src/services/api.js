@@ -34,6 +34,9 @@ export const authAPI = {
   google: (data) => api.post('/auth/google', data),
   getMe: () => api.get('/auth/me'),
   updateProfile: (data) => api.put('/auth/me', data),
+  verifyEmail: (token) => api.get(`/auth/verifyemail/${token}`),
+  forgotPassword: (data) => api.post('/auth/forgotpassword', data),
+  resetPassword: (token, data) => api.put(`/auth/resetpassword/${token}`, data),
 };
 
 // ─── Jobs ─────────────────────────────────────────────────────────────────────

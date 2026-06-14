@@ -1,4 +1,4 @@
-# 🚀 TalentAI — AI-Powered Applicant Tracking System
+# 🚀 CandidateToHR — AI-Powered Applicant Tracking System
 
 A full-stack **AI-Powered ATS** built with the **MERN stack** and **NVIDIA NIM APIs** for intelligent resume analysis, candidate ranking, and hiring pipeline management.
 

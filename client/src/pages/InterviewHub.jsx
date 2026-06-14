@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 import { Search, Code, Terminal, ChevronRight } from 'lucide-react';
 import { interviewCategories } from '../data/interviewQuestions';
 import { AdBanner, SidebarAd } from '../components/monetization/Ads';
@@ -16,10 +16,7 @@ export default function InterviewHub() {
 
   return (
     <div className="hub-page">
-      <Helmet>
-        <title>Top Tech Interview Questions 2026 | Candidatetohr</title>
-        <meta name="description" content="Prepare for your next technical interview with our massive database of real interview questions for Python, Java, React, SQL, and System Design." />
-      </Helmet>
+      <SEO title="Top Tech Interview Questions 2026 | Candidatetohr" description="Prepare for your next technical interview with our massive database of real interview questions for Python, Java, React, SQL, and System Design." />
 
       <section className="hub-hero">
         <div className="hub-container text-center">

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 import { FileText, MessageSquare, BookOpen, MapPin, DollarSign, Zap } from 'lucide-react';
 import './SitemapPage.css';
 
@@ -36,10 +36,7 @@ const sitemapData = [
 export default function SitemapPage() {
   return (
     <div className="sitemap-container">
-      <Helmet>
-        <title>Sitemap | CandidateToHR</title>
-        <meta name="description" content="CandidateToHR visual sitemap. Easily find all pages, resources, and career guides on our platform." />
-      </Helmet>
+      <SEO title="Sitemap | CandidateToHR" description="CandidateToHR visual sitemap. Easily find all pages, resources, and career guides on our platform." />
       
       <div className="sitemap-header">
         <Zap size={32} className="sitemap-icon" />

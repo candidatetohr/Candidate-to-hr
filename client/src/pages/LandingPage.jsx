@@ -5,6 +5,7 @@ import {
   Shield, ArrowRight, CheckCircle, MessageSquare, TrendingUp,
   FileSearch, Sparkles, AlertTriangle, Map, PieChart, ShieldAlert
 } from 'lucide-react';
+import SEO from '../components/SEO';
 import './LandingPage.css';
 
 const loadFeatures = () => import('../framerFeatures.js').then(res => res.default);
@@ -38,6 +39,10 @@ export default function LandingPage() {
 
   return (
     <LazyMotion features={loadFeatures}>
+      <SEO 
+        title="CandidateToHR - AI-Powered Resume & Hiring Intelligence" 
+        description="CandidateToHR uses NVIDIA NIM AI to score resumes, analyze skills gaps, and optimize candidate profiles. Join for free today!"
+      />
       <div className="landing-page">
       {/* Background */}
       <div className="landing-bg">

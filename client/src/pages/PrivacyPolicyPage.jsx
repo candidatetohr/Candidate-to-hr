@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 import ReactMarkdown from 'react-markdown';
 import './StaticPage.css';
 
@@ -127,10 +127,7 @@ Thank you for trusting CandidateToHR.
 export default function PrivacyPolicyPage() {
   return (
     <div className="static-page-container">
-      <Helmet>
-        <title>Privacy Policy | CandidateToHR</title>
-        <meta name="description" content="CandidateToHR Privacy Policy. Learn how we collect, use, and protect your information." />
-      </Helmet>
+      <SEO title="Privacy Policy | CandidateToHR" description="CandidateToHR Privacy Policy. Learn how we collect, use, and protect your information." />
       
       <div className="static-content prose">
         <ReactMarkdown>{markdown}</ReactMarkdown>

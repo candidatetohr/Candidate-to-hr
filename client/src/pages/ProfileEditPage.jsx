@@ -3,10 +3,12 @@ import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { User, Code, GraduationCap, Briefcase, Target, Plus, Trash2, Save, ArrowLeft } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
+import { authAPI } from '../services/api';
+import toast from 'react-hot-toast';
 import './ProfileEditPage.css';
 
 export default function ProfileEditPage() {
-  const { user } = useAuth();
+  const { user, updateUser } = useAuth();
   const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState('basic');
   const [isSaving, setIsSaving] = useState(false);
@@ -78,11 +80,21 @@ export default function ProfileEditPage() {
 
   const handleSave = async () => {
     setIsSaving(true);
-    // Simulate API call
-    setTimeout(() => {
-      setIsSaving(false);
+    try {
+      const payload = {
+        name: basicInfo.name,
+        company: basicInfo.headline // temporarily mapping headline to company
+        // TODO: Expand backend model to support skills, education, projects, goals
+      };
+      const res = await authAPI.updateProfile(payload);
+      updateUser(res.data.user);
+      toast.success('Profile updated successfully!');
       navigate('/dashboard');
-    }, 1500);
+    } catch (err) {
+      toast.error(err.response?.data?.message || 'Failed to update profile');
+    } finally {
+      setIsSaving(false);
+    }
   };
 
   const tabs = [

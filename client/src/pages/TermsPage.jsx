@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 import ReactMarkdown from 'react-markdown';
 import './StaticPage.css';
 
@@ -120,9 +120,13 @@ Use of the website is at your own risk.
 
 We strive to keep CandidateToHR available and functional at all times. However, we do not guarantee uninterrupted access and may modify, suspend, or discontinue services without prior notice.
 
-## Privacy
+## Privacy and Data Processing
 
-Your use of CandidateToHR is also governed by our Privacy Policy, which explains how we collect, use, and protect your information.
+Your use of CandidateToHR is also governed by our Privacy Policy, which explains how we collect, use, and protect your information. By using our platform, you consent to the processing of your data as described in the Privacy Policy, including the use of uploaded documents (like resumes) to generate AI insights.
+
+## Fees and Payments
+
+Currently, core features for candidates on CandidateToHR are provided free of charge. However, we reserve the right to introduce premium features, subscription tiers, or usage fees in the future. Any changes to our pricing structure will be communicated clearly to users before they incur any charges.
 
 ## Modifications to Terms
 
@@ -148,10 +152,7 @@ Thank you for using CandidateToHR.
 export default function TermsPage() {
   return (
     <div className="static-page-container">
-      <Helmet>
-        <title>Terms & Conditions | CandidateToHR</title>
-        <meta name="description" content="CandidateToHR Terms and Conditions. Please read these terms carefully before using our platform." />
-      </Helmet>
+      <SEO title="Terms & Conditions | CandidateToHR" description="CandidateToHR Terms and Conditions. Please read these terms carefully before using our platform." />
       
       <div className="static-content prose">
         <ReactMarkdown>{markdown}</ReactMarkdown>
