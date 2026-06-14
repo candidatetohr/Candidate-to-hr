@@ -341,12 +341,7 @@
   white-space: nowrap;
 }
 
-/* 4-column grid alias */
-.features-grid-4 {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
-}
+
 
 /* Candidate CTA row */
 .candidate-cta-row {
