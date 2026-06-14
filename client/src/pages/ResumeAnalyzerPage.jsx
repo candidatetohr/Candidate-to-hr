@@ -290,10 +290,10 @@ export default function ResumeAnalyzerPage() {
           <img src="/logo.png" alt="CandidateToHR Logo" width="24" height="24" style={{ height: '24px' }} />
         </div>
         <div style={{ display: 'flex', gap: '8px' }}>
-          <button className="az-recruiter-btn az-recruiter-btn-sm" onClick={() => navigate('/live-editor')} style={{ color: '#10b981', borderColor: 'rgba(16,185,129,0.3)' }}>
+          <button className="btn btn-secondary btn-sm" onClick={() => navigate('/live-editor')} style={{ color: '#10b981', borderColor: 'rgba(16,185,129,0.3)' }}>
             ️ Live Editor
           </button>
-          <button className="az-recruiter-btn" onClick={() => navigate('/login')}>For Recruiters →</button>
+          <button className="btn btn-secondary" onClick={() => navigate('/login')}>For Recruiters →</button>
         </div>
       </nav>
 
@@ -462,7 +462,7 @@ export default function ResumeAnalyzerPage() {
                       </div>
                     ))}
                   </div>
-                  <button className="az-btn-outline" onClick={() => navigate('/interview-sim')} style={{ marginTop: '1rem', width: '100%' }}>
+                  <button className="btn btn-secondary" onClick={() => navigate('/interview-sim')} style={{ marginTop: '1rem', width: '100%' }}>
                     <MessageSquare size={14} /> Practice These Questions in AI Simulator →
                   </button>
                 </Section>

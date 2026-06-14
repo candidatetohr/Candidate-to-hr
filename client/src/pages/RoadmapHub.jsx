@@ -63,7 +63,7 @@ export default function RoadmapHub() {
             ))}
           </ul>
 
-          <div className="hub-cta-box mt-8">
+          <div className="hub-cta-box mt-32">
             <h4>Build Your Resume</h4>
             <p>Ready to apply? Use our AI builder to generate a perfect ATS resume.</p>
             <Link to="/live-editor" className="hub-btn-outline">Create Resume <ChevronRight size={14}/></Link>

@@ -106,10 +106,10 @@ export default function ProfileEditPage() {
   ];
 
   return (
-    <div className="os-page pb-12">
-      <div className="os-container max-w-4xl">
+    <div className="os-page pb-48">
+      <div className="os-container container-seo">
         
-        <div className="flex items-center gap-4 mb-8">
+        <div className="flex items-center gap-16 mb-32">
           <button className="btn btn-ghost" onClick={() => navigate('/dashboard')}>
             <ArrowLeft size={18} />
             Back
@@ -136,36 +136,36 @@ export default function ProfileEditPage() {
           </div>
 
           {/* Form Content */}
-          <div className="profile-content glass-card">
+          <div className="profile-content card">
             
             {/* BASIC INFO */}
             {activeTab === 'basic' && (
               <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}>
                 <h2>Basic Information</h2>
-                <div className="form-grid mt-6">
+                <div className="form-grid mt-24">
                   <div className="form-group">
                     <label>Full Name</label>
-                    <input type="text" className="input-field" value={basicInfo.name} onChange={e => setBasicInfo({...basicInfo, name: e.target.value})} placeholder="John Doe" />
+                    <input type="text" className="form-input" value={basicInfo.name} onChange={e => setBasicInfo({...basicInfo, name: e.target.value})} placeholder="John Doe" />
                   </div>
                   <div className="form-group">
                     <label>Professional Headline</label>
-                    <input type="text" className="input-field" value={basicInfo.headline} onChange={e => setBasicInfo({...basicInfo, headline: e.target.value})} placeholder="Software Engineer @ TechCorp" />
+                    <input type="text" className="form-input" value={basicInfo.headline} onChange={e => setBasicInfo({...basicInfo, headline: e.target.value})} placeholder="Software Engineer @ TechCorp" />
                   </div>
                   <div className="form-group">
                     <label>Phone Number</label>
-                    <input type="tel" className="input-field" value={basicInfo.phone} onChange={e => setBasicInfo({...basicInfo, phone: e.target.value})} placeholder="+1 (555) 123-4567" />
+                    <input type="tel" className="form-input" value={basicInfo.phone} onChange={e => setBasicInfo({...basicInfo, phone: e.target.value})} placeholder="+1 (555) 123-4567" />
                   </div>
                   <div className="form-group">
                     <label>Location</label>
-                    <input type="text" className="input-field" value={basicInfo.location} onChange={e => setBasicInfo({...basicInfo, location: e.target.value})} placeholder="New York, NY" />
+                    <input type="text" className="form-input" value={basicInfo.location} onChange={e => setBasicInfo({...basicInfo, location: e.target.value})} placeholder="New York, NY" />
                   </div>
                   <div className="form-group">
                     <label>Portfolio URL</label>
-                    <input type="url" className="input-field" value={basicInfo.portfolio} onChange={e => setBasicInfo({...basicInfo, portfolio: e.target.value})} placeholder="https://johndoe.com" />
+                    <input type="url" className="form-input" value={basicInfo.portfolio} onChange={e => setBasicInfo({...basicInfo, portfolio: e.target.value})} placeholder="https://johndoe.com" />
                   </div>
                   <div className="form-group">
                     <label>LinkedIn URL</label>
-                    <input type="url" className="input-field" value={basicInfo.linkedin} onChange={e => setBasicInfo({...basicInfo, linkedin: e.target.value})} placeholder="https://linkedin.com/in/johndoe" />
+                    <input type="url" className="form-input" value={basicInfo.linkedin} onChange={e => setBasicInfo({...basicInfo, linkedin: e.target.value})} placeholder="https://linkedin.com/in/johndoe" />
                   </div>
                 </div>
               </motion.div>
@@ -175,12 +175,12 @@ export default function ProfileEditPage() {
             {activeTab === 'skills' && (
               <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}>
                 <h2>Technical & Soft Skills</h2>
-                <p className="text-muted mt-2">Add skills relevant to your target roles.</p>
+                <p className="text-muted mt-8">Add skills relevant to your target roles.</p>
                 
-                <form onSubmit={handleAddSkill} className="flex gap-4 mt-6 mb-8">
+                <form onSubmit={handleAddSkill} className="flex gap-16 mt-24 mb-32">
                   <input 
                     type="text" 
-                    className="input-field" 
+                    className="form-input" 
                     placeholder="E.g. React, Python, Project Management..." 
                     value={newSkill}
                     onChange={e => setNewSkill(e.target.value)}
@@ -202,7 +202,7 @@ export default function ProfileEditPage() {
             {/* EDUCATION */}
             {activeTab === 'education' && (
               <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}>
-                <div className="flex justify-between items-center mb-6">
+                <div className="flex justify-between items-center mb-24">
                   <h2>Education History</h2>
                   <button className="btn btn-sm" onClick={addEducation}><Plus size={14} /> Add Education</button>
                 </div>
@@ -216,18 +216,18 @@ export default function ProfileEditPage() {
                           <button className="text-red hover:text-red-600" onClick={() => removeEducation(ed.id)}><Trash2 size={16} /></button>
                         )}
                       </div>
-                      <div className="form-grid mt-4">
+                      <div className="form-grid mt-16">
                         <div className="form-group">
                           <label>Degree / Certificate</label>
-                          <input type="text" className="input-field" placeholder="B.S. Computer Science" value={ed.degree} onChange={e => updateEducation(ed.id, 'degree', e.target.value)} />
+                          <input type="text" className="form-input" placeholder="B.S. Computer Science" value={ed.degree} onChange={e => updateEducation(ed.id, 'degree', e.target.value)} />
                         </div>
                         <div className="form-group">
                           <label>Institution</label>
-                          <input type="text" className="input-field" placeholder="University of Technology" value={ed.institution} onChange={e => updateEducation(ed.id, 'institution', e.target.value)} />
+                          <input type="text" className="form-input" placeholder="University of Technology" value={ed.institution} onChange={e => updateEducation(ed.id, 'institution', e.target.value)} />
                         </div>
                         <div className="form-group">
                           <label>Graduation Year</label>
-                          <input type="text" className="input-field" placeholder="2024" value={ed.year} onChange={e => updateEducation(ed.id, 'year', e.target.value)} />
+                          <input type="text" className="form-input" placeholder="2024" value={ed.year} onChange={e => updateEducation(ed.id, 'year', e.target.value)} />
                         </div>
                       </div>
                     </div>
@@ -239,7 +239,7 @@ export default function ProfileEditPage() {
             {/* PROJECTS */}
             {activeTab === 'projects' && (
               <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}>
-                <div className="flex justify-between items-center mb-6">
+                <div className="flex justify-between items-center mb-24">
                   <h2>Key Projects</h2>
                   <button className="btn btn-sm" onClick={addProject}><Plus size={14} /> Add Project</button>
                 </div>
@@ -253,18 +253,18 @@ export default function ProfileEditPage() {
                           <button className="text-red hover:text-red-600" onClick={() => removeProject(p.id)}><Trash2 size={16} /></button>
                         )}
                       </div>
-                      <div className="form-grid mt-4">
+                      <div className="form-grid mt-16">
                         <div className="form-group col-span-2">
                           <label>Project Title</label>
-                          <input type="text" className="input-field" placeholder="E-commerce Analytics Dashboard" value={p.title} onChange={e => updateProject(p.id, 'title', e.target.value)} />
+                          <input type="text" className="form-input" placeholder="E-commerce Analytics Dashboard" value={p.title} onChange={e => updateProject(p.id, 'title', e.target.value)} />
                         </div>
                         <div className="form-group col-span-2">
                           <label>Description (Impact & Tech Stack)</label>
-                          <textarea className="input-field" rows="3" placeholder="Built a dashboard using React and Node.js that increased sales visibility by 40%." value={p.description} onChange={e => updateProject(p.id, 'description', e.target.value)} />
+                          <textarea className="form-input" rows="3" placeholder="Built a dashboard using React and Node.js that increased sales visibility by 40%." value={p.description} onChange={e => updateProject(p.id, 'description', e.target.value)} />
                         </div>
                         <div className="form-group col-span-2">
                           <label>Project Link (Optional)</label>
-                          <input type="url" className="input-field" placeholder="https://github.com/..." value={p.link} onChange={e => updateProject(p.id, 'link', e.target.value)} />
+                          <input type="url" className="form-input" placeholder="https://github.com/..." value={p.link} onChange={e => updateProject(p.id, 'link', e.target.value)} />
                         </div>
                       </div>
                     </div>
@@ -277,22 +277,22 @@ export default function ProfileEditPage() {
             {activeTab === 'goals' && (
               <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}>
                 <h2>Career Goals</h2>
-                <div className="form-grid mt-6">
+                <div className="form-grid mt-24">
                   <div className="form-group col-span-2">
                     <label>Target Role / Job Title</label>
-                    <input type="text" className="input-field" value={careerGoals.targetRole} onChange={e => setCareerGoals({...careerGoals, targetRole: e.target.value})} placeholder="e.g. Senior Frontend Developer" />
+                    <input type="text" className="form-input" value={careerGoals.targetRole} onChange={e => setCareerGoals({...careerGoals, targetRole: e.target.value})} placeholder="e.g. Senior Frontend Developer" />
                   </div>
                   <div className="form-group">
                     <label>Expected Salary (Annual)</label>
-                    <input type="text" className="input-field" value={careerGoals.expectedSalary} onChange={e => setCareerGoals({...careerGoals, expectedSalary: e.target.value})} placeholder="e.g. $120,000" />
+                    <input type="text" className="form-input" value={careerGoals.expectedSalary} onChange={e => setCareerGoals({...careerGoals, expectedSalary: e.target.value})} placeholder="e.g. $120,000" />
                   </div>
                   <div className="form-group">
                     <label>Preferred Location</label>
-                    <input type="text" className="input-field" value={careerGoals.preferredLocation} onChange={e => setCareerGoals({...careerGoals, preferredLocation: e.target.value})} placeholder="e.g. Remote, or New York" />
+                    <input type="text" className="form-input" value={careerGoals.preferredLocation} onChange={e => setCareerGoals({...careerGoals, preferredLocation: e.target.value})} placeholder="e.g. Remote, or New York" />
                   </div>
                   <div className="form-group col-span-2">
                     <label>Job Type</label>
-                    <select className="input-field" value={careerGoals.jobType} onChange={e => setCareerGoals({...careerGoals, jobType: e.target.value})}>
+                    <select className="form-input" value={careerGoals.jobType} onChange={e => setCareerGoals({...careerGoals, jobType: e.target.value})}>
                       <option>Full-Time</option>
                       <option>Contract</option>
                       <option>Internship</option>
@@ -310,9 +310,9 @@ export default function ProfileEditPage() {
         <div className="profile-actions">
           <button className="btn btn-primary btn-lg" onClick={handleSave} disabled={isSaving}>
             {isSaving ? (
-              <span className="flex items-center gap-2"><div className="spinner" style={{width: 16, height: 16}} /> Saving...</span>
+              <span className="flex items-center gap-8"><div className="spinner" style={{width: 16, height: 16}} /> Saving...</span>
             ) : (
-              <span className="flex items-center gap-2"><Save size={18} /> Save Profile</span>
+              <span className="flex items-center gap-8"><Save size={18} /> Save Profile</span>
             )}
           </button>
         </div>

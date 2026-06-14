@@ -37,7 +37,7 @@ export default function VerifyEmailPage() {
       >
         {status === 'verifying' && (
           <div>
-            <div className="spinner spinner-lg mx-auto" style={{ marginBottom: '20px' }} />
+            <div className="spinner spinner-lg" style={{ marginBottom: '20px' }} />
             <h2>Verifying Email...</h2>
             <p className="text-muted">Please wait while we verify your account.</p>
           </div>

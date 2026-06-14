@@ -10,7 +10,7 @@ const ResumePreview = ({ data }) => {
   if (!data) {
     return (
       <div className="a4-preview empty-preview">
-        <FileText size={48} className="text-muted mb-4" />
+        <FileText size={48} className="text-muted mb-16" />
         <p>Your beautiful resume will appear here...</p>
       </div>
     );

@@ -27,8 +27,8 @@ export default function InterviewDetail() {
       });
   }, [slug]);
 
-  if (loading) return <div className="p-12 text-center text-slate-400">Loading questions...</div>;
-  if (!data) return <div className="p-12 text-center text-slate-400">Questions not found. <Link to="/interview-questions" className="text-blue-500">Go back</Link></div>;
+  if (loading) return <div className="p-48 text-center text-secondary">Loading questions...</div>;
+  if (!data) return <div className="p-48 text-center text-secondary">Questions not found. <Link to="/interview-questions" className="color-primary">Go back</Link></div>;
 
   const toggleReveal = (id) => {
     setRevealed(prev => ({ ...prev, [id]: !prev[id] }));
@@ -37,8 +37,8 @@ export default function InterviewDetail() {
   const renderQuestionBlock = (questions, level) => {
     if (!questions || questions.length === 0) return null;
     return (
-      <div className="mb-12">
-        <h2 className="text-2xl font-bold mb-6 capitalize border-b border-slate-700 pb-2">{level} Questions</h2>
+      <div className="mb-48">
+        <h2 className="text-2xl font-bold mb-24 capitalize border-b border-default pb-8">{level} Questions</h2>
         {questions.map((q, i) => {
           const isRevealed = !practiceMode || revealed[q.id];
           return (
@@ -53,7 +53,7 @@ export default function InterviewDetail() {
                 )}
               </div>
               {isRevealed && (
-                <div className="int-q-answer mt-4 text-slate-300 bg-slate-800 p-4 rounded-lg">
+                <div className="int-q-answer mt-16 text-primary bg-card p-16">
                   {q.a}
                 </div>
               )}
@@ -65,7 +65,7 @@ export default function InterviewDetail() {
   };
 
   return (
-    <div className="int-detail-page max-w-7xl mx-auto px-6 py-8">
+    <div className="int-detail-page container-standard px-6 py-8">
       <Helmet>
         <title>{data.seo?.title || data.hero.title}</title>
         <meta name="description" content={data.seo?.description || data.hero.description} />
@@ -81,12 +81,22 @@ export default function InterviewDetail() {
       
       <Breadcrumbs />
 
-      <header className="mb-8">
-        <h1 className="text-4xl font-bold mb-4">{data.hero.title}</h1>
-        <p className="text-lg text-slate-400 max-w-3xl">{data.hero.description}</p>
+      <header className="mb-32 text-center content-long-form container-seo">
+        <h1 className="text-4xl font-bold mt-24 mb-16">{data.hero.title}</h1>
+        <p className="text-lg text-secondary">{data.hero.description}</p>
         
-        <div className="mt-6 flex items-center gap-4">
-          <label className="flex items-center gap-2 bg-slate-800 px-4 py-2 rounded-lg cursor-pointer border border-slate-700">
+        <div className="author-block flex items-center justify-center gap-16 mt-24 mb-16">
+          <div className="author-avatar" style={{width: 48, height: 48, borderRadius: '50%', background: 'var(--bg-surface)', border: '1px solid var(--border-default)', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+            <span className="font-bold text-primary">HR</span>
+          </div>
+          <div className="author-info text-left">
+            <div className="font-bold">CandidateToHR Career Experts</div>
+            <div className="text-sm text-secondary">Updated {new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</div>
+          </div>
+        </div>
+
+        <div className="mt-24 flex items-center justify-center gap-16 pb-32 border-b border-default">
+          <label className="flex items-center gap-8 bg-card px-16 py-8 cursor-pointer border border-default" style={{borderRadius: 'var(--radius-full)'}}>
             <input 
               type="checkbox" 
               checked={practiceMode} 
@@ -95,14 +105,14 @@ export default function InterviewDetail() {
                 setRevealed({}); // reset revealed state
               }} 
             />
-            <span className="font-semibold text-blue-400">Practice Mode (Hide Answers)</span>
+            <span className="font-semibold color-primary">Practice Mode (Hide Answers)</span>
           </label>
         </div>
       </header>
 
       <AdBanner />
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 mt-8">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 mt-32">
         <main className="lg:col-span-2">
           {renderQuestionBlock(data.questions.beginner, 'Beginner')}
           <InlineAd />

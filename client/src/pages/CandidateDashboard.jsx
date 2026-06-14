@@ -53,7 +53,7 @@ export default function CandidateDashboard() {
   };
 
   return (
-    <div className="os-page pb-12">
+    <div className="os-page pb-48">
       <div className="os-container">
         
         <motion.div initial="hidden" animate="show" variants={containerVars} className="os-fade-wrapper">
@@ -90,7 +90,7 @@ export default function CandidateDashboard() {
               </motion.div>
 
               {/* Career Goal Quiz */}
-              <motion.div className="os-card mt-4" variants={itemVars}>
+              <motion.div className="os-card mt-16" variants={itemVars}>
                 <div className="os-card-header">
                   <h3><Target size={18} /> What brings you to Candidatetohr?</h3>
                 </div>
@@ -109,7 +109,7 @@ export default function CandidateDashboard() {
               </motion.div>
 
               {/* Target Role Explorer */}
-              <motion.div className="os-card mt-4" variants={itemVars}>
+              <motion.div className="os-card mt-16" variants={itemVars}>
                 <div className="os-card-header">
                   <h3><TrendingUp size={18} /> Explore High-Demand Roles</h3>
                   <p className="os-subtext">Discover what you could unlock.</p>
@@ -147,7 +147,7 @@ export default function CandidateDashboard() {
               </motion.div>
 
               {/* AI Coach Tip */}
-              <motion.div className="os-card mt-4" variants={itemVars} style={{ background: 'var(--bg-card)', borderLeft: '4px solid #a855f7' }}>
+              <motion.div className="os-card mt-16" variants={itemVars} style={{ background: 'var(--bg-card)', borderLeft: '4px solid #a855f7' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '12px' }}>
                   <div style={{ background: 'rgba(168, 85, 247, 0.1)', padding: '6px', borderRadius: '8px', color: '#a855f7' }}>
                     <Zap size={16} />

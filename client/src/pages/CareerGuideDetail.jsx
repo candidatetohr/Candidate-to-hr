@@ -25,13 +25,13 @@ export default function CareerGuideDetail() {
       });
   }, [slug]);
 
-  if (loading) return <div className="p-12 text-center text-slate-400">Loading guide...</div>;
-  if (!data) return <div className="p-12 text-center text-slate-400">Guide not found. <Link to="/career-guides" className="text-blue-500">Go back</Link></div>;
+  if (loading) return <div className="p-48 text-center text-secondary">Loading guide...</div>;
+  if (!data) return <div className="p-48 text-center text-secondary">Guide not found. <Link to="/career-guides" className="color-primary">Go back</Link></div>;
 
   const { seo, hero, sections, resources } = data;
 
   return (
-    <div className="guide-detail-page max-w-7xl mx-auto px-6 py-8">
+    <div className="guide-detail-page container-standard px-6 py-8">
       <Helmet>
         <title>{seo.title}</title>
         <meta name="description" content={seo.description} />
@@ -42,25 +42,30 @@ export default function CareerGuideDetail() {
       <SchemaMarkup type="Article" data={{ title: seo.title, description: seo.description }} />
       <Breadcrumbs />
 
-      <header className="mb-10 text-center max-w-4xl mx-auto">
-        <h1 className="text-5xl font-bold mb-6 leading-tight">{hero.title}</h1>
-        <p className="text-xl text-slate-400 mb-6">{hero.description}</p>
-        <div className="flex justify-center items-center gap-4 text-sm text-slate-500">
-          <span>By <strong>{hero.author}</strong></span>
-          <span>•</span>
-          <span>{hero.date}</span>
+      <header className="mb-48 text-center content-long-form container-seo">
+        <h1 className="text-5xl font-bold mt-24 mb-24 leading-tight">{hero.title}</h1>
+        <p className="text-xl text-secondary mb-24">{hero.description}</p>
+        
+        <div className="author-block flex items-center justify-center gap-16 mt-24 pb-32 border-b border-default">
+          <div className="author-avatar" style={{width: 48, height: 48, borderRadius: '50%', background: 'var(--bg-surface)', border: '1px solid var(--border-default)', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+            <span className="font-bold text-primary">{hero.author ? hero.author.charAt(0) : 'HR'}</span>
+          </div>
+          <div className="author-info text-left">
+            <div className="font-bold">{hero.author || 'CandidateToHR Career Experts'}</div>
+            <div className="text-sm text-secondary">Updated {hero.date || new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</div>
+          </div>
         </div>
       </header>
 
       <AdBanner />
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 mt-12">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-48 mt-48">
         <main className="lg:col-span-2 article-content">
           
           {sections.map((section, idx) => (
-            <section key={idx} className="mb-12">
-              <h2 className="text-3xl font-bold mb-6 text-fuchsia-400">{section.heading}</h2>
-              <div className="prose max-w-none prose-lg text-slate-300">
+            <section key={idx} className="mb-48">
+              <h2 className="text-3xl font-bold mb-24 text-fuchsia-400">{section.heading}</h2>
+              <div className="prose max-w-none prose-lg text-primary">
                 <ReactMarkdown>{section.content}</ReactMarkdown>
               </div>
               
@@ -69,9 +74,9 @@ export default function CareerGuideDetail() {
             </section>
           ))}
 
-          <section className="mt-16 bg-slate-800/50 p-8 rounded-2xl border border-slate-700">
-            <h2 className="text-2xl font-bold mb-4">Recommended Resources</h2>
-            <ul className="list-disc pl-6 space-y-3 text-slate-300">
+          <section className="mt-64 bg-slate-800/50 p-32 border border-default">
+            <h2 className="text-2xl font-bold mb-16">Recommended Resources</h2>
+            <ul className="list-disc pl-6 space-y-3 text-primary">
               {resources.map((res, i) => (
                 <li key={i}>{res}</li>
               ))}

@@ -37,7 +37,7 @@ export default function RejectionDecoderPage() {
 
   return (
     <div className="rd-page">
-      <div className="rd-container">
+      <div className="container-seo">
         
         <div className="rd-header">
           <div className="rd-badge"><AlertTriangle size={14} /> AI Rejection Decoder</div>

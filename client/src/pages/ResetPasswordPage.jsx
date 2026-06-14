@@ -69,7 +69,7 @@ export default function ResetPasswordPage() {
                 <Lock size={16} className="input-icon" />
                 <input
                   type="password"
-                  className="input-field pl-10"
+                  className="form-input pl-10"
                   placeholder="••••••••"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
@@ -83,7 +83,7 @@ export default function ResetPasswordPage() {
                 <Lock size={16} className="input-icon" />
                 <input
                   type="password"
-                  className="input-field pl-10"
+                  className="form-input pl-10"
                   placeholder="••••••••"
                   value={confirmPassword}
                   onChange={(e) => setConfirmPassword(e.target.value)}

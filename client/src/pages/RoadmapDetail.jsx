@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { useParams, Link } from 'react-router-dom';
 import SEO from '../components/SEO';
 import { ArrowLeft, ChevronDown, ChevronUp, MapPin, Target, Zap, DollarSign, BookOpen, PenTool, CheckCircle, HelpCircle } from 'lucide-react';
+import Breadcrumbs from '../components/seo/Breadcrumbs';
 import './RoadmapDetail.css';
 
 export default function RoadmapDetail() {
@@ -35,7 +36,7 @@ export default function RoadmapDetail() {
       <div className="rd-error">
         <h2>Roadmap Not Found</h2>
         <p>We are still building the roadmap for "{slug}".</p>
-        <Link to="/roadmaps" className="rd-btn">Back to Hub</Link>
+        <Link to="/roadmaps" className="btn">Back to Hub</Link>
       </div>
     );
   }
@@ -55,10 +56,20 @@ export default function RoadmapDetail() {
 
       {/* ─── HERO SECTION ─────────────────────────── */}
       <header className="rd-hero">
-        <div className="rd-container">
-          <Link to="/roadmaps" className="rd-back-link"><ArrowLeft size={16}/> Back to Roadmaps</Link>
-          <h1 className="rd-hero-title">{hero.title}</h1>
-          <p className="rd-hero-subtitle">{hero.shortDescription}</p>
+        <div className="container-seo content-long-form text-center">
+          <Breadcrumbs />
+          <h1 className="rd-hero-title mt-24 mb-16">{hero.title}</h1>
+          <p className="rd-hero-subtitle max-w-2xl text-secondary">{hero.shortDescription}</p>
+          
+          <div className="author-block flex items-center justify-center gap-16 mt-24 mb-32">
+            <div className="author-avatar" style={{width: 48, height: 48, borderRadius: '50%', background: 'var(--bg-surface)', border: '1px solid var(--border-default)', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+              <span className="font-bold text-primary">HR</span>
+            </div>
+            <div className="author-info text-left">
+              <div className="font-bold">CandidateToHR Career Experts</div>
+              <div className="text-sm text-secondary">Updated {new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })} · {hero.learningDuration}</div>
+            </div>
+          </div>
           
           <div className="rd-hero-stats">
             <div className="rd-stat-box">
@@ -85,23 +96,23 @@ export default function RoadmapDetail() {
         </div>
       </header>
 
-      <div className="rd-container rd-layout">
+      <div className="container-seo rd-layout">
         
         <main className="rd-main">
           {/* ─── OVERVIEW ─────────────────────────── */}
           <section className="rd-section">
             <h2><Target size={22} className="text-purple"/> Career Overview</h2>
-            <div className="rd-card">
+            <div className="card">
               <p><strong>What they do:</strong> {overview.whatTheyDo}</p>
-              <div className="mt-4">
+              <div className="mt-16">
                 <strong>Top Industries Hiring:</strong>
-                <div className="rd-tags mt-2">
-                  {overview.industriesHiring.map((ind, i) => <span key={i} className="rd-tag">{ind}</span>)}
+                <div className="chips-container mt-8">
+                  {overview.industriesHiring.map((ind, i) => <span key={i} className="chip">{ind}</span>)}
                 </div>
               </div>
-              <div className="mt-4">
+              <div className="mt-16">
                 <strong>Core Responsibilities:</strong>
-                <ul className="rd-list mt-2">
+                <ul className="rd-list mt-8">
                   {overview.responsibilities.map((resp, i) => <li key={i}>{resp}</li>)}
                 </ul>
               </div>
@@ -113,7 +124,7 @@ export default function RoadmapDetail() {
             <h2><MapPin size={22} className="text-blue"/> Step-by-Step Learning Path</h2>
             <div className="rd-timeline">
               {learningPath.map((step, i) => (
-                <div key={i} className="rd-timeline-item">
+                <div key={i} className="timeline-item">
                   <div className="rd-timeline-dot"></div>
                   <div className="rd-timeline-content">
                     <h3>{step.month}</h3>
@@ -128,19 +139,19 @@ export default function RoadmapDetail() {
           <section className="rd-section">
             <h2><Zap size={22} className="text-yellow"/> Skills & Tools Mastery</h2>
             <div className="rd-skills-grid">
-              <div className="rd-card">
+              <div className="card">
                 <h3>Beginner</h3>
                 <ul className="rd-list">
                   {skillsTimeline.beginner.map((skill, i) => <li key={i}>{skill}</li>)}
                 </ul>
               </div>
-              <div className="rd-card">
+              <div className="card">
                 <h3>Intermediate</h3>
                 <ul className="rd-list">
                   {skillsTimeline.intermediate.map((skill, i) => <li key={i}>{skill}</li>)}
                 </ul>
               </div>
-              <div className="rd-card">
+              <div className="card">
                 <h3>Advanced</h3>
                 <ul className="rd-list">
                   {skillsTimeline.advanced.map((skill, i) => <li key={i}>{skill}</li>)}
@@ -148,10 +159,10 @@ export default function RoadmapDetail() {
               </div>
             </div>
             
-            <div className="rd-card mt-4">
+            <div className="card mt-16">
               <h3>Essential Tools</h3>
-              <div className="rd-tags mt-2">
-                {toolsAndTech.map((tool, i) => <span key={i} className="rd-tag rd-tag-outline">{tool}</span>)}
+              <div className="chips-container mt-8">
+                {toolsAndTech.map((tool, i) => <span key={i} className="chip chip-outline">{tool}</span>)}
               </div>
             </div>
           </section>
@@ -184,19 +195,19 @@ export default function RoadmapDetail() {
           {/* ─── INTERVIEW & RESUME PREP ─────────────────────────── */}
           <section className="rd-section">
             <h2><CheckCircle size={22} className="text-blue"/> Interview & Resume Prep</h2>
-            <div className="rd-card">
+            <div className="card">
               <h3>Top Interview Questions</h3>
-              <ul className="rd-list mt-2 mb-4">
+              <ul className="rd-list mt-8 mb-16">
                 {interviewPrep.topQuestions.map((q, i) => <li key={i}><strong>Q:</strong> {q}</li>)}
               </ul>
               
               <h3>Common Mistakes to Avoid</h3>
-              <ul className="rd-list mt-2 mb-4">
+              <ul className="rd-list mt-8 mb-16">
                 {interviewPrep.commonMistakes.map((m, i) => <li key={i}>{m}</li>)}
               </ul>
               
               <h3>Resume & ATS Tips</h3>
-              <div className="rd-resume-tips mt-2">
+              <div className="rd-resume-tips mt-8">
                 <p><strong>Keywords to Include:</strong> {interviewPrep.resumeTips.keywords.join(', ')}</p>
                 <p><strong>ATS Optimization:</strong> {interviewPrep.resumeTips.atsOptimization}</p>
               </div>
@@ -239,13 +250,13 @@ export default function RoadmapDetail() {
           <div className="rd-sticky-cta">
             <h3>Get Started Today</h3>
             <p>Don't just read the roadmap—take action. Build your professional, ATS-friendly resume right now.</p>
-            <Link to="/live-editor" className="rd-btn rd-btn-primary mb-3 text-center">Create Resume with AI</Link>
-            <Link to="/analyze" className="rd-btn rd-btn-outline mb-3 text-center">Check ATS Score</Link>
-            <Link to="/interview-sim" className="rd-btn rd-btn-outline text-center">Mock Interview</Link>
+            <Link to="/live-editor" className="btn btn-primary mb-3 text-center">Create Resume with AI</Link>
+            <Link to="/analyze" className="btn btn-secondary mb-3 text-center">Check ATS Score</Link>
+            <Link to="/interview-sim" className="btn btn-secondary text-center">Mock Interview</Link>
           </div>
           
           {/* Certifications Box */}
-          <div className="rd-card mt-6">
+          <div className="card mt-24">
             <h3>Top Certifications</h3>
             <ul className="rd-list mt-3">
               {certifications.map((cert, i) => <li key={i}>{cert}</li>)}
@@ -253,7 +264,7 @@ export default function RoadmapDetail() {
           </div>
           
           {/* Market Insights */}
-          <div className="rd-card mt-6">
+          <div className="card mt-24">
             <h3>Job Market Outlook</h3>
             <p className="text-sm mt-3 text-muted"><strong>Demand:</strong> {jobMarket.futureDemand}</p>
             <p className="text-sm mt-3 text-muted"><strong>Remote:</strong> {jobMarket.remoteOpportunities}</p>
