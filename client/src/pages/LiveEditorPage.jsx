@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowLeft, Sparkles, Download, RefreshCw, AlertCircle, FileText, Bot, Edit3 } from 'lucide-react';
 import html2pdf from 'html2pdf.js';
 import { resumeBuilderAPI } from '../services/api';
+import SEO from '../components/SEO';
 import './LiveEditorPage.css';
 
 const ResumePreview = ({ data }) => {
@@ -166,6 +167,12 @@ export default function LiveEditorPage() {
 
   return (
     <div className="editor-page">
+      <SEO 
+        title="Live ATS Resume Editor & Formatter"
+        description="Edit your resume live and see your ATS score update in real-time. Optimize your CV with our smart suggestions."
+        canonical="/live-editor"
+        type="SoftwareApplication"
+      />
       <div className="editor-bg"><div className="ed-orb ed-orb-1" /><div className="ed-orb ed-orb-2" /></div>
 
       <nav className="editor-nav">

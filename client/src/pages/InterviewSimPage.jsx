@@ -1,11 +1,13 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   Zap, ArrowLeft, ArrowRight, MessageSquare, CheckCircle,
-  Star, Award, Brain, ChevronRight, RotateCcw, Loader2
+  Star, Award, Brain, ChevronRight, RotateCcw, Loader2,
+  Mic, MicOff, Volume2, VolumeX
 } from 'lucide-react';
 import { interviewAPI } from '../services/api';
+import SEO from '../components/SEO';
 import './InterviewSimPage.css';
 
 const GRADE_COLOR = (g) => g >= 8 ? '#10b981' : g >= 6 ? '#4f8ef7' : g >= 4 ? '#f59e0b' : '#ef4444';
@@ -42,9 +44,62 @@ export default function InterviewSimPage() {
   const [currentGrade, setCurrentGrade] = useState(null);
   const [summary, setSummary] = useState(null);
   const [loading, setLoading] = useState(false);
+  const [isRecording, setIsRecording] = useState(false);
+  const [voiceEnabled, setVoiceEnabled] = useState(true);
+  const [recognition, setRecognition] = useState(null);
 
   const currentQuestion = questions[currentQ];
   const isLastQuestion = currentQ === questions.length - 1;
+
+  // Setup Speech Recognition
+  useEffect(() => {
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (SpeechRecognition) {
+      const rec = new SpeechRecognition();
+      rec.continuous = true;
+      rec.interimResults = true;
+      rec.onresult = (event) => {
+        let transcript = '';
+        for (let i = 0; i < event.results.length; i++) {
+          transcript += event.results[i][0].transcript;
+        }
+        setAnswer(transcript);
+      };
+      rec.onerror = (event) => {
+        console.error("Speech recognition error", event.error);
+        setIsRecording(false);
+      };
+      setRecognition(rec);
+    }
+  }, []);
+
+  const toggleRecording = () => {
+    if (!recognition) return alert('Speech recognition is not supported in your browser. Please use Chrome or Edge.');
+    
+    if (isRecording) {
+      recognition.stop();
+      setIsRecording(false);
+    } else {
+      recognition.start();
+      setIsRecording(true);
+    }
+  };
+
+  const speakQuestion = (text) => {
+    if (!voiceEnabled || !window.speechSynthesis) return;
+    window.speechSynthesis.cancel();
+    const utterance = new SpeechSynthesisUtterance(text);
+    window.speechSynthesis.speak(utterance);
+  };
+
+  // Speak question when it changes
+  useEffect(() => {
+    if (step === 'interview' && currentQuestion) {
+      speakQuestion(currentQuestion.question);
+    } else {
+      window.speechSynthesis?.cancel();
+    }
+  }, [step, currentQ, voiceEnabled]);
 
   const startInterview = () => {
     setSession([]);
@@ -56,6 +111,10 @@ export default function InterviewSimPage() {
 
   const submitAnswer = async () => {
     if (!answer.trim()) return;
+    if (isRecording && recognition) {
+      recognition.stop();
+      setIsRecording(false);
+    }
     setStep('grading');
     setLoading(true);
     try {
@@ -120,12 +179,25 @@ export default function InterviewSimPage() {
 
   return (
     <div className="sim-page">
+      <SEO 
+        title="Live AI Mock Interview Simulator | Voice & Text"
+        description="Practice for your next job interview with our AI Interview Simulator. Featuring real-time voice recognition and instant grading to help you land the job."
+        canonical="/interview-sim"
+        type="SoftwareApplication"
+      />
+      
       <div className="sim-bg"><div className="sim-orb sim-orb-1" /><div className="sim-orb sim-orb-2" /></div>
 
       <nav className="sim-nav">
         <button className="sim-back" onClick={() => navigate('/analyze')}><ArrowLeft size={16} /> Back</button>
         <div className="sim-logo"><div className="sim-logo-icon"><MessageSquare size={13} /></div><span>AI Interview Simulator</span></div>
-        <div style={{ width: 80 }} />
+        <button 
+          className={`sim-voice-toggle ${voiceEnabled ? 'active' : ''}`}
+          onClick={() => setVoiceEnabled(!voiceEnabled)}
+        >
+          {voiceEnabled ? <Volume2 size={14} /> : <VolumeX size={14} />} 
+          {voiceEnabled ? 'AI Voice On' : 'AI Voice Off'}
+        </button>
       </nav>
 
       <div className="sim-main">
@@ -213,7 +285,14 @@ export default function InterviewSimPage() {
                     <ArrowLeft size={14} /> Previous
                   </button>
                 )}
-                <button className="sim-btn-submit" onClick={submitAnswer} disabled={!answer.trim()}>
+                <button 
+                  className={`sim-mic-btn ${isRecording ? 'recording' : ''}`} 
+                  onClick={toggleRecording}
+                  title="Speak your answer"
+                >
+                  {isRecording ? <MicOff size={18} /> : <Mic size={18} />}
+                </button>
+                <button className="sim-btn-submit" onClick={submitAnswer} disabled={!answer.trim() && !isRecording}>
                   Submit Answer <ArrowRight size={16} />
                 </button>
               </div>

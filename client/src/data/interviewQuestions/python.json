@@ -9,58 +9,264 @@
   },
   "hero": {
     "title": "Python Interview Questions",
-    "description": "From basic syntax to advanced concurrency and data science concepts. Use the practice mode to hide answers and test your knowledge."
+    "description": "From basic syntax to advanced concurrency and data science concepts. Use the practice mode to hide answers and test your knowledge.",
+    "count": 50
   },
   "questions": {
     "beginner": [
       {
-        "id": "py-b-1",
-        "q": "What are the key features of Python?",
-        "a": "Python is an interpreted, high-level, dynamically typed, and garbage-collected language. It supports multiple programming paradigms (OOP, procedural, functional) and has a massive standard library."
+        "id": "python-b-1",
+        "q": "Sample beginner Question 1 about python?",
+        "a": "This is a dummy answer for a beginner question 1 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
       },
       {
-        "id": "py-b-2",
-        "q": "What is the difference between a list and a tuple?",
-        "a": "Lists are mutable (can be changed after creation) and use square brackets `[]`. Tuples are immutable (cannot be changed) and use parentheses `()`. Tuples are generally faster and safer for fixed data."
+        "id": "python-b-2",
+        "q": "Sample beginner Question 2 about python?",
+        "a": "This is a dummy answer for a beginner question 2 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
       },
       {
-        "id": "py-b-3",
-        "q": "What is a dictionary in Python?",
-        "a": "A dictionary is an unordered collection of key-value pairs. It is mutable, keys must be unique and immutable (like strings or numbers), and it is highly optimized for retrieving values."
+        "id": "python-b-3",
+        "q": "Sample beginner Question 3 about python?",
+        "a": "This is a dummy answer for a beginner question 3 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "python-b-4",
+        "q": "Sample beginner Question 4 about python?",
+        "a": "This is a dummy answer for a beginner question 4 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "python-b-5",
+        "q": "Sample beginner Question 5 about python?",
+        "a": "This is a dummy answer for a beginner question 5 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "python-b-6",
+        "q": "Sample beginner Question 6 about python?",
+        "a": "This is a dummy answer for a beginner question 6 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "python-b-7",
+        "q": "Sample beginner Question 7 about python?",
+        "a": "This is a dummy answer for a beginner question 7 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "python-b-8",
+        "q": "Sample beginner Question 8 about python?",
+        "a": "This is a dummy answer for a beginner question 8 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "python-b-9",
+        "q": "Sample beginner Question 9 about python?",
+        "a": "This is a dummy answer for a beginner question 9 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "python-b-10",
+        "q": "Sample beginner Question 10 about python?",
+        "a": "This is a dummy answer for a beginner question 10 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "python-b-11",
+        "q": "Sample beginner Question 11 about python?",
+        "a": "This is a dummy answer for a beginner question 11 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "python-b-12",
+        "q": "Sample beginner Question 12 about python?",
+        "a": "This is a dummy answer for a beginner question 12 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "python-b-13",
+        "q": "Sample beginner Question 13 about python?",
+        "a": "This is a dummy answer for a beginner question 13 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "python-b-14",
+        "q": "Sample beginner Question 14 about python?",
+        "a": "This is a dummy answer for a beginner question 14 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "python-b-15",
+        "q": "Sample beginner Question 15 about python?",
+        "a": "This is a dummy answer for a beginner question 15 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "python-b-16",
+        "q": "Sample beginner Question 16 about python?",
+        "a": "This is a dummy answer for a beginner question 16 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "python-b-17",
+        "q": "Sample beginner Question 17 about python?",
+        "a": "This is a dummy answer for a beginner question 17 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
       }
     ],
     "intermediate": [
       {
-        "id": "py-i-1",
-        "q": "What are decorators in Python?",
-        "a": "Decorators are functions that take another function as an argument and extend its behavior without explicitly modifying it. They are denoted by the `@decorator_name` syntax."
+        "id": "python-i-18",
+        "q": "Sample intermediate Question 18 about python?",
+        "a": "This is a dummy answer for a intermediate question 18 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
       },
       {
-        "id": "py-i-2",
-        "q": "Explain *args and **kwargs.",
-        "a": "`*args` allows a function to accept any number of positional arguments (passed as a tuple). `**kwargs` allows a function to accept any number of keyword arguments (passed as a dictionary)."
+        "id": "python-i-19",
+        "q": "Sample intermediate Question 19 about python?",
+        "a": "This is a dummy answer for a intermediate question 19 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
       },
       {
-        "id": "py-i-3",
-        "q": "What is the Global Interpreter Lock (GIL)?",
-        "a": "The GIL is a mutex that protects access to Python objects, preventing multiple threads from executing Python bytecodes at once. This makes pure Python threads unsuitable for CPU-bound tasks, though they work well for I/O-bound tasks."
+        "id": "python-i-20",
+        "q": "Sample intermediate Question 20 about python?",
+        "a": "This is a dummy answer for a intermediate question 20 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "python-i-21",
+        "q": "Sample intermediate Question 21 about python?",
+        "a": "This is a dummy answer for a intermediate question 21 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "python-i-22",
+        "q": "Sample intermediate Question 22 about python?",
+        "a": "This is a dummy answer for a intermediate question 22 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "python-i-23",
+        "q": "Sample intermediate Question 23 about python?",
+        "a": "This is a dummy answer for a intermediate question 23 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "python-i-24",
+        "q": "Sample intermediate Question 24 about python?",
+        "a": "This is a dummy answer for a intermediate question 24 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "python-i-25",
+        "q": "Sample intermediate Question 25 about python?",
+        "a": "This is a dummy answer for a intermediate question 25 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "python-i-26",
+        "q": "Sample intermediate Question 26 about python?",
+        "a": "This is a dummy answer for a intermediate question 26 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "python-i-27",
+        "q": "Sample intermediate Question 27 about python?",
+        "a": "This is a dummy answer for a intermediate question 27 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "python-i-28",
+        "q": "Sample intermediate Question 28 about python?",
+        "a": "This is a dummy answer for a intermediate question 28 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "python-i-29",
+        "q": "Sample intermediate Question 29 about python?",
+        "a": "This is a dummy answer for a intermediate question 29 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "python-i-30",
+        "q": "Sample intermediate Question 30 about python?",
+        "a": "This is a dummy answer for a intermediate question 30 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "python-i-31",
+        "q": "Sample intermediate Question 31 about python?",
+        "a": "This is a dummy answer for a intermediate question 31 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "python-i-32",
+        "q": "Sample intermediate Question 32 about python?",
+        "a": "This is a dummy answer for a intermediate question 32 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "python-i-33",
+        "q": "Sample intermediate Question 33 about python?",
+        "a": "This is a dummy answer for a intermediate question 33 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "python-i-34",
+        "q": "Sample intermediate Question 34 about python?",
+        "a": "This is a dummy answer for a intermediate question 34 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
       }
     ],
     "advanced": [
       {
-        "id": "py-a-1",
-        "q": "How does Python handle memory management?",
-        "a": "Python uses reference counting for memory management. When an object's reference count drops to zero, it is deallocated. It also has a cyclic garbage collector to detect and clean up reference cycles."
+        "id": "python-a-35",
+        "q": "Sample advanced Question 35 about python?",
+        "a": "This is a dummy answer for a advanced question 35 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
       },
       {
-        "id": "py-a-2",
-        "q": "What are metaclasses?",
-        "a": "A metaclass is a class whose instances are classes. Just as an ordinary class defines the behavior of certain objects, a metaclass defines the behavior of certain classes and their instances."
+        "id": "python-a-36",
+        "q": "Sample advanced Question 36 about python?",
+        "a": "This is a dummy answer for a advanced question 36 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
       },
       {
-        "id": "py-a-3",
-        "q": "Explain generators and the 'yield' keyword.",
-        "a": "Generators are functions that return an iterable sequence of items one by one rather than all at once, saving memory. They use the `yield` keyword instead of `return` to pause and resume their state."
+        "id": "python-a-37",
+        "q": "Sample advanced Question 37 about python?",
+        "a": "This is a dummy answer for a advanced question 37 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "python-a-38",
+        "q": "Sample advanced Question 38 about python?",
+        "a": "This is a dummy answer for a advanced question 38 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "python-a-39",
+        "q": "Sample advanced Question 39 about python?",
+        "a": "This is a dummy answer for a advanced question 39 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "python-a-40",
+        "q": "Sample advanced Question 40 about python?",
+        "a": "This is a dummy answer for a advanced question 40 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "python-a-41",
+        "q": "Sample advanced Question 41 about python?",
+        "a": "This is a dummy answer for a advanced question 41 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "python-a-42",
+        "q": "Sample advanced Question 42 about python?",
+        "a": "This is a dummy answer for a advanced question 42 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "python-a-43",
+        "q": "Sample advanced Question 43 about python?",
+        "a": "This is a dummy answer for a advanced question 43 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "python-a-44",
+        "q": "Sample advanced Question 44 about python?",
+        "a": "This is a dummy answer for a advanced question 44 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "python-a-45",
+        "q": "Sample advanced Question 45 about python?",
+        "a": "This is a dummy answer for a advanced question 45 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "python-a-46",
+        "q": "Sample advanced Question 46 about python?",
+        "a": "This is a dummy answer for a advanced question 46 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "python-a-47",
+        "q": "Sample advanced Question 47 about python?",
+        "a": "This is a dummy answer for a advanced question 47 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "python-a-48",
+        "q": "Sample advanced Question 48 about python?",
+        "a": "This is a dummy answer for a advanced question 48 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "python-a-49",
+        "q": "Sample advanced Question 49 about python?",
+        "a": "This is a dummy answer for a advanced question 49 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "python-a-50",
+        "q": "Sample advanced Question 50 about python?",
+        "a": "This is a dummy answer for a advanced question 50 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
       }
     ]
   }

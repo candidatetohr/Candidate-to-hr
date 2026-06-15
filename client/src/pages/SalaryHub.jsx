@@ -16,7 +16,12 @@ export default function SalaryHub() {
 
   return (
     <div className="hub-page">
-      <SEO title="Tech Salary Guides 2026 | Candidatetohr" description="Discover exact salary ranges for Software Engineers, Data Scientists, and AI Engineers across top cities and companies." />
+      <SEO 
+        title="Tech Salary Guides & Negotiation Strategies"
+        description="Discover how much you should be earning in top tech roles. Explore salary guides for developers, data scientists, and managers."
+        canonical="/salary-guides"
+        type="CollectionPage"
+      />
 
       <section className="hub-hero">
         <div className="hub-container text-center">

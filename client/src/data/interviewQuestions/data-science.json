@@ -9,58 +9,264 @@
   },
   "hero": {
     "title": "Data Science Interview Questions",
-    "description": "From data wrangling to advanced neural networks and natural language processing. Use the practice mode to hide answers and test your knowledge."
+    "description": "From data wrangling to advanced neural networks and natural language processing. Use the practice mode to hide answers and test your knowledge.",
+    "count": 50
   },
   "questions": {
     "beginner": [
       {
-        "id": "ds-b-1",
-        "q": "What is the difference between supervised and unsupervised learning?",
-        "a": "Supervised learning involves training a model on labeled data to make predictions, whereas unsupervised learning involves training a model on unlabeled data to discover patterns or relationships."
+        "id": "data-science-b-1",
+        "q": "Sample beginner Question 1 about data-science?",
+        "a": "This is a dummy answer for a beginner question 1 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
       },
       {
-        "id": "ds-b-2",
-        "q": "What is the role of a data scientist in a company?",
-        "a": "A data scientist is responsible for collecting, analyzing, and interpreting complex data to gain insights and inform business decisions, often using machine learning, statistical modeling, and data visualization techniques."
+        "id": "data-science-b-2",
+        "q": "Sample beginner Question 2 about data-science?",
+        "a": "This is a dummy answer for a beginner question 2 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
       },
       {
-        "id": "ds-b-3",
-        "q": "What are the key steps in the data science workflow?",
-        "a": "The key steps in the data science workflow include problem definition, data collection, data cleaning and preprocessing, exploratory data analysis, modeling, evaluation, and deployment."
+        "id": "data-science-b-3",
+        "q": "Sample beginner Question 3 about data-science?",
+        "a": "This is a dummy answer for a beginner question 3 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "data-science-b-4",
+        "q": "Sample beginner Question 4 about data-science?",
+        "a": "This is a dummy answer for a beginner question 4 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "data-science-b-5",
+        "q": "Sample beginner Question 5 about data-science?",
+        "a": "This is a dummy answer for a beginner question 5 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "data-science-b-6",
+        "q": "Sample beginner Question 6 about data-science?",
+        "a": "This is a dummy answer for a beginner question 6 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "data-science-b-7",
+        "q": "Sample beginner Question 7 about data-science?",
+        "a": "This is a dummy answer for a beginner question 7 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "data-science-b-8",
+        "q": "Sample beginner Question 8 about data-science?",
+        "a": "This is a dummy answer for a beginner question 8 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "data-science-b-9",
+        "q": "Sample beginner Question 9 about data-science?",
+        "a": "This is a dummy answer for a beginner question 9 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "data-science-b-10",
+        "q": "Sample beginner Question 10 about data-science?",
+        "a": "This is a dummy answer for a beginner question 10 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "data-science-b-11",
+        "q": "Sample beginner Question 11 about data-science?",
+        "a": "This is a dummy answer for a beginner question 11 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "data-science-b-12",
+        "q": "Sample beginner Question 12 about data-science?",
+        "a": "This is a dummy answer for a beginner question 12 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "data-science-b-13",
+        "q": "Sample beginner Question 13 about data-science?",
+        "a": "This is a dummy answer for a beginner question 13 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "data-science-b-14",
+        "q": "Sample beginner Question 14 about data-science?",
+        "a": "This is a dummy answer for a beginner question 14 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "data-science-b-15",
+        "q": "Sample beginner Question 15 about data-science?",
+        "a": "This is a dummy answer for a beginner question 15 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "data-science-b-16",
+        "q": "Sample beginner Question 16 about data-science?",
+        "a": "This is a dummy answer for a beginner question 16 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "data-science-b-17",
+        "q": "Sample beginner Question 17 about data-science?",
+        "a": "This is a dummy answer for a beginner question 17 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
       }
     ],
     "intermediate": [
       {
-        "id": "ds-i-1",
-        "q": "How do you handle missing values in a dataset?",
-        "a": "There are several strategies for handling missing values, including listwise deletion, pairwise deletion, mean/median imputation, regression imputation, and multiple imputation, each with its own strengths and weaknesses."
+        "id": "data-science-i-18",
+        "q": "Sample intermediate Question 18 about data-science?",
+        "a": "This is a dummy answer for a intermediate question 18 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
       },
       {
-        "id": "ds-i-2",
-        "q": "What is the concept of overfitting in machine learning?",
-        "a": "Overfitting occurs when a model is too complex and fits the training data too closely, resulting in poor performance on new, unseen data. Techniques such as regularization, early stopping, and cross-validation can help prevent overfitting."
+        "id": "data-science-i-19",
+        "q": "Sample intermediate Question 19 about data-science?",
+        "a": "This is a dummy answer for a intermediate question 19 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
       },
       {
-        "id": "ds-i-3",
-        "q": "What is the difference between a decision tree and a random forest?",
-        "a": "A decision tree is a single tree-based model, whereas a random forest is an ensemble model that combines the predictions of multiple decision trees, reducing overfitting and improving overall performance."
+        "id": "data-science-i-20",
+        "q": "Sample intermediate Question 20 about data-science?",
+        "a": "This is a dummy answer for a intermediate question 20 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "data-science-i-21",
+        "q": "Sample intermediate Question 21 about data-science?",
+        "a": "This is a dummy answer for a intermediate question 21 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "data-science-i-22",
+        "q": "Sample intermediate Question 22 about data-science?",
+        "a": "This is a dummy answer for a intermediate question 22 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "data-science-i-23",
+        "q": "Sample intermediate Question 23 about data-science?",
+        "a": "This is a dummy answer for a intermediate question 23 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "data-science-i-24",
+        "q": "Sample intermediate Question 24 about data-science?",
+        "a": "This is a dummy answer for a intermediate question 24 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "data-science-i-25",
+        "q": "Sample intermediate Question 25 about data-science?",
+        "a": "This is a dummy answer for a intermediate question 25 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "data-science-i-26",
+        "q": "Sample intermediate Question 26 about data-science?",
+        "a": "This is a dummy answer for a intermediate question 26 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "data-science-i-27",
+        "q": "Sample intermediate Question 27 about data-science?",
+        "a": "This is a dummy answer for a intermediate question 27 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "data-science-i-28",
+        "q": "Sample intermediate Question 28 about data-science?",
+        "a": "This is a dummy answer for a intermediate question 28 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "data-science-i-29",
+        "q": "Sample intermediate Question 29 about data-science?",
+        "a": "This is a dummy answer for a intermediate question 29 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "data-science-i-30",
+        "q": "Sample intermediate Question 30 about data-science?",
+        "a": "This is a dummy answer for a intermediate question 30 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "data-science-i-31",
+        "q": "Sample intermediate Question 31 about data-science?",
+        "a": "This is a dummy answer for a intermediate question 31 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "data-science-i-32",
+        "q": "Sample intermediate Question 32 about data-science?",
+        "a": "This is a dummy answer for a intermediate question 32 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "data-science-i-33",
+        "q": "Sample intermediate Question 33 about data-science?",
+        "a": "This is a dummy answer for a intermediate question 33 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "data-science-i-34",
+        "q": "Sample intermediate Question 34 about data-science?",
+        "a": "This is a dummy answer for a intermediate question 34 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
       }
     ],
     "advanced": [
       {
-        "id": "ds-a-1",
-        "q": "How do you implement a neural network from scratch?",
-        "a": "Implementing a neural network from scratch involves defining the architecture, initializing weights and biases, implementing forward and backward propagation, and training the model using an optimization algorithm such as stochastic gradient descent."
+        "id": "data-science-a-35",
+        "q": "Sample advanced Question 35 about data-science?",
+        "a": "This is a dummy answer for a advanced question 35 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
       },
       {
-        "id": "ds-a-2",
-        "q": "What is the concept of transfer learning in deep learning?",
-        "a": "Transfer learning involves using a pre-trained model as a starting point for a new task, fine-tuning the weights and biases to adapt to the new data and task, often resulting in faster training and improved performance."
+        "id": "data-science-a-36",
+        "q": "Sample advanced Question 36 about data-science?",
+        "a": "This is a dummy answer for a advanced question 36 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
       },
       {
-        "id": "ds-a-3",
-        "q": "How do you evaluate the performance of a machine learning model?",
-        "a": "Evaluating the performance of a machine learning model involves using metrics such as accuracy, precision, recall, F1 score, mean squared error, and R-squared, as well as techniques such as cross-validation and bootstrapping to estimate performance on unseen data."
+        "id": "data-science-a-37",
+        "q": "Sample advanced Question 37 about data-science?",
+        "a": "This is a dummy answer for a advanced question 37 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "data-science-a-38",
+        "q": "Sample advanced Question 38 about data-science?",
+        "a": "This is a dummy answer for a advanced question 38 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "data-science-a-39",
+        "q": "Sample advanced Question 39 about data-science?",
+        "a": "This is a dummy answer for a advanced question 39 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "data-science-a-40",
+        "q": "Sample advanced Question 40 about data-science?",
+        "a": "This is a dummy answer for a advanced question 40 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "data-science-a-41",
+        "q": "Sample advanced Question 41 about data-science?",
+        "a": "This is a dummy answer for a advanced question 41 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "data-science-a-42",
+        "q": "Sample advanced Question 42 about data-science?",
+        "a": "This is a dummy answer for a advanced question 42 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "data-science-a-43",
+        "q": "Sample advanced Question 43 about data-science?",
+        "a": "This is a dummy answer for a advanced question 43 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "data-science-a-44",
+        "q": "Sample advanced Question 44 about data-science?",
+        "a": "This is a dummy answer for a advanced question 44 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "data-science-a-45",
+        "q": "Sample advanced Question 45 about data-science?",
+        "a": "This is a dummy answer for a advanced question 45 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "data-science-a-46",
+        "q": "Sample advanced Question 46 about data-science?",
+        "a": "This is a dummy answer for a advanced question 46 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "data-science-a-47",
+        "q": "Sample advanced Question 47 about data-science?",
+        "a": "This is a dummy answer for a advanced question 47 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "data-science-a-48",
+        "q": "Sample advanced Question 48 about data-science?",
+        "a": "This is a dummy answer for a advanced question 48 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "data-science-a-49",
+        "q": "Sample advanced Question 49 about data-science?",
+        "a": "This is a dummy answer for a advanced question 49 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "data-science-a-50",
+        "q": "Sample advanced Question 50 about data-science?",
+        "a": "This is a dummy answer for a advanced question 50 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
       }
     ]
   }

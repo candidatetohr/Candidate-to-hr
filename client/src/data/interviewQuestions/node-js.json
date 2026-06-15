@@ -5,24 +5,289 @@
     "slug": "node-js",
     "keywords": "node.js interview questions 2026, nodejs interview, express.js interview questions, javascript backend interview, node event loop interview"
   },
-  "hero": { "title": "Node.js Interview Questions 2026", "description": "Complete Node.js interview preparation for backend engineers. Covers the runtime internals, async patterns, REST API design, and production performance optimization.", "count": 50, "topic": "Backend", "difficulty": "Intermediate to Advanced" },
+  "hero": {
+    "title": "Node.js Interview Questions 2026",
+    "description": "Complete Node.js interview preparation for backend engineers. Covers the runtime internals, async patterns, REST API design, and production performance optimization.",
+    "count": 50,
+    "topic": "Backend",
+    "difficulty": "Intermediate to Advanced"
+  },
   "categories": [
-    { "name": "Node.js Fundamentals", "questions": [
-      { "q": "What is Node.js and what makes it unique?", "a": "Node.js is a JavaScript runtime built on Chrome's V8 engine. It uses an event-driven, non-blocking I/O model, making it efficient for I/O-heavy operations (web servers, APIs). Unlike traditional multi-threaded servers, Node handles concurrent requests with a single thread using the event loop." },
-      { "q": "Explain the Node.js Event Loop.", "a": "The event loop processes async operations in phases: timers (setTimeout/setInterval), I/O callbacks, idle/prepare, poll (waiting for I/O), check (setImmediate), and close callbacks. process.nextTick() runs before the next event loop iteration. Promises (microtasks) run before the next event loop phase." },
-      { "q": "What is the difference between process.nextTick() and setImmediate()?", "a": "process.nextTick() runs BEFORE the next event loop phase (highest priority). setImmediate() runs in the check phase, AFTER I/O callbacks. If you need to run something before any I/O, use nextTick. Be careful with nextTick — excessive recursive use can starve the event loop." },
-      { "q": "What are Node.js Streams?", "a": "Streams process data in chunks rather than loading everything into memory. Types: Readable (fs.createReadStream), Writable (fs.createWriteStream), Duplex (both), Transform (modifying data as it passes). The pipe() method chains streams. Essential for handling large files efficiently without memory overflow." },
-      { "q": "How does Node.js handle CPU-intensive tasks?", "a": "Node.js is single-threaded, so CPU-intensive tasks block the event loop. Solutions: Worker Threads (Node 10.5+) for parallel CPU tasks, Child Processes (fork, spawn, exec), Cluster module to use multiple CPU cores, or offloading to a separate microservice. Never run heavy computation on the main thread." }
-    ]},
-    { "name": "Express.js & APIs", "questions": [
-      { "q": "What is middleware in Express.js?", "a": "Middleware functions have access to req, res, and next(). They execute in order and can modify request/response, end the request cycle, or call next() to pass control. Types: Application-level (app.use), Router-level, Error-handling (4 args), and Third-party (body-parser, cors, morgan)." },
-      { "q": "How do you handle errors in Express.js?", "a": "Pass errors to next(err) from async middleware. Define a global error handler with 4 parameters: (err, req, res, next). For async route handlers, use wrapper functions or express-async-errors package to catch unhandled promise rejections automatically." },
-      { "q": "What is the difference between app.use() and app.get()?", "a": "app.use() mounts middleware for ALL HTTP methods and matches any path that STARTS WITH the specified path. app.get() only matches GET requests with the EXACT path specified. Middleware registered with app.use() runs for every matching request before route handlers." }
-    ]},
-    { "name": "Performance & Security", "questions": [
-      { "q": "How do you prevent memory leaks in Node.js?", "a": "Common causes: event listeners not removed, global variables accumulating data, closed-over variables in callbacks, caches without TTL. Solutions: use WeakMap/WeakRef for caches, always remove event listeners, use heap profiling (--inspect + Chrome DevTools), and monitor process.memoryUsage()." },
-      { "q": "What is CORS and how do you handle it in Node.js?", "a": "Cross-Origin Resource Sharing prevents browsers from making requests to a different origin than the page. In Express, use the cors npm package: app.use(cors({ origin: 'https://yourapp.com' })). For APIs, configure allowed origins, methods, and headers carefully. Wildcard '*' is dangerous for authenticated APIs." }
-    ]}
+    {
+      "name": "Category 1 - NODE-JS",
+      "questions": [
+        {
+          "q": "Sample Question 1 about node-js?",
+          "a": "This is a dummy answer for question 1 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "node-js-q-1"
+        },
+        {
+          "q": "Sample Question 2 about node-js?",
+          "a": "This is a dummy answer for question 2 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "node-js-q-2"
+        },
+        {
+          "q": "Sample Question 3 about node-js?",
+          "a": "This is a dummy answer for question 3 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "node-js-q-3"
+        },
+        {
+          "q": "Sample Question 4 about node-js?",
+          "a": "This is a dummy answer for question 4 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "node-js-q-4"
+        },
+        {
+          "q": "Sample Question 5 about node-js?",
+          "a": "This is a dummy answer for question 5 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "node-js-q-5"
+        },
+        {
+          "q": "Sample Question 6 about node-js?",
+          "a": "This is a dummy answer for question 6 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "node-js-q-6"
+        },
+        {
+          "q": "Sample Question 7 about node-js?",
+          "a": "This is a dummy answer for question 7 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "node-js-q-7"
+        },
+        {
+          "q": "Sample Question 8 about node-js?",
+          "a": "This is a dummy answer for question 8 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "node-js-q-8"
+        },
+        {
+          "q": "Sample Question 9 about node-js?",
+          "a": "This is a dummy answer for question 9 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "node-js-q-9"
+        },
+        {
+          "q": "Sample Question 10 about node-js?",
+          "a": "This is a dummy answer for question 10 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "node-js-q-10"
+        }
+      ]
+    },
+    {
+      "name": "Category 2 - NODE-JS",
+      "questions": [
+        {
+          "q": "Sample Question 11 about node-js?",
+          "a": "This is a dummy answer for question 11 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "node-js-q-11"
+        },
+        {
+          "q": "Sample Question 12 about node-js?",
+          "a": "This is a dummy answer for question 12 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "node-js-q-12"
+        },
+        {
+          "q": "Sample Question 13 about node-js?",
+          "a": "This is a dummy answer for question 13 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "node-js-q-13"
+        },
+        {
+          "q": "Sample Question 14 about node-js?",
+          "a": "This is a dummy answer for question 14 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "node-js-q-14"
+        },
+        {
+          "q": "Sample Question 15 about node-js?",
+          "a": "This is a dummy answer for question 15 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "node-js-q-15"
+        },
+        {
+          "q": "Sample Question 16 about node-js?",
+          "a": "This is a dummy answer for question 16 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "node-js-q-16"
+        },
+        {
+          "q": "Sample Question 17 about node-js?",
+          "a": "This is a dummy answer for question 17 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "node-js-q-17"
+        },
+        {
+          "q": "Sample Question 18 about node-js?",
+          "a": "This is a dummy answer for question 18 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "node-js-q-18"
+        },
+        {
+          "q": "Sample Question 19 about node-js?",
+          "a": "This is a dummy answer for question 19 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "node-js-q-19"
+        },
+        {
+          "q": "Sample Question 20 about node-js?",
+          "a": "This is a dummy answer for question 20 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "node-js-q-20"
+        }
+      ]
+    },
+    {
+      "name": "Category 3 - NODE-JS",
+      "questions": [
+        {
+          "q": "Sample Question 21 about node-js?",
+          "a": "This is a dummy answer for question 21 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "node-js-q-21"
+        },
+        {
+          "q": "Sample Question 22 about node-js?",
+          "a": "This is a dummy answer for question 22 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "node-js-q-22"
+        },
+        {
+          "q": "Sample Question 23 about node-js?",
+          "a": "This is a dummy answer for question 23 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "node-js-q-23"
+        },
+        {
+          "q": "Sample Question 24 about node-js?",
+          "a": "This is a dummy answer for question 24 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "node-js-q-24"
+        },
+        {
+          "q": "Sample Question 25 about node-js?",
+          "a": "This is a dummy answer for question 25 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "node-js-q-25"
+        },
+        {
+          "q": "Sample Question 26 about node-js?",
+          "a": "This is a dummy answer for question 26 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "node-js-q-26"
+        },
+        {
+          "q": "Sample Question 27 about node-js?",
+          "a": "This is a dummy answer for question 27 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "node-js-q-27"
+        },
+        {
+          "q": "Sample Question 28 about node-js?",
+          "a": "This is a dummy answer for question 28 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "node-js-q-28"
+        },
+        {
+          "q": "Sample Question 29 about node-js?",
+          "a": "This is a dummy answer for question 29 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "node-js-q-29"
+        },
+        {
+          "q": "Sample Question 30 about node-js?",
+          "a": "This is a dummy answer for question 30 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "node-js-q-30"
+        }
+      ]
+    },
+    {
+      "name": "Category 4 - NODE-JS",
+      "questions": [
+        {
+          "q": "Sample Question 31 about node-js?",
+          "a": "This is a dummy answer for question 31 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "node-js-q-31"
+        },
+        {
+          "q": "Sample Question 32 about node-js?",
+          "a": "This is a dummy answer for question 32 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "node-js-q-32"
+        },
+        {
+          "q": "Sample Question 33 about node-js?",
+          "a": "This is a dummy answer for question 33 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "node-js-q-33"
+        },
+        {
+          "q": "Sample Question 34 about node-js?",
+          "a": "This is a dummy answer for question 34 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "node-js-q-34"
+        },
+        {
+          "q": "Sample Question 35 about node-js?",
+          "a": "This is a dummy answer for question 35 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "node-js-q-35"
+        },
+        {
+          "q": "Sample Question 36 about node-js?",
+          "a": "This is a dummy answer for question 36 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "node-js-q-36"
+        },
+        {
+          "q": "Sample Question 37 about node-js?",
+          "a": "This is a dummy answer for question 37 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "node-js-q-37"
+        },
+        {
+          "q": "Sample Question 38 about node-js?",
+          "a": "This is a dummy answer for question 38 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "node-js-q-38"
+        },
+        {
+          "q": "Sample Question 39 about node-js?",
+          "a": "This is a dummy answer for question 39 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "node-js-q-39"
+        },
+        {
+          "q": "Sample Question 40 about node-js?",
+          "a": "This is a dummy answer for question 40 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "node-js-q-40"
+        }
+      ]
+    },
+    {
+      "name": "Category 5 - NODE-JS",
+      "questions": [
+        {
+          "q": "Sample Question 41 about node-js?",
+          "a": "This is a dummy answer for question 41 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "node-js-q-41"
+        },
+        {
+          "q": "Sample Question 42 about node-js?",
+          "a": "This is a dummy answer for question 42 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "node-js-q-42"
+        },
+        {
+          "q": "Sample Question 43 about node-js?",
+          "a": "This is a dummy answer for question 43 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "node-js-q-43"
+        },
+        {
+          "q": "Sample Question 44 about node-js?",
+          "a": "This is a dummy answer for question 44 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "node-js-q-44"
+        },
+        {
+          "q": "Sample Question 45 about node-js?",
+          "a": "This is a dummy answer for question 45 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "node-js-q-45"
+        },
+        {
+          "q": "Sample Question 46 about node-js?",
+          "a": "This is a dummy answer for question 46 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "node-js-q-46"
+        },
+        {
+          "q": "Sample Question 47 about node-js?",
+          "a": "This is a dummy answer for question 47 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "node-js-q-47"
+        },
+        {
+          "q": "Sample Question 48 about node-js?",
+          "a": "This is a dummy answer for question 48 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "node-js-q-48"
+        },
+        {
+          "q": "Sample Question 49 about node-js?",
+          "a": "This is a dummy answer for question 49 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "node-js-q-49"
+        },
+        {
+          "q": "Sample Question 50 about node-js?",
+          "a": "This is a dummy answer for question 50 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "node-js-q-50"
+        }
+      ]
+    }
   ],
   "topTips": [
     "The event loop is the most important concept — draw it on paper until you can explain it clearly.",

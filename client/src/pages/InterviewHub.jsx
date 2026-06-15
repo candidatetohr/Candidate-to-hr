@@ -16,7 +16,12 @@ export default function InterviewHub() {
 
   return (
     <div className="hub-page">
-      <SEO title="Top Tech Interview Questions 2026 | Candidatetohr" description="Prepare for your next technical interview with our massive database of real interview questions for Python, Java, React, SQL, and System Design." />
+      <SEO 
+        title="Top Interview Questions & Answers | Technical & Behavioral"
+        description="Master your next tech interview with our comprehensive database of technical and behavioral questions, answers, and tips."
+        canonical="/interview-questions"
+        type="CollectionPage"
+      />
 
       <section className="hub-hero">
         <div className="hub-container text-center">

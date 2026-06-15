@@ -21,6 +21,7 @@ const LearningPathPage = lazy(() => import('./pages/LearningPathPage'));
 const ProbabilityEnginePage = lazy(() => import('./pages/ProbabilityEnginePage'));
 const TruthDetectorPage = lazy(() => import('./pages/TruthDetectorPage'));
 const ProfileEditPage = lazy(() => import('./pages/ProfileEditPage'));
+const ResumeBuilderPage = lazy(() => import('./pages/ResumeBuilderPage'));
 
 // New AI Tool Pages
 const CultureFitAnalyzerPage = lazy(() => import('./pages/CultureFitAnalyzerPage'));
@@ -98,6 +99,7 @@ export default function App() {
           <Route path="/applications/:id" element={<ProtectedRoute><CandidateFeedbackPage /></ProtectedRoute>} />
           <Route path="/analytics" element={<ProtectedRoute><AnalyticsPage /></ProtectedRoute>} />
           <Route path="/analyze" element={<ResumeAnalyzerPage />} />
+          <Route path="/resume-builder" element={<ResumeBuilderPage />} />
           <Route path="/live-editor" element={<LiveEditorPage />} />
           <Route path="/interview-sim" element={<InterviewSimPage />} />
           <Route path="/rejection-decoder" element={<RejectionDecoderPage />} />

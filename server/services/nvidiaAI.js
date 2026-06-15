@@ -22,6 +22,7 @@ export const rotateApiKey = () => {
 };
 
 const getCurrentKey = () => apiKeys[currentKeyIndex];
+export { getCurrentKey };
 
 // Force IPv4 to prevent AggregateError from Node.js dual-stack Happy Eyeballs
 const ipv4Agent = new https.Agent({ family: 4 });

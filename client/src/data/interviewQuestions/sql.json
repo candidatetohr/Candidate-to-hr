@@ -9,17 +9,265 @@
   },
   "hero": {
     "title": "SQL Interview Questions",
-    "description": "Comprehensive list of SQL interview questions. (Full list is being automatically generated...)"
+    "description": "Comprehensive list of SQL interview questions. (Full list is being automatically generated...)",
+    "count": 50
   },
   "questions": {
     "beginner": [
       {
         "id": "sql-b-1",
-        "q": "What is the difference between INNER JOIN and LEFT JOIN?",
-        "a": "INNER JOIN returns only matching rows, while LEFT JOIN returns all rows from the left table and matching rows from the right."
+        "q": "Sample beginner Question 1 about sql?",
+        "a": "This is a dummy answer for a beginner question 1 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "sql-b-2",
+        "q": "Sample beginner Question 2 about sql?",
+        "a": "This is a dummy answer for a beginner question 2 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "sql-b-3",
+        "q": "Sample beginner Question 3 about sql?",
+        "a": "This is a dummy answer for a beginner question 3 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "sql-b-4",
+        "q": "Sample beginner Question 4 about sql?",
+        "a": "This is a dummy answer for a beginner question 4 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "sql-b-5",
+        "q": "Sample beginner Question 5 about sql?",
+        "a": "This is a dummy answer for a beginner question 5 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "sql-b-6",
+        "q": "Sample beginner Question 6 about sql?",
+        "a": "This is a dummy answer for a beginner question 6 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "sql-b-7",
+        "q": "Sample beginner Question 7 about sql?",
+        "a": "This is a dummy answer for a beginner question 7 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "sql-b-8",
+        "q": "Sample beginner Question 8 about sql?",
+        "a": "This is a dummy answer for a beginner question 8 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "sql-b-9",
+        "q": "Sample beginner Question 9 about sql?",
+        "a": "This is a dummy answer for a beginner question 9 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "sql-b-10",
+        "q": "Sample beginner Question 10 about sql?",
+        "a": "This is a dummy answer for a beginner question 10 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "sql-b-11",
+        "q": "Sample beginner Question 11 about sql?",
+        "a": "This is a dummy answer for a beginner question 11 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "sql-b-12",
+        "q": "Sample beginner Question 12 about sql?",
+        "a": "This is a dummy answer for a beginner question 12 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "sql-b-13",
+        "q": "Sample beginner Question 13 about sql?",
+        "a": "This is a dummy answer for a beginner question 13 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "sql-b-14",
+        "q": "Sample beginner Question 14 about sql?",
+        "a": "This is a dummy answer for a beginner question 14 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "sql-b-15",
+        "q": "Sample beginner Question 15 about sql?",
+        "a": "This is a dummy answer for a beginner question 15 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "sql-b-16",
+        "q": "Sample beginner Question 16 about sql?",
+        "a": "This is a dummy answer for a beginner question 16 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "sql-b-17",
+        "q": "Sample beginner Question 17 about sql?",
+        "a": "This is a dummy answer for a beginner question 17 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
       }
     ],
-    "intermediate": [],
-    "advanced": []
+    "intermediate": [
+      {
+        "id": "sql-i-18",
+        "q": "Sample intermediate Question 18 about sql?",
+        "a": "This is a dummy answer for a intermediate question 18 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "sql-i-19",
+        "q": "Sample intermediate Question 19 about sql?",
+        "a": "This is a dummy answer for a intermediate question 19 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "sql-i-20",
+        "q": "Sample intermediate Question 20 about sql?",
+        "a": "This is a dummy answer for a intermediate question 20 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "sql-i-21",
+        "q": "Sample intermediate Question 21 about sql?",
+        "a": "This is a dummy answer for a intermediate question 21 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "sql-i-22",
+        "q": "Sample intermediate Question 22 about sql?",
+        "a": "This is a dummy answer for a intermediate question 22 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "sql-i-23",
+        "q": "Sample intermediate Question 23 about sql?",
+        "a": "This is a dummy answer for a intermediate question 23 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "sql-i-24",
+        "q": "Sample intermediate Question 24 about sql?",
+        "a": "This is a dummy answer for a intermediate question 24 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "sql-i-25",
+        "q": "Sample intermediate Question 25 about sql?",
+        "a": "This is a dummy answer for a intermediate question 25 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "sql-i-26",
+        "q": "Sample intermediate Question 26 about sql?",
+        "a": "This is a dummy answer for a intermediate question 26 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "sql-i-27",
+        "q": "Sample intermediate Question 27 about sql?",
+        "a": "This is a dummy answer for a intermediate question 27 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "sql-i-28",
+        "q": "Sample intermediate Question 28 about sql?",
+        "a": "This is a dummy answer for a intermediate question 28 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "sql-i-29",
+        "q": "Sample intermediate Question 29 about sql?",
+        "a": "This is a dummy answer for a intermediate question 29 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "sql-i-30",
+        "q": "Sample intermediate Question 30 about sql?",
+        "a": "This is a dummy answer for a intermediate question 30 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "sql-i-31",
+        "q": "Sample intermediate Question 31 about sql?",
+        "a": "This is a dummy answer for a intermediate question 31 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "sql-i-32",
+        "q": "Sample intermediate Question 32 about sql?",
+        "a": "This is a dummy answer for a intermediate question 32 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "sql-i-33",
+        "q": "Sample intermediate Question 33 about sql?",
+        "a": "This is a dummy answer for a intermediate question 33 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "sql-i-34",
+        "q": "Sample intermediate Question 34 about sql?",
+        "a": "This is a dummy answer for a intermediate question 34 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      }
+    ],
+    "advanced": [
+      {
+        "id": "sql-a-35",
+        "q": "Sample advanced Question 35 about sql?",
+        "a": "This is a dummy answer for a advanced question 35 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "sql-a-36",
+        "q": "Sample advanced Question 36 about sql?",
+        "a": "This is a dummy answer for a advanced question 36 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "sql-a-37",
+        "q": "Sample advanced Question 37 about sql?",
+        "a": "This is a dummy answer for a advanced question 37 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "sql-a-38",
+        "q": "Sample advanced Question 38 about sql?",
+        "a": "This is a dummy answer for a advanced question 38 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "sql-a-39",
+        "q": "Sample advanced Question 39 about sql?",
+        "a": "This is a dummy answer for a advanced question 39 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "sql-a-40",
+        "q": "Sample advanced Question 40 about sql?",
+        "a": "This is a dummy answer for a advanced question 40 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "sql-a-41",
+        "q": "Sample advanced Question 41 about sql?",
+        "a": "This is a dummy answer for a advanced question 41 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "sql-a-42",
+        "q": "Sample advanced Question 42 about sql?",
+        "a": "This is a dummy answer for a advanced question 42 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "sql-a-43",
+        "q": "Sample advanced Question 43 about sql?",
+        "a": "This is a dummy answer for a advanced question 43 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "sql-a-44",
+        "q": "Sample advanced Question 44 about sql?",
+        "a": "This is a dummy answer for a advanced question 44 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "sql-a-45",
+        "q": "Sample advanced Question 45 about sql?",
+        "a": "This is a dummy answer for a advanced question 45 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "sql-a-46",
+        "q": "Sample advanced Question 46 about sql?",
+        "a": "This is a dummy answer for a advanced question 46 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "sql-a-47",
+        "q": "Sample advanced Question 47 about sql?",
+        "a": "This is a dummy answer for a advanced question 47 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "sql-a-48",
+        "q": "Sample advanced Question 48 about sql?",
+        "a": "This is a dummy answer for a advanced question 48 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "sql-a-49",
+        "q": "Sample advanced Question 49 about sql?",
+        "a": "This is a dummy answer for a advanced question 49 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "sql-a-50",
+        "q": "Sample advanced Question 50 about sql?",
+        "a": "This is a dummy answer for a advanced question 50 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      }
+    ]
   }
 }

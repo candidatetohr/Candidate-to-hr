@@ -9,17 +9,265 @@
   },
   "hero": {
     "title": "React.js Interview Questions",
-    "description": "Comprehensive list of React interview questions. (Full list is being automatically generated...)"
+    "description": "Comprehensive list of React interview questions. (Full list is being automatically generated...)",
+    "count": 50
   },
   "questions": {
     "beginner": [
       {
         "id": "react-b-1",
-        "q": "What is the Virtual DOM?",
-        "a": "The Virtual DOM is a lightweight copy of the actual DOM. React uses it to optimize rendering by batching updates and calculating the minimal set of changes needed."
+        "q": "Sample beginner Question 1 about react?",
+        "a": "This is a dummy answer for a beginner question 1 related to the topic of react. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "react-b-2",
+        "q": "Sample beginner Question 2 about react?",
+        "a": "This is a dummy answer for a beginner question 2 related to the topic of react. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "react-b-3",
+        "q": "Sample beginner Question 3 about react?",
+        "a": "This is a dummy answer for a beginner question 3 related to the topic of react. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "react-b-4",
+        "q": "Sample beginner Question 4 about react?",
+        "a": "This is a dummy answer for a beginner question 4 related to the topic of react. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "react-b-5",
+        "q": "Sample beginner Question 5 about react?",
+        "a": "This is a dummy answer for a beginner question 5 related to the topic of react. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "react-b-6",
+        "q": "Sample beginner Question 6 about react?",
+        "a": "This is a dummy answer for a beginner question 6 related to the topic of react. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "react-b-7",
+        "q": "Sample beginner Question 7 about react?",
+        "a": "This is a dummy answer for a beginner question 7 related to the topic of react. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "react-b-8",
+        "q": "Sample beginner Question 8 about react?",
+        "a": "This is a dummy answer for a beginner question 8 related to the topic of react. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "react-b-9",
+        "q": "Sample beginner Question 9 about react?",
+        "a": "This is a dummy answer for a beginner question 9 related to the topic of react. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "react-b-10",
+        "q": "Sample beginner Question 10 about react?",
+        "a": "This is a dummy answer for a beginner question 10 related to the topic of react. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "react-b-11",
+        "q": "Sample beginner Question 11 about react?",
+        "a": "This is a dummy answer for a beginner question 11 related to the topic of react. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "react-b-12",
+        "q": "Sample beginner Question 12 about react?",
+        "a": "This is a dummy answer for a beginner question 12 related to the topic of react. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "react-b-13",
+        "q": "Sample beginner Question 13 about react?",
+        "a": "This is a dummy answer for a beginner question 13 related to the topic of react. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "react-b-14",
+        "q": "Sample beginner Question 14 about react?",
+        "a": "This is a dummy answer for a beginner question 14 related to the topic of react. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "react-b-15",
+        "q": "Sample beginner Question 15 about react?",
+        "a": "This is a dummy answer for a beginner question 15 related to the topic of react. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "react-b-16",
+        "q": "Sample beginner Question 16 about react?",
+        "a": "This is a dummy answer for a beginner question 16 related to the topic of react. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "react-b-17",
+        "q": "Sample beginner Question 17 about react?",
+        "a": "This is a dummy answer for a beginner question 17 related to the topic of react. It provides enough placeholder text to test the UI rendering of the answer section properly."
       }
     ],
-    "intermediate": [],
-    "advanced": []
+    "intermediate": [
+      {
+        "id": "react-i-18",
+        "q": "Sample intermediate Question 18 about react?",
+        "a": "This is a dummy answer for a intermediate question 18 related to the topic of react. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "react-i-19",
+        "q": "Sample intermediate Question 19 about react?",
+        "a": "This is a dummy answer for a intermediate question 19 related to the topic of react. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "react-i-20",
+        "q": "Sample intermediate Question 20 about react?",
+        "a": "This is a dummy answer for a intermediate question 20 related to the topic of react. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "react-i-21",
+        "q": "Sample intermediate Question 21 about react?",
+        "a": "This is a dummy answer for a intermediate question 21 related to the topic of react. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "react-i-22",
+        "q": "Sample intermediate Question 22 about react?",
+        "a": "This is a dummy answer for a intermediate question 22 related to the topic of react. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "react-i-23",
+        "q": "Sample intermediate Question 23 about react?",
+        "a": "This is a dummy answer for a intermediate question 23 related to the topic of react. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "react-i-24",
+        "q": "Sample intermediate Question 24 about react?",
+        "a": "This is a dummy answer for a intermediate question 24 related to the topic of react. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "react-i-25",
+        "q": "Sample intermediate Question 25 about react?",
+        "a": "This is a dummy answer for a intermediate question 25 related to the topic of react. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "react-i-26",
+        "q": "Sample intermediate Question 26 about react?",
+        "a": "This is a dummy answer for a intermediate question 26 related to the topic of react. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "react-i-27",
+        "q": "Sample intermediate Question 27 about react?",
+        "a": "This is a dummy answer for a intermediate question 27 related to the topic of react. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "react-i-28",
+        "q": "Sample intermediate Question 28 about react?",
+        "a": "This is a dummy answer for a intermediate question 28 related to the topic of react. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "react-i-29",
+        "q": "Sample intermediate Question 29 about react?",
+        "a": "This is a dummy answer for a intermediate question 29 related to the topic of react. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "react-i-30",
+        "q": "Sample intermediate Question 30 about react?",
+        "a": "This is a dummy answer for a intermediate question 30 related to the topic of react. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "react-i-31",
+        "q": "Sample intermediate Question 31 about react?",
+        "a": "This is a dummy answer for a intermediate question 31 related to the topic of react. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "react-i-32",
+        "q": "Sample intermediate Question 32 about react?",
+        "a": "This is a dummy answer for a intermediate question 32 related to the topic of react. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "react-i-33",
+        "q": "Sample intermediate Question 33 about react?",
+        "a": "This is a dummy answer for a intermediate question 33 related to the topic of react. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "react-i-34",
+        "q": "Sample intermediate Question 34 about react?",
+        "a": "This is a dummy answer for a intermediate question 34 related to the topic of react. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      }
+    ],
+    "advanced": [
+      {
+        "id": "react-a-35",
+        "q": "Sample advanced Question 35 about react?",
+        "a": "This is a dummy answer for a advanced question 35 related to the topic of react. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "react-a-36",
+        "q": "Sample advanced Question 36 about react?",
+        "a": "This is a dummy answer for a advanced question 36 related to the topic of react. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "react-a-37",
+        "q": "Sample advanced Question 37 about react?",
+        "a": "This is a dummy answer for a advanced question 37 related to the topic of react. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "react-a-38",
+        "q": "Sample advanced Question 38 about react?",
+        "a": "This is a dummy answer for a advanced question 38 related to the topic of react. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "react-a-39",
+        "q": "Sample advanced Question 39 about react?",
+        "a": "This is a dummy answer for a advanced question 39 related to the topic of react. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "react-a-40",
+        "q": "Sample advanced Question 40 about react?",
+        "a": "This is a dummy answer for a advanced question 40 related to the topic of react. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "react-a-41",
+        "q": "Sample advanced Question 41 about react?",
+        "a": "This is a dummy answer for a advanced question 41 related to the topic of react. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "react-a-42",
+        "q": "Sample advanced Question 42 about react?",
+        "a": "This is a dummy answer for a advanced question 42 related to the topic of react. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "react-a-43",
+        "q": "Sample advanced Question 43 about react?",
+        "a": "This is a dummy answer for a advanced question 43 related to the topic of react. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "react-a-44",
+        "q": "Sample advanced Question 44 about react?",
+        "a": "This is a dummy answer for a advanced question 44 related to the topic of react. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "react-a-45",
+        "q": "Sample advanced Question 45 about react?",
+        "a": "This is a dummy answer for a advanced question 45 related to the topic of react. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "react-a-46",
+        "q": "Sample advanced Question 46 about react?",
+        "a": "This is a dummy answer for a advanced question 46 related to the topic of react. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "react-a-47",
+        "q": "Sample advanced Question 47 about react?",
+        "a": "This is a dummy answer for a advanced question 47 related to the topic of react. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "react-a-48",
+        "q": "Sample advanced Question 48 about react?",
+        "a": "This is a dummy answer for a advanced question 48 related to the topic of react. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "react-a-49",
+        "q": "Sample advanced Question 49 about react?",
+        "a": "This is a dummy answer for a advanced question 49 related to the topic of react. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "react-a-50",
+        "q": "Sample advanced Question 50 about react?",
+        "a": "This is a dummy answer for a advanced question 50 related to the topic of react. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      }
+    ]
   }
 }

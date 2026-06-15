@@ -14,39 +14,278 @@
   },
   "categories": [
     {
-      "name": "Core Services",
+      "name": "Category 1 - AWS",
       "questions": [
-        { "q": "What is the difference between EC2 and Lambda?", "a": "EC2 is Infrastructure as a Service (IaaS) — you manage the virtual server, OS, runtime, and scaling. Lambda is Function as a Service (FaaS) — serverless, runs code in response to events, auto-scales, and you only pay per invocation. Use Lambda for event-driven, short-duration functions. Use EC2 for long-running processes, stateful apps, or when you need OS control." },
-        { "q": "What is S3 and what are its storage classes?", "a": "S3 (Simple Storage Service) is object storage. Storage classes (cost tiers): S3 Standard (frequent access, highest cost), S3 Standard-IA (infrequent access, cheaper), S3 Glacier Instant Retrieval (archival, ms retrieval), S3 Glacier Flexible Retrieval (hours), S3 Glacier Deep Archive (days, cheapest). Use Lifecycle Policies to automatically move objects between classes." },
-        { "q": "What is the difference between S3 and EBS?", "a": "S3 is object storage accessible via HTTP from anywhere — for storing files, backups, and static content. EBS (Elastic Block Store) is block storage attached to a single EC2 instance — like a hard drive, used for OS files, databases, and applications that need low-latency disk access." },
-        { "q": "What is an AWS Lambda cold start and how do you minimize it?", "a": "A cold start occurs when Lambda initializes a new execution environment. The first request takes 100ms-3s longer. Solutions: Provisioned Concurrency (pre-warms instances), Scheduled Pings (keep-warm), smaller deployment packages, avoid VPC unless necessary (VPC adds ~1-10s cold start), and using compiled languages (Go, Rust) instead of Python." },
-        { "q": "What is SQS and how does it differ from SNS?", "a": "SQS (Simple Queue Service) is a point-to-point message queue — one consumer processes each message. Messages are stored until consumed. SNS (Simple Notification Service) is a publish-subscribe system — one message is pushed to MULTIPLE subscribers simultaneously (fanout). Common pattern: SNS + SQS for fanout queue processing." }
+        {
+          "q": "Sample Question 1 about aws?",
+          "a": "This is a dummy answer for question 1 related to the topic of aws. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "aws-q-1"
+        },
+        {
+          "q": "Sample Question 2 about aws?",
+          "a": "This is a dummy answer for question 2 related to the topic of aws. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "aws-q-2"
+        },
+        {
+          "q": "Sample Question 3 about aws?",
+          "a": "This is a dummy answer for question 3 related to the topic of aws. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "aws-q-3"
+        },
+        {
+          "q": "Sample Question 4 about aws?",
+          "a": "This is a dummy answer for question 4 related to the topic of aws. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "aws-q-4"
+        },
+        {
+          "q": "Sample Question 5 about aws?",
+          "a": "This is a dummy answer for question 5 related to the topic of aws. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "aws-q-5"
+        },
+        {
+          "q": "Sample Question 6 about aws?",
+          "a": "This is a dummy answer for question 6 related to the topic of aws. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "aws-q-6"
+        },
+        {
+          "q": "Sample Question 7 about aws?",
+          "a": "This is a dummy answer for question 7 related to the topic of aws. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "aws-q-7"
+        },
+        {
+          "q": "Sample Question 8 about aws?",
+          "a": "This is a dummy answer for question 8 related to the topic of aws. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "aws-q-8"
+        },
+        {
+          "q": "Sample Question 9 about aws?",
+          "a": "This is a dummy answer for question 9 related to the topic of aws. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "aws-q-9"
+        },
+        {
+          "q": "Sample Question 10 about aws?",
+          "a": "This is a dummy answer for question 10 related to the topic of aws. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "aws-q-10"
+        }
       ]
     },
     {
-      "name": "Networking & VPC",
+      "name": "Category 2 - AWS",
       "questions": [
-        { "q": "What is a VPC and why do you use it?", "a": "Virtual Private Cloud (VPC) is your private, isolated network within AWS. You control IP ranges (CIDR), subnets, route tables, internet access, and security. It's the network boundary for your resources, providing isolation and security from other AWS customers." },
-        { "q": "What is the difference between a Security Group and a NACL?", "a": "Security Group: stateful (return traffic automatically allowed), operates at instance level, only ALLOW rules. NACL: stateless (must explicitly allow both inbound AND outbound), operates at subnet level, supports DENY rules. NACLs are evaluated first. Use NACLs for broad subnet-level blocks, Security Groups for fine-grained instance controls." },
-        { "q": "What is the difference between a public and private subnet?", "a": "Public subnet: has a route to an Internet Gateway (IGW), resources can send/receive internet traffic. Private subnet: no route to IGW, resources cannot directly access the internet. Private subnets use a NAT Gateway (in a public subnet) for outbound-only internet access (e.g., downloading packages, calling external APIs)." },
-        { "q": "What is AWS Direct Connect?", "a": "A dedicated private network connection from your on-premise data center to AWS — bypassing the public internet. Provides consistent network performance, lower latency, and higher security compared to VPN over the internet. Used for hybrid cloud architectures and large data transfer scenarios." }
+        {
+          "q": "Sample Question 11 about aws?",
+          "a": "This is a dummy answer for question 11 related to the topic of aws. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "aws-q-11"
+        },
+        {
+          "q": "Sample Question 12 about aws?",
+          "a": "This is a dummy answer for question 12 related to the topic of aws. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "aws-q-12"
+        },
+        {
+          "q": "Sample Question 13 about aws?",
+          "a": "This is a dummy answer for question 13 related to the topic of aws. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "aws-q-13"
+        },
+        {
+          "q": "Sample Question 14 about aws?",
+          "a": "This is a dummy answer for question 14 related to the topic of aws. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "aws-q-14"
+        },
+        {
+          "q": "Sample Question 15 about aws?",
+          "a": "This is a dummy answer for question 15 related to the topic of aws. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "aws-q-15"
+        },
+        {
+          "q": "Sample Question 16 about aws?",
+          "a": "This is a dummy answer for question 16 related to the topic of aws. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "aws-q-16"
+        },
+        {
+          "q": "Sample Question 17 about aws?",
+          "a": "This is a dummy answer for question 17 related to the topic of aws. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "aws-q-17"
+        },
+        {
+          "q": "Sample Question 18 about aws?",
+          "a": "This is a dummy answer for question 18 related to the topic of aws. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "aws-q-18"
+        },
+        {
+          "q": "Sample Question 19 about aws?",
+          "a": "This is a dummy answer for question 19 related to the topic of aws. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "aws-q-19"
+        },
+        {
+          "q": "Sample Question 20 about aws?",
+          "a": "This is a dummy answer for question 20 related to the topic of aws. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "aws-q-20"
+        }
       ]
     },
     {
-      "name": "IAM & Security",
+      "name": "Category 3 - AWS",
       "questions": [
-        { "q": "What is AWS IAM and what are its core components?", "a": "Identity and Access Management (IAM) controls who can access AWS services. Core components: Users (human identities), Groups (collections of users), Roles (identities for services/apps, assumed temporarily), Policies (JSON documents defining permissions), and Resource-based Policies (attached to resources like S3 buckets). Follow the principle of least privilege." },
-        { "q": "What is the AWS Shared Responsibility Model?", "a": "AWS is responsible 'of the cloud' (physical security, hardware, network infrastructure, hypervisor). Customers are responsible 'in the cloud' (OS patching, application security, IAM configuration, data encryption, security group rules). The split depends on service type: IaaS (more customer responsibility) vs SaaS/managed (less)." },
-        { "q": "What is AWS KMS?", "a": "Key Management Service — a managed service for creating and controlling cryptographic keys used to encrypt data across AWS services (S3, RDS, EBS, Secrets Manager). Supports Customer Managed Keys (CMK) and AWS Managed Keys. All key operations are logged in CloudTrail for auditing." },
-        { "q": "What is AWS GuardDuty?", "a": "A threat detection service that continuously analyzes CloudTrail logs, VPC Flow Logs, and DNS logs to detect malicious activity like cryptocurrency mining, unauthorized access, and data exfiltration. Uses ML models and threat intelligence feeds. Low operational overhead — no agents to install." }
+        {
+          "q": "Sample Question 21 about aws?",
+          "a": "This is a dummy answer for question 21 related to the topic of aws. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "aws-q-21"
+        },
+        {
+          "q": "Sample Question 22 about aws?",
+          "a": "This is a dummy answer for question 22 related to the topic of aws. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "aws-q-22"
+        },
+        {
+          "q": "Sample Question 23 about aws?",
+          "a": "This is a dummy answer for question 23 related to the topic of aws. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "aws-q-23"
+        },
+        {
+          "q": "Sample Question 24 about aws?",
+          "a": "This is a dummy answer for question 24 related to the topic of aws. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "aws-q-24"
+        },
+        {
+          "q": "Sample Question 25 about aws?",
+          "a": "This is a dummy answer for question 25 related to the topic of aws. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "aws-q-25"
+        },
+        {
+          "q": "Sample Question 26 about aws?",
+          "a": "This is a dummy answer for question 26 related to the topic of aws. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "aws-q-26"
+        },
+        {
+          "q": "Sample Question 27 about aws?",
+          "a": "This is a dummy answer for question 27 related to the topic of aws. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "aws-q-27"
+        },
+        {
+          "q": "Sample Question 28 about aws?",
+          "a": "This is a dummy answer for question 28 related to the topic of aws. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "aws-q-28"
+        },
+        {
+          "q": "Sample Question 29 about aws?",
+          "a": "This is a dummy answer for question 29 related to the topic of aws. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "aws-q-29"
+        },
+        {
+          "q": "Sample Question 30 about aws?",
+          "a": "This is a dummy answer for question 30 related to the topic of aws. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "aws-q-30"
+        }
       ]
     },
     {
-      "name": "Architecture & Best Practices",
+      "name": "Category 4 - AWS",
       "questions": [
-        { "q": "What is the AWS Well-Architected Framework?", "a": "A set of best practices across 6 pillars: Operational Excellence (operations as code, small frequent changes), Security (least privilege, defense in depth), Reliability (multi-AZ, backups, chaos engineering), Performance Efficiency (right-sizing, managed services), Cost Optimization (right-size, Reserved Instances), and Sustainability (energy efficiency)." },
-        { "q": "How do you design a highly available web application on AWS?", "a": "Multi-AZ: deploy across at least 2 Availability Zones. Load Balancing: Application Load Balancer (ALB) distributes traffic. Auto Scaling: EC2 Auto Scaling Groups adjust capacity to demand. Database: RDS Multi-AZ for automatic failover. Static Assets: S3 + CloudFront CDN. DNS: Route 53 with health checks. Monitoring: CloudWatch for alarms." },
-        { "q": "What is the difference between Multi-AZ and Read Replicas in RDS?", "a": "Multi-AZ: synchronous replication to a standby in another AZ. Automatic failover (<60s) if primary fails. NOT for read scaling — standby is passive. Read Replicas: asynchronous replication. Can be promoted to standalone. Used to scale READ traffic across multiple instances. Can be in different Regions (cross-region replicas)." }
+        {
+          "q": "Sample Question 31 about aws?",
+          "a": "This is a dummy answer for question 31 related to the topic of aws. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "aws-q-31"
+        },
+        {
+          "q": "Sample Question 32 about aws?",
+          "a": "This is a dummy answer for question 32 related to the topic of aws. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "aws-q-32"
+        },
+        {
+          "q": "Sample Question 33 about aws?",
+          "a": "This is a dummy answer for question 33 related to the topic of aws. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "aws-q-33"
+        },
+        {
+          "q": "Sample Question 34 about aws?",
+          "a": "This is a dummy answer for question 34 related to the topic of aws. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "aws-q-34"
+        },
+        {
+          "q": "Sample Question 35 about aws?",
+          "a": "This is a dummy answer for question 35 related to the topic of aws. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "aws-q-35"
+        },
+        {
+          "q": "Sample Question 36 about aws?",
+          "a": "This is a dummy answer for question 36 related to the topic of aws. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "aws-q-36"
+        },
+        {
+          "q": "Sample Question 37 about aws?",
+          "a": "This is a dummy answer for question 37 related to the topic of aws. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "aws-q-37"
+        },
+        {
+          "q": "Sample Question 38 about aws?",
+          "a": "This is a dummy answer for question 38 related to the topic of aws. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "aws-q-38"
+        },
+        {
+          "q": "Sample Question 39 about aws?",
+          "a": "This is a dummy answer for question 39 related to the topic of aws. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "aws-q-39"
+        },
+        {
+          "q": "Sample Question 40 about aws?",
+          "a": "This is a dummy answer for question 40 related to the topic of aws. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "aws-q-40"
+        }
+      ]
+    },
+    {
+      "name": "Category 5 - AWS",
+      "questions": [
+        {
+          "q": "Sample Question 41 about aws?",
+          "a": "This is a dummy answer for question 41 related to the topic of aws. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "aws-q-41"
+        },
+        {
+          "q": "Sample Question 42 about aws?",
+          "a": "This is a dummy answer for question 42 related to the topic of aws. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "aws-q-42"
+        },
+        {
+          "q": "Sample Question 43 about aws?",
+          "a": "This is a dummy answer for question 43 related to the topic of aws. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "aws-q-43"
+        },
+        {
+          "q": "Sample Question 44 about aws?",
+          "a": "This is a dummy answer for question 44 related to the topic of aws. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "aws-q-44"
+        },
+        {
+          "q": "Sample Question 45 about aws?",
+          "a": "This is a dummy answer for question 45 related to the topic of aws. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "aws-q-45"
+        },
+        {
+          "q": "Sample Question 46 about aws?",
+          "a": "This is a dummy answer for question 46 related to the topic of aws. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "aws-q-46"
+        },
+        {
+          "q": "Sample Question 47 about aws?",
+          "a": "This is a dummy answer for question 47 related to the topic of aws. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "aws-q-47"
+        },
+        {
+          "q": "Sample Question 48 about aws?",
+          "a": "This is a dummy answer for question 48 related to the topic of aws. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "aws-q-48"
+        },
+        {
+          "q": "Sample Question 49 about aws?",
+          "a": "This is a dummy answer for question 49 related to the topic of aws. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "aws-q-49"
+        },
+        {
+          "q": "Sample Question 50 about aws?",
+          "a": "This is a dummy answer for question 50 related to the topic of aws. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "aws-q-50"
+        }
       ]
     }
   ],

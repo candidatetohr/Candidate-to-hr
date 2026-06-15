@@ -17,7 +17,7 @@ const publicLinks = [
   { to: '/resume-examples', label: 'Resume Examples' },
   { to: '/career-guides', label: 'Career Guides' },
   { to: '/analyze', label: 'Resume Score' },
-  { to: '/live-editor', label: 'Resume Builder' },
+  { to: '/resume-builder', label: 'AI Resume Builder' },
 ];
 
 export default function Navbar() {

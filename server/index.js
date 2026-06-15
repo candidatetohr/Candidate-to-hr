@@ -24,6 +24,7 @@ import resumeBuilderRoutes from './routes/resumeBuilder.js';
 import { errorHandler } from './middleware/errorHandler.js';
 
 const app = express();
+app.set('trust proxy', 1); // Trust first proxy for express-rate-limit
 const PORT = process.env.PORT || 5000;
 
 if (process.env.SENTRY_DSN) {

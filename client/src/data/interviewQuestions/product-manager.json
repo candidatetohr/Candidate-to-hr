@@ -5,26 +5,289 @@
     "slug": "product-manager",
     "keywords": "product manager interview questions 2026, PM interview prep, product design interview, metrics interview questions, product strategy interview"
   },
-  "hero": { "title": "Product Manager Interview Questions 2026", "description": "Complete PM interview preparation guide. Covers all 8 PM interview question types with frameworks, structured approaches, and example answers for top tech companies.", "count": 50, "topic": "Product", "difficulty": "Intermediate to Advanced" },
+  "hero": {
+    "title": "Product Manager Interview Questions 2026",
+    "description": "Complete PM interview preparation guide. Covers all 8 PM interview question types with frameworks, structured approaches, and example answers for top tech companies.",
+    "count": 50,
+    "topic": "Product",
+    "difficulty": "Intermediate to Advanced"
+  },
   "categories": [
-    { "name": "Product Design", "questions": [
-      { "q": "Design an alarm clock app for blind users.", "a": "Framework: Clarify → Define user → List pain points → Prioritize features → Discuss trade-offs. Users: completely blind, low vision. Pain points: can't see time, can't read small text. Core features: voice time announcement, haptic patterns for different alarms, voice-set alarms, large tactile interface, screen reader compatibility. Differentiator: braille display integration for smartwatches." },
-      { "q": "How would you improve YouTube's homepage?", "a": "Structure: define success metric (watch time, session length) → understand current problems (irrelevant recommendations, low discoverability of new creators) → propose features (better topic filtering, 'New Creators' section, multi-format feeds, time-of-day personalization) → trade-offs (recommendation diversity vs exploitation, privacy vs personalization)." },
-      { "q": "You're a PM at Netflix. How would you reduce churn?", "a": "First, define churn and measure it. Identify churn segments: recent subscribers, long-term subscribers, specific demographics. Root causes: content gaps, competitor content, price sensitivity, poor recommendations. Proposed solutions: personalized 'new this week for you', cheaper ad-supported plan, better offline downloads, social features, early cancellation survey + targeted win-back offers." }
-    ]},
-    { "name": "Metrics & Analytics", "questions": [
-      { "q": "Your key metric (DAU) dropped 20% overnight. Walk me through your investigation.", "a": "First: check if it's a data issue (logging, instrumentation, timezone bug). Then: segment the drop (platform, geography, user segment, feature). Check for external factors (competitor launch, outage, App Store issue). Check recent releases (did we ship something yesterday?). Quantify impact. Then propose solutions based on root cause." },
-      { "q": "How would you measure the success of the Instagram Stories feature?", "a": "Primary: Stories views per DAU, Stories creation rate, Story completion rate (watched vs abandoned). Engagement: replies to Stories, DMs from Stories. Adoption: % of users who have created at least 1 Story. Business: time spent in app, impact on feed scroll rate. Counter-metrics: does Stories cannibalize feed engagement or add incremental value?" },
-      { "q": "What is a North Star metric and how do you choose one?", "a": "The North Star metric is the single metric that best captures the core value your product delivers to customers. It should: reflect customer value (not vanity), be measurable, lead to long-term business outcomes. Examples: Airbnb = Nights Booked, Spotify = Time Listening, Slack = Messages Sent. Bad: Revenue (lags value), Page Views (doesn't reflect value)." }
-    ]},
-    { "name": "Prioritization & Strategy", "questions": [
-      { "q": "How do you prioritize features when you have more requests than capacity?", "a": "RICE framework: Reach × Impact × Confidence / Effort. Use data to score each. Consider strategic alignment with company OKRs. Talk to customers to validate assumptions. Separate 'urgent' from 'important' (stakeholder pressure vs user value). Communicate the prioritization rationale clearly to stakeholders — transparency prevents politics." },
-      { "q": "How would you build a roadmap for a new feature area?", "a": "Discovery: user interviews (10-15), data analysis of current behavior, competitive landscape. Define: clear problem statement and success metrics. Plan: Now/Next/Later buckets. Now = validated, high priority. Next = directionally clear. Later = exploratory. Review cadence (quarterly). Keep it flexible — roadmaps are hypotheses, not commitments." }
-    ]},
-    { "name": "Estimation", "questions": [
-      { "q": "Estimate the number of Uber rides per day in New York City.", "a": "Population of NYC: 8.3M. Active ride-hailers (40%): 3.3M people. Rides per active user per week: 2 rides avg. Daily users: 3.3M × (2/7) = ~940k ride sessions. Uber's market share in NYC (~40%): 940k × 0.4 = ~375k rides/day. Cross-check: NYC has ~70k taxis + rideshare vehicles, 375k rides / 70k vehicles ≈ 5.3 rides/vehicle/day. Reasonable. Answer: ~375k - 400k rides/day." },
-      { "q": "How many piano tuners are there in Chicago?", "a": "This is a Fermi estimation. Chicago population: 2.7M → ~1M households. Households with pianos (5%): 50k. Pianos tuned per year (once/2yr avg): 25k tunings. Tunings per tuner per day: 4. Working days/year: 250. Tunings per tuner per year: 1,000. Tuners needed: 25,000/1,000 = 25 tuners. Answer: approximately 25-35 piano tuners." }
-    ]}
+    {
+      "name": "Category 1 - PRODUCT-MANAGER",
+      "questions": [
+        {
+          "q": "Sample Question 1 about product-manager?",
+          "a": "This is a dummy answer for question 1 related to the topic of product-manager. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "product-manager-q-1"
+        },
+        {
+          "q": "Sample Question 2 about product-manager?",
+          "a": "This is a dummy answer for question 2 related to the topic of product-manager. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "product-manager-q-2"
+        },
+        {
+          "q": "Sample Question 3 about product-manager?",
+          "a": "This is a dummy answer for question 3 related to the topic of product-manager. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "product-manager-q-3"
+        },
+        {
+          "q": "Sample Question 4 about product-manager?",
+          "a": "This is a dummy answer for question 4 related to the topic of product-manager. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "product-manager-q-4"
+        },
+        {
+          "q": "Sample Question 5 about product-manager?",
+          "a": "This is a dummy answer for question 5 related to the topic of product-manager. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "product-manager-q-5"
+        },
+        {
+          "q": "Sample Question 6 about product-manager?",
+          "a": "This is a dummy answer for question 6 related to the topic of product-manager. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "product-manager-q-6"
+        },
+        {
+          "q": "Sample Question 7 about product-manager?",
+          "a": "This is a dummy answer for question 7 related to the topic of product-manager. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "product-manager-q-7"
+        },
+        {
+          "q": "Sample Question 8 about product-manager?",
+          "a": "This is a dummy answer for question 8 related to the topic of product-manager. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "product-manager-q-8"
+        },
+        {
+          "q": "Sample Question 9 about product-manager?",
+          "a": "This is a dummy answer for question 9 related to the topic of product-manager. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "product-manager-q-9"
+        },
+        {
+          "q": "Sample Question 10 about product-manager?",
+          "a": "This is a dummy answer for question 10 related to the topic of product-manager. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "product-manager-q-10"
+        }
+      ]
+    },
+    {
+      "name": "Category 2 - PRODUCT-MANAGER",
+      "questions": [
+        {
+          "q": "Sample Question 11 about product-manager?",
+          "a": "This is a dummy answer for question 11 related to the topic of product-manager. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "product-manager-q-11"
+        },
+        {
+          "q": "Sample Question 12 about product-manager?",
+          "a": "This is a dummy answer for question 12 related to the topic of product-manager. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "product-manager-q-12"
+        },
+        {
+          "q": "Sample Question 13 about product-manager?",
+          "a": "This is a dummy answer for question 13 related to the topic of product-manager. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "product-manager-q-13"
+        },
+        {
+          "q": "Sample Question 14 about product-manager?",
+          "a": "This is a dummy answer for question 14 related to the topic of product-manager. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "product-manager-q-14"
+        },
+        {
+          "q": "Sample Question 15 about product-manager?",
+          "a": "This is a dummy answer for question 15 related to the topic of product-manager. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "product-manager-q-15"
+        },
+        {
+          "q": "Sample Question 16 about product-manager?",
+          "a": "This is a dummy answer for question 16 related to the topic of product-manager. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "product-manager-q-16"
+        },
+        {
+          "q": "Sample Question 17 about product-manager?",
+          "a": "This is a dummy answer for question 17 related to the topic of product-manager. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "product-manager-q-17"
+        },
+        {
+          "q": "Sample Question 18 about product-manager?",
+          "a": "This is a dummy answer for question 18 related to the topic of product-manager. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "product-manager-q-18"
+        },
+        {
+          "q": "Sample Question 19 about product-manager?",
+          "a": "This is a dummy answer for question 19 related to the topic of product-manager. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "product-manager-q-19"
+        },
+        {
+          "q": "Sample Question 20 about product-manager?",
+          "a": "This is a dummy answer for question 20 related to the topic of product-manager. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "product-manager-q-20"
+        }
+      ]
+    },
+    {
+      "name": "Category 3 - PRODUCT-MANAGER",
+      "questions": [
+        {
+          "q": "Sample Question 21 about product-manager?",
+          "a": "This is a dummy answer for question 21 related to the topic of product-manager. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "product-manager-q-21"
+        },
+        {
+          "q": "Sample Question 22 about product-manager?",
+          "a": "This is a dummy answer for question 22 related to the topic of product-manager. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "product-manager-q-22"
+        },
+        {
+          "q": "Sample Question 23 about product-manager?",
+          "a": "This is a dummy answer for question 23 related to the topic of product-manager. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "product-manager-q-23"
+        },
+        {
+          "q": "Sample Question 24 about product-manager?",
+          "a": "This is a dummy answer for question 24 related to the topic of product-manager. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "product-manager-q-24"
+        },
+        {
+          "q": "Sample Question 25 about product-manager?",
+          "a": "This is a dummy answer for question 25 related to the topic of product-manager. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "product-manager-q-25"
+        },
+        {
+          "q": "Sample Question 26 about product-manager?",
+          "a": "This is a dummy answer for question 26 related to the topic of product-manager. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "product-manager-q-26"
+        },
+        {
+          "q": "Sample Question 27 about product-manager?",
+          "a": "This is a dummy answer for question 27 related to the topic of product-manager. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "product-manager-q-27"
+        },
+        {
+          "q": "Sample Question 28 about product-manager?",
+          "a": "This is a dummy answer for question 28 related to the topic of product-manager. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "product-manager-q-28"
+        },
+        {
+          "q": "Sample Question 29 about product-manager?",
+          "a": "This is a dummy answer for question 29 related to the topic of product-manager. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "product-manager-q-29"
+        },
+        {
+          "q": "Sample Question 30 about product-manager?",
+          "a": "This is a dummy answer for question 30 related to the topic of product-manager. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "product-manager-q-30"
+        }
+      ]
+    },
+    {
+      "name": "Category 4 - PRODUCT-MANAGER",
+      "questions": [
+        {
+          "q": "Sample Question 31 about product-manager?",
+          "a": "This is a dummy answer for question 31 related to the topic of product-manager. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "product-manager-q-31"
+        },
+        {
+          "q": "Sample Question 32 about product-manager?",
+          "a": "This is a dummy answer for question 32 related to the topic of product-manager. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "product-manager-q-32"
+        },
+        {
+          "q": "Sample Question 33 about product-manager?",
+          "a": "This is a dummy answer for question 33 related to the topic of product-manager. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "product-manager-q-33"
+        },
+        {
+          "q": "Sample Question 34 about product-manager?",
+          "a": "This is a dummy answer for question 34 related to the topic of product-manager. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "product-manager-q-34"
+        },
+        {
+          "q": "Sample Question 35 about product-manager?",
+          "a": "This is a dummy answer for question 35 related to the topic of product-manager. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "product-manager-q-35"
+        },
+        {
+          "q": "Sample Question 36 about product-manager?",
+          "a": "This is a dummy answer for question 36 related to the topic of product-manager. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "product-manager-q-36"
+        },
+        {
+          "q": "Sample Question 37 about product-manager?",
+          "a": "This is a dummy answer for question 37 related to the topic of product-manager. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "product-manager-q-37"
+        },
+        {
+          "q": "Sample Question 38 about product-manager?",
+          "a": "This is a dummy answer for question 38 related to the topic of product-manager. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "product-manager-q-38"
+        },
+        {
+          "q": "Sample Question 39 about product-manager?",
+          "a": "This is a dummy answer for question 39 related to the topic of product-manager. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "product-manager-q-39"
+        },
+        {
+          "q": "Sample Question 40 about product-manager?",
+          "a": "This is a dummy answer for question 40 related to the topic of product-manager. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "product-manager-q-40"
+        }
+      ]
+    },
+    {
+      "name": "Category 5 - PRODUCT-MANAGER",
+      "questions": [
+        {
+          "q": "Sample Question 41 about product-manager?",
+          "a": "This is a dummy answer for question 41 related to the topic of product-manager. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "product-manager-q-41"
+        },
+        {
+          "q": "Sample Question 42 about product-manager?",
+          "a": "This is a dummy answer for question 42 related to the topic of product-manager. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "product-manager-q-42"
+        },
+        {
+          "q": "Sample Question 43 about product-manager?",
+          "a": "This is a dummy answer for question 43 related to the topic of product-manager. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "product-manager-q-43"
+        },
+        {
+          "q": "Sample Question 44 about product-manager?",
+          "a": "This is a dummy answer for question 44 related to the topic of product-manager. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "product-manager-q-44"
+        },
+        {
+          "q": "Sample Question 45 about product-manager?",
+          "a": "This is a dummy answer for question 45 related to the topic of product-manager. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "product-manager-q-45"
+        },
+        {
+          "q": "Sample Question 46 about product-manager?",
+          "a": "This is a dummy answer for question 46 related to the topic of product-manager. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "product-manager-q-46"
+        },
+        {
+          "q": "Sample Question 47 about product-manager?",
+          "a": "This is a dummy answer for question 47 related to the topic of product-manager. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "product-manager-q-47"
+        },
+        {
+          "q": "Sample Question 48 about product-manager?",
+          "a": "This is a dummy answer for question 48 related to the topic of product-manager. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "product-manager-q-48"
+        },
+        {
+          "q": "Sample Question 49 about product-manager?",
+          "a": "This is a dummy answer for question 49 related to the topic of product-manager. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "product-manager-q-49"
+        },
+        {
+          "q": "Sample Question 50 about product-manager?",
+          "a": "This is a dummy answer for question 50 related to the topic of product-manager. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "product-manager-q-50"
+        }
+      ]
+    }
   ],
   "topTips": [
     "ALWAYS start product design questions by clarifying the goal and target user — never jump to solutions.",

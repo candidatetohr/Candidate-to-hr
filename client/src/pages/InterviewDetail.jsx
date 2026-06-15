@@ -15,6 +15,9 @@ export default function InterviewDetail() {
   const [loading, setLoading] = useState(true);
   const [practiceMode, setPracticeMode] = useState(false);
   const [revealed, setRevealed] = useState({});
+  const [searchQuery, setSearchQuery] = useState('');
+  const [currentPage, setCurrentPage] = useState(1);
+  const ITEMS_PER_PAGE = 10;
 
   useEffect(() => {
     import(`../data/interviewQuestions/${slug}.json`)
@@ -34,17 +37,50 @@ export default function InterviewDetail() {
     setRevealed(prev => ({ ...prev, [id]: !prev[id] }));
   };
 
-  const renderQuestionBlock = (questions, level) => {
-    if (!questions || questions.length === 0) return null;
+  const getNormalizedQuestions = (data) => {
+    if (!data) return [];
+    if (data.categories) {
+      return data.categories.flatMap(c => c.questions || []);
+    }
+    if (data.questions && Array.isArray(data.questions)) {
+      return data.questions;
+    }
+    if (data.questions && typeof data.questions === 'object') {
+      return [
+        ...(data.questions.beginner || []),
+        ...(data.questions.intermediate || []),
+        ...(data.questions.advanced || [])
+      ];
+    }
+    return [];
+  };
+
+  const allQuestions = getNormalizedQuestions(data);
+  const filteredQuestions = allQuestions.filter(q => 
+    (q.q && q.q.toLowerCase().includes(searchQuery.toLowerCase())) || 
+    (q.a && q.a.toLowerCase().includes(searchQuery.toLowerCase()))
+  );
+  
+  const totalPages = Math.ceil(filteredQuestions.length / ITEMS_PER_PAGE);
+  const currentQuestions = filteredQuestions.slice((currentPage - 1) * ITEMS_PER_PAGE, currentPage * ITEMS_PER_PAGE);
+
+  const renderQuestions = () => {
+    if (currentQuestions.length === 0) {
+      return <div className="text-center text-secondary py-32">No questions found matching your search.</div>;
+    }
     return (
       <div className="mb-48">
-        <h2 className="text-2xl font-bold mb-24 capitalize border-b border-default pb-8">{level} Questions</h2>
-        {questions.map((q, i) => {
+        <div className="flex items-center justify-between mb-24 border-b border-default pb-8">
+          <h2 className="text-2xl font-bold">Interview Questions</h2>
+          <span className="text-sm text-secondary">{filteredQuestions.length} questions</span>
+        </div>
+        {currentQuestions.map((q, i) => {
           const isRevealed = !practiceMode || revealed[q.id];
+          const globalIndex = (currentPage - 1) * ITEMS_PER_PAGE + i + 1;
           return (
-            <div key={q.id} className="int-q-card">
+            <div key={q.id || i} className="int-q-card">
               <div className="int-q-header">
-                <h3>{i + 1}. {q.q}</h3>
+                <h3>{globalIndex}. {q.q}</h3>
                 {practiceMode && (
                   <button onClick={() => toggleReveal(q.id)} className="reveal-btn">
                     {isRevealed ? <EyeOff size={16}/> : <Eye size={16}/>}
@@ -73,11 +109,7 @@ export default function InterviewDetail() {
         <meta property="og:title" content={data.seo?.ogTitle || data.hero.title} />
         <meta property="og:description" content={data.seo?.ogDescription || data.hero.description} />
       </Helmet>
-      <SchemaMarkup type="FAQPage" data={[
-        ...(data.questions.beginner || []),
-        ...(data.questions.intermediate || []),
-        ...(data.questions.advanced || [])
-      ]} />
+      <SchemaMarkup type="FAQPage" data={allQuestions} />
       
       <Breadcrumbs />
 
@@ -114,10 +146,45 @@ export default function InterviewDetail() {
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 mt-32">
         <main className="lg:col-span-2">
-          {renderQuestionBlock(data.questions.beginner, 'Beginner')}
+          <div className="mb-24">
+            <input 
+              type="text" 
+              placeholder="Search questions..." 
+              className="w-full p-16 bg-card border border-default text-primary font-medium"
+              style={{ borderRadius: 'var(--radius-md)' }}
+              value={searchQuery}
+              onChange={(e) => {
+                setSearchQuery(e.target.value);
+                setCurrentPage(1);
+              }}
+            />
+          </div>
+          
+          {renderQuestions()}
+          
+          {totalPages > 1 && (
+            <div className="flex items-center justify-between mt-32 mb-48 border-t border-default pt-24">
+              <button 
+                onClick={() => setCurrentPage(p => Math.max(1, p - 1))}
+                disabled={currentPage === 1}
+                className="btn btn-outline"
+                style={{ padding: '8px 16px', borderRadius: 'var(--radius-md)', opacity: currentPage === 1 ? 0.5 : 1, cursor: currentPage === 1 ? 'not-allowed' : 'pointer', background: 'var(--bg-surface)', border: '1px solid var(--border-default)' }}
+              >
+                Previous
+              </button>
+              <span className="text-secondary font-medium">Page {currentPage} of {totalPages}</span>
+              <button 
+                onClick={() => setCurrentPage(p => Math.min(totalPages, p + 1))}
+                disabled={currentPage === totalPages}
+                className="btn btn-outline"
+                style={{ padding: '8px 16px', borderRadius: 'var(--radius-md)', opacity: currentPage === totalPages ? 0.5 : 1, cursor: currentPage === totalPages ? 'not-allowed' : 'pointer', background: 'var(--bg-surface)', border: '1px solid var(--border-default)' }}
+              >
+                Next
+              </button>
+            </div>
+          )}
+
           <InlineAd />
-          {renderQuestionBlock(data.questions.intermediate, 'Intermediate')}
-          {renderQuestionBlock(data.questions.advanced, 'Advanced')}
         </main>
         
         <aside className="space-y-6">

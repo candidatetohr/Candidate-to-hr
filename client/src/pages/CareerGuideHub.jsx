@@ -16,7 +16,12 @@ export default function CareerGuideHub() {
 
   return (
     <div className="hub-page">
-      <SEO title="Career Guides & Blueprints 2026 | Candidatetohr" description="Step-by-step career guides for software engineering, data science, and tech roles." />
+      <SEO 
+        title="Tech Career Guides & Job Search Advice"
+        description="Expert career guides to help you navigate your tech career. Learn how to negotiate salary, pass interviews, and build a strong portfolio."
+        canonical="/career-guides"
+        type="CollectionPage"
+      />
 
       <section className="hub-hero">
         <div className="hub-container text-center">

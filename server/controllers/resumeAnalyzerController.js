@@ -14,10 +14,10 @@ import {
   detectResumeLies,
 } from '../services/nvidiaAI.js';
 import axios from 'axios';
-import { rotateApiKey } from '../services/nvidiaAI.js';
+import { rotateApiKey, getCurrentKey } from '../services/nvidiaAI.js';
 
 const NIM_BASE_URL = process.env.NVIDIA_BASE_URL || 'https://integrate.api.nvidia.com/v1';
-const NIM_MODEL = 'nvidia/llama-3.1-nemotron-ultra-253b-v1';
+const NIM_MODEL = 'meta/llama-3.1-8b-instruct';
 
 // ─── 1. FULL ANALYSIS ─────────────────────────────────────────────────────────
 /**
@@ -169,7 +169,7 @@ You are conversational, encouraging, and brutally honest when needed. Give speci
       {
         headers: {
           'Content-Type': 'application/json',
-          Authorization: `Bearer ${process.env.NVIDIA_API_KEY}`,
+          Authorization: `Bearer ${getCurrentKey()}`,
         },
         responseType: 'stream',
         timeout: 90000,

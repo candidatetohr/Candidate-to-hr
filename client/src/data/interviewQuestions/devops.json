@@ -5,24 +5,289 @@
     "slug": "devops",
     "keywords": "devops interview questions 2026, kubernetes interview questions, docker interview, CI/CD interview, terraform interview questions"
   },
-  "hero": { "title": "DevOps Interview Questions 2026", "description": "Comprehensive DevOps interview preparation covering containers, orchestration, infrastructure as code, CI/CD pipelines, and monitoring — for platform engineers and SREs.", "count": 50, "topic": "DevOps", "difficulty": "Intermediate to Advanced" },
+  "hero": {
+    "title": "DevOps Interview Questions 2026",
+    "description": "Comprehensive DevOps interview preparation covering containers, orchestration, infrastructure as code, CI/CD pipelines, and monitoring — for platform engineers and SREs.",
+    "count": 50,
+    "topic": "DevOps",
+    "difficulty": "Intermediate to Advanced"
+  },
   "categories": [
-    { "name": "Docker & Containers", "questions": [
-      { "q": "What is the difference between a container and a virtual machine?", "a": "VMs virtualize hardware and run a full OS guest on top of a hypervisor. Containers virtualize the OS and share the host kernel — they're much lighter, faster to start (<1s vs minutes), and more portable. Docker containers include the app + dependencies but not the OS kernel. VMs provide stronger isolation." },
-      { "q": "Explain the Docker build process.", "a": "Docker reads a Dockerfile sequentially. Each instruction (FROM, RUN, COPY, etc.) creates a new layer. Layers are cached — unchanged layers are reused on rebuild. ORDER MATTERS: put frequently changing instructions (COPY source code) AFTER rarely changing ones (npm install) to maximize cache hits." },
-      { "q": "What is a multi-stage Docker build?", "a": "Multi-stage builds use multiple FROM statements. You build in one stage (with all build tools) and copy only the artifacts to a minimal final image. Result: production images are much smaller (e.g., Node.js: 1.2GB build stage → 150MB production). Example: build in node:20, copy dist to node:20-alpine." }
-    ]},
-    { "name": "Kubernetes", "questions": [
-      { "q": "What is the difference between a Pod, Deployment, and StatefulSet?", "a": "Pod: smallest unit, runs one or more containers. Deployment: manages stateless Pods, handles rolling updates and rollbacks. StatefulSet: manages stateful apps (databases), provides stable network identities and ordered deployment/scaling. Use Deployment for web servers; StatefulSet for Postgres, MongoDB, Kafka." },
-      { "q": "How does Kubernetes handle rolling updates?", "a": "Kubernetes updates Pods gradually using the RollingUpdate strategy. maxSurge: max new Pods above desired count during update. maxUnavailable: max Pods that can be unavailable. New ReplicaSet is scaled up while old one is scaled down. kubectl rollout undo deployment/name rolls back instantly." },
-      { "q": "What is a Kubernetes Ingress?", "a": "An Ingress is an API object that manages external HTTP/S access to services. An Ingress Controller (e.g., NGINX, Traefik) reads Ingress rules and configures a load balancer. Supports path-based and host-based routing, TLS termination, and rate limiting — replacing the need for multiple LoadBalancer services." },
-      { "q": "What is the difference between ConfigMap and Secret in Kubernetes?", "a": "ConfigMap: stores non-sensitive configuration as key-value pairs (environment variables, config files). Secret: stores sensitive data (passwords, tokens, certificates) — base64 encoded (NOT encrypted by default). For true security, use External Secrets Operator to fetch secrets from AWS Secrets Manager or HashiCorp Vault." }
-    ]},
-    { "name": "CI/CD & IaC", "questions": [
-      { "q": "What is GitOps?", "a": "GitOps is a deployment methodology where Git is the single source of truth for both application code and infrastructure configuration. Desired cluster state is stored in Git. Tools like ArgoCD or Flux automatically synchronize the live cluster state to match the Git repository. Benefits: auditability, rollbacks via git revert, declarative operations." },
-      { "q": "What is Terraform state and why is it important?", "a": "Terraform state is a file (terraform.tfstate) that maps your Terraform configuration to real-world infrastructure. Terraform uses it to track what it has created and determine what changes to make. In teams, store state remotely (S3 + DynamoDB locking) to prevent concurrent modifications. Never edit state files manually." },
-      { "q": "What is the difference between terraform plan and terraform apply?", "a": "terraform plan: dry-run that shows what changes WILL be made without executing them (additions, modifications, deletions). terraform apply: executes the planned changes. Best practice: always run plan, save the output (terraform plan -out=plan.tfplan), then apply the saved plan for consistency." }
-    ]}
+    {
+      "name": "Category 1 - DEVOPS",
+      "questions": [
+        {
+          "q": "Sample Question 1 about devops?",
+          "a": "This is a dummy answer for question 1 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "devops-q-1"
+        },
+        {
+          "q": "Sample Question 2 about devops?",
+          "a": "This is a dummy answer for question 2 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "devops-q-2"
+        },
+        {
+          "q": "Sample Question 3 about devops?",
+          "a": "This is a dummy answer for question 3 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "devops-q-3"
+        },
+        {
+          "q": "Sample Question 4 about devops?",
+          "a": "This is a dummy answer for question 4 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "devops-q-4"
+        },
+        {
+          "q": "Sample Question 5 about devops?",
+          "a": "This is a dummy answer for question 5 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "devops-q-5"
+        },
+        {
+          "q": "Sample Question 6 about devops?",
+          "a": "This is a dummy answer for question 6 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "devops-q-6"
+        },
+        {
+          "q": "Sample Question 7 about devops?",
+          "a": "This is a dummy answer for question 7 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "devops-q-7"
+        },
+        {
+          "q": "Sample Question 8 about devops?",
+          "a": "This is a dummy answer for question 8 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "devops-q-8"
+        },
+        {
+          "q": "Sample Question 9 about devops?",
+          "a": "This is a dummy answer for question 9 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "devops-q-9"
+        },
+        {
+          "q": "Sample Question 10 about devops?",
+          "a": "This is a dummy answer for question 10 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "devops-q-10"
+        }
+      ]
+    },
+    {
+      "name": "Category 2 - DEVOPS",
+      "questions": [
+        {
+          "q": "Sample Question 11 about devops?",
+          "a": "This is a dummy answer for question 11 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "devops-q-11"
+        },
+        {
+          "q": "Sample Question 12 about devops?",
+          "a": "This is a dummy answer for question 12 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "devops-q-12"
+        },
+        {
+          "q": "Sample Question 13 about devops?",
+          "a": "This is a dummy answer for question 13 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "devops-q-13"
+        },
+        {
+          "q": "Sample Question 14 about devops?",
+          "a": "This is a dummy answer for question 14 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "devops-q-14"
+        },
+        {
+          "q": "Sample Question 15 about devops?",
+          "a": "This is a dummy answer for question 15 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "devops-q-15"
+        },
+        {
+          "q": "Sample Question 16 about devops?",
+          "a": "This is a dummy answer for question 16 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "devops-q-16"
+        },
+        {
+          "q": "Sample Question 17 about devops?",
+          "a": "This is a dummy answer for question 17 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "devops-q-17"
+        },
+        {
+          "q": "Sample Question 18 about devops?",
+          "a": "This is a dummy answer for question 18 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "devops-q-18"
+        },
+        {
+          "q": "Sample Question 19 about devops?",
+          "a": "This is a dummy answer for question 19 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "devops-q-19"
+        },
+        {
+          "q": "Sample Question 20 about devops?",
+          "a": "This is a dummy answer for question 20 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "devops-q-20"
+        }
+      ]
+    },
+    {
+      "name": "Category 3 - DEVOPS",
+      "questions": [
+        {
+          "q": "Sample Question 21 about devops?",
+          "a": "This is a dummy answer for question 21 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "devops-q-21"
+        },
+        {
+          "q": "Sample Question 22 about devops?",
+          "a": "This is a dummy answer for question 22 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "devops-q-22"
+        },
+        {
+          "q": "Sample Question 23 about devops?",
+          "a": "This is a dummy answer for question 23 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "devops-q-23"
+        },
+        {
+          "q": "Sample Question 24 about devops?",
+          "a": "This is a dummy answer for question 24 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "devops-q-24"
+        },
+        {
+          "q": "Sample Question 25 about devops?",
+          "a": "This is a dummy answer for question 25 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "devops-q-25"
+        },
+        {
+          "q": "Sample Question 26 about devops?",
+          "a": "This is a dummy answer for question 26 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "devops-q-26"
+        },
+        {
+          "q": "Sample Question 27 about devops?",
+          "a": "This is a dummy answer for question 27 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "devops-q-27"
+        },
+        {
+          "q": "Sample Question 28 about devops?",
+          "a": "This is a dummy answer for question 28 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "devops-q-28"
+        },
+        {
+          "q": "Sample Question 29 about devops?",
+          "a": "This is a dummy answer for question 29 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "devops-q-29"
+        },
+        {
+          "q": "Sample Question 30 about devops?",
+          "a": "This is a dummy answer for question 30 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "devops-q-30"
+        }
+      ]
+    },
+    {
+      "name": "Category 4 - DEVOPS",
+      "questions": [
+        {
+          "q": "Sample Question 31 about devops?",
+          "a": "This is a dummy answer for question 31 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "devops-q-31"
+        },
+        {
+          "q": "Sample Question 32 about devops?",
+          "a": "This is a dummy answer for question 32 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "devops-q-32"
+        },
+        {
+          "q": "Sample Question 33 about devops?",
+          "a": "This is a dummy answer for question 33 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "devops-q-33"
+        },
+        {
+          "q": "Sample Question 34 about devops?",
+          "a": "This is a dummy answer for question 34 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "devops-q-34"
+        },
+        {
+          "q": "Sample Question 35 about devops?",
+          "a": "This is a dummy answer for question 35 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "devops-q-35"
+        },
+        {
+          "q": "Sample Question 36 about devops?",
+          "a": "This is a dummy answer for question 36 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "devops-q-36"
+        },
+        {
+          "q": "Sample Question 37 about devops?",
+          "a": "This is a dummy answer for question 37 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "devops-q-37"
+        },
+        {
+          "q": "Sample Question 38 about devops?",
+          "a": "This is a dummy answer for question 38 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "devops-q-38"
+        },
+        {
+          "q": "Sample Question 39 about devops?",
+          "a": "This is a dummy answer for question 39 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "devops-q-39"
+        },
+        {
+          "q": "Sample Question 40 about devops?",
+          "a": "This is a dummy answer for question 40 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "devops-q-40"
+        }
+      ]
+    },
+    {
+      "name": "Category 5 - DEVOPS",
+      "questions": [
+        {
+          "q": "Sample Question 41 about devops?",
+          "a": "This is a dummy answer for question 41 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "devops-q-41"
+        },
+        {
+          "q": "Sample Question 42 about devops?",
+          "a": "This is a dummy answer for question 42 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "devops-q-42"
+        },
+        {
+          "q": "Sample Question 43 about devops?",
+          "a": "This is a dummy answer for question 43 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "devops-q-43"
+        },
+        {
+          "q": "Sample Question 44 about devops?",
+          "a": "This is a dummy answer for question 44 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "devops-q-44"
+        },
+        {
+          "q": "Sample Question 45 about devops?",
+          "a": "This is a dummy answer for question 45 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "devops-q-45"
+        },
+        {
+          "q": "Sample Question 46 about devops?",
+          "a": "This is a dummy answer for question 46 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "devops-q-46"
+        },
+        {
+          "q": "Sample Question 47 about devops?",
+          "a": "This is a dummy answer for question 47 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "devops-q-47"
+        },
+        {
+          "q": "Sample Question 48 about devops?",
+          "a": "This is a dummy answer for question 48 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "devops-q-48"
+        },
+        {
+          "q": "Sample Question 49 about devops?",
+          "a": "This is a dummy answer for question 49 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "devops-q-49"
+        },
+        {
+          "q": "Sample Question 50 about devops?",
+          "a": "This is a dummy answer for question 50 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "devops-q-50"
+        }
+      ]
+    }
   ],
   "topTips": [
     "Know Kubernetes networking deeply: how a request travels from client → Ingress → Service → Pod.",

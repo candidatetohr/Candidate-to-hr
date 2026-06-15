@@ -9,17 +9,265 @@
   },
   "hero": {
     "title": "System Design Interview Questions",
-    "description": "Comprehensive list of System Design questions. (Full list is being automatically generated...)"
+    "description": "Comprehensive list of System Design questions. (Full list is being automatically generated...)",
+    "count": 50
   },
   "questions": {
     "beginner": [
       {
-        "id": "sd-b-1",
-        "q": "What is a load balancer?",
-        "a": "A load balancer acts as the 'traffic cop' sitting in front of your servers and routing client requests across all servers capable of fulfilling those requests."
+        "id": "system-design-b-1",
+        "q": "Sample beginner Question 1 about system-design?",
+        "a": "This is a dummy answer for a beginner question 1 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "system-design-b-2",
+        "q": "Sample beginner Question 2 about system-design?",
+        "a": "This is a dummy answer for a beginner question 2 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "system-design-b-3",
+        "q": "Sample beginner Question 3 about system-design?",
+        "a": "This is a dummy answer for a beginner question 3 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "system-design-b-4",
+        "q": "Sample beginner Question 4 about system-design?",
+        "a": "This is a dummy answer for a beginner question 4 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "system-design-b-5",
+        "q": "Sample beginner Question 5 about system-design?",
+        "a": "This is a dummy answer for a beginner question 5 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "system-design-b-6",
+        "q": "Sample beginner Question 6 about system-design?",
+        "a": "This is a dummy answer for a beginner question 6 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "system-design-b-7",
+        "q": "Sample beginner Question 7 about system-design?",
+        "a": "This is a dummy answer for a beginner question 7 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "system-design-b-8",
+        "q": "Sample beginner Question 8 about system-design?",
+        "a": "This is a dummy answer for a beginner question 8 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "system-design-b-9",
+        "q": "Sample beginner Question 9 about system-design?",
+        "a": "This is a dummy answer for a beginner question 9 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "system-design-b-10",
+        "q": "Sample beginner Question 10 about system-design?",
+        "a": "This is a dummy answer for a beginner question 10 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "system-design-b-11",
+        "q": "Sample beginner Question 11 about system-design?",
+        "a": "This is a dummy answer for a beginner question 11 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "system-design-b-12",
+        "q": "Sample beginner Question 12 about system-design?",
+        "a": "This is a dummy answer for a beginner question 12 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "system-design-b-13",
+        "q": "Sample beginner Question 13 about system-design?",
+        "a": "This is a dummy answer for a beginner question 13 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "system-design-b-14",
+        "q": "Sample beginner Question 14 about system-design?",
+        "a": "This is a dummy answer for a beginner question 14 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "system-design-b-15",
+        "q": "Sample beginner Question 15 about system-design?",
+        "a": "This is a dummy answer for a beginner question 15 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "system-design-b-16",
+        "q": "Sample beginner Question 16 about system-design?",
+        "a": "This is a dummy answer for a beginner question 16 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "system-design-b-17",
+        "q": "Sample beginner Question 17 about system-design?",
+        "a": "This is a dummy answer for a beginner question 17 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
       }
     ],
-    "intermediate": [],
-    "advanced": []
+    "intermediate": [
+      {
+        "id": "system-design-i-18",
+        "q": "Sample intermediate Question 18 about system-design?",
+        "a": "This is a dummy answer for a intermediate question 18 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "system-design-i-19",
+        "q": "Sample intermediate Question 19 about system-design?",
+        "a": "This is a dummy answer for a intermediate question 19 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "system-design-i-20",
+        "q": "Sample intermediate Question 20 about system-design?",
+        "a": "This is a dummy answer for a intermediate question 20 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "system-design-i-21",
+        "q": "Sample intermediate Question 21 about system-design?",
+        "a": "This is a dummy answer for a intermediate question 21 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "system-design-i-22",
+        "q": "Sample intermediate Question 22 about system-design?",
+        "a": "This is a dummy answer for a intermediate question 22 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "system-design-i-23",
+        "q": "Sample intermediate Question 23 about system-design?",
+        "a": "This is a dummy answer for a intermediate question 23 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "system-design-i-24",
+        "q": "Sample intermediate Question 24 about system-design?",
+        "a": "This is a dummy answer for a intermediate question 24 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "system-design-i-25",
+        "q": "Sample intermediate Question 25 about system-design?",
+        "a": "This is a dummy answer for a intermediate question 25 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "system-design-i-26",
+        "q": "Sample intermediate Question 26 about system-design?",
+        "a": "This is a dummy answer for a intermediate question 26 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "system-design-i-27",
+        "q": "Sample intermediate Question 27 about system-design?",
+        "a": "This is a dummy answer for a intermediate question 27 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "system-design-i-28",
+        "q": "Sample intermediate Question 28 about system-design?",
+        "a": "This is a dummy answer for a intermediate question 28 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "system-design-i-29",
+        "q": "Sample intermediate Question 29 about system-design?",
+        "a": "This is a dummy answer for a intermediate question 29 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "system-design-i-30",
+        "q": "Sample intermediate Question 30 about system-design?",
+        "a": "This is a dummy answer for a intermediate question 30 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "system-design-i-31",
+        "q": "Sample intermediate Question 31 about system-design?",
+        "a": "This is a dummy answer for a intermediate question 31 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "system-design-i-32",
+        "q": "Sample intermediate Question 32 about system-design?",
+        "a": "This is a dummy answer for a intermediate question 32 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "system-design-i-33",
+        "q": "Sample intermediate Question 33 about system-design?",
+        "a": "This is a dummy answer for a intermediate question 33 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "system-design-i-34",
+        "q": "Sample intermediate Question 34 about system-design?",
+        "a": "This is a dummy answer for a intermediate question 34 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      }
+    ],
+    "advanced": [
+      {
+        "id": "system-design-a-35",
+        "q": "Sample advanced Question 35 about system-design?",
+        "a": "This is a dummy answer for a advanced question 35 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "system-design-a-36",
+        "q": "Sample advanced Question 36 about system-design?",
+        "a": "This is a dummy answer for a advanced question 36 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "system-design-a-37",
+        "q": "Sample advanced Question 37 about system-design?",
+        "a": "This is a dummy answer for a advanced question 37 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "system-design-a-38",
+        "q": "Sample advanced Question 38 about system-design?",
+        "a": "This is a dummy answer for a advanced question 38 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "system-design-a-39",
+        "q": "Sample advanced Question 39 about system-design?",
+        "a": "This is a dummy answer for a advanced question 39 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "system-design-a-40",
+        "q": "Sample advanced Question 40 about system-design?",
+        "a": "This is a dummy answer for a advanced question 40 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "system-design-a-41",
+        "q": "Sample advanced Question 41 about system-design?",
+        "a": "This is a dummy answer for a advanced question 41 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "system-design-a-42",
+        "q": "Sample advanced Question 42 about system-design?",
+        "a": "This is a dummy answer for a advanced question 42 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "system-design-a-43",
+        "q": "Sample advanced Question 43 about system-design?",
+        "a": "This is a dummy answer for a advanced question 43 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "system-design-a-44",
+        "q": "Sample advanced Question 44 about system-design?",
+        "a": "This is a dummy answer for a advanced question 44 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "system-design-a-45",
+        "q": "Sample advanced Question 45 about system-design?",
+        "a": "This is a dummy answer for a advanced question 45 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "system-design-a-46",
+        "q": "Sample advanced Question 46 about system-design?",
+        "a": "This is a dummy answer for a advanced question 46 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "system-design-a-47",
+        "q": "Sample advanced Question 47 about system-design?",
+        "a": "This is a dummy answer for a advanced question 47 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "system-design-a-48",
+        "q": "Sample advanced Question 48 about system-design?",
+        "a": "This is a dummy answer for a advanced question 48 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "system-design-a-49",
+        "q": "Sample advanced Question 49 about system-design?",
+        "a": "This is a dummy answer for a advanced question 49 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      },
+      {
+        "id": "system-design-a-50",
+        "q": "Sample advanced Question 50 about system-design?",
+        "a": "This is a dummy answer for a advanced question 50 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+      }
+    ]
   }
 }

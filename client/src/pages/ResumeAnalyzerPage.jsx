@@ -10,6 +10,7 @@ import {
 } from 'lucide-react';
 import { resumeAnalyzerAPI } from '../services/api';
 import CareerCoachChat from '../components/CareerCoachChat';
+import SEO from '../components/SEO';
 import './ResumeAnalyzerPage.css';
 
 // ── Circular Score Ring ───────────────────────────────────────────────────────
@@ -282,7 +283,14 @@ export default function ResumeAnalyzerPage() {
 
   return (
     <div className="analyzer-page">
+      <SEO 
+        title="Free AI Resume Analyzer & ATS Score Checker"
+        description="Upload your resume and get an instant AI review. We analyze your ATS score, skills gaps, and provide actionable tips to get hired faster."
+        canonical="/analyze"
+        type="SoftwareApplication"
+      />
       <div className="analyzer-bg"><div className="az-orb az-orb-1" /><div className="az-orb az-orb-2" /><div className="az-grid" /></div>
+      <div className="analyzer-container">
 
       <nav className="az-nav">
         <button className="az-back-btn" onClick={() => navigate('/')}><ArrowLeft size={16} /> Back</button>

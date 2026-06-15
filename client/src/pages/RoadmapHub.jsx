@@ -21,7 +21,12 @@ export default function RoadmapHub() {
 
   return (
     <div className="hub-page">
-      <SEO title="Tech Career Roadmaps 2026 | Candidatetohr" description="Discover the step-by-step career roadmaps for Software Engineering, Data Science, AI, and more. Learn exactly what to study in 2026." />
+      <SEO 
+        title="Tech Career Roadmaps & Learning Paths"
+        description="Discover comprehensive career roadmaps for Software Engineering, Data Science, and more. Step-by-step guides to land your dream job."
+        canonical="/roadmaps"
+        type="CollectionPage"
+      />
 
       {/* Hero Section */}
       <section className="hub-hero">

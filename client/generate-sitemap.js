@@ -29,6 +29,7 @@ const staticRoutes = [
   '/career-guides',
   '/analyze',
   '/live-editor',
+  '/resume-builder',
   '/interview-sim',
   '/rejection-decoder',
   '/learning-path',

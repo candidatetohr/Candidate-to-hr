@@ -14,37 +14,278 @@
   },
   "categories": [
     {
-      "name": "Classical ML",
+      "name": "Category 1 - MACHINE-LEARNING",
       "questions": [
-        { "q": "What is the bias-variance tradeoff?", "a": "Bias: error from overly simplistic assumptions (underfitting). Variance: error from sensitivity to small training data fluctuations (overfitting). High bias = poor training performance. High variance = great training performance but poor test performance. Goal: find the sweet spot. Solutions: regularization, more data, ensemble methods." },
-        { "q": "What is the difference between L1 and L2 regularization?", "a": "L1 (Lasso): adds |weights| to loss function. Drives some weights to exactly zero → feature selection. L2 (Ridge): adds weights² to loss function. Shrinks all weights but doesn't eliminate them. Elastic Net combines both. L1 is preferred when you suspect many features are irrelevant. L2 is preferred when all features are potentially useful." },
-        { "q": "Explain how gradient descent works.", "a": "An optimization algorithm that minimizes loss by iteratively moving in the direction of steepest descent (negative gradient). Update rule: w = w - learning_rate × ∂L/∂w. Variants: Batch (full dataset), Stochastic (one sample), Mini-batch (small batch — most common). Learning rate is the most critical hyperparameter." },
-        { "q": "What is cross-validation and why is it important?", "a": "Cross-validation estimates model performance on unseen data by splitting training data into k folds. Train on k-1 folds, test on the remaining fold. Repeat k times. Average the scores. k=5 or k=10 are common. Prevents overfitting to a single train/test split. Essential for hyperparameter tuning to avoid data leakage." },
-        { "q": "What is the difference between bagging and boosting?", "a": "Bagging (Bootstrap Aggregating): trains multiple models in parallel on random subsets of data. Reduces variance. Example: Random Forest. Boosting: trains models sequentially, each correcting previous errors. Reduces bias and variance. Examples: XGBoost, AdaBoost, LightGBM. Boosting typically achieves better accuracy but is more prone to overfitting." }
+        {
+          "q": "Sample Question 1 about machine-learning?",
+          "a": "This is a dummy answer for question 1 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "machine-learning-q-1"
+        },
+        {
+          "q": "Sample Question 2 about machine-learning?",
+          "a": "This is a dummy answer for question 2 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "machine-learning-q-2"
+        },
+        {
+          "q": "Sample Question 3 about machine-learning?",
+          "a": "This is a dummy answer for question 3 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "machine-learning-q-3"
+        },
+        {
+          "q": "Sample Question 4 about machine-learning?",
+          "a": "This is a dummy answer for question 4 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "machine-learning-q-4"
+        },
+        {
+          "q": "Sample Question 5 about machine-learning?",
+          "a": "This is a dummy answer for question 5 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "machine-learning-q-5"
+        },
+        {
+          "q": "Sample Question 6 about machine-learning?",
+          "a": "This is a dummy answer for question 6 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "machine-learning-q-6"
+        },
+        {
+          "q": "Sample Question 7 about machine-learning?",
+          "a": "This is a dummy answer for question 7 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "machine-learning-q-7"
+        },
+        {
+          "q": "Sample Question 8 about machine-learning?",
+          "a": "This is a dummy answer for question 8 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "machine-learning-q-8"
+        },
+        {
+          "q": "Sample Question 9 about machine-learning?",
+          "a": "This is a dummy answer for question 9 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "machine-learning-q-9"
+        },
+        {
+          "q": "Sample Question 10 about machine-learning?",
+          "a": "This is a dummy answer for question 10 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "machine-learning-q-10"
+        }
       ]
     },
     {
-      "name": "Deep Learning",
+      "name": "Category 2 - MACHINE-LEARNING",
       "questions": [
-        { "q": "What is the vanishing gradient problem and how do you solve it?", "a": "In deep networks, gradients become extremely small as they backpropagate through layers, causing early layers to learn very slowly (or not at all). Solutions: ReLU activation (instead of sigmoid/tanh), Batch Normalization, Residual connections (ResNet), weight initialization (He/Xavier), and Gradient Clipping for RNNs." },
-        { "q": "What is Batch Normalization?", "a": "A technique that normalizes layer inputs to have mean=0 and std=1 during training. Reduces internal covariate shift. Benefits: allows higher learning rates, acts as regularization, reduces sensitivity to initialization. Applied before or after activation function (debate exists). Has learnable parameters γ and β." },
-        { "q": "Explain the Transformer architecture.", "a": "Transformers use self-attention to process input sequences in parallel (unlike RNNs which are sequential). Key components: Multi-head Self-Attention (each token attends to all others), Feed-Forward Network, Layer Normalization, Positional Encoding (since no recurrence). The foundation for BERT, GPT, and all modern LLMs." },
-        { "q": "What is dropout and how does it work?", "a": "Dropout randomly deactivates (sets to zero) a percentage of neurons during training. This prevents co-adaptation of neurons and acts as ensemble training. Dropout rate of 0.2-0.5 is common. Disabled during inference. All neurons are active but outputs are scaled by (1 - dropout_rate) to maintain expected values." }
+        {
+          "q": "Sample Question 11 about machine-learning?",
+          "a": "This is a dummy answer for question 11 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "machine-learning-q-11"
+        },
+        {
+          "q": "Sample Question 12 about machine-learning?",
+          "a": "This is a dummy answer for question 12 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "machine-learning-q-12"
+        },
+        {
+          "q": "Sample Question 13 about machine-learning?",
+          "a": "This is a dummy answer for question 13 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "machine-learning-q-13"
+        },
+        {
+          "q": "Sample Question 14 about machine-learning?",
+          "a": "This is a dummy answer for question 14 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "machine-learning-q-14"
+        },
+        {
+          "q": "Sample Question 15 about machine-learning?",
+          "a": "This is a dummy answer for question 15 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "machine-learning-q-15"
+        },
+        {
+          "q": "Sample Question 16 about machine-learning?",
+          "a": "This is a dummy answer for question 16 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "machine-learning-q-16"
+        },
+        {
+          "q": "Sample Question 17 about machine-learning?",
+          "a": "This is a dummy answer for question 17 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "machine-learning-q-17"
+        },
+        {
+          "q": "Sample Question 18 about machine-learning?",
+          "a": "This is a dummy answer for question 18 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "machine-learning-q-18"
+        },
+        {
+          "q": "Sample Question 19 about machine-learning?",
+          "a": "This is a dummy answer for question 19 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "machine-learning-q-19"
+        },
+        {
+          "q": "Sample Question 20 about machine-learning?",
+          "a": "This is a dummy answer for question 20 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "machine-learning-q-20"
+        }
       ]
     },
     {
-      "name": "Model Evaluation",
+      "name": "Category 3 - MACHINE-LEARNING",
       "questions": [
-        { "q": "What is the ROC curve and AUC?", "a": "ROC (Receiver Operating Characteristic) curve plots True Positive Rate (Recall) vs False Positive Rate at different classification thresholds. AUC (Area Under Curve) ranges from 0.5 (random) to 1.0 (perfect). Use when classes are balanced. For imbalanced datasets, prefer Precision-Recall curve + AUC-PR instead." },
-        { "q": "How do you handle class imbalance?", "a": "Resampling: oversample minority class (SMOTE) or undersample majority class. Class weights: set class_weight='balanced' in sklearn models. Different threshold: lower the classification threshold to increase recall. Evaluation: use F1, AUC-PR instead of accuracy. Algorithm choice: tree-based models handle imbalance better than logistic regression." },
-        { "q": "What is data leakage and how do you prevent it?", "a": "Data leakage: when information from outside the training set influences model training, causing artificially high performance that doesn't generalize. Types: Target leakage (using future info), Train-test contamination (normalization on full dataset before split). Prevention: always fit transformers on training data only, then apply to test. Use sklearn Pipelines." }
+        {
+          "q": "Sample Question 21 about machine-learning?",
+          "a": "This is a dummy answer for question 21 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "machine-learning-q-21"
+        },
+        {
+          "q": "Sample Question 22 about machine-learning?",
+          "a": "This is a dummy answer for question 22 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "machine-learning-q-22"
+        },
+        {
+          "q": "Sample Question 23 about machine-learning?",
+          "a": "This is a dummy answer for question 23 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "machine-learning-q-23"
+        },
+        {
+          "q": "Sample Question 24 about machine-learning?",
+          "a": "This is a dummy answer for question 24 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "machine-learning-q-24"
+        },
+        {
+          "q": "Sample Question 25 about machine-learning?",
+          "a": "This is a dummy answer for question 25 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "machine-learning-q-25"
+        },
+        {
+          "q": "Sample Question 26 about machine-learning?",
+          "a": "This is a dummy answer for question 26 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "machine-learning-q-26"
+        },
+        {
+          "q": "Sample Question 27 about machine-learning?",
+          "a": "This is a dummy answer for question 27 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "machine-learning-q-27"
+        },
+        {
+          "q": "Sample Question 28 about machine-learning?",
+          "a": "This is a dummy answer for question 28 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "machine-learning-q-28"
+        },
+        {
+          "q": "Sample Question 29 about machine-learning?",
+          "a": "This is a dummy answer for question 29 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "machine-learning-q-29"
+        },
+        {
+          "q": "Sample Question 30 about machine-learning?",
+          "a": "This is a dummy answer for question 30 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "machine-learning-q-30"
+        }
       ]
     },
     {
-      "name": "MLOps",
+      "name": "Category 4 - MACHINE-LEARNING",
       "questions": [
-        { "q": "What is model drift and how do you detect it?", "a": "Model drift occurs when model performance degrades in production because the real-world data distribution has changed. Data drift: input features change distribution. Concept drift: the relationship between features and target changes. Detection: monitor feature distributions (KS test, PSI), monitor prediction distributions, and track business metrics. Use Evidently AI or Whylabs for automated monitoring." },
-        { "q": "What is a feature store?", "a": "A centralized repository for storing, discovering, and serving ML features. Ensures consistency between features used in training and serving. Prevents redundant feature engineering across teams. Examples: Feast (open source), Tecton, AWS SageMaker Feature Store, Google Vertex AI Feature Store. Supports both batch and real-time feature serving." }
+        {
+          "q": "Sample Question 31 about machine-learning?",
+          "a": "This is a dummy answer for question 31 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "machine-learning-q-31"
+        },
+        {
+          "q": "Sample Question 32 about machine-learning?",
+          "a": "This is a dummy answer for question 32 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "machine-learning-q-32"
+        },
+        {
+          "q": "Sample Question 33 about machine-learning?",
+          "a": "This is a dummy answer for question 33 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "machine-learning-q-33"
+        },
+        {
+          "q": "Sample Question 34 about machine-learning?",
+          "a": "This is a dummy answer for question 34 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "machine-learning-q-34"
+        },
+        {
+          "q": "Sample Question 35 about machine-learning?",
+          "a": "This is a dummy answer for question 35 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "machine-learning-q-35"
+        },
+        {
+          "q": "Sample Question 36 about machine-learning?",
+          "a": "This is a dummy answer for question 36 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "machine-learning-q-36"
+        },
+        {
+          "q": "Sample Question 37 about machine-learning?",
+          "a": "This is a dummy answer for question 37 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "machine-learning-q-37"
+        },
+        {
+          "q": "Sample Question 38 about machine-learning?",
+          "a": "This is a dummy answer for question 38 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "machine-learning-q-38"
+        },
+        {
+          "q": "Sample Question 39 about machine-learning?",
+          "a": "This is a dummy answer for question 39 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "machine-learning-q-39"
+        },
+        {
+          "q": "Sample Question 40 about machine-learning?",
+          "a": "This is a dummy answer for question 40 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "machine-learning-q-40"
+        }
+      ]
+    },
+    {
+      "name": "Category 5 - MACHINE-LEARNING",
+      "questions": [
+        {
+          "q": "Sample Question 41 about machine-learning?",
+          "a": "This is a dummy answer for question 41 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "machine-learning-q-41"
+        },
+        {
+          "q": "Sample Question 42 about machine-learning?",
+          "a": "This is a dummy answer for question 42 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "machine-learning-q-42"
+        },
+        {
+          "q": "Sample Question 43 about machine-learning?",
+          "a": "This is a dummy answer for question 43 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "machine-learning-q-43"
+        },
+        {
+          "q": "Sample Question 44 about machine-learning?",
+          "a": "This is a dummy answer for question 44 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "machine-learning-q-44"
+        },
+        {
+          "q": "Sample Question 45 about machine-learning?",
+          "a": "This is a dummy answer for question 45 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "machine-learning-q-45"
+        },
+        {
+          "q": "Sample Question 46 about machine-learning?",
+          "a": "This is a dummy answer for question 46 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "machine-learning-q-46"
+        },
+        {
+          "q": "Sample Question 47 about machine-learning?",
+          "a": "This is a dummy answer for question 47 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "machine-learning-q-47"
+        },
+        {
+          "q": "Sample Question 48 about machine-learning?",
+          "a": "This is a dummy answer for question 48 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "machine-learning-q-48"
+        },
+        {
+          "q": "Sample Question 49 about machine-learning?",
+          "a": "This is a dummy answer for question 49 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "machine-learning-q-49"
+        },
+        {
+          "q": "Sample Question 50 about machine-learning?",
+          "a": "This is a dummy answer for question 50 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
+          "id": "machine-learning-q-50"
+        }
       ]
     }
   ],

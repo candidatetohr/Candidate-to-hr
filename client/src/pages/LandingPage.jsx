@@ -40,17 +40,10 @@ export default function LandingPage() {
   return (
     <LazyMotion features={loadFeatures}>
       <SEO 
-        title="CandidateToHR - AI-Powered Resume & Hiring Intelligence" 
-        description="CandidateToHR uses NVIDIA NIM AI to score resumes, analyze skills gaps, and optimize candidate profiles. Join for free today!"
-        schema={{
-          "@context": "https://schema.org",
-          "@type": "Organization",
-          "name": "CandidateToHR",
-          "url": "https://www.candidatetohr.online",
-          "logo": "https://www.candidatetohr.online/logo.png",
-          "description": "AI-Powered Resume & Hiring Intelligence",
-          "sameAs": []
-        }}
+        title="CandidateToHR — #1 AI Applicant Tracking System & Resume Analyzer" 
+        description="Revolutionize your job search with our AI-powered ATS. Analyze resumes, build perfect CVs, and practice mock interviews to land your dream tech job."
+        canonical="/"
+        type="Organization"
       />
       <div className="landing-page">
       {/* Background */}
