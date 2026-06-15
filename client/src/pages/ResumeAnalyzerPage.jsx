@@ -504,6 +504,7 @@ export default function ResumeAnalyzerPage() {
 
         </AnimatePresence>
       </div>
+      </div>
 
       {/* 🆕 AI CAREER COACH CHAT — appears once results are loaded */}
       {step === 'results' && results && (
