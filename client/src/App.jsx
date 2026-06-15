@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import LandingPage from './pages/LandingPage';
 import CookieConsent from './components/CookieConsent';
+import ScrollToTop from './components/ScrollToTop';
 
 const AuthPage = lazy(() => import('./pages/AuthPage'));
 const DashboardRouter = lazy(() => import('./components/DashboardRouter'));
@@ -83,6 +84,7 @@ export default function App() {
 
   return (
     <>
+      <ScrollToTop />
       <Navbar />
       <main>
         <Suspense fallback={<PageLoader />}>
