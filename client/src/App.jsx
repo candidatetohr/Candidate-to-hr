@@ -22,6 +22,13 @@ const ProbabilityEnginePage = lazy(() => import('./pages/ProbabilityEnginePage')
 const TruthDetectorPage = lazy(() => import('./pages/TruthDetectorPage'));
 const ProfileEditPage = lazy(() => import('./pages/ProfileEditPage'));
 
+// New AI Tool Pages
+const CultureFitAnalyzerPage = lazy(() => import('./pages/CultureFitAnalyzerPage'));
+const OfferNegotiatorPage = lazy(() => import('./pages/OfferNegotiatorPage'));
+const SkillGapAnalyzerPage = lazy(() => import('./pages/SkillGapAnalyzerPage'));
+const NetworkBuilderPage = lazy(() => import('./pages/NetworkBuilderPage'));
+const PortfolioOptimizerPage = lazy(() => import('./pages/PortfolioOptimizerPage'));
+
 const ForgotPasswordPage = lazy(() => import('./pages/ForgotPasswordPage'));
 const ResetPasswordPage = lazy(() => import('./pages/ResetPasswordPage'));
 const VerifyEmailPage = lazy(() => import('./pages/VerifyEmailPage'));
@@ -97,6 +104,11 @@ export default function App() {
           <Route path="/learning-path" element={<LearningPathPage />} />
           <Route path="/placement-probability" element={<ProbabilityEnginePage />} />
           <Route path="/truth-detector" element={<TruthDetectorPage />} />
+          <Route path="/culture-fit" element={<CultureFitAnalyzerPage />} />
+          <Route path="/offer-negotiator" element={<OfferNegotiatorPage />} />
+          <Route path="/skill-gap" element={<SkillGapAnalyzerPage />} />
+          <Route path="/network-builder" element={<NetworkBuilderPage />} />
+          <Route path="/portfolio-optimizer" element={<PortfolioOptimizerPage />} />
           <Route path="/profile/edit" element={<ProtectedRoute><ProfileEditPage /></ProtectedRoute>} />
           
           {/* SEO Hubs */}

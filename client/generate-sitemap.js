@@ -13,7 +13,7 @@ import { interviewCategories } from './src/data/interviewQuestions/index.js';
 import { resumeCategories } from './src/data/resumeExamples/index.js';
 import { careerGuideCategories } from './src/data/careerGuides/index.js';
 
-const DOMAIN = 'https://candidatetohr.online'; // Replace with actual domain
+const DOMAIN = 'https://www.candidatetohr.online'; // Replace with actual domain
 
 const staticRoutes = [
   '/',
@@ -26,7 +26,19 @@ const staticRoutes = [
   '/interview-questions',
   '/resume-examples',
   '/salary-guides',
-  '/career-guides'
+  '/career-guides',
+  '/analyze',
+  '/live-editor',
+  '/interview-sim',
+  '/rejection-decoder',
+  '/learning-path',
+  '/placement-probability',
+  '/truth-detector',
+  '/culture-fit',
+  '/offer-negotiator',
+  '/skill-gap',
+  '/network-builder',
+  '/portfolio-optimizer'
 ];
 
 function generateSitemap() {

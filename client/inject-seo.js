@@ -36,6 +36,18 @@ const pages = [
   { route: '/resume-examples', title: 'Resume Examples | CandidateToHR', desc: 'ATS-friendly resume examples for developers and engineers.', type: 'WebPage' },
   { route: '/salary-guides', title: 'Tech Salary Guides | CandidateToHR', desc: 'Discover how much you can earn in top tech roles.', type: 'WebPage' },
   { route: '/career-guides', title: 'Career Guides | CandidateToHR', desc: 'Expert guides to help you navigate your tech career.', type: 'WebPage' },
+  { route: '/analyze', title: 'AI Resume Analyzer | CandidateToHR', desc: 'Get an instant AI review of your resume and ATS score.', type: 'SoftwareApplication' },
+  { route: '/live-editor', title: 'AI Resume Builder | CandidateToHR', desc: 'Build an ATS-optimized resume with our live editor.', type: 'SoftwareApplication' },
+  { route: '/interview-sim', title: 'AI Interview Simulator | CandidateToHR', desc: 'Practice your interview skills with our AI simulator.', type: 'SoftwareApplication' },
+  { route: '/rejection-decoder', title: 'AI Rejection Decoder | CandidateToHR', desc: 'Find out why you were rejected with our AI decoder.', type: 'SoftwareApplication' },
+  { route: '/learning-path', title: 'AI Learning Path Generator | CandidateToHR', desc: 'Generate a custom learning path to reach your career goals.', type: 'SoftwareApplication' },
+  { route: '/placement-probability', title: 'Placement Probability Engine | CandidateToHR', desc: 'Calculate your chances of getting hired for a specific role.', type: 'SoftwareApplication' },
+  { route: '/truth-detector', title: 'AI Resume Truth Detector | CandidateToHR', desc: 'Detect suspicious claims and buzzword stuffing in your resume.', type: 'SoftwareApplication' },
+  { route: '/culture-fit', title: 'AI Culture Fit Analyzer | CandidateToHR', desc: 'Discover if you are a culture fit for your dream company.', type: 'SoftwareApplication' },
+  { route: '/offer-negotiator', title: 'AI Offer Negotiator | CandidateToHR', desc: 'Get personalized negotiation scripts and salary strategies.', type: 'SoftwareApplication' },
+  { route: '/skill-gap', title: 'AI Skill Gap Analyzer | CandidateToHR', desc: 'Compare your resume to your dream job and identify missing skills.', type: 'SoftwareApplication' },
+  { route: '/network-builder', title: 'AI Network Builder | CandidateToHR', desc: 'Get targeted outreach templates and networking strategies.', type: 'SoftwareApplication' },
+  { route: '/portfolio-optimizer', title: 'AI Portfolio Optimizer | CandidateToHR', desc: 'Get actionable feedback on your portfolio UX and content.', type: 'SoftwareApplication' },
 ];
 
 // Dynamic Routes mapping

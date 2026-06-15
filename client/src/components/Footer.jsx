@@ -37,7 +37,19 @@ function Footer() {
           </ul>
         </div>
 
-        {/* Column 4: Legal */}
+        {/* Column 4: AI Tools */}
+        <div className="footer-col">
+          <h3>AI Tools</h3>
+          <ul>
+            <li><Link to="/culture-fit">Culture Fit Analyzer</Link></li>
+            <li><Link to="/offer-negotiator">Offer Negotiator</Link></li>
+            <li><Link to="/skill-gap">Skill Gap Analyzer</Link></li>
+            <li><Link to="/network-builder">Network Builder</Link></li>
+            <li><Link to="/portfolio-optimizer">Portfolio Optimizer</Link></li>
+          </ul>
+        </div>
+
+        {/* Column 5: Legal */}
         <div className="footer-col">
           <h3>Legal</h3>
           <ul>
@@ -47,7 +59,7 @@ function Footer() {
           </ul>
         </div>
 
-        {/* Column 5: Contact */}
+        {/* Column 6: Contact */}
         <div className="footer-col">
           <h3>Contact</h3>
           <ul>
