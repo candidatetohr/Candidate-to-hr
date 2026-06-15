@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 
-export default function SEO({ title, description, canonical, type = 'WebPage', schema }) {
+export default function SEO({ title = 'CandidateToHR', description = '', canonical, type = 'WebPage', schema }) {
   const siteName = 'CandidateToHR';
   const fullTitle = title.includes(siteName) ? title : `${title} | ${siteName}`;
   const url = canonical ? `https://www.candidatetohr.online${canonical}` : 'https://www.candidatetohr.online';

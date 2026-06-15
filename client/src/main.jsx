@@ -24,9 +24,9 @@ if (import.meta.env.VITE_SENTRY_DSN) {
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <ErrorBoundary>
-      <HelmetProvider>
-        <BrowserRouter>
+    <HelmetProvider>
+      <BrowserRouter>
+        <ErrorBoundary>
           <AuthProvider>
             <App />
           <Toaster
@@ -48,9 +48,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
               },
             }}
           />
-        </AuthProvider>
+          </AuthProvider>
+        </ErrorBoundary>
       </BrowserRouter>
     </HelmetProvider>
-    </ErrorBoundary>
   </React.StrictMode>
 )

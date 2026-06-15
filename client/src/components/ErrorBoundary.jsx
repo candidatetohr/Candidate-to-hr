@@ -1,8 +1,9 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom';
 import { AlertTriangle, RefreshCcw } from 'lucide-react';
 import * as Sentry from '@sentry/react';
 
-export default class ErrorBoundary extends React.Component {
+class ErrorBoundaryInner extends React.Component {
   constructor(props) {
     super(props);
     this.state = { hasError: false, error: null };
@@ -10,6 +11,12 @@ export default class ErrorBoundary extends React.Component {
 
   static getDerivedStateFromError(error) {
     return { hasError: true, error };
+  }
+
+  componentDidUpdate(prevProps) {
+    if (this.state.hasError && prevProps.location.pathname !== this.props.location.pathname) {
+      this.setState({ hasError: false, error: null });
+    }
   }
 
   componentDidCatch(error, errorInfo) {
@@ -65,4 +72,9 @@ export default class ErrorBoundary extends React.Component {
 
     return this.props.children;
   }
+}
+
+export default function ErrorBoundary(props) {
+  const location = useLocation();
+  return <ErrorBoundaryInner location={location} {...props} />;
 }

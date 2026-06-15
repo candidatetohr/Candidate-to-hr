@@ -68,6 +68,10 @@
   margin: 0 auto;
 }
 
+.res-a4-mockup * {
+  color: #000000 !important;
+}
+
 .res-a4-mockup .border-b-2 {
   border-bottom-width: 2px;
 }
