@@ -1,299 +1,271 @@
 {
   "seo": {
-    "title": "Top 50 JavaScript Interview Questions 2026 | Answers & Examples",
-    "description": "Master the top 50 JavaScript interview questions for 2026. Covers closures, the event loop, ES6+, async/await, prototypes, and DOM manipulation with detailed answers.",
+    "title": "Top 100+ JavaScript Interview Questions & Answers (2026)",
+    "description": "Crack your frontend JavaScript interview. Covers closures, event loop, promises, ES6+, and tricky core JS concepts.",
     "slug": "javascript",
-    "keywords": "javascript interview questions 2026, JS interview questions and answers, closures javascript, event loop interview, async await interview"
+    "keywords": "javascript interview questions, js interview, frontend developer questions, core javascript"
   },
   "hero": {
-    "title": "JavaScript Interview Questions 2026",
-    "description": "The definitive guide to JavaScript interview questions. Covers everything from core fundamentals to advanced patterns used in modern React and Node.js applications.",
-    "count": 50,
-    "topic": "Programming",
-    "difficulty": "Beginner to Advanced"
+    "title": "JavaScript Interview Questions",
+    "description": "Master core JavaScript. 50 real-world questions covering the Event Loop, Closures, and Async programming.",
+    "count": 50
   },
-  "categories": [
-    {
-      "name": "Category 1 - JAVASCRIPT",
-      "questions": [
-        {
-          "q": "Sample Question 1 about javascript?",
-          "a": "This is a dummy answer for question 1 related to the topic of javascript. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "javascript-q-1"
-        },
-        {
-          "q": "Sample Question 2 about javascript?",
-          "a": "This is a dummy answer for question 2 related to the topic of javascript. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "javascript-q-2"
-        },
-        {
-          "q": "Sample Question 3 about javascript?",
-          "a": "This is a dummy answer for question 3 related to the topic of javascript. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "javascript-q-3"
-        },
-        {
-          "q": "Sample Question 4 about javascript?",
-          "a": "This is a dummy answer for question 4 related to the topic of javascript. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "javascript-q-4"
-        },
-        {
-          "q": "Sample Question 5 about javascript?",
-          "a": "This is a dummy answer for question 5 related to the topic of javascript. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "javascript-q-5"
-        },
-        {
-          "q": "Sample Question 6 about javascript?",
-          "a": "This is a dummy answer for question 6 related to the topic of javascript. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "javascript-q-6"
-        },
-        {
-          "q": "Sample Question 7 about javascript?",
-          "a": "This is a dummy answer for question 7 related to the topic of javascript. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "javascript-q-7"
-        },
-        {
-          "q": "Sample Question 8 about javascript?",
-          "a": "This is a dummy answer for question 8 related to the topic of javascript. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "javascript-q-8"
-        },
-        {
-          "q": "Sample Question 9 about javascript?",
-          "a": "This is a dummy answer for question 9 related to the topic of javascript. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "javascript-q-9"
-        },
-        {
-          "q": "Sample Question 10 about javascript?",
-          "a": "This is a dummy answer for question 10 related to the topic of javascript. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "javascript-q-10"
-        }
-      ]
-    },
-    {
-      "name": "Category 2 - JAVASCRIPT",
-      "questions": [
-        {
-          "q": "Sample Question 11 about javascript?",
-          "a": "This is a dummy answer for question 11 related to the topic of javascript. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "javascript-q-11"
-        },
-        {
-          "q": "Sample Question 12 about javascript?",
-          "a": "This is a dummy answer for question 12 related to the topic of javascript. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "javascript-q-12"
-        },
-        {
-          "q": "Sample Question 13 about javascript?",
-          "a": "This is a dummy answer for question 13 related to the topic of javascript. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "javascript-q-13"
-        },
-        {
-          "q": "Sample Question 14 about javascript?",
-          "a": "This is a dummy answer for question 14 related to the topic of javascript. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "javascript-q-14"
-        },
-        {
-          "q": "Sample Question 15 about javascript?",
-          "a": "This is a dummy answer for question 15 related to the topic of javascript. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "javascript-q-15"
-        },
-        {
-          "q": "Sample Question 16 about javascript?",
-          "a": "This is a dummy answer for question 16 related to the topic of javascript. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "javascript-q-16"
-        },
-        {
-          "q": "Sample Question 17 about javascript?",
-          "a": "This is a dummy answer for question 17 related to the topic of javascript. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "javascript-q-17"
-        },
-        {
-          "q": "Sample Question 18 about javascript?",
-          "a": "This is a dummy answer for question 18 related to the topic of javascript. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "javascript-q-18"
-        },
-        {
-          "q": "Sample Question 19 about javascript?",
-          "a": "This is a dummy answer for question 19 related to the topic of javascript. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "javascript-q-19"
-        },
-        {
-          "q": "Sample Question 20 about javascript?",
-          "a": "This is a dummy answer for question 20 related to the topic of javascript. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "javascript-q-20"
-        }
-      ]
-    },
-    {
-      "name": "Category 3 - JAVASCRIPT",
-      "questions": [
-        {
-          "q": "Sample Question 21 about javascript?",
-          "a": "This is a dummy answer for question 21 related to the topic of javascript. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "javascript-q-21"
-        },
-        {
-          "q": "Sample Question 22 about javascript?",
-          "a": "This is a dummy answer for question 22 related to the topic of javascript. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "javascript-q-22"
-        },
-        {
-          "q": "Sample Question 23 about javascript?",
-          "a": "This is a dummy answer for question 23 related to the topic of javascript. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "javascript-q-23"
-        },
-        {
-          "q": "Sample Question 24 about javascript?",
-          "a": "This is a dummy answer for question 24 related to the topic of javascript. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "javascript-q-24"
-        },
-        {
-          "q": "Sample Question 25 about javascript?",
-          "a": "This is a dummy answer for question 25 related to the topic of javascript. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "javascript-q-25"
-        },
-        {
-          "q": "Sample Question 26 about javascript?",
-          "a": "This is a dummy answer for question 26 related to the topic of javascript. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "javascript-q-26"
-        },
-        {
-          "q": "Sample Question 27 about javascript?",
-          "a": "This is a dummy answer for question 27 related to the topic of javascript. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "javascript-q-27"
-        },
-        {
-          "q": "Sample Question 28 about javascript?",
-          "a": "This is a dummy answer for question 28 related to the topic of javascript. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "javascript-q-28"
-        },
-        {
-          "q": "Sample Question 29 about javascript?",
-          "a": "This is a dummy answer for question 29 related to the topic of javascript. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "javascript-q-29"
-        },
-        {
-          "q": "Sample Question 30 about javascript?",
-          "a": "This is a dummy answer for question 30 related to the topic of javascript. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "javascript-q-30"
-        }
-      ]
-    },
-    {
-      "name": "Category 4 - JAVASCRIPT",
-      "questions": [
-        {
-          "q": "Sample Question 31 about javascript?",
-          "a": "This is a dummy answer for question 31 related to the topic of javascript. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "javascript-q-31"
-        },
-        {
-          "q": "Sample Question 32 about javascript?",
-          "a": "This is a dummy answer for question 32 related to the topic of javascript. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "javascript-q-32"
-        },
-        {
-          "q": "Sample Question 33 about javascript?",
-          "a": "This is a dummy answer for question 33 related to the topic of javascript. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "javascript-q-33"
-        },
-        {
-          "q": "Sample Question 34 about javascript?",
-          "a": "This is a dummy answer for question 34 related to the topic of javascript. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "javascript-q-34"
-        },
-        {
-          "q": "Sample Question 35 about javascript?",
-          "a": "This is a dummy answer for question 35 related to the topic of javascript. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "javascript-q-35"
-        },
-        {
-          "q": "Sample Question 36 about javascript?",
-          "a": "This is a dummy answer for question 36 related to the topic of javascript. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "javascript-q-36"
-        },
-        {
-          "q": "Sample Question 37 about javascript?",
-          "a": "This is a dummy answer for question 37 related to the topic of javascript. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "javascript-q-37"
-        },
-        {
-          "q": "Sample Question 38 about javascript?",
-          "a": "This is a dummy answer for question 38 related to the topic of javascript. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "javascript-q-38"
-        },
-        {
-          "q": "Sample Question 39 about javascript?",
-          "a": "This is a dummy answer for question 39 related to the topic of javascript. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "javascript-q-39"
-        },
-        {
-          "q": "Sample Question 40 about javascript?",
-          "a": "This is a dummy answer for question 40 related to the topic of javascript. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "javascript-q-40"
-        }
-      ]
-    },
-    {
-      "name": "Category 5 - JAVASCRIPT",
-      "questions": [
-        {
-          "q": "Sample Question 41 about javascript?",
-          "a": "This is a dummy answer for question 41 related to the topic of javascript. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "javascript-q-41"
-        },
-        {
-          "q": "Sample Question 42 about javascript?",
-          "a": "This is a dummy answer for question 42 related to the topic of javascript. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "javascript-q-42"
-        },
-        {
-          "q": "Sample Question 43 about javascript?",
-          "a": "This is a dummy answer for question 43 related to the topic of javascript. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "javascript-q-43"
-        },
-        {
-          "q": "Sample Question 44 about javascript?",
-          "a": "This is a dummy answer for question 44 related to the topic of javascript. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "javascript-q-44"
-        },
-        {
-          "q": "Sample Question 45 about javascript?",
-          "a": "This is a dummy answer for question 45 related to the topic of javascript. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "javascript-q-45"
-        },
-        {
-          "q": "Sample Question 46 about javascript?",
-          "a": "This is a dummy answer for question 46 related to the topic of javascript. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "javascript-q-46"
-        },
-        {
-          "q": "Sample Question 47 about javascript?",
-          "a": "This is a dummy answer for question 47 related to the topic of javascript. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "javascript-q-47"
-        },
-        {
-          "q": "Sample Question 48 about javascript?",
-          "a": "This is a dummy answer for question 48 related to the topic of javascript. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "javascript-q-48"
-        },
-        {
-          "q": "Sample Question 49 about javascript?",
-          "a": "This is a dummy answer for question 49 related to the topic of javascript. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "javascript-q-49"
-        },
-        {
-          "q": "Sample Question 50 about javascript?",
-          "a": "This is a dummy answer for question 50 related to the topic of javascript. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "javascript-q-50"
-        }
-      ]
-    }
-  ],
-  "topTips": [
-    "Practice coding closures and currying by hand without Google.",
-    "Draw out the event loop on paper — interviewers love when you can visualize it.",
-    "Know the difference between null, undefined, NaN, and 0 (all falsy, but different).",
-    "Practice Promise chaining and async/await error handling with try/catch.",
-    "Understand 'this' in all 4 scenarios: global, method, function, and arrow function."
-  ]
+  "questions": {
+    "beginner": [
+      {
+        "id": "js-b-1",
+        "q": "What are the different data types in JavaScript?",
+        "a": "JavaScript has primitive and non-primitive data types. Primitives include String, Number, Boolean, Undefined, Null, Symbol, and BigInt. Non-primitives are Objects (which include Arrays and Functions). Primitives are immutable and passed by value, while Objects are mutable and passed by reference."
+      },
+      {
+        "id": "js-b-2",
+        "q": "Explain the difference between `var`, `let`, and `const`.",
+        "a": "`var` is function-scoped and hoisted with an initial value of undefined. `let` and `const` are block-scoped and hoisted but reside in a 'Temporal Dead Zone' until initialized. `let` allows reassignment, whereas `const` requires an initial value and cannot be reassigned (though objects/arrays declared with const can still be mutated)."
+      },
+      {
+        "id": "js-b-3",
+        "q": "What is hoisting in JavaScript?",
+        "a": "Hoisting is JavaScript's default behavior of moving declarations to the top of the current scope before code execution. Only declarations are hoisted, not initializations. This allows functions to be called before they are declared. `let` and `const` are hoisted but remain uninitialized, resulting in a ReferenceError if accessed early."
+      },
+      {
+        "id": "js-b-4",
+        "q": "What is the difference between `==` and `===`?",
+        "a": "`==` is the abstract equality operator; it performs type coercion before comparison (e.g., `'5' == 5` is true). `===` is the strict equality operator; it checks both value and type without coercion (e.g., `'5' === 5` is false). Best practice is to always use `===` to prevent unexpected bugs."
+      },
+      {
+        "id": "js-b-5",
+        "q": "Explain `null` vs `undefined`.",
+        "a": "`undefined` means a variable has been declared but has not yet been assigned a value. It is the default value for uninitialized variables. `null` is an assignment value representing the intentional absence of any object value. Interestingly, `typeof undefined` is 'undefined', but `typeof null` is 'object' (a known JavaScript bug)."
+      },
+      {
+        "id": "js-b-6",
+        "q": "What is a closure?",
+        "a": "A closure is a function bundled together with references to its surrounding state (the lexical environment). In JavaScript, closures are created every time a function is created. It gives a function access to its outer scope, even after the outer function has returned. Closures are heavily used for data privacy and function currying."
+      },
+      {
+        "id": "js-b-7",
+        "q": "What are template literals?",
+        "a": "Introduced in ES6, template literals are string literals allowing embedded expressions. They use backticks (``) instead of quotes. They enable multi-line strings and string interpolation using the `${expression}` syntax, replacing cumbersome string concatenation."
+      },
+      {
+        "id": "js-b-8",
+        "q": "How do arrow functions differ from regular functions?",
+        "a": "Arrow functions (`() => {}`) provide a shorter syntax and, crucially, do not have their own `this`, `arguments`, `super`, or `new.target`. They inherit `this` from the parent scope (lexical scoping). Therefore, they cannot be used as constructors and are poorly suited as object methods."
+      },
+      {
+        "id": "js-b-9",
+        "q": "What is destructuring assignment?",
+        "a": "Destructuring is an ES6 feature that allows you to unpack values from arrays, or properties from objects, into distinct variables. For example, `const { name, age } = user;` extracts properties from the `user` object. It makes the code cleaner and more readable."
+      },
+      {
+        "id": "js-b-10",
+        "q": "What is the Spread operator?",
+        "a": "The spread operator (`...`) allows an iterable (like an array or string) or an object to be expanded in places where zero or more arguments or elements are expected. It is commonly used to copy arrays (`[...arr]`), merge objects (`{...obj1, ...obj2}`), and pass array elements as arguments to a function."
+      },
+      {
+        "id": "js-b-11",
+        "q": "What are Default Parameters?",
+        "a": "Default function parameters allow named parameters to be initialized with default values if no value or `undefined` is passed to the function. Example: `function multiply(a, b = 1) { return a * b; }`."
+      },
+      {
+        "id": "js-b-12",
+        "q": "What is `typeof` operator used for?",
+        "a": "The `typeof` operator returns a string indicating the type of the unevaluated operand. Common returns include 'string', 'number', 'boolean', 'undefined', 'object', and 'function'. Note that `typeof []` and `typeof null` both return 'object'."
+      },
+      {
+        "id": "js-b-13",
+        "q": "Explain `map()`, `filter()`, and `reduce()`.",
+        "a": "These are array methods. `map()` creates a new array by applying a function to every element. `filter()` creates a new array with all elements that pass a test implemented by the provided function. `reduce()` executes a reducer function on each element, resulting in a single output value."
+      },
+      {
+        "id": "js-b-14",
+        "q": "What is the DOM?",
+        "a": "The Document Object Model (DOM) is a programming interface for HTML and XML documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects."
+      },
+      {
+        "id": "js-b-15",
+        "q": "What is Event Delegation?",
+        "a": "Event delegation is a pattern based on Event Bubbling. Instead of attaching event listeners to multiple child elements, you attach a single event listener to a parent element. The parent listens for events bubbling up from its children and uses `event.target` to determine which child triggered it."
+      },
+      {
+        "id": "js-b-16",
+        "q": "What is strict mode (`'use strict'`)?",
+        "a": "Strict mode is a way to opt in to a restricted variant of JavaScript. It eliminates some JS silent errors by changing them to throw errors, fixes mistakes that make it difficult for JavaScript engines to perform optimizations, and prohibits some syntax likely to be defined in future ECMAScript versions."
+      },
+      {
+        "id": "js-b-17",
+        "q": "What is NaN?",
+        "a": "NaN stands for 'Not-a-Number'. It is a property of the global object representing a value that is not a legal number. It typically results from invalid math operations (e.g., `0 / 0` or `'string' * 5`). Interestingly, `typeof NaN` returns 'number', and `NaN === NaN` is false."
+      }
+    ],
+    "intermediate": [
+      {
+        "id": "js-i-1",
+        "q": "Explain the JavaScript Event Loop.",
+        "a": "JavaScript is single-threaded. The Event Loop enables non-blocking asynchronous behavior. It consists of the Call Stack, Web APIs, Macrotask Queue, and Microtask Queue. When an async operation finishes, its callback goes to a queue. The Event Loop continuously checks if the Call Stack is empty. If it is, it pushes tasks from the Microtask queue (like Promises) first, then the Macrotask queue (like setTimeout), ensuring smooth execution."
+      },
+      {
+        "id": "js-i-2",
+        "q": "What is the difference between Macrotasks and Microtasks?",
+        "a": "Microtasks (Promises, `MutationObserver`, `process.nextTick` in Node) have higher priority than Macrotasks (`setTimeout`, `setInterval`, UI rendering, I/O). After the current call stack clears, the Event Loop empties the entire Microtask queue before processing the next single Macrotask. This means infinite Microtasks can block the rendering pipeline."
+      },
+      {
+        "id": "js-i-3",
+        "q": "What are Promises?",
+        "a": "A Promise is an object representing the eventual completion (or failure) of an asynchronous operation. It has three states: Pending, Fulfilled, and Rejected. They solve 'callback hell' by allowing chaining via `.then()` and `.catch()`, making asynchronous code much more readable."
+      },
+      {
+        "id": "js-i-4",
+        "q": "Explain `async` and `await`.",
+        "a": "Introduced in ES8, `async/await` is syntactic sugar over Promises. Marking a function as `async` ensures it returns a Promise. Inside an async function, you can use the `await` keyword to pause execution until a Promise settles. This makes asynchronous code look and behave like synchronous code."
+      },
+      {
+        "id": "js-i-5",
+        "q": "What is `this` in JavaScript?",
+        "a": "The value of `this` depends on how a function is called, not where it is defined. In a method, `this` refers to the owner object. In a standard function, `this` refers to the global object (or `undefined` in strict mode). Arrow functions don't bind `this`; they inherit it from the lexical scope."
+      },
+      {
+        "id": "js-i-6",
+        "q": "How do `call()`, `apply()`, and `bind()` work?",
+        "a": "All three explicitly set the `this` context for a function. `call()` invokes the function with a given `this` value and arguments passed individually. `apply()` is identical to `call()`, but arguments are passed as an array. `bind()` does not invoke the function immediately; it returns a new function with a permanently bound `this` value."
+      },
+      {
+        "id": "js-i-7",
+        "q": "What is Prototypal Inheritance?",
+        "a": "Unlike class-based languages, JavaScript uses prototypes. Every object has an internal link to another object called its prototype. When accessing a property on an object, JS first looks at the object itself, then traverses up the prototype chain until it finds the property or reaches `null`."
+      },
+      {
+        "id": "js-i-8",
+        "q": "What are ES6 Modules?",
+        "a": "ES6 Modules (`import` and `export`) allow you to split code into separate files. Modules run in strict mode by default, have their own top-level scope (preventing global namespace pollution), and are executed deferentially by the browser."
+      },
+      {
+        "id": "js-i-9",
+        "q": "Explain Debouncing vs. Throttling.",
+        "a": "Both are techniques to optimize performance by limiting the execution rate of functions (like window resizing or search inputs). Debouncing delays function execution until a certain time has passed since the *last* invocation. Throttling guarantees execution at regular intervals, regardless of how many times the event fires."
+      },
+      {
+        "id": "js-i-10",
+        "q": "What is Currying?",
+        "a": "Currying is a functional programming technique where a function with multiple arguments is transformed into a sequence of nested functions, each taking a single argument. E.g., `add(a, b)` becomes `add(a)(b)`. It is highly useful for function composition and partial application."
+      },
+      {
+        "id": "js-i-11",
+        "q": "What is a generator function?",
+        "a": "A generator function (defined using `function*`) can pause its execution and be resumed later. It uses the `yield` keyword to return values one by one. When called, it doesn't execute its body immediately; instead, it returns an iterator object."
+      },
+      {
+        "id": "js-i-12",
+        "q": "How does Garbage Collection work in JS?",
+        "a": "JavaScript automatically allocates and frees memory. Modern engines use a 'Mark-and-Sweep' algorithm. The garbage collector periodically identifies 'roots' (global variables) and traverses all references. Any object in memory that cannot be reached from the roots is marked for deletion and swept away."
+      },
+      {
+        "id": "js-i-13",
+        "q": "What are Set and Map?",
+        "a": "Introduced in ES6, `Set` is a collection of unique values of any type. `Map` is a collection of keyed data items, similar to an Object, but Map allows keys of any type (including objects and functions) and maintains insertion order."
+      },
+      {
+        "id": "js-i-14",
+        "q": "Explain Event Bubbling and Capturing.",
+        "a": "They describe the phases of event propagation in the DOM. In Capturing (trickling), the event travels from the root down to the target element. In Bubbling, the event travels from the target element up back to the root. By default, most event handlers are attached to the bubbling phase."
+      },
+      {
+        "id": "js-i-15",
+        "q": "What is the Temporal Dead Zone (TDZ)?",
+        "a": "The TDZ is the period of time during which `let` and `const` variables exist but cannot be accessed. It starts at the beginning of the block scope and ends when the variable is declared and initialized. Accessing the variable in the TDZ throws a ReferenceError."
+      },
+      {
+        "id": "js-i-16",
+        "q": "Deep Copy vs Shallow Copy?",
+        "a": "A shallow copy duplicates the top-level properties of an object, but nested objects remain references to the original. (e.g., using `...spread` or `Object.assign()`). A deep copy duplicates all levels, creating entirely disconnected objects (e.g., using `structuredClone()` or `JSON.parse(JSON.stringify(obj))`)."
+      },
+      {
+        "id": "js-i-17",
+        "q": "What is IIFE?",
+        "a": "IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined: `(function() { /* code */ })();`. It creates a private scope to avoid polluting the global namespace."
+      }
+    ],
+    "advanced": [
+      {
+        "id": "js-a-1",
+        "q": "Explain the V8 Engine architecture and JIT Compilation.",
+        "a": "V8 is Google's open-source high-performance JS engine. It uses Just-In-Time (JIT) compilation, compiling JS directly to machine code rather than using an interpreter. It employs an interpreter (Ignition) for fast startup and an optimizing compiler (TurboFan) that optimizes hot code paths dynamically based on runtime profiling."
+      },
+      {
+        "id": "js-a-2",
+        "q": "How do WeakMap and WeakSet differ from Map and Set?",
+        "a": "WeakMaps and WeakSets only accept Objects as keys/values, not primitives. Crucially, they hold 'weak' references to these objects. If there are no other references to the object, the garbage collector will remove it, preventing memory leaks. Because they can be garbage collected at any time, WeakMaps are not iterable."
+      },
+      {
+        "id": "js-a-3",
+        "q": "What is tail call optimization (TCO)?",
+        "a": "TCO is an engine-level optimization where if the last action of a function is to return the result of calling another function (a tail call), the engine reuses the current stack frame instead of pushing a new one. This prevents Stack Overflow errors in deep recursive functions. Currently, support in V8/Chrome is limited."
+      },
+      {
+        "id": "js-a-4",
+        "q": "Explain the Proxy object.",
+        "a": "The Proxy object enables you to create a custom wrapper around another object, allowing you to intercept and redefine fundamental operations like property lookup (`get`), assignment (`set`), enumeration, and function invocation. It is heavily used in modern frameworks like Vue 3 for reactivity."
+      },
+      {
+        "id": "js-a-5",
+        "q": "How do you implement a polyfill for `Promise.all`?",
+        "a": "You return a new Promise that takes an array of promises. You iterate over the array, attaching `.then()` to each. You keep a counter of resolved promises and an array of results. When a promise resolves, place its result in the correct index and increment the counter. If the counter equals the input array length, `resolve()` the main promise. If any `.catch()` fires, `reject()` the main promise."
+      },
+      {
+        "id": "js-a-6",
+        "q": "What are Web Workers?",
+        "a": "Web Workers allow you to run JavaScript in background threads. They run entirely independent of the main UI thread, meaning heavy CPU calculations won't block the UI. Workers cannot manipulate the DOM directly. Communication between the main thread and workers is handled via the `postMessage` API."
+      },
+      {
+        "id": "js-a-7",
+        "q": "Explain Cross-Origin Resource Sharing (CORS).",
+        "a": "CORS is an HTTP-header based security mechanism that allows a server to indicate any origins (domain, scheme, or port) other than its own from which a browser should permit loading resources. Browsers enforce the Same-Origin Policy. To bypass it for API calls, the server must respond with `Access-Control-Allow-Origin` headers. Complex requests require a 'Preflight' `OPTIONS` request."
+      },
+      {
+        "id": "js-a-8",
+        "q": "What is the Reflect API?",
+        "a": "Reflect is a built-in object that provides methods for interceptable JavaScript operations. The methods are the same as those of proxy handlers. It is designed to work closely with Proxies, providing a cleaner way to forward default operations to the target object inside a Proxy trap."
+      },
+      {
+        "id": "js-a-9",
+        "q": "How does `requestAnimationFrame` work?",
+        "a": "`requestAnimationFrame` tells the browser that you wish to perform an animation and requests that the browser call a specified function to update an animation before the next repaint. It syncs with the monitor's refresh rate (typically 60 times per second), pausing automatically when the tab is inactive, drastically saving battery and CPU."
+      },
+      {
+        "id": "js-a-10",
+        "q": "Explain Service Workers and their lifecycle.",
+        "a": "Service Workers act as network proxies, sitting between the web app, the browser, and the network. They enable Offline experiences, Background Sync, and Push Notifications. The lifecycle consists of Registration, Installation (caching static assets), Activation (cleaning up old caches), and finally, intercepting `fetch` events."
+      },
+      {
+        "id": "js-a-11",
+        "q": "What is memoization and how would you write a memoize function?",
+        "a": "Memoization is an optimization technique that stores the results of expensive function calls and returns the cached result when the same inputs occur. To implement: create a closure holding a `cache` object. Return a function that stringifies its arguments to create a cache key. If the key exists, return the cached value. If not, execute the original function, store the result in the cache, and return it."
+      },
+      {
+        "id": "js-a-12",
+        "q": "What are Symbol properties used for?",
+        "a": "Symbols are unique, immutable primitive values. They are often used to add unique property keys to objects that won't collide with keys any other code might add, and are hidden from normal mechanisms like `for...in` or `Object.keys()`. They are used heavily in metaprogramming (e.g., `Symbol.iterator`)."
+      },
+      {
+        "id": "js-a-13",
+        "q": "Explain `Object.defineProperty` and Accessor Descriptors.",
+        "a": "`Object.defineProperty` allows precise addition or modification of a property on an object. You can define property descriptors to make properties read-only (`writable: false`), hidden from loops (`enumerable: false`), or un-deletable (`configurable: false`). Accessor descriptors allow you to define custom `get` and `set` functions for a property."
+      },
+      {
+        "id": "js-a-14",
+        "q": "How does `structuredClone()` work?",
+        "a": "`structuredClone()` is a modern, built-in global function that creates a deep clone of a given value. Unlike `JSON.parse(JSON.stringify())`, it supports circular references, Dates, Sets, Maps, and TypedArrays. It cannot clone functions or DOM nodes."
+      },
+      {
+        "id": "js-a-15",
+        "q": "What is the difference between `Array.prototype.forEach` and a `for...of` loop with async/await?",
+        "a": "`forEach` expects a synchronous callback. If you pass an `async` function to `forEach`, it fires them off but does NOT `await` them. The loop finishes immediately while the promises are still pending. A `for...of` loop genuinely halts at the `await` keyword, executing asynchronous operations sequentially."
+      },
+      {
+        "id": "js-a-16",
+        "q": "How do memory leaks occur in closures?",
+        "a": "Closures retain references to their outer scope's variables. If an outer function defines a massive object and an inner function closes over it, that object cannot be garbage collected as long as the inner function is kept alive (e.g., bound to a global event listener). V8 performs 'closure scope optimization' to only retain variables actually accessed, but poor scoping can still cause massive leaks."
+      }
+    ]
+  }
 }

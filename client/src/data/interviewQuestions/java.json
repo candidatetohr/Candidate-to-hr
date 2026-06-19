@@ -1,272 +1,270 @@
 {
   "seo": {
-    "title": "Top 100+ Java Interview Questions & Answers (2026) | Candidatetohr",
-    "description": "Master your next technical interview with our comprehensive list of Java interview questions.",
+    "title": "Top 100+ Java Interview Questions & Answers (2026)",
+    "description": "Master your Java backend interview. Covers JVM architecture, Multithreading, Garbage Collection, Spring Boot, and core OOP.",
     "slug": "java",
-    "keywords": "java interview questions, java developer interview",
-    "ogTitle": "Java Interview Questions & Answers",
-    "ogDescription": "Practice the top Java questions asked by top tech companies."
+    "keywords": "java interview questions, backend java developer, spring boot questions, core java"
   },
   "hero": {
     "title": "Java Interview Questions",
-    "description": "Comprehensive list of Java interview questions. (Full list is being automatically generated...)",
+    "description": "50 real-world Java interview questions for enterprise developers, from JVM internals to Spring architecture.",
     "count": 50
   },
   "questions": {
     "beginner": [
       {
         "id": "java-b-1",
-        "q": "Sample beginner Question 1 about java?",
-        "a": "This is a dummy answer for a beginner question 1 related to the topic of java. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "q": "What makes Java 'Write Once, Run Anywhere'?",
+        "a": "Java achieves platform independence through its compilation process. Java source code (`.java`) is compiled into an intermediate binary format called bytecode (`.class`). This bytecode is executed by the Java Virtual Machine (JVM). Because there are different JVM implementations for Windows, Mac, and Linux, the same bytecode can run on any OS that has a JVM installed."
       },
       {
         "id": "java-b-2",
-        "q": "Sample beginner Question 2 about java?",
-        "a": "This is a dummy answer for a beginner question 2 related to the topic of java. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "q": "Explain JDK vs JRE vs JVM.",
+        "a": "JVM (Java Virtual Machine) executes the bytecode. JRE (Java Runtime Environment) contains the JVM plus core libraries needed to run a Java app. JDK (Java Development Kit) contains the JRE plus development tools like the compiler (`javac`), debugger, and javadoc."
       },
       {
         "id": "java-b-3",
-        "q": "Sample beginner Question 3 about java?",
-        "a": "This is a dummy answer for a beginner question 3 related to the topic of java. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "q": "What are the core concepts of Object-Oriented Programming (OOP)?",
+        "a": "The four pillars are: 1) Encapsulation (hiding state and requiring access through methods). 2) Inheritance (creating new classes from existing ones to reuse code). 3) Polymorphism (the ability of a single interface to represent different underlying forms/objects). 4) Abstraction (hiding complex implementation details and exposing only essential features)."
       },
       {
         "id": "java-b-4",
-        "q": "Sample beginner Question 4 about java?",
-        "a": "This is a dummy answer for a beginner question 4 related to the topic of java. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "q": "What is the difference between `==` and `.equals()` in Java?",
+        "a": "`==` is a relational operator that checks reference equality (whether two object references point to the exact same memory location). `.equals()` is a method in the `Object` class that, when overridden (like in the `String` class), checks for value/content equality."
       },
       {
         "id": "java-b-5",
-        "q": "Sample beginner Question 5 about java?",
-        "a": "This is a dummy answer for a beginner question 5 related to the topic of java. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "q": "Why are Strings immutable in Java?",
+        "a": "Strings are immutable (cannot be changed after creation) for several reasons: 1) Security (strings often hold sensitive data like passwords or DB URLs). 2) Concurrency (immutable objects are inherently thread-safe). 3) Memory efficiency (allows for the String Pool, where multiple references point to the same literal)."
       },
       {
         "id": "java-b-6",
-        "q": "Sample beginner Question 6 about java?",
-        "a": "This is a dummy answer for a beginner question 6 related to the topic of java. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "q": "What is the String Pool?",
+        "a": "The String Pool is a special storage area in the Java heap memory. When you create a String literal (e.g., `String s = \"hello\"`), the JVM checks the pool. If \"hello\" exists, a reference to the pooled instance is returned. If not, it is created and added to the pool. Creating a string via `new String(\"hello\")` bypasses this and forces heap allocation."
       },
       {
         "id": "java-b-7",
-        "q": "Sample beginner Question 7 about java?",
-        "a": "This is a dummy answer for a beginner question 7 related to the topic of java. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "q": "Difference between `final`, `finally`, and `finalize`?",
+        "a": "`final` is a keyword restricting modification (final variables cannot be reassigned, final methods cannot be overridden, final classes cannot be extended). `finally` is a block used in exception handling that executes regardless of whether an exception occurs. `finalize()` is an obsolete method called by the Garbage Collector before an object is destroyed."
       },
       {
         "id": "java-b-8",
-        "q": "Sample beginner Question 8 about java?",
-        "a": "This is a dummy answer for a beginner question 8 related to the topic of java. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "q": "What is a wrapper class in Java?",
+        "a": "Java has 8 primitive types (int, char, boolean, etc.) which are not objects for performance reasons. Wrapper classes (Integer, Character, Boolean) encapsulate these primitives into objects so they can be used in the Collection Framework (like ArrayList), which requires objects. Autoboxing/unboxing handles the conversion automatically."
       },
       {
         "id": "java-b-9",
-        "q": "Sample beginner Question 9 about java?",
-        "a": "This is a dummy answer for a beginner question 9 related to the topic of java. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "q": "What is the difference between Method Overloading and Method Overriding?",
+        "a": "Overloading occurs at compile-time within the same class; it involves creating multiple methods with the same name but different parameter lists. Overriding occurs at runtime between a superclass and subclass; a subclass provides a specific implementation for a method already defined in its parent class (same signature)."
       },
       {
         "id": "java-b-10",
-        "q": "Sample beginner Question 10 about java?",
-        "a": "This is a dummy answer for a beginner question 10 related to the topic of java. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "q": "What are Abstract Classes vs Interfaces?",
+        "a": "An Interface can only contain abstract methods (until Java 8 default methods) and static final constants; a class implements multiple interfaces. An Abstract Class can contain both abstract and concrete methods, as well as state (instance variables); a class extends only one abstract class."
       },
       {
         "id": "java-b-11",
-        "q": "Sample beginner Question 11 about java?",
-        "a": "This is a dummy answer for a beginner question 11 related to the topic of java. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "q": "Explain `static` keyword.",
+        "a": "The `static` keyword denotes that a member (variable or method) belongs to the class itself, rather than to any specific instance of the class. Static variables are shared among all instances. Static methods can be called without instantiating the class, but they cannot access non-static variables directly."
       },
       {
         "id": "java-b-12",
-        "q": "Sample beginner Question 12 about java?",
-        "a": "This is a dummy answer for a beginner question 12 related to the topic of java. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "q": "What are the Access Modifiers in Java?",
+        "a": "`private`: Accessible only within the same class. `default` (no keyword): Accessible only within the same package. `protected`: Accessible within the same package and by subclasses in other packages. `public`: Accessible from anywhere."
       },
       {
         "id": "java-b-13",
-        "q": "Sample beginner Question 13 about java?",
-        "a": "This is a dummy answer for a beginner question 13 related to the topic of java. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "q": "What is the difference between ArrayList and LinkedList?",
+        "a": "ArrayList uses a dynamic array to store elements; it's fast for random access (O(1)) but slow for insertions/deletions in the middle (O(n)) because elements must be shifted. LinkedList uses a doubly-linked list; it's slow for random access (O(n)) but fast for insertions/deletions (O(1)) if the node reference is known."
       },
       {
         "id": "java-b-14",
-        "q": "Sample beginner Question 14 about java?",
-        "a": "This is a dummy answer for a beginner question 14 related to the topic of java. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "q": "What is a NullPointerException (NPE)?",
+        "a": "A NullPointerException is a RuntimeException thrown when an application attempts to use an object reference that has the null value. Examples include calling a method on a null object, accessing its field, or taking the length of a null array."
       },
       {
         "id": "java-b-15",
-        "q": "Sample beginner Question 15 about java?",
-        "a": "This is a dummy answer for a beginner question 15 related to the topic of java. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "q": "What is the `this` keyword?",
+        "a": "`this` is a reference variable that refers to the current object instance. It is commonly used to distinguish between instance variables and parameters with the same name inside a constructor or setter method."
       },
       {
         "id": "java-b-16",
-        "q": "Sample beginner Question 16 about java?",
-        "a": "This is a dummy answer for a beginner question 16 related to the topic of java. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "q": "What is the difference between Exception and Error?",
+        "a": "Both extend `Throwable`. `Exception` represents conditions that a reasonable application might want to catch and recover from (e.g., FileNotFoundException). `Error` represents serious problems that a reasonable application should not try to catch (e.g., OutOfMemoryError, StackOverflowError)."
       },
       {
         "id": "java-b-17",
-        "q": "Sample beginner Question 17 about java?",
-        "a": "This is a dummy answer for a beginner question 17 related to the topic of java. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "q": "What are annotations in Java?",
+        "a": "Annotations (like `@Override`, `@Deprecated`) provide metadata about the program. They do not directly affect program semantics but can be read by the compiler to detect errors, or by runtime frameworks (like Spring) using reflection to inject dependencies or configure routing."
       }
     ],
     "intermediate": [
       {
-        "id": "java-i-18",
-        "q": "Sample intermediate Question 18 about java?",
-        "a": "This is a dummy answer for a intermediate question 18 related to the topic of java. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "java-i-1",
+        "q": "What is the difference between Checked and Unchecked exceptions?",
+        "a": "Checked exceptions (e.g., IOException, SQLException) inherit from `Exception` and must be explicitly caught via try/catch or declared in the method signature using `throws`; the compiler enforces this. Unchecked exceptions (e.g., NullPointerException) inherit from `RuntimeException` and are not verified at compile time."
       },
       {
-        "id": "java-i-19",
-        "q": "Sample intermediate Question 19 about java?",
-        "a": "This is a dummy answer for a intermediate question 19 related to the topic of java. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "java-i-2",
+        "q": "How does Garbage Collection (GC) work in Java?",
+        "a": "The JVM automatically manages memory. The GC daemon thread periodically identifies objects that are no longer reachable from GC Roots (active threads, static variables). It reclaims their memory. The heap is divided into Young Generation (Eden, Survivor spaces) for short-lived objects, and Old Generation for long-lived objects. Minor GCs clean Young Gen, Major GCs clean Old Gen."
       },
       {
-        "id": "java-i-20",
-        "q": "Sample intermediate Question 20 about java?",
-        "a": "This is a dummy answer for a intermediate question 20 related to the topic of java. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "java-i-3",
+        "q": "What is the `volatile` keyword?",
+        "a": "`volatile` is used for multithreading. It indicates that a variable's value will be modified by different threads. It instructs the JVM to never cache the variable thread-locally, ensuring that all reads and writes go straight to main memory. This guarantees visibility of changes across threads."
       },
       {
-        "id": "java-i-21",
-        "q": "Sample intermediate Question 21 about java?",
-        "a": "This is a dummy answer for a intermediate question 21 related to the topic of java. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "java-i-4",
+        "q": "What is Synchronization?",
+        "a": "Synchronization ensures that only one thread can execute a block of code or a method at a given time on a specific object monitor. By using the `synchronized` keyword, you prevent thread interference and memory consistency errors when operating on shared mutable state."
       },
       {
-        "id": "java-i-22",
-        "q": "Sample intermediate Question 22 about java?",
-        "a": "This is a dummy answer for a intermediate question 22 related to the topic of java. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "java-i-5",
+        "q": "Difference between `HashMap` and `ConcurrentHashMap`?",
+        "a": "`HashMap` is not thread-safe. If multiple threads mutate it concurrently, it can lead to infinite loops or data corruption. `ConcurrentHashMap` is thread-safe. It achieves high concurrency by locking only a segment (or bucket in Java 8+) of the map during updates, allowing parallel reads and writes, whereas `Hashtable` locks the entire map."
       },
       {
-        "id": "java-i-23",
-        "q": "Sample intermediate Question 23 about java?",
-        "a": "This is a dummy answer for a intermediate question 23 related to the topic of java. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "java-i-6",
+        "q": "Explain the Java 8 Stream API.",
+        "a": "The Stream API allows declarative, functional-style processing of collections. It supports pipelined operations like `filter`, `map`, and `reduce`. Streams do not modify the underlying collection and are lazily evaluated (terminal operations like `collect()` or `forEach()` must be called to execute the pipeline)."
       },
       {
-        "id": "java-i-24",
-        "q": "Sample intermediate Question 24 about java?",
-        "a": "This is a dummy answer for a intermediate question 24 related to the topic of java. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "java-i-7",
+        "q": "What are Lambda Expressions in Java?",
+        "a": "Introduced in Java 8, lambda expressions `(params) -> { body }` provide a clear, concise way to represent anonymous functions or instances of Functional Interfaces (interfaces with only one abstract method, like Runnable or Comparator)."
       },
       {
-        "id": "java-i-25",
-        "q": "Sample intermediate Question 25 about java?",
-        "a": "This is a dummy answer for a intermediate question 25 related to the topic of java. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "java-i-8",
+        "q": "What is Dependency Injection (DI) and Inversion of Control (IoC) in Spring?",
+        "a": "IoC is a principle where the framework assumes control of the program flow. DI is an implementation of IoC. Instead of a class instantiating its own dependencies using `new`, the Spring IoC container creates the objects, wires them together, and injects them (via constructor or `@Autowired`) at runtime. This makes code highly testable and loosely coupled."
       },
       {
-        "id": "java-i-26",
-        "q": "Sample intermediate Question 26 about java?",
-        "a": "This is a dummy answer for a intermediate question 26 related to the topic of java. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "java-i-9",
+        "q": "What is the difference between `Comparable` and `Comparator`?",
+        "a": "`Comparable` is an interface implemented by the class itself (e.g., `String` implements `Comparable`) to define its *natural* sorting order via the `compareTo()` method. `Comparator` is a separate utility interface used to define *custom* sorting logic for objects you don't control or when you need multiple sorting strategies, via the `compare()` method."
       },
       {
-        "id": "java-i-27",
-        "q": "Sample intermediate Question 27 about java?",
-        "a": "This is a dummy answer for a intermediate question 27 related to the topic of java. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "java-i-10",
+        "q": "What is Reflection in Java?",
+        "a": "Reflection is an API that allows Java code to inspect and manipulate classes, interfaces, fields, and methods at runtime, regardless of access modifiers. It is heavily used by frameworks (like Spring and Hibernate) to instantiate objects and inject dependencies dynamically. However, it breaks encapsulation and is slow."
       },
       {
-        "id": "java-i-28",
-        "q": "Sample intermediate Question 28 about java?",
-        "a": "This is a dummy answer for a intermediate question 28 related to the topic of java. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "java-i-11",
+        "q": "What is a ThreadLocal variable?",
+        "a": "`ThreadLocal` provides thread-local variables. Each thread that accesses one has its own, independently initialized copy of the variable. It's an alternative to synchronization when you want to avoid sharing state entirely, often used for formatting objects (like `SimpleDateFormat` which is not thread-safe) or storing user session data per request."
       },
       {
-        "id": "java-i-29",
-        "q": "Sample intermediate Question 29 about java?",
-        "a": "This is a dummy answer for a intermediate question 29 related to the topic of java. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "java-i-12",
+        "q": "Explain Deadlock in multithreading.",
+        "a": "A deadlock occurs when two or more threads are blocked forever, waiting for each other. For example, Thread 1 locks Resource A and waits for Resource B. Thread 2 locks Resource B and waits for Resource A. Both are stuck infinitely. Deadlocks are avoided by enforcing lock ordering or using timeouts."
       },
       {
-        "id": "java-i-30",
-        "q": "Sample intermediate Question 30 about java?",
-        "a": "This is a dummy answer for a intermediate question 30 related to the topic of java. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "java-i-13",
+        "q": "What is a memory leak in Java?",
+        "a": "Although Java has Garbage Collection, memory leaks occur when objects are no longer needed but are still referenced by long-lived objects (like static collections or unclosed database connections). Because GC roots can reach them, the GC won't clear them, eventually causing an `OutOfMemoryError`."
       },
       {
-        "id": "java-i-31",
-        "q": "Sample intermediate Question 31 about java?",
-        "a": "This is a dummy answer for a intermediate question 31 related to the topic of java. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "java-i-14",
+        "q": "Difference between `Runnable` and `Callable`?",
+        "a": "Both are functional interfaces used to define tasks for threads. `Runnable.run()` cannot return a value and cannot throw checked exceptions. `Callable.call()` can return a result (wrapped in a `Future`) and can throw checked exceptions. Callable is usually submitted to an `ExecutorService`."
       },
       {
-        "id": "java-i-32",
-        "q": "Sample intermediate Question 32 about java?",
-        "a": "This is a dummy answer for a intermediate question 32 related to the topic of java. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "java-i-15",
+        "q": "What is the Singleton design pattern and how do you implement it securely?",
+        "a": "Singleton ensures a class has only one instance globally. It's implemented with a private constructor and a public static getter. To make it thread-safe and secure against reflection/serialization, the best practice is to use an `enum` Singleton, or use double-checked locking with a `volatile` instance variable."
       },
       {
-        "id": "java-i-33",
-        "q": "Sample intermediate Question 33 about java?",
-        "a": "This is a dummy answer for a intermediate question 33 related to the topic of java. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "java-i-16",
+        "q": "Explain Java Classloaders.",
+        "a": "Classloaders are responsible for loading `.class` files into the JVM at runtime. Java uses a delegation hierarchy: Bootstrap ClassLoader (loads core JDK classes), Extension ClassLoader, and Application/System ClassLoader (loads user classpath). They enforce the principle that classes are loaded only when requested."
       },
       {
-        "id": "java-i-34",
-        "q": "Sample intermediate Question 34 about java?",
-        "a": "This is a dummy answer for a intermediate question 34 related to the topic of java. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "java-i-17",
+        "q": "What are default methods in interfaces?",
+        "a": "Introduced in Java 8, default methods (`default void myMethod() { ... }`) allow interfaces to have concrete methods. This was added to support backward compatibility, allowing new methods (like `stream()`) to be added to existing core interfaces (like `Collection`) without breaking thousands of legacy classes implementing them."
       }
     ],
     "advanced": [
       {
-        "id": "java-a-35",
-        "q": "Sample advanced Question 35 about java?",
-        "a": "This is a dummy answer for a advanced question 35 related to the topic of java. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "java-a-1",
+        "q": "Explain the internal working of `HashMap`.",
+        "a": "A `HashMap` uses an array of Nodes (buckets). `put(k, v)` calculates the `hashCode()` of the key, applies a bitwise hash function, and modulates it by array length to find the index. If collision occurs, nodes are linked via a LinkedList. Since Java 8, if a bucket's linked list exceeds 8 nodes, it converts to a self-balancing Red-Black Tree (O(log n)) to prevent degradation to O(n) worst-case lookups."
       },
       {
-        "id": "java-a-36",
-        "q": "Sample advanced Question 36 about java?",
-        "a": "This is a dummy answer for a advanced question 36 related to the topic of java. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "java-a-2",
+        "q": "What is the Java Memory Model (JMM) and Happens-Before relationship?",
+        "a": "JMM dictates how threads interact through memory, handling instruction reordering and caching visibility. The 'Happens-Before' guarantee defines a partial ordering on memory operations. If event A happens-before event B, the effects of A will be visible to B. Synchronized blocks, `volatile` fields, and `Thread.start()` natively establish these guarantees."
       },
       {
-        "id": "java-a-37",
-        "q": "Sample advanced Question 37 about java?",
-        "a": "This is a dummy answer for a advanced question 37 related to the topic of java. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "java-a-3",
+        "q": "How does Spring Boot Auto-Configuration work?",
+        "a": "Spring Boot uses the `@EnableAutoConfiguration` annotation (part of `@SpringBootApplication`). It scans the classpath for specific jars (e.g., Tomcat, Hibernate). Using `META-INF/spring.factories` and conditional annotations like `@ConditionalOnClass` or `@ConditionalOnMissingBean`, it automatically wires up default beans for database connections, web servers, and security without manual XML or Java config."
       },
       {
-        "id": "java-a-38",
-        "q": "Sample advanced Question 38 about java?",
-        "a": "This is a dummy answer for a advanced question 38 related to the topic of java. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "java-a-4",
+        "q": "Explain the Executor Framework and Thread Pools.",
+        "a": "Creating raw `Thread` objects is expensive. The Executor framework (`java.util.concurrent`) provides thread pools that reuse a set number of worker threads. You submit `Runnable` or `Callable` tasks to an `ExecutorService`. Types include `FixedThreadPool` (stable load), `CachedThreadPool` (bursts), and `ScheduledThreadPool`. It manages a blocking queue for pending tasks."
       },
       {
-        "id": "java-a-39",
-        "q": "Sample advanced Question 39 about java?",
-        "a": "This is a dummy answer for a advanced question 39 related to the topic of java. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "java-a-5",
+        "q": "What is the difference between `CountDownLatch` and `CyclicBarrier`?",
+        "a": "Both are synchronization aids. `CountDownLatch` allows one or more threads to wait until a set of operations in other threads completes. It cannot be reused once the count reaches zero. `CyclicBarrier` allows a set of threads to all wait for each other to reach a common barrier point. It CAN be reused after the barrier is broken."
       },
       {
-        "id": "java-a-40",
-        "q": "Sample advanced Question 40 about java?",
-        "a": "This is a dummy answer for a advanced question 40 related to the topic of java. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "java-a-6",
+        "q": "What is a `CompletableFuture`?",
+        "a": "Introduced in Java 8, it represents a promise of a future result. Unlike `Future` (where `.get()` blocks the thread), `CompletableFuture` supports non-blocking, callback-driven asynchronous programming. You can chain operations using `thenApply`, `thenAccept`, and combine multiple async calls seamlessly without thread blocking."
       },
       {
-        "id": "java-a-41",
-        "q": "Sample advanced Question 41 about java?",
-        "a": "This is a dummy answer for a advanced question 41 related to the topic of java. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "java-a-7",
+        "q": "How would you solve an OutOfMemoryError (OOM) in production?",
+        "a": "First, trigger a Heap Dump when OOM occurs (`-XX:+HeapDumpOnOutOfMemoryError`). Analyze the `.hprof` file using tools like Eclipse MAT or VisualVM to find the 'Leak Suspects' (objects dominating the heap). Look for static collections growing infinitely, unclosed ResultSets, or ThreadLocal leaks. If it's not a leak, simply increase the heap size (`-Xmx`)."
       },
       {
-        "id": "java-a-42",
-        "q": "Sample advanced Question 42 about java?",
-        "a": "This is a dummy answer for a advanced question 42 related to the topic of java. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "java-a-8",
+        "q": "Explain the G1 Garbage Collector.",
+        "a": "The Garbage-First (G1) GC divides the heap into multiple equal-sized regions, rather than contiguous Young/Old spaces. It tracks which regions contain the most garbage and prioritizes sweeping them first. G1 is designed to provide predictable pause times for large heaps (4GB+), replacing the older Concurrent Mark Sweep (CMS) collector."
       },
       {
-        "id": "java-a-43",
-        "q": "Sample advanced Question 43 about java?",
-        "a": "This is a dummy answer for a advanced question 43 related to the topic of java. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "java-a-9",
+        "q": "What are Spring AOP (Aspect-Oriented Programming) concepts?",
+        "a": "AOP modularizes cross-cutting concerns (like logging, security, transaction management) away from business logic. Key concepts: 'Aspect' (the module containing the logic), 'Advice' (the action taken, e.g., `@Before`, `@Around`), 'Pointcut' (a regex expression defining *where* the advice should be applied), and 'JoinPoint' (the actual execution instance of a method)."
       },
       {
-        "id": "java-a-44",
-        "q": "Sample advanced Question 44 about java?",
-        "a": "This is a dummy answer for a advanced question 44 related to the topic of java. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "java-a-10",
+        "q": "How does `@Transactional` work under the hood in Spring?",
+        "a": "Spring creates a dynamic AOP Proxy around the bean containing the `@Transactional` method. When the method is called, the proxy intercepts the call, opens a database transaction, and then invokes the target method. If the method completes successfully, the proxy commits the transaction. If an unchecked exception (RuntimeException) is thrown, the proxy rolls it back."
       },
       {
-        "id": "java-a-45",
-        "q": "Sample advanced Question 45 about java?",
-        "a": "This is a dummy answer for a advanced question 45 related to the topic of java. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "java-a-11",
+        "q": "Explain the N+1 problem in Hibernate/JPA.",
+        "a": "When fetching a list of entities (e.g., 10 Authors), if the entity has a lazy-loaded relationship (e.g., Books), accessing the books for each author triggers a separate SQL query. Result: 1 query for authors + 10 queries for books (N+1). It kills database performance. Solved using `JOIN FETCH` in JPQL or EntityGraphs to fetch data in a single query."
       },
       {
-        "id": "java-a-46",
-        "q": "Sample advanced Question 46 about java?",
-        "a": "This is a dummy answer for a advanced question 46 related to the topic of java. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "java-a-12",
+        "q": "What is the difference between `synchronized` and `ReentrantLock`?",
+        "a": "`synchronized` is implicit, easy to use, but rigid (blocks indefinitely). `ReentrantLock` (from `java.util.concurrent.locks`) is explicit. It requires manual `lock()` and `unlock()` (inside a `finally` block), but offers advanced features like `tryLock()` (attempting a lock without waiting forever), fairness policies, and interruptible locking."
       },
       {
-        "id": "java-a-47",
-        "q": "Sample advanced Question 47 about java?",
-        "a": "This is a dummy answer for a advanced question 47 related to the topic of java. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "java-a-13",
+        "q": "What is Type Erasure in Java Generics?",
+        "a": "Generics exist only at compile-time to provide type safety. During compilation, the Java compiler 'erases' generic type parameters, replacing them with `Object` or their bounds. At runtime, a `List<String>` and `List<Integer>` are simply identical `List` objects. This ensures backward compatibility with pre-generics Java code."
       },
       {
-        "id": "java-a-48",
-        "q": "Sample advanced Question 48 about java?",
-        "a": "This is a dummy answer for a advanced question 48 related to the topic of java. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "java-a-14",
+        "q": "How do you ensure Idempotency in a REST API?",
+        "a": "Idempotency means making the same API request multiple times results in the same server state as making it once. Safe methods (GET, PUT, DELETE) should naturally be idempotent. For POST (usually non-idempotent), you pass a unique `Idempotency-Key` header. The server checks a cache (like Redis) to see if that key was already processed; if so, it returns the cached response instead of recreating the resource."
       },
       {
-        "id": "java-a-49",
-        "q": "Sample advanced Question 49 about java?",
-        "a": "This is a dummy answer for a advanced question 49 related to the topic of java. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "java-a-15",
+        "q": "Explain the Spring Request Lifecycle (DispatcherServlet).",
+        "a": "1) Request hits `DispatcherServlet`. 2) It asks the `HandlerMapping` to find the correct Controller method. 3) The Controller processes the request and returns a Model and View name. 4) The `ViewResolver` resolves the physical view (e.g., Thymeleaf template). 5) The view renders the model and returns the response. (For REST APIs, `@ResponseBody` bypasses the ViewResolver and serializes directly to JSON via HttpMessageConverters)."
       },
       {
-        "id": "java-a-50",
-        "q": "Sample advanced Question 50 about java?",
-        "a": "This is a dummy answer for a advanced question 50 related to the topic of java. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "java-a-16",
+        "q": "What are Virtual Threads (Project Loom) in Java 21?",
+        "a": "Historically, Java threads mapped 1:1 to OS threads, which are heavy and limit concurrency. Virtual Threads are lightweight, JVM-managed threads. Millions can run simultaneously. When a Virtual Thread hits a blocking I/O operation, the JVM unmounts it and runs another Virtual Thread on the underlying OS thread, bringing highly scalable, non-blocking concurrency without the complexity of reactive programming."
       }
     ]
   }

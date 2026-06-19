@@ -1,299 +1,271 @@
 {
   "seo": {
-    "title": "Top 50 Node.js Interview Questions 2026 | Backend Engineer Prep",
-    "description": "Master the top 50 Node.js interview questions for 2026. Covers event loop, streams, cluster, Express.js, async patterns, and performance optimization.",
+    "title": "Top 100+ Node.js Interview Questions & Answers (2026)",
+    "description": "Master your backend Node.js interview. Covers event loop, streams, express, microservices architecture, and V8 performance.",
     "slug": "node-js",
-    "keywords": "node.js interview questions 2026, nodejs interview, express.js interview questions, javascript backend interview, node event loop interview"
+    "keywords": "nodejs interview questions, backend interview, node.js express questions, node event loop"
   },
   "hero": {
-    "title": "Node.js Interview Questions 2026",
-    "description": "Complete Node.js interview preparation for backend engineers. Covers the runtime internals, async patterns, REST API design, and production performance optimization.",
-    "count": 50,
-    "topic": "Backend",
-    "difficulty": "Intermediate to Advanced"
+    "title": "Node.js Interview Questions",
+    "description": "50 real-world Node.js interview questions, broken down by difficulty level for backend developers.",
+    "count": 50
   },
-  "categories": [
-    {
-      "name": "Category 1 - NODE-JS",
-      "questions": [
-        {
-          "q": "Sample Question 1 about node-js?",
-          "a": "This is a dummy answer for question 1 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "node-js-q-1"
-        },
-        {
-          "q": "Sample Question 2 about node-js?",
-          "a": "This is a dummy answer for question 2 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "node-js-q-2"
-        },
-        {
-          "q": "Sample Question 3 about node-js?",
-          "a": "This is a dummy answer for question 3 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "node-js-q-3"
-        },
-        {
-          "q": "Sample Question 4 about node-js?",
-          "a": "This is a dummy answer for question 4 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "node-js-q-4"
-        },
-        {
-          "q": "Sample Question 5 about node-js?",
-          "a": "This is a dummy answer for question 5 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "node-js-q-5"
-        },
-        {
-          "q": "Sample Question 6 about node-js?",
-          "a": "This is a dummy answer for question 6 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "node-js-q-6"
-        },
-        {
-          "q": "Sample Question 7 about node-js?",
-          "a": "This is a dummy answer for question 7 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "node-js-q-7"
-        },
-        {
-          "q": "Sample Question 8 about node-js?",
-          "a": "This is a dummy answer for question 8 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "node-js-q-8"
-        },
-        {
-          "q": "Sample Question 9 about node-js?",
-          "a": "This is a dummy answer for question 9 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "node-js-q-9"
-        },
-        {
-          "q": "Sample Question 10 about node-js?",
-          "a": "This is a dummy answer for question 10 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "node-js-q-10"
-        }
-      ]
-    },
-    {
-      "name": "Category 2 - NODE-JS",
-      "questions": [
-        {
-          "q": "Sample Question 11 about node-js?",
-          "a": "This is a dummy answer for question 11 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "node-js-q-11"
-        },
-        {
-          "q": "Sample Question 12 about node-js?",
-          "a": "This is a dummy answer for question 12 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "node-js-q-12"
-        },
-        {
-          "q": "Sample Question 13 about node-js?",
-          "a": "This is a dummy answer for question 13 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "node-js-q-13"
-        },
-        {
-          "q": "Sample Question 14 about node-js?",
-          "a": "This is a dummy answer for question 14 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "node-js-q-14"
-        },
-        {
-          "q": "Sample Question 15 about node-js?",
-          "a": "This is a dummy answer for question 15 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "node-js-q-15"
-        },
-        {
-          "q": "Sample Question 16 about node-js?",
-          "a": "This is a dummy answer for question 16 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "node-js-q-16"
-        },
-        {
-          "q": "Sample Question 17 about node-js?",
-          "a": "This is a dummy answer for question 17 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "node-js-q-17"
-        },
-        {
-          "q": "Sample Question 18 about node-js?",
-          "a": "This is a dummy answer for question 18 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "node-js-q-18"
-        },
-        {
-          "q": "Sample Question 19 about node-js?",
-          "a": "This is a dummy answer for question 19 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "node-js-q-19"
-        },
-        {
-          "q": "Sample Question 20 about node-js?",
-          "a": "This is a dummy answer for question 20 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "node-js-q-20"
-        }
-      ]
-    },
-    {
-      "name": "Category 3 - NODE-JS",
-      "questions": [
-        {
-          "q": "Sample Question 21 about node-js?",
-          "a": "This is a dummy answer for question 21 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "node-js-q-21"
-        },
-        {
-          "q": "Sample Question 22 about node-js?",
-          "a": "This is a dummy answer for question 22 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "node-js-q-22"
-        },
-        {
-          "q": "Sample Question 23 about node-js?",
-          "a": "This is a dummy answer for question 23 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "node-js-q-23"
-        },
-        {
-          "q": "Sample Question 24 about node-js?",
-          "a": "This is a dummy answer for question 24 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "node-js-q-24"
-        },
-        {
-          "q": "Sample Question 25 about node-js?",
-          "a": "This is a dummy answer for question 25 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "node-js-q-25"
-        },
-        {
-          "q": "Sample Question 26 about node-js?",
-          "a": "This is a dummy answer for question 26 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "node-js-q-26"
-        },
-        {
-          "q": "Sample Question 27 about node-js?",
-          "a": "This is a dummy answer for question 27 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "node-js-q-27"
-        },
-        {
-          "q": "Sample Question 28 about node-js?",
-          "a": "This is a dummy answer for question 28 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "node-js-q-28"
-        },
-        {
-          "q": "Sample Question 29 about node-js?",
-          "a": "This is a dummy answer for question 29 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "node-js-q-29"
-        },
-        {
-          "q": "Sample Question 30 about node-js?",
-          "a": "This is a dummy answer for question 30 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "node-js-q-30"
-        }
-      ]
-    },
-    {
-      "name": "Category 4 - NODE-JS",
-      "questions": [
-        {
-          "q": "Sample Question 31 about node-js?",
-          "a": "This is a dummy answer for question 31 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "node-js-q-31"
-        },
-        {
-          "q": "Sample Question 32 about node-js?",
-          "a": "This is a dummy answer for question 32 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "node-js-q-32"
-        },
-        {
-          "q": "Sample Question 33 about node-js?",
-          "a": "This is a dummy answer for question 33 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "node-js-q-33"
-        },
-        {
-          "q": "Sample Question 34 about node-js?",
-          "a": "This is a dummy answer for question 34 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "node-js-q-34"
-        },
-        {
-          "q": "Sample Question 35 about node-js?",
-          "a": "This is a dummy answer for question 35 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "node-js-q-35"
-        },
-        {
-          "q": "Sample Question 36 about node-js?",
-          "a": "This is a dummy answer for question 36 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "node-js-q-36"
-        },
-        {
-          "q": "Sample Question 37 about node-js?",
-          "a": "This is a dummy answer for question 37 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "node-js-q-37"
-        },
-        {
-          "q": "Sample Question 38 about node-js?",
-          "a": "This is a dummy answer for question 38 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "node-js-q-38"
-        },
-        {
-          "q": "Sample Question 39 about node-js?",
-          "a": "This is a dummy answer for question 39 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "node-js-q-39"
-        },
-        {
-          "q": "Sample Question 40 about node-js?",
-          "a": "This is a dummy answer for question 40 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "node-js-q-40"
-        }
-      ]
-    },
-    {
-      "name": "Category 5 - NODE-JS",
-      "questions": [
-        {
-          "q": "Sample Question 41 about node-js?",
-          "a": "This is a dummy answer for question 41 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "node-js-q-41"
-        },
-        {
-          "q": "Sample Question 42 about node-js?",
-          "a": "This is a dummy answer for question 42 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "node-js-q-42"
-        },
-        {
-          "q": "Sample Question 43 about node-js?",
-          "a": "This is a dummy answer for question 43 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "node-js-q-43"
-        },
-        {
-          "q": "Sample Question 44 about node-js?",
-          "a": "This is a dummy answer for question 44 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "node-js-q-44"
-        },
-        {
-          "q": "Sample Question 45 about node-js?",
-          "a": "This is a dummy answer for question 45 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "node-js-q-45"
-        },
-        {
-          "q": "Sample Question 46 about node-js?",
-          "a": "This is a dummy answer for question 46 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "node-js-q-46"
-        },
-        {
-          "q": "Sample Question 47 about node-js?",
-          "a": "This is a dummy answer for question 47 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "node-js-q-47"
-        },
-        {
-          "q": "Sample Question 48 about node-js?",
-          "a": "This is a dummy answer for question 48 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "node-js-q-48"
-        },
-        {
-          "q": "Sample Question 49 about node-js?",
-          "a": "This is a dummy answer for question 49 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "node-js-q-49"
-        },
-        {
-          "q": "Sample Question 50 about node-js?",
-          "a": "This is a dummy answer for question 50 related to the topic of node-js. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "node-js-q-50"
-        }
-      ]
-    }
-  ],
-  "topTips": [
-    "The event loop is the most important concept — draw it on paper until you can explain it clearly.",
-    "Know the difference between synchronous and asynchronous file operations and when to use each.",
-    "Practice rate limiting, input validation (Joi/Zod), and JWT auth — these come up in every senior Node.js interview.",
-    "Know how to cluster Node.js applications to use multiple CPU cores.",
-    "Be prepared to write an Express middleware from scratch in an interview."
-  ]
+  "questions": {
+    "beginner": [
+      {
+        "id": "node-b-1",
+        "q": "What is Node.js and how does it differ from traditional web servers?",
+        "a": "Node.js is an open-source, cross-platform runtime environment built on Chrome's V8 JavaScript engine. It allows developers to run JavaScript on the server side. Unlike traditional thread-based servers (like Apache) which spawn a new thread for each request, Node.js operates on a single-thread, non-blocking, event-driven architecture, making it highly efficient for I/O-heavy operations."
+      },
+      {
+        "id": "node-b-2",
+        "q": "What is npm?",
+        "a": "NPM (Node Package Manager) is the default package manager for Node.js. It consists of a command-line client (`npm`) and an online database of public and paid-for private packages. It manages dependencies, versioning, and project scripts, encapsulated within the `package.json` file."
+      },
+      {
+        "id": "node-b-3",
+        "q": "What is the `package.json` file?",
+        "a": "`package.json` is the manifest file of any Node.js project. It contains metadata about the project (name, version, author), defines scripts to run commands (like `npm start`), and lists all the dependencies (and devDependencies) required to run and build the application."
+      },
+      {
+        "id": "node-b-4",
+        "q": "What is the difference between `dependencies` and `devDependencies`?",
+        "a": "`dependencies` are packages required for the application to run in production (e.g., Express, Mongoose). `devDependencies` are packages needed only during development and testing (e.g., Jest, Nodemon, ESLint). When deploying to production (`npm install --production`), devDependencies are not installed."
+      },
+      {
+        "id": "node-b-5",
+        "q": "Explain `require()` vs `import()` in Node.js.",
+        "a": "`require()` is synchronous and resolves modules at runtime using the CommonJS module system (the traditional Node.js standard). `import()` is asynchronous and part of the newer ES Modules (ESM) standard introduced in ES6. Node.js now supports ESM natively if you set `\"type\": \"module\"` in `package.json`."
+      },
+      {
+        "id": "node-b-6",
+        "q": "What are core modules in Node.js?",
+        "a": "Core modules are lightweight, built-in modules compiled into the Node.js binary. They can be loaded without installing any third-party packages. Examples include `fs` (File System), `http` (Networking), `path` (File paths), `crypto` (Cryptography), and `events` (Event Emitters)."
+      },
+      {
+        "id": "node-b-7",
+        "q": "What is Express.js?",
+        "a": "Express.js is a minimal and flexible Node.js web application framework. It provides a robust set of features for web and mobile applications, simplifying the creation of APIs, handling HTTP requests, defining routes, and managing middleware."
+      },
+      {
+        "id": "node-b-8",
+        "q": "What is middleware in Express.js?",
+        "a": "Middleware functions are functions that have access to the request object (`req`), the response object (`res`), and the `next` middleware function in the application's request-response cycle. They can execute any code, make changes to req/res objects, end the cycle, or call `next()` to pass control to the next middleware."
+      },
+      {
+        "id": "node-b-9",
+        "q": "What is an Event Emitter?",
+        "a": "The `EventEmitter` class in the `events` core module allows objects to emit named events that cause registered listeners (callback functions) to be called. It is the core concept behind Node's event-driven architecture. For example, an HTTP server acts as an EventEmitter that emits a 'request' event when a new connection is made."
+      },
+      {
+        "id": "node-b-10",
+        "q": "Explain the `fs` module. Synchronous vs Asynchronous.",
+        "a": "The `fs` (File System) module interacts with the OS to read, write, and manipulate files. It provides both synchronous (`fs.readFileSync()`) and asynchronous (`fs.readFile()`) methods. Synchronous methods block the main thread until the file operation completes, which ruins Node's concurrency. Asynchronous methods use callbacks or promises and do not block the thread."
+      },
+      {
+        "id": "node-b-11",
+        "q": "What is Nodemon?",
+        "a": "Nodemon is a utility that monitors for any changes in your source code and automatically restarts your server. It is strictly a development tool designed to drastically improve the developer experience by eliminating the need to manually stop and restart the Node.js process."
+      },
+      {
+        "id": "node-b-12",
+        "q": "What is the global object in Node.js?",
+        "a": "In browsers, the global object is `window`. In Node.js, it is `global`. Variables declared with `var` at the top level are not added to the `global` object (unlike in browsers) because Node.js wraps files in module wrappers. The `global` object contains properties like `process`, `__dirname`, `__filename`, `setTimeout`, and `console`."
+      },
+      {
+        "id": "node-b-13",
+        "q": "What is `process.env`?",
+        "a": "`process.env` is an object containing the user environment variables. In Node.js, it is commonly used to store configuration secrets like database URIs, API keys, and port numbers via a `.env` file (parsed using packages like `dotenv`), keeping sensitive data out of source code."
+      },
+      {
+        "id": "node-b-14",
+        "q": "How do you handle errors in Node.js callbacks?",
+        "a": "Node.js follows an 'error-first callback' convention. The first argument of a callback function is always reserved for an error object. If the operation succeeds, the first argument is `null` and the result is passed as the second argument. Example: `fs.readFile('path', (err, data) => { if (err) throw err; })`."
+      },
+      {
+        "id": "node-b-15",
+        "q": "What is REPL?",
+        "a": "REPL stands for Read Eval Print Loop. It represents a computer environment like a Windows console or Unix/Linux shell where a command is entered and the system responds with an output in an interactive mode. Typing `node` in the terminal opens the Node.js REPL."
+      },
+      {
+        "id": "node-b-16",
+        "q": "What is the purpose of `module.exports`?",
+        "a": "`module.exports` is the object that is actually returned as the result of a `require` call. It allows you to expose functions, objects, or variables from one file so they can be imported and used in other files, forming the basis of the CommonJS module system."
+      },
+      {
+        "id": "node-b-17",
+        "q": "What is semantic versioning (SemVer)?",
+        "a": "SemVer is the versioning system used by npm. Versions are written as MAJOR.MINOR.PATCH (e.g., 1.4.2). PATCH increments for backward-compatible bug fixes. MINOR increments for backward-compatible new features. MAJOR increments for breaking, non-backward-compatible changes. The `^` and `~` symbols in `package.json` dictate update behavior."
+      }
+    ],
+    "intermediate": [
+      {
+        "id": "node-i-1",
+        "q": "Explain the Node.js Event Loop.",
+        "a": "The Event Loop is what allows Node.js to perform non-blocking I/O operations despite being single-threaded. It offloads operations to the system kernel whenever possible. It consists of several phases: Timers (executes setTimeout/setInterval callbacks), Pending Callbacks, Idle/Prepare, Poll (retrieves new I/O events), Check (executes setImmediate callbacks), and Close Callbacks. It loops continuously as long as there are active tasks."
+      },
+      {
+        "id": "node-i-2",
+        "q": "What is `process.nextTick()` and how does it differ from `setImmediate()`?",
+        "a": "`process.nextTick()` adds a callback to the 'next tick queue', which is processed *before* the Event Loop continues to the next phase, pausing all I/O. `setImmediate()` places a callback in the Check phase of the Event Loop, executing *after* the current Poll phase completes. Use `nextTick` for recursive/synchronous-looking code, but be careful not to starve the event loop."
+      },
+      {
+        "id": "node-i-3",
+        "q": "What are Streams in Node.js?",
+        "a": "Streams are objects that let you read data from a source or write data to a destination in continuous, chunked fashion. Instead of loading an entire massive file into RAM (which crashes the server), streams process data piece by piece. The four types of streams are Readable, Writable, Duplex (both read/write), and Transform (modify data as it is written and read)."
+      },
+      {
+        "id": "node-i-4",
+        "q": "Explain the Buffer class.",
+        "a": "The `Buffer` class provides a way to handle raw binary data outside the V8 engine heap memory. Because raw JavaScript strings are Unicode, they aren't meant for binary data (like images or TCP streams). Buffers allocate a fixed amount of raw memory on the system to efficiently process streams of binary data."
+      },
+      {
+        "id": "node-i-5",
+        "q": "What is the cluster module?",
+        "a": "Node.js runs in a single thread, utilizing only one CPU core. The `cluster` module allows you to create child processes (workers) that run simultaneously and share the same server port. This allows a Node.js application to take full advantage of multi-core systems, effectively multiplying processing power."
+      },
+      {
+        "id": "node-i-6",
+        "q": "How do child processes work in Node.js?",
+        "a": "The `child_process` module provides the ability to spawn new processes. `spawn` launches a new process with a stream interface. `exec` runs a command in a shell and buffers the output. `fork` is a special case of `spawn` specifically used to spawn new Node.js processes, establishing an IPC (Inter-Process Communication) channel to send messages between parent and child."
+      },
+      {
+        "id": "node-i-7",
+        "q": "What is CORS and how do you handle it in Node.js?",
+        "a": "Cross-Origin Resource Sharing (CORS) is a browser security feature that blocks HTTP requests made from a different domain, protocol, or port. In an Express app, you handle this using the `cors` middleware package. It injects `Access-Control-Allow-Origin` and related HTTP headers into responses, instructing the browser to permit the request."
+      },
+      {
+        "id": "node-i-8",
+        "q": "How does JSON Web Token (JWT) authentication work?",
+        "a": "JWT is a stateless authentication mechanism. Upon login, the server verifies credentials and signs a JSON payload containing user data using a secret key. This token is sent to the client. The client attaches this token in the `Authorization` header on subsequent requests. The server verifies the signature locally without querying the database, ensuring scalability."
+      },
+      {
+        "id": "node-i-9",
+        "q": "What are WebSockets and how do they differ from HTTP?",
+        "a": "HTTP is unidirectional (client requests, server responds) and stateless. WebSockets provide a full-duplex, persistent, bidirectional communication channel over a single TCP connection. Once the handshake is established, both client and server can push real-time data to each other instantly. Libraries like `Socket.io` implement WebSockets in Node.js."
+      },
+      {
+        "id": "node-i-10",
+        "q": "How do you handle unhandled promise rejections or uncaught exceptions in Node?",
+        "a": "Unhandled exceptions crash the Node process. You can listen for the `uncaughtException` event on the `process` object. However, the application state might be corrupted, so best practice is to log the error and `process.exit(1)`. For promises, listen to the `unhandledRejection` event. In modern Node, unhandled promise rejections will also crash the process."
+      },
+      {
+        "id": "node-i-11",
+        "q": "What is the difference between encryption and hashing?",
+        "a": "Hashing (e.g., `bcrypt`, `SHA-256`) is a one-way mathematical function. It converts data into a fixed-length string, and it cannot be reversed. It's used for storing passwords safely. Encryption (e.g., `AES-256`) is two-way. Data is encrypted using a key, and can be decrypted back to its original form using the same (or public/private) key."
+      },
+      {
+        "id": "node-i-12",
+        "q": "Explain the concept of Rate Limiting.",
+        "a": "Rate limiting restricts the number of requests a client (based on IP or user ID) can make to an API within a specified timeframe. It protects the server from DDoS attacks, brute force login attempts, and resource exhaustion. In Express, it is commonly implemented using middleware like `express-rate-limit` backed by Redis."
+      },
+      {
+        "id": "node-i-13",
+        "q": "What is the purpose of a reverse proxy like NGINX in front of Node.js?",
+        "a": "Node.js is great at executing logic but poor at serving static files or handling thousands of idle connections. A reverse proxy like NGINX sits in front, handles SSL termination, serves static assets efficiently, compresses payloads (Gzip), and load-balances requests across multiple Node.js instances."
+      },
+      {
+        "id": "node-i-14",
+        "q": "How do you upload files in Express?",
+        "a": "Express cannot natively parse `multipart/form-data` requests, which are used for file uploads. You must use middleware like `multer` or `formidable`. `multer` parses the request, extracts the binary file data, saves it to disk (or memory), and attaches metadata to the `req.file` object."
+      },
+      {
+        "id": "node-i-15",
+        "q": "What is the difference between `SQL` and `NoSQL` databases in the context of Node.js?",
+        "a": "SQL (PostgreSQL, MySQL) relies on strict schemas and relational tables. Use packages like `pg` or ORMs like `Prisma` or `Sequelize`. NoSQL (MongoDB) uses flexible, JSON-like document structures, which maps perfectly to JavaScript objects. Mongoose is the standard ODM for MongoDB in Node.js."
+      },
+      {
+        "id": "node-i-16",
+        "q": "What is the `__dirname` variable?",
+        "a": "In CommonJS modules, `__dirname` is an automatically provided global-like variable that holds the absolute path of the directory containing the currently executing file. It is essential when constructing absolute file paths using `path.join(__dirname, 'file.txt')` to avoid relative path resolution bugs."
+      },
+      {
+        "id": "node-i-17",
+        "q": "How does PM2 help in production?",
+        "a": "PM2 is a production process manager for Node.js. It ensures your application stays online indefinitely by automatically restarting it if it crashes. It also provides zero-downtime reloads, built-in load balancing (cluster mode), and comprehensive log management."
+      }
+    ],
+    "advanced": [
+      {
+        "id": "node-a-1",
+        "q": "Explain the libuv architecture and its role in Node.js.",
+        "a": "libuv is a multi-platform C library that provides Node.js with its non-blocking I/O and Event Loop. While V8 executes JS, libuv handles the OS-level operations (file systems, networking). For tasks that cannot be non-blocking at the OS level (like DNS lookups or File I/O), libuv utilizes a hidden 'Thread Pool' (default size of 4) to execute them asynchronously without blocking the main thread."
+      },
+      {
+        "id": "node-a-2",
+        "q": "What is backpressure in Node.js Streams?",
+        "a": "Backpressure occurs when data is being read from a Readable stream faster than it can be processed or written to a Writable stream. If unchecked, the application will buffer the excess data in RAM until it crashes (OOM). Using `readableStream.pipe(writableStream)` automatically handles backpressure by pausing the readable stream until the writable stream's internal buffer drains."
+      },
+      {
+        "id": "node-a-3",
+        "q": "How would you optimize a CPU-intensive task (like image processing) in Node.js?",
+        "a": "Because Node is single-threaded, a heavy CPU task will block the Event Loop, halting all incoming requests. To optimize, you must move the task off the main thread. You can use the `worker_threads` module to execute JS in parallel threads (sharing memory), or use `child_process.fork()` to spin up a separate Node process entirely."
+      },
+      {
+        "id": "node-a-4",
+        "q": "Describe the security risks of Prototype Pollution in Node.js.",
+        "a": "Prototype Pollution occurs when a vulnerability allows an attacker to inject properties into the base `Object.prototype`. Since almost all JS objects inherit from `Object.prototype`, the attacker can alter the behavior of the entire application. It usually occurs through unsafe recursive merge operations (`merge(target, payload)` or `JSON.parse`). It can lead to DoS or Remote Code Execution."
+      },
+      {
+        "id": "node-a-5",
+        "q": "What are the architectural differences between Monolithic and Microservices backends?",
+        "a": "A Monolith is a single unified codebase where all business logic, routing, and DB access are tightly coupled. It's easy to deploy but hard to scale. Microservices break the application into small, independent services (e.g., Auth Service, Payment Service) communicating via HTTP or message brokers (RabbitMQ, Kafka). They scale independently and allow polyglot programming, but introduce immense infrastructure complexity."
+      },
+      {
+        "id": "node-a-6",
+        "q": "How does Node.js handle memory limits, and how can you increase them?",
+        "a": "By default, V8 sets a heap memory limit (approx 1.4GB on 64-bit systems). If an application exceeds this, it crashes with a 'heap out of memory' error. You can manually increase this limit when starting the node process by using the flag `--max-old-space-size=SIZE_IN_MB` (e.g., `node --max-old-space-size=4096 app.js`)."
+      },
+      {
+        "id": "node-a-7",
+        "q": "Explain the concept of 'Graceful Shutdown'.",
+        "a": "When a Node server receives a kill signal (SIGINT/SIGTERM), abruptly terminating drops active requests and corrupts DB transactions. Graceful shutdown means catching the signal, refusing new incoming requests, allowing existing requests to finish, safely closing database connections, and finally executing `process.exit(0)`."
+      },
+      {
+        "id": "node-a-8",
+        "q": "What is GraphQL and how does it compare to REST?",
+        "a": "REST uses multiple endpoints returning fixed data structures, leading to over-fetching (getting too much data) or under-fetching (requiring N+1 requests). GraphQL is a query language utilizing a single endpoint. The client specifies exactly what fields it needs in the query, and the server resolves and returns precisely that data. It requires setting up schemas and resolvers."
+      },
+      {
+        "id": "node-a-9",
+        "q": "How do you implement caching in a Node.js API?",
+        "a": "Caching prevents the server from querying the database for identical requests. In-memory caching (like `node-cache`) stores data in the Node process RAM, but is volatile and doesn't share state across a cluster. Distributed caching uses Redis. A middleware checks Redis for a cached response; if found, it returns it instantly. If not, it hits the DB, saves the result to Redis with a Time-To-Live (TTL), and responds."
+      },
+      {
+        "id": "node-a-10",
+        "q": "Explain the Actor model vs message brokers (Kafka/RabbitMQ).",
+        "a": "Message brokers enable asynchronous communication between microservices by queuing messages. RabbitMQ is traditional message queuing (work queues, pub/sub). Kafka is a distributed event streaming platform built for massive throughput and event replay. The Actor model (less common in Node, standard in Erlang/Akka) treats 'Actors' as stateful entities that communicate purely by sending immutable messages to each other without shared locks."
+      },
+      {
+        "id": "node-a-11",
+        "q": "What is a Memory Leak in Node.js and how do you trace it?",
+        "a": "A memory leak happens when objects are no longer needed but are still referenced by a global variable or active closure, preventing Garbage Collection. The RAM footprint grows until the server crashes. To trace it, run Node with the `--inspect` flag, connect Chrome DevTools, take Heap Snapshots during normal operation and under load, and compare them to find retaining paths."
+      },
+      {
+        "id": "node-a-12",
+        "q": "How do you secure a Node.js application?",
+        "a": "1) Use HTTPS. 2) Set secure HTTP headers using `Helmet`. 3) Prevent SQL/NoSQL injection using ORMs/parameterized queries. 4) Use Rate Limiting to prevent brute-force attacks. 5) Sanitize and validate all incoming inputs (`express-validator`). 6) Implement strict CORS. 7) Use secure cookie flags (HttpOnly, Secure, SameSite) or short-lived JWTs. 8) Audit dependencies via `npm audit`."
+      },
+      {
+        "id": "node-a-13",
+        "q": "What is the N+1 Query Problem in ORMs?",
+        "a": "The N+1 problem occurs when an ORM queries the database for a list of items (1 query), and then executes an additional query for each item to fetch its associated nested data (N queries). This destroys database performance. The solution is using Eager Loading (e.g., `populate` in Mongoose, `include` in Prisma) or the DataLoader pattern (in GraphQL) to batch and resolve relationships in a single `IN` query."
+      },
+      {
+        "id": "node-a-14",
+        "q": "Explain Server-Sent Events (SSE).",
+        "a": "SSE is a standard allowing servers to push real-time updates to web clients over a single, long-lived HTTP connection. Unlike WebSockets (which are bidirectional), SSE is strictly unidirectional (server to client). It's simpler to implement, works natively over HTTP/2, and is perfect for real-time dashboards or stock tickers where the client doesn't need to push data back constantly."
+      },
+      {
+        "id": "node-a-15",
+        "q": "How do transaction mechanisms work in databases via Node?",
+        "a": "A transaction groups a series of operations into a single logical unit. It follows ACID principles. If any operation fails, the transaction is 'rolled back', undoing all partial changes. If all succeed, it is 'committed'. In Node, using tools like Prisma or raw SQL, you wrap queries inside a transaction callback to prevent partial data corruption (e.g., deducting money from user A, but failing to add it to user B)."
+      },
+      {
+        "id": "node-a-16",
+        "q": "What is the Event Loop lag and how do you monitor it?",
+        "a": "Event Loop lag is the delay between when a callback is scheduled to execute and when it actually executes. High lag means synchronous code is blocking the thread, degrading API response times. You monitor it using APM tools (Datadog, New Relic) or by writing a simple script that calls `setTimeout` and measures the difference between the expected execution time and the actual `Date.now()`."
+      }
+    ]
+  }
 }

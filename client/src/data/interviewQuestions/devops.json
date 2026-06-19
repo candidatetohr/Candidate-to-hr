@@ -1,299 +1,271 @@
 {
   "seo": {
-    "title": "Top 50 DevOps Interview Questions 2026 | CI/CD & Kubernetes Prep",
-    "description": "Master the top 50 DevOps interview questions for 2026. Covers Docker, Kubernetes, CI/CD pipelines, Terraform, monitoring, and DevSecOps with detailed answers.",
+    "title": "Top 100+ DevOps Interview Questions & Answers (2026)",
+    "description": "Crack your DevOps interview. Covers CI/CD, Docker, Jenkins, Infrastructure as Code, Linux fundamentals, and Monitoring.",
     "slug": "devops",
-    "keywords": "devops interview questions 2026, kubernetes interview questions, docker interview, CI/CD interview, terraform interview questions"
+    "keywords": "devops interview questions, sre interview, ci/cd questions, site reliability engineer"
   },
   "hero": {
-    "title": "DevOps Interview Questions 2026",
-    "description": "Comprehensive DevOps interview preparation covering containers, orchestration, infrastructure as code, CI/CD pipelines, and monitoring — for platform engineers and SREs.",
-    "count": 50,
-    "topic": "DevOps",
-    "difficulty": "Intermediate to Advanced"
+    "title": "DevOps Interview Questions",
+    "description": "50 real-world DevOps questions covering continuous integration, containers, infrastructure automation, and system administration.",
+    "count": 50
   },
-  "categories": [
-    {
-      "name": "Category 1 - DEVOPS",
-      "questions": [
-        {
-          "q": "Sample Question 1 about devops?",
-          "a": "This is a dummy answer for question 1 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "devops-q-1"
-        },
-        {
-          "q": "Sample Question 2 about devops?",
-          "a": "This is a dummy answer for question 2 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "devops-q-2"
-        },
-        {
-          "q": "Sample Question 3 about devops?",
-          "a": "This is a dummy answer for question 3 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "devops-q-3"
-        },
-        {
-          "q": "Sample Question 4 about devops?",
-          "a": "This is a dummy answer for question 4 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "devops-q-4"
-        },
-        {
-          "q": "Sample Question 5 about devops?",
-          "a": "This is a dummy answer for question 5 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "devops-q-5"
-        },
-        {
-          "q": "Sample Question 6 about devops?",
-          "a": "This is a dummy answer for question 6 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "devops-q-6"
-        },
-        {
-          "q": "Sample Question 7 about devops?",
-          "a": "This is a dummy answer for question 7 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "devops-q-7"
-        },
-        {
-          "q": "Sample Question 8 about devops?",
-          "a": "This is a dummy answer for question 8 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "devops-q-8"
-        },
-        {
-          "q": "Sample Question 9 about devops?",
-          "a": "This is a dummy answer for question 9 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "devops-q-9"
-        },
-        {
-          "q": "Sample Question 10 about devops?",
-          "a": "This is a dummy answer for question 10 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "devops-q-10"
-        }
-      ]
-    },
-    {
-      "name": "Category 2 - DEVOPS",
-      "questions": [
-        {
-          "q": "Sample Question 11 about devops?",
-          "a": "This is a dummy answer for question 11 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "devops-q-11"
-        },
-        {
-          "q": "Sample Question 12 about devops?",
-          "a": "This is a dummy answer for question 12 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "devops-q-12"
-        },
-        {
-          "q": "Sample Question 13 about devops?",
-          "a": "This is a dummy answer for question 13 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "devops-q-13"
-        },
-        {
-          "q": "Sample Question 14 about devops?",
-          "a": "This is a dummy answer for question 14 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "devops-q-14"
-        },
-        {
-          "q": "Sample Question 15 about devops?",
-          "a": "This is a dummy answer for question 15 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "devops-q-15"
-        },
-        {
-          "q": "Sample Question 16 about devops?",
-          "a": "This is a dummy answer for question 16 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "devops-q-16"
-        },
-        {
-          "q": "Sample Question 17 about devops?",
-          "a": "This is a dummy answer for question 17 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "devops-q-17"
-        },
-        {
-          "q": "Sample Question 18 about devops?",
-          "a": "This is a dummy answer for question 18 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "devops-q-18"
-        },
-        {
-          "q": "Sample Question 19 about devops?",
-          "a": "This is a dummy answer for question 19 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "devops-q-19"
-        },
-        {
-          "q": "Sample Question 20 about devops?",
-          "a": "This is a dummy answer for question 20 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "devops-q-20"
-        }
-      ]
-    },
-    {
-      "name": "Category 3 - DEVOPS",
-      "questions": [
-        {
-          "q": "Sample Question 21 about devops?",
-          "a": "This is a dummy answer for question 21 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "devops-q-21"
-        },
-        {
-          "q": "Sample Question 22 about devops?",
-          "a": "This is a dummy answer for question 22 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "devops-q-22"
-        },
-        {
-          "q": "Sample Question 23 about devops?",
-          "a": "This is a dummy answer for question 23 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "devops-q-23"
-        },
-        {
-          "q": "Sample Question 24 about devops?",
-          "a": "This is a dummy answer for question 24 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "devops-q-24"
-        },
-        {
-          "q": "Sample Question 25 about devops?",
-          "a": "This is a dummy answer for question 25 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "devops-q-25"
-        },
-        {
-          "q": "Sample Question 26 about devops?",
-          "a": "This is a dummy answer for question 26 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "devops-q-26"
-        },
-        {
-          "q": "Sample Question 27 about devops?",
-          "a": "This is a dummy answer for question 27 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "devops-q-27"
-        },
-        {
-          "q": "Sample Question 28 about devops?",
-          "a": "This is a dummy answer for question 28 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "devops-q-28"
-        },
-        {
-          "q": "Sample Question 29 about devops?",
-          "a": "This is a dummy answer for question 29 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "devops-q-29"
-        },
-        {
-          "q": "Sample Question 30 about devops?",
-          "a": "This is a dummy answer for question 30 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "devops-q-30"
-        }
-      ]
-    },
-    {
-      "name": "Category 4 - DEVOPS",
-      "questions": [
-        {
-          "q": "Sample Question 31 about devops?",
-          "a": "This is a dummy answer for question 31 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "devops-q-31"
-        },
-        {
-          "q": "Sample Question 32 about devops?",
-          "a": "This is a dummy answer for question 32 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "devops-q-32"
-        },
-        {
-          "q": "Sample Question 33 about devops?",
-          "a": "This is a dummy answer for question 33 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "devops-q-33"
-        },
-        {
-          "q": "Sample Question 34 about devops?",
-          "a": "This is a dummy answer for question 34 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "devops-q-34"
-        },
-        {
-          "q": "Sample Question 35 about devops?",
-          "a": "This is a dummy answer for question 35 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "devops-q-35"
-        },
-        {
-          "q": "Sample Question 36 about devops?",
-          "a": "This is a dummy answer for question 36 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "devops-q-36"
-        },
-        {
-          "q": "Sample Question 37 about devops?",
-          "a": "This is a dummy answer for question 37 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "devops-q-37"
-        },
-        {
-          "q": "Sample Question 38 about devops?",
-          "a": "This is a dummy answer for question 38 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "devops-q-38"
-        },
-        {
-          "q": "Sample Question 39 about devops?",
-          "a": "This is a dummy answer for question 39 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "devops-q-39"
-        },
-        {
-          "q": "Sample Question 40 about devops?",
-          "a": "This is a dummy answer for question 40 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "devops-q-40"
-        }
-      ]
-    },
-    {
-      "name": "Category 5 - DEVOPS",
-      "questions": [
-        {
-          "q": "Sample Question 41 about devops?",
-          "a": "This is a dummy answer for question 41 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "devops-q-41"
-        },
-        {
-          "q": "Sample Question 42 about devops?",
-          "a": "This is a dummy answer for question 42 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "devops-q-42"
-        },
-        {
-          "q": "Sample Question 43 about devops?",
-          "a": "This is a dummy answer for question 43 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "devops-q-43"
-        },
-        {
-          "q": "Sample Question 44 about devops?",
-          "a": "This is a dummy answer for question 44 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "devops-q-44"
-        },
-        {
-          "q": "Sample Question 45 about devops?",
-          "a": "This is a dummy answer for question 45 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "devops-q-45"
-        },
-        {
-          "q": "Sample Question 46 about devops?",
-          "a": "This is a dummy answer for question 46 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "devops-q-46"
-        },
-        {
-          "q": "Sample Question 47 about devops?",
-          "a": "This is a dummy answer for question 47 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "devops-q-47"
-        },
-        {
-          "q": "Sample Question 48 about devops?",
-          "a": "This is a dummy answer for question 48 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "devops-q-48"
-        },
-        {
-          "q": "Sample Question 49 about devops?",
-          "a": "This is a dummy answer for question 49 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "devops-q-49"
-        },
-        {
-          "q": "Sample Question 50 about devops?",
-          "a": "This is a dummy answer for question 50 related to the topic of devops. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "devops-q-50"
-        }
-      ]
-    }
-  ],
-  "topTips": [
-    "Know Kubernetes networking deeply: how a request travels from client → Ingress → Service → Pod.",
-    "Practice writing Dockerfiles that maximize layer caching.",
-    "Be able to explain what happens when a Kubernetes Pod crashes — the controller loop, restarts, CrashLoopBackOff.",
-    "Understand Terraform modules, remote state, and workspace concepts for senior interviews.",
-    "Know the 4 Golden Signals of SRE: Latency, Traffic, Errors, Saturation."
-  ]
+  "questions": {
+    "beginner": [
+      {
+        "id": "devops-b-1",
+        "q": "What is DevOps?",
+        "a": "DevOps is a set of practices, cultural philosophies, and tools that integrates and automates the processes between software development (Dev) and IT operations (Ops). The goal is to shorten the systems development life cycle and provide continuous delivery with high software quality."
+      },
+      {
+        "id": "devops-b-2",
+        "q": "What is Continuous Integration (CI)?",
+        "a": "CI is a software development practice where developers regularly merge their code changes into a central repository. Automated builds and tests are immediately run on the new code to quickly detect and locate integration errors."
+      },
+      {
+        "id": "devops-b-3",
+        "q": "What is Continuous Delivery vs Continuous Deployment (CD)?",
+        "a": "Continuous Delivery ensures that code changes are automatically built, tested, and prepared for a release to production, but the final deployment requires manual human approval. Continuous Deployment goes one step further: every change that passes the automated tests is automatically deployed to production without human intervention."
+      },
+      {
+        "id": "devops-b-4",
+        "q": "What is Git?",
+        "a": "Git is a distributed version control system designed to handle everything from small to very large projects with speed and efficiency. It allows multiple developers to work on the same codebase simultaneously, tracking changes and enabling branching and merging."
+      },
+      {
+        "id": "devops-b-5",
+        "q": "Explain the difference between `git merge` and `git rebase`.",
+        "a": "`git merge` takes the contents of a source branch and integrates it into a target branch, creating a new 'merge commit' that ties the histories together. `git rebase` moves the entire feature branch to begin on the tip of the master branch, rewriting commit history to create a clean, linear project history without merge commits."
+      },
+      {
+        "id": "devops-b-6",
+        "q": "What is Docker?",
+        "a": "Docker is an open-source platform that uses OS-level virtualization to deliver software in packages called containers. Containers bundle the application source code with all its dependencies (libraries, frameworks) into a single artifact, ensuring the application runs identically on any environment."
+      },
+      {
+        "id": "devops-b-7",
+        "q": "Difference between a Virtual Machine and a Docker Container?",
+        "a": "A Virtual Machine (VM) includes the application, dependencies, and a full, heavy guest Operating System, managed by a Hypervisor. A Docker Container includes the application and dependencies but shares the host machine's OS kernel. Containers are lightweight, start in milliseconds, and use vastly fewer resources than VMs."
+      },
+      {
+        "id": "devops-b-8",
+        "q": "What is a Dockerfile?",
+        "a": "A Dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image. Using `docker build`, Docker reads these instructions step-by-step to automatically generate a Docker Image."
+      },
+      {
+        "id": "devops-b-9",
+        "q": "What is Infrastructure as Code (IaC)?",
+        "a": "IaC is the process of managing and provisioning computing infrastructure (servers, networks, databases) through machine-readable definition files (code), rather than physical hardware configuration or interactive configuration tools (GUI). Terraform and Ansible are prime examples."
+      },
+      {
+        "id": "devops-b-10",
+        "q": "What is Jenkins?",
+        "a": "Jenkins is an open-source automation server built in Java. It helps automate the non-human parts of the software development process, primarily serving as the backbone for establishing Continuous Integration and Continuous Delivery (CI/CD) pipelines."
+      },
+      {
+        "id": "devops-b-11",
+        "q": "What is Linux?",
+        "a": "Linux is a free, open-source, monolithic kernel operating system. Because of its stability, security, and open-source nature, it is the foundational operating system for almost all servers, containers, and cloud environments used in DevOps."
+      },
+      {
+        "id": "devops-b-12",
+        "q": "Explain `chmod` and file permissions in Linux.",
+        "a": "`chmod` is a Linux command used to change the access permissions of file system objects. Permissions are divided into Read (4), Write (2), and Execute (1). They are applied to the User (owner), Group, and Others. For example, `chmod 755 script.sh` grants full access (7) to the owner, and read/execute (5) to group and others."
+      },
+      {
+        "id": "devops-b-13",
+        "q": "What does the `grep` command do?",
+        "a": "`grep` stands for Global Regular Expression Print. It is a command-line utility used to search for specific text patterns or regular expressions within files or streams of text (e.g., filtering log files for 'ERROR')."
+      },
+      {
+        "id": "devops-b-14",
+        "q": "What is SSH?",
+        "a": "Secure Shell (SSH) is a cryptographic network protocol for operating network services securely over an unsecured network. It is the standard method for system administrators to securely log into remote Linux servers to execute terminal commands."
+      },
+      {
+        "id": "devops-b-15",
+        "q": "What is the difference between a Web Server and an Application Server?",
+        "a": "A Web Server (like Nginx or Apache) is designed to serve static web content (HTML, CSS, images) via HTTP. An Application Server (like Tomcat or Node.js) executes dynamic business logic, interacts with databases, and generates dynamic content to send back to the web server."
+      },
+      {
+        "id": "devops-b-16",
+        "q": "What is configuration management?",
+        "a": "Configuration Management is a systems engineering process for establishing and maintaining consistency of a product's performance, functional, and physical attributes. Tools like Ansible, Chef, and Puppet ensure that all servers in a fleet have the exact same software versions, patches, and config files."
+      },
+      {
+        "id": "devops-b-17",
+        "q": "What are microservices?",
+        "a": "Microservices architecture structures an application as a collection of small, loosely coupled, independently deployable services organized around business capabilities. Each service runs its own process and communicates via lightweight mechanisms (usually HTTP APIs), allowing teams to deploy and scale services independently."
+      }
+    ],
+    "intermediate": [
+      {
+        "id": "devops-i-1",
+        "q": "Explain the architecture of Jenkins and how distributed builds work.",
+        "a": "Jenkins uses a Master-Agent architecture. The Jenkins Master server handles the UI, HTTP requests, schedules builds, and dispatches them to Agents. Agents (or nodes) are separate machines (or dynamic containers) that execute the actual build steps. This allows Jenkins to scale horizontally and build code across different operating systems simultaneously."
+      },
+      {
+        "id": "devops-i-2",
+        "q": "What is a Jenkinsfile?",
+        "a": "A Jenkinsfile is a text file that contains the definition of a Jenkins Pipeline and is checked into source control (Pipeline-as-Code). It can be written in Declarative syntax (structured, easier to read) or Scripted syntax (Groovy code, highly flexible). It ensures the CI/CD pipeline is version-controlled alongside the application code."
+      },
+      {
+        "id": "devops-i-3",
+        "q": "What is Ansible and how does it work?",
+        "a": "Ansible is an open-source Configuration Management and IT automation tool. Unlike Chef or Puppet, Ansible is 'agentless'. It does not require any software to be installed on the target nodes. It simply connects via SSH, pushes execution modules (written in Python) derived from YAML 'Playbooks', executes them, and removes them."
+      },
+      {
+        "id": "devops-i-4",
+        "q": "Explain the difference between mutable and immutable infrastructure.",
+        "a": "Mutable infrastructure means servers are continually updated, patched, and modified in-place over time, leading to 'configuration drift' where servers slowly become unique. Immutable infrastructure means a server is never modified after it is deployed. If an update is needed, the old server is destroyed and replaced with a completely new server built from a new image."
+      },
+      {
+        "id": "devops-i-5",
+        "q": "What is Terraform and the concept of 'State'?",
+        "a": "Terraform is an IaC tool by HashiCorp used to provision cloud infrastructure. It uses a declarative language (HCL). The `terraform.tfstate` file maps the real-world deployed resources to your configuration. When you run `terraform plan`, it compares your HCL files to the state file to calculate the exact creation, modification, or deletion operations needed."
+      },
+      {
+        "id": "devops-i-6",
+        "q": "Difference between Docker Image and Docker Container?",
+        "a": "A Docker Image is a read-only template built from a Dockerfile; it contains the application, libraries, and environment. A Docker Container is the active, running instance of an image. You can spin up hundreds of isolated containers from a single image."
+      },
+      {
+        "id": "devops-i-7",
+        "q": "What are Docker Volumes?",
+        "a": "Containers are ephemeral; if a container is deleted, all data created inside it is lost. Docker Volumes are directories stored on the host filesystem and mounted into the container. They provide persistent storage independent of the container's lifecycle, essential for running databases in Docker."
+      },
+      {
+        "id": "devops-i-8",
+        "q": "Explain Blue-Green Deployment.",
+        "a": "Blue-Green is a deployment strategy that minimizes downtime and risk. You maintain two identical production environments: Blue (active) and Green (idle). The new version is deployed to Green and tested. Once verified, the load balancer routes traffic from Blue to Green instantly. If an issue occurs, rollback is instantaneous by routing back to Blue."
+      },
+      {
+        "id": "devops-i-9",
+        "q": "Explain Canary Deployment.",
+        "a": "A Canary deployment rolls out a new release to a small subset of users (e.g., 5%) while the rest stay on the old version. The team monitors the canary group for errors or performance degradation. If successful, the rollout gradually increases to 100%. It reduces the blast radius of a bad release."
+      },
+      {
+        "id": "devops-i-10",
+        "q": "What is NGINX and what are its primary use cases?",
+        "a": "NGINX is a high-performance HTTP web server, reverse proxy, load balancer, and API gateway. In DevOps, it is primarily used as a reverse proxy sitting in front of application servers (like Node.js or Python) to handle SSL termination, load balancing, caching, and serving static assets efficiently."
+      },
+      {
+        "id": "devops-i-11",
+        "q": "What is Prometheus?",
+        "a": "Prometheus is an open-source systems monitoring and alerting toolkit. It operates on a 'pull' model, scraping metrics (like CPU, memory, HTTP errors) via HTTP from configured target endpoints. It stores data in a powerful time-series database and uses PromQL to query data, often visualized using Grafana."
+      },
+      {
+        "id": "devops-i-12",
+        "q": "What is ELK Stack?",
+        "a": "ELK stands for Elasticsearch (a NoSQL search and analytics engine), Logstash (a server-side data processing pipeline that ingests, transforms, and sends logs), and Kibana (a data visualization dashboard). It is the industry standard for centralized log aggregation, allowing engineers to search through millions of microservice logs instantly."
+      },
+      {
+        "id": "devops-i-13",
+        "q": "Explain `systemd` and `systemctl` in Linux.",
+        "a": "`systemd` is the init system and system manager that has become the new standard for Linux distributions. It initializes components after boot and manages background services (daemons). `systemctl` is the command-line utility used to interact with `systemd`, allowing you to start, stop, enable, and check the status of services."
+      },
+      {
+        "id": "devops-i-14",
+        "q": "What is DNS and how does it work?",
+        "a": "Domain Name System (DNS) is the phonebook of the internet. It translates human-readable domain names (google.com) into machine-readable IP addresses. The resolution process hits the local cache, then the Root servers, then the TLD servers (.com), and finally the Authoritative Name Server, which holds the actual IP."
+      },
+      {
+        "id": "devops-i-15",
+        "q": "What is a Reverse Proxy?",
+        "a": "A forward proxy sits in front of client machines to intercept outbound requests. A reverse proxy sits in front of backend web servers to intercept inbound requests. It provides security, load balancing, SSL termination, and caching, ensuring clients never communicate directly with the application servers."
+      },
+      {
+        "id": "devops-i-16",
+        "q": "How does SSH key-based authentication work?",
+        "a": "It uses asymmetric cryptography. You generate a key pair: a Public Key (placed on the remote server in `~/.ssh/authorized_keys`) and a Private Key (kept strictly secure on your local machine). When connecting, the server encrypts a challenge message using your public key; your SSH client decrypts it using the private key, proving your identity without transmitting passwords."
+      },
+      {
+        "id": "devops-i-17",
+        "q": "What is a Cron Job?",
+        "a": "Cron is a time-based job scheduler in Unix-like operating systems. Users configure a `crontab` file to schedule scripts or commands to run automatically at specified times, dates, or intervals. The syntax consists of five fields: minute, hour, day of month, month, and day of week."
+      }
+    ],
+    "advanced": [
+      {
+        "id": "devops-a-1",
+        "q": "How do you achieve Zero Downtime Deployment with Docker and CI/CD?",
+        "a": "Using orchestration tools like Kubernetes or AWS ECS. The CI pipeline builds a new Docker image and updates the deployment manifest. Kubernetes implements a 'Rolling Update'. It spins up a new pod with the new image, waits for the health check/readiness probe to pass, routes traffic to it, and gracefully terminates an old pod, repeating this until the fleet is fully replaced."
+      },
+      {
+        "id": "devops-a-2",
+        "q": "Explain GitOps.",
+        "a": "GitOps is an operational framework that takes DevOps best practices (version control, compliance, CI/CD) and applies them to infrastructure automation. The Git repository is the single source of truth for declarative infrastructure and applications. Software agents (like ArgoCD or Flux) run inside the cluster, continuously comparing the live state to the Git state, and automatically pulling and applying changes if they drift."
+      },
+      {
+        "id": "devops-a-3",
+        "q": "How do you handle secrets management in a CI/CD pipeline?",
+        "a": "Hardcoding secrets in Git is catastrophic. Solutions: 1) Store secrets in Jenkins Credentials Manager or GitHub Secrets, injecting them as ephemeral environment variables during the build. 2) For infrastructure, use a dedicated Vault (HashiCorp Vault, AWS Secrets Manager). The application authenticates via IAM or tokens at runtime to fetch secrets directly into memory, keeping them completely out of the pipeline logs."
+      },
+      {
+        "id": "devops-a-4",
+        "q": "What happens when you type a URL into a browser and hit enter (DevOps perspective)?",
+        "a": "1) DNS Resolution (Browser cache -> OS cache -> Resolver -> Root -> TLD -> Authoritative DNS). 2) TCP 3-way handshake with the server's IP. 3) TLS handshake for HTTPS. 4) HTTP Request hits the Load Balancer/Reverse Proxy (NGINX). 5) LB forwards to a healthy Application Server. 6) App queries DB, processes logic, generates HTML/JSON. 7) HTTP Response traverses back. 8) Browser parses DOM and fetches assets."
+      },
+      {
+        "id": "devops-a-5",
+        "q": "How does Terraform handle locking, and why is it important?",
+        "a": "When running Terraform in a team, two people running `terraform apply` simultaneously could corrupt the state file. Terraform uses State Locking. If the state is stored remotely (e.g., in an S3 bucket), Terraform uses a DynamoDB table to acquire a lock before applying. Anyone else attempting an apply will be blocked until the lock is released."
+      },
+      {
+        "id": "devops-a-6",
+        "q": "What are Linux inodes?",
+        "a": "An inode (index node) is a data structure on a Unix filesystem that stores metadata about a file or directory (size, permissions, ownership, physical disk block locations), but NOT the file's name or its actual data. If a disk runs out of inodes (e.g., millions of tiny files), you cannot create new files even if there is plenty of disk space left."
+      },
+      {
+        "id": "devops-a-7",
+        "q": "Explain Load Balancing Algorithms.",
+        "a": "1) Round Robin: Distributes requests sequentially across servers. 2) Least Connections: Sends the request to the server with the fewest active connections. 3) IP Hash: Uses the client's IP address to deterministically map them to the same server every time (session stickiness). 4) Weighted: Assigns more traffic to servers with higher specs."
+      },
+      {
+        "id": "devops-a-8",
+        "q": "What is the difference between a forward proxy and a reverse proxy?",
+        "a": "A Forward Proxy sits in front of a group of client machines. When a client makes a request to the internet, the proxy intercepts it to enforce security, bypass regional blocks, or cache content (hiding the client's IP from the server). A Reverse Proxy sits in front of web servers, intercepting incoming traffic to balance load and protect the backend infrastructure (hiding the server's IP from the client)."
+      },
+      {
+        "id": "devops-a-9",
+        "q": "How do you troubleshoot a server that is running out of memory but the application process shows low usage?",
+        "a": "The issue is likely the Linux Page Cache. Linux aggressively uses free RAM to cache disk I/O to speed up reads/writes. This shows up as 'used' memory, but it's completely normal; the kernel instantly reallocates it if applications need it. Check `free -m` and look at the `available` column, not the `used` column. If `available` is truly low, investigate zombies, kernel leaks, or `tmpfs` mounts."
+      },
+      {
+        "id": "devops-a-10",
+        "q": "Explain Service Mesh.",
+        "a": "In a massive microservices architecture, managing communication, security, and observability between hundreds of services is complex. A Service Mesh (like Istio or Linkerd) injects a 'sidecar' proxy container into every pod. The application only talks to localhost. The sidecar handles routing, mutual TLS encryption (mTLS), retries, and emits telemetry data, abstracting networking logic away from developers."
+      },
+      {
+        "id": "devops-a-11",
+        "q": "What is the role of an Ingress Controller?",
+        "a": "In Kubernetes, a LoadBalancer service provisions a cloud load balancer per service, which gets expensive. An Ingress Controller (like NGINX Ingress) is a single entry point (one Load Balancer) that evaluates HTTP path/host rules defined in Ingress resources to route traffic internally to various different services within the cluster."
+      },
+      {
+        "id": "devops-a-12",
+        "q": "How does Docker networking work under the hood?",
+        "a": "Docker uses Linux network namespaces to isolate container networks. By default, it creates a virtual bridge (`docker0`) on the host. Containers get virtual ethernet interfaces (`veth`) attached to this bridge. Docker dynamically manipulates `iptables` rules on the host to perform Network Address Translation (NAT), allowing containers to communicate with the outside world and exposing specific ports."
+      },
+      {
+        "id": "devops-a-13",
+        "q": "What is Chaos Engineering?",
+        "a": "Chaos Engineering (popularized by Netflix's Chaos Monkey) is the practice of intentionally injecting failures into a production system (like terminating instances, simulating network latency, or crashing databases) to test the system's resilience and observability. The goal is to identify weaknesses before they cause unscheduled outages."
+      },
+      {
+        "id": "devops-a-14",
+        "q": "How do you monitor and alert on a microservices architecture effectively?",
+        "a": "Avoid 'alert fatigue' by alerting only on Symptoms (user impact), not Causes. Use the Four Golden Signals (Latency, Traffic, Errors, Saturation). Implement Distributed Tracing (Jaeger, OpenTelemetry) by passing a correlation ID through HTTP headers across all microservices, allowing you to trace the exact path of a slow request through the entire system."
+      },
+      {
+        "id": "devops-a-15",
+        "q": "What is the `OOM Killer` in Linux?",
+        "a": "The Out Of Memory (OOM) Killer is a kernel mechanism. When the OS critically runs out of RAM and swap space, it cannot function. The OOM Killer activates, calculates an `oom_score` for all running processes (based on memory usage and priority), and ungracefully terminates the highest-scoring process to free memory and save the system from crashing."
+      },
+      {
+        "id": "devops-a-16",
+        "q": "Explain the difference between SLA, SLO, and SLI in Site Reliability Engineering.",
+        "a": "Service Level Agreement (SLA) is the legal/business contract with users (e.g., 99.9% uptime) that dictates penalties if breached. Service Level Objective (SLO) is the internal engineering goal, set strictly higher than the SLA (e.g., 99.95%) to act as a buffer. Service Level Indicator (SLI) is the actual, real-time mathematical measurement of the service's performance (e.g., successful requests / total requests)."
+      }
+    ]
+  }
 }

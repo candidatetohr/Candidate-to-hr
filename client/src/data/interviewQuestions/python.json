@@ -1,272 +1,270 @@
 {
   "seo": {
-    "title": "Top 100+ Python Interview Questions & Answers (2026) | Candidatetohr",
-    "description": "Master your next technical interview with our comprehensive list of Python interview questions, spanning from beginner fundamentals to advanced OOP and memory management.",
+    "title": "Top 100+ Python Interview Questions & Answers (2026)",
+    "description": "Crack your Python backend interview. Covers GIL, decorators, generators, memory management, and advanced Python architecture.",
     "slug": "python",
-    "keywords": "python interview questions, python developer interview, coding interview, python oops questions",
-    "ogTitle": "Python Interview Questions & Answers",
-    "ogDescription": "Practice the top Python questions asked by FAANG and top tech companies."
+    "keywords": "python interview questions, backend python interview, python developer questions"
   },
   "hero": {
     "title": "Python Interview Questions",
-    "description": "From basic syntax to advanced concurrency and data science concepts. Use the practice mode to hide answers and test your knowledge.",
+    "description": "Master core Python. 50 real-world questions covering the GIL, Memory Management, and Object-Oriented design.",
     "count": 50
   },
   "questions": {
     "beginner": [
       {
-        "id": "python-b-1",
-        "q": "Sample beginner Question 1 about python?",
-        "a": "This is a dummy answer for a beginner question 1 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "py-b-1",
+        "q": "What are the key features of Python?",
+        "a": "Python is an interpreted, high-level, dynamically typed, and garbage-collected language. It supports multiple programming paradigms (object-oriented, imperative, functional) and emphasizes code readability with its significant whitespace (indentation). It has a massive standard library ('batteries included')."
       },
       {
-        "id": "python-b-2",
-        "q": "Sample beginner Question 2 about python?",
-        "a": "This is a dummy answer for a beginner question 2 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "py-b-2",
+        "q": "How is Python interpreted?",
+        "a": "Python is neither strictly interpreted nor strictly compiled. The Python source code (`.py`) is first compiled into bytecode (`.pyc`). This bytecode is then interpreted and executed by the Python Virtual Machine (PVM). This two-step process abstracts hardware dependencies."
       },
       {
-        "id": "python-b-3",
-        "q": "Sample beginner Question 3 about python?",
-        "a": "This is a dummy answer for a beginner question 3 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "py-b-3",
+        "q": "Explain dynamically typed vs strongly typed in Python.",
+        "a": "Python is *dynamically typed*, meaning you don't declare variable types explicitly; the interpreter infers the type at runtime (e.g., `x = 10`, then `x = \"hello\"` is valid). However, it is *strongly typed*, meaning it won't perform implicit type coercion in dangerous ways (e.g., `\"5\" + 2` throws a TypeError rather than coercing to 7 or '52')."
       },
       {
-        "id": "python-b-4",
-        "q": "Sample beginner Question 4 about python?",
-        "a": "This is a dummy answer for a beginner question 4 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "py-b-4",
+        "q": "What is the difference between a list and a tuple?",
+        "a": "Lists are mutable (can be changed after creation) and defined using square brackets `[]`. Tuples are immutable (cannot be changed after creation) and defined using parentheses `()`. Because tuples are immutable, they are faster, have a smaller memory footprint, and can be used as keys in dictionaries."
       },
       {
-        "id": "python-b-5",
-        "q": "Sample beginner Question 5 about python?",
-        "a": "This is a dummy answer for a beginner question 5 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "py-b-5",
+        "q": "What is a dictionary in Python?",
+        "a": "A dictionary is a built-in data type that stores data in key-value pairs. It is mutable, unordered (though Python 3.7+ preserves insertion order), and keys must be unique and immutable (like strings, numbers, or tuples). Defined using curly braces `{key: value}`."
       },
       {
-        "id": "python-b-6",
-        "q": "Sample beginner Question 6 about python?",
-        "a": "This is a dummy answer for a beginner question 6 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "py-b-6",
+        "q": "How do you handle exceptions in Python?",
+        "a": "Exceptions are handled using the `try-except-else-finally` block. Code that might throw an error goes in `try`. The `except` block catches specific exceptions. `else` runs only if no exception occurred. `finally` runs regardless of whether an exception occurred, usually used for cleanup (closing files/connections)."
       },
       {
-        "id": "python-b-7",
-        "q": "Sample beginner Question 7 about python?",
-        "a": "This is a dummy answer for a beginner question 7 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "py-b-7",
+        "q": "What is the purpose of `__init__` in Python classes?",
+        "a": "`__init__` is a special 'dunder' (double underscore) method acting as the constructor for a class. It is automatically called when a new instance of the class is created. It initializes the object's attributes and assigns the initial state."
       },
       {
-        "id": "python-b-8",
-        "q": "Sample beginner Question 8 about python?",
-        "a": "This is a dummy answer for a beginner question 8 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "py-b-8",
+        "q": "What does `self` mean in Python?",
+        "a": "`self` represents the instance of the class. By using the `self` keyword inside class methods, we can access the attributes and methods of the class. Unlike `this` in C++ or Java, `self` is not a reserved keyword but a strong naming convention (you must pass it explicitly as the first parameter of instance methods)."
       },
       {
-        "id": "python-b-9",
-        "q": "Sample beginner Question 9 about python?",
-        "a": "This is a dummy answer for a beginner question 9 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "py-b-9",
+        "q": "Explain `*args` and `**kwargs`.",
+        "a": "`*args` (Non-Keyword Arguments) allows a function to accept a variable number of positional arguments as a tuple. `**kwargs` (Keyword Arguments) allows a function to accept a variable number of keyword arguments as a dictionary. They provide immense flexibility in function definitions."
       },
       {
-        "id": "python-b-10",
-        "q": "Sample beginner Question 10 about python?",
-        "a": "This is a dummy answer for a beginner question 10 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "py-b-10",
+        "q": "What are list comprehensions?",
+        "a": "List comprehensions provide a concise syntax for creating new lists based on the values of an existing iterable. Syntax: `[expression for item in iterable if condition]`. They are generally faster and more readable than equivalent `for` loops with `.append()`."
       },
       {
-        "id": "python-b-11",
-        "q": "Sample beginner Question 11 about python?",
-        "a": "This is a dummy answer for a beginner question 11 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "py-b-11",
+        "q": "What is a Lambda function?",
+        "a": "A lambda function is a small, anonymous, single-expression function defined using the `lambda` keyword. Syntax: `lambda arguments: expression`. They are often used as throwaway functions for higher-order functions like `map()`, `filter()`, or `sorted()`."
       },
       {
-        "id": "python-b-12",
-        "q": "Sample beginner Question 12 about python?",
-        "a": "This is a dummy answer for a beginner question 12 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "py-b-12",
+        "q": "What is the difference between `==` and `is`?",
+        "a": "`==` checks for value equality (do these objects hold the same data?). `is` checks for reference equality or identity (do these variables point to the exact same memory location?)."
       },
       {
-        "id": "python-b-13",
-        "q": "Sample beginner Question 13 about python?",
-        "a": "This is a dummy answer for a beginner question 13 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "py-b-13",
+        "q": "What are modules and packages in Python?",
+        "a": "A module is a single Python file (`.py`) containing functions, classes, and variables. A package is a directory containing multiple modules and a special `__init__.py` file (though optional in Python 3.3+), which allows the directory to be treated as an importable module."
       },
       {
-        "id": "python-b-14",
-        "q": "Sample beginner Question 14 about python?",
-        "a": "This is a dummy answer for a beginner question 14 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "py-b-14",
+        "q": "How do you open and close a file safely?",
+        "a": "The safest way is using the `with` statement (a context manager). Example: `with open('file.txt', 'r') as f: data = f.read()`. The context manager ensures that the file is automatically closed when the block exits, even if an exception occurs."
       },
       {
-        "id": "python-b-15",
-        "q": "Sample beginner Question 15 about python?",
-        "a": "This is a dummy answer for a beginner question 15 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "py-b-15",
+        "q": "What is `pass` in Python?",
+        "a": "The `pass` statement is a null operation. It serves as a placeholder when a statement is syntactically required but you don't want any code to execute (e.g., in empty classes, functions, or `except` blocks during scaffolding)."
       },
       {
-        "id": "python-b-16",
-        "q": "Sample beginner Question 16 about python?",
-        "a": "This is a dummy answer for a beginner question 16 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "py-b-16",
+        "q": "What are Python sets?",
+        "a": "Sets are unordered collections of unique elements. Defined using `{}` or `set()`. They are highly optimized for membership testing (`in` operator) and mathematical set operations like union, intersection, and difference."
       },
       {
-        "id": "python-b-17",
-        "q": "Sample beginner Question 17 about python?",
-        "a": "This is a dummy answer for a beginner question 17 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "py-b-17",
+        "q": "What does `break`, `continue`, and `pass` do in loops?",
+        "a": "`break` exits the loop entirely. `continue` skips the rest of the code inside the current iteration and jumps to the next iteration. `pass` does absolutely nothing and just acts as a structural placeholder."
       }
     ],
     "intermediate": [
       {
-        "id": "python-i-18",
-        "q": "Sample intermediate Question 18 about python?",
-        "a": "This is a dummy answer for a intermediate question 18 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "py-i-1",
+        "q": "What are generators and the `yield` keyword?",
+        "a": "Generators are a simple way of creating iterators. Instead of returning a massive array all at once (consuming huge RAM), a generator function uses the `yield` keyword to return one value at a time, pausing its state between calls. This makes generators incredibly memory-efficient for reading massive files or infinite streams."
       },
       {
-        "id": "python-i-19",
-        "q": "Sample intermediate Question 19 about python?",
-        "a": "This is a dummy answer for a intermediate question 19 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "py-i-2",
+        "q": "Explain Python Decorators.",
+        "a": "A decorator is a design pattern that allows you to modify the behavior of a function or class without permanently changing its source code. In Python, decorators are higher-order functions that take a function as an argument, wrap it with additional logic, and return the wrapper. They are applied using the `@decorator_name` syntax above a function."
       },
       {
-        "id": "python-i-20",
-        "q": "Sample intermediate Question 20 about python?",
-        "a": "This is a dummy answer for a intermediate question 20 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "py-i-3",
+        "q": "What is the Global Interpreter Lock (GIL)?",
+        "a": "The GIL is a mutex in CPython that protects access to Python objects, preventing multiple native threads from executing Python bytecodes simultaneously. This makes CPython thread-safe but prevents true parallel execution in CPU-bound multi-threaded programs. (Note: The GIL does not heavily restrict I/O-bound multithreading)."
       },
       {
-        "id": "python-i-21",
-        "q": "Sample intermediate Question 21 about python?",
-        "a": "This is a dummy answer for a intermediate question 21 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "py-i-4",
+        "q": "How do you achieve true concurrency in Python given the GIL?",
+        "a": "To bypass the GIL for CPU-bound tasks, you must use the `multiprocessing` module instead of `threading`. Multiprocessing spawns entirely separate OS processes, each with its own Python interpreter and its own memory space (and thus its own GIL), allowing true parallel execution across multiple CPU cores."
       },
       {
-        "id": "python-i-22",
-        "q": "Sample intermediate Question 22 about python?",
-        "a": "This is a dummy answer for a intermediate question 22 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "py-i-5",
+        "q": "What are context managers?",
+        "a": "Context managers allocate and release resources precisely when you want to. The most widely used example is the `with` statement. You can write custom context managers using classes by defining `__enter__` and `__exit__` dunder methods, or by using the `@contextmanager` decorator from the `contextlib` module."
       },
       {
-        "id": "python-i-23",
-        "q": "Sample intermediate Question 23 about python?",
-        "a": "This is a dummy answer for a intermediate question 23 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "py-i-6",
+        "q": "Explain `__new__` vs `__init__`.",
+        "a": "`__new__` is the actual constructor method responsible for *creating* and returning a new instance of a class. `__init__` is the initializer method responsible for setting up the instance's state *after* it has been created. You rarely override `__new__` unless subclassing immutable types (like tuple/str) or implementing the Singleton pattern."
       },
       {
-        "id": "python-i-24",
-        "q": "Sample intermediate Question 24 about python?",
-        "a": "This is a dummy answer for a intermediate question 24 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "py-i-7",
+        "q": "What is monkey patching?",
+        "a": "Monkey patching refers to dynamically modifying a class or module at runtime. For example, you can overwrite a function in a third-party library with your own function without altering the original source code. While powerful for testing (mocking), it can lead to difficult-to-debug code in production."
       },
       {
-        "id": "python-i-25",
-        "q": "Sample intermediate Question 25 about python?",
-        "a": "This is a dummy answer for a intermediate question 25 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "py-i-8",
+        "q": "What are deep copy and shallow copy?",
+        "a": "A shallow copy (`copy.copy()`) creates a new object but inserts *references* to the objects found in the original. A deep copy (`copy.deepcopy()`) creates a new object and recursively inserts *copies* of the objects found in the original. Mutating nested lists inside a shallow copy affects the original; mutating a deep copy does not."
       },
       {
-        "id": "python-i-26",
-        "q": "Sample intermediate Question 26 about python?",
-        "a": "This is a dummy answer for a intermediate question 26 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "py-i-9",
+        "q": "Explain duck typing in Python.",
+        "a": "Duck typing is a concept related to dynamic typing: 'If it walks like a duck and quacks like a duck, it must be a duck.' In Python, you don't check the specific type of an object to see if it's valid; you just check if it implements the required methods (e.g., trying to call `.read()` on an object assumes it's a file-like object, regardless of its actual class)."
       },
       {
-        "id": "python-i-27",
-        "q": "Sample intermediate Question 27 about python?",
-        "a": "This is a dummy answer for a intermediate question 27 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "py-i-10",
+        "q": "What are metaclasses?",
+        "a": "If objects are instances of classes, classes are instances of metaclasses. A metaclass defines the behavior of a class. The default metaclass in Python is `type`. You can write custom metaclasses to automatically modify class attributes, enforce coding standards, or register classes at runtime before the class object is fully created."
       },
       {
-        "id": "python-i-28",
-        "q": "Sample intermediate Question 28 about python?",
-        "a": "This is a dummy answer for a intermediate question 28 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "py-i-11",
+        "q": "What are dunder (magic) methods?",
+        "a": "Dunder methods are special methods with double underscores (e.g., `__str__`, `__len__`, `__add__`). They allow you to define how custom objects interact with built-in Python operators and functions. For example, implementing `__len__` allows your object to work with the `len()` function."
       },
       {
-        "id": "python-i-29",
-        "q": "Sample intermediate Question 29 about python?",
-        "a": "This is a dummy answer for a intermediate question 29 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "py-i-12",
+        "q": "What is the difference between `staticmethod` and `classmethod`?",
+        "a": "A `@classmethod` takes the class itself (`cls`) as its first argument, allowing it to modify class state that applies across all instances (like tracking instance counts or alternative constructors). A `@staticmethod` takes neither `self` nor `cls`. It behaves like a plain function but is placed inside a class's namespace for logical grouping."
       },
       {
-        "id": "python-i-30",
-        "q": "Sample intermediate Question 30 about python?",
-        "a": "This is a dummy answer for a intermediate question 30 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "py-i-13",
+        "q": "What is string interning?",
+        "a": "String interning is a memory optimization technique where Python stores only one copy of distinct string values. Short, identifier-like strings (like 'hello') are automatically interned. Thus, two variables assigned the identical short string will point to the exact same memory address (`is` returns True), saving memory and speeding up comparisons."
       },
       {
-        "id": "python-i-31",
-        "q": "Sample intermediate Question 31 about python?",
-        "a": "This is a dummy answer for a intermediate question 31 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "py-i-14",
+        "q": "How does `map()` differ from list comprehensions?",
+        "a": "`map()` applies a function to all items in an input list and returns an iterator (in Python 3), so it uses less memory until evaluated. A list comprehension evaluates immediately and returns a fully populated list. List comprehensions are generally more readable and slightly faster when combined with a lambda."
       },
       {
-        "id": "python-i-32",
-        "q": "Sample intermediate Question 32 about python?",
-        "a": "This is a dummy answer for a intermediate question 32 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "py-i-15",
+        "q": "What is the `enumerate()` function?",
+        "a": "`enumerate()` adds a counter to an iterable and returns it as an enumerate object. It is heavily used in `for` loops when you need both the index and the value simultaneously: `for index, value in enumerate(my_list):`."
       },
       {
-        "id": "python-i-33",
-        "q": "Sample intermediate Question 33 about python?",
-        "a": "This is a dummy answer for a intermediate question 33 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "py-i-16",
+        "q": "Explain Name Mangling in Python.",
+        "a": "Python does not have strict private modifiers. However, prefixing an attribute with double underscores `__` triggers 'name mangling'. Python interpreter rewrites the attribute name to `_ClassName__attributeName` to prevent accidental access or overriding in subclasses. It is a safeguard, not true security."
       },
       {
-        "id": "python-i-34",
-        "q": "Sample intermediate Question 34 about python?",
-        "a": "This is a dummy answer for a intermediate question 34 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "py-i-17",
+        "q": "What is the LEGB rule?",
+        "a": "LEGB defines the scope resolution order in Python: Local (inside current function), Enclosing (inside any enclosing functions), Global (top level of the module), and Built-in (pre-assigned by Python like `len()`). Python searches for a variable in this exact order."
       }
     ],
     "advanced": [
       {
-        "id": "python-a-35",
-        "q": "Sample advanced Question 35 about python?",
-        "a": "This is a dummy answer for a advanced question 35 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "py-a-1",
+        "q": "Explain Python's Garbage Collection mechanism in detail.",
+        "a": "Python uses two mechanisms: Reference Counting and a Generational Garbage Collector. Reference counting tracks how many references point to an object; when it hits zero, the memory is instantly freed. However, reference counting cannot resolve reference cycles (e.g., Object A references B, and B references A). To fix this, Python runs a background Generational GC that periodically sweeps memory to detect and break isolated reference cycles."
       },
       {
-        "id": "python-a-36",
-        "q": "Sample advanced Question 36 about python?",
-        "a": "This is a dummy answer for a advanced question 36 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "py-a-2",
+        "q": "What is `asyncio` and how does the Event Loop work in Python?",
+        "a": "`asyncio` is a library for writing concurrent code using the `async/await` syntax. It revolves around an Event Loop that manages and distributes execution of different tasks. When a coroutine awaits an I/O operation (like an HTTP request), it yields control back to the Event Loop, which seamlessly runs other tasks until the I/O operation completes, vastly improving throughput for networking apps."
       },
       {
-        "id": "python-a-37",
-        "q": "Sample advanced Question 37 about python?",
-        "a": "This is a dummy answer for a advanced question 37 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "py-a-3",
+        "q": "How do you implement the Singleton pattern in Python?",
+        "a": "A common way is by overriding the `__new__` method. Create a class attribute `_instance`. Inside `__new__`, check if `cls._instance` exists. If not, create it via `super().__new__(cls)` and store it. Otherwise, return the existing `_instance`. Another robust pythonic way is utilizing a metaclass or simply defining the logic in a separate module (since Python modules are inherently singletons when imported)."
       },
       {
-        "id": "python-a-38",
-        "q": "Sample advanced Question 38 about python?",
-        "a": "This is a dummy answer for a advanced question 38 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "py-a-4",
+        "q": "What are descriptors in Python?",
+        "a": "Descriptors are classes that implement one or more of the descriptor protocols: `__get__`, `__set__`, or `__delete__`. When assigned as a class attribute, a descriptor overrides default attribute access. This is the underlying magic behind `@property`, `@classmethod`, `@staticmethod`, and SQLAlchemy ORM attributes."
       },
       {
-        "id": "python-a-39",
-        "q": "Sample advanced Question 39 about python?",
-        "a": "This is a dummy answer for a advanced question 39 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "py-a-5",
+        "q": "What is Multiple Inheritance and the Diamond Problem (MRO)?",
+        "a": "Python supports multiple inheritance. The Diamond Problem occurs when Class D inherits from B and C, which both inherit from A. If D calls a method defined in A (and overridden in B and C), which one executes? Python solves this using the C3 Linearization algorithm to create a Method Resolution Order (MRO). You can view the order via `ClassName.__mro__`."
       },
       {
-        "id": "python-a-40",
-        "q": "Sample advanced Question 40 about python?",
-        "a": "This is a dummy answer for a advanced question 40 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "py-a-6",
+        "q": "How would you optimize a Python application consuming too much memory?",
+        "a": "1) Use generators instead of lists. 2) Use `__slots__` in classes to prevent the creation of `__dict__` for every instance, significantly reducing RAM. 3) Use memory-mapped files (`mmap`) for large datasets. 4) Use specialized libraries like NumPy which store data in contiguous C-arrays instead of fragmented Python objects. 5) Profile using `memory_profiler` or `tracemalloc` to find leaks."
       },
       {
-        "id": "python-a-41",
-        "q": "Sample advanced Question 41 about python?",
-        "a": "This is a dummy answer for a advanced question 41 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "py-a-7",
+        "q": "Explain `functools.lru_cache`.",
+        "a": "`@lru_cache` (Least Recently Used Cache) is a decorator that memoizes the result of a function. If the function is called again with the same arguments, it returns the cached result, saving computation time. 'Least recently used' means that when the cache hits its `maxsize`, it discards the oldest, least accessed item to free up memory."
       },
       {
-        "id": "python-a-42",
-        "q": "Sample advanced Question 42 about python?",
-        "a": "This is a dummy answer for a advanced question 42 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "py-a-8",
+        "q": "What are type hints and `mypy`?",
+        "a": "Introduced in PEP 484, type hints (`def greet(name: str) -> str:`) allow developers to annotate expected types. Python strictly ignores them at runtime (it remains dynamically typed). However, static analysis tools like `mypy` can read these annotations during CI/CD pipelines to catch type-mismatch bugs before deployment, bridging the gap between dynamic and static typing."
       },
       {
-        "id": "python-a-43",
-        "q": "Sample advanced Question 43 about python?",
-        "a": "This is a dummy answer for a advanced question 43 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "py-a-9",
+        "q": "Explain the mechanics of Python's `import` system.",
+        "a": "When you import a module, Python 1) checks `sys.modules` to see if it's already cached. 2) If not, it searches the directories in `sys.path` (current dir, standard library, site-packages). 3) It compiles the `.py` to `.pyc`. 4) It executes the module's code in a new namespace. 5) It adds the module to `sys.modules`. This is why cyclic imports can cause failure—the module is executing before fully loading."
       },
       {
-        "id": "python-a-44",
-        "q": "Sample advanced Question 44 about python?",
-        "a": "This is a dummy answer for a advanced question 44 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "py-a-10",
+        "q": "What is Cython?",
+        "a": "Cython is a superset of Python that compiles directly to C code, which is then compiled to machine code. By adding static C-type declarations to Python code, Cython bypasses Python's dynamic overhead and the GIL, achieving execution speeds comparable to pure C, making it perfect for mathematical bottlenecks."
       },
       {
-        "id": "python-a-45",
-        "q": "Sample advanced Question 45 about python?",
-        "a": "This is a dummy answer for a advanced question 45 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "py-a-11",
+        "q": "How do you handle cyclic imports in Python?",
+        "a": "Cyclic imports occur when module A imports B, and B imports A. Fixes include: 1) Refactoring the shared logic into a neutral module C. 2) Moving the `import` statement to the bottom of the file (hacky). 3) Moving the `import` statement inside the specific function that needs it, deferring the import until runtime execution."
       },
       {
-        "id": "python-a-46",
-        "q": "Sample advanced Question 46 about python?",
-        "a": "This is a dummy answer for a advanced question 46 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "py-a-12",
+        "q": "Explain the difference between `__getattr__` and `__getattribute__`.",
+        "a": "`__getattribute__` is called *every* time any attribute is accessed. If it throws an AttributeError, Python falls back and calls `__getattr__`. Thus, `__getattr__` is only invoked as a fallback for missing attributes, while overriding `__getattribute__` intercepts all attribute access (and can easily cause infinite recursion if you don't call `super().__getattribute__`)."
       },
       {
-        "id": "python-a-47",
-        "q": "Sample advanced Question 47 about python?",
-        "a": "This is a dummy answer for a advanced question 47 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "py-a-13",
+        "q": "What is pickling and unpickling? What are the security risks?",
+        "a": "Pickling (`pickle` module) serializes Python object structures into a binary format for saving to disk or sending over a network. Unpickling deserializes it. Security Risk: Unpickling arbitrary data is highly dangerous. A maliciously crafted pickle payload can execute arbitrary shell commands upon unpickling. Never unpickle data from untrusted sources."
       },
       {
-        "id": "python-a-48",
-        "q": "Sample advanced Question 48 about python?",
-        "a": "This is a dummy answer for a advanced question 48 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "py-a-14",
+        "q": "How do you implement a generic coroutine pipeline?",
+        "a": "Coroutines in Python (using `yield` as an expression `val = yield`) can receive data via `.send()`. A pipeline consists of a source (produces data), filters (receives data, transforms it, sends it to the next), and a sink (final destination). You initialize coroutines using `next(coroutine)` to prime them up to the first yield, then chain them using `.send()`."
       },
       {
-        "id": "python-a-49",
-        "q": "Sample advanced Question 49 about python?",
-        "a": "This is a dummy answer for a advanced question 49 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "py-a-15",
+        "q": "What are data classes?",
+        "a": "Introduced in Python 3.7 (`@dataclass`), they are a decorator that automatically generates boilerplate methods like `__init__`, `__repr__`, and `__eq__` based on class variables annotated with type hints. They dramatically reduce boilerplate code when creating classes that primarily store data."
       },
       {
-        "id": "python-a-50",
-        "q": "Sample advanced Question 50 about python?",
-        "a": "This is a dummy answer for a advanced question 50 related to the topic of python. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "py-a-16",
+        "q": "Explain the inner workings of Python dictionaries.",
+        "a": "Dictionaries are implemented as Hash Tables. When inserting a key-value pair, Python computes the `hash()` of the key to determine the memory index. If a collision occurs (two keys yield the same index), Python uses Open Addressing with a pseudo-random probing sequence to find the next empty slot. In Python 3.7+, a separate dense array maintains insertion order, while a sparse hash array stores indices."
       }
     ]
   }

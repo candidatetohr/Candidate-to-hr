@@ -1,272 +1,270 @@
 {
   "seo": {
-    "title": "Top 100+ Data Science Interview Questions & Answers (2026) | Candidatetohr",
-    "description": "Master your next data science technical interview with our comprehensive list of data science interview questions, spanning from beginner fundamentals to advanced machine learning and deep learning concepts.",
+    "title": "Top 100+ Data Science Interview Questions & Answers (2026)",
+    "description": "Master your Data Science interview. Covers Statistics, Python (Pandas/NumPy), SQL, Data Wrangling, and basic modeling.",
     "slug": "data-science",
-    "keywords": "data science interview questions, data scientist interview, data science career, machine learning interview questions",
-    "ogTitle": "Data Science Interview Questions & Answers",
-    "ogDescription": "Practice the top data science questions asked by FAANG and top tech companies, covering data preprocessing, modeling, and visualization."
+    "keywords": "data science interview questions, data analyst interview, statistics questions, pandas numpy interview"
   },
   "hero": {
     "title": "Data Science Interview Questions",
-    "description": "From data wrangling to advanced neural networks and natural language processing. Use the practice mode to hide answers and test your knowledge.",
+    "description": "50 real-world Data Science questions covering Statistics, Data Wrangling, feature engineering, and analytics.",
     "count": 50
   },
   "questions": {
     "beginner": [
       {
-        "id": "data-science-b-1",
-        "q": "Sample beginner Question 1 about data-science?",
-        "a": "This is a dummy answer for a beginner question 1 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "ds-b-1",
+        "q": "What is Data Science?",
+        "a": "Data Science is an interdisciplinary field that uses scientific methods, processes, algorithms, and systems to extract knowledge and insights from structured and unstructured data, applying actionable insights across a broad range of application domains."
       },
       {
-        "id": "data-science-b-2",
-        "q": "Sample beginner Question 2 about data-science?",
-        "a": "This is a dummy answer for a beginner question 2 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "ds-b-2",
+        "q": "Difference between Data Science and Data Analytics?",
+        "a": "Data Analytics focuses on processing and performing statistical analysis on existing datasets to answer specific questions (descriptive/diagnostic analytics). Data Science is broader; it involves building predictive models, machine learning algorithms, and designing new ways to capture and structure data to forecast future trends (predictive/prescriptive analytics)."
       },
       {
-        "id": "data-science-b-3",
-        "q": "Sample beginner Question 3 about data-science?",
-        "a": "This is a dummy answer for a beginner question 3 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "ds-b-3",
+        "q": "What is the difference between supervised and unsupervised learning?",
+        "a": "Supervised learning uses labeled datasets to train algorithms that to classify data or predict outcomes accurately (e.g., predicting house prices). Unsupervised learning uses machine learning algorithms to analyze and cluster unlabeled datasets, discovering hidden patterns without human intervention (e.g., customer segmentation)."
       },
       {
-        "id": "data-science-b-4",
-        "q": "Sample beginner Question 4 about data-science?",
-        "a": "This is a dummy answer for a beginner question 4 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "ds-b-4",
+        "q": "What is Pandas in Python?",
+        "a": "Pandas is a fast, powerful, flexible, and easy-to-use open-source data analysis and manipulation library built on top of the Python programming language. Its primary data structures are Series (1D) and DataFrames (2D)."
       },
       {
-        "id": "data-science-b-5",
-        "q": "Sample beginner Question 5 about data-science?",
-        "a": "This is a dummy answer for a beginner question 5 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "ds-b-5",
+        "q": "What is a DataFrame?",
+        "a": "A DataFrame is a two-dimensional, size-mutable, potentially heterogeneous tabular data structure with labeled axes (rows and columns). It is the primary object used in Pandas for data wrangling, similar to a table in SQL or a spreadsheet in Excel."
       },
       {
-        "id": "data-science-b-6",
-        "q": "Sample beginner Question 6 about data-science?",
-        "a": "This is a dummy answer for a beginner question 6 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "ds-b-6",
+        "q": "How do you handle missing values in a dataset?",
+        "a": "Common strategies include: 1) Deletion (dropping rows/columns if missing data is minimal). 2) Imputation with Mean/Median/Mode (for numerical/categorical data). 3) Forward/Backward fill (for time-series data). 4) Using algorithmic imputation (like KNN Imputer or predicting missing values via a regression model)."
       },
       {
-        "id": "data-science-b-7",
-        "q": "Sample beginner Question 7 about data-science?",
-        "a": "This is a dummy answer for a beginner question 7 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "ds-b-7",
+        "q": "What is the Central Limit Theorem?",
+        "a": "The Central Limit Theorem (CLT) states that the distribution of sample means approximates a normal distribution as the sample size gets larger, regardless of the population's underlying distribution. This is fundamental because it allows statisticians to use normal probability calculations to make inferences about population parameters."
       },
       {
-        "id": "data-science-b-8",
-        "q": "Sample beginner Question 8 about data-science?",
-        "a": "This is a dummy answer for a beginner question 8 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "ds-b-8",
+        "q": "What is A/B Testing?",
+        "a": "A/B testing is a randomized experimentation process wherein two or more versions of a variable (web page, page element, etc.) are shown to different segments of website visitors at the same time to determine which version leaves a maximum impact and drives business metrics."
       },
       {
-        "id": "data-science-b-9",
-        "q": "Sample beginner Question 9 about data-science?",
-        "a": "This is a dummy answer for a beginner question 9 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "ds-b-9",
+        "q": "Explain the difference between a Type I and Type II error.",
+        "a": "Type I Error (False Positive) occurs when you reject a true null hypothesis (e.g., telling a healthy man he has a disease). Type II Error (False Negative) occurs when you fail to reject a false null hypothesis (e.g., telling a sick man he is healthy)."
       },
       {
-        "id": "data-science-b-10",
-        "q": "Sample beginner Question 10 about data-science?",
-        "a": "This is a dummy answer for a beginner question 10 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "ds-b-10",
+        "q": "What is P-value?",
+        "a": "A p-value (probability value) is a number describing how likely it is that your data would have occurred by random chance (i.e., that the null hypothesis is true). A low p-value (typically < 0.05) indicates that the data did not occur by chance, leading you to reject the null hypothesis."
       },
       {
-        "id": "data-science-b-11",
-        "q": "Sample beginner Question 11 about data-science?",
-        "a": "This is a dummy answer for a beginner question 11 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "ds-b-11",
+        "q": "What is correlation vs causation?",
+        "a": "Correlation means there is a statistical association between variables (e.g., ice cream sales and shark attacks both increase in summer). Causation means that a change in one variable actually causes the change in the other. 'Correlation does not imply causation' (a hidden variable, like summer heat, might cause both)."
       },
       {
-        "id": "data-science-b-12",
-        "q": "Sample beginner Question 12 about data-science?",
-        "a": "This is a dummy answer for a beginner question 12 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "ds-b-12",
+        "q": "What is standard deviation vs variance?",
+        "a": "Variance measures the average degree to which each point differs from the mean; it is the average of all squared deviations. Standard deviation is simply the square root of the variance. Standard deviation is preferred in reporting because it is in the same units as the original data."
       },
       {
-        "id": "data-science-b-13",
-        "q": "Sample beginner Question 13 about data-science?",
-        "a": "This is a dummy answer for a beginner question 13 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "ds-b-13",
+        "q": "What are the common data types in statistics?",
+        "a": "1) Categorical: Nominal (unordered, e.g., colors) and Ordinal (ordered, e.g., education level). 2) Numerical: Discrete (countable integers, e.g., number of children) and Continuous (measurable, e.g., height, weight)."
       },
       {
-        "id": "data-science-b-14",
-        "q": "Sample beginner Question 14 about data-science?",
-        "a": "This is a dummy answer for a beginner question 14 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "ds-b-14",
+        "q": "What is an Outlier and how do you detect it?",
+        "a": "An outlier is a data point that differs significantly from other observations. It can cause serious statistical skew. Detection methods include: Z-Scores (values > 3 or < -3), IQR (Interquartile Range, values outside Q1 - 1.5*IQR or Q3 + 1.5*IQR), or Boxplots."
       },
       {
-        "id": "data-science-b-15",
-        "q": "Sample beginner Question 15 about data-science?",
-        "a": "This is a dummy answer for a beginner question 15 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "ds-b-15",
+        "q": "What is NumPy?",
+        "a": "NumPy (Numerical Python) is the core library for scientific computing in Python. It provides a high-performance multidimensional array object (`ndarray`) and tools for working with these arrays, vastly outperforming standard Python lists for mathematical operations."
       },
       {
-        "id": "data-science-b-16",
-        "q": "Sample beginner Question 16 about data-science?",
-        "a": "This is a dummy answer for a beginner question 16 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "ds-b-16",
+        "q": "What is exploratory data analysis (EDA)?",
+        "a": "EDA is the crucial initial process of performing investigations on data to discover patterns, spot anomalies, test hypotheses, and check assumptions with the help of summary statistics and graphical representations (like histograms, scatter plots, and correlation matrices)."
       },
       {
-        "id": "data-science-b-17",
-        "q": "Sample beginner Question 17 about data-science?",
-        "a": "This is a dummy answer for a beginner question 17 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "ds-b-17",
+        "q": "Explain the Pareto Principle in data.",
+        "a": "Also known as the 80/20 rule, it states that for many events, roughly 80% of the effects come from 20% of the causes. In data science, this often means 80% of sales come from 20% of clients, or 80% of model accuracy is achieved in the first 20% of feature engineering effort."
       }
     ],
     "intermediate": [
       {
-        "id": "data-science-i-18",
-        "q": "Sample intermediate Question 18 about data-science?",
-        "a": "This is a dummy answer for a intermediate question 18 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "ds-i-1",
+        "q": "What is Feature Engineering?",
+        "a": "Feature engineering is the process of using domain knowledge to extract new variables (features) from raw data that make machine learning algorithms work better. Examples include binning continuous variables, creating interaction terms, or extracting 'day of week' from a timestamp."
       },
       {
-        "id": "data-science-i-19",
-        "q": "Sample intermediate Question 19 about data-science?",
-        "a": "This is a dummy answer for a intermediate question 19 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "ds-i-2",
+        "q": "Explain One-Hot Encoding vs Label Encoding.",
+        "a": "Both convert categorical data to numeric. Label Encoding assigns each category a unique integer (e.g., Red=1, Blue=2); it should only be used for Ordinal data because algorithms might interpret higher numbers as 'better'. One-Hot Encoding creates a new binary column for each category (e.g., Is_Red, Is_Blue); it is used for Nominal data but can cause the 'Curse of Dimensionality' if there are too many categories."
       },
       {
-        "id": "data-science-i-20",
-        "q": "Sample intermediate Question 20 about data-science?",
-        "a": "This is a dummy answer for a intermediate question 20 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "ds-i-3",
+        "q": "What is the Curse of Dimensionality?",
+        "a": "As the number of features (dimensions) in a dataset increases, the volume of the feature space grows exponentially, making the data sparse. This harms algorithmic performance because distances between points become meaningless (e.g., in KNN) and the risk of overfitting severely increases. Solutions include PCA or feature selection."
       },
       {
-        "id": "data-science-i-21",
-        "q": "Sample intermediate Question 21 about data-science?",
-        "a": "This is a dummy answer for a intermediate question 21 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "ds-i-4",
+        "q": "What is PCA (Principal Component Analysis)?",
+        "a": "PCA is a dimensionality reduction technique. It transforms a large set of variables into a smaller one that still contains most of the information (variance) of the large set. It does this by finding new, uncorrelated variables (Principal Components) that are linear combinations of the original variables, sorted by the amount of variance they explain."
       },
       {
-        "id": "data-science-i-22",
-        "q": "Sample intermediate Question 22 about data-science?",
-        "a": "This is a dummy answer for a intermediate question 22 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "ds-i-5",
+        "q": "What is the difference between normalization and standardization?",
+        "a": "Normalization (Min-Max Scaling) scales the data to a fixed range, usually 0 to 1. Standardization (Z-score scaling) centers the data around the mean (mean=0) with a standard deviation of 1. Standardization is generally preferred for algorithms assuming a Gaussian distribution (like linear regression or SVM), while Normalization is good for neural networks or algorithms not making assumptions about distribution (like KNN)."
       },
       {
-        "id": "data-science-i-23",
-        "q": "Sample intermediate Question 23 about data-science?",
-        "a": "This is a dummy answer for a intermediate question 23 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "ds-i-6",
+        "q": "Explain Cross-Validation.",
+        "a": "Cross-validation is a resampling procedure used to evaluate machine learning models on a limited data sample. The most common is k-fold cross-validation: the data is divided into `k` subsets. The model is trained on `k-1` subsets and validated on the remaining subset. This process is repeated `k` times, ensuring every data point is used for validation exactly once, reducing variance in performance metrics."
       },
       {
-        "id": "data-science-i-24",
-        "q": "Sample intermediate Question 24 about data-science?",
-        "a": "This is a dummy answer for a intermediate question 24 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "ds-i-7",
+        "q": "What is Overfitting and how do you prevent it?",
+        "a": "Overfitting occurs when a model learns the training data too well, memorizing noise and outliers, causing it to perform poorly on unseen testing data. Prevention methods include: 1) Increasing training data. 2) Using simpler models. 3) Regularization (L1/L2). 4) Cross-validation. 5) Early stopping (in neural networks). 6) Dropout layers."
       },
       {
-        "id": "data-science-i-25",
-        "q": "Sample intermediate Question 25 about data-science?",
-        "a": "This is a dummy answer for a intermediate question 25 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "ds-i-8",
+        "q": "Explain the Bias-Variance Tradeoff.",
+        "a": "Bias is the error introduced by approximating a real-world problem with a simplified model (high bias = underfitting). Variance is the error introduced by the model's sensitivity to small fluctuations in the training set (high variance = overfitting). The goal is to find the optimal sweet spot where both bias and variance are low."
       },
       {
-        "id": "data-science-i-26",
-        "q": "Sample intermediate Question 26 about data-science?",
-        "a": "This is a dummy answer for a intermediate question 26 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "ds-i-9",
+        "q": "What is a Confusion Matrix?",
+        "a": "A confusion matrix is a table used to evaluate the performance of a classification model. It compares actual target values with those predicted by the model, breaking them down into True Positives (TP), True Negatives (TN), False Positives (FP - Type I error), and False Negatives (FN - Type II error)."
       },
       {
-        "id": "data-science-i-27",
-        "q": "Sample intermediate Question 27 about data-science?",
-        "a": "This is a dummy answer for a intermediate question 27 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "ds-i-10",
+        "q": "Explain Precision, Recall, and F1 Score.",
+        "a": "Precision is the ratio of correctly predicted positive observations to the total predicted positives (TP / (TP + FP)); answers 'Of all predicted positives, how many were actually positive?'. Recall (Sensitivity) is the ratio of correctly predicted positive observations to all actual positives (TP / (TP + FN)); answers 'Of all actual positives, how many did we find?'. F1 Score is the harmonic mean of Precision and Recall, used when you need a balance between the two."
       },
       {
-        "id": "data-science-i-28",
-        "q": "Sample intermediate Question 28 about data-science?",
-        "a": "This is a dummy answer for a intermediate question 28 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "ds-i-11",
+        "q": "What is an ROC Curve and AUC?",
+        "a": "The Receiver Operating Characteristic (ROC) curve is a graph showing the performance of a classification model at all classification thresholds. It plots the True Positive Rate (Recall) vs the False Positive Rate. The Area Under the Curve (AUC) measures the entire two-dimensional area underneath the entire ROC curve. A model with an AUC of 1.0 is perfect; 0.5 is no better than random guessing."
       },
       {
-        "id": "data-science-i-29",
-        "q": "Sample intermediate Question 29 about data-science?",
-        "a": "This is a dummy answer for a intermediate question 29 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "ds-i-12",
+        "q": "How would you handle an imbalanced dataset?",
+        "a": "An imbalanced dataset (e.g., 99% non-fraud, 1% fraud) will cause models to just predict the majority class. Techniques include: 1) Resampling (oversampling the minority class using SMOTE, or undersampling the majority class). 2) Choosing appropriate metrics (Precision/Recall/F1 instead of Accuracy). 3) Using algorithmic penalties (Class weights in loss functions)."
       },
       {
-        "id": "data-science-i-30",
-        "q": "Sample intermediate Question 30 about data-science?",
-        "a": "This is a dummy answer for a intermediate question 30 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "ds-i-13",
+        "q": "What is the difference between R-squared and Adjusted R-squared?",
+        "a": "R-squared measures the proportion of variance in the dependent variable explained by the independent variables. However, adding ANY new variable to a model will always increase R-squared, even if it's useless. Adjusted R-squared penalizes the addition of useless variables, only increasing if the new term improves the model more than would be expected by chance."
       },
       {
-        "id": "data-science-i-31",
-        "q": "Sample intermediate Question 31 about data-science?",
-        "a": "This is a dummy answer for a intermediate question 31 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "ds-i-14",
+        "q": "Explain Linear vs Logistic Regression.",
+        "a": "Linear Regression is used for predicting continuous, numeric variables (e.g., house prices). It fits a straight line (`y = mx + b`) that minimizes the sum of squared errors. Logistic Regression is used for binary classification (e.g., spam or not spam). It passes the linear equation through a Sigmoid function, outputting a probability between 0 and 1."
       },
       {
-        "id": "data-science-i-32",
-        "q": "Sample intermediate Question 32 about data-science?",
-        "a": "This is a dummy answer for a intermediate question 32 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "ds-i-15",
+        "q": "What is the K-Nearest Neighbors (KNN) algorithm?",
+        "a": "KNN is a non-parametric, lazy learning algorithm used for classification and regression. It assumes that similar things exist in close proximity. Given a new data point, it calculates the distance (usually Euclidean) to all other points, finds the 'K' closest points, and assigns the new point to the majority class of its neighbors."
       },
       {
-        "id": "data-science-i-33",
-        "q": "Sample intermediate Question 33 about data-science?",
-        "a": "This is a dummy answer for a intermediate question 33 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "ds-i-16",
+        "q": "What are time series data and stationarity?",
+        "a": "Time series data is a sequence of data points indexed in time order. Stationarity means that the statistical properties of a process (mean, variance, autocorrelation) do not change over time. Most time series forecasting models (like ARIMA) require the data to be made stationary first (usually via differencing) before predictions can be made."
       },
       {
-        "id": "data-science-i-34",
-        "q": "Sample intermediate Question 34 about data-science?",
-        "a": "This is a dummy answer for a intermediate question 34 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "ds-i-17",
+        "q": "What is a Random Forest?",
+        "a": "Random Forest is an ensemble learning method. It constructs a multitude of decision trees at training time. For classification, it outputs the class that is the mode of the classes of the individual trees; for regression, the mean prediction. It mitigates the habit of individual decision trees to overfit to their training set via 'Bagging' (Bootstrap Aggregating)."
       }
     ],
     "advanced": [
       {
-        "id": "data-science-a-35",
-        "q": "Sample advanced Question 35 about data-science?",
-        "a": "This is a dummy answer for a advanced question 35 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "ds-a-1",
+        "q": "Explain L1 (Lasso) vs L2 (Ridge) Regularization.",
+        "a": "Both add a penalty term to the loss function to prevent overfitting. L2 (Ridge) adds the 'squared magnitude' of coefficients as penalty; it shrinks coefficients evenly towards zero but rarely to exactly zero. L1 (Lasso) adds the 'absolute value of magnitude' as penalty; it can shrink coefficients to exactly zero, effectively acting as an automated feature selection mechanism, removing useless variables."
       },
       {
-        "id": "data-science-a-36",
-        "q": "Sample advanced Question 36 about data-science?",
-        "a": "This is a dummy answer for a advanced question 36 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "ds-a-2",
+        "q": "What is the difference between Bagging and Boosting?",
+        "a": "Both are ensemble techniques. Bagging (Bootstrap Aggregating, e.g., Random Forest) trains multiple independent models in parallel on random subsets of the data and averages their predictions, heavily reducing variance (overfitting). Boosting (e.g., XGBoost, AdaBoost) trains models sequentially. Each new model attempts to correct the errors (residuals) made by the previous models, effectively reducing bias (underfitting)."
       },
       {
-        "id": "data-science-a-37",
-        "q": "Sample advanced Question 37 about data-science?",
-        "a": "This is a dummy answer for a advanced question 37 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "ds-a-3",
+        "q": "How does Gradient Descent work?",
+        "a": "Gradient Descent is an optimization algorithm used to minimize a loss function. It calculates the gradient (derivative) of the loss function with respect to the model's parameters (weights). The parameters are then updated by taking a step in the opposite direction of the gradient. The size of the step is controlled by the 'Learning Rate'."
       },
       {
-        "id": "data-science-a-38",
-        "q": "Sample advanced Question 38 about data-science?",
-        "a": "This is a dummy answer for a advanced question 38 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "ds-a-4",
+        "q": "What is the learning rate and how does it affect model training?",
+        "a": "The learning rate is a hyperparameter that controls how much to change the model in response to the estimated error each time the model weights are updated. If it's too high, the algorithm may overshoot the global minimum and fail to converge (divergence). If it's too low, training will take forever and might get stuck in a local minimum."
       },
       {
-        "id": "data-science-a-39",
-        "q": "Sample advanced Question 39 about data-science?",
-        "a": "This is a dummy answer for a advanced question 39 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "ds-a-5",
+        "q": "Explain XGBoost and why it's so popular.",
+        "a": "eXtreme Gradient Boosting (XGBoost) is an optimized distributed gradient boosting library. It became famous for winning Kaggle competitions. It is popular because of its execution speed and model performance: it handles missing values natively, implements tree pruning efficiently, utilizes hardware optimization (cache awareness), and includes built-in L1/L2 regularization to prevent overfitting."
       },
       {
-        "id": "data-science-a-40",
-        "q": "Sample advanced Question 40 about data-science?",
-        "a": "This is a dummy answer for a advanced question 40 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "ds-a-6",
+        "q": "What are Support Vector Machines (SVM) and the Kernel Trick?",
+        "a": "SVM is an algorithm that finds the optimal hyperplane that separates data points of different classes with the maximum margin. However, data is rarely linearly separable in its original space. The 'Kernel Trick' is a mathematical function that implicitly projects the data into a higher-dimensional space where a linear hyperplane can easily separate the classes, without actually computing the coordinates in that higher space, saving massive computational power."
       },
       {
-        "id": "data-science-a-41",
-        "q": "Sample advanced Question 41 about data-science?",
-        "a": "This is a dummy answer for a advanced question 41 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "ds-a-7",
+        "q": "How do you evaluate a clustering algorithm (Unsupervised)?",
+        "a": "Because there are no true labels, evaluation is difficult. Methods include: 1) Silhouette Score (measures how similar an object is to its own cluster compared to other clusters; ranges from -1 to 1). 2) Elbow Method (plotting the Sum of Squared Errors vs number of clusters `k` to find the inflection point). 3) Davies-Bouldin Index."
       },
       {
-        "id": "data-science-a-42",
-        "q": "Sample advanced Question 42 about data-science?",
-        "a": "This is a dummy answer for a advanced question 42 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "ds-a-8",
+        "q": "What is SMOTE?",
+        "a": "Synthetic Minority Over-sampling Technique (SMOTE) is an algorithm used to deal with highly imbalanced datasets. Instead of simply duplicating existing minority class records (which causes overfitting), SMOTE generates synthetic, entirely new data points by interpolating between existing minority instances in the feature space."
       },
       {
-        "id": "data-science-a-43",
-        "q": "Sample advanced Question 43 about data-science?",
-        "a": "This is a dummy answer for a advanced question 43 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "ds-a-9",
+        "q": "Explain the difference between Generative and Discriminative models.",
+        "a": "Discriminative models (e.g., Logistic Regression, SVM) learn the boundary between classes; they model the conditional probability P(Y|X) (given the data, what is the label). Generative models (e.g., Naive Bayes, GANs) learn the actual distribution of individual classes; they model the joint probability P(X, Y), meaning they can actually generate new data points that look like the training data."
       },
       {
-        "id": "data-science-a-44",
-        "q": "Sample advanced Question 44 about data-science?",
-        "a": "This is a dummy answer for a advanced question 44 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "ds-a-10",
+        "q": "What is Naive Bayes and why is it 'Naive'?",
+        "a": "Naive Bayes is a classification algorithm based on Bayes' Theorem. It is 'naive' because it makes the massive assumption that all features are mutually independent given the class label. In reality, features (like 'hot' and 'weather' in text classification) are heavily correlated, yet despite this flawed assumption, it performs exceptionally well in spam filtering and text classification."
       },
       {
-        "id": "data-science-a-45",
-        "q": "Sample advanced Question 45 about data-science?",
-        "a": "This is a dummy answer for a advanced question 45 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "ds-a-11",
+        "q": "How would you design a recommendation engine?",
+        "a": "There are three main approaches: 1) Content-Based Filtering: Recommends items similar to those a user liked in the past, based on item attributes. 2) Collaborative Filtering: Recommends items based on the preferences of similar users (User-User or Item-Item matrix factorization, e.g., Singular Value Decomposition). 3) Hybrid Methods: Combining both to solve the 'Cold Start' problem."
       },
       {
-        "id": "data-science-a-46",
-        "q": "Sample advanced Question 46 about data-science?",
-        "a": "This is a dummy answer for a advanced question 46 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "ds-a-12",
+        "q": "What is Markov Chain Monte Carlo (MCMC)?",
+        "a": "MCMC comprises a class of algorithms for sampling from a probability distribution. By constructing a Markov chain that has the desired distribution as its equilibrium distribution, you can obtain a sample of the desired distribution by recording states from the chain. It is heavily used in Bayesian statistics for calculating complex posterior distributions."
       },
       {
-        "id": "data-science-a-47",
-        "q": "Sample advanced Question 47 about data-science?",
-        "a": "This is a dummy answer for a advanced question 47 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "ds-a-13",
+        "q": "Explain Data Leakage in machine learning.",
+        "a": "Data leakage occurs when information from outside the training dataset is inadvertently used to create the model. This happens if you perform feature scaling or imputation on the ENTIRE dataset before splitting it into train/test, or if you include a feature that is a direct proxy for the target variable (e.g., including 'surgery recovery time' when predicting if a patient will need surgery). It results in highly optimistic models that fail in production."
       },
       {
-        "id": "data-science-a-48",
-        "q": "Sample advanced Question 48 about data-science?",
-        "a": "This is a dummy answer for a advanced question 48 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "ds-a-14",
+        "q": "What is an Autoencoder?",
+        "a": "An autoencoder is a type of artificial neural network used to learn efficient codings of unlabeled data (unsupervised learning). It consists of an Encoder that compresses the input into a low-dimensional latent-space representation, and a Decoder that attempts to reconstruct the original input from that representation. It's heavily used for dimensionality reduction and anomaly detection."
       },
       {
-        "id": "data-science-a-49",
-        "q": "Sample advanced Question 49 about data-science?",
-        "a": "This is a dummy answer for a advanced question 49 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "ds-a-15",
+        "q": "How do you deploy a Machine Learning model into production?",
+        "a": "The lifecycle includes: 1) Training and saving the model (e.g., pickling the artifact). 2) Containerizing the model using Docker. 3) Exposing the model via a REST API (using Flask or FastAPI). 4) Deploying the container to a cloud orchestration platform (Kubernetes or AWS SageMaker). 5) Implementing monitoring for 'Model Drift' (when real-world data distributions change over time, degrading accuracy)."
       },
       {
-        "id": "data-science-a-50",
-        "q": "Sample advanced Question 50 about data-science?",
-        "a": "This is a dummy answer for a advanced question 50 related to the topic of data-science. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "ds-a-16",
+        "q": "What is A/B Testing interference and network effects?",
+        "a": "In standard A/B testing, the Stable Unit Treatment Value Assumption (SUTVA) states that treatment applied to one unit does not affect another. In social networks or marketplaces (like Uber/Airbnb), this is violated. Giving a driver a promo code (Treatment) takes rides away from a driver without the code (Control). This requires complex experimental designs like Time-based splits or Cluster-based randomized trials to measure true lift."
       }
     ]
   }

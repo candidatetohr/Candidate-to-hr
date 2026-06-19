@@ -1,272 +1,270 @@
 {
   "seo": {
-    "title": "Top 100+ SQL Interview Questions & Answers (2026) | Candidatetohr",
-    "description": "Master your next technical interview with our comprehensive list of SQL interview questions.",
+    "title": "Top 100+ SQL Interview Questions & Answers (2026)",
+    "description": "Master your SQL database interview. Covers Joins, Window Functions, Indexing, Normalization, and Query Optimization.",
     "slug": "sql",
-    "keywords": "sql interview questions, database interview",
-    "ogTitle": "SQL Interview Questions & Answers",
-    "ogDescription": "Practice the top SQL questions asked by top tech companies."
+    "keywords": "sql interview questions, database interview, postgresql questions, mysql interview"
   },
   "hero": {
     "title": "SQL Interview Questions",
-    "description": "Comprehensive list of SQL interview questions. (Full list is being automatically generated...)",
+    "description": "50 real-world SQL interview questions ranging from basic aggregations to advanced query tuning and architecture.",
     "count": 50
   },
   "questions": {
     "beginner": [
       {
         "id": "sql-b-1",
-        "q": "Sample beginner Question 1 about sql?",
-        "a": "This is a dummy answer for a beginner question 1 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "q": "What is the difference between SQL and NoSQL?",
+        "a": "SQL (Relational databases like PostgreSQL, MySQL) uses structured tables with predefined schemas and relies heavily on ACID compliance and JOIN operations. NoSQL (like MongoDB, Redis) uses flexible, schema-less data models (documents, key-value), designed to scale out horizontally across distributed clusters for massive unstructured data."
       },
       {
         "id": "sql-b-2",
-        "q": "Sample beginner Question 2 about sql?",
-        "a": "This is a dummy answer for a beginner question 2 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "q": "What are DDL, DML, and DCL?",
+        "a": "DDL (Data Definition Language) defines schema structures (`CREATE`, `ALTER`, `DROP`). DML (Data Manipulation Language) manipulates table data (`SELECT`, `INSERT`, `UPDATE`, `DELETE`). DCL (Data Control Language) manages user access and permissions (`GRANT`, `REVOKE`)."
       },
       {
         "id": "sql-b-3",
-        "q": "Sample beginner Question 3 about sql?",
-        "a": "This is a dummy answer for a beginner question 3 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "q": "Explain the different types of JOINs.",
+        "a": "INNER JOIN returns records with matching values in both tables. LEFT JOIN returns all records from the left table, and matched records from the right (or NULL). RIGHT JOIN does the opposite. FULL OUTER JOIN returns all records when there is a match in either left or right table. CROSS JOIN returns the Cartesian product of both tables."
       },
       {
         "id": "sql-b-4",
-        "q": "Sample beginner Question 4 about sql?",
-        "a": "This is a dummy answer for a beginner question 4 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "q": "What is a Primary Key?",
+        "a": "A Primary Key is a column (or set of columns) that uniquely identifies each row in a table. It cannot contain NULL values and must be completely unique. By default, assigning a Primary Key automatically creates a clustered index on that column to speed up retrieval."
       },
       {
         "id": "sql-b-5",
-        "q": "Sample beginner Question 5 about sql?",
-        "a": "This is a dummy answer for a beginner question 5 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "q": "What is a Foreign Key?",
+        "a": "A Foreign Key is a column in one table that links to the Primary Key of another table. It enforces referential integrity, ensuring that the relationship between data in the two tables remains synchronized (e.g., an Order cannot exist for a Customer ID that does not exist)."
       },
       {
         "id": "sql-b-6",
-        "q": "Sample beginner Question 6 about sql?",
-        "a": "This is a dummy answer for a beginner question 6 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "q": "What is the difference between WHERE and HAVING?",
+        "a": "Both filter data, but `WHERE` filters rows *before* aggregation (GROUP BY) takes place, while `HAVING` filters aggregated data *after* the GROUP BY clause. You cannot use aggregate functions like `SUM()` or `COUNT()` in a WHERE clause."
       },
       {
         "id": "sql-b-7",
-        "q": "Sample beginner Question 7 about sql?",
-        "a": "This is a dummy answer for a beginner question 7 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "q": "What is the order of execution for a SQL query?",
+        "a": "The logical execution order differs from the syntax order. It executes as follows: 1) FROM/JOIN, 2) WHERE, 3) GROUP BY, 4) HAVING, 5) SELECT, 6) ORDER BY, 7) LIMIT/OFFSET."
       },
       {
         "id": "sql-b-8",
-        "q": "Sample beginner Question 8 about sql?",
-        "a": "This is a dummy answer for a beginner question 8 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "q": "Explain UNION vs UNION ALL.",
+        "a": "Both combine the result sets of two or more SELECT statements. `UNION` automatically removes duplicate rows, which requires an expensive internal sort operation. `UNION ALL` keeps all duplicates and is therefore significantly faster."
       },
       {
         "id": "sql-b-9",
-        "q": "Sample beginner Question 9 about sql?",
-        "a": "This is a dummy answer for a beginner question 9 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "q": "What is the difference between DELETE and TRUNCATE?",
+        "a": "`DELETE` is a DML command; it removes rows one by one, fires database triggers, and can be rolled back inside a transaction. `TRUNCATE` is a DDL command; it rapidly deallocates the data pages containing the table data, does not fire triggers, and is much faster but cannot be targeted with a WHERE clause."
       },
       {
         "id": "sql-b-10",
-        "q": "Sample beginner Question 10 about sql?",
-        "a": "This is a dummy answer for a beginner question 10 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "q": "What are Aggregate functions?",
+        "a": "Aggregate functions perform calculations on a set of values and return a single scalar value. Common examples include `COUNT()`, `SUM()`, `AVG()`, `MIN()`, and `MAX()`. They are almost always used in conjunction with the `GROUP BY` clause."
       },
       {
         "id": "sql-b-11",
-        "q": "Sample beginner Question 11 about sql?",
-        "a": "This is a dummy answer for a beginner question 11 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "q": "How do you find unique values in a column?",
+        "a": "Use the `DISTINCT` keyword immediately after SELECT. For example, `SELECT DISTINCT department FROM employees;` returns a list of unique departments without duplicates."
       },
       {
         "id": "sql-b-12",
-        "q": "Sample beginner Question 12 about sql?",
-        "a": "This is a dummy answer for a beginner question 12 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "q": "What is a View in SQL?",
+        "a": "A View is a virtual table based on the result-set of a SQL statement. It contains rows and columns just like a real table, but the data isn't physically stored (unless it's a Materialized View). Views are used to encapsulate complex queries, hide sensitive columns, and simplify data access for end users."
       },
       {
         "id": "sql-b-13",
-        "q": "Sample beginner Question 13 about sql?",
-        "a": "This is a dummy answer for a beginner question 13 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "q": "What is the `IN` operator used for?",
+        "a": "The `IN` operator allows you to specify multiple values in a `WHERE` clause. It acts as shorthand for multiple `OR` conditions. Example: `WHERE country IN ('USA', 'UK', 'France')`."
       },
       {
         "id": "sql-b-14",
-        "q": "Sample beginner Question 14 about sql?",
-        "a": "This is a dummy answer for a beginner question 14 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "q": "What is a database Schema?",
+        "a": "A schema is a logical collection of database objects, including tables, views, triggers, and procedures. It acts as a namespace, helping to organize database architecture and manage access permissions (e.g., separating `hr` schema from `finance` schema)."
       },
       {
         "id": "sql-b-15",
-        "q": "Sample beginner Question 15 about sql?",
-        "a": "This is a dummy answer for a beginner question 15 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "q": "How does the `LIKE` operator work?",
+        "a": "`LIKE` is used in a WHERE clause to search for a specified pattern in a column. It uses two wildcards: `%` represents zero, one, or multiple characters, and `_` represents a single character. For example, `LIKE 'A%'` finds any string starting with 'A'."
       },
       {
         "id": "sql-b-16",
-        "q": "Sample beginner Question 16 about sql?",
-        "a": "This is a dummy answer for a beginner question 16 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "q": "What is a Subquery?",
+        "a": "A subquery (or inner query) is a query nested inside another SQL query (the outer query). Subqueries can be used in SELECT, INSERT, UPDATE, or DELETE statements to compute values on the fly to drive the logic of the main query."
       },
       {
         "id": "sql-b-17",
-        "q": "Sample beginner Question 17 about sql?",
-        "a": "This is a dummy answer for a beginner question 17 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "q": "What is the `COALESCE` function?",
+        "a": "`COALESCE` evaluates its arguments in order and returns the first non-NULL value. It is incredibly useful for replacing NULLs with default fallback values. Example: `COALESCE(phone_number, 'No Phone Number Provided')`."
       }
     ],
     "intermediate": [
       {
-        "id": "sql-i-18",
-        "q": "Sample intermediate Question 18 about sql?",
-        "a": "This is a dummy answer for a intermediate question 18 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sql-i-1",
+        "q": "What are Window Functions in SQL?",
+        "a": "Window functions perform calculations across a set of table rows that are somehow related to the current row (the 'window'). Unlike `GROUP BY` aggregates which collapse rows into a single output, window functions retain the original rows. They are defined using the `OVER()` clause and are vital for running totals, rankings (`RANK()`, `ROW_NUMBER()`), and moving averages."
       },
       {
-        "id": "sql-i-19",
-        "q": "Sample intermediate Question 19 about sql?",
-        "a": "This is a dummy answer for a intermediate question 19 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sql-i-2",
+        "q": "Explain ROW_NUMBER(), RANK(), and DENSE_RANK().",
+        "a": "All three are Window Functions for assigning rankings. `ROW_NUMBER()` gives a unique, sequential number to every row, breaking ties arbitrarily. `RANK()` gives identical values the same rank, but skips subsequent numbers (e.g., 1, 2, 2, 4). `DENSE_RANK()` gives identical values the same rank but does not skip numbers (e.g., 1, 2, 2, 3)."
       },
       {
-        "id": "sql-i-20",
-        "q": "Sample intermediate Question 20 about sql?",
-        "a": "This is a dummy answer for a intermediate question 20 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sql-i-3",
+        "q": "What are Database Indexes and how do they work?",
+        "a": "An index is an internal data structure (usually a B-Tree) that improves the speed of data retrieval operations. Instead of scanning the entire table (a full table scan), the database engine traverses the B-Tree to find the physical disk location of the rows instantly. However, indexes slow down write operations (INSERT/UPDATE/DELETE) because the index tree must be updated."
       },
       {
-        "id": "sql-i-21",
-        "q": "Sample intermediate Question 21 about sql?",
-        "a": "This is a dummy answer for a intermediate question 21 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sql-i-4",
+        "q": "What is the difference between Clustered and Non-Clustered Indexes?",
+        "a": "A Clustered Index dictates the physical sorting order of the data on the disk. Therefore, a table can only have one clustered index (usually the Primary Key). A Non-Clustered index contains pointers (or clustered index keys) to the physical data rows. A table can have many non-clustered indexes."
       },
       {
-        "id": "sql-i-22",
-        "q": "Sample intermediate Question 22 about sql?",
-        "a": "This is a dummy answer for a intermediate question 22 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sql-i-5",
+        "q": "Explain ACID properties.",
+        "a": "ACID guarantees transactional integrity in relational databases. Atomicity: All operations in a transaction succeed, or all fail (no partial state). Consistency: Transactions bring the DB from one valid state to another, upholding constraints. Isolation: Concurrent transactions do not interfere with each other. Durability: Once committed, data is saved permanently, even after a crash."
       },
       {
-        "id": "sql-i-23",
-        "q": "Sample intermediate Question 23 about sql?",
-        "a": "This is a dummy answer for a intermediate question 23 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sql-i-6",
+        "q": "What is Normalization?",
+        "a": "Normalization is the process of organizing data to reduce redundancy and improve data integrity. 1NF ensures atomic values (no lists in a column). 2NF eliminates partial dependencies (all non-key columns depend on the whole primary key). 3NF eliminates transitive dependencies (non-key columns depend ONLY on the primary key)."
       },
       {
-        "id": "sql-i-24",
-        "q": "Sample intermediate Question 24 about sql?",
-        "a": "This is a dummy answer for a intermediate question 24 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sql-i-7",
+        "q": "What is Denormalization and when is it used?",
+        "a": "Denormalization is the deliberate introduction of redundancy into a database schema. While normalization is excellent for transactional (OLTP) systems, heavily normalized tables require complex, slow JOINs for reads. Denormalization is used in data warehousing and read-heavy systems (OLAP) to pre-join data into wide tables, drastically improving SELECT speed."
       },
       {
-        "id": "sql-i-25",
-        "q": "Sample intermediate Question 25 about sql?",
-        "a": "This is a dummy answer for a intermediate question 25 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sql-i-8",
+        "q": "Explain Common Table Expressions (CTEs).",
+        "a": "A CTE is a temporary named result set defined using the `WITH` keyword. It exists only for the duration of a single query. CTEs make complex, multi-layered queries much more readable compared to nested subqueries. They can also reference themselves to create Recursive CTEs."
       },
       {
-        "id": "sql-i-26",
-        "q": "Sample intermediate Question 26 about sql?",
-        "a": "This is a dummy answer for a intermediate question 26 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sql-i-9",
+        "q": "What is a Stored Procedure?",
+        "a": "A Stored Procedure is a prepared SQL code batch that you can save in the database. It can accept parameters, execute complex logic (including conditional IF/ELSE blocks and loops), and be reused repeatedly. They reduce network traffic and encapsulate business logic, though they tie the application tightly to a specific database vendor."
       },
       {
-        "id": "sql-i-27",
-        "q": "Sample intermediate Question 27 about sql?",
-        "a": "This is a dummy answer for a intermediate question 27 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sql-i-10",
+        "q": "What is the difference between a Stored Procedure and a User-Defined Function (UDF)?",
+        "a": "A Function must return a value, cannot modify database state (no INSERT/UPDATE), and can be used directly inline within a `SELECT` or `WHERE` clause. A Stored Procedure may or may not return values, can modify database state, and is executed using a `CALL` or `EXEC` statement."
       },
       {
-        "id": "sql-i-28",
-        "q": "Sample intermediate Question 28 about sql?",
-        "a": "This is a dummy answer for a intermediate question 28 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sql-i-11",
+        "q": "What are Database Triggers?",
+        "a": "A trigger is a special type of stored procedure that automatically executes ('fires') when a specific event occurs in the database table, such as an `INSERT`, `UPDATE`, or `DELETE`. They are often used for strict auditing, automatic timestamp updates, or enforcing complex business rules."
       },
       {
-        "id": "sql-i-29",
-        "q": "Sample intermediate Question 29 about sql?",
-        "a": "This is a dummy answer for a intermediate question 29 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sql-i-12",
+        "q": "What is the difference between an INNER JOIN and an EXISTS clause?",
+        "a": "An `INNER JOIN` matches and returns rows combined from two tables. An `EXISTS` clause is a boolean operator checking if a subquery returns any rows. `EXISTS` is often much faster for checking presence because the database engine stops searching as soon as it finds the first match, whereas a JOIN processes all permutations."
       },
       {
-        "id": "sql-i-30",
-        "q": "Sample intermediate Question 30 about sql?",
-        "a": "This is a dummy answer for a intermediate question 30 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sql-i-13",
+        "q": "What is a Self-Join?",
+        "a": "A Self-Join is a regular join where a table is joined to itself. This is highly useful for querying hierarchical data stored in a single table, such as an `employees` table where a `manager_id` column points to the `employee_id` of the same table. You must use table aliases to distinguish the instances."
       },
       {
-        "id": "sql-i-31",
-        "q": "Sample intermediate Question 31 about sql?",
-        "a": "This is a dummy answer for a intermediate question 31 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sql-i-14",
+        "q": "What are Correlated Subqueries?",
+        "a": "A correlated subquery is a subquery that depends on values from the outer query. Unlike standard subqueries that execute once, a correlated subquery executes repeatedly—once for each row processed by the outer query. This makes them notorious performance killers."
       },
       {
-        "id": "sql-i-32",
-        "q": "Sample intermediate Question 32 about sql?",
-        "a": "This is a dummy answer for a intermediate question 32 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sql-i-15",
+        "q": "How does the `CASE` statement work?",
+        "a": "`CASE` is SQL's version of an IF-THEN-ELSE statement. It allows you to conditionally transform data inside a SELECT statement. `CASE WHEN condition THEN result ELSE fallback_result END`. It is highly useful for pivoting data or categorizing numeric values into buckets."
       },
       {
-        "id": "sql-i-33",
-        "q": "Sample intermediate Question 33 about sql?",
-        "a": "This is a dummy answer for a intermediate question 33 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sql-i-16",
+        "q": "What is the purpose of `EXPLAIN` or `EXPLAIN ANALYZE`?",
+        "a": "The `EXPLAIN` command shows the execution plan generated by the database query optimizer. It reveals how tables are scanned (Full Table Scan vs Index Scan), join methods (Hash Join, Nested Loop), and cost estimates. It is the primary tool developers use to debug slow queries and identify missing indexes."
       },
       {
-        "id": "sql-i-34",
-        "q": "Sample intermediate Question 34 about sql?",
-        "a": "This is a dummy answer for a intermediate question 34 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sql-i-17",
+        "q": "What are Isolation Levels?",
+        "a": "Isolation levels dictate how database engines handle concurrent transactions. From lowest to highest strictness: Read Uncommitted (allows dirty reads), Read Committed (default in PG, prevents dirty reads), Repeatable Read (prevents non-repeatable reads), and Serializable (highest isolation, completely sequential execution, prevents phantom reads)."
       }
     ],
     "advanced": [
       {
-        "id": "sql-a-35",
-        "q": "Sample advanced Question 35 about sql?",
-        "a": "This is a dummy answer for a advanced question 35 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sql-a-1",
+        "q": "Explain SQL Injection and how to prevent it.",
+        "a": "SQL Injection is a severe vulnerability where an attacker manipulates input fields to inject malicious SQL commands into the backend query, allowing them to bypass auth, dump databases, or drop tables. Prevention: ALWAYS use Parameterized Queries (Prepared Statements) or an ORM. Never concatenate raw user input strings directly into SQL statements."
       },
       {
-        "id": "sql-a-36",
-        "q": "Sample advanced Question 36 about sql?",
-        "a": "This is a dummy answer for a advanced question 36 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sql-a-2",
+        "q": "What is a Materialized View?",
+        "a": "Unlike standard views which run the underlying query every time they are accessed, a Materialized View physically calculates and saves the result set to the disk. They offer massive performance boosts for complex analytical dashboards. The downside is data staleness; they must be periodically refreshed via cron jobs or triggers."
       },
       {
-        "id": "sql-a-37",
-        "q": "Sample advanced Question 37 about sql?",
-        "a": "This is a dummy answer for a advanced question 37 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sql-a-3",
+        "q": "How do you optimize a query that is running a Full Table Scan?",
+        "a": "First, analyze the `WHERE` or `JOIN` clauses. Identify columns used for filtering or joining and create an Index on them. If the query uses multiple columns, create a Composite Index. Ensure functions aren't wrapping indexed columns (e.g., `WHERE YEAR(date) = 2023` ignores indexes; use `date >= '2023-01-01'` instead). Finally, avoid `SELECT *`; fetch only needed columns."
       },
       {
-        "id": "sql-a-38",
-        "q": "Sample advanced Question 38 about sql?",
-        "a": "This is a dummy answer for a advanced question 38 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sql-a-4",
+        "q": "What is a Covering Index?",
+        "a": "A covering index contains all the columns needed to satisfy the query (both the columns in the WHERE clause and the columns in the SELECT clause). When a covering index is hit, the database engine retrieves the data directly from the index tree without needing to perform a 'Key Lookup' back to the physical table rows, resulting in ultra-fast queries."
       },
       {
-        "id": "sql-a-39",
-        "q": "Sample advanced Question 39 about sql?",
-        "a": "This is a dummy answer for a advanced question 39 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sql-a-5",
+        "q": "Explain the difference between Hash Join and Nested Loop Join.",
+        "a": "These are execution plan strategies. A Nested Loop Join iterates through each row of the outer table and searches for matches in the inner table (great for small datasets or highly indexed queries). A Hash Join builds an in-memory hash table of the smaller table, then hashes the larger table's join column to find matches (great for joining massive, unindexed tables)."
       },
       {
-        "id": "sql-a-40",
-        "q": "Sample advanced Question 40 about sql?",
-        "a": "This is a dummy answer for a advanced question 40 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sql-a-6",
+        "q": "What are Recursive CTEs and when do you use them?",
+        "a": "A Recursive CTE references itself to iterate over data repeatedly until a condition is met. It consists of an 'anchor member' (base case) and a 'recursive member' combined with a `UNION ALL`. They are the standard tool for querying hierarchical or tree-structured data, such as an employee org chart or nested category structures."
       },
       {
-        "id": "sql-a-41",
-        "q": "Sample advanced Question 41 about sql?",
-        "a": "This is a dummy answer for a advanced question 41 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sql-a-7",
+        "q": "What is Database Sharding?",
+        "a": "Sharding is a method of horizontal scaling. It breaks a massive database into smaller, manageable chunks called shards, which are distributed across multiple independent servers. A sharding key (like User ID or Region) dictates which shard holds the data. It massively increases throughput but introduces immense complexity for cross-shard JOINs."
       },
       {
-        "id": "sql-a-42",
-        "q": "Sample advanced Question 42 about sql?",
-        "a": "This is a dummy answer for a advanced question 42 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sql-a-8",
+        "q": "Explain Deadlocks and how to mitigate them.",
+        "a": "A deadlock occurs when Transaction A holds a lock on Row 1 and needs Row 2, while Transaction B holds Row 2 and needs Row 1. Neither can proceed. Mitigation: 1) Always access tables/rows in the exact same order across all application code. 2) Keep transactions as short as possible. 3) Use lower isolation levels if acceptable. 4) Use retry logic in the application layer."
       },
       {
-        "id": "sql-a-43",
-        "q": "Sample advanced Question 43 about sql?",
-        "a": "This is a dummy answer for a advanced question 43 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sql-a-9",
+        "q": "What are dirty reads, non-repeatable reads, and phantom reads?",
+        "a": "Dirty Read: Reading uncommitted data from an active transaction. Non-repeatable Read: A row is read twice in a transaction, but a concurrent transaction modifies it in between, yielding different values. Phantom Read: A query is run twice, but a concurrent transaction inserts new rows that match the query criteria in between."
       },
       {
-        "id": "sql-a-44",
-        "q": "Sample advanced Question 44 about sql?",
-        "a": "This is a dummy answer for a advanced question 44 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sql-a-10",
+        "q": "What is the difference between `Varchar` and `Char`?",
+        "a": "`CHAR` is fixed-length. If you define `CHAR(10)` and insert 'abc', the DB pads it with 7 spaces, wasting disk space but offering faster retrieval for strict sizes (like hashes). `VARCHAR` is variable-length. `VARCHAR(10)` inserting 'abc' only takes 3 bytes plus overhead. Use `VARCHAR` for almost all text fields."
       },
       {
-        "id": "sql-a-45",
-        "q": "Sample advanced Question 45 about sql?",
-        "a": "This is a dummy answer for a advanced question 45 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sql-a-11",
+        "q": "Explain Database Partitioning.",
+        "a": "Partitioning divides a large table into smaller, physical, hidden pieces on the disk, while maintaining a single logical table structure. E.g., partitioning a massive `logs` table by month. Queries filtering by month can use 'Partition Pruning' to scan only the relevant partition disk area, ignoring the rest, vastly improving query speed and archiving."
       },
       {
-        "id": "sql-a-46",
-        "q": "Sample advanced Question 46 about sql?",
-        "a": "This is a dummy answer for a advanced question 46 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sql-a-12",
+        "q": "How do you handle upserts (Insert or Update)?",
+        "a": "An upsert attempts to insert a record, and if a unique constraint violation occurs, it updates the existing record. In PostgreSQL, this is done using `INSERT ... ON CONFLICT (id) DO UPDATE SET...`. In MySQL, it is `INSERT ... ON DUPLICATE KEY UPDATE`. It handles concurrency cleanly compared to a SELECT followed by an INSERT."
       },
       {
-        "id": "sql-a-47",
-        "q": "Sample advanced Question 47 about sql?",
-        "a": "This is a dummy answer for a advanced question 47 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sql-a-13",
+        "q": "What is a partial index?",
+        "a": "A partial index (supported by Postgres, SQL Server) is an index built on a subset of a table, defined by a conditional expression (e.g., `CREATE INDEX idx_active ON users(id) WHERE status = 'active'`). This keeps the index size extremely small and updates fast, perfect for querying specific subsets of large tables."
       },
       {
-        "id": "sql-a-48",
-        "q": "Sample advanced Question 48 about sql?",
-        "a": "This is a dummy answer for a advanced question 48 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sql-a-14",
+        "q": "Explain the LEAD() and LAG() window functions.",
+        "a": "These functions allow you to access data from subsequent or previous rows in the same result set without using Self-Joins. `LAG()` accesses the previous row, and `LEAD()` accesses the following row. They are heavily used in time-series data to calculate month-over-month growth or time elapsed between consecutive user events."
       },
       {
-        "id": "sql-a-49",
-        "q": "Sample advanced Question 49 about sql?",
-        "a": "This is a dummy answer for a advanced question 49 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sql-a-15",
+        "q": "What is CAP Theorem?",
+        "a": "CAP theorem states that a distributed data store can only simultaneously provide two of three guarantees: Consistency (all nodes see the same data), Availability (every request receives a response), and Partition Tolerance (system continues to operate despite network failures). In distributed systems, Partition Tolerance is mandatory, so engineers must choose between Consistency (Relational DBs) and Availability (NoSQL)."
       },
       {
-        "id": "sql-a-50",
-        "q": "Sample advanced Question 50 about sql?",
-        "a": "This is a dummy answer for a advanced question 50 related to the topic of sql. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sql-a-16",
+        "q": "Why is `COUNT(column_name)` different from `COUNT(*)`?",
+        "a": "`COUNT(*)` counts all rows in the result set, including rows that contain NULL values. `COUNT(column_name)` counts only the rows where the specified column is NOT NULL. Mixing these up is a common source of inaccurate reporting dashboards."
       }
     ]
   }

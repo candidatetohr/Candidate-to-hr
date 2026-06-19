@@ -1,299 +1,271 @@
 {
   "seo": {
-    "title": "Top 50 Machine Learning Interview Questions 2026 | ML Engineer Prep",
-    "description": "Master the top 50 Machine Learning interview questions for 2026. Covers ML algorithms, deep learning, feature engineering, model evaluation, and MLOps.",
+    "title": "Top 100+ Machine Learning Interview Questions & Answers (2026)",
+    "description": "Crack your Machine Learning Engineer interview. Covers Deep Learning, Neural Networks, NLP, Computer Vision, and model optimization.",
     "slug": "machine-learning",
-    "keywords": "machine learning interview questions 2026, ML engineer interview, deep learning interview questions, data science interview, neural network interview"
+    "keywords": "machine learning interview questions, ml engineer questions, deep learning interview, nlp interview"
   },
   "hero": {
-    "title": "Machine Learning Interview Questions 2026",
-    "description": "Comprehensive ML interview preparation covering classical ML, deep learning, model evaluation, and production MLOps — for data scientists and ML engineers.",
-    "count": 50,
-    "topic": "Data & AI",
-    "difficulty": "Intermediate to Advanced"
+    "title": "Machine Learning Interview Questions",
+    "description": "50 real-world Machine Learning questions ranging from Neural Network architectures to Transformers and MLOps.",
+    "count": 50
   },
-  "categories": [
-    {
-      "name": "Category 1 - MACHINE-LEARNING",
-      "questions": [
-        {
-          "q": "Sample Question 1 about machine-learning?",
-          "a": "This is a dummy answer for question 1 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "machine-learning-q-1"
-        },
-        {
-          "q": "Sample Question 2 about machine-learning?",
-          "a": "This is a dummy answer for question 2 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "machine-learning-q-2"
-        },
-        {
-          "q": "Sample Question 3 about machine-learning?",
-          "a": "This is a dummy answer for question 3 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "machine-learning-q-3"
-        },
-        {
-          "q": "Sample Question 4 about machine-learning?",
-          "a": "This is a dummy answer for question 4 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "machine-learning-q-4"
-        },
-        {
-          "q": "Sample Question 5 about machine-learning?",
-          "a": "This is a dummy answer for question 5 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "machine-learning-q-5"
-        },
-        {
-          "q": "Sample Question 6 about machine-learning?",
-          "a": "This is a dummy answer for question 6 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "machine-learning-q-6"
-        },
-        {
-          "q": "Sample Question 7 about machine-learning?",
-          "a": "This is a dummy answer for question 7 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "machine-learning-q-7"
-        },
-        {
-          "q": "Sample Question 8 about machine-learning?",
-          "a": "This is a dummy answer for question 8 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "machine-learning-q-8"
-        },
-        {
-          "q": "Sample Question 9 about machine-learning?",
-          "a": "This is a dummy answer for question 9 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "machine-learning-q-9"
-        },
-        {
-          "q": "Sample Question 10 about machine-learning?",
-          "a": "This is a dummy answer for question 10 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "machine-learning-q-10"
-        }
-      ]
-    },
-    {
-      "name": "Category 2 - MACHINE-LEARNING",
-      "questions": [
-        {
-          "q": "Sample Question 11 about machine-learning?",
-          "a": "This is a dummy answer for question 11 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "machine-learning-q-11"
-        },
-        {
-          "q": "Sample Question 12 about machine-learning?",
-          "a": "This is a dummy answer for question 12 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "machine-learning-q-12"
-        },
-        {
-          "q": "Sample Question 13 about machine-learning?",
-          "a": "This is a dummy answer for question 13 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "machine-learning-q-13"
-        },
-        {
-          "q": "Sample Question 14 about machine-learning?",
-          "a": "This is a dummy answer for question 14 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "machine-learning-q-14"
-        },
-        {
-          "q": "Sample Question 15 about machine-learning?",
-          "a": "This is a dummy answer for question 15 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "machine-learning-q-15"
-        },
-        {
-          "q": "Sample Question 16 about machine-learning?",
-          "a": "This is a dummy answer for question 16 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "machine-learning-q-16"
-        },
-        {
-          "q": "Sample Question 17 about machine-learning?",
-          "a": "This is a dummy answer for question 17 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "machine-learning-q-17"
-        },
-        {
-          "q": "Sample Question 18 about machine-learning?",
-          "a": "This is a dummy answer for question 18 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "machine-learning-q-18"
-        },
-        {
-          "q": "Sample Question 19 about machine-learning?",
-          "a": "This is a dummy answer for question 19 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "machine-learning-q-19"
-        },
-        {
-          "q": "Sample Question 20 about machine-learning?",
-          "a": "This is a dummy answer for question 20 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "machine-learning-q-20"
-        }
-      ]
-    },
-    {
-      "name": "Category 3 - MACHINE-LEARNING",
-      "questions": [
-        {
-          "q": "Sample Question 21 about machine-learning?",
-          "a": "This is a dummy answer for question 21 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "machine-learning-q-21"
-        },
-        {
-          "q": "Sample Question 22 about machine-learning?",
-          "a": "This is a dummy answer for question 22 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "machine-learning-q-22"
-        },
-        {
-          "q": "Sample Question 23 about machine-learning?",
-          "a": "This is a dummy answer for question 23 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "machine-learning-q-23"
-        },
-        {
-          "q": "Sample Question 24 about machine-learning?",
-          "a": "This is a dummy answer for question 24 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "machine-learning-q-24"
-        },
-        {
-          "q": "Sample Question 25 about machine-learning?",
-          "a": "This is a dummy answer for question 25 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "machine-learning-q-25"
-        },
-        {
-          "q": "Sample Question 26 about machine-learning?",
-          "a": "This is a dummy answer for question 26 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "machine-learning-q-26"
-        },
-        {
-          "q": "Sample Question 27 about machine-learning?",
-          "a": "This is a dummy answer for question 27 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "machine-learning-q-27"
-        },
-        {
-          "q": "Sample Question 28 about machine-learning?",
-          "a": "This is a dummy answer for question 28 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "machine-learning-q-28"
-        },
-        {
-          "q": "Sample Question 29 about machine-learning?",
-          "a": "This is a dummy answer for question 29 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "machine-learning-q-29"
-        },
-        {
-          "q": "Sample Question 30 about machine-learning?",
-          "a": "This is a dummy answer for question 30 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "machine-learning-q-30"
-        }
-      ]
-    },
-    {
-      "name": "Category 4 - MACHINE-LEARNING",
-      "questions": [
-        {
-          "q": "Sample Question 31 about machine-learning?",
-          "a": "This is a dummy answer for question 31 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "machine-learning-q-31"
-        },
-        {
-          "q": "Sample Question 32 about machine-learning?",
-          "a": "This is a dummy answer for question 32 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "machine-learning-q-32"
-        },
-        {
-          "q": "Sample Question 33 about machine-learning?",
-          "a": "This is a dummy answer for question 33 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "machine-learning-q-33"
-        },
-        {
-          "q": "Sample Question 34 about machine-learning?",
-          "a": "This is a dummy answer for question 34 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "machine-learning-q-34"
-        },
-        {
-          "q": "Sample Question 35 about machine-learning?",
-          "a": "This is a dummy answer for question 35 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "machine-learning-q-35"
-        },
-        {
-          "q": "Sample Question 36 about machine-learning?",
-          "a": "This is a dummy answer for question 36 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "machine-learning-q-36"
-        },
-        {
-          "q": "Sample Question 37 about machine-learning?",
-          "a": "This is a dummy answer for question 37 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "machine-learning-q-37"
-        },
-        {
-          "q": "Sample Question 38 about machine-learning?",
-          "a": "This is a dummy answer for question 38 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "machine-learning-q-38"
-        },
-        {
-          "q": "Sample Question 39 about machine-learning?",
-          "a": "This is a dummy answer for question 39 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "machine-learning-q-39"
-        },
-        {
-          "q": "Sample Question 40 about machine-learning?",
-          "a": "This is a dummy answer for question 40 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "machine-learning-q-40"
-        }
-      ]
-    },
-    {
-      "name": "Category 5 - MACHINE-LEARNING",
-      "questions": [
-        {
-          "q": "Sample Question 41 about machine-learning?",
-          "a": "This is a dummy answer for question 41 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "machine-learning-q-41"
-        },
-        {
-          "q": "Sample Question 42 about machine-learning?",
-          "a": "This is a dummy answer for question 42 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "machine-learning-q-42"
-        },
-        {
-          "q": "Sample Question 43 about machine-learning?",
-          "a": "This is a dummy answer for question 43 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "machine-learning-q-43"
-        },
-        {
-          "q": "Sample Question 44 about machine-learning?",
-          "a": "This is a dummy answer for question 44 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "machine-learning-q-44"
-        },
-        {
-          "q": "Sample Question 45 about machine-learning?",
-          "a": "This is a dummy answer for question 45 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "machine-learning-q-45"
-        },
-        {
-          "q": "Sample Question 46 about machine-learning?",
-          "a": "This is a dummy answer for question 46 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "machine-learning-q-46"
-        },
-        {
-          "q": "Sample Question 47 about machine-learning?",
-          "a": "This is a dummy answer for question 47 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "machine-learning-q-47"
-        },
-        {
-          "q": "Sample Question 48 about machine-learning?",
-          "a": "This is a dummy answer for question 48 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "machine-learning-q-48"
-        },
-        {
-          "q": "Sample Question 49 about machine-learning?",
-          "a": "This is a dummy answer for question 49 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "machine-learning-q-49"
-        },
-        {
-          "q": "Sample Question 50 about machine-learning?",
-          "a": "This is a dummy answer for question 50 related to the topic of machine-learning. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "machine-learning-q-50"
-        }
-      ]
-    }
-  ],
-  "topTips": [
-    "Always start answers with the intuition before the math — interviewers want to see understanding.",
-    "Know when NOT to use deep learning: when data is small, tabular, or interpretability is required.",
-    "Practice deriving the bias-variance decomposition — this separates experienced candidates from beginners.",
-    "Be able to explain your model choices in terms of business impact, not just technical metrics.",
-    "Know XGBoost/LightGBM deeply — they win most tabular ML competitions and are widely used in industry."
-  ]
+  "questions": {
+    "beginner": [
+      {
+        "id": "ml-b-1",
+        "q": "What is Machine Learning?",
+        "a": "Machine Learning is a subset of Artificial Intelligence (AI) that provides systems the ability to automatically learn and improve from experience without being explicitly programmed. It focuses on the development of computer programs that can access data and use it to learn for themselves."
+      },
+      {
+        "id": "ml-b-2",
+        "q": "What is Deep Learning?",
+        "a": "Deep Learning is a specialized subset of Machine Learning based on artificial neural networks with multiple layers (hence 'deep'). These algorithms attempt to simulate the behavior of the human brain to learn from massive amounts of unstructured data (images, text, audio)."
+      },
+      {
+        "id": "ml-b-3",
+        "q": "What is an Artificial Neural Network (ANN)?",
+        "a": "An ANN is a computing system inspired by the biological neural networks of animal brains. It consists of an input layer, one or more hidden layers, and an output layer. Each layer contains nodes (neurons) connected by weighted edges, which process inputs to approximate complex, non-linear functions."
+      },
+      {
+        "id": "ml-b-4",
+        "q": "What is an Activation Function?",
+        "a": "An activation function is a mathematical equation attached to a neuron in a neural network. It determines whether the neuron should be 'activated' (fired) or not based on its input. More importantly, it introduces non-linearity into the network, allowing it to learn complex, non-linear patterns. Without it, the entire deep network collapses into a simple linear regression."
+      },
+      {
+        "id": "ml-b-5",
+        "q": "Name some common activation functions.",
+        "a": "1) Sigmoid (outputs 0 to 1, used in binary classification). 2) Tanh (outputs -1 to 1). 3) ReLU (Rectified Linear Unit, outputs max(0, x), the most common for hidden layers because it prevents vanishing gradients). 4) Softmax (converts a vector of numbers into a vector of probabilities summing to 1, used in multi-class classification output layers)."
+      },
+      {
+        "id": "ml-b-6",
+        "q": "What is a Loss Function (Cost Function)?",
+        "a": "A Loss Function is a method of evaluating how well your algorithm models your dataset. It calculates the difference between the model's predicted output and the actual true target. The goal of machine learning is to minimize this loss function using optimization algorithms like Gradient Descent. Common examples: Mean Squared Error (Regression), Cross-Entropy (Classification)."
+      },
+      {
+        "id": "ml-b-7",
+        "q": "Explain Forward Propagation vs Backpropagation.",
+        "a": "Forward propagation is the process of passing input data through the network layers to calculate an output prediction and determine the loss. Backpropagation is the process of calculating the gradient of the loss function with respect to every weight in the network by applying the chain rule of calculus backwards from the output to the input, telling the optimizer how to adjust the weights to reduce the error."
+      },
+      {
+        "id": "ml-b-8",
+        "q": "What are Epochs, Batches, and Iterations?",
+        "a": "An Epoch means the entire training dataset has passed forward and backward through the neural network exactly once. Because datasets are huge, they are divided into smaller Batches. An Iteration is the number of batches needed to complete one Epoch. (e.g., dataset of 1000, batch size of 100 = 10 iterations per epoch)."
+      },
+      {
+        "id": "ml-b-9",
+        "q": "What is a Convolutional Neural Network (CNN)?",
+        "a": "A CNN is a class of deep neural networks most commonly applied to analyzing visual imagery (Computer Vision). They use mathematical convolution operations instead of general matrix multiplication in at least one of their layers, allowing them to automatically and adaptively learn spatial hierarchies of features (edges -> textures -> objects) from images."
+      },
+      {
+        "id": "ml-b-10",
+        "q": "What is a Recurrent Neural Network (RNN)?",
+        "a": "An RNN is a class of neural networks where connections between nodes form a directed graph along a temporal sequence. Unlike feedforward networks, RNNs have internal memory (loops), allowing them to exhibit dynamic temporal behavior. They are used for sequential data like time series forecasting, speech recognition, and Natural Language Processing (NLP)."
+      },
+      {
+        "id": "ml-b-11",
+        "q": "What is Natural Language Processing (NLP)?",
+        "a": "NLP is a subfield of AI concerned with the interactions between computers and human language. It focuses on programming computers to process and analyze large amounts of natural language data. Tasks include sentiment analysis, machine translation, and text summarization."
+      },
+      {
+        "id": "ml-b-12",
+        "q": "What is a Hyperparameter?",
+        "a": "Hyperparameters are configuration variables external to the model whose value cannot be estimated from data. They are set manually by the data scientist before the learning process begins to control the learning algorithm. Examples: Learning Rate, Number of Epochs, Number of Hidden Layers, Batch Size."
+      },
+      {
+        "id": "ml-b-13",
+        "q": "What is Hyperparameter Tuning?",
+        "a": "The process of systematically searching for the optimal combination of hyperparameters that yields the best performance on a validation set. Common methods include Grid Search (exhaustively trying all combinations), Random Search (trying random combinations), and Bayesian Optimization."
+      },
+      {
+        "id": "ml-b-14",
+        "q": "What is Transfer Learning?",
+        "a": "Transfer learning is a research problem in machine learning that focuses on storing knowledge gained while solving one problem and applying it to a different but related problem. E.g., taking a massive CNN (like ResNet) trained by Google on millions of images to classify objects, and fine-tuning only the last layer to classify specific types of medical X-rays, saving immense compute time."
+      },
+      {
+        "id": "ml-b-15",
+        "q": "What is Dropout?",
+        "a": "Dropout is a regularization technique for reducing overfitting in neural networks. During training, random neurons are temporarily 'dropped out' (ignored) with a certain probability (e.g., 20%). This prevents neurons from co-adapting too much to the training data, forcing the network to learn more robust features."
+      },
+      {
+        "id": "ml-b-16",
+        "q": "What is Computer Vision (CV)?",
+        "a": "CV is an interdisciplinary scientific field that deals with how computers can gain high-level understanding from digital images or videos. Tasks include image classification, object detection (identifying objects and drawing bounding boxes), and image segmentation (classifying every single pixel)."
+      },
+      {
+        "id": "ml-b-17",
+        "q": "What is reinforcement learning?",
+        "a": "Reinforcement learning is an area of ML concerned with how intelligent agents ought to take actions in an environment in order to maximize the notion of cumulative reward. It learns through trial and error, not by being told which actions to take. It is famous for training AI to beat human champions in games like Go and Chess."
+      }
+    ],
+    "intermediate": [
+      {
+        "id": "ml-i-1",
+        "q": "Explain the Vanishing Gradient Problem.",
+        "a": "In very deep networks using activation functions like Sigmoid or Tanh, the gradient is multiplied many times as it backpropagates to the earlier layers. Because these functions map large inputs to a small range (0 to 1), their derivatives are small (< 1). Multiplying many small fractions causes the gradient to 'vanish' to near zero, meaning early layers never update their weights and stop learning. This was solved largely by using the ReLU activation function."
+      },
+      {
+        "id": "ml-i-2",
+        "q": "What is the Exploding Gradient Problem?",
+        "a": "The opposite of vanishing gradients. If network weights are initialized too large, the gradients during backpropagation multiply to massive numbers, causing massive weight updates that result in the model oscillating wildly, producing `NaN` (Not a Number) errors. Solved by proper weight initialization (He/Xavier) and Gradient Clipping."
+      },
+      {
+        "id": "ml-i-3",
+        "q": "Explain the difference between L1 and L2 Loss (MAE vs MSE).",
+        "a": "Mean Absolute Error (L1 Loss) measures the average magnitude of errors without considering their direction. Mean Squared Error (L2 Loss) squares the errors before averaging. Because MSE squares the error, it heavily penalizes large errors (outliers) much more than MAE. MSE is more common, but MAE is used when the data is highly prone to extreme outliers that shouldn't heavily skew the model."
+      },
+      {
+        "id": "ml-i-4",
+        "q": "What is Batch Normalization?",
+        "a": "Batch Normalization is a technique used to make artificial neural networks faster and more stable. It normalizes the inputs of each layer (re-centering and re-scaling) for every mini-batch. This mitigates the problem of 'Internal Covariate Shift', allows for higher learning rates, and provides a slight regularization effect."
+      },
+      {
+        "id": "ml-i-5",
+        "q": "How does an LSTM (Long Short-Term Memory) network differ from a standard RNN?",
+        "a": "Standard RNNs suffer from the vanishing gradient problem, making them incapable of learning long-term dependencies (they 'forget' early sequence data). LSTMs solve this by introducing a 'cell state' and three 'gates' (Forget, Input, Output) that regulate the flow of information. The gates learn what information is relevant to keep or throw away over long sequences."
+      },
+      {
+        "id": "ml-i-6",
+        "q": "What is Word2Vec?",
+        "a": "Word2Vec is an NLP technique for creating word embeddings. It trains a shallow neural network to reconstruct linguistic contexts of words. The result is a set of word vectors where words that share common contexts in the training corpus are located close to one another in the vector space (capturing semantic meaning, e.g., Vector('King') - Vector('Man') + Vector('Woman') ≈ Vector('Queen'))."
+      },
+      {
+        "id": "ml-i-7",
+        "q": "Explain TF-IDF.",
+        "a": "Term Frequency-Inverse Document Frequency is a statistical measure used in basic NLP to evaluate how important a word is to a document within a large corpus. TF measures how frequently a word appears in a document. IDF penalizes words that are extremely common across the entire corpus (like 'the', 'is'). TF-IDF = TF * IDF."
+      },
+      {
+        "id": "ml-i-8",
+        "q": "What is a Generative Adversarial Network (GAN)?",
+        "a": "A GAN is a deep learning architecture where two neural networks contest with each other in a zero-sum game. The 'Generator' tries to generate fake data (like a realistic face). The 'Discriminator' tries to evaluate if the data is real or fake. Over time, the Generator becomes so good at generating data that the Discriminator can no longer distinguish it from reality. Used heavily for Deepfakes and image generation."
+      },
+      {
+        "id": "ml-i-9",
+        "q": "What is Data Augmentation?",
+        "a": "Data augmentation is a strategy used to artificially increase the amount of training data by creating modified versions of images in the dataset (e.g., flipping, rotating, zooming, cropping, changing brightness). It prevents overfitting and makes the model robust to various real-world scenarios, crucial in Computer Vision when data is scarce."
+      },
+      {
+        "id": "ml-i-10",
+        "q": "Explain the concept of Pooling in CNNs.",
+        "a": "Pooling layers downsample the spatial dimensions (width, height) of the input. Max Pooling (the most common) takes a filter (e.g., 2x2) and outputs only the maximum number in that region. This drastically reduces the number of parameters and computation in the network, controls overfitting, and creates translation invariance (the exact location of a feature becomes less important)."
+      },
+      {
+        "id": "ml-i-11",
+        "q": "What is the ADAM Optimizer?",
+        "a": "Adaptive Moment Estimation (Adam) is one of the most popular optimization algorithms. It combines the benefits of two other extensions of stochastic gradient descent: AdaGrad and RMSProp. It computes individual adaptive learning rates for different parameters from estimates of first and second moments of the gradients, making it highly efficient and requiring less hyperparameter tuning."
+      },
+      {
+        "id": "ml-i-12",
+        "q": "What is Model Pruning?",
+        "a": "Model pruning is an optimization technique that reduces the size of a neural network by removing parameters (weights) that contribute little to the model's output (usually weights very close to zero). This reduces the model size and inference time, allowing massive deep learning models to be deployed on edge devices (like mobile phones) without massive loss in accuracy."
+      },
+      {
+        "id": "ml-i-13",
+        "q": "What is the difference between Object Detection and Image Segmentation?",
+        "a": "Object Detection identifies objects in an image and draws a rectangular 'bounding box' around them (e.g., YOLO algorithm). Image Segmentation takes it a step further by classifying every single pixel in the image into a class, drawing a precise pixel-perfect outline of the object (e.g., Mask R-CNN), crucial for self-driving cars or medical imaging."
+      },
+      {
+        "id": "ml-i-14",
+        "q": "Explain the concept of 'Attention' in Neural Networks.",
+        "a": "The Attention mechanism allows a model to focus dynamically on the most relevant parts of the input sequence when producing a specific part of the output sequence. Instead of compressing an entire sentence into a single fixed-length vector (like old RNNs), Attention calculates 'weights' for every input word at every time step, revolutionizing machine translation and NLP."
+      },
+      {
+        "id": "ml-i-15",
+        "q": "What is MLOps?",
+        "a": "Machine Learning Operations (MLOps) is the paradigm of applying DevOps principles to ML systems. It aims to unify ML system development and operation. It involves continuous integration, continuous delivery (CI/CD), automated testing, model versioning, data versioning (DVC), and continuous monitoring for data drift and model degradation in production environments."
+      },
+      {
+        "id": "ml-i-16",
+        "q": "What is a Recommendation System's 'Cold Start' problem?",
+        "a": "The Cold Start problem occurs when a recommendation system cannot draw any inferences for users or items about which it has not yet gathered sufficient information (e.g., a brand new user signing up, or a brand new movie being added). Solutions include forcing users to select categories on signup, or relying purely on Content-based filtering until collaborative data is gathered."
+      },
+      {
+        "id": "ml-i-17",
+        "q": "What is Data Leakage in time series forecasting?",
+        "a": "Time series data must maintain strict temporal order. If you use standard random cross-validation (`train_test_split`), you might accidentally train the model on future data to predict the past, causing massive data leakage. You must use Time Series Split (Forward Chaining), where the training set only ever contains data prior to the test set."
+      }
+    ],
+    "advanced": [
+      {
+        "id": "ml-a-1",
+        "q": "Explain the Transformer Architecture and why it replaced RNNs/LSTMs.",
+        "a": "Introduced in the paper 'Attention Is All You Need', Transformers completely abandoned recurrence (RNNs) in favor of the 'Self-Attention' mechanism. Because RNNs process words sequentially, they cannot be parallelized, making training agonizingly slow. Transformers process entire sequences simultaneously in parallel across GPUs, capturing long-range dependencies better and training exponentially faster, enabling massive Large Language Models (LLMs)."
+      },
+      {
+        "id": "ml-a-2",
+        "q": "What is Self-Attention in Transformers?",
+        "a": "Self-attention allows the model to look at other words in the input sequence for clues that can help lead to a better encoding for the current word. For every word, it creates a Query, Key, and Value vector. It calculates a score by taking the dot product of the Query with all Keys, applies softmax, and multiplies by the Value. This mathematically determines how much 'focus' to place on other words to resolve context (e.g., 'The animal didn't cross the street because it was too tired' -> 'it' refers to 'animal')."
+      },
+      {
+        "id": "ml-a-3",
+        "q": "Explain BERT vs GPT.",
+        "a": "BERT (Bidirectional Encoder Representations from Transformers) is an Encoder-only model. It is trained via Masked Language Modeling (hiding a word in the middle and predicting it), giving it deep bidirectional context. It excels at NLP understanding tasks (classification, sentiment). GPT (Generative Pre-trained Transformer) is a Decoder-only model. It is autoregressive, trained to predict the *next* word, making it excel at text generation and conversational AI."
+      },
+      {
+        "id": "ml-a-4",
+        "q": "What is Few-Shot and Zero-Shot Learning?",
+        "a": "Traditional ML requires thousands of examples (supervised learning). Few-Shot Learning is feeding an LLM just a few examples (prompts) of a task before asking it to perform the task. Zero-Shot Learning is asking the model to perform a task it hasn't seen any explicit examples of in the prompt, relying entirely on its massive pre-trained knowledge."
+      },
+      {
+        "id": "ml-a-5",
+        "q": "What is RAG (Retrieval-Augmented Generation)?",
+        "a": "LLMs hallucinate and their knowledge cutoff is fixed at training time. RAG solves this. When a user asks a question, the system first retrieves relevant documents from a proprietary database (using Vector search). It then injects those documents into the prompt alongside the user's question, forcing the LLM to generate an answer based purely on the retrieved factual context."
+      },
+      {
+        "id": "ml-a-6",
+        "q": "Explain Vector Databases and Embeddings.",
+        "a": "An embedding is a numerical vector representation of text (or images) where semantic meaning is captured in high-dimensional space (e.g., 1536 dimensions). A Vector Database (like Pinecone, Milvus, or pgvector) is optimized to store and query these embeddings. It performs 'Similarity Search' (usually Cosine Similarity) to find vectors mathematically closest to a query vector in milliseconds."
+      },
+      {
+        "id": "ml-a-7",
+        "q": "What is RLHF (Reinforcement Learning from Human Feedback)?",
+        "a": "RLHF is the technique used to align models like ChatGPT to human preferences. 1) Train a base LLM. 2) Have humans rank multiple model responses to a prompt from best to worst. 3) Train a 'Reward Model' on this human ranking data. 4) Use Reinforcement Learning (PPO - Proximal Policy Optimization) to fine-tune the LLM to maximize the score from the Reward Model, making it safe, polite, and helpful."
+      },
+      {
+        "id": "ml-a-8",
+        "q": "What is LoRA (Low-Rank Adaptation)?",
+        "a": "Fine-tuning massive LLMs (100B+ parameters) requires impossible amounts of VRAM. LoRA freezes the pre-trained model weights and injects trainable rank decomposition matrices into each layer of the Transformer architecture. This drastically reduces the number of trainable parameters by 10,000x, allowing models to be fine-tuned quickly on a single consumer GPU without catastrophic forgetting."
+      },
+      {
+        "id": "ml-a-9",
+        "q": "What is Catastrophic Forgetting?",
+        "a": "Catastrophic forgetting is a phenomenon in artificial neural networks where the network completely forgets previously learned information upon learning new information. It is a major hurdle in Continual Learning. Solutions include Elastic Weight Consolidation (EWC), replay buffers, or parameter isolation (like LoRA)."
+      },
+      {
+        "id": "ml-a-10",
+        "q": "How does YOLO (You Only Look Once) differ from earlier object detection algorithms?",
+        "a": "Earlier models (like R-CNN) used regional proposal networks to extract thousands of bounding boxes, running a CNN on each one, making them incredibly slow. YOLO frames object detection as a single regression problem. It passes the image through the network exactly once, predicting bounding boxes and class probabilities simultaneously, enabling real-time video object detection."
+      },
+      {
+        "id": "ml-a-11",
+        "q": "Explain Contrastive Learning (e.g., CLIP by OpenAI).",
+        "a": "Contrastive learning is a self-supervised technique. CLIP (Contrastive Language-Image Pre-training) takes massive amounts of image-text pairs from the internet. It trains an Image Encoder and a Text Encoder jointly to maximize the cosine similarity of the correct image-text pairs in a shared vector space, while minimizing it for incorrect pairs. This allows zero-shot image classification."
+      },
+      {
+        "id": "ml-a-12",
+        "q": "What is Model Quantization?",
+        "a": "Quantization reduces the precision of the numbers used to represent a model's parameters (e.g., converting 32-bit floating-point numbers to 8-bit integers). This dramatically reduces the model's memory footprint and increases inference speed, often with negligible loss in accuracy, crucial for deploying LLMs locally or on edge devices."
+      },
+      {
+        "id": "ml-a-13",
+        "q": "Explain the BLEU and ROUGE metrics in NLP.",
+        "a": "Because language generation is open-ended, standard accuracy doesn't work. BLEU (Bilingual Evaluation Understudy) evaluates machine translation by comparing n-gram overlaps between the generated text and reference human translations (focuses on precision). ROUGE evaluates text summarization by checking how many n-grams from the reference text appeared in the generated text (focuses on recall)."
+      },
+      {
+        "id": "ml-a-14",
+        "q": "What is Data Drift vs Concept Drift?",
+        "a": "Data Drift (Covariate Shift) occurs when the distribution of the independent variables (input data) changes over time (e.g., a demographic shift in your user base). Concept Drift occurs when the relationship between the inputs and the target variable changes (e.g., what constituted a 'fraudulent transaction' in 2019 is different in 2026). Both require model retraining."
+      },
+      {
+        "id": "ml-a-15",
+        "q": "Explain the hardware bottleneck: Compute vs Memory Bandwidth in ML.",
+        "a": "In modern Deep Learning (especially LLM inference), the bottleneck is rarely compute (TFLOPS), but rather Memory Bandwidth. To generate a single token, the entire model weight matrix must be loaded from HBM (High Bandwidth Memory) into the GPU compute cores. If memory bandwidth is slow, the GPU cores sit idle waiting for data, leading to the phrase 'LLM inference is memory bandwidth bound'."
+      },
+      {
+        "id": "ml-a-16",
+        "q": "What is Semantic Search?",
+        "a": "Unlike traditional keyword search (Lexical search like BM25 or Elasticsearch) which looks for exact string matches, Semantic Search understands the contextual meaning of the query. By converting both the query and the documents into dense vector embeddings using an ML model, it finds documents that answer the query's intent, even if they share zero identical keywords."
+      }
+    ]
+  }
 }

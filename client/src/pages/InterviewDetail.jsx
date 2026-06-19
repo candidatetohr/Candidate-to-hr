@@ -148,12 +148,11 @@ export default function InterviewDetail() {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 mt-32">
         <main className="lg:col-span-2">
           <div className="mb-24">
-            <div className="input-icon-wrapper has-right">
-              <span className="input-icon-left"><Search size={18} /></span>
+            <div className="int-search-bar">
+              <Search className="search-icon" size={20} />
               <input 
                 type="text" 
                 placeholder="Search questions..." 
-                className="form-input"
                 value={searchQuery}
                 onChange={(e) => {
                   setSearchQuery(e.target.value);
@@ -161,11 +160,9 @@ export default function InterviewDetail() {
                 }}
               />
               {searchQuery && (
-                <span className="input-icon-right">
-                  <button className="input-clear-btn" onClick={() => { setSearchQuery(''); setCurrentPage(1); }} aria-label="Clear search">
-                    <X size={14} />
-                  </button>
-                </span>
+                <button className="int-search-clear" onClick={() => { setSearchQuery(''); setCurrentPage(1); }} aria-label="Clear search">
+                  <X size={14} />
+                </button>
               )}
             </div>
           </div>

@@ -1,299 +1,271 @@
 {
   "seo": {
-    "title": "Top 40 Kubernetes Interview Questions 2026 | K8s Engineer Prep",
-    "description": "Master the top 40 Kubernetes interview questions for 2026. Covers pods, deployments, services, networking, RBAC, Helm, and Kubernetes architecture.",
+    "title": "Top 100+ Kubernetes Interview Questions & Answers (2026)",
+    "description": "Master your Kubernetes interview. Covers Pods, Services, Deployments, RBAC, Helm, and cluster architecture.",
     "slug": "kubernetes",
-    "keywords": "kubernetes interview questions 2026, K8s interview, kubectl interview, CKA interview prep, kubernetes networking interview"
+    "keywords": "kubernetes interview questions, k8s interview, devops kubernetes, cka exam questions"
   },
   "hero": {
-    "title": "Kubernetes Interview Questions 2026",
-    "description": "Essential Kubernetes interview preparation for DevOps engineers and platform engineers. Covers K8s architecture, workloads, networking, security, and Helm.",
-    "count": 50,
-    "topic": "DevOps",
-    "difficulty": "Advanced"
+    "title": "Kubernetes Interview Questions",
+    "description": "50 real-world Kubernetes questions covering core components, networking, security, and scaling.",
+    "count": 50
   },
-  "categories": [
-    {
-      "name": "Category 1 - KUBERNETES",
-      "questions": [
-        {
-          "q": "Sample Question 1 about kubernetes?",
-          "a": "This is a dummy answer for question 1 related to the topic of kubernetes. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "kubernetes-q-1"
-        },
-        {
-          "q": "Sample Question 2 about kubernetes?",
-          "a": "This is a dummy answer for question 2 related to the topic of kubernetes. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "kubernetes-q-2"
-        },
-        {
-          "q": "Sample Question 3 about kubernetes?",
-          "a": "This is a dummy answer for question 3 related to the topic of kubernetes. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "kubernetes-q-3"
-        },
-        {
-          "q": "Sample Question 4 about kubernetes?",
-          "a": "This is a dummy answer for question 4 related to the topic of kubernetes. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "kubernetes-q-4"
-        },
-        {
-          "q": "Sample Question 5 about kubernetes?",
-          "a": "This is a dummy answer for question 5 related to the topic of kubernetes. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "kubernetes-q-5"
-        },
-        {
-          "q": "Sample Question 6 about kubernetes?",
-          "a": "This is a dummy answer for question 6 related to the topic of kubernetes. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "kubernetes-q-6"
-        },
-        {
-          "q": "Sample Question 7 about kubernetes?",
-          "a": "This is a dummy answer for question 7 related to the topic of kubernetes. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "kubernetes-q-7"
-        },
-        {
-          "q": "Sample Question 8 about kubernetes?",
-          "a": "This is a dummy answer for question 8 related to the topic of kubernetes. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "kubernetes-q-8"
-        },
-        {
-          "q": "Sample Question 9 about kubernetes?",
-          "a": "This is a dummy answer for question 9 related to the topic of kubernetes. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "kubernetes-q-9"
-        },
-        {
-          "q": "Sample Question 10 about kubernetes?",
-          "a": "This is a dummy answer for question 10 related to the topic of kubernetes. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "kubernetes-q-10"
-        }
-      ]
-    },
-    {
-      "name": "Category 2 - KUBERNETES",
-      "questions": [
-        {
-          "q": "Sample Question 11 about kubernetes?",
-          "a": "This is a dummy answer for question 11 related to the topic of kubernetes. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "kubernetes-q-11"
-        },
-        {
-          "q": "Sample Question 12 about kubernetes?",
-          "a": "This is a dummy answer for question 12 related to the topic of kubernetes. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "kubernetes-q-12"
-        },
-        {
-          "q": "Sample Question 13 about kubernetes?",
-          "a": "This is a dummy answer for question 13 related to the topic of kubernetes. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "kubernetes-q-13"
-        },
-        {
-          "q": "Sample Question 14 about kubernetes?",
-          "a": "This is a dummy answer for question 14 related to the topic of kubernetes. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "kubernetes-q-14"
-        },
-        {
-          "q": "Sample Question 15 about kubernetes?",
-          "a": "This is a dummy answer for question 15 related to the topic of kubernetes. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "kubernetes-q-15"
-        },
-        {
-          "q": "Sample Question 16 about kubernetes?",
-          "a": "This is a dummy answer for question 16 related to the topic of kubernetes. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "kubernetes-q-16"
-        },
-        {
-          "q": "Sample Question 17 about kubernetes?",
-          "a": "This is a dummy answer for question 17 related to the topic of kubernetes. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "kubernetes-q-17"
-        },
-        {
-          "q": "Sample Question 18 about kubernetes?",
-          "a": "This is a dummy answer for question 18 related to the topic of kubernetes. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "kubernetes-q-18"
-        },
-        {
-          "q": "Sample Question 19 about kubernetes?",
-          "a": "This is a dummy answer for question 19 related to the topic of kubernetes. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "kubernetes-q-19"
-        },
-        {
-          "q": "Sample Question 20 about kubernetes?",
-          "a": "This is a dummy answer for question 20 related to the topic of kubernetes. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "kubernetes-q-20"
-        }
-      ]
-    },
-    {
-      "name": "Category 3 - KUBERNETES",
-      "questions": [
-        {
-          "q": "Sample Question 21 about kubernetes?",
-          "a": "This is a dummy answer for question 21 related to the topic of kubernetes. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "kubernetes-q-21"
-        },
-        {
-          "q": "Sample Question 22 about kubernetes?",
-          "a": "This is a dummy answer for question 22 related to the topic of kubernetes. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "kubernetes-q-22"
-        },
-        {
-          "q": "Sample Question 23 about kubernetes?",
-          "a": "This is a dummy answer for question 23 related to the topic of kubernetes. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "kubernetes-q-23"
-        },
-        {
-          "q": "Sample Question 24 about kubernetes?",
-          "a": "This is a dummy answer for question 24 related to the topic of kubernetes. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "kubernetes-q-24"
-        },
-        {
-          "q": "Sample Question 25 about kubernetes?",
-          "a": "This is a dummy answer for question 25 related to the topic of kubernetes. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "kubernetes-q-25"
-        },
-        {
-          "q": "Sample Question 26 about kubernetes?",
-          "a": "This is a dummy answer for question 26 related to the topic of kubernetes. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "kubernetes-q-26"
-        },
-        {
-          "q": "Sample Question 27 about kubernetes?",
-          "a": "This is a dummy answer for question 27 related to the topic of kubernetes. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "kubernetes-q-27"
-        },
-        {
-          "q": "Sample Question 28 about kubernetes?",
-          "a": "This is a dummy answer for question 28 related to the topic of kubernetes. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "kubernetes-q-28"
-        },
-        {
-          "q": "Sample Question 29 about kubernetes?",
-          "a": "This is a dummy answer for question 29 related to the topic of kubernetes. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "kubernetes-q-29"
-        },
-        {
-          "q": "Sample Question 30 about kubernetes?",
-          "a": "This is a dummy answer for question 30 related to the topic of kubernetes. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "kubernetes-q-30"
-        }
-      ]
-    },
-    {
-      "name": "Category 4 - KUBERNETES",
-      "questions": [
-        {
-          "q": "Sample Question 31 about kubernetes?",
-          "a": "This is a dummy answer for question 31 related to the topic of kubernetes. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "kubernetes-q-31"
-        },
-        {
-          "q": "Sample Question 32 about kubernetes?",
-          "a": "This is a dummy answer for question 32 related to the topic of kubernetes. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "kubernetes-q-32"
-        },
-        {
-          "q": "Sample Question 33 about kubernetes?",
-          "a": "This is a dummy answer for question 33 related to the topic of kubernetes. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "kubernetes-q-33"
-        },
-        {
-          "q": "Sample Question 34 about kubernetes?",
-          "a": "This is a dummy answer for question 34 related to the topic of kubernetes. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "kubernetes-q-34"
-        },
-        {
-          "q": "Sample Question 35 about kubernetes?",
-          "a": "This is a dummy answer for question 35 related to the topic of kubernetes. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "kubernetes-q-35"
-        },
-        {
-          "q": "Sample Question 36 about kubernetes?",
-          "a": "This is a dummy answer for question 36 related to the topic of kubernetes. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "kubernetes-q-36"
-        },
-        {
-          "q": "Sample Question 37 about kubernetes?",
-          "a": "This is a dummy answer for question 37 related to the topic of kubernetes. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "kubernetes-q-37"
-        },
-        {
-          "q": "Sample Question 38 about kubernetes?",
-          "a": "This is a dummy answer for question 38 related to the topic of kubernetes. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "kubernetes-q-38"
-        },
-        {
-          "q": "Sample Question 39 about kubernetes?",
-          "a": "This is a dummy answer for question 39 related to the topic of kubernetes. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "kubernetes-q-39"
-        },
-        {
-          "q": "Sample Question 40 about kubernetes?",
-          "a": "This is a dummy answer for question 40 related to the topic of kubernetes. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "kubernetes-q-40"
-        }
-      ]
-    },
-    {
-      "name": "Category 5 - KUBERNETES",
-      "questions": [
-        {
-          "q": "Sample Question 41 about kubernetes?",
-          "a": "This is a dummy answer for question 41 related to the topic of kubernetes. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "kubernetes-q-41"
-        },
-        {
-          "q": "Sample Question 42 about kubernetes?",
-          "a": "This is a dummy answer for question 42 related to the topic of kubernetes. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "kubernetes-q-42"
-        },
-        {
-          "q": "Sample Question 43 about kubernetes?",
-          "a": "This is a dummy answer for question 43 related to the topic of kubernetes. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "kubernetes-q-43"
-        },
-        {
-          "q": "Sample Question 44 about kubernetes?",
-          "a": "This is a dummy answer for question 44 related to the topic of kubernetes. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "kubernetes-q-44"
-        },
-        {
-          "q": "Sample Question 45 about kubernetes?",
-          "a": "This is a dummy answer for question 45 related to the topic of kubernetes. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "kubernetes-q-45"
-        },
-        {
-          "q": "Sample Question 46 about kubernetes?",
-          "a": "This is a dummy answer for question 46 related to the topic of kubernetes. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "kubernetes-q-46"
-        },
-        {
-          "q": "Sample Question 47 about kubernetes?",
-          "a": "This is a dummy answer for question 47 related to the topic of kubernetes. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "kubernetes-q-47"
-        },
-        {
-          "q": "Sample Question 48 about kubernetes?",
-          "a": "This is a dummy answer for question 48 related to the topic of kubernetes. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "kubernetes-q-48"
-        },
-        {
-          "q": "Sample Question 49 about kubernetes?",
-          "a": "This is a dummy answer for question 49 related to the topic of kubernetes. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "kubernetes-q-49"
-        },
-        {
-          "q": "Sample Question 50 about kubernetes?",
-          "a": "This is a dummy answer for question 50 related to the topic of kubernetes. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "kubernetes-q-50"
-        }
-      ]
-    }
-  ],
-  "topTips": [
-    "The CKA exam is practical — practice kubectl commands until they're muscle memory.",
-    "Understand Pod lifecycle states: Pending, Running, Succeeded, Failed, Unknown, CrashLoopBackOff.",
-    "Know how to debug: kubectl describe pod, kubectl logs, kubectl exec -it, kubectl get events.",
-    "Understand Service types: ClusterIP (internal), NodePort (expose on node), LoadBalancer (cloud LB), ExternalName (DNS alias).",
-    "Practice HPA (Horizontal Pod Autoscaler) configuration — scaling based on CPU/custom metrics is commonly asked."
-  ]
+  "questions": {
+    "beginner": [
+      {
+        "id": "k8s-b-1",
+        "q": "What is Kubernetes (K8s)?",
+        "a": "Kubernetes is an open-source container orchestration platform originally developed by Google. It automates the deployment, scaling, management, and networking of containerized applications across clusters of host machines."
+      },
+      {
+        "id": "k8s-b-2",
+        "q": "What is a Pod in Kubernetes?",
+        "a": "A Pod is the smallest, most basic deployable object in Kubernetes. A Pod represents a single instance of a running process in your cluster. It contains one or more containers (usually Docker) that share the same network namespace (IP address) and storage volumes."
+      },
+      {
+        "id": "k8s-b-3",
+        "q": "What is the difference between a Pod and a Container?",
+        "a": "A container runs an application. A Pod is a Kubernetes wrapper around one or more containers. Kubernetes manages Pods, not containers directly. If a Pod has multiple containers (like an app and a sidecar proxy), they are co-located, share the same IP, and can communicate via `localhost`."
+      },
+      {
+        "id": "k8s-b-4",
+        "q": "What is a Node in Kubernetes?",
+        "a": "A Node is a worker machine in Kubernetes (previously known as a minion). A Node may be a virtual machine or a physical machine. Each Node contains the necessary services (Kubelet, Container Runtime, Kube-proxy) to run Pods, managed by the Master Node."
+      },
+      {
+        "id": "k8s-b-5",
+        "q": "Explain the role of the Master Node (Control Plane).",
+        "a": "The Control Plane manages the cluster's state and makes global decisions (like scheduling). Its core components include the API Server (frontend), etcd (distributed key-value store for state), Scheduler (assigns Pods to Nodes), and Controller Manager (maintains desired state)."
+      },
+      {
+        "id": "k8s-b-6",
+        "q": "What is the Kube-apiserver?",
+        "a": "The API Server is the front-end of the Kubernetes Control Plane. It exposes the Kubernetes API. All internal components and external users (via `kubectl`) communicate with the cluster exclusively through the API Server."
+      },
+      {
+        "id": "k8s-b-7",
+        "q": "What is `etcd`?",
+        "a": "`etcd` is a highly available, distributed key-value store. It is the ultimate source of truth for the cluster, storing all cluster data, state, and configuration. If `etcd` is lost, the cluster is lost. It must be heavily backed up."
+      },
+      {
+        "id": "k8s-b-8",
+        "q": "What is the Kubelet?",
+        "a": "The Kubelet is the primary 'node agent' that runs on every worker node. It registers the node with the cluster, receives Pod specifications from the API server, and ensures that the containers described in those PodSpecs are running and healthy."
+      },
+      {
+        "id": "k8s-b-9",
+        "q": "What is Kube-proxy?",
+        "a": "Kube-proxy is a network proxy that runs on each node. It maintains network rules on the host OS and performs connection forwarding. It ensures that communication between Pods and Services (internal load balancing) works seamlessly."
+      },
+      {
+        "id": "k8s-b-10",
+        "q": "What is a ReplicaSet?",
+        "a": "A ReplicaSet's purpose is to maintain a stable set of replica Pods running at any given time. If a Pod crashes or is deleted, the ReplicaSet notices the count dropped below the desired state and spins up a new Pod automatically."
+      },
+      {
+        "id": "k8s-b-11",
+        "q": "What is a Deployment in Kubernetes?",
+        "a": "A Deployment provides declarative updates for Pods and ReplicaSets. You describe a desired state (e.g., 'run 3 instances of an NGINX image'). The Deployment controller changes the actual state to the desired state. It is the standard way to deploy stateless apps, supporting rolling updates and rollbacks."
+      },
+      {
+        "id": "k8s-b-12",
+        "q": "What is a Kubernetes Service?",
+        "a": "Pods are ephemeral; they die, and when they are recreated, they get new IP addresses. A Service is an abstract way to expose an application running on a set of Pods as a consistent network service. It provides a stable IP address and DNS name, load balancing traffic to the underlying Pods."
+      },
+      {
+        "id": "k8s-b-13",
+        "q": "What are Labels and Selectors?",
+        "a": "Labels are key/value pairs attached to objects (like Pods). They are used to specify identifying attributes (e.g., `app=frontend`, `env=prod`). Selectors are the core grouping primitive. Services and ReplicaSets use Label Selectors to identify which Pods they should manage or route traffic to."
+      },
+      {
+        "id": "k8s-b-14",
+        "q": "What is a Namespace?",
+        "a": "Namespaces provide a mechanism for isolating groups of resources within a single cluster. They are virtual clusters backed by the same physical cluster. They are heavily used to separate environments (dev, test, prod) or teams, preventing naming collisions and enabling resource quotas."
+      },
+      {
+        "id": "k8s-b-15",
+        "q": "What is `kubectl`?",
+        "a": "`kubectl` is the primary command-line tool used to communicate with the Kubernetes API server. You use it to inspect cluster resources, create, update, and delete components, and view logs."
+      },
+      {
+        "id": "k8s-b-16",
+        "q": "What is a ConfigMap?",
+        "a": "A ConfigMap is an API object used to store non-confidential data in key-value pairs. Pods can consume ConfigMaps as environment variables, command-line arguments, or as configuration files mounted in a volume. This decouples environment-specific configuration from container images."
+      },
+      {
+        "id": "k8s-b-17",
+        "q": "What is a Secret in Kubernetes?",
+        "a": "A Secret is similar to a ConfigMap but is specifically intended to hold a small amount of sensitive data such as passwords, OAuth tokens, and SSH keys. They are base64 encoded and can be mounted as volumes or exposed as environment variables to Pods."
+      }
+    ],
+    "intermediate": [
+      {
+        "id": "k8s-i-1",
+        "q": "Explain the different types of Kubernetes Services.",
+        "a": "1) ClusterIP (Default): Exposes the service on a cluster-internal IP. Accessible only from within the cluster. 2) NodePort: Exposes the service on each Node's IP at a static port (30000-32767). 3) LoadBalancer: Provisions an external load balancer from the cloud provider (AWS, GCP) and assigns a public IP. 4) ExternalName: Maps the service to a DNS name."
+      },
+      {
+        "id": "k8s-i-2",
+        "q": "What is the difference between a Deployment and a StatefulSet?",
+        "a": "Deployments manage stateless applications; Pods are identical and interchangeable. StatefulSets manage stateful applications (like databases). StatefulSets provide guarantees about the ordering and uniqueness of Pods. Each Pod gets a persistent identifier (e.g., `mysql-0`, `mysql-1`) and a stable network identity, which remains across rescheduling."
+      },
+      {
+        "id": "k8s-i-3",
+        "q": "What is a DaemonSet?",
+        "a": "A DaemonSet ensures that all (or some) Nodes run exactly one copy of a specific Pod. As nodes are added to the cluster, Pods are added to them. As nodes are removed, those Pods are garbage collected. It is typically used for cluster-level background tasks like log collection (Fluentd) or node monitoring (Prometheus Node Exporter)."
+      },
+      {
+        "id": "k8s-i-4",
+        "q": "Explain Liveness, Readiness, and Startup Probes.",
+        "a": "Probes are health checks executed by the Kubelet. 'Readiness' probe checks if the app is ready to accept traffic; if it fails, the Pod is removed from the Service endpoints. 'Liveness' probe checks if the app is deadlocked/frozen; if it fails, the Kubelet restarts the Pod. 'Startup' probe disables the other probes until the app has finished its initial slow startup."
+      },
+      {
+        "id": "k8s-i-5",
+        "q": "What is an Ingress in Kubernetes?",
+        "a": "An Ingress is an API object that manages external access to the services in a cluster, typically HTTP. It provides load balancing, SSL termination, and name-based virtual hosting. Unlike a LoadBalancer service (which provisions a cloud LB per service), an Ingress Controller acts as a single entry point routing traffic to multiple backend services based on URL paths."
+      },
+      {
+        "id": "k8s-i-6",
+        "q": "What are Persistent Volumes (PV) and Persistent Volume Claims (PVC)?",
+        "a": "A PV is a piece of networked storage provisioned by an administrator or dynamically via StorageClasses. It exists independently of any Pod. A PVC is a request for storage by a user/Pod. The PVC binds to a PV that matches its size and access mode requirements. The Pod then mounts the PVC as a volume."
+      },
+      {
+        "id": "k8s-i-7",
+        "q": "What is a StorageClass?",
+        "a": "A StorageClass enables dynamic provisioning of Persistent Volumes. Instead of admins manually creating PVs, a StorageClass defines the 'type' of storage (e.g., AWS EBS `gp3` vs `io1`). When a user creates a PVC specifying a StorageClass, Kubernetes automatically provisions the underlying cloud storage and creates the PV on the fly."
+      },
+      {
+        "id": "k8s-i-8",
+        "q": "How does Kubernetes handle Rolling Updates?",
+        "a": "When you update a Deployment's image, K8s performs a Rolling Update. It creates a new ReplicaSet and slowly scales it up while simultaneously scaling down the old ReplicaSet. It uses parameters like `maxSurge` (max extra pods allowed during update) and `maxUnavailable` (max pods allowed to be down) to ensure zero downtime."
+      },
+      {
+        "id": "k8s-i-9",
+        "q": "What is the Horizontal Pod Autoscaler (HPA)?",
+        "a": "HPA automatically updates a workload resource (like a Deployment) to scale the number of Pods in/out based on observed metrics. Typically, it watches CPU or Memory utilization via the Metrics Server. When thresholds are breached, HPA modifies the ReplicaSet count."
+      },
+      {
+        "id": "k8s-i-10",
+        "q": "What is a Job and a CronJob?",
+        "a": "A Job creates one or more Pods and ensures that a specified number of them successfully terminate. It is used for batch processing or one-off tasks (unlike Deployments, which run continuously). A CronJob is a Job that runs on a repeating schedule, written in standard cron format."
+      },
+      {
+        "id": "k8s-i-11",
+        "q": "Explain Role-Based Access Control (RBAC) in Kubernetes.",
+        "a": "RBAC regulates access to the Kubernetes API. A 'Role' defines a set of permissions (e.g., 'can get pods') within a specific Namespace. A 'RoleBinding' attaches that Role to a User, Group, or ServiceAccount. For cluster-wide permissions, you use 'ClusterRole' and 'ClusterRoleBinding'."
+      },
+      {
+        "id": "k8s-i-12",
+        "q": "What is a ServiceAccount?",
+        "a": "While standard Users are meant for humans, ServiceAccounts provide an identity for processes that run in a Pod. When a Pod talks to the Kubernetes API Server (e.g., a CI/CD runner or monitoring tool), it authenticates using the token mounted from its assigned ServiceAccount."
+      },
+      {
+        "id": "k8s-i-13",
+        "q": "What is Helm?",
+        "a": "Helm is the package manager for Kubernetes. Applications are packaged into 'Charts', which are collections of YAML templates. Helm allows you to define variables in a `values.yaml` file, injecting them into the templates to easily deploy, upgrade, or rollback complex, multi-component applications."
+      },
+      {
+        "id": "k8s-i-14",
+        "q": "What are Taints and Tolerations?",
+        "a": "Taints are applied to Nodes, meaning 'repel all pods that do not tolerate this taint'. Tolerations are applied to Pods, allowing them to schedule on tainted nodes. They are used to dedicate specific nodes to specific workloads (e.g., dedicating expensive GPU nodes only for machine learning Pods)."
+      },
+      {
+        "id": "k8s-i-15",
+        "q": "What is Node Affinity?",
+        "a": "Node Affinity is a set of rules used by the Scheduler to determine where a pod can be placed. It works like Node Selectors but is more expressive. It allows you to attract Pods to specific nodes (e.g., 'schedule this Pod on a node in availability-zone-A'). It can be a hard requirement (`requiredDuringScheduling`) or a soft preference (`preferredDuringScheduling`)."
+      },
+      {
+        "id": "k8s-i-16",
+        "q": "How do you rollback a Deployment?",
+        "a": "Deployments keep a revision history of old ReplicaSets. You can view history with `kubectl rollout history deployment/<name>`. To rollback to the previous version immediately, use `kubectl rollout undo deployment/<name>`. K8s scales up the old ReplicaSet and scales down the current one."
+      },
+      {
+        "id": "k8s-i-17",
+        "q": "What is the pause container in a Pod?",
+        "a": "Every Pod contains a hidden 'pause' (or infra) container. It is the first container started in a Pod. Its sole job is to hold the network namespace (IP address and port space) and the IPC namespace. The actual application containers then join this namespace, which allows them to communicate via localhost."
+      }
+    ],
+    "advanced": [
+      {
+        "id": "k8s-a-1",
+        "q": "Explain the Raft Consensus Algorithm in the context of `etcd`.",
+        "a": "Raft is an algorithm that manages a replicated log to ensure data consistency across a distributed system. `etcd` uses Raft to handle leader election and log replication. In a K8s control plane cluster, one `etcd` node is elected Leader. All writes go through the Leader, which replicates the log to Followers. A write is committed only when a majority (quorum) acknowledges it, ensuring brain-split protection."
+      },
+      {
+        "id": "k8s-a-2",
+        "q": "How does Kubernetes Networking (CNI) work?",
+        "a": "Kubernetes requires a networking model where all Pods can communicate with each other without NAT. It delegates this implementation to Container Network Interface (CNI) plugins like Calico, Flannel, or Cilium. The CNI configures the underlying network (setting up overlay networks via VXLAN, configuring iptables/eBPF, and assigning pod IPs) to fulfill the K8s network requirements."
+      },
+      {
+        "id": "k8s-a-3",
+        "q": "Explain Kube-proxy modes (iptables vs IPVS).",
+        "a": "Kube-proxy translates Service IPs into Pod IPs. In `iptables` mode, it creates massive sequential rule chains in the Linux kernel to intercept traffic and NAT it to a random backend Pod. With thousands of services, traversing iptables becomes an O(n) bottleneck. `IPVS` (IP Virtual Server) mode uses efficient hash tables (O(1)) built directly into the kernel for load balancing, making it vastly superior for massive clusters."
+      },
+      {
+        "id": "k8s-a-4",
+        "q": "What are Network Policies?",
+        "a": "By default, Pods in Kubernetes are non-isolated; any pod can talk to any pod. Network Policies act as an internal firewall at the IP/Port level. Implemented by the CNI plugin, they use labels to define rules for ingress and egress traffic. E.g., 'Only allow the Frontend pods in the Prod namespace to communicate with the Backend pods on port 8080'."
+      },
+      {
+        "id": "k8s-a-5",
+        "q": "How does the Kubernetes Scheduler work under the hood?",
+        "a": "When a Pod is created, it is in a `Pending` state. The Scheduler sees the unassigned Pod and runs a two-step process to find a Node. 1) Filtering (Predicates): It drops nodes that don't meet hard requirements (insufficient CPU/RAM, taints, hard affinities). 2) Scoring (Priorities): It ranks the remaining nodes based on optimization algorithms (spreading load, soft affinities). The Pod is bound to the node with the highest score."
+      },
+      {
+        "id": "k8s-a-6",
+        "q": "What is the Cluster Autoscaler (CA)?",
+        "a": "While the HPA scales Pods, the Cluster Autoscaler scales the physical underlying Nodes. If the Scheduler cannot place a Pod because no nodes have enough resources (Pod goes into `Pending`), the CA detects this and requests the cloud provider (e.g., AWS Auto Scaling Group) to spin up a new Node. It also removes underutilized nodes."
+      },
+      {
+        "id": "k8s-a-7",
+        "q": "What is Pod Disruption Budget (PDB)?",
+        "a": "A PDB is an object that limits the number of concurrent voluntary disruptions that your application experiences. Voluntary disruptions include node upgrades, scaling down nodes, or deleting deployments. By setting `minAvailable: 2`, K8s guarantees that during cluster maintenance, it will refuse to drain a node if doing so drops the available app replicas below 2."
+      },
+      {
+        "id": "k8s-a-8",
+        "q": "Explain the mechanics of a Kubernetes Controller.",
+        "a": "Controllers run continuous reconciliation loops. They watch the API Server for changes to the Desired State (e.g., Deployment replica count = 3). They monitor the actual Current State of the cluster. If they don't match, the controller executes logic to converge the Current State to the Desired State (by creating or deleting pods). This non-terminating loop is the core of K8s automation."
+      },
+      {
+        "id": "k8s-a-9",
+        "q": "What are Custom Resource Definitions (CRDs) and Operators?",
+        "a": "CRDs allow you to extend the Kubernetes API with your own custom objects (e.g., creating a `Database` object). An Operator is a custom Controller written to watch these CRDs and execute complex operational logic. For example, a Prometheus Operator watches for a `ServiceMonitor` CRD and automatically reconfigures the Prometheus server to scrape new targets."
+      },
+      {
+        "id": "k8s-a-10",
+        "q": "How do you secure a Kubernetes cluster?",
+        "a": "1) Enable RBAC and strict least-privilege. 2) Use Network Policies to restrict pod-to-pod communication. 3) Enforce Pod Security Admissions (prevent privileged containers, root escalation). 4) Use mTLS for service-to-service communication (via Istio). 5) Keep etcd encrypted at rest and restrict API Server access. 6) Use minimal, vulnerability-scanned base container images."
+      },
+      {
+        "id": "k8s-a-11",
+        "q": "What is the difference between Headless Service and standard ClusterIP?",
+        "a": "A standard ClusterIP service acts as a load balancer and hides the underlying Pod IPs. A Headless Service (created by setting `clusterIP: None`) bypasses this load balancer. When a DNS query is made to a Headless Service, K8s returns the individual IP addresses of all backing Pods. This is strictly required for StatefulSets so applications (like Cassandra/Kafka) can discover and connect to specific peers directly."
+      },
+      {
+        "id": "k8s-a-12",
+        "q": "What happens if the API Server crashes?",
+        "a": "If the API Server dies, you cannot issue `kubectl` commands, create new resources, or modify existing ones. The HPA and Deployments cannot scale. HOWEVER, existing Pods on worker nodes will continue to run and serve traffic without interruption. Kube-proxy maintains existing routing. Once the API server is restarted by the hypervisor, it reads state from `etcd` and resumes control."
+      },
+      {
+        "id": "k8s-a-13",
+        "q": "Explain the concept of Init Containers.",
+        "a": "Init Containers run before application containers in a Pod. They always run to completion, and each init container must complete successfully before the next one starts. If one fails, the Pod restarts. They are used to perform setup scripts, delay app startup until a database service is ready, or copy configuration files into a shared volume."
+      },
+      {
+        "id": "k8s-a-14",
+        "q": "How does resource requests vs limits affect Pod QoS (Quality of Service)?",
+        "a": "Requests guarantee the pod gets exactly that much CPU/RAM. Limits dictate the maximum it can use. K8s assigns QoS classes: Guaranteed (Requests == Limits for all containers), Burstable (Requests < Limits), and BestEffort (No requests/limits). When the node runs out of memory, the Kubelet invokes the OOMKiller, terminating BestEffort pods first, then Burstable, and Guaranteed pods last."
+      },
+      {
+        "id": "k8s-a-15",
+        "q": "What is the difference between StatefulSets and Deployments during Rolling Updates?",
+        "a": "Deployments update pods in a randomized parallel fashion to ensure availability. StatefulSets perform highly structured, strictly ordered updates. They terminate and update the pod with the highest ordinal (e.g., `web-2`) first, wait for it to become Ready, and then move to the next (`web-1`), ensuring quorum in stateful distributed systems is not broken."
+      },
+      {
+        "id": "k8s-a-16",
+        "q": "Explain Mutating and Validating Admission Webhooks.",
+        "a": "Admission controllers intercept requests to the API Server after authentication but before object persistence. A Mutating Webhook intercepts the payload and modifies it (e.g., Istio automatically injecting a sidecar proxy container into the PodSpec). A Validating Webhook inspects the final payload and either accepts or rejects it (e.g., rejecting any Pod that asks to run as root)."
+      }
+    ]
+  }
 }

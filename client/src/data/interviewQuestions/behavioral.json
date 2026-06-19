@@ -1,299 +1,271 @@
 {
   "seo": {
-    "title": "Top 50 Behavioral Interview Questions 2026 | STAR Method Answers",
-    "description": "Master the top 50 behavioral interview questions for 2026. Includes STAR method answers for leadership, conflict resolution, failure, and teamwork questions.",
+    "title": "Top 100+ Behavioral Interview Questions & STAR Method (2026)",
+    "description": "Master behavioral interviews using the STAR method. Covers leadership, conflict resolution, failure, and cultural fit questions.",
     "slug": "behavioral",
-    "keywords": "behavioral interview questions 2026, STAR method interview, tell me about yourself interview, leadership interview questions, weakness interview question"
+    "keywords": "behavioral interview questions, star method, leadership questions, conflict resolution"
   },
   "hero": {
-    "title": "Behavioral Interview Questions 2026",
-    "description": "The definitive behavioral interview preparation guide. Master the STAR method with example answers for the 50 most common behavioral questions asked at top tech companies.",
-    "count": 50,
-    "topic": "Behavioral",
-    "difficulty": "All Levels"
+    "title": "Behavioral Interview Questions",
+    "description": "50 crucial behavioral questions to test soft skills, leadership, and emotional intelligence using the STAR method.",
+    "count": 50
   },
-  "categories": [
-    {
-      "name": "Category 1 - BEHAVIORAL",
-      "questions": [
-        {
-          "q": "Sample Question 1 about behavioral?",
-          "a": "This is a dummy answer for question 1 related to the topic of behavioral. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "behavioral-q-1"
-        },
-        {
-          "q": "Sample Question 2 about behavioral?",
-          "a": "This is a dummy answer for question 2 related to the topic of behavioral. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "behavioral-q-2"
-        },
-        {
-          "q": "Sample Question 3 about behavioral?",
-          "a": "This is a dummy answer for question 3 related to the topic of behavioral. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "behavioral-q-3"
-        },
-        {
-          "q": "Sample Question 4 about behavioral?",
-          "a": "This is a dummy answer for question 4 related to the topic of behavioral. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "behavioral-q-4"
-        },
-        {
-          "q": "Sample Question 5 about behavioral?",
-          "a": "This is a dummy answer for question 5 related to the topic of behavioral. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "behavioral-q-5"
-        },
-        {
-          "q": "Sample Question 6 about behavioral?",
-          "a": "This is a dummy answer for question 6 related to the topic of behavioral. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "behavioral-q-6"
-        },
-        {
-          "q": "Sample Question 7 about behavioral?",
-          "a": "This is a dummy answer for question 7 related to the topic of behavioral. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "behavioral-q-7"
-        },
-        {
-          "q": "Sample Question 8 about behavioral?",
-          "a": "This is a dummy answer for question 8 related to the topic of behavioral. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "behavioral-q-8"
-        },
-        {
-          "q": "Sample Question 9 about behavioral?",
-          "a": "This is a dummy answer for question 9 related to the topic of behavioral. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "behavioral-q-9"
-        },
-        {
-          "q": "Sample Question 10 about behavioral?",
-          "a": "This is a dummy answer for question 10 related to the topic of behavioral. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "behavioral-q-10"
-        }
-      ]
-    },
-    {
-      "name": "Category 2 - BEHAVIORAL",
-      "questions": [
-        {
-          "q": "Sample Question 11 about behavioral?",
-          "a": "This is a dummy answer for question 11 related to the topic of behavioral. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "behavioral-q-11"
-        },
-        {
-          "q": "Sample Question 12 about behavioral?",
-          "a": "This is a dummy answer for question 12 related to the topic of behavioral. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "behavioral-q-12"
-        },
-        {
-          "q": "Sample Question 13 about behavioral?",
-          "a": "This is a dummy answer for question 13 related to the topic of behavioral. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "behavioral-q-13"
-        },
-        {
-          "q": "Sample Question 14 about behavioral?",
-          "a": "This is a dummy answer for question 14 related to the topic of behavioral. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "behavioral-q-14"
-        },
-        {
-          "q": "Sample Question 15 about behavioral?",
-          "a": "This is a dummy answer for question 15 related to the topic of behavioral. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "behavioral-q-15"
-        },
-        {
-          "q": "Sample Question 16 about behavioral?",
-          "a": "This is a dummy answer for question 16 related to the topic of behavioral. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "behavioral-q-16"
-        },
-        {
-          "q": "Sample Question 17 about behavioral?",
-          "a": "This is a dummy answer for question 17 related to the topic of behavioral. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "behavioral-q-17"
-        },
-        {
-          "q": "Sample Question 18 about behavioral?",
-          "a": "This is a dummy answer for question 18 related to the topic of behavioral. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "behavioral-q-18"
-        },
-        {
-          "q": "Sample Question 19 about behavioral?",
-          "a": "This is a dummy answer for question 19 related to the topic of behavioral. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "behavioral-q-19"
-        },
-        {
-          "q": "Sample Question 20 about behavioral?",
-          "a": "This is a dummy answer for question 20 related to the topic of behavioral. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "behavioral-q-20"
-        }
-      ]
-    },
-    {
-      "name": "Category 3 - BEHAVIORAL",
-      "questions": [
-        {
-          "q": "Sample Question 21 about behavioral?",
-          "a": "This is a dummy answer for question 21 related to the topic of behavioral. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "behavioral-q-21"
-        },
-        {
-          "q": "Sample Question 22 about behavioral?",
-          "a": "This is a dummy answer for question 22 related to the topic of behavioral. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "behavioral-q-22"
-        },
-        {
-          "q": "Sample Question 23 about behavioral?",
-          "a": "This is a dummy answer for question 23 related to the topic of behavioral. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "behavioral-q-23"
-        },
-        {
-          "q": "Sample Question 24 about behavioral?",
-          "a": "This is a dummy answer for question 24 related to the topic of behavioral. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "behavioral-q-24"
-        },
-        {
-          "q": "Sample Question 25 about behavioral?",
-          "a": "This is a dummy answer for question 25 related to the topic of behavioral. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "behavioral-q-25"
-        },
-        {
-          "q": "Sample Question 26 about behavioral?",
-          "a": "This is a dummy answer for question 26 related to the topic of behavioral. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "behavioral-q-26"
-        },
-        {
-          "q": "Sample Question 27 about behavioral?",
-          "a": "This is a dummy answer for question 27 related to the topic of behavioral. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "behavioral-q-27"
-        },
-        {
-          "q": "Sample Question 28 about behavioral?",
-          "a": "This is a dummy answer for question 28 related to the topic of behavioral. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "behavioral-q-28"
-        },
-        {
-          "q": "Sample Question 29 about behavioral?",
-          "a": "This is a dummy answer for question 29 related to the topic of behavioral. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "behavioral-q-29"
-        },
-        {
-          "q": "Sample Question 30 about behavioral?",
-          "a": "This is a dummy answer for question 30 related to the topic of behavioral. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "behavioral-q-30"
-        }
-      ]
-    },
-    {
-      "name": "Category 4 - BEHAVIORAL",
-      "questions": [
-        {
-          "q": "Sample Question 31 about behavioral?",
-          "a": "This is a dummy answer for question 31 related to the topic of behavioral. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "behavioral-q-31"
-        },
-        {
-          "q": "Sample Question 32 about behavioral?",
-          "a": "This is a dummy answer for question 32 related to the topic of behavioral. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "behavioral-q-32"
-        },
-        {
-          "q": "Sample Question 33 about behavioral?",
-          "a": "This is a dummy answer for question 33 related to the topic of behavioral. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "behavioral-q-33"
-        },
-        {
-          "q": "Sample Question 34 about behavioral?",
-          "a": "This is a dummy answer for question 34 related to the topic of behavioral. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "behavioral-q-34"
-        },
-        {
-          "q": "Sample Question 35 about behavioral?",
-          "a": "This is a dummy answer for question 35 related to the topic of behavioral. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "behavioral-q-35"
-        },
-        {
-          "q": "Sample Question 36 about behavioral?",
-          "a": "This is a dummy answer for question 36 related to the topic of behavioral. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "behavioral-q-36"
-        },
-        {
-          "q": "Sample Question 37 about behavioral?",
-          "a": "This is a dummy answer for question 37 related to the topic of behavioral. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "behavioral-q-37"
-        },
-        {
-          "q": "Sample Question 38 about behavioral?",
-          "a": "This is a dummy answer for question 38 related to the topic of behavioral. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "behavioral-q-38"
-        },
-        {
-          "q": "Sample Question 39 about behavioral?",
-          "a": "This is a dummy answer for question 39 related to the topic of behavioral. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "behavioral-q-39"
-        },
-        {
-          "q": "Sample Question 40 about behavioral?",
-          "a": "This is a dummy answer for question 40 related to the topic of behavioral. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "behavioral-q-40"
-        }
-      ]
-    },
-    {
-      "name": "Category 5 - BEHAVIORAL",
-      "questions": [
-        {
-          "q": "Sample Question 41 about behavioral?",
-          "a": "This is a dummy answer for question 41 related to the topic of behavioral. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "behavioral-q-41"
-        },
-        {
-          "q": "Sample Question 42 about behavioral?",
-          "a": "This is a dummy answer for question 42 related to the topic of behavioral. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "behavioral-q-42"
-        },
-        {
-          "q": "Sample Question 43 about behavioral?",
-          "a": "This is a dummy answer for question 43 related to the topic of behavioral. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "behavioral-q-43"
-        },
-        {
-          "q": "Sample Question 44 about behavioral?",
-          "a": "This is a dummy answer for question 44 related to the topic of behavioral. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "behavioral-q-44"
-        },
-        {
-          "q": "Sample Question 45 about behavioral?",
-          "a": "This is a dummy answer for question 45 related to the topic of behavioral. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "behavioral-q-45"
-        },
-        {
-          "q": "Sample Question 46 about behavioral?",
-          "a": "This is a dummy answer for question 46 related to the topic of behavioral. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "behavioral-q-46"
-        },
-        {
-          "q": "Sample Question 47 about behavioral?",
-          "a": "This is a dummy answer for question 47 related to the topic of behavioral. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "behavioral-q-47"
-        },
-        {
-          "q": "Sample Question 48 about behavioral?",
-          "a": "This is a dummy answer for question 48 related to the topic of behavioral. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "behavioral-q-48"
-        },
-        {
-          "q": "Sample Question 49 about behavioral?",
-          "a": "This is a dummy answer for question 49 related to the topic of behavioral. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "behavioral-q-49"
-        },
-        {
-          "q": "Sample Question 50 about behavioral?",
-          "a": "This is a dummy answer for question 50 related to the topic of behavioral. It provides enough placeholder text to test the UI rendering of the answer section properly.",
-          "id": "behavioral-q-50"
-        }
-      ]
-    }
-  ],
-  "topTips": [
-    "Prepare 8-10 strong STAR stories that can flex to cover different question types.",
-    "Quantify every result you can: '18% reduction', '$2M impact', 'team of 5 engineers'.",
-    "For Amazon: map your stories to Leadership Principles before the interview.",
-    "Never badmouth former employers or colleagues — it raises red flags about your professionalism.",
-    "Practice out loud with a timer — most behavioral answers should be 90-180 seconds, not 5+ minutes."
-  ]
+  "questions": {
+    "beginner": [
+      {
+        "id": "beh-b-1",
+        "q": "What is the STAR Method?",
+        "a": "The STAR method is a structured manner of responding to behavioral interview questions. S = Situation (set the scene and context). T = Task (describe what your specific responsibility or challenge was). A = Action (explain exactly what YOU did to address it). R = Result (share the positive outcome, using metrics if possible)."
+      },
+      {
+        "id": "beh-b-2",
+        "q": "Tell me about yourself.",
+        "a": "Keep it professional, concise, and structured. Use the 'Present-Past-Future' formula. Present: Your current role and a major recent accomplishment. Past: How your background and previous roles led you to this point. Future: Why you are excited about this specific opportunity and how it aligns with your career goals. Do not recite your entire resume or personal life."
+      },
+      {
+        "id": "beh-b-3",
+        "q": "Why do you want to work for this company?",
+        "a": "Show that you have done your research. Mention specific recent company news, their core values, or a particular product feature you admire. Connect their mission to your own personal values and career trajectory. Avoid talking only about what the company can do for you (salary, perks); focus on how you can contribute to their goals."
+      },
+      {
+        "id": "beh-b-4",
+        "q": "What is your greatest strength?",
+        "a": "Choose a strength that is directly highly relevant to the job description. Back it up immediately with a brief story demonstrating that strength in action. (e.g., 'My greatest strength is my ability to communicate complex technical concepts to non-technical stakeholders. For example, in my last project...')."
+      },
+      {
+        "id": "beh-b-5",
+        "q": "What is your greatest weakness?",
+        "a": "Avoid cliché answers like 'I work too hard' or 'I'm a perfectionist.' Choose a real, but non-fatal weakness (e.g., public speaking, delegating tasks, or lacking experience in a specific non-essential software). Crucially, spend the majority of the answer explaining the concrete steps you are currently taking to improve upon it."
+      },
+      {
+        "id": "beh-b-6",
+        "q": "Where do you see yourself in 5 years?",
+        "a": "Employers want to know you are ambitious, realistic, and likely to stay with the company. Frame your answer around professional growth, taking on more responsibility, mastering specific skills relevant to the industry, and ultimately creating more value for the organization. Do not mention wanting to start your own company or pivot to a wildly different career."
+      },
+      {
+        "id": "beh-b-7",
+        "q": "Tell me about a time you made a mistake. How did you handle it?",
+        "a": "Own the mistake completely; do not deflect blame. Explain the Situation, the Mistake, and immediately pivot to the Action you took to fix it. Emphasize the Result and, most importantly, the lesson you learned and the systemic changes you implemented to ensure the mistake never happens again."
+      },
+      {
+        "id": "beh-b-8",
+        "q": "Describe a time you had to work under a tight deadline.",
+        "a": "Use the STAR method. Focus on your prioritization, time-management, and communication skills. Explain how you broke the massive task down into smaller chunks, communicated realistic expectations to stakeholders, cut non-essential scope, and successfully delivered the core requirements on time."
+      },
+      {
+        "id": "beh-b-9",
+        "q": "Tell me about a time you went above and beyond your job description.",
+        "a": "Employers look for initiative and ownership. Describe a situation where you identified a problem or opportunity outside your daily tasks, took the initiative to solve it without being asked, and generated a positive result for the team or company."
+      },
+      {
+        "id": "beh-b-10",
+        "q": "How do you handle stress and pressure?",
+        "a": "Provide a practical, actionable answer. Mention techniques like breaking large problems into manageable tasks, prioritizing relentlessly (using matrices like Eisenhower), taking short breaks, and maintaining open communication with your team about workload. Provide a brief example of a high-pressure situation you navigated calmly."
+      },
+      {
+        "id": "beh-b-11",
+        "q": "Describe your ideal work environment.",
+        "a": "Tailor this slightly to the company's known culture, but remain authentic. Highlight aspects that promote productivity and teamwork, such as open communication, a culture of continuous learning, collaborative problem-solving, and a balance of autonomy and mentorship."
+      },
+      {
+        "id": "beh-b-12",
+        "q": "Why are you leaving your current job?",
+        "a": "NEVER badmouth your current or former employer, boss, or colleagues. Keep it positive and future-focused. State that you are seeking new challenges, looking to pivot into a new industry/technology, or seeking an environment with more room for upward mobility."
+      },
+      {
+        "id": "beh-b-13",
+        "q": "Tell me about a time you had to learn something new quickly.",
+        "a": "Technology changes rapidly; adaptability is key. Describe a scenario where you were thrown into a project requiring an unfamiliar tool or language. Detail your learning strategy (e.g., reading documentation, taking a weekend course, seeking out internal experts) and how you quickly applied that knowledge to succeed."
+      },
+      {
+        "id": "beh-b-14",
+        "q": "How do you prioritize your work when you have multiple urgent tasks?",
+        "a": "Discuss a framework. Mention evaluating tasks based on business impact vs. effort, checking deadlines, identifying blockers/dependencies, and communicating with stakeholders to negotiate timelines. Give an example of a time you successfully juggled competing priorities."
+      },
+      {
+        "id": "beh-b-15",
+        "q": "What motivates you?",
+        "a": "Connect your motivation to the core aspects of the role. If it's a technical role, mention the thrill of solving complex logical puzzles. If it's leadership, mention mentoring others and driving business impact. Align your intrinsic motivators with the company's mission."
+      },
+      {
+        "id": "beh-b-16",
+        "q": "What are your salary expectations?",
+        "a": "Do not give a specific, rigid number immediately. State that you are open to negotiation based on the total compensation package (benefits, equity, bonus). If pressed, provide a realistic, researched range based on market data for your experience level in that specific geographic area, and state that your priority is finding the right mutual fit."
+      },
+      {
+        "id": "beh-b-17",
+        "q": "Do you have any questions for us?",
+        "a": "Always say yes. Ask thoughtful questions that show you've researched the company. Examples: 'What is the biggest challenge your team is facing right now?', 'How does the company measure success for this role in the first 90 days?', or 'Can you tell me about the team culture and how you collaborate?'"
+      }
+    ],
+    "intermediate": [
+      {
+        "id": "beh-i-1",
+        "q": "Tell me about a time you disagreed with a coworker or manager. How did you resolve it?",
+        "a": "The interviewer is testing your conflict resolution skills and emotional intelligence. Choose a professional disagreement over ideas, not a personal feud. Explain how you actively listened to their perspective, used data to support your argument, sought a compromise, and ultimately committed to the team's decision moving forward, preserving the relationship."
+      },
+      {
+        "id": "beh-i-2",
+        "q": "Describe a time you failed.",
+        "a": "A critical test of self-awareness. Choose a real failure where you were directly responsible. Describe the situation, own the failure entirely, and focus 70% of the answer on the post-mortem: what you learned, how you adapted, and the systems you put in place to ensure you (and your team) never made that exact mistake again."
+      },
+      {
+        "id": "beh-i-3",
+        "q": "Tell me about a time you had to persuade someone to see things your way.",
+        "a": "Focus on influence without authority. Describe a scenario where there was resistance to your idea. Explain how you mapped out stakeholder concerns, gathered hard data/metrics to objectively prove your point, tailored your communication style to your audience, and successfully achieved buy-in."
+      },
+      {
+        "id": "beh-i-4",
+        "q": "Give me an example of a time you received negative feedback. How did you handle it?",
+        "a": "Demonstrate a growth mindset. Describe a time you received harsh but fair criticism. Explain how you set aside defensiveness, asked clarifying questions to understand the root cause, implemented an action plan to improve, and later followed up with the person to show your progress."
+      },
+      {
+        "id": "beh-i-5",
+        "q": "Tell me about a time you had to work with a difficult person.",
+        "a": "Avoid venting. Frame 'difficult' as a difference in communication styles or priorities. Explain how you took the initiative to understand their motivations, adjusted your own approach, established clear communication boundaries, and ultimately found a professional way to collaborate effectively."
+      },
+      {
+        "id": "beh-i-6",
+        "q": "Describe a situation where you had to make a decision without all the necessary information.",
+        "a": "Testing your bias for action and risk management. Explain a scenario where waiting for perfect data would cause a missed deadline or opportunity. Describe how you gathered whatever data was available, consulted experts, weighed the risks, made a calculated decision, and monitored the outcome closely to pivot if necessary."
+      },
+      {
+        "id": "beh-i-7",
+        "q": "Tell me about a time you stepped up into a leadership role.",
+        "a": "You don't need a formal title to lead. Describe a situation where a project was failing or lacking direction, and you voluntarily stepped in to organize the team, delegate tasks, establish a clear timeline, and guide the project to successful completion."
+      },
+      {
+        "id": "beh-i-8",
+        "q": "Give me an example of a time you identified a process that was inefficient and improved it.",
+        "a": "Showcase your continuous improvement mindset. Describe a manual, repetitive, or error-prone process. Detail the steps you took to automate, document, or streamline it, and quantify the result (e.g., 'saved the team 10 hours a week' or 'reduced deployment errors by 20%')."
+      },
+      {
+        "id": "beh-i-9",
+        "q": "Tell me about a time you had to adapt to a significant change at work.",
+        "a": "Employers value resilience. Describe a re-org, a sudden shift in company strategy, or a massive project pivot. Explain your initial reaction, how you quickly processed the new reality, maintained a positive attitude for your team, and successfully delivered results under the new paradigm."
+      },
+      {
+        "id": "beh-i-10",
+        "q": "Describe a time you had to deliver bad news to a client or stakeholder.",
+        "a": "Tests communication and empathy. Explain a situation where a deadline was missed or a feature failed. Detail how you communicated the issue promptly, took accountability, clearly explained the root cause, and most importantly, presented a clear, actionable mitigation plan moving forward."
+      },
+      {
+        "id": "beh-i-11",
+        "q": "Tell me about a time you had a miscommunication with a colleague.",
+        "a": "Describe the scenario objectively. Explain how you realized the miscommunication occurred, how you took immediate action to clarify (preferring a face-to-face or video call over more text), resolved the issue, and learned to be more precise in future communications."
+      },
+      {
+        "id": "beh-i-12",
+        "q": "Give an example of a goal you reached and tell me how you achieved it.",
+        "a": "Pick a professional goal that required sustained effort. Discuss your planning phase, how you broke the goal into milestones, the obstacles you faced along the way, how you persevered, and the ultimate successful outcome."
+      },
+      {
+        "id": "beh-i-13",
+        "q": "Tell me about a time you were overwhelmed with work. How did you handle it?",
+        "a": "Demonstrate proactive communication. Explain how you took a step back to assess the entire workload, prioritized based on business value, communicated your capacity limits to your manager, delegated what you could, and focused entirely on executing the highest priority items."
+      },
+      {
+        "id": "beh-i-14",
+        "q": "Describe a time you had to collaborate across different departments.",
+        "a": "Showcase your ability to break down silos. Discuss a cross-functional project (e.g., working with Design and Marketing). Highlight how you learned their terminology, respected their differing priorities, established a shared goal, and facilitated smooth communication between teams."
+      },
+      {
+        "id": "beh-i-15",
+        "q": "Tell me about a time you anticipated a problem and prevented it.",
+        "a": "Employers love proactive problem solvers. Describe a situation where your foresight (reviewing code, analyzing trends, double-checking requirements) caught a critical issue before it hit production or impacted a client, and the steps you took to mitigate it."
+      },
+      {
+        "id": "beh-i-16",
+        "q": "Tell me about a time you had to teach a complex concept to a beginner.",
+        "a": "Tests communication and patience. Detail how you assessed the person's current knowledge level, avoided jargon, used analogies or visual aids to bridge the gap, checked for understanding frequently, and empowered them to use the knowledge independently."
+      },
+      {
+        "id": "beh-i-17",
+        "q": "How do you keep your technology skills current?",
+        "a": "Show a genuine passion for your field. Mention reading specific industry blogs, following thought leaders, participating in open-source projects, taking online courses, attending meetups, or building personal side projects to experiment with new frameworks."
+      }
+    ],
+    "advanced": [
+      {
+        "id": "beh-a-1",
+        "q": "Tell me about a time you had to make an unpopular decision.",
+        "a": "This tests executive presence and courage. Describe a scenario where data or strategy dictated a choice the team disliked (e.g., cutting a pet feature, mandating a new painful process). Explain how you listened to their grievances, transparently explained the 'Why' behind the decision, stood firm under pressure, and ultimately guided the team through the transition."
+      },
+      {
+        "id": "beh-a-2",
+        "q": "Describe a time you recognized a colleague was struggling and stepped in to help.",
+        "a": "Tests empathy and team-player mentality. Explain how you noticed the signs of burnout or confusion, approached them privately with empathy, offered tangible assistance (taking some workload, pairing on a difficult problem), and helped them get back on track without seeking public credit."
+      },
+      {
+        "id": "beh-a-3",
+        "q": "Tell me about a time a project's scope changed drastically at the last minute.",
+        "a": "Tests extreme adaptability and crisis management. Describe how you managed the initial shock, gathered the team to reassess the remaining timeline, negotiated with stakeholders on what could realistically be delivered (cutting scope), and led the rapid execution of the new plan."
+      },
+      {
+        "id": "beh-a-4",
+        "q": "Give me an example of how you manage remote or distributed teams effectively.",
+        "a": "Focus on asynchronous communication, trust, and output-over-hours. Discuss implementing rigorous documentation cultures, maintaining regular 1-on-1s for emotional check-ins, being mindful of time zones, and fostering virtual team-building to maintain morale."
+      },
+      {
+        "id": "beh-a-5",
+        "q": "Tell me about a time you had to challenge a deeply entrenched company policy or technical standard.",
+        "a": "Tests innovation vs. respect for the status quo. Detail how you identified the flaw, did not complain but rather built a prototype or gathered data to prove the new way was better, presented the business case to leadership, and successfully championed the organizational change."
+      },
+      {
+        "id": "beh-a-6",
+        "q": "Describe a time you had to compromise on your values or standards to meet a deadline.",
+        "a": "A trick question. Never compromise core ethical values. However, you can compromise on 'perfectionism' (technical standards). Explain a time you had to accumulate intentional technical debt to hit a critical market window, but clearly document how you ensured security wasn't compromised and how you planned to pay down the debt later."
+      },
+      {
+        "id": "beh-a-7",
+        "q": "Tell me about a time you built a team from scratch or revitalized an underperforming team.",
+        "a": "Focus on hiring philosophy, establishing psychological safety, and setting clear goals. Describe how you assessed the gaps, hired for complementary skills, created a culture of feedback, aligned the team around a clear mission, and tracked performance improvements over time."
+      },
+      {
+        "id": "beh-a-8",
+        "q": "How do you handle a situation where you completely disagree with your manager's strategic direction?",
+        "a": "Demonstrate 'Disagree and Commit' (Amazon Leadership Principle). Explain how you would present your concerns and data privately and respectfully to your manager. If the manager hears you out but still chooses their direction, explain how you would fully commit 100% to executing their strategy without harboring resentment or trying to sabotage it."
+      },
+      {
+        "id": "beh-a-9",
+        "q": "Tell me about a time you managed a major crisis or outage.",
+        "a": "Focus on calm under pressure and systemic thinking. Describe the incident, how you triaged the bleeding (mitigation), established clear communication channels for stakeholders, led the root cause analysis, and implemented the long-term fix to prevent recurrence."
+      },
+      {
+        "id": "beh-a-10",
+        "q": "Give an example of a time you took a calculated risk and it failed. What was the fallout?",
+        "a": "Similar to the failure question but focuses on risk assessment. Detail your risk-reward calculation, why you chose to proceed, how the risk materialized, how you owned the fallout with leadership, and how it refined your risk assessment framework for future decisions."
+      },
+      {
+        "id": "beh-a-11",
+        "q": "Tell me about a time you had to terminate an employee or remove someone from a project.",
+        "a": "Tests emotional intelligence and professionalism. Emphasize that it's a last resort. Describe the performance improvement plans (PIPs) or coaching attempted beforehand, the clear documentation of expectations, and how you handled the actual conversation with compassion but firm clarity, minimizing team disruption."
+      },
+      {
+        "id": "beh-a-12",
+        "q": "How do you foster diversity, equity, and inclusion (DEI) within your team?",
+        "a": "Move beyond buzzwords. Discuss tangible actions: ensuring diverse hiring panels, creating an environment where introverts or marginalized voices feel safe speaking up in meetings, mentoring underrepresented juniors, and actively challenging your own unconscious biases."
+      },
+      {
+        "id": "beh-a-13",
+        "q": "Describe a time you had to navigate complex corporate politics to get a project approved.",
+        "a": "Frame 'politics' as 'stakeholder management'. Detail how you identified the key decision-makers, understood their differing underlying motivations and KPIs, built coalitions behind the scenes, and framed your project's benefits in a way that aligned with everyone's individual goals."
+      },
+      {
+        "id": "beh-a-14",
+        "q": "Tell me about a time you sacrificed your own short-term success for the long-term success of the company.",
+        "a": "Demonstrates high-level maturity and lack of ego. Examples could include giving up headcount budget to a team that needed it more, handing over a high-visibility project to a junior developer for their growth, or delaying a launch to fix a deep architectural flaw that wouldn't have been noticed immediately."
+      },
+      {
+        "id": "beh-a-15",
+        "q": "How do you know when to be hands-on in the weeds vs. delegating to your team?",
+        "a": "Discuss situational leadership. You delegate based on task-relevant maturity. For junior members or new complex tasks, you are hands-on. For senior members on familiar tasks, you define the outcome and get out of their way. You only dive into the weeds during crises or when the team is blocked."
+      },
+      {
+        "id": "beh-a-16",
+        "q": "Describe your legacy at your last company.",
+        "a": "This summarizes your impact. Don't focus on code written or features shipped. Focus on systemic changes: the engineering culture you established, the mentorship programs you created, the CI/CD pipelines that sped up the whole org, or the shift in product strategy that resulted in sustained revenue growth after you left."
+      }
+    ]
+  }
 }

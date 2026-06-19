@@ -1,272 +1,270 @@
 {
   "seo": {
-    "title": "Top System Design Interview Questions (2026) | Candidatetohr",
-    "description": "Master your next technical interview with our comprehensive list of System Design interview questions.",
+    "title": "Top 100+ System Design Interview Questions & Answers (2026)",
+    "description": "Crack your System Design interview. Covers scalability, microservices, databases, caching, and distributed systems architecture.",
     "slug": "system-design",
-    "keywords": "system design interview questions",
-    "ogTitle": "System Design Interview Questions",
-    "ogDescription": "Practice the top System Design questions asked by FAANG."
+    "keywords": "system design interview questions, scalability, distributed systems, software architecture"
   },
   "hero": {
     "title": "System Design Interview Questions",
-    "description": "Comprehensive list of System Design questions. (Full list is being automatically generated...)",
+    "description": "50 real-world System Design questions covering high availability, CAP theorem, load balancing, and massive scale architecture.",
     "count": 50
   },
   "questions": {
     "beginner": [
       {
-        "id": "system-design-b-1",
-        "q": "Sample beginner Question 1 about system-design?",
-        "a": "This is a dummy answer for a beginner question 1 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sd-b-1",
+        "q": "What is System Design?",
+        "a": "System design is the process of defining the architecture, components, modules, interfaces, and data for a system to satisfy specified requirements. In software engineering, it refers to designing large-scale, distributed systems capable of handling massive amounts of traffic and data reliably."
       },
       {
-        "id": "system-design-b-2",
-        "q": "Sample beginner Question 2 about system-design?",
-        "a": "This is a dummy answer for a beginner question 2 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sd-b-2",
+        "q": "What is Scalability? Difference between Horizontal and Vertical scaling?",
+        "a": "Scalability is a system's ability to handle increasing load gracefully. Vertical Scaling (Scaling Up) means adding more power (CPU, RAM) to an existing machine; it is limited by hardware ceilings and causes downtime. Horizontal Scaling (Scaling Out) means adding more machines into a pool of resources; it is practically limitless and highly resilient, but introduces network complexity."
       },
       {
-        "id": "system-design-b-3",
-        "q": "Sample beginner Question 3 about system-design?",
-        "a": "This is a dummy answer for a beginner question 3 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sd-b-3",
+        "q": "What is High Availability (HA)?",
+        "a": "High Availability refers to a system operating continuously without failure for a long time. It is usually measured in 'nines' (e.g., 99.999% uptime means ~5 minutes of downtime per year). HA is achieved by eliminating single points of failure through redundancy, clustering, and auto-failover mechanisms."
       },
       {
-        "id": "system-design-b-4",
-        "q": "Sample beginner Question 4 about system-design?",
-        "a": "This is a dummy answer for a beginner question 4 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sd-b-4",
+        "q": "What is a Load Balancer?",
+        "a": "A Load Balancer is a device or software component that distributes incoming network traffic across multiple backend servers. It ensures no single server bears too much demand, improving responsiveness and availability. Examples include Nginx, HAProxy, and AWS Application Load Balancer."
       },
       {
-        "id": "system-design-b-5",
-        "q": "Sample beginner Question 5 about system-design?",
-        "a": "This is a dummy answer for a beginner question 5 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sd-b-5",
+        "q": "What is Caching?",
+        "a": "Caching is the process of storing frequently accessed data in a temporary, high-speed storage layer (usually RAM, like Redis or Memcached) so that future requests for that data are served much faster than querying the primary, slower database or computing the result from scratch."
       },
       {
-        "id": "system-design-b-6",
-        "q": "Sample beginner Question 6 about system-design?",
-        "a": "This is a dummy answer for a beginner question 6 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sd-b-6",
+        "q": "What is the difference between a Relational DB (SQL) and a NoSQL DB?",
+        "a": "SQL databases (PostgreSQL, MySQL) are table-based, enforce strict schemas, use structured query language, and guarantee ACID properties (great for financial transactions). NoSQL databases (MongoDB, Cassandra) are document, key-value, or graph-based, offer flexible schemas, scale horizontally much easier, and prioritize speed/availability over strict consistency."
       },
       {
-        "id": "system-design-b-7",
-        "q": "Sample beginner Question 7 about system-design?",
-        "a": "This is a dummy answer for a beginner question 7 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sd-b-7",
+        "q": "What is a CDN (Content Delivery Network)?",
+        "a": "A CDN is a geographically distributed network of proxy servers and data centers. It caches static assets (images, videos, HTML, CSS, JS) at 'edge locations' close to the end users. This drastically reduces latency, decreases the load on the origin server, and provides protection against DDoS attacks."
       },
       {
-        "id": "system-design-b-8",
-        "q": "Sample beginner Question 8 about system-design?",
-        "a": "This is a dummy answer for a beginner question 8 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sd-b-8",
+        "q": "What is a Reverse Proxy?",
+        "a": "A reverse proxy is a server that sits in front of backend web servers and forwards client (e.g., web browser) requests to those servers. It is used to increase security (hiding backend IPs), balance load, terminate SSL encryption, and cache static content."
       },
       {
-        "id": "system-design-b-9",
-        "q": "Sample beginner Question 9 about system-design?",
-        "a": "This is a dummy answer for a beginner question 9 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sd-b-9",
+        "q": "Explain Monolithic vs Microservices Architecture.",
+        "a": "A Monolith bundles all application logic, UI, and database access into a single deployable unit; it's easy to develop initially but hard to scale and maintain as it grows. Microservices break the application down into small, independent, loosely coupled services communicating via APIs; they scale independently and allow polyglot programming, but introduce heavy operational complexity."
       },
       {
-        "id": "system-design-b-10",
-        "q": "Sample beginner Question 10 about system-design?",
-        "a": "This is a dummy answer for a beginner question 10 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sd-b-10",
+        "q": "What is an API Gateway?",
+        "a": "In a microservices architecture, an API Gateway acts as a single entry point for all client requests. Instead of a client calling 5 different microservices, it calls the Gateway, which routes requests to the appropriate services, aggregates the results, and handles cross-cutting concerns like authentication, rate limiting, and logging."
       },
       {
-        "id": "system-design-b-11",
-        "q": "Sample beginner Question 11 about system-design?",
-        "a": "This is a dummy answer for a beginner question 11 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sd-b-11",
+        "q": "What is DNS (Domain Name System)?",
+        "a": "DNS is the phonebook of the internet. It translates human-readable domain names (www.google.com) into machine-readable IP addresses (142.250.190.46) so browsers can load internet resources. DNS resolution is often the very first step in a system design flow."
       },
       {
-        "id": "system-design-b-12",
-        "q": "Sample beginner Question 12 about system-design?",
-        "a": "This is a dummy answer for a beginner question 12 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sd-b-12",
+        "q": "What is Throughput vs Latency?",
+        "a": "Latency is the time it takes for a single request to travel from the client, be processed by the server, and return a response (measured in milliseconds). Throughput is the number of requests the system can process concurrently in a given timeframe (measured in Requests Per Second, RPS). High throughput does not guarantee low latency."
       },
       {
-        "id": "system-design-b-13",
-        "q": "Sample beginner Question 13 about system-design?",
-        "a": "This is a dummy answer for a beginner question 13 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sd-b-13",
+        "q": "What is the difference between Synchronous and Asynchronous communication?",
+        "a": "Synchronous communication requires the sender to wait (block) for the receiver to process the request and send a response before moving on (e.g., standard HTTP request). Asynchronous communication allows the sender to send a message and immediately move on to other tasks without waiting for a response (e.g., using Message Queues like RabbitMQ)."
       },
       {
-        "id": "system-design-b-14",
-        "q": "Sample beginner Question 14 about system-design?",
-        "a": "This is a dummy answer for a beginner question 14 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sd-b-14",
+        "q": "What is Database Replication?",
+        "a": "Replication is the process of copying data from a primary database node to one or more replica nodes in real-time. It is used to increase data availability (failover in case the primary dies) and scale read performance by routing read-heavy traffic to the replicas, leaving the primary node to handle write operations."
       },
       {
-        "id": "system-design-b-15",
-        "q": "Sample beginner Question 15 about system-design?",
-        "a": "This is a dummy answer for a beginner question 15 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sd-b-15",
+        "q": "What is Database Partitioning/Sharding?",
+        "a": "Sharding is a method of horizontally scaling a database. Instead of putting all data on one massive server, the data is broken down into smaller chunks (shards) and distributed across multiple independent database servers based on a Shard Key (e.g., User ID). It massively increases write throughput but makes complex JOINs across shards very difficult."
       },
       {
-        "id": "system-design-b-16",
-        "q": "Sample beginner Question 16 about system-design?",
-        "a": "This is a dummy answer for a beginner question 16 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sd-b-16",
+        "q": "What is a Message Queue?",
+        "a": "A message queue is a form of asynchronous service-to-service communication used in serverless and microservices architectures. Messages are stored on the queue until they are processed and deleted by a consumer. This decouples heavy background tasks (like sending emails or video processing) from the main web application thread."
       },
       {
-        "id": "system-design-b-17",
-        "q": "Sample beginner Question 17 about system-design?",
-        "a": "This is a dummy answer for a beginner question 17 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sd-b-17",
+        "q": "What is a Single Point of Failure (SPOF)?",
+        "a": "A SPOF is a part of a system that, if it fails, will stop the entire system from working. Good system design identifies SPOFs (like having only one load balancer, one database instance, or one power supply) and eliminates them by adding redundancy."
       }
     ],
     "intermediate": [
       {
-        "id": "system-design-i-18",
-        "q": "Sample intermediate Question 18 about system-design?",
-        "a": "This is a dummy answer for a intermediate question 18 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sd-i-1",
+        "q": "Explain the CAP Theorem.",
+        "a": "CAP Theorem states that a distributed data store can only simultaneously provide two of three guarantees: Consistency (every read receives the most recent write), Availability (every request receives a non-error response), and Partition Tolerance (the system continues to operate despite network failures dropping messages between nodes). Because network partitions are inevitable in distributed systems, engineers must trade-off between Consistency (CP) and Availability (AP)."
       },
       {
-        "id": "system-design-i-19",
-        "q": "Sample intermediate Question 19 about system-design?",
-        "a": "This is a dummy answer for a intermediate question 19 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sd-i-2",
+        "q": "What is the PACELC Theorem?",
+        "a": "An extension of the CAP theorem. It states: in case of a network Partition (P), you must choose between Availability (A) and Consistency (C). Else (E), when the system is running normally without partitions, you must choose between Latency (L) and Consistency (C). It acknowledges that even in normal operation, achieving strong consistency requires slower latency."
       },
       {
-        "id": "system-design-i-20",
-        "q": "Sample intermediate Question 20 about system-design?",
-        "a": "This is a dummy answer for a intermediate question 20 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sd-i-3",
+        "q": "Explain Strong vs Eventual Consistency.",
+        "a": "Strong Consistency guarantees that once a write is acknowledged, any subsequent read from any node will instantly return that updated value (high latency, common in relational DBs). Eventual Consistency guarantees that if no new updates are made, eventually all nodes will synchronize and return the last updated value, but reads immediately after a write might return stale data (low latency, common in NoSQL/AP systems)."
       },
       {
-        "id": "system-design-i-21",
-        "q": "Sample intermediate Question 21 about system-design?",
-        "a": "This is a dummy answer for a intermediate question 21 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sd-i-4",
+        "q": "How does Consistent Hashing work?",
+        "a": "In distributed caching or sharding, standard hashing `hash(key) % N` fails disastrously when a server is added or removed, requiring massive data reshuffling. Consistent hashing maps both data keys and server nodes onto a virtual hash ring (0 to 360 degrees). A key is assigned to the first server it encounters moving clockwise on the ring. Adding or removing a node only affects its immediate neighbor, minimizing data movement."
       },
       {
-        "id": "system-design-i-22",
-        "q": "Sample intermediate Question 22 about system-design?",
-        "a": "This is a dummy answer for a intermediate question 22 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sd-i-5",
+        "q": "What are the common caching strategies?",
+        "a": "1) Cache-Aside: Application checks cache; if miss, reads from DB, writes to cache, returns data. 2) Read-Through: App reads from cache; if miss, the cache itself fetches from DB. 3) Write-Through: App writes to cache; cache immediately writes to DB synchronously (safe, but slow writes). 4) Write-Behind (Write-Back): App writes to cache; cache acknowledges app immediately, then asynchronously writes to DB in the background (fast, but risk of data loss on crash)."
       },
       {
-        "id": "system-design-i-23",
-        "q": "Sample intermediate Question 23 about system-design?",
-        "a": "This is a dummy answer for a intermediate question 23 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sd-i-6",
+        "q": "What is Cache Eviction and name common policies?",
+        "a": "When a cache reaches its memory limit, it must evict old data to make room for new data. Common policies include: LRU (Least Recently Used - discards items accessed furthest in the past), LFU (Least Frequently Used - discards items accessed least often overall), and FIFO (First In First Out)."
       },
       {
-        "id": "system-design-i-24",
-        "q": "Sample intermediate Question 24 about system-design?",
-        "a": "This is a dummy answer for a intermediate question 24 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sd-i-7",
+        "q": "Explain WebSockets vs Long Polling vs Server-Sent Events (SSE).",
+        "a": "Long Polling: Client requests data, server holds the connection open until new data is available, sends it, and the client immediately reconnects (high overhead). SSE: Unidirectional connection where the server streams updates continuously to the client over HTTP. WebSockets: A persistent, full-duplex, bidirectional TCP connection allowing real-time, low-latency communication in both directions (e.g., chat apps, multiplayer games)."
       },
       {
-        "id": "system-design-i-25",
-        "q": "Sample intermediate Question 25 about system-design?",
-        "a": "This is a dummy answer for a intermediate question 25 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sd-i-8",
+        "q": "How do you implement Rate Limiting?",
+        "a": "Rate limiting restricts the number of API requests a user can make in a timeframe. Common algorithms: 1) Token Bucket (tokens added at a fixed rate, requests consume tokens). 2) Leaking Bucket (requests enter a queue, processed at a fixed rate). 3) Fixed Window (counts requests from minute 0:00 to 1:00; suffers from bursts at window edges). 4) Sliding Window Log/Counter (smooths out edge bursts). Usually implemented using Redis."
       },
       {
-        "id": "system-design-i-26",
-        "q": "Sample intermediate Question 26 about system-design?",
-        "a": "This is a dummy answer for a intermediate question 26 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sd-i-9",
+        "q": "What is a Distributed Lock?",
+        "a": "In a clustered environment, multiple instances of an application might try to modify the same shared resource simultaneously, causing race conditions. A Distributed Lock (implemented using Redis SETNX, ZooKeeper, or etcd) ensures that only one node across the entire distributed system can acquire the lock and execute the critical section of code at a time."
       },
       {
-        "id": "system-design-i-27",
-        "q": "Sample intermediate Question 27 about system-design?",
-        "a": "This is a dummy answer for a intermediate question 27 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sd-i-10",
+        "q": "Explain the Saga Pattern in Microservices.",
+        "a": "Because microservices have their own databases, standard ACID distributed transactions (Two-Phase Commit) are too slow and lock heavily. A Saga is a sequence of local transactions. Each service updates its DB and publishes an event to trigger the next step. If a step fails, the Saga executes 'compensating transactions' backward to undo the preceding steps, achieving eventual consistency."
       },
       {
-        "id": "system-design-i-28",
-        "q": "Sample intermediate Question 28 about system-design?",
-        "a": "This is a dummy answer for a intermediate question 28 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sd-i-11",
+        "q": "What is the difference between a Message Queue and an Event Streaming Platform (e.g., RabbitMQ vs Kafka)?",
+        "a": "RabbitMQ (Message Queue) is designed for task routing. Messages are usually deleted once a consumer acknowledges them. It supports complex routing rules. Apache Kafka (Event Stream) is designed for massive throughput and event replay. It acts as an append-only distributed log. Messages are persisted on disk for a configured retention period, allowing multiple different consumers to read the same stream at their own pace."
       },
       {
-        "id": "system-design-i-29",
-        "q": "Sample intermediate Question 29 about system-design?",
-        "a": "This is a dummy answer for a intermediate question 29 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sd-i-12",
+        "q": "How do you handle pagination for massive datasets?",
+        "a": "Using `OFFSET / LIMIT` (e.g., `OFFSET 1000000`) is terrible for performance because the database must compute and skip all 1,000,000 rows before returning data. The better approach is 'Cursor-based Pagination' (or Keyset Pagination), where you use the last seen ID as the starting point for the next query: `WHERE id > last_seen_id LIMIT 20`. This utilizes the index and returns instantly regardless of depth."
       },
       {
-        "id": "system-design-i-30",
-        "q": "Sample intermediate Question 30 about system-design?",
-        "a": "This is a dummy answer for a intermediate question 30 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sd-i-13",
+        "q": "What is Bloom Filter?",
+        "a": "A Bloom Filter is a highly space-efficient probabilistic data structure used to test whether an element is a member of a set. False positive matches are possible, but false negatives are not. It tells you 'possibly in set' or 'definitely not in set'. It is heavily used in databases to avoid unnecessary, expensive disk lookups for keys that don't exist."
       },
       {
-        "id": "system-design-i-31",
-        "q": "Sample intermediate Question 31 about system-design?",
-        "a": "This is a dummy answer for a intermediate question 31 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sd-i-14",
+        "q": "Explain the concept of Idempotency.",
+        "a": "An operation is idempotent if executing it multiple times produces the exact same result as executing it once. In distributed systems, network timeouts often cause clients to retry requests (like processing a payment). If the API is idempotent (using an Idempotency-Key passed in the header to check if the transaction was already processed), retries are safe and won't charge the user twice."
       },
       {
-        "id": "system-design-i-32",
-        "q": "Sample intermediate Question 32 about system-design?",
-        "a": "This is a dummy answer for a intermediate question 32 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sd-i-15",
+        "q": "What is the Thundering Herd Problem?",
+        "a": "This occurs when a highly requested item in a cache expires (cache miss). Suddenly, thousands of concurrent requests hit the backend database simultaneously to recompute the same value, causing the database to crash under the spike. Solutions include 'Cache Locking' (only letting one request hit the DB to repopulate the cache while others wait) or adding 'Jitter' (randomness) to cache TTLs so they don't expire all at once."
       },
       {
-        "id": "system-design-i-33",
-        "q": "Sample intermediate Question 33 about system-design?",
-        "a": "This is a dummy answer for a intermediate question 33 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sd-i-16",
+        "q": "How do you generate unique IDs in a distributed system?",
+        "a": "Database auto-increment doesn't work well across multiple sharded databases. UUIDs are 128-bit, string-based, take up too much index space, and aren't naturally sortable by time. The industry standard is Twitter Snowflake: a 64-bit integer combining a timestamp, datacenter/worker ID, and a sequence number. It is highly scalable, time-sortable, and fits efficiently in database indexes."
       },
       {
-        "id": "system-design-i-34",
-        "q": "Sample intermediate Question 34 about system-design?",
-        "a": "This is a dummy answer for a intermediate question 34 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sd-i-17",
+        "q": "What is the strangler fig pattern?",
+        "a": "It is a migration strategy for modernizing monolithic applications. Instead of rewriting the entire monolith from scratch (which takes years and often fails), you build an API gateway in front. You incrementally extract specific features into new microservices. The gateway routes requests for the migrated feature to the new microservice, and all other requests to the monolith, until the monolith is completely 'strangled' and decommissioned."
       }
     ],
     "advanced": [
       {
-        "id": "system-design-a-35",
-        "q": "Sample advanced Question 35 about system-design?",
-        "a": "This is a dummy answer for a advanced question 35 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sd-a-1",
+        "q": "How would you design a URL Shortener (like Bitly)?",
+        "a": "Core requirements: High read throughput, short URL generation, redirection, click analytics. Use a Base62 encoding on an auto-incrementing ID or Snowflake ID to generate the short hash (e.g., 7 characters yields 3.5 trillion URLs). Use a relational DB to store mappings. Heavy read traffic mandates a Cache (Redis) storing Hash->LongURL. To handle the massive read load, place a CDN or Load Balancers in front. Analytics can be handled asynchronously via Kafka."
       },
       {
-        "id": "system-design-a-36",
-        "q": "Sample advanced Question 36 about system-design?",
-        "a": "This is a dummy answer for a advanced question 36 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sd-a-2",
+        "q": "How would you design a chat application like WhatsApp?",
+        "a": "Core: Real-time messaging, presence indicator, read receipts. Clients maintain persistent WebSockets to Chat Servers. A User Session Cache (Redis) tracks which Chat Server holds the active connection for each user. When User A sends a message to User B, it hits Server A, which checks Redis to find that User B is connected to Server C. Server A pushes the message to Server C via an internal Pub/Sub or RPC, which pushes it down the WebSocket to B. Use Cassandra for storing the massive volume of message history."
       },
       {
-        "id": "system-design-a-37",
-        "q": "Sample advanced Question 37 about system-design?",
-        "a": "This is a dummy answer for a advanced question 37 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sd-a-3",
+        "q": "How would you design a highly scalable feed system (like Twitter or Instagram)?",
+        "a": "Core: Generating a timeline of tweets from people a user follows. Two approaches: 1) Pull Model (Fan-out on load): When user requests feed, query DB for all tweets from followings, sort in memory. Extremely slow for users following 5000+ people. 2) Push Model (Fan-out on write): When a user tweets, async workers immediately push the tweet into the pre-computed Redis 'Timeline Caches' of all their followers. Reads are O(1) instant. For celebrities (millions of followers), use a Hybrid approach: Push to normal users, but Pull celebrity tweets dynamically on read to avoid massive cache thrashing."
       },
       {
-        "id": "system-design-a-38",
-        "q": "Sample advanced Question 38 about system-design?",
-        "a": "This is a dummy answer for a advanced question 38 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sd-a-4",
+        "q": "How would you design a system like Netflix (Video Streaming)?",
+        "a": "Core: Video upload, transcoding, streaming, and metadata. When a video is uploaded, it is saved to S3. This triggers a massive asynchronous job (using AWS Step Functions + media encoding servers) to transcode the video into dozens of formats and resolutions (1080p, 4K, low-bandwidth). The transcoded chunks are pushed to a global CDN. The client queries the backend for the CDN URL and streams directly from the closest edge location, dynamically adjusting quality based on bandwidth (DASH/HLS)."
       },
       {
-        "id": "system-design-a-39",
-        "q": "Sample advanced Question 39 about system-design?",
-        "a": "This is a dummy answer for a advanced question 39 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sd-a-5",
+        "q": "How would you design an Auto-Suggest/Typeahead system (like Google Search)?",
+        "a": "Core: Instant sub-millisecond response as the user types. Use a Trie (Prefix Tree) data structure stored in RAM. Each node represents a character, and leaves hold the most popular search queries starting with that prefix. Because a global Trie is too large for one server, shard the Trie based on the prefix (e.g., A-M on Server 1). As users search, log queries to Kafka, process via Spark Streaming to calculate frequencies, and periodically update the offline Tries before swapping them into production."
       },
       {
-        "id": "system-design-a-40",
-        "q": "Sample advanced Question 40 about system-design?",
-        "a": "This is a dummy answer for a advanced question 40 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sd-a-6",
+        "q": "How would you design a Ride-Sharing app (like Uber)?",
+        "a": "Core: Driver location tracking, matching riders, ETA calculation. Drivers send location updates every 3 seconds. Use a geospatial indexing system like Geohash or QuadTree (e.g., Redis Geospatial) to store active driver locations. When a rider requests a car, query the QuadTree for drivers within a specific radius. Send a match request to the closest driver. If accepted, establish a WebSocket connection to stream real-time GPS updates between the two."
       },
       {
-        "id": "system-design-a-41",
-        "q": "Sample advanced Question 41 about system-design?",
-        "a": "This is a dummy answer for a advanced question 41 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sd-a-7",
+        "q": "How would you design a rate limiter for a distributed API?",
+        "a": "A local memory counter fails in a cluster. Use Redis for distributed state. Use the Sliding Window Counter algorithm. The Redis key is `rate_limit:API_KEY:MINUTE_TIMESTAMP`. Use an atomic Redis transaction (or Lua script) to increment the counter and set a TTL. If the counter exceeds the limit, the API Gateway returns HTTP 429 Too Many Requests. To reduce Redis network latency, you can implement an in-memory local cache on the API gateway that syncs with Redis asynchronously."
       },
       {
-        "id": "system-design-a-42",
-        "q": "Sample advanced Question 42 about system-design?",
-        "a": "This is a dummy answer for a advanced question 42 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sd-a-8",
+        "q": "Explain the Raft or Paxos consensus algorithms.",
+        "a": "These algorithms solve the problem of distributed consensus (ensuring a cluster of nodes agrees on the same state, even if some nodes fail). Raft uses a strong Leader-Follower model. The Leader handles all client requests and replicates the log to Followers. A log entry is 'committed' only when a quorum (majority) of nodes acknowledge it. If the Leader dies, Followers hold a randomized election to choose a new Leader. It prevents 'split-brain' scenarios."
       },
       {
-        "id": "system-design-a-43",
-        "q": "Sample advanced Question 43 about system-design?",
-        "a": "This is a dummy answer for a advanced question 43 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sd-a-9",
+        "q": "What is the Two-Phase Commit (2PC) protocol?",
+        "a": "2PC is a protocol for atomic distributed transactions across multiple databases. Phase 1 (Prepare): A Coordinator asks all participating databases if they are ready to commit; they lock their resources and reply Yes/No. Phase 2 (Commit/Rollback): If ALL replied Yes, the Coordinator tells them to Commit. If any replied No (or timed out), it tells them to Rollback. It is highly consistent but very slow (blocking) and suffers if the Coordinator crashes."
       },
       {
-        "id": "system-design-a-44",
-        "q": "Sample advanced Question 44 about system-design?",
-        "a": "This is a dummy answer for a advanced question 44 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sd-a-10",
+        "q": "How do you design for Database High Availability across global regions?",
+        "a": "Active-Passive (Master-Slave) setup: All writes go to a Master in Region A; data is asynchronously replicated to a Standby in Region B. If Region A goes down, route traffic to B. Downside: Write latency for users far from Region A. Active-Active (Multi-Master) setup: Nodes in both regions accept writes and replicate bidirectionally. Great for latency, but introduces complex conflict resolution logic (using Vector Clocks or Last-Write-Wins) when two users modify the same data in different regions simultaneously."
       },
       {
-        "id": "system-design-a-45",
-        "q": "Sample advanced Question 45 about system-design?",
-        "a": "This is a dummy answer for a advanced question 45 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sd-a-11",
+        "q": "What is a CRDT (Conflict-Free Replicated Data Type)?",
+        "a": "CRDTs are specialized data structures (counters, sets, text sequences) used in distributed systems (and collaborative apps like Google Docs or Figma) that can be replicated across multiple machines. They are mathematically designed so that concurrent updates can be merged locally on any node without coordination or locking, guaranteeing that all nodes will eventually converge to the exact same state, eliminating conflict resolution logic."
       },
       {
-        "id": "system-design-a-46",
-        "q": "Sample advanced Question 46 about system-design?",
-        "a": "This is a dummy answer for a advanced question 46 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sd-a-12",
+        "q": "How would you design a distributed web crawler?",
+        "a": "Core: Scale, politeness, duplicate avoidance. Components: 1) URL Frontier: A priority queue of URLs to crawl, sorted by importance and politeness rules (don't hammer one domain). 2) HTML Fetchers: Workers that grab URLs from the Frontier, download HTML. 3) Extractors: Parse HTML, extract links, pass to a duplicate checker. 4) Bloom Filter: Instantly checks if a URL was already crawled. If not, add to the URL Frontier. Store raw HTML in S3, metadata in Cassandra."
       },
       {
-        "id": "system-design-a-47",
-        "q": "Sample advanced Question 47 about system-design?",
-        "a": "This is a dummy answer for a advanced question 47 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sd-a-13",
+        "q": "How do you handle heavy database migrations in production without downtime?",
+        "a": "Use the Expand and Contract pattern. Step 1 (Expand): Add the new column/table. Update application code to dual-write to both the old and new schema, but still read from the old. Step 2: Run a background script to backfill historical data from the old schema to the new. Step 3: Switch application reads to the new schema. Step 4 (Contract): Stop writing to the old schema. Step 5: Drop the old schema. Never use long-running `ALTER TABLE` locks in prod."
       },
       {
-        "id": "system-design-a-48",
-        "q": "Sample advanced Question 48 about system-design?",
-        "a": "This is a dummy answer for a advanced question 48 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sd-a-14",
+        "q": "What is Gossip Protocol?",
+        "a": "In massive decentralized clusters (like Cassandra or DynamoDB), maintaining a central registry of node health is a bottleneck. Gossip protocol is a peer-to-peer communication method where each node periodically picks a random subset of other nodes and shares state information (e.g., 'Node 5 is dead'). This information spreads exponentially fast through the cluster like a virus, ensuring eventual consistency of cluster state without a central master."
       },
       {
-        "id": "system-design-a-49",
-        "q": "Sample advanced Question 49 about system-design?",
-        "a": "This is a dummy answer for a advanced question 49 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sd-a-15",
+        "q": "How would you design a flash sale system (e.g., selling 1000 iPhones at 90% off)?",
+        "a": "Standard databases will crash due to write contention (millions trying to decrement an inventory row). 1) Front the system with a CDN to absorb heavy static reads. 2) Implement aggressive CAPTCHA/WAF to block bots. 3) Do NOT write orders to the DB instantly. When the sale starts, use Redis to track inventory via `DECR`. Redis is single-threaded and handles atomic decrements at 100k+ RPS. If Redis returns > 0, push the order payload to a Kafka queue. The DB processes the Kafka queue at its own safe pace to finalize orders."
       },
       {
-        "id": "system-design-a-50",
-        "q": "Sample advanced Question 50 about system-design?",
-        "a": "This is a dummy answer for a advanced question 50 related to the topic of system-design. It provides enough placeholder text to test the UI rendering of the answer section properly."
+        "id": "sd-a-16",
+        "q": "Explain Vector Clocks.",
+        "a": "In distributed Multi-Master databases (like Dynamo), servers might receive updates out of order due to network delays. Relying on system timestamps is dangerous due to clock drift. A Vector Clock is a logical clock. It maintains an array of counters (one per node) attached to the data. By comparing vector clocks, the system can mathematically determine if Event A happened before Event B, or if they were concurrent (a conflict), allowing the system to hand the conflict back to the client app to resolve."
       }
     ]
   }
