@@ -12,7 +12,7 @@ import { interviewCategories } from './src/data/interviewQuestions/index.js';
 import { resumeCategories } from './src/data/resumeExamples/index.js';
 import { careerGuideCategories } from './src/data/careerGuides/index.js';
 
-const DOMAIN = 'https://www.candidatetohr.online';
+const DOMAIN = 'https://candidatetohr.online';
 const distPath = path.join(__dirname, 'dist');
 
 if (!fs.existsSync(distPath)) {

@@ -13,7 +13,8 @@ import { interviewCategories } from './src/data/interviewQuestions/index.js';
 import { resumeCategories } from './src/data/resumeExamples/index.js';
 import { careerGuideCategories } from './src/data/careerGuides/index.js';
 
-const DOMAIN = 'https://www.candidatetohr.online'; // Replace with actual domain
+const DOMAIN = 'https://candidatetohr.online';
+const TODAY = new Date().toISOString().split('T')[0]; // YYYY-MM-DD
 
 const staticRoutes = [
   '/',
@@ -50,7 +51,8 @@ function generateSitemap() {
     urls.push(`
   <url>
     <loc>${DOMAIN}${route}</loc>
-    <changefreq>weekly</changefreq>
+    <lastmod>${TODAY}</lastmod>
+    <changefreq>${route === '/' ? 'daily' : 'weekly'}</changefreq>
     <priority>${route === '/' ? '1.0' : '0.8'}</priority>
   </url>`);
   });
@@ -60,6 +62,7 @@ function generateSitemap() {
     urls.push(`
   <url>
     <loc>${DOMAIN}/roadmaps/${item.id}</loc>
+    <lastmod>${TODAY}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>`);
@@ -70,6 +73,7 @@ function generateSitemap() {
     urls.push(`
   <url>
     <loc>${DOMAIN}/salary-guides/${item.id}</loc>
+    <lastmod>${TODAY}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>`);
@@ -80,6 +84,7 @@ function generateSitemap() {
     urls.push(`
   <url>
     <loc>${DOMAIN}/interview-questions/${item.id}</loc>
+    <lastmod>${TODAY}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>`);
@@ -90,6 +95,7 @@ function generateSitemap() {
     urls.push(`
   <url>
     <loc>${DOMAIN}/resume-examples/${item.id}</loc>
+    <lastmod>${TODAY}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>`);
@@ -100,6 +106,7 @@ function generateSitemap() {
     urls.push(`
   <url>
     <loc>${DOMAIN}/career-guides/${item.id}</loc>
+    <lastmod>${TODAY}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>`);
@@ -119,6 +126,7 @@ ${urls.join('')}
   const sitemapPath = path.join(publicDir, 'sitemap.xml');
   fs.writeFileSync(sitemapPath, sitemap, 'utf8');
   console.log(`✅ Sitemap successfully generated at: ${sitemapPath} with ${urls.length} URLs`);
+  console.log(`✅ Canonical domain: ${DOMAIN}`);
 }
 
 generateSitemap();

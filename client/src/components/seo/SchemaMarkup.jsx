@@ -1,5 +1,7 @@
 import { Helmet } from 'react-helmet-async';
 
+const DOMAIN = 'https://candidatetohr.online';
+
 /**
  * Renders JSON-LD Schema.org markup in the <head> for Google SEO.
  * @param {string} type - 'FAQPage', 'Article', 'JobPosting', 'BreadcrumbList'
@@ -27,16 +29,19 @@ export default function SchemaMarkup({ type, data }) {
       "@type": "Article",
       "headline": data.title,
       "description": data.description,
+      "url": data.url || DOMAIN,
       "author": {
         "@type": "Organization",
-        "name": "Candidatetohr"
+        "name": "CandidateToHR",
+        "url": DOMAIN
       },
       "publisher": {
         "@type": "Organization",
-        "name": "Candidatetohr",
+        "name": "CandidateToHR",
+        "url": DOMAIN,
         "logo": {
           "@type": "ImageObject",
-          "url": "https://candidatetohr.com/logo.png"
+          "url": `${DOMAIN}/logo.png`
         }
       }
     };

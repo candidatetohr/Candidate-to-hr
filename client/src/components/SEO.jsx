@@ -2,8 +2,10 @@ import { Helmet } from 'react-helmet-async';
 
 export default function SEO({ title = 'CandidateToHR', description = '', canonical, type = 'WebPage', schema }) {
   const siteName = 'CandidateToHR';
+  const DOMAIN = 'https://candidatetohr.online';
   const fullTitle = title.includes(siteName) ? title : `${title} | ${siteName}`;
-  const url = canonical ? `https://www.candidatetohr.online${canonical}` : 'https://www.candidatetohr.online';
+  const url = canonical ? `${DOMAIN}${canonical}` : DOMAIN;
+  const ogImage = `${DOMAIN}/og-image.png`;
 
   return (
     <Helmet>
@@ -16,6 +18,7 @@ export default function SEO({ title = 'CandidateToHR', description = '', canonic
       <meta property="og:url" content={url} />
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={description} />
+      <meta property="og:image" content={ogImage} />
       <meta property="og:site_name" content={siteName} />
       
       {/* Twitter */}
@@ -23,6 +26,7 @@ export default function SEO({ title = 'CandidateToHR', description = '', canonic
       <meta name="twitter:url" content={url} />
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={description} />
+      <meta name="twitter:image" content={ogImage} />
       
       {/* Dynamic JSON-LD Schema */}
       {schema && (
