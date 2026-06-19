@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
-import { Search, BookOpen, ChevronRight } from 'lucide-react';
+import { Search, BookOpen, ChevronRight, X } from 'lucide-react';
 import { careerGuideCategories } from '../data/careerGuides';
 import { AdBanner, SidebarAd } from '../components/monetization/Ads';
 import { ResumeBuilderCTA } from '../components/cta/PlatformCTAs';
@@ -37,6 +37,11 @@ export default function CareerGuideHub() {
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
             />
+            {searchTerm && (
+              <button className="hub-search-clear" onClick={() => setSearchTerm('')} aria-label="Clear search">
+                <X size={14} />
+              </button>
+            )}
           </div>
         </div>
       </section>

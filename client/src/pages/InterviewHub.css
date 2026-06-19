@@ -62,11 +62,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #3b82f6;
-  font-size: 0.9rem;
+  color: var(--color-primary);
+  font-size: 0.875rem;
   font-weight: 600;
   padding-top: 16px;
   border-top: 1px solid var(--border-default);
+  margin-top: auto;
 }
 
 @media (max-width: 900px) {

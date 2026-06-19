@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
-import { Search, Code, Terminal, ChevronRight } from 'lucide-react';
+import { Search, Code, Terminal, ChevronRight, X } from 'lucide-react';
 import { interviewCategories } from '../data/interviewQuestions';
 import { AdBanner, SidebarAd } from '../components/monetization/Ads';
 import { MockInterviewCTA } from '../components/cta/PlatformCTAs';
@@ -37,6 +37,11 @@ export default function InterviewHub() {
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
             />
+            {searchTerm && (
+              <button className="hub-search-clear" onClick={() => setSearchTerm('')} aria-label="Clear search">
+                <X size={14} />
+              </button>
+            )}
           </div>
         </div>
       </section>

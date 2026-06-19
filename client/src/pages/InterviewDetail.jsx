@@ -6,7 +6,7 @@ import Breadcrumbs from '../components/seo/Breadcrumbs';
 import SEO from '../components/SEO';
 import { AdBanner, InlineAd, SidebarAd } from '../components/monetization/Ads';
 import { MockInterviewCTA } from '../components/cta/PlatformCTAs';
-import { Eye, EyeOff } from 'lucide-react';
+import { Eye, EyeOff, Search, X } from 'lucide-react';
 import './InterviewDetail.css';
 
 export default function InterviewDetail() {
@@ -147,17 +147,26 @@ export default function InterviewDetail() {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 mt-32">
         <main className="lg:col-span-2">
           <div className="mb-24">
-            <input 
-              type="text" 
-              placeholder="Search questions..." 
-              className="w-full p-16 bg-card border border-default text-primary font-medium"
-              style={{ borderRadius: 'var(--radius-md)' }}
-              value={searchQuery}
-              onChange={(e) => {
-                setSearchQuery(e.target.value);
-                setCurrentPage(1);
-              }}
-            />
+            <div className="input-icon-wrapper has-right">
+              <span className="input-icon-left"><Search size={18} /></span>
+              <input 
+                type="text" 
+                placeholder="Search questions..." 
+                className="form-input"
+                value={searchQuery}
+                onChange={(e) => {
+                  setSearchQuery(e.target.value);
+                  setCurrentPage(1);
+                }}
+              />
+              {searchQuery && (
+                <span className="input-icon-right">
+                  <button className="input-clear-btn" onClick={() => { setSearchQuery(''); setCurrentPage(1); }} aria-label="Clear search">
+                    <X size={14} />
+                  </button>
+                </span>
+              )}
+            </div>
           </div>
           
           {renderQuestions()}
@@ -167,19 +176,19 @@ export default function InterviewDetail() {
               <button 
                 onClick={() => setCurrentPage(p => Math.max(1, p - 1))}
                 disabled={currentPage === 1}
-                className="btn btn-outline"
-                style={{ padding: '8px 16px', borderRadius: 'var(--radius-md)', opacity: currentPage === 1 ? 0.5 : 1, cursor: currentPage === 1 ? 'not-allowed' : 'pointer', background: 'var(--bg-surface)', border: '1px solid var(--border-default)' }}
+                className="btn btn-outline btn-sm"
               >
-                Previous
+                ← Previous
               </button>
-              <span className="text-secondary font-medium">Page {currentPage} of {totalPages}</span>
+              <span style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', fontWeight: 500 }}>
+                Page {currentPage} of {totalPages}
+              </span>
               <button 
                 onClick={() => setCurrentPage(p => Math.min(totalPages, p + 1))}
                 disabled={currentPage === totalPages}
-                className="btn btn-outline"
-                style={{ padding: '8px 16px', borderRadius: 'var(--radius-md)', opacity: currentPage === totalPages ? 0.5 : 1, cursor: currentPage === totalPages ? 'not-allowed' : 'pointer', background: 'var(--bg-surface)', border: '1px solid var(--border-default)' }}
+                className="btn btn-outline btn-sm"
               >
-                Next
+                Next →
               </button>
             </div>
           )}

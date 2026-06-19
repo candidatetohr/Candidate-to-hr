@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
-import { Search, DollarSign, ChevronRight } from 'lucide-react';
+import { Search, DollarSign, ChevronRight, X } from 'lucide-react';
 import { salaryCategories } from '../data/salaryGuides';
 import { AdBanner, SidebarAd } from '../components/monetization/Ads';
 import { MockInterviewCTA } from '../components/cta/PlatformCTAs';
@@ -37,6 +37,11 @@ export default function SalaryHub() {
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
             />
+            {searchTerm && (
+              <button className="hub-search-clear" onClick={() => setSearchTerm('')} aria-label="Clear search">
+                <X size={14} />
+              </button>
+            )}
           </div>
         </div>
       </section>

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
-import { Search, Map, TrendingUp, Briefcase, ChevronRight, BarChart2 } from 'lucide-react';
+import { Search, Map, TrendingUp, Briefcase, ChevronRight, BarChart2, X } from 'lucide-react';
 import { roadmapList } from '../data/roadmaps';
 import './RoadmapHub.css';
 
@@ -47,6 +47,11 @@ export default function RoadmapHub() {
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
             />
+            {searchTerm && (
+              <button className="hub-search-clear" onClick={() => setSearchTerm('')} aria-label="Clear search">
+                <X size={14} />
+              </button>
+            )}
           </div>
         </div>
       </section>

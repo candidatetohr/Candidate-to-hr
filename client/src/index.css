@@ -6,13 +6,16 @@
   /* Premium Dark Mode Color System */
   --text-primary: #F8FAFC;
   --text-secondary: #94A3B8;
+  --text-muted: #64748B;
   --bg-primary: #020617; /* Deep midnight */
   --bg-surface: #0F172A;
   --bg-card: rgba(30, 41, 59, 0.6); /* Translucent for glassmorphism */
   --border-default: rgba(255, 255, 255, 0.1);
+  --border-focus: rgba(56, 189, 248, 0.5);
   
   --color-primary: #38BDF8; /* Neon Cyan */
   --color-primary-hover: #0EA5E9;
+  --color-primary-light: rgba(56, 189, 248, 0.1);
   --color-success: #34D399;
   --color-warning: #FBBF24;
   --color-error: #F87171;
@@ -304,6 +307,43 @@ a:hover {
   text-decoration: none;
 }
 
+.btn-outline {
+  background: transparent;
+  color: var(--text-primary);
+  border: 1.5px solid var(--border-default);
+}
+
+.btn-outline:hover:not(:disabled) {
+  background: rgba(56, 189, 248, 0.08);
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--text-secondary);
+  border: none;
+}
+
+.btn-ghost:hover:not(:disabled) {
+  background: rgba(255,255,255,0.06);
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+.btn-sm {
+  height: 38px;
+  padding: 0 var(--spacing-16);
+  font-size: 14px;
+}
+
+.btn-lg {
+  height: 56px;
+  padding: 0 var(--spacing-32);
+  font-size: 18px;
+}
+
 /* ─── Forms ──────────────────────────────────────────────────────────────────*/
 .form-group {
   display: flex;
@@ -341,7 +381,62 @@ a:hover {
 }
 
 .form-input::placeholder, .form-textarea::placeholder {
+  color: rgba(148, 163, 184, 0.55);
+  font-style: normal;
+}
+
+/* ─── Universal Input with Icon ────────────────────────────────────────────── */
+.input-icon-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.input-icon-wrapper .input-icon-left {
+  position: absolute;
+  left: 16px;
   color: var(--text-secondary);
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+.input-icon-wrapper .input-icon-right {
+  position: absolute;
+  right: 12px;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+.input-icon-wrapper input,
+.input-icon-wrapper textarea {
+  padding-left: 44px;
+  width: 100%;
+}
+
+.input-icon-wrapper.has-right input {
+  padding-right: 44px;
+}
+
+/* Clear button inside input */
+.input-clear-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  color: var(--text-secondary);
+  transition: var(--transition);
+}
+
+.input-clear-btn:hover {
+  background: rgba(255,255,255,0.1);
+  color: var(--text-primary);
 }
 
 .form-input:focus, .form-select:focus, .form-textarea:focus,
