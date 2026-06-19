@@ -1,17 +1,4 @@
 {
-  "redirects": [
-    {
-      "source": "/(.*)",
-      "has": [
-        {
-          "type": "host",
-          "value": "www.candidatetohr.online"
-        }
-      ],
-      "destination": "https://candidatetohr.online/$1",
-      "permanent": true
-    }
-  ],
   "rewrites": [
     {
       "source": "/(.*)",
@@ -19,3 +6,4 @@
     }
   ]
 }
+
