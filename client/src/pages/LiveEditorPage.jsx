@@ -5,6 +5,7 @@ import { ArrowLeft, Sparkles, Download, RefreshCw, AlertCircle, FileText, Bot, E
 import html2pdf from 'html2pdf.js';
 import { resumeBuilderAPI } from '../services/api';
 import SEO from '../components/SEO';
+import ToolEditorial from '../components/seo/ToolEditorial';
 import './LiveEditorPage.css';
 
 const ResumePreview = ({ data }) => {
@@ -230,6 +231,18 @@ export default function LiveEditorPage() {
           <ResumePreview data={resumeData} />
         </div>
       </div>
+
+      <div className="ed-editorial-wrapper" style={{ marginTop: '3rem', width: '100%', maxWidth: '1000px', margin: '3rem auto', padding: '0 2rem' }}>
+        <ToolEditorial 
+          whatItDoes="<p>The AI Resume Generator transforms an unstructured 'brain dump' of your experience into a perfectly formatted, ATS-compliant PDF resume in seconds. It eliminates the anxiety of starting from a blank page.</p>"
+          howItWorks="<p>Just type out everything you've done in plain English (e.g., 'I worked at Starbucks and then built a Python app'). The NVIDIA NIM API structures your text, identifies your technical skills, rewrites your duties as quantifiable achievements, and renders it directly onto an editable A4 canvas.</p>"
+          whoShouldUse="<ul><li><strong>First-time Job Seekers:</strong> If you've never written a resume before, this takes you from zero to a professional draft instantly.</li><li><strong>Career Pivoters:</strong> Quickly generate multiple versions of your resume tailored to different industries without starting from scratch.</li><li><strong>Procrastinators:</strong> Stop worrying about margins and font sizes. Let the AI handle the formatting so you can focus on the content.</li></ul>"
+          benefits="<ul><li><strong>Overcomes Writer's Block:</strong> You don't need to know 'resume speak.' Just type naturally and let the AI translate.</li><li><strong>Perfect Formatting:</strong> Guaranteed to pass ATS parsers. No weird tables, columns, or unreadable graphics.</li><li><strong>Live Editing:</strong> The generated resume is not a static image. You can click anywhere on the document to tweak the text before downloading.</li></ul>"
+          limitations="<p>The AI can only work with what you give it. If your brain dump is too short (e.g., 'I am a programmer'), the generated resume will be thin and generic. You must provide specific details for a high-quality output.</p>"
+          bestPractices="<p>Include your dates of employment, specific technologies used, and the business impact of your work in the brain dump. After generating, always review the text manually to ensure the AI hasn't hallucinated any skills you don't actually possess.</p>"
+        />
+      </div>
+
     </div>
   );
 }

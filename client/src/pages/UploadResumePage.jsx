@@ -8,6 +8,7 @@ import {
   Users, Zap, AlertCircle, CloudUpload
 } from 'lucide-react';
 import toast from 'react-hot-toast';
+import SEO from '../components/SEO';
 import './UploadResumePage.css';
 
 export default function UploadResumePage() {
@@ -94,6 +95,7 @@ export default function UploadResumePage() {
   if (success) {
     return (
       <div className="page-wrapper">
+        <SEO title="Upload Resume" noindex />
         <div className="container upload-page">
           <motion.div
             className="success-card"
@@ -132,6 +134,7 @@ export default function UploadResumePage() {
 
   return (
     <div className="page-wrapper">
+      <SEO title="Upload Resume" noindex />
       <div className="container upload-page">
         {/* Header */}
         <div className="page-header">

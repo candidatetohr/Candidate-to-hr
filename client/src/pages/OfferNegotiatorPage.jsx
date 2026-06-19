@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Helmet } from 'react-helmet-async';
-import { DollarSign, MessageSquare, Target, Zap, ArrowRight, ShieldAlert, Sparkles, TrendingUp } from 'lucide-react';
-import './OfferNegotiatorPage.css';
+import api from '../services/api';
+import SEO from '../components/SEO';
+import ToolEditorial from '../components/seo/ToolEditorial';
 
 export default function OfferNegotiatorPage() {
   const [offerDetails, setOfferDetails] = useState('');
@@ -10,45 +10,34 @@ export default function OfferNegotiatorPage() {
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState(null);
 
-  const handleAnalyze = () => {
+  const handleAnalyze = async () => {
     if (!offerDetails.trim() || !targetSalary.trim()) return;
     
     setLoading(true);
     setResult(null);
 
-    // Simulate API call
-    setTimeout(() => {
-      setResult({
-        leverageLevel: "Strong",
-        confidenceScore: 82,
-        strategy: "Focus on total compensation rather than just base salary. Your target is within the market upper-percentile, but your specialized skills give you leverage.",
-        scripts: [
-          {
-            title: "The Gracious Pivot",
-            text: "I’m thrilled about the offer and the opportunity to join the team. Based on my research and the specific impact I can bring to [Project/Goal], I was hoping we could explore a base salary closer to [Target]. Is there flexibility here?"
-          },
-          {
-            title: "The Value-Add Approach",
-            text: "Thank you for the offer. I've been reviewing the total compensation package. Given my background in [Key Skill], I believe my market value is around [Target]. If the base salary is fixed, could we discuss a sign-on bonus or additional equity to bridge the gap?"
-          }
-        ],
-        hiddenLeverage: [
-          "Urgency to fill the role",
-          "Your unique niche skills",
-          "Alternative benefits (PTO, WFH stipend)"
-        ]
-      });
+    try {
+      const res = await api.resumeAnalyzerAPI.offerNegotiator({ offerDetails, targetSalary });
+      if (res.data?.success) {
+        setResult(res.data.data);
+      } else {
+        alert(res.data?.message || 'Error generating negotiation strategy.');
+      }
+    } catch (error) {
+      console.error(error);
+      alert('An error occurred. Please try again.');
+    } finally {
       setLoading(false);
-    }, 2800);
+    }
   };
 
   return (
     <>
-      <Helmet>
-        <title>AI Offer Negotiator & Salary Scripts | CandidateToHR</title>
-        <meta name="description" content="Maximize your job offer with our AI Offer Negotiator. Get personalized negotiation scripts, leverage analysis, and salary counter-offer strategies." />
-        <meta name="keywords" content="salary negotiation, AI offer negotiation, counter offer scripts, job offer advice" />
-      </Helmet>
+      <SEO 
+        title="AI Offer Negotiator & Salary Scripts | CandidateToHR"
+        description="Maximize your job offer with our AI Offer Negotiator. Get personalized negotiation scripts, leverage analysis, and salary counter-offer strategies."
+        canonical="/offer-negotiator"
+      />
 
       <div className="on-page">
         <div className="on-container">
@@ -179,6 +168,20 @@ export default function OfferNegotiatorPage() {
             
           </div>
         </div>
+        
+        <ToolEditorial 
+          whatItDoes="<p>The AI Offer Negotiator analyzes your initial job offer against your target compensation to determine your negotiating leverage. It acts as your personal executive coach, generating customized counter-offer scripts and identifying 'hidden' compensation levers like signing bonuses, equity, and PTO.</p>"
+          howItWorks="<p>Our NVIDIA-powered NLP engine processes the specific language and structure of your job offer. It cross-references this against market standards for your target salary. By evaluating the gap, it assesses your likelihood of success and crafts professional, persuasive email scripts tailored to your unique situation.</p>"
+          whoShouldUse="<ul><li><strong>Job Seekers with an Active Offer:</strong> Don't accept the first number without pushing back gracefully.</li><li><strong>Professionals Expecting a Promotion:</strong> Prepare for internal compensation reviews.</li><li><strong>Career Pivoters:</strong> Understand how to value alternative compensation when base salary is rigid.</li></ul>"
+          benefits="<ul><li><strong>Higher Earnings:</strong> Successfully negotiating can increase your starting salary by 5-15%, compounding over your career.</li><li><strong>Reduced Anxiety:</strong> Takes the emotion and stress out of writing the counter-offer email.</li><li><strong>Professional Tone:</strong> Ensures you sound grateful and excited while firmly advocating for your worth.</li></ul>"
+          limitations="<p>The AI cannot know the hiring company's actual internal budget constraints or internal equity bands. Always use your best judgment when deciding how hard to push, especially if the company has explicitly stated it is a 'final and best' offer.</p>"
+          bestPractices="<p>When using the generated scripts, always customize the placeholders with specific examples of the value you will bring to the team. Never lie about competing offers. If base salary is non-negotiable, pivot to asking for a sign-on bonus, extra vacation days, or a guaranteed 6-month performance review.</p>"
+          faq={[
+            { q: "Will negotiating make them pull the offer?", a: "It is extremely rare for a company to pull an offer simply because a candidate asked for a reasonable increase professionally. The scripts provided are designed to be collaborative, not confrontational." },
+            { q: "What if I have a competing offer?", a: "Having a competing offer increases your leverage significantly. You should mention it in your prompt so the AI can weave it into your counter-offer strategy." },
+            { q: "Can I negotiate over the phone instead of email?", a: "Yes! The scripts provided can easily be used as talking points for a live conversation." }
+          ]}
+        />
       </div>
     </>
   );

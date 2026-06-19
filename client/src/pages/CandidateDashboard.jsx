@@ -6,6 +6,7 @@ import {
   Map, Lock, CheckCircle2, Circle, TrendingUp, Search, GraduationCap, Sparkles
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
+import SEO from '../components/SEO';
 import './CandidateDashboard.css';
 
 export default function CandidateDashboard() {
@@ -54,6 +55,7 @@ export default function CandidateDashboard() {
 
   return (
     <div className="os-page pb-48">
+      <SEO title="Candidate Dashboard" noindex />
       <div className="os-container">
         
         <motion.div initial="hidden" animate="show" variants={containerVars} className="os-fade-wrapper">

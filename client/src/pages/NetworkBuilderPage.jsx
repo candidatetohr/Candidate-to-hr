@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Helmet } from 'react-helmet-async';
-import { Network, Search, Zap, UserPlus, Mail, Link, Copy } from 'lucide-react';
-import './NetworkBuilderPage.css';
+import api from '../services/api';
+import SEO from '../components/SEO';
+import ToolEditorial from '../components/seo/ToolEditorial';
 
 export default function NetworkBuilderPage() {
   const [targetIndustry, setTargetIndustry] = useState('');
@@ -11,36 +11,25 @@ export default function NetworkBuilderPage() {
   const [result, setResult] = useState(null);
   const [copied, setCopied] = useState(null);
 
-  const handleAnalyze = () => {
+  const handleAnalyze = async () => {
     if (!targetIndustry.trim() || !targetRole.trim()) return;
     
     setLoading(true);
     setResult(null);
 
-    // Simulate API call
-    setTimeout(() => {
-      setResult({
-        strategy: "Focus on connecting with mid-level managers who make hiring decisions, rather than just recruiters. Engage with their recent posts before sending a connection request.",
-        targetProfiles: [
-          { role: "Engineering Manager", priority: "High", reason: "Direct hiring manager for your target role." },
-          { role: "Senior Engineer", priority: "Medium", reason: "Can refer you internally and provide interview tips." },
-          { role: "Technical Recruiter", priority: "High", reason: "Gatekeeper for the initial screening round." }
-        ],
-        outreachTemplates: [
-          {
-            type: "Cold Connection Request (LinkedIn)",
-            subject: "",
-            body: "Hi [Name], I've been following [Company]'s work in [Industry/Tech], and I really admire the team's approach to [Specific Detail]. As a [Your Role] looking to grow in this space, I'd love to connect and follow your journey!"
-          },
-          {
-            type: "Informational Interview (Email/Message)",
-            subject: "Quick question about your experience at [Company]",
-            body: "Hi [Name],\n\nI hope you're doing well. I am a [Your Role] who has always admired [Company]'s culture, and your career trajectory really stood out to me. \n\nI'm not asking for a job or referral—I'd just love to ask you 2 quick questions over email about your experience transitioning into your current role. \n\nThanks for your time,\n[Your Name]"
-          }
-        ]
-      });
+    try {
+      const res = await api.resumeAnalyzerAPI.networkBuilder({ resumeText: targetIndustry, networkingGoal: targetRole });
+      if (res.data?.success) {
+        setResult(res.data.data);
+      } else {
+        alert(res.data?.message || 'Error generating network strategy.');
+      }
+    } catch (error) {
+      console.error(error);
+      alert('An error occurred. Please try again.');
+    } finally {
       setLoading(false);
-    }, 2400);
+    }
   };
 
   const copyToClipboard = (text, index) => {
@@ -51,11 +40,11 @@ export default function NetworkBuilderPage() {
 
   return (
     <>
-      <Helmet>
-        <title>AI Network Builder | CandidateToHR</title>
-        <meta name="description" content="Build meaningful professional connections with our AI Network Builder. Get targeted outreach templates and networking strategies for your industry." />
-        <meta name="keywords" content="networking, linkedin outreach, cold email templates, informational interview, AI networking" />
-      </Helmet>
+      <SEO 
+        title="AI Network Builder | CandidateToHR"
+        description="Build meaningful professional connections with our AI Network Builder. Get targeted outreach templates and networking strategies for your industry."
+        canonical="/network-builder"
+      />
 
       <div className="nb-page">
         <div className="nb-container">
@@ -189,6 +178,20 @@ export default function NetworkBuilderPage() {
             
           </div>
         </div>
+        
+        <ToolEditorial 
+          whatItDoes="<p>The AI Network Builder is a specialized outreach engine that identifies exactly <em>who</em> you should connect with to land your target role and gives you the exact scripts to get them to reply. It shifts networking from awkward cold messages to strategic, value-driven conversations.</p>"
+          howItWorks="<p>By analyzing your target industry and role, our AI maps out the typical corporate hierarchy of your target companies. It identifies key decision-makers (like hiring managers) and influencers (like senior peers). It then generates personalized connection requests and informational interview templates based on proven psychological principles of reciprocity and genuine curiosity.</p>"
+          whoShouldUse="<ul><li><strong>Job Seekers in Competitive Markets:</strong> When applying online isn't working, building a 'backdoor' through networking is essential.</li><li><strong>Career Pivoters:</strong> Reach out to professionals who have successfully made the transition you are attempting.</li><li><strong>Introverts:</strong> Removes the anxiety of staring at a blank screen by providing high-conversion starting points.</li></ul>"
+          benefits="<ul><li><strong>Higher Response Rates:</strong> Uses templates designed to flatter and engage, not just ask for favors.</li><li><strong>Bypass ATS Filters:</strong> A strong internal referral can put your resume straight onto the hiring manager's desk.</li><li><strong>Market Intel:</strong> Informational interviews provide insights you can use later in official job interviews.</li></ul>"
+          limitations="<p>The tool provides the strategy and the script, but you still have to send the messages. AI cannot guarantee that a specific individual will reply, as that depends on their personal schedule and inbox volume.</p>"
+          bestPractices="<p>Never ask for a job or a referral in your first message. Focus on building a relationship. Ask insightful questions about their career or a recent project. Always customize the bracketed placeholders with genuine, specific research about the person you are contacting.</p>"
+          faq={[
+            { q: "Is cold outreach on LinkedIn annoying?", a: "Only if it's generic and self-serving. Our templates are designed to be respectful of their time and complimentary of their work." },
+            { q: "Should I contact recruiters or managers?", a: "Both, but focus heavily on the hiring manager (e.g., Director of Engineering). They feel the pain of an empty role the most and have the power to bypass recruiters." },
+            { q: "How many people should I contact?", a: "Quality over quantity. Aim to send 3-5 highly personalized messages to key individuals at your target company rather than 50 generic connections." }
+          ]}
+        />
       </div>
     </>
   );

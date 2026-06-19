@@ -4,6 +4,7 @@ import { useParams, Link } from 'react-router-dom';
 import SchemaMarkup from '../components/seo/SchemaMarkup';
 import Breadcrumbs from '../components/seo/Breadcrumbs';
 import SEO from '../components/SEO';
+import RelatedResources from '../components/seo/RelatedResources';
 import { AdBanner, SidebarAd, InlineAd } from '../components/monetization/Ads';
 import { ATSCheckerCTA, MockInterviewCTA } from '../components/cta/PlatformCTAs';
 import ReactMarkdown from 'react-markdown';
@@ -82,6 +83,12 @@ export default function CareerGuideDetail() {
               ))}
             </ul>
           </section>
+
+          <RelatedResources items={[
+            { title: 'Interview Questions', description: `Top interview questions for ${data.seo.title.split(' Guide')[0]}`, url: `/interview-questions/${slug}`, icon: '🎤' },
+            { title: 'Learning Roadmap', description: `Step-by-step path to become a ${data.seo.title.split(' Guide')[0]}`, url: `/roadmaps/${slug}`, icon: '🗺️' },
+            { title: 'Salary Guide', description: `Explore salaries for ${data.seo.title.split(' Guide')[0]}`, url: `/salary-guides/${slug}`, icon: '💰' }
+          ]} />
 
         </main>
         

@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 
-export default function SEO({ title = 'CandidateToHR', description = '', canonical, type = 'WebPage', schema }) {
+export default function SEO({ title = 'CandidateToHR', description = '', canonical, type = 'WebPage', schema, noindex = false }) {
   const siteName = 'CandidateToHR';
   const DOMAIN = 'https://candidatetohr.online';
   const fullTitle = title.includes(siteName) ? title : `${title} | ${siteName}`;
@@ -12,6 +12,7 @@ export default function SEO({ title = 'CandidateToHR', description = '', canonic
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
       {canonical && <link rel="canonical" href={url} />}
+      {noindex && <meta name="robots" content="noindex, nofollow" />}
       
       {/* Open Graph / Facebook */}
       <meta property="og:type" content={type === 'Article' ? 'article' : 'website'} />

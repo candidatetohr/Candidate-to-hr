@@ -13,6 +13,7 @@ import {
   BarChart, Bar, XAxis, YAxis, Tooltip, Cell
 } from 'recharts';
 import toast from 'react-hot-toast';
+import SEO from '../components/SEO';
 import './CandidateFeedbackPage.css';
 
 const recommendationConfig = {
@@ -207,6 +208,7 @@ export default function CandidateFeedbackPage() {
 
   return (
     <div className="page-wrapper">
+      <SEO title="Candidate Feedback" noindex />
       <div className="container feedback-page">
         {/* Header */}
         <div className="feedback-header">

@@ -8,6 +8,7 @@ import {
   CheckCircle, XCircle, AlertCircle, ChevronRight
 } from 'lucide-react';
 import toast from 'react-hot-toast';
+import SEO from '../components/SEO';
 import './JobDetailPage.css';
 
 const STATUS_COLORS = {
@@ -112,6 +113,7 @@ export default function JobDetailPage() {
 
   return (
     <div className="page-wrapper">
+      <SEO title={job.title || "Job Detail"} noindex />
       <div className="container job-detail-page">
         {/* Header */}
         <div className="job-detail-header">

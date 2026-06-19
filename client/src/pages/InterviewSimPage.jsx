@@ -8,6 +8,7 @@ import {
 } from 'lucide-react';
 import { interviewAPI } from '../services/api';
 import SEO from '../components/SEO';
+import ToolEditorial from '../components/seo/ToolEditorial';
 import './InterviewSimPage.css';
 
 const GRADE_COLOR = (g) => g >= 8 ? '#10b981' : g >= 6 ? '#4f8ef7' : g >= 4 ? '#f59e0b' : '#ef4444';
@@ -453,6 +454,18 @@ export default function InterviewSimPage() {
           )}
         </AnimatePresence>
       </div>
+
+      <div className="sim-editorial-wrapper" style={{ marginTop: '3rem', width: '100%', maxWidth: '1000px' }}>
+        <ToolEditorial 
+          whatItDoes="<p>The AI Interview Simulator conducts real-time, dynamic mock interviews tailored to your exact resume and target role. It acts as a specialized technical or behavioral recruiter, listens to your answers, scores your responses out of 10, and generates follow-up questions based on what you just said.</p>"
+          howItWorks="<p>Unlike pre-recorded mock interviews, this tool uses NVIDIA NIM to generate contextually aware questions on the fly. When you answer, the AI analyzes your response for depth, clarity, and the STAR method (Situation, Task, Action, Result). It then provides immediate, graded feedback before moving to the next question.</p>"
+          whoShouldUse="<ul><li><strong>Nervous Interviewees:</strong> Desensitize yourself to the pressure of technical and behavioral interviews in a low-stakes environment.</li><li><strong>Career Changers:</strong> Practice answering the inevitable 'Why are you pivoting into this industry?' question.</li><li><strong>Senior Leaders:</strong> Refine your ability to communicate complex, high-level strategy concisely.</li></ul>"
+          benefits="<ul><li><strong>Dynamic Follow-ups:</strong> If you give a shallow answer, the AI will probe deeper, just like a real interviewer.</li><li><strong>Objective Grading:</strong> See exactly where your answers score on a scale of 1-10 before you face a human.</li><li><strong>Immediate Correction:</strong> Don't wait until you get a rejection email to realize your answers are too long or lack specifics.</li></ul>"
+          limitations="<p>The simulator relies on text-based or transcribed audio input. It cannot evaluate your body language, eye contact, or tone of voice (which are also critical factors in human interviews).</p>"
+          bestPractices="<p>Treat it like a real interview. Use the audio input feature if possible so you practice speaking out loud, not just typing. Always use the STAR method. Review your 'Action Plan' at the end of the session to see which category (Behavioral vs Technical) needs the most work.</p>"
+        />
+      </div>
+
     </div>
   );
 }

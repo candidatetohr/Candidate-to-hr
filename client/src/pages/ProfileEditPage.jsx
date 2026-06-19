@@ -5,6 +5,7 @@ import { User, Code, GraduationCap, Briefcase, Target, Plus, Trash2, Save, Arrow
 import { useAuth } from '../context/AuthContext';
 import { authAPI } from '../services/api';
 import toast from 'react-hot-toast';
+import SEO from '../components/SEO';
 import './ProfileEditPage.css';
 
 export default function ProfileEditPage() {
@@ -107,6 +108,7 @@ export default function ProfileEditPage() {
 
   return (
     <div className="os-page pb-48">
+      <SEO title="Edit Profile" noindex />
       <div className="os-container container-seo">
         
         <div className="flex items-center gap-16 mb-32">

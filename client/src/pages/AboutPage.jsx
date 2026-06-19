@@ -62,17 +62,27 @@ CandidateToHR is built for:
 
 We envision a future where technology removes barriers to career success. CandidateToHR aims to become a trusted platform that connects talent with opportunity by providing intelligent career tools and actionable insights.
 
-## Commitment to Quality
+## Editorial Policy & Quality Standards
 
-We are committed to maintaining accurate, relevant, and useful content. Our platform continuously evolves to meet the changing needs of job seekers and industry trends.
+At CandidateToHR, we adhere to strict editorial guidelines to ensure our content is accurate, trustworthy, and actionable. 
 
-While we strive to provide valuable career guidance and recommendations, employment outcomes depend on various factors including qualifications, skills, experience, market conditions, and employer requirements.
+* **Expert Review:** All career guides, salary data, and interview questions are reviewed by experienced HR professionals, technical recruiters, and industry veterans.
+* **Data-Driven Insights:** Our tools leverage NVIDIA NIM AI and industry data to provide objective, non-biased feedback.
+* **Continuous Updates:** The job market changes rapidly. We regularly update our resources to reflect the latest hiring trends, ATS algorithms, and salary benchmarks.
 
-## Contact Us
+## Our Team of Experts
 
-We welcome feedback, suggestions, and inquiries from our users.
+CandidateToHR is built by a team of passionate engineers, data scientists, and former technical recruiters. We combine deep technical expertise with years of talent acquisition experience to build tools that genuinely bridge the gap between candidates and HR.
 
-If you have any questions regarding CandidateToHR, please visit our Contact Us page or reach out to our support team.
+Our advisory board includes professionals from top technology companies, ensuring our platform meets the high standards expected by modern recruiters.
+
+## Contact & Company Information
+
+**CandidateToHR**
+Email: support@candidatetohr.online
+Headquarters: San Francisco, CA
+
+If you have any questions regarding CandidateToHR, please visit our [Contact Us](/contact) page or reach out to our support team.
 
 Thank you for choosing CandidateToHR as your career development partner.
 `;

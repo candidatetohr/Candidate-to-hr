@@ -4,6 +4,7 @@ import { useParams, Link } from 'react-router-dom';
 import SEO from '../components/SEO';
 import { ArrowLeft, ChevronDown, ChevronUp, MapPin, Target, Zap, DollarSign, BookOpen, PenTool, CheckCircle, HelpCircle } from 'lucide-react';
 import Breadcrumbs from '../components/seo/Breadcrumbs';
+import RelatedResources from '../components/seo/RelatedResources';
 import './RoadmapDetail.css';
 
 export default function RoadmapDetail() {
@@ -242,6 +243,12 @@ export default function RoadmapDetail() {
               ))}
             </div>
           </section>
+
+          <RelatedResources items={[
+            { title: 'Interview Questions', description: `Top interview questions for ${seo.title.split(' Roadmap')[0]}`, url: `/interview-questions/${slug}`, icon: '🎤' },
+            { title: 'Salary Guide', description: `Explore salaries for ${seo.title.split(' Roadmap')[0]}`, url: `/salary-guides/${slug}`, icon: '💰' },
+            { title: 'Career Guide', description: `In-depth career advice for ${seo.title.split(' Roadmap')[0]}`, url: `/career-guides/${slug}`, icon: '📈' }
+          ]} />
 
         </main>
 

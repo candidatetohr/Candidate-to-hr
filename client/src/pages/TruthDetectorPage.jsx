@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Shield, ShieldAlert, FileText, Zap, AlertTriangle, AlertCircle, Crosshair, ChevronRight } from 'lucide-react';
-import { resumeAnalyzerAPI } from '../services/api';
+import api from '../services/api';
+import SEO from '../components/SEO';
+import ToolEditorial from '../components/seo/ToolEditorial';
 import './TruthDetectorPage.css';
 
 export default function TruthDetectorPage() {
@@ -20,7 +22,7 @@ export default function TruthDetectorPage() {
     setResult(null);
 
     try {
-      const res = await resumeAnalyzerAPI.truthDetector({ resumeText });
+      const res = await api.resumeAnalyzerAPI.truthDetector({ resumeText });
       setResult(res.data.data);
     } catch (err) {
       setError(err.response?.data?.message || 'Failed to analyze resume. Please try again.');
@@ -48,8 +50,13 @@ export default function TruthDetectorPage() {
   };
 
   return (
-    <div className="td-page">
-      <div className="td-container">
+    <div className="td-page-wrapper">
+      <SEO 
+        title="AI Truth Detector | CandidateToHR"
+        description="See if your resume passes the BS test. Our AI acts as a cynical recruiter, flagging exaggerated claims and predicting exact interview interrogation questions."
+        canonical="/truth-detector"
+      />
+      <div className="container-seo">
         
         <div className="td-header">
           <div className="td-badge"><Shield size={14} /> AI Resume Truth Detector</div>
@@ -179,6 +186,15 @@ export default function TruthDetectorPage() {
           </div>
           
         </div>
+        
+        <ToolEditorial 
+          whatItDoes="<p>The AI Truth Detector evaluates your resume from the perspective of a cynical, highly skeptical hiring manager. It scans for exaggerated metrics, buzzword stuffing, and logically inconsistent timelines, flagging exactly where an interviewer will push back.</p>"
+          howItWorks="<p>Powered by NVIDIA NIM, the model analyzes the linguistic patterns in your resume. It looks for 'weasel words' (e.g., 'helped', 'involved in') and impossibly high metrics (e.g., 'increased revenue by 5000%'). It then generates the exact 'interrogation questions' a recruiter will use to verify your claims.</p>"
+          whoShouldUse="<ul><li><strong>Senior Executives:</strong> Ensure your impressive metrics sound credible, not fabricated.</li><li><strong>Junior Candidates:</strong> Avoid the common mistake of over-exaggerating minor bootcamp projects.</li><li><strong>Anyone Preparing for Interviews:</strong> Get a sneak peek at the hardest verification questions you will face.</li></ul>"
+          benefits="<ul><li><strong>Builds Trust:</strong> A believable resume always beats an exaggerated one that falls apart in the interview.</li><li><strong>Interview Prep:</strong> Prepares you to defend your most impressive achievements with hard data.</li><li><strong>Filters Buzzwords:</strong> Helps you sound like an expert rather than a marketer.</li></ul>"
+          limitations="<p>The AI does not have access to your actual company data. It flags claims based on industry averages and linguistic probability. Just because it flags a metric doesn't mean it's a lie—it just means you need to be prepared to defend it vigorously.</p>"
+          bestPractices="<p>If the AI flags a metric that is 100% true, do not delete it! Instead, add a brief note on *how* you achieved it (e.g., instead of 'Increased traffic by 500%', write 'Increased traffic by 500% by migrating from legacy CMS to Next.js').</p>"
+        />
       </div>
     </div>
   );

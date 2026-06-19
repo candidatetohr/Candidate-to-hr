@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Helmet } from 'react-helmet-async';
-import { Users, Building, Briefcase, Zap, Heart, ShieldCheck, CheckCircle2, ChevronRight } from 'lucide-react';
-import './CultureFitAnalyzerPage.css';
+import api from '../services/api';
+import SEO from '../components/SEO';
+import ToolEditorial from '../components/seo/ToolEditorial';
 
 export default function CultureFitAnalyzerPage() {
   const [candidateProfile, setCandidateProfile] = useState('');
@@ -10,30 +10,25 @@ export default function CultureFitAnalyzerPage() {
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState(null);
 
-  const handleAnalyze = () => {
+  const handleAnalyze = async () => {
     if (!candidateProfile.trim() || !companyName.trim()) return;
     
     setLoading(true);
     setResult(null);
 
-    // Simulate API call
-    setTimeout(() => {
-      setResult({
-        overallMatch: 88,
-        verdict: "Strong Alignment",
-        traits: [
-          { name: "Innovation", score: 92, note: "Both you and the company heavily prioritize continuous learning and cutting-edge tech." },
-          { name: "Collaboration", score: 85, note: "Your background in cross-functional teams aligns well with their matrix structure." },
-          { name: "Autonomy", score: 70, note: "The company leans towards guided processes, while you index slightly higher on independence." }
-        ],
-        talkingPoints: [
-          "Highlight your experience leading the hackathon in your interview.",
-          "Ask about their specific onboarding process for remote teams.",
-          "Emphasize your willingness to mentor junior developers."
-        ]
-      });
+    try {
+      const res = await api.resumeAnalyzerAPI.cultureFit({ resumeText: candidateProfile, companyValues: companyName });
+      if (res.data?.success) {
+        setResult(res.data.data);
+      } else {
+        alert(res.data?.message || 'Error generating culture fit analysis.');
+      }
+    } catch (error) {
+      console.error(error);
+      alert('An error occurred. Please try again.');
+    } finally {
       setLoading(false);
-    }, 2500);
+    }
   };
 
   const getScoreColor = (score) => {
@@ -44,11 +39,11 @@ export default function CultureFitAnalyzerPage() {
 
   return (
     <>
-      <Helmet>
-        <title>AI Culture Fit Analyzer | CandidateToHR</title>
-        <meta name="description" content="Discover if you are a culture fit for your dream company. Our AI Culture Fit Analyzer compares your profile with company values to give you deep insights." />
-        <meta name="keywords" content="culture fit, AI culture analysis, interview prep, company culture match" />
-      </Helmet>
+      <SEO 
+        title="AI Culture Fit Analyzer | CandidateToHR"
+        description="Discover if you are a culture fit for your dream company. Our AI Culture Fit Analyzer compares your profile with company values to give you deep insights."
+        canonical="/culture-fit"
+      />
 
       <div className="cfa-page">
         <div className="cfa-container">
@@ -171,6 +166,20 @@ export default function CultureFitAnalyzerPage() {
             
           </div>
         </div>
+        
+        <ToolEditorial 
+          whatItDoes="<p>The AI Culture Fit Analyzer assesses the alignment between your personal working style and the core values of your target company. It scores compatibility across key psychological traits (e.g., autonomy vs. collaboration, risk-taking vs. stability) and generates specific interview talking points to highlight your cultural synergy.</p>"
+          howItWorks="<p>Our NVIDIA NIM-powered engine extracts work-style indicators from your resume (e.g., words like 'independent', 'cross-functional', 'spearheaded'). It then maps these against known public archetypes of your target company (e.g., Amazon's Leadership Principles or startup agility) to calculate a granular match score.</p>"
+          whoShouldUse="<ul><li><strong>Candidates in Final Rounds:</strong> When technical skills are equal, culture fit is the tie-breaker. Use this to prepare for the 'behavioral' final round.</li><li><strong>Job Seekers Evaluating Offers:</strong> Ensure the company's DNA aligns with how you do your best work.</li><li><strong>Career Changers:</strong> See how your non-traditional background maps to modern tech culture.</li></ul>"
+          benefits="<ul><li><strong>Interview Edge:</strong> Provides exactly what to say to demonstrate you 'get' how the company operates.</li><li><strong>Avoid Toxic Workplaces:</strong> If your values clash with the company's, it's better to know before you accept the offer.</li><li><strong>Confidence Boost:</strong> Walk into the interview knowing exactly why you are a great fit.</li></ul>"
+          limitations="<p>Company culture can vary wildly between different teams or managers within the same organization. The AI assesses macro-level corporate culture; it cannot predict the micro-culture of the specific team you will join.</p>"
+          bestPractices="<p>When entering the target company, include any specific public values they have (e.g., 'Google - Don't be evil, data-driven'). If it's a smaller company, paste a snippet from their 'About Us' page to give the AI accurate context to analyze.</p>"
+          faq={[
+            { q: "What if my culture fit score is low?", a: "A low score doesn't mean you shouldn't apply. It simply highlights areas where you might face friction. Use the suggested talking points to address these proactively in your interview." },
+            { q: "Can I use this for non-tech companies?", a: "Yes, the psychological trait mapping works across all industries, from finance to healthcare." },
+            { q: "Does the AI know every company's values?", a: "It is trained on data up to 2024 for major companies. For startups, we recommend pasting their mission statement directly into the input." }
+          ]}
+        />
       </div>
     </>
   );

@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { jobsAPI } from '../services/api';
 import { ArrowLeft, Wand2, Zap, Plus, X, ArrowRight, Briefcase, AlertTriangle } from 'lucide-react';
 import toast from 'react-hot-toast';
+import SEO from '../components/SEO';
 import './CreateJobPage.css';
 
 const STEPS = ['Basic Info', 'Requirements & Skills', 'AI Assistance', 'Preview'];
@@ -122,6 +123,7 @@ export default function CreateJobPage() {
 
   return (
     <div className="page-wrapper">
+      <SEO title="Post a New Job" noindex />
       <div className="container create-job-page">
         {/* Header */}
         <div className="page-header">

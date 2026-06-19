@@ -82,6 +82,11 @@ export const resumeAnalyzerAPI = {
   learningPath: (data) => api.post('/resume-analyzer/learning-path', data),
   placementProbability: (data) => api.post('/resume-analyzer/placement-probability', data),
   truthDetector: (data) => api.post('/resume-analyzer/truth-detector', data),
+  cultureFit: (data) => api.post('/resume-analyzer/culture-fit', data),
+  offerNegotiator: (data) => api.post('/resume-analyzer/offer-negotiator', data),
+  networkBuilder: (data) => api.post('/resume-analyzer/network-builder', data),
+  portfolioOptimizer: (data) => api.post('/resume-analyzer/portfolio-optimizer', data),
+  skillGapPublic: (data) => api.post('/resume-analyzer/skill-gap', data),
   // chat uses native fetch for SSE streaming (see CareerCoachChat component)
 };
 

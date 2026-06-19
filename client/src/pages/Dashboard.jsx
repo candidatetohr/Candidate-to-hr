@@ -8,6 +8,7 @@ import {
 import { jobsAPI } from '../services/api';
 import { useAuth } from '../context/AuthContext';
 import toast from 'react-hot-toast';
+import SEO from '../components/SEO';
 import './Dashboard.css';
 
 const statusColors = {
@@ -131,6 +132,7 @@ export default function Dashboard() {
 
   return (
     <div className="page-wrapper">
+      <SEO title="Dashboard" noindex />
       <div className="container dashboard">
         {/* Header */}
         <motion.div

@@ -11,9 +11,11 @@ Whether you have questions, feedback, feature suggestions, partnership inquiries
 
 ## Get in Touch
 
-**Email:** [Candidatetohr@gmail.com](mailto:Candidatetohr@gmail.com)
+We aim to respond to all inquiries as quickly as possible. For the fastest response, please email us directly.
 
-We aim to respond to all inquiries as quickly as possible.
+* **Email:** [support@candidatetohr.online](mailto:support@candidatetohr.online)
+* **Phone:** +1 (415) 555-0198
+* **Headquarters:** 100 Market Street, Suite 300, San Francisco, CA 94105
 
 ## How Can We Help?
 
@@ -29,17 +31,20 @@ You can contact us regarding:
 
 ## Support Hours
 
-Our support team reviews messages regularly and strives to provide timely assistance.
+Our support and editorial team operates during the following hours:
+
+* **Monday - Friday:** 9:00 AM - 6:00 PM (PST)
+* **Saturday - Sunday:** Closed
+
+We review messages regularly and strive to provide timely assistance within 24 business hours.
 
 ## Feedback Matters
 
 At CandidateToHR, we continuously work to improve our platform and user experience. Your feedback helps us build better tools and resources for job seekers around the world.
 
-Thank you for choosing CandidateToHR.
+Thank you for choosing CandidateToHR. We look forward to assisting you on your career journey.
 
-We look forward to assisting you on your career journey.
-
-**Email:** [Candidatetohr@gmail.com](mailto:Candidatetohr@gmail.com)
+**Primary Contact:** [support@candidatetohr.online](mailto:support@candidatetohr.online)
 `;
 
 export default function ContactPage() {

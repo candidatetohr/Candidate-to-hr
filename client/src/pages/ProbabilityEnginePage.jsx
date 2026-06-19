@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { PieChart, GraduationCap, Code, Briefcase, Zap, TrendingUp, AlertTriangle, CheckCircle } from 'lucide-react';
-import { resumeAnalyzerAPI } from '../services/api';
+import api from '../services/api';
+import SEO from '../components/SEO';
+import ToolEditorial from '../components/seo/ToolEditorial';
 import './ProbabilityEnginePage.css';
 
 export default function ProbabilityEnginePage() {
@@ -23,7 +25,7 @@ export default function ProbabilityEnginePage() {
     setResult(null);
 
     try {
-      const res = await resumeAnalyzerAPI.placementProbability({
+      const res = await api.resumeAnalyzerAPI.placementProbability({
         cgpa,
         degree,
         skills,
@@ -38,7 +40,12 @@ export default function ProbabilityEnginePage() {
   };
 
   return (
-    <div className="prob-page">
+    <div className="prob-page-wrapper">
+      <SEO 
+        title="AI Placement Probability Engine | CandidateToHR"
+        description="Calculate your exact statistical probability of landing your target role. Get salary estimates and identify your biggest blockers."
+        canonical="/placement-probability"
+      />
       <div className="prob-container">
         
         <div className="prob-header">
@@ -210,6 +217,15 @@ export default function ProbabilityEnginePage() {
           </div>
           
         </div>
+        
+        <ToolEditorial 
+          whatItDoes="<p>The AI Placement Probability Engine calculates the statistical likelihood of you landing specific roles based on your current academic and technical profile. It also estimates your market salary value and identifies the single biggest 'blocker' preventing you from moving up a tier.</p>"
+          howItWorks="<p>We process your degree, GPA, tech stack, and project summaries through a model trained on thousands of recent tech hires. The AI compares your specific combination of variables against the profiles of candidates who successfully landed roles (e.g., at FAANG vs. Series B startups vs. IT Services) to generate a percentage-based probability.</p>"
+          whoShouldUse="<ul><li><strong>College Seniors / Freshers:</strong> Set realistic expectations before campus placements begin.</li><li><strong>Professionals Considering a Masters:</strong> See if the 'degree' variable actually moves the needle on your probability for specific roles.</li><li><strong>Self-Taught Engineers:</strong> Discover which missing project or skill is artificially holding your probability back.</li></ul>"
+          benefits="<ul><li><strong>Realistic Benchmarking:</strong> Avoid the trap of applying to 500 jobs you have a 1% chance of landing.</li><li><strong>Salary Optimization:</strong> Know your mathematical worth before walking into an HR negotiation.</li><li><strong>Targeted Improvement:</strong> Focus solely on the 'Biggest Blocker' rather than trying to learn everything at once.</li></ul>"
+          limitations="<p>Probability is not destiny. The engine cannot account for your soft skills, interview performance, or networking ability (which can drastically alter your real-world chances). It strictly analyzes the baseline competitiveness of your paper profile.</p>"
+          bestPractices="<p>Be brutally honest with your inputs. Don't list a skill unless you can pass a technical interview on it. Play around with the variables—add a new hypothetical project or skill to see how much it increases your probability score, then go build that project!</p>"
+        />
       </div>
     </div>
   );

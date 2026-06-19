@@ -11,6 +11,7 @@ import {
 import { resumeAnalyzerAPI } from '../services/api';
 import CareerCoachChat from '../components/CareerCoachChat';
 import SEO from '../components/SEO';
+import ToolEditorial from '../components/seo/ToolEditorial';
 import './ResumeAnalyzerPage.css';
 
 // ── Circular Score Ring ───────────────────────────────────────────────────────
@@ -504,6 +505,19 @@ export default function ResumeAnalyzerPage() {
 
         </AnimatePresence>
       </div>
+
+      {/* Adding ToolEditorial to the bottom of the page */}
+      <div className="az-editorial-wrapper" style={{ marginTop: '3rem', width: '100%', maxWidth: '1000px' }}>
+        <ToolEditorial 
+          whatItDoes="<p>The AI Resume Analyzer instantly grades your resume exactly like a modern Applicant Tracking System (ATS). It extracts your text, scores it across four critical dimensions, identifies skills gaps, and prepares you for the interview questions you are statistically most likely to face based on your exact profile.</p>"
+          howItWorks="<p>Using the NVIDIA NIM API, the tool deploys a multi-stage LLM pipeline. It first parses the PDF structure. Then, it compares your extracted skills against real-time market demands for your target role. Finally, it uses predictive modeling to identify weaknesses and rewrite specific bullet points to increase your ATS match rate.</p>"
+          whoShouldUse="<ul><li><strong>Active Job Seekers:</strong> Stop submitting into the void. Know your score before you hit apply.</li><li><strong>Career Pivoters:</strong> Identify the specific terminology and 'keywords' you are missing from the new industry.</li><li><strong>Recruiters:</strong> Use this same engine on the backend to automatically filter and score hundreds of inbound applications.</li></ul>"
+          benefits="<ul><li><strong>Instant Feedback:</strong> Get actionable advice in 30 seconds instead of waiting weeks for a human recruiter.</li><li><strong>Beat the ATS:</strong> Understand exactly how bots read your resume and fix formatting errors that cause auto-rejections.</li><li><strong>Comprehensive Prep:</strong> Combines resume scoring, skills gap analysis, and interview prep into a single workflow.</li></ul>"
+          limitations="<p>The AI analyzes textual content and semantic meaning. It cannot evaluate complex visual designs or graphic-heavy resumes (which standard ATS systems also fail to read). Always stick to standard PDF formatting.</p>"
+          bestPractices="<p>Always upload a clean, text-based PDF (avoid complex columns or images). Paste the exact Job Description you are applying for to get a hyper-targeted score rather than a general analysis. Implement the 'Critical Fixes' before your next application.</p>"
+        />
+      </div>
+
       </div>
 
       {/* 🆕 AI CAREER COACH CHAT — appears once results are loaded */}

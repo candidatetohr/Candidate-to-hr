@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Helmet } from 'react-helmet-async';
-import { Layout, Search, Zap, Code, Palette, PenTool, CheckCircle, AlertCircle } from 'lucide-react';
-import './PortfolioOptimizerPage.css';
+import api from '../services/api';
+import SEO from '../components/SEO';
+import ToolEditorial from '../components/seo/ToolEditorial';
 
 export default function PortfolioOptimizerPage() {
   const [portfolioUrl, setPortfolioUrl] = useState('');
@@ -10,40 +10,37 @@ export default function PortfolioOptimizerPage() {
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState(null);
 
-  const handleAnalyze = () => {
+  const handleAnalyze = async () => {
     if (!portfolioUrl.trim() || !targetRole.trim()) return;
     
     setLoading(true);
     setResult(null);
 
-    // Simulate API call
-    setTimeout(() => {
-      setResult({
-        uxScore: 78,
-        contentScore: 85,
-        visualScore: 82,
-        recommendations: [
-          { type: "Critical", text: "Add a 'TL;DR' summary at the top of each case study. Recruiters spend <30 seconds per portfolio." },
-          { type: "Improvement", text: "Ensure your live project links open in a new tab to keep users on your portfolio." },
-          { type: "Role-Specific", text: "As a target Product Designer, you need more emphasis on the 'Why' and the business impact, not just the final UI." }
-        ],
-        strengths: [
-          "Clean typography and whitespace",
-          "Responsive mobile layout",
-          "Good code quality (if linked to GitHub)"
-        ]
-      });
+    try {
+      // Pass the portfolio details instead of web scraping since the API takes `portfolioDetails` and `resumeText`
+      // We will ask the user for details instead of URL to avoid scraping complexity here, but for now
+      // let's pass the URL as text and see if NIM handles it (or expects text).
+      const res = await api.resumeAnalyzerAPI.portfolioOptimizer({ portfolioDetails: portfolioUrl, resumeText: targetRole });
+      if (res.data?.success) {
+        setResult(res.data.data);
+      } else {
+        alert(res.data?.message || 'Error generating portfolio analysis.');
+      }
+    } catch (error) {
+      console.error(error);
+      alert('An error occurred. Please try again.');
+    } finally {
       setLoading(false);
-    }, 3000);
+    }
   };
 
   return (
     <>
-      <Helmet>
-        <title>AI Portfolio Optimizer | CandidateToHR</title>
-        <meta name="description" content="Get actionable feedback on your portfolio. Our AI analyzes your UX, content, and visuals to help you convert views into job interviews." />
-        <meta name="keywords" content="portfolio review, AI portfolio analysis, UX design, software engineer portfolio, case study feedback" />
-      </Helmet>
+      <SEO 
+        title="AI Portfolio Optimizer | CandidateToHR"
+        description="Get actionable feedback on your portfolio. Our AI analyzes your UX, content, and visuals to help you convert views into job interviews."
+        canonical="/portfolio-optimizer"
+      />
 
       <div className="po-page">
         <div className="po-container">
@@ -68,12 +65,12 @@ export default function PortfolioOptimizerPage() {
               </div>
 
               <div className="po-input-group mt-4">
-                <label><Layout size={16} /> Portfolio / GitHub URL</label>
-                <input 
-                  type="url"
-                  placeholder="https://yourname.com"
+                <label><Layout size={16} /> Portfolio Details / Project Descriptions</label>
+                <textarea 
+                  placeholder="Paste the text from your case studies, project descriptions, or GitHub readmes..."
                   value={portfolioUrl}
                   onChange={e => setPortfolioUrl(e.target.value)}
+                  rows={5}
                 />
               </div>
 
@@ -167,6 +164,20 @@ export default function PortfolioOptimizerPage() {
             
           </div>
         </div>
+        
+        <ToolEditorial 
+          whatItDoes="<p>The AI Portfolio Optimizer reviews the structure, content, and presentation of your project descriptions. It acts like a Senior Hiring Manager looking at your case studies, providing scores across UX/Structure, Content/Copy, and Visual Design, along with actionable feedback to improve conversion.</p>"
+          howItWorks="<p>Our AI model analyzes the text of your case studies and project summaries against the standard expectations for your target role. It identifies missing context (like business impact or 'the why'), flags confusing jargon, and suggests structural improvements to ensure recruiters can understand your value in under 30 seconds.</p>"
+          whoShouldUse="<ul><li><strong>UX/UI Designers:</strong> Ensure your case studies tell a compelling story rather than just showing pretty screens.</li><li><strong>Software Engineers:</strong> Learn how to translate GitHub Readmes into business-focused portfolio items.</li><li><strong>Data Scientists:</strong> Optimize how you present complex data models to non-technical recruiters.</li></ul>"
+          benefits="<ul><li><strong>Higher Conversion:</strong> Turn passive portfolio views into actual interview requests.</li><li><strong>Role Alignment:</strong> Ensures your projects scream 'I am perfect for THIS specific role'.</li><li><strong>Objective Critique:</strong> Get instant, unbiased feedback before sharing your work publicly.</li></ul>"
+          limitations="<p>Currently, the AI analyzes text and structure descriptions. It cannot visually 'see' your live website's CSS, colors, or animations. Be sure to describe your layout and case study structure accurately for the best feedback.</p>"
+          bestPractices="<p>Paste the full text of your most important case study. Include headings, bullet points, and descriptions of your process. Don't just paste a URL; paste the actual content you want reviewed. Re-run the analysis whenever you add a new project.</p>"
+          faq={[
+            { q: "Can it review my live website URL directly?", a: "To ensure the highest quality feedback, we currently require you to paste the text/structure of your portfolio. This prevents web-scraping errors and focuses the AI entirely on your content." },
+            { q: "Does it help with GitHub Readmes?", a: "Absolutely. Paste your Readme text and specify your target role as 'Software Engineer' to get feedback on how to make it more attractive to recruiters." },
+            { q: "What is a good score?", a: "Aim for 85+ across all three categories to ensure your portfolio is competitive in today's market." }
+          ]}
+        />
       </div>
     </>
   );

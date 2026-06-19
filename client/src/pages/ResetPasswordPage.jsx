@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { authAPI } from '../services/api';
 import { Lock } from 'lucide-react';
 import toast from 'react-hot-toast';
+import SEO from '../components/SEO';
 import './AuthPage.css';
 
 export default function ResetPasswordPage() {
@@ -41,6 +42,7 @@ export default function ResetPasswordPage() {
 
   return (
     <div className="auth-page">
+      <SEO title="Reset Password" noindex />
       <div className="auth-orb auth-orb-1" />
       <div className="auth-orb auth-orb-2" />
 

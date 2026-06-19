@@ -12,6 +12,11 @@ import {
   generateLearningPath,
   predictPlacement,
   detectResumeLies,
+  evaluateCultureFit,
+  negotiateOffer,
+  buildNetworkStrategy,
+  analyzePortfolio,
+  analyzeSkillsGapPublic,
 } from '../services/nvidiaAI.js';
 import axios from 'axios';
 import { rotateApiKey, getCurrentKey } from '../services/nvidiaAI.js';
@@ -318,6 +323,96 @@ export const analyzeResumeTruth = async (req, res, next) => {
       return res.status(400).json({ success: false, message: 'resumeText is required.' });
     }
     const result = await detectResumeLies(resumeText);
+    res.json({ success: true, data: result });
+  } catch (err) {
+    next(err);
+  }
+};
+
+// ─── 11. AI CULTURE FIT ANALYZER ─────────────────────────────────────────────
+/**
+ * POST /api/resume-analyzer/culture-fit
+ * Body: { resumeText, companyValues }
+ */
+export const analyzeCultureFitPublic = async (req, res, next) => {
+  try {
+    const { resumeText, companyValues } = req.body;
+    if (!resumeText || !companyValues) {
+      return res.status(400).json({ success: false, message: 'resumeText and companyValues are required.' });
+    }
+    const result = await evaluateCultureFit(resumeText, companyValues);
+    res.json({ success: true, data: result });
+  } catch (err) {
+    next(err);
+  }
+};
+
+// ─── 12. AI OFFER NEGOTIATOR ──────────────────────────────────────────────────
+/**
+ * POST /api/resume-analyzer/offer-negotiator
+ * Body: { offerDetails, targetSalary }
+ */
+export const analyzeOfferNegotiator = async (req, res, next) => {
+  try {
+    const { offerDetails, targetSalary } = req.body;
+    if (!offerDetails || !targetSalary) {
+      return res.status(400).json({ success: false, message: 'offerDetails and targetSalary are required.' });
+    }
+    const result = await negotiateOffer(offerDetails, targetSalary);
+    res.json({ success: true, data: result });
+  } catch (err) {
+    next(err);
+  }
+};
+
+// ─── 13. AI NETWORK BUILDER ───────────────────────────────────────────────────
+/**
+ * POST /api/resume-analyzer/network-builder
+ * Body: { resumeText, networkingGoal }
+ */
+export const analyzeNetworkBuilder = async (req, res, next) => {
+  try {
+    const { resumeText, networkingGoal } = req.body;
+    if (!resumeText || !networkingGoal) {
+      return res.status(400).json({ success: false, message: 'resumeText and networkingGoal are required.' });
+    }
+    const result = await buildNetworkStrategy(resumeText, networkingGoal);
+    res.json({ success: true, data: result });
+  } catch (err) {
+    next(err);
+  }
+};
+
+// ─── 14. AI PORTFOLIO OPTIMIZER ───────────────────────────────────────────────
+/**
+ * POST /api/resume-analyzer/portfolio-optimizer
+ * Body: { portfolioDetails, resumeText }
+ */
+export const analyzePortfolioOptimizer = async (req, res, next) => {
+  try {
+    const { portfolioDetails, resumeText } = req.body;
+    if (!portfolioDetails || !resumeText) {
+      return res.status(400).json({ success: false, message: 'portfolioDetails and resumeText are required.' });
+    }
+    const result = await analyzePortfolio(portfolioDetails, resumeText);
+    res.json({ success: true, data: result });
+  } catch (err) {
+    next(err);
+  }
+};
+
+// ─── 15. SKILL GAP ANALYZER PUBLIC ────────────────────────────────────────────
+/**
+ * POST /api/resume-analyzer/skill-gap
+ * Body: { resumeText, targetRole }
+ */
+export const analyzeSkillGapPublic = async (req, res, next) => {
+  try {
+    const { resumeText, targetRole } = req.body;
+    if (!resumeText || !targetRole) {
+      return res.status(400).json({ success: false, message: 'resumeText and targetRole are required.' });
+    }
+    const result = await analyzeSkillsGapPublic(resumeText, targetRole);
     res.json({ success: true, data: result });
   } catch (err) {
     next(err);

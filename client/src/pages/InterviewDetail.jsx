@@ -4,6 +4,7 @@ import { useParams, Link } from 'react-router-dom';
 import SchemaMarkup from '../components/seo/SchemaMarkup';
 import Breadcrumbs from '../components/seo/Breadcrumbs';
 import SEO from '../components/SEO';
+import RelatedResources from '../components/seo/RelatedResources';
 import { AdBanner, InlineAd, SidebarAd } from '../components/monetization/Ads';
 import { MockInterviewCTA } from '../components/cta/PlatformCTAs';
 import { Eye, EyeOff, Search, X } from 'lucide-react';
@@ -192,6 +193,12 @@ export default function InterviewDetail() {
               </button>
             </div>
           )}
+
+          <RelatedResources items={[
+            { title: 'Salary Guide', description: `Explore salaries for ${data.title}`, url: `/salary-guides/${slug}`, icon: '💰' },
+            { title: 'Learning Roadmap', description: `Step-by-step path to become a ${data.title}`, url: `/roadmaps/${slug}`, icon: '🗺️' },
+            { title: 'Career Guide', description: `In-depth career advice for ${data.title}`, url: `/career-guides/${slug}`, icon: '📈' }
+          ]} />
 
           <InlineAd />
         </main>

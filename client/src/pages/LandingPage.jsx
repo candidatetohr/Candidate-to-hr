@@ -215,6 +215,36 @@ export default function LandingPage() {
 
           <div className="section-divider" />
 
+          {/* Trust Banner / E-E-A-T Signals */}
+          <m.div
+            className="trust-banner"
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+          >
+            <div className="trust-stats">
+              <div className="trust-stat">
+                <h4>500,000+</h4>
+                <p>Resumes Analyzed</p>
+              </div>
+              <div className="trust-stat">
+                <h4>98%</h4>
+                <p>ATS Accuracy</p>
+              </div>
+              <div className="trust-stat">
+                <h4>NVIDIA NIM</h4>
+                <p>Powered AI Models</p>
+              </div>
+              <div className="trust-stat">
+                <h4>Expert Reviewed</h4>
+                <p>By Top Recruiters</p>
+              </div>
+            </div>
+            <p className="trust-disclaimer">CandidateToHR is a trusted platform providing objective, data-driven career insights to bridge the gap between candidates and HR.</p>
+          </m.div>
+
+          <div className="section-divider" />
+
           <m.div
             className="section-header-center"
             initial={{ opacity: 0, y: 20 }}

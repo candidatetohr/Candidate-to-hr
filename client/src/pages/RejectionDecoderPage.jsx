@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FileText, Briefcase, Mail, Zap, ChevronRight, AlertTriangle, CheckCircle, ArrowRight } from 'lucide-react';
-import { resumeAnalyzerAPI } from '../services/api';
+import api from '../services/api';
+import SEO from '../components/SEO';
+import ToolEditorial from '../components/seo/ToolEditorial';
 import './RejectionDecoderPage.css';
 
 export default function RejectionDecoderPage() {
@@ -22,7 +24,7 @@ export default function RejectionDecoderPage() {
     setResult(null);
 
     try {
-      const res = await resumeAnalyzerAPI.rejectionDecoder({
+      const res = await api.resumeAnalyzerAPI.rejectionDecoder({
         resumeText,
         jobDescription,
         rejectionEmail
@@ -36,7 +38,12 @@ export default function RejectionDecoderPage() {
   };
 
   return (
-    <div className="rd-page">
+    <div className="rd-page-wrapper">
+      <SEO 
+        title="AI Rejection Decoder | CandidateToHR"
+        description="Paste your resume and job description to find out exactly why you were rejected. Get brutal, honest feedback and an action plan to fix it."
+        canonical="/rejection-decoder"
+      />
       <div className="container-seo">
         
         <div className="rd-header">
@@ -185,6 +192,15 @@ export default function RejectionDecoderPage() {
           </div>
           
         </div>
+        
+        <ToolEditorial 
+          whatItDoes="<p>The AI Rejection Decoder removes the ambiguity from generic 'unfortunately, we are moving forward with other candidates' emails. It acts as an unbiased hiring manager, tearing down your resume against the job description to tell you exactly where you fell short.</p>"
+          howItWorks="<p>Our AI cross-references the strict requirements of the job description with the explicit skills and experience listed on your resume. It identifies missing keywords, seniority gaps, and formatting red flags to determine the mathematical probability of why the ATS or human recruiter rejected you.</p>"
+          whoShouldUse="<ul><li><strong>Frustrated Applicants:</strong> Anyone stuck in a cycle of immediate auto-rejections.</li><li><strong>Career Changers:</strong> Understand if you are failing to translate your past experience into the new industry's language.</li><li><strong>Senior Professionals:</strong> Identify if you are accidentally coming across as overqualified or too expensive.</li></ul>"
+          benefits="<ul><li><strong>Closure:</strong> Stop guessing why you didn't get the interview.</li><li><strong>Rapid Iteration:</strong> Immediately identify the one or two bullet points that need rewriting before your next application.</li><li><strong>Skill Gap Identification:</strong> If you are genuinely underqualified, the tool will tell you exactly what you need to learn.</li></ul>"
+          limitations="<p>The AI cannot account for 'hidden' hiring factors, such as internal candidates, budget cuts, or nepotism. It strictly analyzes the textual match between your resume and the job posting.</p>"
+          bestPractices="<p>Paste the exact job description you applied for (as companies often update them). Include the rejection email if possible, as sometimes recruiters leave subtle clues in the phrasing. Don't take the 'Brutal Truth' personally—use it as fuel to improve.</p>"
+        />
       </div>
     </div>
   );

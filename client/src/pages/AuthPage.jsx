@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { useAuth } from '../context/AuthContext';
 import { Zap, Mail, Lock, User, Building2, Eye, EyeOff, ArrowRight } from 'lucide-react';
 import toast from 'react-hot-toast';
+import SEO from '../components/SEO';
 import './AuthPage.css';
 
 export default function AuthPage() {
@@ -42,6 +43,7 @@ export default function AuthPage() {
 
   return (
     <div className="auth-page">
+      <SEO title="Authenticate" noindex />
       {/* Background Orbs */}
       <div className="auth-orb auth-orb-1" />
       <div className="auth-orb auth-orb-2" />

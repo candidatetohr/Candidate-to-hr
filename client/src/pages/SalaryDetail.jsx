@@ -4,9 +4,11 @@ import { useParams, Link } from 'react-router-dom';
 import SchemaMarkup from '../components/seo/SchemaMarkup';
 import Breadcrumbs from '../components/seo/Breadcrumbs';
 import SEO from '../components/SEO';
+import RelatedResources from '../components/seo/RelatedResources';
 import { AdBanner, SidebarAd, InlineAd } from '../components/monetization/Ads';
 import { ATSCheckerCTA, MockInterviewCTA } from '../components/cta/PlatformCTAs';
-import { TrendingUp, MapPin, Briefcase } from 'lucide-react';
+import { TrendingUp, MapPin, Briefcase, BookOpen, LineChart, Award } from 'lucide-react';
+import ReactMarkdown from 'react-markdown';
 import './SalaryDetail.css';
 
 export default function SalaryDetail() {
@@ -28,7 +30,7 @@ export default function SalaryDetail() {
   if (loading) return <div className="p-48 text-center text-secondary">Loading salary data...</div>;
   if (!data) return <div className="p-48 text-center text-secondary">Salary data not found. <Link to="/salary-guides" className="color-primary">Go back</Link></div>;
 
-  const { seo, hero, experience, byCity, topCompanies, futureOutlook } = data;
+  const { seo, hero, experience, byCity, topCompanies, futureOutlook, marketAnalysis, careerPath, industryTrends, negotiationTips, certificationsAndSkills } = data;
 
   return (
     <div className="sal-detail-page container-standard px-6 py-8">
@@ -126,6 +128,47 @@ export default function SalaryDetail() {
             <h2 className="text-2xl font-bold mb-16 color-primary">Future Outlook (2026-2028)</h2>
             <p className="text-lg text-primary leading-relaxed">{futureOutlook}</p>
           </section>
+
+          {marketAnalysis && (
+            <section className="mb-48 content-long-form">
+              <h2 className="text-2xl font-bold mb-16 flex items-center gap-8"><LineChart className="text-green-400"/> Market Analysis</h2>
+              <div className="prose text-secondary"><ReactMarkdown>{marketAnalysis}</ReactMarkdown></div>
+            </section>
+          )}
+
+          {industryTrends && (
+            <section className="mb-48 content-long-form">
+              <h2 className="text-2xl font-bold mb-16 flex items-center gap-8"><TrendingUp className="text-blue-400"/> Industry Trends</h2>
+              <div className="prose text-secondary"><ReactMarkdown>{industryTrends}</ReactMarkdown></div>
+            </section>
+          )}
+
+          {careerPath && (
+            <section className="mb-48 content-long-form">
+              <h2 className="text-2xl font-bold mb-16 flex items-center gap-8"><MapPin className="text-purple-400"/> Career Path & Progression</h2>
+              <div className="prose text-secondary"><ReactMarkdown>{careerPath}</ReactMarkdown></div>
+            </section>
+          )}
+
+          {certificationsAndSkills && (
+            <section className="mb-48 content-long-form">
+              <h2 className="text-2xl font-bold mb-16 flex items-center gap-8"><Award className="text-yellow-400"/> Certifications & Skills</h2>
+              <div className="prose text-secondary"><ReactMarkdown>{certificationsAndSkills}</ReactMarkdown></div>
+            </section>
+          )}
+
+          {negotiationTips && (
+            <section className="mb-48 content-long-form">
+              <h2 className="text-2xl font-bold mb-16 flex items-center gap-8"><Briefcase className="text-red-400"/> Salary Negotiation Tips</h2>
+              <div className="prose text-secondary"><ReactMarkdown>{negotiationTips}</ReactMarkdown></div>
+            </section>
+          )}
+
+          <RelatedResources items={[
+            { title: 'Interview Questions', description: `Top interview questions for ${data.hero.title}`, url: `/interview-questions/${slug}`, icon: '🎤' },
+            { title: 'Learning Roadmap', description: `Step-by-step path to become a ${data.hero.title}`, url: `/roadmaps/${slug}`, icon: '🗺️' },
+            { title: 'Career Guide', description: `In-depth career advice for ${data.hero.title}`, url: `/career-guides/${slug}`, icon: '📈' }
+          ]} />
 
         </main>
         

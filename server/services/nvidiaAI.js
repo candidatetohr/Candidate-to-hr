@@ -791,3 +791,156 @@ Return ONLY this JSON:
   const raw = await callNIMWithRetry(systemPrompt, userPrompt, 2500);
   return parseJSON(raw);
 };
+
+// ─── 21. AI CULTURE FIT ANALYZER ──────────────────────────────────────────────
+export const evaluateCultureFit = async (resumeText, companyValues) => {
+  const systemPrompt = `You are an expert HR organizational psychologist. Evaluate a candidate's resume against specific company values to assess culture fit. Always respond with valid JSON only.`;
+
+  const userPrompt = `Evaluate culture fit based on this resume and company values:
+
+COMPANY VALUES:
+${companyValues.substring(0, 500)}
+
+RESUME TEXT:
+${resumeText.substring(0, 3000)}
+
+Return ONLY this JSON:
+{
+  "cultureScore": <0-100>,
+  "alignment": "<High|Medium|Low>",
+  "matchedValues": ["<value 1>", "<value 2>"],
+  "potentialFrictions": ["<friction 1>", "<friction 2>"],
+  "interviewQuestions": ["<behavioral q 1>", "<behavioral q 2>"]
+}`;
+
+  const raw = await callNIMWithRetry(systemPrompt, userPrompt, 800);
+  return parseJSON(raw);
+};
+
+// ─── 22. AI OFFER NEGOTIATOR ──────────────────────────────────────────────────
+export const negotiateOffer = async (offerDetails, targetSalary) => {
+  const systemPrompt = `You are a top-tier executive compensation negotiator. Analyze an initial job offer and target salary, and generate actionable counter-offer strategies and scripts. Always respond with valid JSON only.`;
+
+  const userPrompt = `Generate a negotiation strategy:
+
+INITIAL OFFER DETAILS:
+${offerDetails.substring(0, 1000)}
+
+TARGET SALARY / COMP:
+${targetSalary.substring(0, 200)}
+
+Return ONLY this JSON:
+{
+  "leverageLevel": "<Strong|Moderate|Weak>",
+  "confidenceScore": <0-100>,
+  "strategy": "<A concise, high-level negotiation strategy paragraph>",
+  "scripts": [
+    {
+      "title": "<Script Name (e.g., The Value-Add Approach)>",
+      "text": "<The actual email or talking script>"
+    }
+  ],
+  "hiddenLeverage": ["<hidden leverage point 1>", "<hidden leverage point 2>"]
+}
+
+Provide exactly 2 scripts.`;
+
+  const raw = await callNIMWithRetry(systemPrompt, userPrompt, 1200);
+  return parseJSON(raw);
+};
+
+// ─── 23. AI NETWORK BUILDER ───────────────────────────────────────────────────
+export const buildNetworkStrategy = async (resumeText, networkingGoal) => {
+  const systemPrompt = `You are a world-class professional networking coach. Analyze a candidate's background and networking goal to provide a structured outreach strategy. Always respond with valid JSON only.`;
+
+  const userPrompt = `Generate a networking strategy:
+
+NETWORKING GOAL:
+${networkingGoal.substring(0, 500)}
+
+RESUME TEXT:
+${resumeText.substring(0, 3000)}
+
+Return ONLY this JSON:
+{
+  "networkingScore": <0-100 (estimated current network strength)>,
+  "strategy": "<High-level networking plan paragraph>",
+  "targetPersonas": ["<e.g. Engineering Managers at Series B startups>", "<e.g. Open Source Contributors>"],
+  "outreachScripts": [
+    {
+      "type": "<e.g. Cold LinkedIn Connect>",
+      "subject": "<Subject line if email>",
+      "message": "<The actual message text>"
+    }
+  ],
+  "actionItems": ["<action item 1>", "<action item 2>"]
+}
+
+Provide exactly 2 outreachScripts.`;
+
+  const raw = await callNIMWithRetry(systemPrompt, userPrompt, 1200);
+  return parseJSON(raw);
+};
+
+// ─── 24. AI PORTFOLIO OPTIMIZER ───────────────────────────────────────────────
+export const analyzePortfolio = async (portfolioDetails, resumeText) => {
+  const systemPrompt = `You are an expert hiring manager and design/tech reviewer. Analyze a candidate's portfolio/projects description and provide actionable optimization tips. Always respond with valid JSON only.`;
+
+  const userPrompt = `Analyze this portfolio information:
+
+PORTFOLIO DETAILS:
+${portfolioDetails.substring(0, 1500)}
+
+RESUME SUMMARY:
+${resumeText.substring(0, 2000)}
+
+Return ONLY this JSON:
+{
+  "portfolioScore": <0-100>,
+  "firstImpression": "<1-2 sentence first impression>",
+  "strengths": ["<strength 1>", "<strength 2>"],
+  "weaknesses": ["<weakness 1>", "<weakness 2>"],
+  "improvements": ["<improvement 1>", "<improvement 2>"],
+  "projectIdeas": ["<new project idea to fill gaps>"]
+}`;
+
+  const raw = await callNIMWithRetry(systemPrompt, userPrompt, 1000);
+  return parseJSON(raw);
+};
+
+// ─── 25. SKILL GAP ANALYZER (PUBLIC WRAPPER) ──────────────────────────────────
+export const analyzeSkillsGapPublic = async (resumeText, targetRole) => {
+  const systemPrompt = `You are a career development expert. Compare a candidate's resume to typical industry requirements for a target role, identify missing skills, and provide a learning path. Always respond with valid JSON only.`;
+
+  const userPrompt = `Perform a skills gap analysis:
+
+TARGET ROLE:
+${targetRole.substring(0, 200)}
+
+RESUME TEXT:
+${resumeText.substring(0, 3000)}
+
+Return ONLY this JSON:
+{
+  "readinessScore": <0-100>,
+  "missingSkills": [
+    {
+      "skill": "<missing skill name>",
+      "importance": "<High|Medium|Low>",
+      "timeToLearn": "<e.g. 2 weeks>"
+    }
+  ],
+  "learningPath": [
+    {
+      "step": <number>,
+      "title": "<step title>",
+      "desc": "<step description>"
+    }
+  ]
+}
+
+Ensure missingSkills has at least 3 items, and learningPath has at least 3 steps.`;
+
+  const raw = await callNIMWithRetry(systemPrompt, userPrompt, 1500);
+  return parseJSON(raw);
+};

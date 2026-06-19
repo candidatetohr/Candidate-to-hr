@@ -1,8 +1,11 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Helmet } from 'react-helmet-async';
 import { BookOpen, Crosshair, Map, Compass, Zap, BookMarked, GraduationCap } from 'lucide-react';
 import './SkillGapAnalyzerPage.css';
+
+import api from '../services/api';
+import SEO from '../components/SEO';
+import ToolEditorial from '../components/seo/ToolEditorial';
 
 export default function SkillGapAnalyzerPage() {
   const [resumeText, setResumeText] = useState('');
@@ -10,38 +13,34 @@ export default function SkillGapAnalyzerPage() {
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState(null);
 
-  const handleAnalyze = () => {
+  const handleAnalyze = async () => {
     if (!resumeText.trim() || !targetRole.trim()) return;
     
     setLoading(true);
     setResult(null);
 
-    // Simulate API call
-    setTimeout(() => {
-      setResult({
-        readinessScore: 65,
-        missingSkills: [
-          { skill: "GraphQL", importance: "High", timeToLearn: "2 weeks" },
-          { skill: "Docker / Containerization", importance: "Medium", timeToLearn: "1 week" },
-          { skill: "System Design", importance: "High", timeToLearn: "1 month" }
-        ],
-        learningPath: [
-          { step: 1, title: "Master GraphQL Basics", desc: "Understand queries, mutations, and Apollo Client." },
-          { step: 2, title: "Containerize an App", desc: "Write a Dockerfile and docker-compose for a full-stack app." },
-          { step: 3, title: "System Design Prep", desc: "Read 'Designing Data-Intensive Applications' and practice mock interviews." }
-        ]
-      });
+    try {
+      const res = await api.resumeAnalyzerAPI.skillGapPublic({ resumeText, targetRole });
+      if (res.data?.success) {
+        setResult(res.data.data);
+      } else {
+        alert(res.data?.message || 'Error analyzing skill gap.');
+      }
+    } catch (error) {
+      console.error(error);
+      alert('An error occurred. Please try again.');
+    } finally {
       setLoading(false);
-    }, 2600);
+    }
   };
 
   return (
     <>
-      <Helmet>
-        <title>AI Skill Gap Analyzer | CandidateToHR</title>
-        <meta name="description" content="Compare your resume to your dream job. Our AI Skill Gap Analyzer identifies missing skills and generates a personalized learning path to get you hired." />
-        <meta name="keywords" content="skill gap analysis, AI learning path, resume skills, job readiness, career growth" />
-      </Helmet>
+      <SEO 
+        title="AI Skill Gap Analyzer | CandidateToHR"
+        description="Compare your resume to your dream job. Our AI Skill Gap Analyzer identifies missing skills and generates a personalized learning path to get you hired."
+        canonical="/skill-gap"
+      />
 
       <div className="sga-page">
         <div className="sga-container">
@@ -175,6 +174,20 @@ export default function SkillGapAnalyzerPage() {
             
           </div>
         </div>
+        
+        <ToolEditorial 
+          whatItDoes="<p>The AI Skill Gap Analyzer evaluates your current resume against the requirements of your target job title. It acts as an intelligent career coach, rapidly scanning industry standards and thousands of job descriptions to pinpoint exactly which technical and soft skills you are missing.</p>"
+          howItWorks="<p>Powered by advanced natural language processing (NLP) via NVIDIA NIM, the tool extracts your existing competencies. It then queries a vast dataset of job requirements for your target role. Finally, it calculates a readiness score and plots a step-by-step learning path to help you bridge the gap efficiently.</p>"
+          whoShouldUse="<ul><li><strong>Career Changers:</strong> Understand what it takes to transition into a new field.</li><li><strong>Ambitious Professionals:</strong> Identify the specific tools needed for a promotion.</li><li><strong>Recent Graduates:</strong> Discover which practical skills employers expect beyond theoretical knowledge.</li></ul>"
+          benefits="<ul><li><strong>Time-Saving:</strong> Stops you from blindly guessing what to learn next.</li><li><strong>Actionable Roadmaps:</strong> Provides a sequenced, step-by-step learning plan.</li><li><strong>Objective Feedback:</strong> Removes the bias from self-assessment.</li></ul>"
+          limitations="<p>While highly accurate, the analyzer relies entirely on the text you provide. If your resume is poorly formatted or omits key experiences, the AI may incorrectly flag a skill as missing. Always ensure you provide a comprehensive summary of your background.</p>"
+          bestPractices="<p>For the best results, paste an up-to-date, detailed version of your resume. When entering a target role, be specific (e.g., 'Senior React Developer' instead of just 'Developer'). Re-run the analysis every 3-6 months to track your progress.</p>"
+          faq={[
+            { q: "Is the readiness score an exact metric?", a: "No, it is an AI-estimated benchmark to help you gauge your relative competitiveness. It shouldn't be seen as an absolute guarantee of getting hired." },
+            { q: "Does the tool recommend specific courses?", a: "Currently, it outlines the topics you need to learn. We are working on integrating direct links to top-rated courses." },
+            { q: "Can I use this for non-technical roles?", a: "Yes! The tool works for marketing, finance, HR, and other domains by cross-referencing industry-specific terminology." }
+          ]}
+        />
       </div>
     </>
   );

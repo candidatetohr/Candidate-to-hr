@@ -7,6 +7,7 @@ import {
 import { analyticsAPI } from '../services/api';
 import { BarChart3, Users, TrendingUp, Award, Clock } from 'lucide-react';
 import toast from 'react-hot-toast';
+import SEO from '../components/SEO';
 import './AnalyticsPage.css';
 
 const COLORS = ['#4f8ef7', '#a855f7', '#10b981', '#f59e0b', '#ef4444', '#06b6d4'];
@@ -72,6 +73,7 @@ export default function AnalyticsPage() {
 
   return (
     <div className="page-wrapper">
+      <SEO title="Analytics" noindex />
       <div className="container analytics-page">
         {/* Header */}
         <motion.div

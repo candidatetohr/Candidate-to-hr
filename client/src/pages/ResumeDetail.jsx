@@ -7,6 +7,7 @@ import SEO from '../components/SEO';
 import { AdBanner, SidebarAd } from '../components/monetization/Ads';
 import { ATSCheckerCTA, ResumeBuilderCTA } from '../components/cta/PlatformCTAs';
 import { CheckCircle, XCircle, AlertTriangle } from 'lucide-react';
+import ReactMarkdown from 'react-markdown';
 import './ResumeDetail.css';
 
 export default function ResumeDetail() {
@@ -28,7 +29,7 @@ export default function ResumeDetail() {
   if (loading) return <div className="p-48 text-center text-secondary">Loading template...</div>;
   if (!data) return <div className="p-48 text-center text-secondary">Template not found. <Link to="/resume-examples" className="color-primary">Go back</Link></div>;
 
-  const { seo, hero, score, keywords, mistakes, tips, exampleResume } = data;
+  const { seo, hero, score, keywords, mistakes, tips, exampleResume, extendedContent, faq } = data;
 
   return (
     <div className="res-detail-page container-standard px-6 py-8">
@@ -143,8 +144,51 @@ export default function ResumeDetail() {
                 <h3 className="border-b-2 border-black font-bold text-black uppercase text-sm mb-8">Skills</h3>
                 <p>{exampleResume.skills}</p>
               </div>
+              {exampleResume.certifications && exampleResume.certifications.length > 0 && (
+                <div className="mb-16 text-sm text-black">
+                  <h3 className="border-b-2 border-black font-bold text-black uppercase text-sm mb-8">Certifications</h3>
+                  <ul className="list-disc pl-5">
+                    {exampleResume.certifications.map((cert, i) => <li key={i}>{typeof cert === 'string' ? cert : `${cert.name} - ${cert.issuer}`}</li>)}
+                  </ul>
+                </div>
+              )}
+
+              {exampleResume.projects && exampleResume.projects.length > 0 && (
+                <div className="mb-16 text-sm text-black">
+                  <h3 className="border-b-2 border-black font-bold text-black uppercase text-sm mb-8">Projects</h3>
+                  {exampleResume.projects.map((proj, i) => (
+                    <div key={i} className="mb-3">
+                      <strong>{proj.name}</strong>
+                      <p>{proj.description}</p>
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
           </section>
+
+          {extendedContent && extendedContent.map((section, idx) => (
+            <section key={idx} className="mb-48 content-long-form">
+              <h2 className="text-2xl font-bold mb-16 text-blue-400">{section.heading}</h2>
+              <div className="prose max-w-none text-secondary">
+                <ReactMarkdown>{section.content}</ReactMarkdown>
+              </div>
+            </section>
+          ))}
+
+          {faq && faq.length > 0 && (
+            <section className="mb-48">
+              <h2 className="text-2xl font-bold mb-16">Frequently Asked Questions</h2>
+              <div className="space-y-6">
+                {faq.map((item, idx) => (
+                  <div key={idx} className="bg-surface p-6 border border-default rounded">
+                    <h3 className="font-bold text-lg mb-2 color-primary">{item.q}</h3>
+                    <p className="text-secondary">{item.a}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+          )}
 
         </main>
         

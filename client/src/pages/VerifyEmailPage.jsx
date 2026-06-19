@@ -3,6 +3,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { authAPI } from '../services/api';
 import { CheckCircle2, XCircle } from 'lucide-react';
+import SEO from '../components/SEO';
 import './AuthPage.css';
 
 export default function VerifyEmailPage() {
@@ -25,6 +26,7 @@ export default function VerifyEmailPage() {
 
   return (
     <div className="auth-page">
+      <SEO title="Verify Email" noindex />
       <div className="auth-orb auth-orb-1" />
       <div className="auth-orb auth-orb-2" />
 

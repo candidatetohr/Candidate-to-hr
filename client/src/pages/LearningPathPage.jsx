@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Map, Target, Clock, FileText, Zap, CheckCircle, ChevronRight, AlertCircle, ArrowRight } from 'lucide-react';
-import { resumeAnalyzerAPI } from '../services/api';
+import { BookOpen, Target, ArrowRight, CheckCircle, Clock, Zap, AlertCircle, FileText, Map } from 'lucide-react';
+import api from '../services/api';
+import SEO from '../components/SEO';
+import ToolEditorial from '../components/seo/ToolEditorial';
 import './LearningPathPage.css';
 
 export default function LearningPathPage() {
@@ -22,7 +24,7 @@ export default function LearningPathPage() {
     setResult(null);
 
     try {
-      const res = await resumeAnalyzerAPI.learningPath({
+      const res = await api.learningPath({
         resumeText,
         targetRole,
         hoursPerWeek
@@ -36,7 +38,12 @@ export default function LearningPathPage() {
   };
 
   return (
-    <div className="lp-page">
+    <div className="lp-page-wrapper">
+      <SEO 
+        title="AI Learning Path Generator | CandidateToHR"
+        description="Generate a personalized, step-by-step learning path to bridge the gap between your current skills and your dream job. Master the right tools faster."
+        canonical="/learning-path"
+      />
       <div className="lp-container">
         
         <div className="lp-header">
@@ -191,6 +198,15 @@ export default function LearningPathPage() {
           </div>
           
         </div>
+        
+        <ToolEditorial 
+          whatItDoes="<p>The AI Learning Path Generator transforms an overwhelming skill gap into an actionable, weekly syllabus. It breaks down complex technical or soft skills into manageable milestones, showing you exactly what to study, in what order, to become job-ready.</p>"
+          howItWorks="<p>By analyzing your current resume against the requirements of your target role, the AI identifies precisely what is missing. It then sequences these missing skills into a chronological roadmap, estimating the time required for each phase and defining clear, testable milestones.</p>"
+          whoShouldUse="<ul><li><strong>Self-Taught Developers:</strong> Stop wandering through tutorial hell and follow a structured path.</li><li><strong>Career Pivoters:</strong> Understand the exact stepping stones required to shift from one industry to another.</li><li><strong>Professionals Seeking Promotion:</strong> Map out the exact leadership or technical skills required for the next level.</li></ul>"
+          benefits="<ul><li><strong>Saves Time:</strong> Eliminates the guesswork of 'what should I learn next?'</li><li><strong>Maintains Motivation:</strong> Breaks massive goals into achievable weekly targets.</li><li><strong>Interview-Focused:</strong> The milestones are designed around practical application, which is exactly what hiring managers test for.</li></ul>"
+          limitations="<p>The AI estimates the timeline based on average learning curves. Your actual time to completion will vary based on how many hours a week you can dedicate to study and your prior foundational knowledge.</p>"
+          bestPractices="<p>Treat the generated roadmap as a living document. When you hit a milestone, update your resume and run the tool again to see if the market requirements have shifted or if you are now ready to apply.</p>"
+        />
       </div>
     </div>
   );
