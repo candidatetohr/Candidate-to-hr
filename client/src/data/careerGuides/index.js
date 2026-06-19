@@ -1,5 +1,19 @@
 export const careerGuideCategories = [
   {
+    id: "how-to-transition-ai-engineering",
+    title: "How to Transition into AI Engineering in 2026",
+    description: "A practical guide for Software Engineers and Data Analysts looking to pivot into AI Engineering, RAG, and LLM development.",
+    topic: "Data & AI",
+    readTime: "7 min read"
+  },
+  {
+    id: "prompt-engineering-mastery",
+    title: "Mastering Prompt Engineering in 2026",
+    description: "Go beyond basic prompts. Learn advanced techniques like Chain of Thought, ReAct, and DSPy for production LLM applications.",
+    topic: "Development",
+    readTime: "9 min read"
+  },
+  {
     id: "how-to-become-data-scientist",
     title: "How to Become a Data Scientist in 2026",
     description: "The ultimate 7-step guide to breaking into Data Science without a Ph.D.",

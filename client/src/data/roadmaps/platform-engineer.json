@@ -1,0 +1,107 @@
+{
+  "seo": {
+    "title": "Platform Engineer Roadmap 2026",
+    "description": "Learn how to become a Platform Engineer in 2026. Master Kubernetes, Internal Developer Portals, CI/CD, and Infrastructure as Code.",
+    "slug": "platform-engineer",
+    "keywords": "Platform Engineer roadmap, platform engineering, IDP, Backstage, Kubernetes, DevOps transition",
+    "ogTitle": "Platform Engineer Roadmap 2026",
+    "ogDescription": "The evolution of DevOps is here. Learn how to build Internal Developer Platforms and reduce cognitive load for software engineers."
+  },
+  "hero": {
+    "title": "Platform Engineer Roadmap 2026",
+    "shortDescription": "Treat infrastructure as a product. Build Internal Developer Platforms (IDPs) that accelerate software delivery.",
+    "averageSalary": "$145,000",
+    "growthRate": "+40%",
+    "learningDuration": "8 Months",
+    "difficultyLevel": "Hard",
+    "hiringDemand": "Very High"
+  },
+  "overview": {
+    "whatTheyDo": "Platform Engineers build internal tools and platforms that help software engineers ship code faster. They treat developers as their customers.",
+    "industriesHiring": ["Big Tech", "FinTech", "Enterprise SaaS", "E-commerce"],
+    "responsibilities": [
+      "Building Internal Developer Portals (e.g., Spotify Backstage).",
+      "Standardizing CI/CD pipelines via templates.",
+      "Managing Kubernetes clusters and service meshes.",
+      "Writing Infrastructure as Code (Terraform).",
+      "Reducing developer 'cognitive load'."
+    ]
+  },
+  "skillsTimeline": {
+    "beginner": ["Linux & Networking", "Docker", "GitOps Basics", "Python/Go Scripting"],
+    "intermediate": ["Kubernetes", "Terraform / OpenTofu", "CI/CD (GitHub Actions/ArgoCD)", "Observability (Prometheus/Grafana)"],
+    "advanced": ["Internal Developer Portals (Backstage)", "Service Mesh (Istio)", "Platform as a Product methodologies", "Crossplane"]
+  },
+  "learningPath": [
+    {
+      "month": "Month 1: Fundamentals & Containers",
+      "description": "Master Linux administration, bash scripting, and Docker containerization. Understand networking concepts like DNS, TCP/IP, and Load Balancing."
+    },
+    {
+      "month": "Month 2: Infrastructure as Code (IaC)",
+      "description": "Learn Terraform or OpenTofu. Provision cloud resources (AWS/GCP/Azure) declaratively rather than clicking through consoles."
+    },
+    {
+      "month": "Month 3: Kubernetes Mastery",
+      "description": "Dive deep into Kubernetes. Learn about Pods, Deployments, Services, Ingress, and Helm charts."
+    },
+    {
+      "month": "Month 4: CI/CD & GitOps",
+      "description": "Move beyond traditional CI/CD. Learn GitOps principles using ArgoCD or Flux to deploy applications to Kubernetes automatically."
+    },
+    {
+      "month": "Month 5: Observability",
+      "description": "You can't manage what you can't measure. Learn OpenTelemetry, Prometheus, Grafana, and structured logging."
+    },
+    {
+      "month": "Month 6: Building the Platform (IDP)",
+      "description": "Learn about Internal Developer Portals. Deploy Spotify Backstage to create a single pane of glass for your developers."
+    }
+  ],
+  "toolsAndTech": ["Kubernetes", "Terraform", "Docker", "Go", "ArgoCD", "Backstage", "Prometheus", "AWS"],
+  "projects": {
+    "beginner": ["Dockerize a 3-tier web app", "Provision AWS VPC with Terraform", "Setup automated testing in GitHub Actions"],
+    "intermediate": ["Deploy a K3s cluster with ArgoCD", "Create reusable CI/CD pipeline templates", "Setup full monitoring stack with Grafana"],
+    "advanced": ["Deploy a Backstage Developer Portal", "Build a custom Kubernetes Operator in Go", "Implement self-service cloud provisioning"]
+  },
+  "certifications": [
+    "Certified Kubernetes Administrator (CKA)",
+    "HashiCorp Certified: Terraform Associate",
+    "AWS Certified DevOps Engineer - Professional"
+  ],
+  "salaryInsights": [
+    { "experience": "Fresher (0-1 yr)", "salary": "$95,000 - $115,000" },
+    { "experience": "Mid-Level (2-5 yrs)", "salary": "$135,000 - $165,000" },
+    { "experience": "Senior (5-8 yrs)", "salary": "$175,000 - $210,000" },
+    { "experience": "Staff/Lead (10+ yrs)", "salary": "$230,000+" }
+  ],
+  "interviewPrep": {
+    "topQuestions": [
+      "What is the difference between DevOps and Platform Engineering?",
+      "Explain the concept of GitOps.",
+      "How do you manage state files in Terraform securely?",
+      "How would you design a self-service platform for developers?"
+    ],
+    "commonMistakes": [
+      "Focusing only on tools and ignoring the 'Platform as a Product' mindset.",
+      "Not knowing a programming language (Go or Python is essential).",
+      "Building tools developers don't actually want or need."
+    ],
+    "resumeTips": {
+      "sections": ["Experience", "Platform Projects", "Tools", "Certifications"],
+      "keywords": ["Kubernetes", "IDP", "Backstage", "Terraform", "Developer Experience (DevEx)"],
+      "atsOptimization": "Quantify DevEx improvements (e.g., 'Reduced developer onboarding time from 3 days to 4 hours via self-service portal')."
+    }
+  },
+  "jobMarket": {
+    "futureDemand": "As microservices complexity grows, companies are realizing 'you build it, you run it' overwhelms developers. Platform engineering solves this.",
+    "remoteOpportunities": "High. Infrastructure teams are heavily distributed.",
+    "successStory": "Sarah transitioned from a SysAdmin to a Platform Engineer by building a self-service deployment portal for her company's 50 developers."
+  },
+  "faq": [
+    { "q": "Is Platform Engineering just rebranded DevOps?", "a": "No. DevOps is a culture of breaking silos. Platform Engineering is a specific discipline of building internal tools to reduce developer cognitive load." },
+    { "q": "Do I need to know how to code?", "a": "Yes. Unlike old-school SysAdmins, Platform Engineers write software (often in Go or Python) to automate infrastructure." },
+    { "q": "What is an IDP?", "a": "An Internal Developer Platform. It's a self-service portal where developers can spin up databases, deploy code, and monitor apps without submitting IT tickets." },
+    { "q": "Is Kubernetes mandatory?", "a": "Almost entirely. K8s is the operating system of the modern cloud, and most platforms are built on top of it." }
+  ]
+}

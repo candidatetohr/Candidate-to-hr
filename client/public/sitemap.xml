@@ -146,6 +146,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://candidatetohr.online/roadmaps/llm-developer</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://candidatetohr.online/roadmaps/platform-engineer</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://candidatetohr.online/roadmaps/software-engineer</loc>
     <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
@@ -513,6 +525,18 @@
   </url>
   <url>
     <loc>https://candidatetohr.online/resume-examples/full-stack-developer</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://candidatetohr.online/career-guides/how-to-transition-ai-engineering</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://candidatetohr.online/career-guides/prompt-engineering-mastery</loc>
     <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

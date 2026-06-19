@@ -1,5 +1,27 @@
 export const roadmapList = [
   {
+    id: "llm-developer",
+    title: "LLM & AI Agent Developer Roadmap 2026",
+    shortDescription: "Master Generative AI, RAG, and Agentic frameworks to become the most sought-after engineer of the decade.",
+    category: "Data & AI",
+    difficulty: "Hard",
+    duration: "6 Months",
+    salary: "$160,000",
+    growth: "+65%",
+    isTrending: true,
+  },
+  {
+    id: "platform-engineer",
+    title: "Platform Engineer Roadmap 2026",
+    shortDescription: "Treat infrastructure as a product. Build Internal Developer Platforms (IDPs) that accelerate software delivery.",
+    category: "Infrastructure",
+    difficulty: "Hard",
+    duration: "8 Months",
+    salary: "$145,000",
+    growth: "+40%",
+    isTrending: true,
+  },
+  {
     id: "software-engineer",
     title: "Software Engineer Roadmap 2026",
     shortDescription: "A comprehensive guide to becoming a Software Engineer, covering algorithms, architecture, and core development.",
