@@ -124,5 +124,12 @@ export const salaryCategories = [
     description: "MERN and PERN stack developer salaries in America — FAANG vs startup comparison.",
     role: "Development",
     country: "USA"
+  },
+  {
+    id: "cloud-engineer-salary-guide-2026",
+    title: "Cloud Engineer Salary Guide 2026 | Comprehensive US & Global Pay",
+    description: "The ultimate Cloud Engineer Salary Guide for 2026. Breakdown of AWS, Azure, and GCP engineer compensation by experience level, city, and company type.",
+    role: "Infrastructure",
+    country: "USA"
   }
 ];

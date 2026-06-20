@@ -58,6 +58,12 @@ export const resumeCategories = [
     title: "Full Stack Developer Resume Examples",
     description: "MERN and PERN stack developer resumes that demonstrate end-to-end ownership.",
     role: "Development"
+  },
+  {
+    id: "cloud-architect-resume-2026",
+    title: "Cloud Architect Resume Examples",
+    description: "AWS and Azure architect resumes that pass the ATS.",
+    role: "Infrastructure"
   }
 ];
 

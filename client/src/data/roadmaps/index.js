@@ -143,15 +143,15 @@ export const roadmapList = [
     isTrending: true,
   },
   {
-    id: "cloud-engineer",
+    id: "cloud-engineer-roadmap-2026",
     title: "Cloud Engineer Roadmap 2026",
     shortDescription: "Design and manage scalable cloud architectures on AWS, Azure, or GCP.",
     category: "Infrastructure",
     difficulty: "Medium",
     duration: "6 Months",
-    salary: "$125,000",
+    salary: "$160,000",
     growth: "+26%",
-    isTrending: false,
+    isTrending: true,
   },
   {
     id: "cyber-security",

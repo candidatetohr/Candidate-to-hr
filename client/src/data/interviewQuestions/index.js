@@ -96,6 +96,13 @@ export const interviewCategories = [
     description: "Pods, deployments, services, networking, RBAC, Helm, and Kubernetes architecture.",
     topic: "DevOps",
     count: 40
+  },
+  {
+    id: "typescript-interview-questions",
+    title: "TypeScript Interview Questions",
+    description: "Crack your TypeScript interview. Covers interfaces vs types, generics, utility types, and decorators.",
+    topic: "Programming",
+    count: 50
   }
 ];
 

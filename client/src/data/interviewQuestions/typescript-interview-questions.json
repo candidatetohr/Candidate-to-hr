@@ -1,0 +1,271 @@
+{
+  "seo": {
+    "title": "Top 50+ TypeScript Interview Questions & Answers (2026)",
+    "description": "Crack your TypeScript interview. Covers interfaces vs types, generics, utility types, decorators, strict mode, and advanced TS architecture.",
+    "slug": "typescript-interview-questions",
+    "keywords": "typescript interview questions, ts interview, frontend developer questions, typescript questions and answers, advanced typescript"
+  },
+  "hero": {
+    "title": "TypeScript Interview Questions",
+    "description": "Master advanced TypeScript. Over 50 real-world questions covering Generics, Type Narrowing, Decorators, and strict typing architectures.",
+    "count": 50
+  },
+  "questions": {
+    "beginner": [
+      {
+        "id": "ts-b-1",
+        "q": "What is TypeScript and why is it used?",
+        "a": "TypeScript is a strongly typed, open-source superset of JavaScript developed by Microsoft. It compiles down to plain JavaScript. It is used to catch errors at compile-time rather than runtime, improve code maintainability, provide superior developer tooling (like intellisense), and enable large-scale application development."
+      },
+      {
+        "id": "ts-b-2",
+        "q": "What are the basic types available in TypeScript?",
+        "a": "TypeScript includes primitive types: `string`, `number`, `boolean`, `null`, `undefined`, `symbol`, and `bigint`. It also provides types for data structures like `Array` (e.g., `number[]`), `Tuple`, `enum`, `any`, `unknown`, `never`, and `void`."
+      },
+      {
+        "id": "ts-b-3",
+        "q": "Explain the difference between `any` and `unknown`.",
+        "a": "`any` disables all type checking; you can perform any operation on an `any` variable, bypassing TypeScript's safety entirely. `unknown` is a type-safe counterpart to `any`. You can assign anything to an `unknown` variable, but you cannot perform operations on it or pass it to other typed variables until you perform a type check (type narrowing)."
+      },
+      {
+        "id": "ts-b-4",
+        "q": "What is an Interface in TypeScript?",
+        "a": "An interface is a syntactical contract that defines the structure or shape of an object. It enforces that a class or an object conforms to a specific set of properties and methods. Interfaces are purely for compile-time checking and are removed entirely during compilation to JS."
+      },
+      {
+        "id": "ts-b-5",
+        "q": "Interface vs. Type Alias: What is the difference?",
+        "a": "Both define object shapes. However, `interface` is better for declaring object shapes and supports Declaration Merging (defining the same interface twice merges them). `type` aliases can define union types, intersection types, and primitives. In modern TS, they are highly interchangeable, but `type` is generally preferred for utility types and complex unions, while `interface` is preferred for public API definitions."
+      },
+      {
+        "id": "ts-b-6",
+        "q": "What are Enums in TypeScript?",
+        "a": "Enums allow developers to define a set of named constants. By default, enums are numeric (starting at 0). You can also create String enums. Unlike interfaces, enums compile into real JavaScript objects (unless declared as `const enum`, which inlines the values for better performance)."
+      },
+      {
+        "id": "ts-b-7",
+        "q": "What is Type Inference?",
+        "a": "Type inference is TypeScript's ability to automatically deduce the type of a variable based on its initialization value without requiring an explicit type annotation. For example, `let x = 3;` automatically infers `x` as a `number`."
+      },
+      {
+        "id": "ts-b-8",
+        "q": "What is the `void` type used for?",
+        "a": "The `void` type represents the absence of a type. It is most commonly used as the return type of functions that do not return a value. For example, `function logMessage(): void { console.log('Hello'); }`."
+      },
+      {
+        "id": "ts-b-9",
+        "q": "What are Union Types?",
+        "a": "Union types allow a value to be one of several different types. They are defined using the pipe (`|`) symbol. For example, `let id: number | string;` means `id` can hold either a number or a string."
+      },
+      {
+        "id": "ts-b-10",
+        "q": "What are Tuples in TypeScript?",
+        "a": "A tuple is a typed array with a pre-defined length and specific types for each index. For example, `let user: [number, string] = [1, 'John'];`. If you attempt to assign `['John', 1]`, TS will throw an error."
+      },
+      {
+        "id": "ts-b-11",
+        "q": "How do you define optional properties in an interface?",
+        "a": "You append a question mark (`?`) to the property name. For example: `interface User { name: string; age?: number; }`. Here, `age` is optional, meaning it can be a number or undefined."
+      },
+      {
+        "id": "ts-b-12",
+        "q": "Explain Intersection Types.",
+        "a": "Intersection types combine multiple types into one. Using the ampersand (`&`) symbol, an object must possess all the properties of all the intersected types. For example, `type Admin = User & Permissions;` creates a type that requires the shape of both User and Permissions."
+      },
+      {
+        "id": "ts-b-13",
+        "q": "What is the `never` type?",
+        "a": "The `never` type represents a state that should never occur. It is used as the return type for functions that always throw an error or contain infinite loops. It is also highly useful in exhaustive type checking within switch statements."
+      },
+      {
+        "id": "ts-b-14",
+        "q": "What is Type Assertion (or Type Casting)?",
+        "a": "Type assertion allows you to override TypeScript's inferred type when you know more about the value than the compiler does. It doesn't perform any runtime checking. It's done using the `as` keyword (e.g., `let strLength: number = (someValue as string).length;`) or the angle bracket syntax `<string>someValue`."
+      },
+      {
+        "id": "ts-b-15",
+        "q": "What is the TSConfig.json file?",
+        "a": "The `tsconfig.json` file specifies the root files and the compiler options required to compile the project. It dictates how strict the type checking should be, what module system to output (CommonJS vs ESModules), and the target JS version (e.g., ES2022)."
+      },
+      {
+        "id": "ts-b-16",
+        "q": "What are Access Modifiers?",
+        "a": "TypeScript supports object-oriented access modifiers: `public` (default, accessible anywhere), `private` (accessible only within the class), and `protected` (accessible within the class and its subclasses)."
+      },
+      {
+        "id": "ts-b-17",
+        "q": "What is Readonly in TypeScript?",
+        "a": "The `readonly` keyword is used to make properties immutable after their initial assignment. `interface Point { readonly x: number; readonly y: number; }`. Once a Point is created, you cannot modify `x` or `y`."
+      }
+    ],
+    "intermediate": [
+      {
+        "id": "ts-i-1",
+        "q": "What are Generics?",
+        "a": "Generics provide a way to create reusable components that can work over a variety of types rather than a single one. Using a type variable like `<T>`, you can pass a type as an argument to a class, interface, or function. E.g., `function identity<T>(arg: T): T { return arg; }`."
+      },
+      {
+        "id": "ts-i-2",
+        "q": "What is Type Narrowing?",
+        "a": "Type narrowing is the process of refining a broad type (like a union type or `unknown`) to a more specific type. TypeScript achieves this via control flow analysis using type guards like `typeof`, `instanceof`, `in`, or custom type predicate functions."
+      },
+      {
+        "id": "ts-i-3",
+        "q": "What are Utility Types?",
+        "a": "TypeScript provides several globally available utility types to facilitate common type transformations. Examples include `Partial<T>` (makes all properties optional), `Pick<T, Keys>` (selects specific properties), `Omit<T, Keys>` (removes specific properties), and `Record<Keys, Type>`."
+      },
+      {
+        "id": "ts-i-4",
+        "q": "Explain the difference between `interface` and `abstract class`.",
+        "a": "An `interface` purely defines a shape and exists only at compile-time (has zero JS runtime output). An `abstract class` can provide implementation details (actual code) for some methods while forcing subclasses to implement abstract methods. Abstract classes do output JavaScript code."
+      },
+      {
+        "id": "ts-i-5",
+        "q": "What is a Type Predicate?",
+        "a": "A custom type guard function that returns a boolean but whose return type is annotated as `parameterName is Type`. For example: `function isString(val: any): val is string { return typeof val === 'string'; }`. If true, TS automatically narrows the type in the calling block."
+      },
+      {
+        "id": "ts-i-6",
+        "q": "Explain `keyof` operator.",
+        "a": "The `keyof` operator takes an object type and produces a string or numeric literal union of its keys. For example, if `type User = { name: string; age: number }`, then `type UserKeys = keyof User;` is equivalent to the union type `'name' | 'age'`."
+      },
+      {
+        "id": "ts-i-7",
+        "q": "What is the `strictNullChecks` flag?",
+        "a": "When `strictNullChecks` is enabled in tsconfig, `null` and `undefined` are not in the domain of every type. You must explicitly union them if a value can be null (e.g., `string | null`). This eliminates an entire class of runtime 'cannot read property of undefined' errors."
+      },
+      {
+        "id": "ts-i-8",
+        "q": "What are Mapped Types?",
+        "a": "Mapped types allow you to build new types by iterating over the keys of an existing type. Using the `in` keyword, you can transform properties. For example, `type ReadOnly<T> = { readonly [P in keyof T]: T[P] };` iterates over all keys of T and makes them readonly."
+      },
+      {
+        "id": "ts-i-9",
+        "q": "What is the `Record<K, V>` utility type?",
+        "a": "It constructs an object type whose property keys are K and whose property values are V. It is perfect for mapping properties to values. E.g., `const roleNames: Record<'admin' | 'user', string> = { admin: 'Administrator', user: 'Standard User' };`"
+      },
+      {
+        "id": "ts-i-10",
+        "q": "What is Declaration Merging?",
+        "a": "Declaration merging is when the TS compiler merges two or more separate declarations declared with the same name into a single definition. This primarily works with `interface` and namespaces. It is heavily used in extending third-party library typings (like adding custom properties to the Express `Request` object)."
+      },
+      {
+        "id": "ts-i-11",
+        "q": "Explain the difference between `String` and `string`.",
+        "a": "`string` (lowercase) is the primitive type in TypeScript. `String` (uppercase) refers to the global JavaScript String wrapper object. You should almost exclusively use the lowercase primitive type `string` for type annotations to avoid unexpected behavior."
+      },
+      {
+        "id": "ts-i-12",
+        "q": "How does literal type widening work?",
+        "a": "When you declare a variable using `let x = 'hello'`, TS infers the type as `string` (it widens the literal). If you use `const y = 'hello'`, TS infers the literal type `'hello'` (it doesn't widen) because a const cannot be reassigned. You can prevent widening of objects using `as const`."
+      },
+      {
+        "id": "ts-i-13",
+        "q": "What is an Index Signature?",
+        "a": "An index signature allows you to define the types of properties for an object when you don't know the exact property names in advance, but you know the shape of the values. E.g., `interface StringArray { [index: number]: string; }`."
+      },
+      {
+        "id": "ts-i-14",
+        "q": "What is the `ReturnType<T>` utility?",
+        "a": "It extracts the return type of a function type `T`. For example, `type T0 = ReturnType<typeof Date.now>;` resolves to `number`."
+      },
+      {
+        "id": "ts-i-15",
+        "q": "How do you enforce that a parameter must be passed?",
+        "a": "By default, all parameters in TS are required unless marked with `?` or assigned a default value. If a user tries to call a function with missing required arguments, TS will throw a compile-time error."
+      },
+      {
+        "id": "ts-i-16",
+        "q": "What is structural typing?",
+        "a": "TypeScript relies on Structural Typing (duck typing) rather than Nominal Typing. This means that two types are considered compatible if their internal structures are compatible, regardless of their explicit names. If an object has the required properties of an interface, TS considers it valid."
+      },
+      {
+        "id": "ts-i-17",
+        "q": "How do you implement optional chaining?",
+        "a": "Optional chaining `?.` allows reading the value of a deeply nested property without checking if each reference in the chain is valid. E.g., `const city = user?.address?.city;`. If `user` or `address` is undefined, it short-circuits and returns `undefined` instead of throwing an error."
+      }
+    ],
+    "advanced": [
+      {
+        "id": "ts-a-1",
+        "q": "Explain Conditional Types.",
+        "a": "Conditional types act like ternary operators for types. They take the form `T extends U ? X : Y`. It means: if type T is assignable to type U, resolve to type X, otherwise resolve to type Y. They are the backbone of advanced utility types like Exclude and Extract."
+      },
+      {
+        "id": "ts-a-2",
+        "q": "What is the `infer` keyword?",
+        "a": "The `infer` keyword is used exclusively within conditional types to extract and assign a type to a generic variable. For example, `type ReturnType<T> = T extends (...args: any[]) => infer R ? R : any;`. Here, `infer R` captures the return type of the function and returns it."
+      },
+      {
+        "id": "ts-a-3",
+        "q": "What are Decorators?",
+        "a": "Decorators are a stage 3 ECMAScript proposal implemented in TypeScript. They provide a way to add both annotations and a metaprogramming syntax for class declarations and members. They use the `@expression` syntax and are evaluated at runtime, allowing you to intercept and modify classes, methods, or properties (heavily used in frameworks like NestJS and Angular)."
+      },
+      {
+        "id": "ts-a-4",
+        "q": "Explain the difference between `Exclude<T, U>` and `Omit<T, K>`.",
+        "a": "`Exclude` works on Union Types: it constructs a type by excluding from union `T` all union members assignable to `U`. `Omit` works on Object Types: it constructs a new object type by picking all properties from `T` and then removing `K`."
+      },
+      {
+        "id": "ts-a-5",
+        "q": "How does `as const` work and what does it do?",
+        "a": "`as const` is a const assertion. It tells the compiler to infer the narrowest, most specific literal types possible, rather than widening them. For arrays, it creates a `readonly` tuple. For objects, it makes all properties deeply `readonly`. E.g., `const colors = ['red', 'blue'] as const;` ensures the array cannot be mutated."
+      },
+      {
+        "id": "ts-a-6",
+        "q": "What is Variance (Covariance vs. Contravariance)?",
+        "a": "In TypeScript, Variance dictates how subtyping relates to generic types. Covariance means you can assign a more specific type to a broader type (e.g., assigning a function returning `Dog` to a function returning `Animal`). Contravariance is the opposite, primarily affecting function parameters (strict function types enforce contravariance for parameters to ensure type safety)."
+      },
+      {
+        "id": "ts-a-7",
+        "q": "Explain the `satisfies` operator.",
+        "a": "Introduced in TS 4.9, the `satisfies` operator validates that an expression matches some type without changing the resulting type of that expression. Unlike `as` or type annotations, it retains the highly specific inferred type while still verifying structural compliance."
+      },
+      {
+        "id": "ts-a-8",
+        "q": "What is an Ambient Declaration (`declare`)?",
+        "a": "Ambient declarations inform the TypeScript compiler that a variable, module, or function exists elsewhere (e.g., in a global script tag or external environment) and should not throw a \"cannot find name\" error. It is defined using the `declare` keyword, typically in `.d.ts` declaration files."
+      },
+      {
+        "id": "ts-a-9",
+        "q": "How do you define recursive types?",
+        "a": "Recursive types reference themselves within their own definition. They are essential for defining complex nested structures like JSON objects or trees. E.g., `type Json = string | number | boolean | null | { [key: string]: Json } | Json[];`"
+      },
+      {
+        "id": "ts-a-10",
+        "q": "What is Discriminated Unions?",
+        "a": "Also known as algebraic data types or tagged unions. It is a pattern using union types, a common literal property (the discriminant), and type narrowing (usually a switch statement). E.g., `type Shape = { kind: 'circle', radius: number } | { kind: 'square', size: number }`. Switching on `shape.kind` perfectly narrows the type."
+      },
+      {
+        "id": "ts-a-11",
+        "q": "How does TS handle Function Overloading?",
+        "a": "TypeScript allows you to specify multiple function signatures (the overload signatures) followed by a single implementation signature. The implementation signature must be broad enough to handle all overloads (e.g., using optional parameters or unions). Only the overload signatures are visible to the caller."
+      },
+      {
+        "id": "ts-a-12",
+        "q": "What is the `NonNullable<T>` utility?",
+        "a": "It constructs a type by excluding `null` and `undefined` from `T`. For example, `type T0 = NonNullable<string | number | undefined>;` resolves to `string | number`."
+      },
+      {
+        "id": "ts-a-13",
+        "q": "Explain Template Literal Types.",
+        "a": "They build on string literal types via template literal syntax. They allow you to create powerful string permutations. E.g., `type Color = 'Red' | 'Blue'; type Event = 'hover' | 'click'; type Action = ${Color}-${Event};` results in `'Red-hover' | 'Red-click' | 'Blue-hover' | 'Blue-click'`."
+      },
+      {
+        "id": "ts-a-14",
+        "q": "What is the difference between exact types and structural types, and how does TS emulate exact types?",
+        "a": "TS uses structural types (extra properties are allowed). Exact types would reject objects with extra properties. While TS lacks a built-in Exact type, you can emulate it using conditional types and mapped types to force extra keys to resolve to `never`."
+      },
+      {
+        "id": "ts-a-15",
+        "q": "How does `ts-ignore` differ from `ts-expect-error`?",
+        "a": "`@ts-ignore` completely suppresses any compiler error on the following line. `@ts-expect-error` also suppresses the error, but if the compiler determines that the line *does not* actually have an error, it will throw an error telling you that the `ts-expect-error` is unnecessary. This makes `ts-expect-error` significantly safer for long-term maintenance."
+      },
+      {
+        "id": "ts-a-16",
+        "q": "What are Project References in TS?",
+        "a": "Project references allow you to structure your TypeScript program into smaller, independently compilable pieces. This dramatically improves compilation times for monorepos or massive codebases, enforcing logical separation between frontend, backend, and shared type definitions."
+      }
+    ]
+  }
+}

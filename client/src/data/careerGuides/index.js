@@ -67,7 +67,13 @@ export const careerGuideCategories = [
     title: "How to Negotiate Your Salary in 2026",
     description: "Most candidates leave $10k-$50k on the table. Here's the exact negotiation script.",
     topic: "Career Advice",
-    readTime: "9 min read"
+  },
+  {
+    id: "how-to-become-cloud-engineer",
+    title: "How to Become a Cloud Engineer in 2026: The Ultimate Guide",
+    description: "Learn exactly how to become a Cloud Engineer in 2026. Required skills, AWS/Azure certifications, and a step-by-step roadmap.",
+    topic: "Development",
+    readTime: "12 min read"
   }
 ];
 
