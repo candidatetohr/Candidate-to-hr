@@ -11,10 +11,21 @@ export default function NotFoundPage() {
         <p className="not-found-text">
           Oops! The page you are looking for does not exist or has been moved.
         </p>
-        <Link to="/" className="btn btn-primary not-found-btn">
-          <Home size={18} />
-          Return to Home
-        </Link>
+        <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap', marginTop: '24px' }}>
+          <Link to="/" className="btn btn-primary not-found-btn">
+            <Home size={18} />
+            Return to Home
+          </Link>
+          <Link to="/roadmaps" className="btn btn-outline not-found-btn">
+            Career Roadmaps
+          </Link>
+          <Link to="/interview-questions" className="btn btn-outline not-found-btn">
+            Interview Prep
+          </Link>
+          <Link to="/career-guides" className="btn btn-outline not-found-btn">
+            Career Guides
+          </Link>
+        </div>
       </div>
     </div>
   );
