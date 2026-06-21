@@ -29,7 +29,7 @@ export default function CareerGuideDetail() {
   if (loading) return <div className="p-48 text-center text-secondary">Loading guide...</div>;
   if (!data) return <div className="p-48 text-center text-secondary">Guide not found. <Link to="/career-guides" className="color-primary">Go back</Link></div>;
 
-  const { seo, hero, sections, resources } = data;
+  const { seo, hero, sections, resources, faq } = data;
 
   return (
     <div className="guide-detail-page container-standard px-6 py-8">
@@ -75,19 +75,35 @@ export default function CareerGuideDetail() {
             </section>
           ))}
 
-          <section className="mt-64 bg-slate-800/50 p-32 border border-default">
-            <h2 className="text-2xl font-bold mb-16">Recommended Resources</h2>
-            <ul className="list-disc pl-6 space-y-3 text-primary">
-              {resources.map((res, i) => (
-                <li key={i}>{res}</li>
-              ))}
-            </ul>
-          </section>
+          {resources && resources.length > 0 && (
+            <section className="mt-64 bg-slate-800/50 p-32 border border-default">
+              <h2 className="text-2xl font-bold mb-16">Recommended Resources</h2>
+              <ul className="list-disc pl-6 space-y-3 text-primary">
+                {resources.map((res, i) => (
+                  <li key={i}>{res}</li>
+                ))}
+              </ul>
+            </section>
+          )}
+
+          {faq && faq.length > 0 && (
+            <section className="mt-48 mb-48">
+              <h2 className="text-2xl font-bold mb-16">Frequently Asked Questions</h2>
+              <div className="space-y-6">
+                {faq.map((item, idx) => (
+                  <div key={idx} className="bg-surface p-6 border border-default rounded">
+                    <h3 className="font-bold text-lg mb-2 color-primary">{item.q}</h3>
+                    <p className="text-secondary">{item.a}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+          )}
 
           <RelatedResources items={[
-            { title: 'Interview Questions', description: `Top interview questions for ${data.seo.title.split(' Guide')[0]}`, url: `/interview-questions/${slug}`, icon: '🎤' },
-            { title: 'Learning Roadmap', description: `Step-by-step path to become a ${data.seo.title.split(' Guide')[0]}`, url: `/roadmaps/${slug}`, icon: '🗺️' },
-            { title: 'Salary Guide', description: `Explore salaries for ${data.seo.title.split(' Guide')[0]}`, url: `/salary-guides/${slug}`, icon: '💰' }
+            { title: 'Interview Questions', description: `Top interview questions`, url: `/interview-questions/${slug}`, icon: '🎤' },
+            { title: 'Learning Roadmap', description: `Step-by-step career path`, url: `/roadmaps/${slug}`, icon: '🗺️' },
+            { title: 'Salary Guide', description: `Explore salary data`, url: `/salary-guides/${slug}`, icon: '💰' }
           ]} />
 
         </main>

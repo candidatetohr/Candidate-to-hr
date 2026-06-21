@@ -242,7 +242,7 @@ export const roadmapList = [
     isTrending: false,
   },
   {
-    id: "qa-automation-engineer-roadmap",
+    id: "qa-automation-engineer",
     title: "QA Automation Engineer Roadmap 2026",
     shortDescription: "Master Selenium, Playwright, API Testing, and CI/CD to become a high-paid SDET.",
     category: "QA & Testing",

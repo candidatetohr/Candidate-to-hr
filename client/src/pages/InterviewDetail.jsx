@@ -192,9 +192,9 @@ export default function InterviewDetail() {
           )}
 
           <RelatedResources items={[
-            { title: 'Salary Guide', description: `Explore salaries for ${data.title}`, url: `/salary-guides/${slug}`, icon: '💰' },
-            { title: 'Learning Roadmap', description: `Step-by-step path to become a ${data.title}`, url: `/roadmaps/${slug}`, icon: '🗺️' },
-            { title: 'Career Guide', description: `In-depth career advice for ${data.title}`, url: `/career-guides/${slug}`, icon: '📈' }
+            { title: 'Salary Guide', description: `Explore salaries for ${data.hero?.title || 'this role'}`, url: `/salary-guides/${slug}`, icon: '💰' },
+            { title: 'Learning Roadmap', description: `Step-by-step career path`, url: `/roadmaps/${slug}`, icon: '🗺️' },
+            { title: 'Career Guide', description: `In-depth career advice`, url: `/career-guides/${slug}`, icon: '📈' }
           ]} />
 
           <InlineAd />

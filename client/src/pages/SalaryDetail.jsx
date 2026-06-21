@@ -30,7 +30,7 @@ export default function SalaryDetail() {
   if (loading) return <div className="p-48 text-center text-secondary">Loading salary data...</div>;
   if (!data) return <div className="p-48 text-center text-secondary">Salary data not found. <Link to="/salary-guides" className="color-primary">Go back</Link></div>;
 
-  const { seo, hero, experience, byCity, topCompanies, futureOutlook, marketAnalysis, careerPath, industryTrends, negotiationTips, certificationsAndSkills } = data;
+  const { seo, hero, experience, byCity, topCompanies, futureOutlook, marketAnalysis, careerPath, industryTrends, negotiationTips, certificationsAndSkills, faq } = data;
 
   return (
     <div className="sal-detail-page container-standard px-6 py-8">
@@ -164,10 +164,24 @@ export default function SalaryDetail() {
             </section>
           )}
 
+          {faq && faq.length > 0 && (
+            <section className="mb-48">
+              <h2 className="text-2xl font-bold mb-16">Frequently Asked Questions</h2>
+              <div className="space-y-6">
+                {faq.map((item, idx) => (
+                  <div key={idx} className="bg-surface p-6 border border-default rounded">
+                    <h3 className="font-bold text-lg mb-2 color-primary">{item.q}</h3>
+                    <p className="text-secondary">{item.a}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+          )}
+
           <RelatedResources items={[
-            { title: 'Interview Questions', description: `Top interview questions for ${data.hero.title}`, url: `/interview-questions/${slug}`, icon: '🎤' },
-            { title: 'Learning Roadmap', description: `Step-by-step path to become a ${data.hero.title}`, url: `/roadmaps/${slug}`, icon: '🗺️' },
-            { title: 'Career Guide', description: `In-depth career advice for ${data.hero.title}`, url: `/career-guides/${slug}`, icon: '📈' }
+            { title: 'Interview Questions', description: `Top interview questions`, url: `/interview-questions/${slug}`, icon: '🎤' },
+            { title: 'Learning Roadmap', description: `Step-by-step career path`, url: `/roadmaps/${slug}`, icon: '🗺️' },
+            { title: 'Career Guide', description: `In-depth career advice`, url: `/career-guides/${slug}`, icon: '📈' }
           ]} />
 
         </main>
