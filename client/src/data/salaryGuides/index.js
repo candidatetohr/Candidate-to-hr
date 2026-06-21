@@ -131,5 +131,12 @@ export const salaryCategories = [
     description: "The ultimate Cloud Engineer Salary Guide for 2026. Breakdown of AWS, Azure, and GCP engineer compensation by experience level, city, and company type.",
     role: "Infrastructure",
     country: "USA"
+  },
+  {
+    id: "qa-automation-engineer-india",
+    title: "QA Automation Engineer Salary in India (2026)",
+    description: "Detailed breakdown of QA Automation and SDET salaries by experience, city, and top companies in India.",
+    role: "QA & Testing",
+    country: "India"
   }
 ];

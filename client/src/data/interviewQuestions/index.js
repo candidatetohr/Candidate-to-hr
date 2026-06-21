@@ -103,6 +103,13 @@ export const interviewCategories = [
     description: "Crack your TypeScript interview. Covers interfaces vs types, generics, utility types, and decorators.",
     topic: "Programming",
     count: 50
+  },
+  {
+    id: "qa-automation",
+    title: "QA Automation Interview Questions",
+    description: "Top 50+ QA Automation questions covering Selenium, Playwright, API Testing, and CI/CD.",
+    topic: "QA & Testing",
+    count: 50
   }
 ];
 

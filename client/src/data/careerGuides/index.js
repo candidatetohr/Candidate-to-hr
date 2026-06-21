@@ -74,6 +74,13 @@ export const careerGuideCategories = [
     description: "Learn exactly how to become a Cloud Engineer in 2026. Required skills, AWS/Azure certifications, and a step-by-step roadmap.",
     topic: "Development",
     readTime: "12 min read"
+  },
+  {
+    id: "how-to-become-qa-automation-engineer",
+    title: "How to Become a QA Automation Engineer in 2026",
+    description: "The definitive guide to transitioning from manual testing to automation or starting fresh as an SDET.",
+    topic: "QA & Testing",
+    readTime: "9 min read"
   }
 ];
 

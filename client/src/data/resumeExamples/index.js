@@ -64,6 +64,12 @@ export const resumeCategories = [
     title: "Cloud Architect Resume Examples",
     description: "AWS and Azure architect resumes that pass the ATS.",
     role: "Infrastructure"
+  },
+  {
+    id: "qa-automation-engineer",
+    title: "QA Automation Engineer Resume Examples",
+    description: "ATS-optimized templates and examples for QA Automation and SDET roles.",
+    role: "QA & Testing"
   }
 ];
 

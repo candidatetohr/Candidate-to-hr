@@ -240,5 +240,16 @@ export const roadmapList = [
     salary: "$100,000",
     growth: "+15%",
     isTrending: false,
+  },
+  {
+    id: "qa-automation-engineer-roadmap",
+    title: "QA Automation Engineer Roadmap 2026",
+    shortDescription: "Master Selenium, Playwright, API Testing, and CI/CD to become a high-paid SDET.",
+    category: "QA & Testing",
+    difficulty: "Hard",
+    duration: "6 Months",
+    salary: "$115,000",
+    growth: "+25%",
+    isTrending: true,
   }
 ];
