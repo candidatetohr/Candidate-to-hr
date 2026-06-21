@@ -37,6 +37,8 @@ export default function ResumeDetail() {
         <title>{seo.title}</title>
         <meta name="description" content={seo.description} />
         {seo.keywords && <meta name="keywords" content={seo.keywords} />}
+        <link rel="canonical" href={`https://candidatetohr.online/resume-examples/${slug}`} />
+        <meta property="og:url" content={`https://candidatetohr.online/resume-examples/${slug}`} />
         <meta property="og:title" content={seo.ogTitle || seo.title} />
         <meta property="og:description" content={seo.ogDescription || seo.description} />
       </Helmet>

@@ -51,6 +51,8 @@ export default function RoadmapDetail() {
         <title>{seo.title}</title>
         <meta name="description" content={seo.description} />
         <meta name="keywords" content={seo.keywords} />
+        <link rel="canonical" href={`https://candidatetohr.online/roadmaps/${slug}`} />
+        <meta property="og:url" content={`https://candidatetohr.online/roadmaps/${slug}`} />
         <meta property="og:title" content={seo.ogTitle} />
         <meta property="og:description" content={seo.ogDescription} />
       </Helmet>
