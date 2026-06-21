@@ -12,6 +12,12 @@ export const resumeCategories = [
     role: "Development"
   },
   {
+    id: "backend-developer",
+    title: "Backend Developer Resume Examples",
+    description: "Node.js, Python, and Java backend developer resume templates that pass ATS.",
+    role: "Development"
+  },
+  {
     id: "product-manager",
     title: "Product Manager Resume Examples",
     description: "Highlight your leadership, metrics, and cross-functional impact.",

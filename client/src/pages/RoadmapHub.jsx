@@ -17,7 +17,7 @@ export default function RoadmapHub() {
     return matchesSearch && matchesCategory;
   });
 
-  const trendingRoadmaps = roadmapList.filter(r => r.isTrending).slice(0, 3);
+  const trendingRoadmaps = roadmapList.filter(r => r.isTrending && (activeCategory === 'All' || r.category === activeCategory)).slice(0, 3);
 
   return (
     <div className="hub-page">

@@ -55,5 +55,47 @@
     "FreeCodeCamp: For learning web development and coding challenges.",
     "LeetCode: For practicing coding challenges and improving problem-solving skills.",
     "GitHub: For hosting and showcasing personal projects and contributing to open-source projects."
+  ],
+  "faq": [
+    {
+      "q": "Is it hard to become a software engineer?",
+      "a": "It requires dedication and logical thinking, but it is entirely learnable. Consistency in coding practice is the key."
+    },
+    {
+      "q": "Do I need a CS degree?",
+      "a": "While a Computer Science degree provides a strong foundation, many successful engineers are self-taught or bootcamp graduates."
+    },
+    {
+      "q": "What programming language should I learn first?",
+      "a": "Python or JavaScript are highly recommended for beginners due to their readability and massive ecosystems."
+    },
+    {
+      "q": "How long does it take to get a job?",
+      "a": "Typically 6 to 12 months of focused, daily study to land an entry-level role."
+    },
+    {
+      "q": "Are software engineers in high demand?",
+      "a": "Yes, despite market fluctuations, skilled software engineers are always in demand across all industries."
+    },
+    {
+      "q": "What is the most important skill for a software engineer?",
+      "a": "Problem-solving. Languages and tools change, but the ability to break down and solve complex problems remains constant."
+    },
+    {
+      "q": "How important is Data Structures and Algorithms (DSA)?",
+      "a": "Very important, especially for passing technical interviews at mid-to-large tech companies."
+    },
+    {
+      "q": "Can I work remotely as a software engineer?",
+      "a": "Yes, software engineering is one of the most remote-friendly professions globally."
+    },
+    {
+      "q": "What is the difference between frontend and backend?",
+      "a": "Frontend deals with the user interface (what the user sees), while backend handles the server, database, and business logic."
+    },
+    {
+      "q": "How do I build a portfolio?",
+      "a": "Start by building full-stack applications that solve real problems, and host the code on GitHub with good documentation."
+    }
   ]
 }

@@ -267,5 +267,27 @@
         "a": "In distributed Multi-Master databases (like Dynamo), servers might receive updates out of order due to network delays. Relying on system timestamps is dangerous due to clock drift. A Vector Clock is a logical clock. It maintains an array of counters (one per node) attached to the data. By comparing vector clocks, the system can mathematically determine if Event A happened before Event B, or if they were concurrent (a conflict), allowing the system to hand the conflict back to the client app to resolve."
       }
     ]
-  }
+  },
+  "faq": [
+    {
+      "q": "How many questions are covered in this guide?",
+      "a": "This guide covers 50+ of the most frequently asked questions."
+    },
+    {
+      "q": "Are these questions suitable for beginners?",
+      "a": "Yes, the guide is divided into beginner, intermediate, and advanced sections."
+    },
+    {
+      "q": "How often is this guide updated?",
+      "a": "We update our interview questions quarterly to ensure they reflect current industry standards."
+    },
+    {
+      "q": "Should I memorize the answers?",
+      "a": "No, it is better to understand the underlying concepts rather than memorizing answers word-for-word."
+    },
+    {
+      "q": "Are these questions asked at FAANG companies?",
+      "a": "Yes, many of these questions are standard in interviews at top tech companies like Google, Amazon, and Meta."
+    }
+  ]
 }

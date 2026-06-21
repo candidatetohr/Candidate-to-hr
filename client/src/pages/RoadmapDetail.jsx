@@ -55,6 +55,22 @@ export default function RoadmapDetail() {
         <meta property="og:url" content={`https://candidatetohr.online/roadmaps/${slug}`} />
         <meta property="og:title" content={seo.ogTitle} />
         <meta property="og:description" content={seo.ogDescription} />
+        {data.faq && data.faq.length > 0 && (
+          <script type="application/ld+json">
+            {JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": data.faq.map(f => ({
+                "@type": "Question",
+                "name": f.q,
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": f.a
+                }
+              }))
+            })}
+          </script>
+        )}
       </Helmet>
 
       {/* ─── HERO SECTION ─────────────────────────── */}

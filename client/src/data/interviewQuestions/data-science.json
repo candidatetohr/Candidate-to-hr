@@ -267,5 +267,27 @@
         "a": "In standard A/B testing, the Stable Unit Treatment Value Assumption (SUTVA) states that treatment applied to one unit does not affect another. In social networks or marketplaces (like Uber/Airbnb), this is violated. Giving a driver a promo code (Treatment) takes rides away from a driver without the code (Control). This requires complex experimental designs like Time-based splits or Cluster-based randomized trials to measure true lift."
       }
     ]
-  }
+  },
+  "faq": [
+    {
+      "q": "How many questions are covered in this guide?",
+      "a": "This guide covers 50+ of the most frequently asked questions."
+    },
+    {
+      "q": "Are these questions suitable for beginners?",
+      "a": "Yes, the guide is divided into beginner, intermediate, and advanced sections."
+    },
+    {
+      "q": "How often is this guide updated?",
+      "a": "We update our interview questions quarterly to ensure they reflect current industry standards."
+    },
+    {
+      "q": "Should I memorize the answers?",
+      "a": "No, it is better to understand the underlying concepts rather than memorizing answers word-for-word."
+    },
+    {
+      "q": "Are these questions asked at FAANG companies?",
+      "a": "Yes, many of these questions are standard in interviews at top tech companies like Google, Amazon, and Meta."
+    }
+  ]
 }

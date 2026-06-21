@@ -111,6 +111,22 @@ export default function InterviewDetail() {
         <meta property="og:url" content={`https://candidatetohr.online/interview-questions/${slug}`} />
         <meta property="og:title" content={data.seo?.ogTitle || data.hero.title} />
         <meta property="og:description" content={data.seo?.ogDescription || data.hero.description} />
+        {data.faq && data.faq.length > 0 && (
+          <script type="application/ld+json">
+            {JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": data.faq.map(f => ({
+                "@type": "Question",
+                "name": f.q,
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": f.a
+                }
+              }))
+            })}
+          </script>
+        )}
       </Helmet>
       <SchemaMarkup type="FAQPage" data={allQuestions} />
       

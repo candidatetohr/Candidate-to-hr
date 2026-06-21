@@ -3,9 +3,10 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import { useAuth } from './context/AuthContext';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import LandingPage from './pages/LandingPage';
 import CookieConsent from './components/CookieConsent';
 import ScrollToTop from './components/ScrollToTop';
+
+const LandingPage = lazy(() => import('./pages/LandingPage'));
 
 const AuthPage = lazy(() => import('./pages/AuthPage'));
 const DashboardRouter = lazy(() => import('./components/DashboardRouter'));
@@ -86,7 +87,7 @@ export default function App() {
     <>
       <ScrollToTop />
       <Navbar />
-      <main>
+      <main id="main-content">
         <Suspense fallback={<PageLoader />}>
         <Routes>
           <Route path="/" element={<PublicRoute><LandingPage /></PublicRoute>} />

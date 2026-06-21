@@ -186,6 +186,10 @@
     {
       "q": "Is Kubernetes mandatory?",
       "a": "Almost entirely. K8s is the operating system of the modern cloud, and most platforms are built on top of it."
+    },
+    {
+      "q": "Do I need a degree?",
+      "a": "While helpful, a strong portfolio matters more."
     }
   ]
 }

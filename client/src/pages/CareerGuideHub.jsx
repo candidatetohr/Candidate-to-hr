@@ -11,7 +11,9 @@ export default function CareerGuideHub() {
   const [searchTerm, setSearchTerm] = useState('');
   
   const filteredCategories = careerGuideCategories.filter(cat => 
-    cat.title.toLowerCase().includes(searchTerm.toLowerCase())
+    cat.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    cat.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    (cat.topic && cat.topic.toLowerCase().includes(searchTerm.toLowerCase()))
   );
 
   return (

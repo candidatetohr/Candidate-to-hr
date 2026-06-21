@@ -267,5 +267,27 @@
         "a": "Unlike traditional keyword search (Lexical search like BM25 or Elasticsearch) which looks for exact string matches, Semantic Search understands the contextual meaning of the query. By converting both the query and the documents into dense vector embeddings using an ML model, it finds documents that answer the query's intent, even if they share zero identical keywords."
       }
     ]
-  }
+  },
+  "faq": [
+    {
+      "q": "How many questions are covered in this guide?",
+      "a": "This guide covers 50+ of the most frequently asked questions."
+    },
+    {
+      "q": "Are these questions suitable for beginners?",
+      "a": "Yes, the guide is divided into beginner, intermediate, and advanced sections."
+    },
+    {
+      "q": "How often is this guide updated?",
+      "a": "We update our interview questions quarterly to ensure they reflect current industry standards."
+    },
+    {
+      "q": "Should I memorize the answers?",
+      "a": "No, it is better to understand the underlying concepts rather than memorizing answers word-for-word."
+    },
+    {
+      "q": "Are these questions asked at FAANG companies?",
+      "a": "Yes, many of these questions are standard in interviews at top tech companies like Google, Amazon, and Meta."
+    }
+  ]
 }

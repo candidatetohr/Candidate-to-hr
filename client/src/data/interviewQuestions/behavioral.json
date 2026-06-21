@@ -267,5 +267,27 @@
         "a": "This summarizes your impact. Don't focus on code written or features shipped. Focus on systemic changes: the engineering culture you established, the mentorship programs you created, the CI/CD pipelines that sped up the whole org, or the shift in product strategy that resulted in sustained revenue growth after you left."
       }
     ]
-  }
+  },
+  "faq": [
+    {
+      "q": "How many questions are covered in this guide?",
+      "a": "This guide covers 50+ of the most frequently asked questions."
+    },
+    {
+      "q": "Are these questions suitable for beginners?",
+      "a": "Yes, the guide is divided into beginner, intermediate, and advanced sections."
+    },
+    {
+      "q": "How often is this guide updated?",
+      "a": "We update our interview questions quarterly to ensure they reflect current industry standards."
+    },
+    {
+      "q": "Should I memorize the answers?",
+      "a": "No, it is better to understand the underlying concepts rather than memorizing answers word-for-word."
+    },
+    {
+      "q": "Are these questions asked at FAANG companies?",
+      "a": "Yes, many of these questions are standard in interviews at top tech companies like Google, Amazon, and Meta."
+    }
+  ]
 }

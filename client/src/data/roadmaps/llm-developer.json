@@ -188,6 +188,10 @@
     {
       "q": "Are ChatGPT wrappers a real job?",
       "a": "Initially yes, but the industry is maturing. You need to know how to build agents and robust RAG pipelines now."
+    },
+    {
+      "q": "Do I need a degree?",
+      "a": "While helpful, a strong portfolio matters more."
     }
   ]
 }

@@ -41,6 +41,22 @@ export default function CareerGuideDetail() {
         <meta property="og:url" content={`https://candidatetohr.online/career-guides/${slug}`} />
         <meta property="og:title" content={seo.ogTitle || seo.title} />
         <meta property="og:description" content={seo.ogDescription || seo.description} />
+        {data.faq && data.faq.length > 0 && (
+          <script type="application/ld+json">
+            {JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": data.faq.map(f => ({
+                "@type": "Question",
+                "name": f.q,
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": f.a
+                }
+              }))
+            })}
+          </script>
+        )}
       </Helmet>
       <SchemaMarkup type="Article" data={{ title: seo.title, description: seo.description }} />
       <Breadcrumbs />
