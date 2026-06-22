@@ -23,6 +23,7 @@ function Footer() {
           <ul>
             <li><Link to="/about">About Us</Link></li>
             <li><Link to="/contact">Contact Us</Link></li>
+            <li><Link to="/sitemap">HTML Sitemap</Link></li>
           </ul>
         </div>
 
@@ -34,6 +35,7 @@ function Footer() {
             <li><Link to="/resume-examples">Resume Examples</Link></li>
             <li><Link to="/career-guides">Career Guides</Link></li>
             <li><Link to="/salary-guides">Salary Guides</Link></li>
+            <li><Link to="/roadmaps">Career Roadmaps</Link></li>
           </ul>
         </div>
 
