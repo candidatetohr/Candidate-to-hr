@@ -48,12 +48,14 @@ function generateSitemap() {
 
   // Add static routes
   staticRoutes.forEach((route) => {
+    // Core AI tools get max priority and daily crawling
+    const isCoreTool = ['/analyze', '/resume-builder', '/live-editor', '/interview-sim', '/rejection-decoder'].includes(route);
     urls.push(`
   <url>
     <loc>${DOMAIN}${route}</loc>
     <lastmod>${TODAY}</lastmod>
-    <changefreq>${route === '/' ? 'daily' : 'weekly'}</changefreq>
-    <priority>${route === '/' ? '1.0' : '0.8'}</priority>
+    <changefreq>${(route === '/' || isCoreTool) ? 'daily' : 'weekly'}</changefreq>
+    <priority>${(route === '/' || isCoreTool) ? '1.0' : '0.9'}</priority>
   </url>`);
   });
 
@@ -63,8 +65,8 @@ function generateSitemap() {
   <url>
     <loc>${DOMAIN}/roadmaps/${item.id}</loc>
     <lastmod>${TODAY}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>`);
   });
 
@@ -74,8 +76,8 @@ function generateSitemap() {
   <url>
     <loc>${DOMAIN}/salary-guides/${item.id}</loc>
     <lastmod>${TODAY}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>`);
   });
 
@@ -85,8 +87,8 @@ function generateSitemap() {
   <url>
     <loc>${DOMAIN}/interview-questions/${item.id}</loc>
     <lastmod>${TODAY}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>`);
   });
 
@@ -96,8 +98,8 @@ function generateSitemap() {
   <url>
     <loc>${DOMAIN}/resume-examples/${item.id}</loc>
     <lastmod>${TODAY}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>`);
   });
 
@@ -107,8 +109,8 @@ function generateSitemap() {
   <url>
     <loc>${DOMAIN}/career-guides/${item.id}</loc>
     <lastmod>${TODAY}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>`);
   });
 
