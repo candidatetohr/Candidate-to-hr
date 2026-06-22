@@ -69,11 +69,13 @@
 
 .search-input {
   padding-left: 36px;
-  width: 220px;
+  max-width: 220px;
+  width: 100%;
 }
 
 .filter-select {
-  width: 140px;
+  max-width: 140px;
+  width: 100%;
 }
 
 /* Job Card */

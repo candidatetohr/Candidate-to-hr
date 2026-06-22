@@ -4,6 +4,7 @@
   align-items: center;
   margin: 20px 0;
   width: 100%;
+  max-width: 100%;
   overflow: hidden;
   /* Empty container styling until ad is loaded */
   min-height: 10px; 

@@ -52,6 +52,29 @@
   padding: 0;
 }
 
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+p, h1, h2, h3, h4, h5, h6, span, a, li, th, td {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+/* Make tables scrollable on mobile */
+.prose table, table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-collapse: collapse;
+}
+
+.prose th, .prose td, th, td {
+  min-width: 120px;
+}
+
 html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
