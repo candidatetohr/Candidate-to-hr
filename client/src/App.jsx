@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 import CookieConsent from './components/CookieConsent';
 import ScrollToTop from './components/ScrollToTop';
 
-const LandingPage = lazy(() => import('./pages/LandingPage'));
+import LandingPage from './pages/LandingPage';
 
 const AuthPage = lazy(() => import('./pages/AuthPage'));
 const DashboardRouter = lazy(() => import('./components/DashboardRouter'));
