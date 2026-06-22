@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://candidatetohr-backend.onrender.com/api',
+  baseURL: import.meta.env.VITE_API_URL || (import.meta.env.DEV ? 'http://localhost:5000/api' : 'https://candidatetohr-backend.onrender.com/api'),
   headers: { 'Content-Type': 'application/json' },
   timeout: 120000, // 120 second timeout to allow Render to wake up and heavy LLM calls to finish
 });

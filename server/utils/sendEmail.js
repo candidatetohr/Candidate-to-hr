@@ -4,11 +4,11 @@ const sendEmail = async (options) => {
   // Using a test SMTP service for development if no real SMTP is provided
   // In production, configure SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS in .env
   const transporter = nodemailer.createTransport({
-    host: process.env.SMTP_HOST || 'smtp.mailtrap.io',
-    port: process.env.SMTP_PORT || 2525,
+    host: process.env.EMAIL_HOST || process.env.SMTP_HOST || 'smtp.mailtrap.io',
+    port: parseInt(process.env.EMAIL_PORT || process.env.SMTP_PORT || 2525, 10),
     auth: {
-      user: process.env.SMTP_USER || 'your_smtp_user',
-      pass: process.env.SMTP_PASS || 'your_smtp_password',
+      user: process.env.EMAIL_USER || process.env.SMTP_USER || 'your_smtp_user',
+      pass: process.env.EMAIL_PASS || process.env.SMTP_PASS || 'your_smtp_password',
     },
   });
 

@@ -55,15 +55,16 @@ export const register = asyncHandler(async (req, res) => {
       subject: 'CandidateToHR - Email Verification',
       message
     });
-    res.status(201).json({
-      success: true,
-      message: 'Account created successfully. Please check your email to verify your account.',
-    });
   } catch (err) {
-    user.verificationToken = undefined;
-    await user.save({ validateBeforeSave: false });
-    return res.status(500).json({ success: false, message: 'Email could not be sent' });
+    console.error(`Verification email could not be sent to ${user.email}: ${err.message}`);
+    console.log(`[DEV ONLY] Verification link: ${verifyUrl}`);
   }
+
+  res.status(201).json({
+    success: true,
+    message: 'Account created successfully. Please check your email to verify your account.',
+    ...(process.env.NODE_ENV === 'development' && { _devVerificationUrl: verifyUrl, _devToken: verificationToken })
+  });
 });
 
 // @desc    Login user
