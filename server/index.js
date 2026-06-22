@@ -38,9 +38,7 @@ if (process.env.SENTRY_DSN) {
   });
 }
 
-// Sentry request handler must be the first middleware on the app
-app.use(Sentry.Handlers.requestHandler());
-app.use(Sentry.Handlers.tracingHandler());
+// Sentry v10 automatically instruments Express requests. No requestHandler needed.
 
 // ─── Security Middleware ─────────────────────────────────────────────────────
 app.use(helmet());
@@ -83,8 +81,8 @@ app.get('/api/health', (req, res) => {
   res.json({ success: true, message: 'ATS API is running', timestamp: new Date() });
 });
 
-// The error handler must be before any other error middleware and after all controllers
-app.use(Sentry.Handlers.errorHandler());
+// The Sentry error handler must be before any other error middleware and after all controllers
+Sentry.setupExpressErrorHandler(app);
 
 // ─── Global Error Handler ─────────────────────────────────────────────────────
 app.use(errorHandler);
