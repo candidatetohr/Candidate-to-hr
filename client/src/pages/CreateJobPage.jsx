@@ -70,16 +70,16 @@ export default function CreateJobPage() {
     if (!form.description) { toast.error('Please add a description first.'); return; }
     setBiasLoading(true);
     try {
-      // Create temp and check — or use a standalone endpoint
-      const res = await jobsAPI.generateJD({
-        title: '__bias_check__',
-        keywords: [],
-        companyInfo: form.description,
-      });
-      // Parse bias from description field (we'll use dedicated endpoint after create)
-      setBiasResult({ message: 'Bias check will be available after publishing the job.' });
+      if (createdJobId) {
+        // Job exists — call the real bias check endpoint
+        const res = await jobsAPI.checkBias(createdJobId);
+        setBiasResult(res.data?.data || { message: 'No bias detected.' });
+      } else {
+        // Job not created yet — inform user
+        setBiasResult({ message: 'Publish the job first, then come back here to run the bias check.' });
+      }
     } catch {
-      setBiasResult({ message: 'Bias check unavailable right now.' });
+      setBiasResult({ message: 'Bias check unavailable right now. Please try again after publishing.' });
     } finally {
       setBiasLoading(false);
     }

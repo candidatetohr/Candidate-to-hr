@@ -13,7 +13,7 @@ import { interviewCategories } from './src/data/interviewQuestions/index.js';
 import { resumeCategories } from './src/data/resumeExamples/index.js';
 import { careerGuideCategories } from './src/data/careerGuides/index.js';
 
-const DOMAIN = 'https://candidatetohr.online';
+const DOMAIN = 'https://www.candidatetohr.online';
 const TODAY = new Date().toISOString().split('T')[0]; // YYYY-MM-DD
 
 const staticRoutes = [

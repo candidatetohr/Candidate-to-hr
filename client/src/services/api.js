@@ -3,6 +3,7 @@ import axios from 'axios';
 const api = axios.create({
   baseURL: 'https://candidatetohr-backend.onrender.com/api',
   headers: { 'Content-Type': 'application/json' },
+  timeout: 30000, // 30 second timeout — prevents infinite spinner on slow/sleeping backend
 });
 
 // Attach JWT token to every request

@@ -79,7 +79,7 @@ export default function LandingPage() {
               <Sparkles size={16} /> Analyse Resume
             </button>
             <button className="btn btn-outline btn-lg" onClick={() => navigate('/live-editor')} style={{ color: '#10b981', borderColor: 'rgba(16,185,129,0.3)', background: 'rgba(16,185,129,0.05)' }}>
-              ️ Live AI Editor
+              <Sparkles size={16} /> Live AI Editor
             </button>
             <button className="btn btn-ghost btn-lg hero-recruiter-btn" onClick={() => navigate('/login')} id="hero-recruiter-btn">
               For Recruiters <ArrowRight size={16} />
@@ -194,7 +194,7 @@ export default function LandingPage() {
               <Sparkles size={16} /> Full AI Analysis
             </button>
             <button className="btn btn-outline btn-lg" onClick={() => navigate('/live-editor')} style={{ color: '#10b981', borderColor: 'rgba(16,185,129,0.3)', background: 'rgba(16,185,129,0.05)' }}>
-              ️ Live AI Editor
+              <Sparkles size={16} /> Live AI Editor
             </button>
             <button className="btn btn-outline btn-lg" onClick={() => navigate('/interview-sim')} style={{ color: '#f59e0b', borderColor: 'rgba(245,158,11,0.3)', background: 'rgba(245,158,11,0.05)' }}>
               <MessageSquare size={16} /> Mock Interview
@@ -292,7 +292,7 @@ export default function LandingPage() {
               <Sparkles size={16} /> Analyse My Resume
             </button>
             <button className="btn btn-outline btn-lg" onClick={() => navigate('/live-editor')} style={{ color: '#10b981', borderColor: 'rgba(16,185,129,0.3)' }}>
-              ️ Live AI Editor
+              <Sparkles size={16} /> Live AI Editor
             </button>
             <button className="btn btn-outline btn-lg" onClick={() => navigate('/interview-sim')} style={{ color: '#f59e0b', borderColor: 'rgba(245,158,11,0.3)' }}>
               <MessageSquare size={16} /> AI Interview

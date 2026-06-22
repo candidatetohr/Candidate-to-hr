@@ -45,8 +45,9 @@ export const register = asyncHandler(async (req, res) => {
   });
 
   // Send verification email
-  const verifyUrl = `${req.protocol}://${req.get('host')}/verify-email/${verificationToken}`;
-  const message = `You are receiving this email because you registered on CandidateToHR. Please make a GET request to: \n\n ${verifyUrl}`;
+  const frontendUrl = process.env.FRONTEND_URL || 'https://www.candidatetohr.online';
+  const verifyUrl = `${frontendUrl}/verify-email/${verificationToken}`;
+  const message = `Welcome to CandidateToHR!\n\nPlease verify your email address by clicking the link below:\n\n${verifyUrl}\n\nThis link will expire in 24 hours. If you did not create an account, you can ignore this email.`;
 
   try {
     await sendEmail({
@@ -136,8 +137,9 @@ export const forgotPassword = asyncHandler(async (req, res) => {
 
   await user.save({ validateBeforeSave: false });
 
-  const resetUrl = `${req.protocol}://${req.get('host')}/reset-password/${resetToken}`;
-  const message = `You are receiving this email because you requested a password reset. Please make a PUT request to: \n\n ${resetUrl}`;
+  const frontendUrl = process.env.FRONTEND_URL || 'https://www.candidatetohr.online';
+  const resetUrl = `${frontendUrl}/reset-password/${resetToken}`;
+  const message = `You requested a password reset for your CandidateToHR account.\n\nClick the link below to set a new password:\n\n${resetUrl}\n\nThis link expires in 10 minutes. If you did not request this, please ignore this email.`;
 
   try {
     await sendEmail({

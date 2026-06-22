@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { 
   Target, Zap, UploadCloud, FileText, UserPlus, 
-  Map, Lock, CheckCircle2, Circle, TrendingUp, Search, GraduationCap, Sparkles
+  CheckCircle2, Circle, TrendingUp, Search, GraduationCap, Sparkles
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import SEO from '../components/SEO';
@@ -145,6 +145,41 @@ export default function CandidateDashboard() {
                   <button className="btn btn-primary" onClick={() => navigate('/analyze')} style={{ width: '100%' }}>
                     <Sparkles size={16} /> Scan Resume Now
                   </button>
+                </div>
+              </motion.div>
+
+              {/* Onboarding Checklist */}
+              <motion.div className="os-card mt-16" variants={itemVars}>
+                <div className="os-card-header">
+                  <h3><CheckCircle2 size={18} /> Getting Started Checklist</h3>
+                  <p className="os-subtext">Complete these steps to unlock the full platform.</p>
+                </div>
+                <div className="os-checklist">
+                  {checklist.map(item => (
+                    <div key={item.id} className={`os-checklist-item ${item.done ? 'done' : ''}`}>
+                      {item.done
+                        ? <CheckCircle2 size={16} className="check-icon done" />
+                        : <Circle size={16} className="check-icon" />
+                      }
+                      <span>{item.text}</span>
+                    </div>
+                  ))}
+                </div>
+              </motion.div>
+
+              {/* Progress Steps */}
+              <motion.div className="os-card mt-16" variants={itemVars}>
+                <div className="os-card-header">
+                  <h3>Your Career Journey</h3>
+                </div>
+                <div className="os-steps">
+                  {steps.map((step, i) => (
+                    <div key={i} className={`os-step ${step.active ? 'active' : ''}`}>
+                      <div className="os-step-dot">{i + 1}</div>
+                      <span className="os-step-label">{step.label}</span>
+                      {i < steps.length - 1 && <div className="os-step-line" />}
+                    </div>
+                  ))}
                 </div>
               </motion.div>
 

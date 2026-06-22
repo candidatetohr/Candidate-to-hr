@@ -4,32 +4,35 @@ import api from '../services/api';
 import SEO from '../components/SEO';
 import ToolEditorial from '../components/seo/ToolEditorial';
 import { Layout, Search, Zap, PenTool, AlertCircle, CheckCircle } from 'lucide-react';
+import toast from 'react-hot-toast';
 
 export default function PortfolioOptimizerPage() {
-  const [portfolioUrl, setPortfolioUrl] = useState('');
+  const [portfolioDetails, setPortfolioDetails] = useState('');
+  const [resumeText, setResumeText] = useState('');
   const [targetRole, setTargetRole] = useState('');
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState(null);
 
   const handleAnalyze = async () => {
-    if (!portfolioUrl.trim() || !targetRole.trim()) return;
+    if (!portfolioDetails.trim() || !targetRole.trim()) return;
     
     setLoading(true);
     setResult(null);
 
     try {
-      // Pass the portfolio details instead of web scraping since the API takes `portfolioDetails` and `resumeText`
-      // We will ask the user for details instead of URL to avoid scraping complexity here, but for now
-      // let's pass the URL as text and see if NIM handles it (or expects text).
-      const res = await api.resumeAnalyzerAPI.portfolioOptimizer({ portfolioDetails: portfolioUrl, resumeText: targetRole });
+      const res = await api.resumeAnalyzerAPI.portfolioOptimizer({
+        portfolioDetails: portfolioDetails.trim(),
+        resumeText: resumeText.trim(),
+        targetRole: targetRole.trim(),
+      });
       if (res.data?.success) {
         setResult(res.data.data);
       } else {
-        alert(res.data?.message || 'Error generating portfolio analysis.');
+        toast.error(res.data?.message || 'Error generating portfolio analysis.');
       }
     } catch (error) {
       console.error(error);
-      alert('An error occurred. Please try again.');
+      toast.error('An error occurred. Please try again.');
     } finally {
       setLoading(false);
     }
@@ -69,16 +72,26 @@ export default function PortfolioOptimizerPage() {
                 <label><Layout size={16} /> Portfolio Details / Project Descriptions</label>
                 <textarea 
                   placeholder="Paste the text from your case studies, project descriptions, or GitHub readmes..."
-                  value={portfolioUrl}
-                  onChange={e => setPortfolioUrl(e.target.value)}
+                  value={portfolioDetails}
+                  onChange={e => setPortfolioDetails(e.target.value)}
                   rows={5}
+                />
+              </div>
+
+              <div className="po-input-group mt-4">
+                <label>Your Resume (Optional — for context)</label>
+                <textarea 
+                  placeholder="Paste the text of your resume to give the AI more context about your background..."
+                  value={resumeText}
+                  onChange={e => setResumeText(e.target.value)}
+                  rows={3}
                 />
               </div>
 
               <button 
                 className="btn btn-primary po-submit-btn mt-6" 
                 onClick={handleAnalyze} 
-                disabled={loading || !portfolioUrl || !targetRole}
+                disabled={loading || !portfolioDetails || !targetRole}
               >
                 {loading ? (
                   <><span className="spinner"></span> Scanning Portfolio...</>

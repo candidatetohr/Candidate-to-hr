@@ -3,11 +3,10 @@ import { Helmet } from 'react-helmet-async';
 import { useParams, Link } from 'react-router-dom';
 import SchemaMarkup from '../components/seo/SchemaMarkup';
 import Breadcrumbs from '../components/seo/Breadcrumbs';
-import SEO from '../components/SEO';
 import RelatedResources from '../components/seo/RelatedResources';
 import { AdBanner, SidebarAd, InlineAd } from '../components/monetization/Ads';
 import { ATSCheckerCTA, MockInterviewCTA } from '../components/cta/PlatformCTAs';
-import { TrendingUp, MapPin, Briefcase, BookOpen, LineChart, Award } from 'lucide-react';
+import { TrendingUp, MapPin, Briefcase, LineChart, Award } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 import './SalaryDetail.css';
 
@@ -38,8 +37,8 @@ export default function SalaryDetail() {
         <title>{seo.title}</title>
         <meta name="description" content={seo.description} />
         {seo.keywords && <meta name="keywords" content={seo.keywords} />}
-        <link rel="canonical" href={`https://candidatetohr.online/salary-guides/${slug}`} />
-        <meta property="og:url" content={`https://candidatetohr.online/salary-guides/${slug}`} />
+        <link rel="canonical" href={`https://www.candidatetohr.online/salary-guides/${slug}`} />
+        <meta property="og:url" content={`https://www.candidatetohr.online/salary-guides/${slug}`} />
         <meta property="og:title" content={seo.ogTitle || seo.title} />
         <meta property="og:description" content={seo.ogDescription || seo.description} />
         {data.faq && data.faq.length > 0 && (

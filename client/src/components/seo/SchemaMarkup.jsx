@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 
-const DOMAIN = 'https://candidatetohr.online';
+const DOMAIN = 'https://www.candidatetohr.online';
 
 /**
  * Renders JSON-LD Schema.org markup in the <head> for Google SEO.

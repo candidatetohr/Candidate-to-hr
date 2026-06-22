@@ -3,7 +3,6 @@ import { Helmet } from 'react-helmet-async';
 import { useParams, Link } from 'react-router-dom';
 import SchemaMarkup from '../components/seo/SchemaMarkup';
 import Breadcrumbs from '../components/seo/Breadcrumbs';
-import SEO from '../components/SEO';
 import RelatedResources from '../components/seo/RelatedResources';
 import { AdBanner, SidebarAd, InlineAd } from '../components/monetization/Ads';
 import { ATSCheckerCTA, MockInterviewCTA } from '../components/cta/PlatformCTAs';
@@ -37,8 +36,8 @@ export default function CareerGuideDetail() {
         <title>{seo.title}</title>
         <meta name="description" content={seo.description} />
         {seo.keywords && <meta name="keywords" content={seo.keywords} />}
-        <link rel="canonical" href={`https://candidatetohr.online/career-guides/${slug}`} />
-        <meta property="og:url" content={`https://candidatetohr.online/career-guides/${slug}`} />
+        <link rel="canonical" href={`https://www.candidatetohr.online/career-guides/${slug}`} />
+        <meta property="og:url" content={`https://www.candidatetohr.online/career-guides/${slug}`} />
         <meta property="og:title" content={seo.ogTitle || seo.title} />
         <meta property="og:description" content={seo.ogDescription || seo.description} />
         {data.faq && data.faq.length > 0 && (

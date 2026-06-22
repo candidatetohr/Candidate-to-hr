@@ -2,10 +2,11 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import {
   BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell,
-  FunnelChart, Funnel, LabelList, PieChart, Pie, Legend,
+  PieChart, Pie, Legend,
 } from 'recharts';
 import { analyticsAPI } from '../services/api';
-import { BarChart3, Users, TrendingUp, Award, Clock } from 'lucide-react';
+import { BarChart3, Users, TrendingUp, Award } from 'lucide-react';
+
 import toast from 'react-hot-toast';
 import SEO from '../components/SEO';
 import './AnalyticsPage.css';
@@ -91,10 +92,10 @@ export default function AnalyticsPage() {
         {overview?.summary && (
           <div className="grid-4 analytics-stats">
             {[
-              { label: 'Total Jobs', value: overview.summary.totalJobs, icon: '', color: '#4f8ef7' },
-              { label: 'Total Applicants', value: overview.summary.totalApplications, icon: '', color: '#a855f7' },
-              { label: 'In Interview', value: overview.summary.interviewCount, icon: '', color: '#f59e0b' },
-              { label: 'Hired', value: overview.summary.hiredCount, icon: '', color: '#10b981' },
+              { label: 'Total Jobs', value: overview.summary.totalJobs, icon: <BarChart3 size={22} />, color: '#4f8ef7' },
+              { label: 'Total Applicants', value: overview.summary.totalApplications, icon: <Users size={22} />, color: '#a855f7' },
+              { label: 'In Interview', value: overview.summary.interviewCount, icon: <TrendingUp size={22} />, color: '#f59e0b' },
+              { label: 'Hired', value: overview.summary.hiredCount, icon: <Award size={22} />, color: '#10b981' },
             ].map((stat, i) => (
               <motion.div
                 key={stat.label}

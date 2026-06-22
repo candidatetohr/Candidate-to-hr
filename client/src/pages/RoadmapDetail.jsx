@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useParams, Link } from 'react-router-dom';
 import SEO from '../components/SEO';
-import { ArrowLeft, ChevronDown, ChevronUp, MapPin, Target, Zap, DollarSign, BookOpen, PenTool, CheckCircle, HelpCircle } from 'lucide-react';
+import { ChevronDown, ChevronUp, MapPin, Target, Zap, DollarSign, PenTool, CheckCircle, HelpCircle } from 'lucide-react';
 import Breadcrumbs from '../components/seo/Breadcrumbs';
 import RelatedResources from '../components/seo/RelatedResources';
 import './RoadmapDetail.css';
@@ -51,8 +51,8 @@ export default function RoadmapDetail() {
         <title>{seo.title}</title>
         <meta name="description" content={seo.description} />
         <meta name="keywords" content={seo.keywords} />
-        <link rel="canonical" href={`https://candidatetohr.online/roadmaps/${slug}`} />
-        <meta property="og:url" content={`https://candidatetohr.online/roadmaps/${slug}`} />
+        <link rel="canonical" href={`https://www.candidatetohr.online/roadmaps/${slug}`} />
+        <meta property="og:url" content={`https://www.candidatetohr.online/roadmaps/${slug}`} />
         <meta property="og:title" content={seo.ogTitle} />
         <meta property="og:description" content={seo.ogDescription} />
         {data.faq && data.faq.length > 0 && (

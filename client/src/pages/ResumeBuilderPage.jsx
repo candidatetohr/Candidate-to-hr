@@ -2,11 +2,11 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
-  Wand2, FileText, ArrowRight, Save, Copy, Download, Briefcase, 
-  User, CheckCircle, RefreshCw, Zap, ExternalLink, ChevronRight
+  Wand2, Copy, Download, CheckCircle, RefreshCw, Zap, ChevronRight
 } from 'lucide-react';
 import toast from 'react-hot-toast';
 import SEO from '../components/SEO';
+import { resumeBuilderAPI } from '../services/api';
 import './ResumeBuilderPage.css';
 
 export default function ResumeBuilderPage() {
@@ -22,14 +22,10 @@ export default function ResumeBuilderPage() {
     }
 
     setStep('loading');
-    
+
     try {
-      const response = await fetch('/api/resume-builder/generate', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ rawDetails: brainDump })
-      });
-      const data = await response.json();
+      const response = await resumeBuilderAPI.generate({ rawDetails: brainDump });
+      const data = response.data;
       if (data.success) {
         setGeneratedResume(data.data);
         setStep('result');
@@ -40,7 +36,7 @@ export default function ResumeBuilderPage() {
       }
     } catch (err) {
       console.error(err);
-      toast.error('Network error. Please try again.');
+      toast.error(err.response?.data?.message || 'Network error. Please try again.');
       setStep('input');
     }
   };
@@ -132,8 +128,8 @@ export default function ResumeBuilderPage() {
                   <p>Your brain dump was successfully transformed into a professional resume.</p>
                   
                   <div className="rb-actions">
-                    <button className="rb-btn-secondary" onClick={() => window.print()}>
-                      <Download size={14} /> Download PDF
+                    <button className="rb-btn-secondary" onClick={() => window.print()} title="Use browser print dialog and choose 'Save as PDF'">
+                      <Download size={14} /> Save as PDF
                     </button>
                     <button className="rb-btn-secondary" onClick={() => {
                       navigator.clipboard.writeText(JSON.stringify(generatedResume, null, 2));
