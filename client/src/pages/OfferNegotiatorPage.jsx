@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import api from '../services/api';
 import SEO from '../components/SEO';
 import ToolEditorial from '../components/seo/ToolEditorial';
+import { DollarSign, Target, MessageSquare, Zap, ShieldAlert, TrendingUp, Sparkles, ArrowRight } from 'lucide-react';
 
 export default function OfferNegotiatorPage() {
   const [offerDetails, setOfferDetails] = useState('');

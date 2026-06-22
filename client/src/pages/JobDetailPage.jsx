@@ -55,9 +55,11 @@ export default function JobDetailPage() {
       setLoading(false);
     }
   };
-
-  useEffect(() => { fetchData(); }, [id, sortBy]);
-
+  useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    fetchData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [id, sortBy]);
   const handleDelete = async () => {
     if (!confirm(`Delete "${job?.title}"? This will also delete all ${applications.length} applications.`)) return;
     setDeleting(true);

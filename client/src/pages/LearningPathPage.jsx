@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { BookOpen, Target, ArrowRight, CheckCircle, Clock, Zap, AlertCircle, FileText, Map } from 'lucide-react';
+import { Target, ArrowRight, CheckCircle, Clock, Zap, AlertCircle, FileText, Map } from 'lucide-react';
 import api from '../services/api';
 import SEO from '../components/SEO';
 import ToolEditorial from '../components/seo/ToolEditorial';

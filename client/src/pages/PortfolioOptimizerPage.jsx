@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import api from '../services/api';
 import SEO from '../components/SEO';
 import ToolEditorial from '../components/seo/ToolEditorial';
+import { Layout, Search, Zap, PenTool, AlertCircle, CheckCircle } from 'lucide-react';
 
 export default function PortfolioOptimizerPage() {
   const [portfolioUrl, setPortfolioUrl] = useState('');

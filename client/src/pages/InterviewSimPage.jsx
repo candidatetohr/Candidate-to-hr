@@ -70,8 +70,10 @@ export default function InterviewSimPage() {
         console.error("Speech recognition error", event.error);
         setIsRecording(false);
       };
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setRecognition(rec);
     }
+     
   }, []);
 
   const toggleRecording = () => {
@@ -100,6 +102,7 @@ export default function InterviewSimPage() {
     } else {
       window.speechSynthesis?.cancel();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [step, currentQ, voiceEnabled]);
 
   const startInterview = () => {

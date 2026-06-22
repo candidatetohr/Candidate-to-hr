@@ -6,15 +6,20 @@ import toast from 'react-hot-toast';
 const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState(() => {
+    try {
+      const savedUser = localStorage.getItem('ats_user');
+      return savedUser ? JSON.parse(savedUser) : null;
+    } catch {
+      return null;
+    }
+  });
   const [loading, setLoading] = useState(true);
 
   // Rehydrate from localStorage on mount
   useEffect(() => {
     const token = localStorage.getItem('ats_token');
-    const savedUser = localStorage.getItem('ats_user');
-    if (token && savedUser) {
-      setUser(JSON.parse(savedUser));
+    if (token && user) {
       // Verify token is still valid
       authAPI.getMe()
         .then(res => setUser(res.data.user))

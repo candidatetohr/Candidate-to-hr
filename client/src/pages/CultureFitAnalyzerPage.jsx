@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import api from '../services/api';
 import SEO from '../components/SEO';
 import ToolEditorial from '../components/seo/ToolEditorial';
+import { Heart, Building, Briefcase, Zap, Users, ShieldCheck, CheckCircle2 } from 'lucide-react';
 
 export default function CultureFitAnalyzerPage() {
   const [candidateProfile, setCandidateProfile] = useState('');
