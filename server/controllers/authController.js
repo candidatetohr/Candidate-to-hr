@@ -45,7 +45,7 @@ export const register = asyncHandler(async (req, res) => {
   });
 
   // Send verification email
-  const frontendUrl = process.env.FRONTEND_URL || 'https://www.candidatetohr.online';
+  const frontendUrl = process.env.FRONTEND_URL || 'https://candidatetohr.online';
   const verifyUrl = `${frontendUrl}/verify-email/${verificationToken}`;
   const message = `Welcome to CandidateToHR!\n\nPlease verify your email address by clicking the link below:\n\n${verifyUrl}\n\nThis link will expire in 24 hours. If you did not create an account, you can ignore this email.`;
 
@@ -137,7 +137,7 @@ export const forgotPassword = asyncHandler(async (req, res) => {
 
   await user.save({ validateBeforeSave: false });
 
-  const frontendUrl = process.env.FRONTEND_URL || 'https://www.candidatetohr.online';
+  const frontendUrl = process.env.FRONTEND_URL || 'https://candidatetohr.online';
   const resetUrl = `${frontendUrl}/reset-password/${resetToken}`;
   const message = `You requested a password reset for your CandidateToHR account.\n\nClick the link below to set a new password:\n\n${resetUrl}\n\nThis link expires in 10 minutes. If you did not request this, please ignore this email.`;
 

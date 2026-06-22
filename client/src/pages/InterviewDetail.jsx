@@ -106,8 +106,8 @@ export default function InterviewDetail() {
         <title>{data.seo?.title || data.hero.title}</title>
         <meta name="description" content={data.seo?.description || data.hero.description} />
         {data.seo?.keywords && <meta name="keywords" content={data.seo.keywords} />}
-        <link rel="canonical" href={`https://www.candidatetohr.online/interview-questions/${slug}`} />
-        <meta property="og:url" content={`https://www.candidatetohr.online/interview-questions/${slug}`} />
+        <link rel="canonical" href={`https://candidatetohr.online/interview-questions/${slug}`} />
+        <meta property="og:url" content={`https://candidatetohr.online/interview-questions/${slug}`} />
         <meta property="og:title" content={data.seo?.ogTitle || data.hero.title} />
         <meta property="og:description" content={data.seo?.ogDescription || data.hero.description} />
         {data.faq && data.faq.length > 0 && (
