@@ -293,18 +293,20 @@ export default function ResumeAnalyzerPage() {
       <div className="analyzer-bg"><div className="az-orb az-orb-1" /><div className="az-orb az-orb-2" /><div className="az-grid" /></div>
       <div className="analyzer-container">
 
-      <nav className="az-nav">
-        <button className="az-back-btn" onClick={() => navigate('/')}><ArrowLeft size={16} /> Back</button>
-        <div className="az-logo" onClick={() => navigate('/')} style={{ cursor: 'pointer' }}>
-          <img src="/logo.png" alt="CandidateToHR Logo" width="24" height="24" style={{ height: '24px' }} />
-        </div>
-        <div style={{ display: 'flex', gap: '8px' }}>
-          <button className="btn btn-secondary btn-sm" onClick={() => navigate('/live-editor')} style={{ color: '#10b981', borderColor: 'rgba(16,185,129,0.3)' }}>
-            ️ Live Editor
-          </button>
-          <button className="btn btn-secondary" onClick={() => navigate('/login')}>For Recruiters →</button>
-        </div>
-      </nav>
+      {step !== 'results' && (
+        <nav className="az-nav">
+          <button className="az-back-btn" onClick={() => navigate('/')}><ArrowLeft size={16} /> Back</button>
+          <div className="az-logo" onClick={() => navigate('/')} style={{ cursor: 'pointer' }}>
+            <img src="/logo.png" alt="CandidateToHR Logo" width="24" height="24" style={{ height: '24px' }} />
+          </div>
+          <div style={{ display: 'flex', gap: '8px' }}>
+            <button className="btn btn-secondary btn-sm" onClick={() => navigate('/live-editor')} style={{ color: '#10b981', borderColor: 'rgba(16,185,129,0.3)' }}>
+              ️ Live Editor
+            </button>
+            <button className="btn btn-secondary" onClick={() => navigate('/login')}>For Recruiters →</button>
+          </div>
+        </nav>
+      )}
 
       <div className="az-main">
         <AnimatePresence mode="wait">
