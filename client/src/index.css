@@ -16,6 +16,15 @@
   --color-primary: #38BDF8; /* Neon Cyan */
   --color-primary-hover: #0EA5E9;
   --color-primary-light: rgba(56, 189, 248, 0.1);
+  --primary-main: var(--color-primary);
+  --primary-light: var(--color-primary-light);
+  --accent-blue: var(--color-primary);
+  --accent-blue-light: var(--color-primary-light);
+  --accent-green: var(--color-success);
+  --accent-red: var(--color-error);
+  --border-subtle: var(--border-default);
+  --radius-xl: 20px;
+  --text-disabled: var(--text-muted);
   --color-success: #34D399;
   --color-warning: #FBBF24;
   --color-error: #F87171;

@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { useParams, Link } from 'react-router-dom';
 import SchemaMarkup from '../components/seo/SchemaMarkup';
 import Breadcrumbs from '../components/seo/Breadcrumbs';
+import QuickLinks from '../components/seo/QuickLinks';
 import RelatedResources from '../components/seo/RelatedResources';
 import { AdBanner, SidebarAd, InlineAd } from '../components/monetization/Ads';
 import { ATSCheckerCTA, MockInterviewCTA } from '../components/cta/PlatformCTAs';
@@ -29,7 +30,7 @@ export default function SalaryDetail() {
   if (loading) return <div className="p-48 text-center text-secondary">Loading salary data...</div>;
   if (!data) return <div className="p-48 text-center text-secondary">Salary data not found. <Link to="/salary-guides" className="color-primary">Go back</Link></div>;
 
-  const { seo, hero, experience, byCity, topCompanies, futureOutlook, marketAnalysis, careerPath, industryTrends, negotiationTips, certificationsAndSkills, faq } = data;
+  const { seo, hero, experience, byCity, topCompanies, futureOutlook, marketAnalysis, careerPath, industryTrends, negotiationTips, certificationsAndSkills, faq, quickLinks } = data;
 
   return (
     <div className="sal-detail-page container-standard px-6 py-8">
@@ -60,6 +61,7 @@ export default function SalaryDetail() {
       </Helmet>
       <SchemaMarkup type="Article" data={{ title: seo.title, description: seo.description }} />
       <Breadcrumbs />
+      {quickLinks && <QuickLinks links={quickLinks} />}
 
       <header className="mb-32 border-b border-default pb-32 text-center">
         <h1 className="text-4xl font-bold mb-16">{hero.title}</h1>

@@ -4,6 +4,7 @@ import { useParams, Link } from 'react-router-dom';
 import SEO from '../components/SEO';
 import { ChevronDown, ChevronUp, MapPin, Target, Zap, DollarSign, PenTool, CheckCircle, HelpCircle } from 'lucide-react';
 import Breadcrumbs from '../components/seo/Breadcrumbs';
+import QuickLinks from '../components/seo/QuickLinks';
 import RelatedResources from '../components/seo/RelatedResources';
 import './RoadmapDetail.css';
 
@@ -42,7 +43,7 @@ export default function RoadmapDetail() {
     );
   }
 
-  const { seo, hero, overview, skillsTimeline, learningPath, toolsAndTech, projects, certifications, salaryInsights, interviewPrep, jobMarket, faq } = data;
+  const { seo, hero, overview, skillsTimeline, learningPath, toolsAndTech, projects, certifications, salaryInsights, interviewPrep, jobMarket, faq, quickLinks } = data;
 
   return (
     <div className="roadmap-detail-page">
@@ -77,6 +78,7 @@ export default function RoadmapDetail() {
       <header className="rd-hero">
         <div className="container-seo content-long-form text-center">
           <Breadcrumbs />
+          {quickLinks && <QuickLinks links={quickLinks} />}
           <h1 className="rd-hero-title mt-24 mb-16">{hero.title}</h1>
           <p className="rd-hero-subtitle max-w-2xl text-secondary">{hero.shortDescription}</p>
           

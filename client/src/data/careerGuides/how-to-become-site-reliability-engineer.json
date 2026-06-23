@@ -1,4 +1,11 @@
 {
+  "quickLinks": {
+    "resumeExample": "https://candidatetohr.online/resume-examples/site-reliability-engineer",
+    "interviewQuestions": "https://candidatetohr.online/interview-questions/site-reliability-engineer",
+    "careerGuide": "https://candidatetohr.online/career-guides/how-to-become-site-reliability-engineer",
+    "salaryGuide": "https://candidatetohr.online/salary-guides/site-reliability-engineer-salary-guide-2026",
+    "roadmap": "https://candidatetohr.online/roadmaps/site-reliability-engineer-roadmap-2026"
+  },
   "seo": {
     "title": "How to Become a Site Reliability Engineer (SRE) in 2026 | CandidateToHR",
     "description": "Learn exactly how to become a Site Reliability Engineer (SRE) in 2026. Discover required skills, SRE certifications, learning roadmaps, and salary expectations.",

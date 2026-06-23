@@ -50,6 +50,7 @@ const pages = [
   { route: '/skill-gap', title: 'AI Skill Gap Analyzer | CandidateToHR', desc: 'Compare your resume to your dream job and identify missing skills.', type: 'SoftwareApplication' },
   { route: '/network-builder', title: 'AI Network Builder | CandidateToHR', desc: 'Get targeted outreach templates and networking strategies.', type: 'SoftwareApplication' },
   { route: '/portfolio-optimizer', title: 'AI Portfolio Optimizer | CandidateToHR', desc: 'Get actionable feedback on your portfolio UX and content.', type: 'SoftwareApplication' },
+  { route: '/sitemap', title: 'Sitemap | CandidateToHR', desc: 'Browse all career guides, interview questions, salary guides, resume examples, and roadmaps available on CandidateToHR.', type: 'WebPage' }
 ];
 
 // Dynamic Routes mapping

@@ -40,7 +40,8 @@ const staticRoutes = [
   '/offer-negotiator',
   '/skill-gap',
   '/network-builder',
-  '/portfolio-optimizer'
+  '/portfolio-optimizer',
+  '/sitemap'
 ];
 
 function generateSitemap() {

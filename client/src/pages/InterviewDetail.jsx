@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { useParams, Link } from 'react-router-dom';
 import SchemaMarkup from '../components/seo/SchemaMarkup';
 import Breadcrumbs from '../components/seo/Breadcrumbs';
+import QuickLinks from '../components/seo/QuickLinks';
 import RelatedResources from '../components/seo/RelatedResources';
 import { AdBanner, InlineAd, SidebarAd } from '../components/monetization/Ads';
 import { MockInterviewCTA } from '../components/cta/PlatformCTAs';
@@ -130,6 +131,7 @@ export default function InterviewDetail() {
       <SchemaMarkup type="FAQPage" data={allQuestions} />
       
       <Breadcrumbs />
+      {data.quickLinks && <QuickLinks links={data.quickLinks} />}
 
       <header className="mb-32 text-center content-long-form container-seo">
         <h1 className="text-4xl font-bold mt-24 mb-16">{data.hero.title}</h1>

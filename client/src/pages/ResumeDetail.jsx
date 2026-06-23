@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { useParams, Link } from 'react-router-dom';
 import SchemaMarkup from '../components/seo/SchemaMarkup';
 import Breadcrumbs from '../components/seo/Breadcrumbs';
+import QuickLinks from '../components/seo/QuickLinks';
 import { AdBanner, SidebarAd } from '../components/monetization/Ads';
 import { ATSCheckerCTA, ResumeBuilderCTA } from '../components/cta/PlatformCTAs';
 import { CheckCircle, XCircle, AlertTriangle } from 'lucide-react';
@@ -28,7 +29,7 @@ export default function ResumeDetail() {
   if (loading) return <div className="p-48 text-center text-secondary">Loading template...</div>;
   if (!data) return <div className="p-48 text-center text-secondary">Template not found. <Link to="/resume-examples" className="color-primary">Go back</Link></div>;
 
-  const { seo, hero, score, keywords, mistakes, tips, exampleResume, extendedContent, faq } = data;
+  const { seo, hero, score, keywords, mistakes, tips, exampleResume, extendedContent, faq, quickLinks } = data;
 
   return (
     <div className="res-detail-page container-standard px-6 py-8">
@@ -59,6 +60,7 @@ export default function ResumeDetail() {
       </Helmet>
       <SchemaMarkup type="Article" data={{ title: seo.title, description: seo.description }} />
       <Breadcrumbs />
+      {quickLinks && <QuickLinks links={quickLinks} />}
 
       <header className="mb-32 border-b border-default pb-32 text-center content-long-form container-seo">
         <h1 className="text-4xl font-bold mt-24 mb-16">{hero.title}</h1>
