@@ -180,14 +180,21 @@ pages.forEach(({ route, title, desc, type }) => {
     
     newHtml = newHtml.replace('</head>', `${ogTags}\n${schemaString}\n</head>`);
 
-    // Ensure the folder exists
+    // Ensure the folder and file are created correctly
     const isHome = route === '/';
-    const targetDir = isHome ? distPath : path.join(distPath, route.slice(1));
-    if (!fs.existsSync(targetDir)) {
-      fs.mkdirSync(targetDir, { recursive: true });
+    let targetFile;
+    if (isHome) {
+      targetFile = path.join(distPath, 'index.html');
+    } else {
+      // Save as flat .html file (e.g. roadmaps/llm-developer.html)
+      const relativePath = route.slice(1) + '.html';
+      targetFile = path.join(distPath, relativePath);
+      const parentDir = path.dirname(targetFile);
+      if (!fs.existsSync(parentDir)) {
+        fs.mkdirSync(parentDir, { recursive: true });
+      }
     }
 
-    const targetFile = path.join(targetDir, 'index.html');
     fs.writeFileSync(targetFile, newHtml);
     
     successCount++;
