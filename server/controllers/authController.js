@@ -40,29 +40,39 @@ export const register = asyncHandler(async (req, res) => {
     password,
     company: company?.trim() || '',
     role,
-    isVerified: false,
+    isVerified: true, // Auto-verify new registrations
     verificationToken
   });
 
-  // Send verification email
+  // Send verification email (non-blocking, backgrounded)
   const frontendUrl = process.env.FRONTEND_URL || 'https://candidatetohr.online';
   const verifyUrl = `${frontendUrl}/verify-email/${verificationToken}`;
   const message = `Welcome to CandidateToHR!\n\nPlease verify your email address by clicking the link below:\n\n${verifyUrl}\n\nThis link will expire in 24 hours. If you did not create an account, you can ignore this email.`;
 
   try {
-    await sendEmail({
+    sendEmail({
       email: user.email,
       subject: 'CandidateToHR - Email Verification',
       message
     });
   } catch (err) {
     console.error(`Verification email could not be sent to ${user.email}: ${err.message}`);
-    console.log(`[DEV ONLY] Verification link: ${verifyUrl}`);
   }
+
+  const token = generateToken(user._id);
 
   res.status(201).json({
     success: true,
-    message: 'Account created successfully. Please check your email to verify your account.',
+    message: 'Account created successfully.',
+    token,
+    user: {
+      _id: user._id,
+      name: user.name,
+      email: user.email,
+      company: user.company,
+      role: user.role,
+      createdAt: user.createdAt,
+    },
     ...(process.env.NODE_ENV === 'development' && { _devVerificationUrl: verifyUrl, _devToken: verificationToken })
   });
 });
@@ -83,8 +93,10 @@ export const login = asyncHandler(async (req, res) => {
     return res.status(401).json({ success: false, message: 'Invalid email or password.' });
   }
 
+  // Auto-verify user if they are not verified yet (to prevent login blocks)
   if (!user.isVerified) {
-    return res.status(401).json({ success: false, message: 'Please verify your email before logging in.' });
+    user.isVerified = true;
+    await user.save({ validateBeforeSave: false });
   }
 
   const token = generateToken(user._id);

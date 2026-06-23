@@ -17,3 +17,18 @@
 2026-06-22 16:13:05 info: ::1 - - [22/Jun/2026:10:43:05 +0000] "POST /api/auth/register HTTP/1.1" 201 268 "-" "node"
 2026-06-22 16:13:05 info: ::1 - - [22/Jun/2026:10:43:05 +0000] "GET /api/auth/verifyemail/8ca6a2ea9941305b71655863e0600ab45a409ec3 HTTP/1.1" 200 77 "-" "node"
 2026-06-22 16:13:06 info: ::1 - - [22/Jun/2026:10:43:06 +0000] "POST /api/auth/login HTTP/1.1" 200 449 "-" "node"
+2026-06-22 16:13:52 info: Server started on http://localhost:5000
+2026-06-22 16:13:52 info: Environment: development
+2026-06-22 16:13:52 info: NVIDIA NIM: Configured
+2026-06-23 09:15:32 info: Server started on http://localhost:5000
+2026-06-23 09:15:32 info: Environment: development
+2026-06-23 09:15:32 info: NVIDIA NIM: Configured
+2026-06-23 09:15:38 info: ::1 - - [23/Jun/2026:03:45:38 +0000] "POST /api/auth/register HTTP/1.1" 201 576 "-" "node"
+2026-06-23 09:15:39 info: ::1 - - [23/Jun/2026:03:45:39 +0000] "POST /api/auth/register HTTP/1.1" 201 587 "-" "node"
+2026-06-23 09:15:47 info: Server started on http://localhost:5000
+2026-06-23 09:15:47 info: Environment: development
+2026-06-23 09:15:47 info: NVIDIA NIM: Configured
+2026-06-23 09:15:50 info: ::1 - - [23/Jun/2026:03:45:50 +0000] "POST /api/auth/login HTTP/1.1" 200 402 "-" "node"
+2026-06-23 09:15:58 info: Server started on http://localhost:5000
+2026-06-23 09:15:58 info: Environment: development
+2026-06-23 09:15:58 info: NVIDIA NIM: Configured
