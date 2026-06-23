@@ -116,5 +116,6 @@ const applicationSchema = new mongoose.Schema({
 applicationSchema.index({ jobId: 1, status: 1 });
 applicationSchema.index({ candidateEmail: 1, jobId: 1 }, { unique: true });
 applicationSchema.index({ 'aiAnalysis.overallScore': -1 });
+applicationSchema.index({ submittedBy: 1 });
 
 export default mongoose.model('Application', applicationSchema);

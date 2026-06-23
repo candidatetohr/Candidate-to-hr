@@ -14,7 +14,15 @@ export const AuthProvider = ({ children }) => {
       return null;
     }
   });
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(() => {
+    try {
+      const savedToken = localStorage.getItem('ats_token');
+      const savedUser = localStorage.getItem('ats_user');
+      return !(savedToken && savedUser);
+    } catch {
+      return true;
+    }
+  });
 
   // Rehydrate from localStorage on mount
   useEffect(() => {

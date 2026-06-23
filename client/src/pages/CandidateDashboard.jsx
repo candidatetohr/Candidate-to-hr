@@ -3,7 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { 
   Target, Zap, UploadCloud, FileText, UserPlus, 
-  CheckCircle2, Circle, TrendingUp, Search, GraduationCap, Sparkles
+  CheckCircle2, Circle, TrendingUp, Search, GraduationCap, Sparkles,
+  ChevronRight, BrainCircuit, ShieldAlert
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import SEO from '../components/SEO';
@@ -13,14 +14,14 @@ export default function CandidateDashboard() {
   const { user } = useAuth();
   const navigate = useNavigate();
 
-  const [activeGoal, setActiveGoal] = useState(null);
+  const [activeGoal, setActiveGoal] = useState('job');
 
-  const steps = [
-    { label: "Upload Resume", active: false },
-    { label: "Analyze Resume", active: false },
-    { label: "Discover Matches", active: false },
-    { label: "Practice Interviews", active: false },
-    { label: "Placement Ready", active: false }
+  const journeySteps = [
+    { label: "Create Profile", active: true, done: true },
+    { label: "Scan Resume", active: false, done: false },
+    { label: "Review Matches", active: false, done: false },
+    { label: "Mock Interview", active: false, done: false },
+    { label: "Placement Ready", active: false, done: false }
   ];
 
   const goals = [
@@ -31,21 +32,22 @@ export default function CandidateDashboard() {
   ];
 
   const targetRoles = [
-    { title: 'Software Engineer', salary: '$110k - $160k', demand: 'High Demand', tag: 'bg-blue' },
-    { title: 'Data Analyst', salary: '$75k - $115k', demand: 'Very High', tag: 'bg-green' },
-    { title: 'Product Manager', salary: '$120k - $180k', demand: 'Medium Demand', tag: 'bg-purple' }
+    { title: 'Software Engineer', salary: '$110k - $160k', demand: 'High Demand', tag: 'badge-blue' },
+    { title: 'Data Analyst', salary: '$75k - $115k', demand: 'Very High', tag: 'badge-green' },
+    { title: 'Product Manager', salary: '$120k - $180k', demand: 'Medium', tag: 'badge-purple' },
+    { title: 'Cloud Engineer', salary: '$125k - $170k', demand: 'High Demand', tag: 'badge-blue' }
   ];
 
   const checklist = [
     { id: 1, text: 'Verify your email address', done: true },
-    { id: 2, text: 'Set your primary career goal', done: activeGoal !== null },
+    { id: 2, text: 'Set primary career goal', done: activeGoal !== null },
     { id: 3, text: 'Upload or create your resume', done: false },
-    { id: 4, text: 'Select a target role', done: false }
+    { id: 4, text: 'Scan your resume with AI', done: false }
   ];
 
   const containerVars = {
     hidden: { opacity: 0 },
-    show: { opacity: 1, transition: { staggerChildren: 0.1 } }
+    show: { opacity: 1, transition: { staggerChildren: 0.08 } }
   };
 
   const itemVars = {
@@ -54,76 +56,112 @@ export default function CandidateDashboard() {
   };
 
   return (
-    <div className="os-page pb-48">
+    <div className="candidate-dashboard-page pb-48">
       <SEO title="Candidate Dashboard" noindex />
-      <div className="os-container">
+      <div className="candidate-container">
         
-        <motion.div initial="hidden" animate="show" variants={containerVars} className="os-fade-wrapper">
+        <motion.div initial="hidden" animate="show" variants={containerVars} className="candidate-layout-wrapper">
           
-          {/* HERO SECTION */}
-          <motion.div className="os-hero onboarding-hero" variants={itemVars}>
-            <div className="os-greeting">
-              <h1>Welcome to <span className="gradient-text">Candidatetohr</span>, {user?.name?.split(' ')[0]}</h1>
-              <p>Let's build your career profile and unlock personalized AI career insights.</p>
+          {/* WELCOME HERO */}
+          <motion.div className="candidate-hero onboarding-hero" variants={itemVars}>
+            <div className="candidate-greeting">
+              <h1>Welcome to <span className="premium-gradient-text">CandidateToHR</span>, {user?.name?.split(' ')[0]}</h1>
+              <p>Build your career profile and unlock personalized AI insights to land your dream tech job.</p>
+            </div>
+            <div className="candidate-progress-summary">
+              <span className="summary-label">Career Readiness</span>
+              <div className="progress-radial-placeholder">
+                <span className="percentage">20%</span>
+              </div>
             </div>
           </motion.div>
 
-          <div className="os-grid">
-            {/* LEFT COLUMN */}
-            <div className="os-col-main">
+          {/* ACTIVE STEP JOURNEY */}
+          <motion.div className="journey-track-card" variants={itemVars}>
+            <div className="track-header">
+              <h3><BrainCircuit size={18} className="text-violet" /> Your Career Journey Track</h3>
+              <p>Complete these steps to achieve full placement readiness</p>
+            </div>
+            <div className="track-steps">
+              {journeySteps.map((step, i) => (
+                <div key={i} className={`track-step-node ${step.done ? 'node-done' : ''} ${step.active ? 'node-active' : ''}`}>
+                  <div className="step-number">{step.done ? "✓" : i + 1}</div>
+                  <span className="step-label">{step.label}</span>
+                  {i < journeySteps.length - 1 && <div className="step-line-separator" />}
+                </div>
+              ))}
+            </div>
+          </motion.div>
+
+          {/* DASHBOARD SPLIT GRID */}
+          <div className="candidate-dashboard-grid">
+            
+            {/* Left Main Column */}
+            <div className="candidate-col-main">
               
-              {/* Primary Actions */}
-              <motion.div className="os-action-cards" variants={itemVars}>
-                <div className="os-card hover-card" onClick={() => navigate('/analyze')}>
-                  <div className="icon-wrapper bg-blue"><UploadCloud size={24} /></div>
+              {/* Action Toolkit Cards */}
+              <div className="toolkit-section-header">
+                <h2>AI Career Toolkit</h2>
+                <p>Use our AI agents to optimize and prepare</p>
+              </div>
+              <motion.div className="toolkit-cards-row" variants={itemVars}>
+                <div className="toolkit-action-card bg-hover-gradient-blue" onClick={() => navigate('/analyze')}>
+                  <div className="toolkit-icon bg-blue"><UploadCloud size={24} /></div>
                   <h3>Upload Resume</h3>
-                  <p>Get ATS analysis, job matching, and personalized recommendations.</p>
+                  <p>Get instant ATS scoring, structural feedback, and skills matching.</p>
+                  <span className="action-link">Get Scanned <ChevronRight size={16} /></span>
                 </div>
-                <div className="os-card hover-card" onClick={() => navigate('/live-editor')}>
-                  <div className="icon-wrapper bg-purple"><FileText size={24} /></div>
-                  <h3>Create Resume With AI</h3>
-                  <p>Generate a professional ATS-friendly resume from scratch.</p>
+                <div className="toolkit-action-card bg-hover-gradient-purple" onClick={() => navigate('/live-editor')}>
+                  <div className="toolkit-icon bg-purple"><FileText size={24} /></div>
+                  <h3>Build with AI</h3>
+                  <p>Generate a professional ATS-friendly CV dynamically from scratch.</p>
+                  <span className="action-link">Start Creating <ChevronRight size={16} /></span>
                 </div>
-                <div className="os-card hover-card" onClick={() => navigate('/profile/edit')}>
-                  <div className="icon-wrapper bg-green"><UserPlus size={24} /></div>
+                <div className="toolkit-action-card bg-hover-gradient-green" onClick={() => navigate('/profile/edit')}>
+                  <div className="toolkit-icon bg-green"><UserPlus size={24} /></div>
                   <h3>Complete Profile</h3>
-                  <p>Add skills, education, projects, and career goals manually.</p>
+                  <p>Manually edit skills, education, and target positions.</p>
+                  <span className="action-link">Edit Profile <ChevronRight size={16} /></span>
                 </div>
               </motion.div>
 
-              {/* Career Goal Quiz */}
-              <motion.div className="os-card mt-16" variants={itemVars}>
-                <div className="os-card-header">
-                  <h3><Target size={18} /> What brings you to Candidatetohr?</h3>
+              {/* Career Goal Picker */}
+              <motion.div className="candidate-glass-card" variants={itemVars}>
+                <div className="card-header-with-subtitle">
+                  <h3>What is your primary career goal?</h3>
+                  <p>This helps us customize recommendations and roadmap discovery</p>
                 </div>
-                <div className="goal-grid">
+                <div className="goals-quiz-grid">
                   {goals.map(goal => (
                     <div 
                       key={goal.id} 
-                      className={`goal-card ${activeGoal === goal.id ? 'active' : ''}`}
+                      className={`goal-quiz-card ${activeGoal === goal.id ? 'quiz-active' : ''}`}
                       onClick={() => setActiveGoal(goal.id)}
                     >
-                      <goal.icon size={24} className="goal-icon" />
+                      <goal.icon size={26} className="goal-quiz-icon" />
                       <span>{goal.label}</span>
                     </div>
                   ))}
                 </div>
               </motion.div>
 
-              {/* Target Role Explorer */}
-              <motion.div className="os-card mt-16" variants={itemVars}>
-                <div className="os-card-header">
-                  <h3><TrendingUp size={18} /> Explore High-Demand Roles</h3>
-                  <p className="os-subtext">Discover what you could unlock.</p>
+              {/* Demand Role Explorer */}
+              <motion.div className="candidate-glass-card" variants={itemVars}>
+                <div className="card-header-with-subtitle">
+                  <h3><TrendingUp size={18} className="text-emerald" /> High-Demand Tech Careers</h3>
+                  <p>Explore target positions, global salaries, and tech stack roadmaps</p>
                 </div>
-                <div className="role-explorer-list">
+                <div className="demand-roles-explorer">
                   {targetRoles.map((role, i) => (
-                    <div key={i} className="role-explorer-item">
-                      <div className="role-info">
+                    <div key={i} className="demand-role-row" onClick={() => navigate('/roadmaps')}>
+                      <div className="role-details">
                         <h4>{role.title}</h4>
-                        <span className="role-salary">{role.salary}</span>
+                        <span className="salary-meta">{role.salary} average pay</span>
                       </div>
-                      <div className={`role-tag ${role.tag}`}>{role.demand}</div>
+                      <div className="role-right-controls">
+                        <span className={`demand-indicator ${role.tag}`}>{role.demand}</span>
+                        <ChevronRight size={16} className="arrow-nav" />
+                      </div>
                     </div>
                   ))}
                 </div>
@@ -131,68 +169,58 @@ export default function CandidateDashboard() {
 
             </div>
 
-            {/* RIGHT COLUMN */}
-            <div className="os-col-side">
-              {/* ATS Resume Scanner Widget */}
-              <motion.div className="os-card" variants={itemVars} style={{ background: 'linear-gradient(145deg, var(--bg-card) 0%, rgba(59, 130, 246, 0.05) 100%)', borderColor: 'rgba(59, 130, 246, 0.2)' }}>
-                <h3><Search size={18} className="text-blue" /> ATS Scanner</h3>
-                <div style={{ textAlign: 'center', padding: '20px 0' }}>
-                  <div style={{ width: '80px', height: '80px', borderRadius: '50%', border: '4px dashed var(--border-default)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 16px', color: 'var(--text-muted)' }}>
-                    <FileText size={32} />
+            {/* Right Side Column */}
+            <div className="candidate-col-side">
+              
+              {/* ATS Scanner Status */}
+              <motion.div className="candidate-glass-card scan-status-glowing" variants={itemVars}>
+                <div className="scanner-header">
+                  <BrainCircuit size={20} className="text-blue" />
+                  <h3>ATS Scanner Score</h3>
+                </div>
+                <div className="score-placeholder-display">
+                  <div className="dashed-circle">
+                    <FileText size={36} />
                   </div>
-                  <h4 style={{ margin: '0 0 8px 0', fontSize: '1.1rem' }}>Score Not Found</h4>
-                  <p className="os-subtext" style={{ marginBottom: '20px' }}>Upload your resume to unlock your AI match score.</p>
-                  <button className="btn btn-primary" onClick={() => navigate('/analyze')} style={{ width: '100%' }}>
+                  <h4>No Resume Found</h4>
+                  <p>You haven't scanned a resume yet. Let's find your ATS matching percentage.</p>
+                  <button className="btn btn-primary-glowing w-full mt-12" onClick={() => navigate('/analyze')}>
                     <Sparkles size={16} /> Scan Resume Now
                   </button>
                 </div>
               </motion.div>
 
-              {/* Onboarding Checklist */}
-              <motion.div className="os-card mt-16" variants={itemVars}>
-                <div className="os-card-header">
-                  <h3><CheckCircle2 size={18} /> Getting Started Checklist</h3>
-                  <p className="os-subtext">Complete these steps to unlock the full platform.</p>
+              {/* Getting Started Checklist */}
+              <motion.div className="candidate-glass-card" variants={itemVars}>
+                <div className="card-header-with-subtitle">
+                  <h3><CheckCircle2 size={18} className="text-emerald" /> Onboarding Checklist</h3>
+                  <p>Finish these steps to configure your smart recruiter profile</p>
                 </div>
-                <div className="os-checklist">
+                <div className="onboarding-steps-list">
                   {checklist.map(item => (
-                    <div key={item.id} className={`os-checklist-item ${item.done ? 'done' : ''}`}>
-                      {item.done
-                        ? <CheckCircle2 size={16} className="check-icon done" />
-                        : <Circle size={16} className="check-icon" />
-                      }
-                      <span>{item.text}</span>
+                    <div key={item.id} className={`checklist-item-row ${item.done ? 'step-checked' : ''}`}>
+                      <div className="check-bullet">
+                        {item.done 
+                          ? <CheckCircle2 size={18} className="icon-check active-check" />
+                          : <Circle size={18} className="icon-check" />
+                        }
+                      </div>
+                      <span className="step-text">{item.text}</span>
                     </div>
                   ))}
                 </div>
               </motion.div>
 
-              {/* Progress Steps */}
-              <motion.div className="os-card mt-16" variants={itemVars}>
-                <div className="os-card-header">
-                  <h3>Your Career Journey</h3>
-                </div>
-                <div className="os-steps">
-                  {steps.map((step, i) => (
-                    <div key={i} className={`os-step ${step.active ? 'active' : ''}`}>
-                      <div className="os-step-dot">{i + 1}</div>
-                      <span className="os-step-label">{step.label}</span>
-                      {i < steps.length - 1 && <div className="os-step-line" />}
-                    </div>
-                  ))}
-                </div>
-              </motion.div>
-
-              {/* AI Coach Tip */}
-              <motion.div className="os-card mt-16" variants={itemVars} style={{ background: 'var(--bg-card)', borderLeft: '4px solid #a855f7' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '12px' }}>
-                  <div style={{ background: 'rgba(168, 85, 247, 0.1)', padding: '6px', borderRadius: '8px', color: '#a855f7' }}>
-                    <Zap size={16} />
+              {/* AI Coach Assistant Quote */}
+              <motion.div className="candidate-glass-card coach-tip-card-amber" variants={itemVars}>
+                <div className="tip-header">
+                  <div className="tip-icon-wrapper">
+                    <Sparkles size={16} />
                   </div>
-                  <span style={{ fontWeight: '700', fontSize: '0.9rem', color: 'var(--text-primary)' }}>AI Coach Tip</span>
+                  <span>AI Career Coach Tip</span>
                 </div>
-                <p style={{ margin: 0, fontSize: '0.9rem', lineHeight: '1.6', color: 'var(--text-secondary)' }}>
-                  Did you know? Including quantifiable metrics in your bullet points (e.g. <strong>"increased sales by 20%"</strong>) boosts your ATS match rate by up to 40%.
+                <p>
+                  Recruiters spend an average of <strong>7 seconds</strong> reading a resume. To get noticed instantly, structure your CV with clear headers, bulleted impact metrics, and list your top technical tools at the top!
                 </p>
               </motion.div>
 
