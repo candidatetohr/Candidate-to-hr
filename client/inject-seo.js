@@ -152,8 +152,14 @@ pages.forEach(({ route, title, desc, type }) => {
 
     const schemaString = `<script type="application/ld+json">${JSON.stringify(schemaObj)}</script>`;
 
+    // Strip default OG and Twitter tags to prevent duplicates
+    let cleanHtml = baseHtml
+      .replace(/<meta\s+(?:property|name)=["']og:[^"']+["']\s+content=["'][^"']*["']\s*\/?>/gis, '')
+      .replace(/<meta\s+(?:property|name)=["']twitter:[^"']+["']\s+content=["'][^"']*["']\s*\/?>/gis, '')
+      .replace(/<link\s+rel="canonical"\s+href="[^"]*"\s*\/?>/gis, '');
+
     // Replace Title & Meta Description & Inject Canonical and Schema
-    let newHtml = baseHtml
+    let newHtml = cleanHtml
       .replace(/<title>.*?<\/title>/is, `<title>${title}</title>`)
       .replace(/<meta\s+name="description"\s+content="[^"]*"\s*\/?>/is, `<meta name="description" content="${desc}" />`);
     
@@ -164,9 +170,12 @@ pages.forEach(({ route, title, desc, type }) => {
       <meta property="og:description" content="${desc}" />
       <meta property="og:url" content="${canonical}" />
       <meta property="og:type" content="website" />
+      <meta property="og:image" content="${DOMAIN}/og-image.png" />
+      <meta property="og:site_name" content="CandidateToHR" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content="${title}" />
       <meta name="twitter:description" content="${desc}" />
+      <meta name="twitter:image" content="${DOMAIN}/og-image.png" />
     `;
     
     newHtml = newHtml.replace('</head>', `${ogTags}\n${schemaString}\n</head>`);

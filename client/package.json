@@ -7,7 +7,7 @@
     "dev": "vite",
     "sitemap": "node generate-sitemap.js",
     "prebuild": "npm run sitemap",
-    "build": "vite build && node inject-seo.js",
+    "build": "npm run sitemap && vite build && node inject-seo.js",
     "lint": "eslint .",
     "preview": "vite preview"
   },
