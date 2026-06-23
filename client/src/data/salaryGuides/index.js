@@ -138,5 +138,12 @@ export const salaryCategories = [
     description: "Detailed breakdown of QA Automation and SDET salaries by experience, city, and top companies in India.",
     role: "QA & Testing",
     country: "India"
+  },
+  {
+    id: "site-reliability-engineer-salary-guide-2026",
+    title: "Site Reliability Engineer Salary Guide 2026 | Comprehensive Pay",
+    description: "Discover Site Reliability Engineer (SRE) salaries in 2026. Breakdowns by experience, city, and top paying companies.",
+    role: "Infrastructure",
+    country: "USA"
   }
 ];

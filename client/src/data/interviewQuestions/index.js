@@ -110,6 +110,13 @@ export const interviewCategories = [
     description: "Top 50+ QA Automation questions covering Selenium, Playwright, API Testing, and CI/CD.",
     topic: "QA & Testing",
     count: 50
+  },
+  {
+    id: "site-reliability-engineer",
+    title: "Site Reliability Engineer Interview Questions",
+    description: "Top 50+ SRE interview questions covering Linux, Kubernetes, DNS, networking, systems architecture, and debugging.",
+    topic: "DevOps",
+    count: 50
   }
 ];
 

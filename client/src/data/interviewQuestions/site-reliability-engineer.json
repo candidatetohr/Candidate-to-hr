@@ -1,0 +1,334 @@
+{
+  "seo": {
+    "title": "Top 50+ Site Reliability Engineer (SRE) Interview Questions | CandidateToHR",
+    "description": "Crack your next SRE interview. 50+ detailed SRE interview questions covering Linux, Kubernetes, DNS, networking, distributed systems, and real-world system debugging.",
+    "slug": "site-reliability-engineer",
+    "keywords": "SRE interview questions, Site Reliability Engineer questions, systems engineering interview, devops interview, kubernetes interview questions",
+    "ogTitle": "Top 50+ Site Reliability Engineer (SRE) Interview Questions & Answers",
+    "ogDescription": "Get the definitive list of 50 SRE interview questions. Detailed beginner, intermediate, advanced, and scenario-based answers."
+  },
+  "hero": {
+    "title": "Top 50+ Site Reliability Engineer Interview Questions",
+    "description": "Site Reliability Engineering (SRE) is one of the most demanding tech fields, blending software engineering with systems operations. Use this comprehensive list of 50 technical, behavioral, and architectural questions to prepare for your next interview and stand out to top-tier engineering organizations.",
+    "topic": "SRE"
+  },
+  "intro": "An SRE interview evaluates your ability to design, scale, monitor, and troubleshoot complex distributed systems. You will be tested on your knowledge of operating system fundamentals, networking protocols, programming logic, cloud architecture, and real-world incident management. This guide prepares you across all difficulty levels to demonstrate the core competencies that top companies require.",
+  "questions": [
+    {
+      "category": "Beginner",
+      "q": "What is the difference between a process and a thread?",
+      "a": "A process is an independent execution unit with its own virtual memory space, file descriptors, and security context allocated by the OS. A thread is the smallest unit of execution within a process. Multiple threads share the parent process's memory space, variables, and open files, but have their own registers, stack, and program counters. If one thread crashes, it can compromise the entire process, whereas processes are isolated from each other."
+    },
+    {
+      "category": "Beginner",
+      "q": "What happens when you type a URL into a web browser and hit Enter?",
+      "a": "The browser first checks its local cache for the IP address. If not found, it performs a DNS lookup via the local resolver, root nameservers, TLD servers, and authoritative nameservers. Once the IP is resolved, a TCP connection is established via the three-way handshake (SYN, SYN-ACK, ACK), followed by TLS negotiation. The browser then sends an HTTP GET request. The server processes the request, returns the response, and the browser parses the HTML, CSS, and JS to render the page."
+    },
+    {
+      "category": "Beginner",
+      "q": "What is the role of the DNS root server?",
+      "a": "DNS root servers are the first step in resolving human-readable hostnames into IP addresses. They direct the local recursive DNS resolver to the appropriate Top-Level Domain (TLD) nameservers (like .com, .net, or .org) based on the extension of the queried URL. There are 13 logical root server addresses globally, managed by various organizations using anycast routing for redundancy and performance."
+    },
+    {
+      "category": "Beginner",
+      "q": "What is the difference between TCP and UDP?",
+      "a": "TCP (Transmission Control Protocol) is connection-oriented, reliable, and guarantees ordered delivery of packets using sequence numbers, acknowledgements, flow control, and congestion control. It is used for HTTP, SSH, and database connections. UDP (User Datagram Protocol) is connectionless, lightweight, and unreliable, sending packets without verification or order. It is ideal for low-latency uses like streaming, gaming, and DNS."
+    },
+    {
+      "category": "Beginner",
+      "q": "What does a load balancer do?",
+      "a": "A load balancer distributes incoming network traffic across multiple backend servers to prevent overload, maximize throughput, and ensure high availability. It acts as a reverse proxy, checking backend server health and routing traffic only to active nodes. It helps scale applications horizontally and prevents single points of failure."
+    },
+    {
+      "category": "Beginner",
+      "q": "What is the purpose of SSH?",
+      "a": "SSH (Secure Shell) is a cryptographic network protocol used to secure remote command-line login, command execution, and file transfers over insecure networks. It operates on port 22 by default and utilizes public-key cryptography to authenticate the remote computer and user, ensuring secure communication."
+    },
+    {
+      "category": "Beginner",
+      "q": "What is the three-way handshake in TCP?",
+      "a": "The three-way handshake establishes a TCP connection. 1. SYN: The client sends a synchronize packet with a random sequence number (Seq=x) to request a connection. 2. SYN-ACK: The server responds with a synchronize-acknowledgement packet (Seq=y, Ack=x+1). 3. ACK: The client sends an acknowledgement packet back to the server (Ack=y+1) to finalize the connection."
+    },
+    {
+      "category": "Beginner",
+      "q": "Explain the concept of Virtual Memory.",
+      "a": "Virtual Memory is an OS memory management technique that creates an illusion of a large, contiguous block of main memory. It maps virtual addresses used by programs onto physical RAM addresses or disk storage (swap space). This allows processes to run even if they exceed physical RAM size, ensuring process isolation."
+    },
+    {
+      "category": "Beginner",
+      "q": "What is an inode in a Linux filesystem?",
+      "a": "An inode (index node) is a data structure in Unix-style filesystems that stores metadata about a file or directory, excluding its name and actual content. It contains file size, owner ID, permissions, timestamps, link counts, and pointers to the disk blocks storing the file data. Each file has a unique inode number."
+    },
+    {
+      "category": "Beginner",
+      "q": "What is the difference between hard links and symbolic links?",
+      "a": "A hard link is an additional directory entry pointing directly to the same underlying inode as the original file; deleting the original doesn't destroy the data. A symbolic link (symlink) is a separate pointer file containing the path to the target file; if the original target is deleted, the symlink breaks."
+    },
+    {
+      "category": "Beginner",
+      "q": "What does the ping command do?",
+      "a": "The ping command tests network connectivity between a source and destination host. It sends ICMP (Internet Control Message Protocol) Echo Request packets to the target IP and waits for an Echo Reply. It measures round-trip time (RTT) and packet loss, helping diagnose basic network latency and reachability issues."
+    },
+    {
+      "category": "Beginner",
+      "q": "Explain the difference between HTTP and HTTPS.",
+      "a": "HTTP (Hypertext Transfer Protocol) transmits data in plain text, making it vulnerable to interception. HTTPS (HTTP Secure) encrypts communication using Transport Layer Security (TLS) or Secure Sockets Layer (SSL). This ensures data integrity, confidentiality, and host authentication."
+    },
+    {
+      "category": "Beginner",
+      "q": "What are the standard ports for HTTP, HTTPS, SSH, and DNS?",
+      "a": "The standard default ports are: HTTP operates on port 80, HTTPS operates on port 443, SSH operates on port 22, and DNS operates on port 53 (mostly UDP, occasionally TCP for zone transfers)."
+    },
+    {
+      "category": "Beginner",
+      "q": "What is a file descriptor in Unix/Linux?",
+      "a": "A file descriptor (FD) is a non-negative integer index used by the OS kernel to reference open input/output resources per process. FDs represent open files, network sockets, pipes, and standard streams: stdin (0), stdout (1), and stderr (2)."
+    },
+    {
+      "category": "Beginner",
+      "q": "What is the swap space in Linux?",
+      "a": "Swap space is a dedicated area on a hard drive or solid-state drive used as an extension of physical RAM. When RAM is fully utilized, the OS kernel moves inactive pages from memory to swap space to free up RAM, preventing system crashes at the cost of disk I/O latency."
+    },
+    {
+      "category": "Intermediate",
+      "q": "How does a reverse proxy differ from a forward proxy?",
+      "a": "A forward proxy acts on behalf of clients, intercepts outgoing internet requests, and hides client identities from destination servers (often used for content filtering). A reverse proxy acts on behalf of servers, intercepts incoming requests, protects server identities, handles SSL termination, caching, compression, and load balancing."
+    },
+    {
+      "category": "Intermediate",
+      "q": "What is the purpose of CIDR notation in networking?",
+      "a": "CIDR (Classless Inter-Domain Routing) notation represents an IP address and its associated routing prefix (subnet mask). It consists of an IP followed by a slash and a number (e.g., /24), indicating how many of the 32 bits are dedicated to the network portion, with the remaining bits representing host addresses."
+    },
+    {
+      "category": "Intermediate",
+      "q": "Explain how containerization differs from virtual machines.",
+      "a": "Virtual Machines (VMs) run a full guest OS on top of a hypervisor, which emulates virtual hardware; this consumes significant CPU, RAM, and disk space. Containers (like Docker) share the host OS kernel and isolate user space using Linux features like cgroups and namespaces, making them lightweight and fast to boot."
+    },
+    {
+      "category": "Intermediate",
+      "q": "What is a RAID array, and what are RAID 0, 1, and 5?",
+      "a": "RAID (Redundant Array of Independent Disks) combines multiple physical disk drives into a single logical unit. RAID 0 provides striping for performance but has no redundancy. RAID 1 provides mirroring for redundancy but no capacity increase. RAID 5 provides block-level striping with distributed parity, offering both performance and single-disk fault tolerance."
+    },
+    {
+      "category": "Intermediate",
+      "q": "What is the function of cgroups in Linux containers?",
+      "a": "Control groups (cgroups) are a Linux kernel feature that limits, isolates, and monitors resource usage (such as CPU, memory, disk I/O, and network bandwidth) for a collection of processes. This prevents a single container from consuming all host resources and starving other processes."
+    },
+    {
+      "category": "Intermediate",
+      "q": "What is the function of namespaces in Linux containers?",
+      "a": "Namespaces are a Linux kernel feature that isolates system resources for processes, creating an illusion of system isolation. Key namespaces include PID (process isolation), NET (network configurations), MNT (file system mounts), IPC (communication isolation), UTS (hostnames), and USER (UID/GID mapping)."
+    },
+    {
+      "category": "Intermediate",
+      "q": "Explain the difference between pull and push monitoring models.",
+      "a": "In a pull model (e.g., Prometheus), the monitoring server periodically requests metrics from endpoints via HTTP/TCP scrape targets. In a push model (e.g., StatsD, Datadog), monitored agents actively push metrics to a central collector. Pull models offer easier configuration control, while push models work better for short-lived serverless tasks."
+    },
+    {
+      "category": "Intermediate",
+      "q": "What are the Golden Signals of monitoring?",
+      "a": "The Four Golden Signals are: 1. Latency (time taken to service a request). 2. Traffic (demand on the system, e.g., HTTP req/sec). 3. Errors (rate of failed requests). 4. Saturation (how full system resources are, e.g., CPU, memory, disk queue depth)."
+    },
+    {
+      "category": "Intermediate",
+      "q": "Explain what a Post-Mortem is in SRE culture.",
+      "a": "A Post-Mortem is a document written after an outage or incident to analyze the root cause, identify the impact, outline actions taken to resolve it, and list preventative measures for the future. SRE post-mortems must be 'blameless', focusing on system failure points rather than human errors."
+    },
+    {
+      "category": "Intermediate",
+      "q": "What is an SLA, SLO, and SLI?",
+      "a": "An SLI (Service Level Indicator) is a metric measuring service performance (e.g., request latency). An SLO (Service Level Objective) is a target reliability metric agreed upon internally (e.g., latency < 200ms for 99.9% of requests). An SLA (Service Level Agreement) is a legal agreement with users specifying consequences if SLOs fail."
+    },
+    {
+      "category": "Intermediate",
+      "q": "What is Error Budget, and how is it calculated?",
+      "a": "An Error Budget is the allowed unreliability of a service over a given period, calculated as 100% minus the SLO target. For a 99.9% SLO, the budget is 0.1% downtime (approx. 43 minutes/month). Product development can proceed rapidly until the error budget is exhausted, at which point focus shifts to reliability."
+    },
+    {
+      "category": "Intermediate",
+      "q": "Explain CI/CD.",
+      "a": "Continuous Integration (CI) is the practice of automating the integration of code changes from multiple contributors into a single repository, running automated builds and tests. Continuous Deployment (CD) automates releasing validated code changes to staging or production, enabling fast release cycles."
+    },
+    {
+      "category": "Intermediate",
+      "q": "What is a Kubernetes Pod?",
+      "a": "A Pod is the smallest deployable object in Kubernetes. It represents a single instance of a running process and can contain one or more tightly coupled containers that share network storage, a unique IP address, port space, and storage volumes."
+    },
+    {
+      "category": "Intermediate",
+      "q": "How does Kubernetes handle self-healing?",
+      "a": "Kubernetes monitors pod health using liveness and readiness probes. If a container fails its liveness probe, the kubelet automatically restarts it. If a node dies, the control plane schedules replacement pods on other healthy nodes to maintain the desired state."
+    },
+    {
+      "category": "Intermediate",
+      "q": "Explain the difference between horizontal scaling and vertical scaling.",
+      "a": "Horizontal scaling (scaling out) adds more machines/nodes to the pool to distribute load. Vertical scaling (scaling up) adds more resources (CPU, RAM, disk) to existing machines. Horizontal scaling is preferred for elastic clouds, while vertical scaling is limited by hardware bounds."
+    },
+    {
+      "category": "Advanced",
+      "q": "How does the Linux kernel handle Out Of Memory (OOM) situations?",
+      "a": "When physical RAM and swap space are completely exhausted, the Linux kernel triggers the OOM Killer. It calculates a score (`oom_badness`) for each process based on memory usage, process priority (niceness), runtime, and `oom_score_adj` values. It then terminates the process with the highest score to reclaim memory and prevent a kernel panic."
+    },
+    {
+      "category": "Advanced",
+      "q": "What is the difference between Anycast routing and Unicast routing?",
+      "a": "Unicast routing directs packets to a single network interface with a unique IP address. Anycast routing assigns the same IP address to multiple physical nodes globally. Routers use BGP to direct traffic to the nearest instance of that Anycast IP based on network distance, providing low latency and DDoS protection."
+    },
+    {
+      "category": "Advanced",
+      "q": "How does the Raft consensus algorithm work?",
+      "a": "Raft manages a replicated log across distributed servers. It uses leader election to establish a single leader node. The leader accepts client write requests, appends them to its log, and replicates them to follower nodes. Once a write is acknowledged by a majority of nodes, it is committed, ensuring consistency."
+    },
+    {
+      "category": "Advanced",
+      "q": "Explain the CAP Theorem and its implications.",
+      "a": "The CAP Theorem states that a distributed data store can simultaneously provide at most two of three guarantees: Consistency (every read receives the latest write), Availability (every request receives a non-error response), and Partition Tolerance (system continues to operate despite network partition). In real networks, partition tolerance is mandatory, forcing a choice between Consistency (CP) and Availability (AP)."
+    },
+    {
+      "category": "Advanced",
+      "q": "How would you troubleshoot high I/O wait times on a database server?",
+      "a": "I would start by using tools like `iostat`, `vmstat`, and `iotop` to identify the specific disk and processes causing I/O congestion. Next, check system logs for disk errors. Then examine database queries using `EXPLAIN` to find missing indexes or unoptimized table scans. If query tuning fails, optimize OS page flushing (`dirty_ratio`) or scale disk IOPS."
+    },
+    {
+      "category": "Advanced",
+      "q": "Explain the difference between TCP Keepalive and Application Keepalive.",
+      "a": "TCP Keepalive is managed by the OS kernel, sending periodic empty probes on inactive TCP sockets to detect dead connections. Application Keepalive (e.g., HTTP heartbeat) is managed inside the app code. It verifies not just network link integrity, but also that the remote application thread is responsive and not deadlocked."
+    },
+    {
+      "category": "Advanced",
+      "q": "How does the Linux epoll system call optimize network performance?",
+      "a": "The legacy `select` and `poll` system calls require O(N) complexity to scan all monitored file descriptors for I/O readiness on every wake. The `epoll` system call uses a kernel event poll mechanism with an O(1) complexity, registering descriptors in a red-black tree and notifying the application via a callback queue when events occur, scaling to thousands of connections."
+    },
+    {
+      "category": "Advanced",
+      "q": "What is the difference between symmetric and asymmetric encryption?",
+      "a": "Symmetric encryption uses a single shared key for both encryption and decryption, offering high speed; popular algorithms include AES. Asymmetric encryption uses a public key to encrypt and a private key to decrypt, offering secure key exchange at lower speed; popular algorithms include RSA and ECC."
+    },
+    {
+      "category": "Advanced",
+      "q": "Explain how a BGP hijacking attack occurs and its mitigation.",
+      "a": "BGP hijacking occurs when a malicious AS advertises IP prefixes that it does not own. Routers accept this path as the shortest route, redirecting traffic to the attacker. Mitigations include RPKI (Resource Public Key Infrastructure) to sign route advertisements, route filtering based on IRR databases, and prefix limits."
+    },
+    {
+      "category": "Advanced",
+      "q": "Explain the concept of circuit breaking in microservices.",
+      "a": "Circuit breaking prevents failure propagation. A circuit breaker monitors requests to a dependency. If error rates exceed a threshold, the breaker trips (opens), failing fast by returning local fallback responses immediately without calling the failing service. It periodically attempts requests (half-open) to test recovery."
+    },
+    {
+      "category": "Scenario-Based",
+      "q": "A production server shows 100% CPU usage. How do you find and resolve the cause?",
+      "a": "I would login via SSH and run `top` or `htop` to identify the processes consuming CPU. Once found, I would run `strace` or profile the application thread using thread dumps to find the loop or operation responsible. If it is an expected spike, I would scale nodes horizontally. If it is a bug, I would hot-fix the code or roll back the deployment."
+    },
+    {
+      "category": "Scenario-Based",
+      "q": "A service is returning 502 Bad Gateway errors. How do you troubleshoot this?",
+      "a": "A 502 error indicates a gateway/proxy (like Nginx) cannot communicate with the upstream app (like Node.js). I would check if the upstream process is running (`ps aux`, `systemctl status`), verify if the socket or port matches between proxy config and app binding, check application error logs for crashes/exceptions, and inspect network firewalls."
+    },
+    {
+      "category": "Scenario-Based",
+      "q": "You observe a slow memory leak in a Node.js process. How do you diagnose it?",
+      "a": "I would start by taking heap snapshots at different times using Chrome DevTools or `heapdump` module. Next, I would compare the snapshots to identify objects accumulating in memory. Common culprits are global variables, active event listeners, or unclosed database connections. I would modify the code to release references."
+    },
+    {
+      "category": "Scenario-Based",
+      "q": "The database connection pool is exhausted. How do you mitigate and resolve this?",
+      "a": "As an immediate mitigation, I would increase the pool capacity limit if database memory permits. For a long-term resolution, I would review code to ensure all acquired connections are properly released in `finally` blocks, optimize query execution times to release connections faster, and implement connection pooling parameters like idle timeouts."
+    },
+    {
+      "category": "Scenario-Based",
+      "q": "A DNS outage occurs. How do you minimize downtime for your microservices?",
+      "a": "I would configure internal services to bypass public DNS resolvers by using internal service registries (like Consul) or DNS caching proxies. For external dependencies, I would temporarily add IP mappings in hostfiles or configure load balancer fallbacks using IP addresses directly until the DNS resolver recovery completes."
+    },
+    {
+      "category": "Scenario-Based",
+      "q": "A container goes into a CrashLoopBackOff state in Kubernetes. How do you debug it?",
+      "a": "I would run `kubectl describe pod <name>` to view lifecycle events and resource limits. Next, I would check container logs using `kubectl logs <name> --previous` to see stdout/stderr before the crash. If logs are empty, I would execute a debug container or inspect exit codes (e.g., 137 indicates OOM termination)."
+    },
+    {
+      "category": "Scenario-Based",
+      "q": "An SSL certificate expires in 2 hours and automated renewals fail. What is your response?",
+      "a": "I would manually request a certificate from the CA using `certbot` or cloud manager CLI. Once downloaded, I would manually upload it to the ingress controller or load balancer and trigger a hot reload. Once service is secure, I would debug the renewal cron job and ACME client credentials."
+    },
+    {
+      "category": "Scenario-Based",
+      "q": "Users report slow response times in Europe, while US users are fine. How do you fix it?",
+      "a": "This indicates latency due to distance. I would deploy regional load balancer replicas in European cloud regions, configure GeoDNS routing to direct users to the nearest regional cluster, and cache static assets in a CDN with edge locations across Europe."
+    },
+    {
+      "category": "Scenario-Based",
+      "q": "Your CI/CD deploy pipeline fails during the database migration step. What do you do?",
+      "a": "I would block subsequent code rollouts to prevent inconsistent schemas. Next, I would inspect migration logs to identify the failing SQL command. If safe, I would write a manual rollback script, execute it to restore the schema state, fix the migration code, and re-run the pipeline."
+    },
+    {
+      "category": "Scenario-Based",
+      "q": "A DDoS attack targets your API endpoint with traffic spikes. How do you mitigate it?",
+      "a": "I would activate Cloudflare/WAF under-attack protection, block offending IP ranges using geo-blocking or rate-limit rules at the edge, throttle connections using reverse-proxy rate limits, scale backend application instances horizontally, and cache static API responses where possible."
+    }
+  ],
+  "tips": [
+    "Always focus on the 'why' behind system architectures, not just 'how' to write the commands.",
+    "During scenario questions, communicate your thought process out loud to show your troubleshooting structure.",
+    "Highlight your experience with the Four Golden Signals of monitoring and blameless post-mortem culture.",
+    "Master the internal workings of networking protocols (TCP/IP, DNS, BGP) and operating system kernel concepts.",
+    "Emphasize your scripting capabilities (Bash, Python, Go) as automation is the core of SRE."
+  ],
+  "mistakes": [
+    "Neglecting to ask clarifying questions during system design or scenario troubleshooting questions.",
+    "Focusing solely on coding and ignoring operational aspects like logging, metrics, and capacity limits.",
+    "Suggesting over-engineered, complex architectures for simple requirements.",
+    "Failing to explain how your proposed solution impacts system reliability and recovery times.",
+    "Giving defensive or blame-based answers when discussing past failures or outages."
+  ],
+  "faq": [
+    {
+      "q": "What is the typical ratio of SREs to software developers?",
+      "a": "The ratio varies widely but typically ranges from 1:10 to 1:30, depending on systems complexity and automated self-healing capabilities."
+    },
+    {
+      "q": "Do SREs need to write code daily?",
+      "a": "Yes, SREs write automation scripts, configure tools, and write code for internal monitoring frameworks or patch codebase bugs."
+    },
+    {
+      "q": "How is SRE different from DevOps?",
+      "a": "DevOps is a cultural philosophy of collaboration. SRE is a specific set of practices and roles that implements DevOps principles."
+    },
+    {
+      "q": "What is an error budget burn rate?",
+      "a": "Burn rate is the rate at which a service consumes its error budget. A burn rate of 1 means the budget will last exactly the full period."
+    },
+    {
+      "q": "What tools are most important for SREs?",
+      "a": "Prometheus, Grafana, Kubernetes, Docker, Terraform, Ansible, and languages like Python, Bash, or Go."
+    },
+    {
+      "q": "Is on-call duty mandatory for SREs?",
+      "a": "Typically yes. SREs participate in on-call rotations to handle production incidents and maintain system reliability."
+    },
+    {
+      "q": "What is blameless post-mortem culture?",
+      "a": "It is a culture where outages are analyzed under the assumption that engineers acted in good faith, focusing on system fixes."
+    },
+    {
+      "q": "How does capacity planning work?",
+      "a": "Capacity planning uses historical resource metrics and growth forecasts to ensure infrastructure can support future demand."
+    },
+    {
+      "q": "What is chaos engineering?",
+      "a": "Chaos engineering is the practice of intentionally introducing failures in production to verify system resilience and recovery."
+    },
+    {
+      "q": "Can I transition from manual QA to SRE?",
+      "a": "Yes. It requires learning programming languages, operating system administration, networking, and CI/CD tools."
+    }
+  ],
+  "resources": [
+    "Google SRE Book — The definitive guide to SRE practices directly from Google",
+    "CandidateToHR Full Stack Developer Resume Example — [Full Stack Developer Resume](/resume-examples/full-stack-developer)",
+    "CandidateToHR UI/UX Designer Resume Example — [UI/UX Designer Resume](/resume-examples/ui-ux-designer)",
+    "CandidateToHR Python Interview Questions — [Python Interview Questions](/interview-questions/python)",
+    "CandidateToHR Machine Learning Interview Questions — [Machine Learning Interview Questions](/interview-questions/machine-learning)",
+    "CandidateToHR How to Become a Cloud Engineer Guide — [How to Become a Cloud Engineer](/career-guides/how-to-become-cloud-engineer)",
+    "CandidateToHR Product Manager Salary Guide — [Product Manager Salary Guide India](/salary-guides/product-manager-india)",
+    "CandidateToHR Data Analyst Roadmap — [Data Analyst Roadmap](/roadmaps/data-analyst)"
+  ]
+}

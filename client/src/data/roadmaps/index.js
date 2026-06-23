@@ -251,5 +251,16 @@ export const roadmapList = [
     salary: "$115,000",
     growth: "+25%",
     isTrending: true,
+  },
+  {
+    id: "site-reliability-engineer-roadmap-2026",
+    title: "Site Reliability Engineer Roadmap 2026",
+    shortDescription: "Master systems engineering, Linux internals, container orchestration, and observability tools to run apps at scale.",
+    category: "Infrastructure",
+    difficulty: "Hard",
+    duration: "6 Months",
+    salary: "$155,000",
+    growth: "+24%",
+    isTrending: true,
   }
 ];

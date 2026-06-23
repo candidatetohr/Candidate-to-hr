@@ -77,5 +77,12 @@ export const resumeCategories = [
     description: "ATS-optimized templates and examples for QA Automation and SDET roles.",
     role: "QA & Testing"
   }
+,
+  {
+    id: "site-reliability-engineer",
+    title: "Site Reliability Engineer Resume Examples",
+    description: "Optimize your Site Reliability Engineer resume with our expert guide, examples, and ATS-friendly templates to increase your chances of landing an interview",
+    role: "Infrastructure"
+  }
 ];
 

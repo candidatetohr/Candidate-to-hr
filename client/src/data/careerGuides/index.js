@@ -82,6 +82,13 @@ export const careerGuideCategories = [
     description: "The definitive guide to transitioning from manual testing to automation or starting fresh as an SDET.",
     topic: "QA & Testing",
     readTime: "9 min read"
+  },
+  {
+    id: "how-to-become-site-reliability-engineer",
+    title: "How to Become a Site Reliability Engineer in 2026",
+    description: "Learn exactly how to become a Site Reliability Engineer (SRE). Required skills, DevOps certifications, and step-by-step career path roadmap.",
+    topic: "Infrastructure",
+    readTime: "11 min read"
   }
 ];
 

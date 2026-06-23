@@ -1,0 +1,154 @@
+{
+  "seo": {
+    "title": "Site Reliability Engineer (SRE) Roadmap 2026 - Career Guide | CandidateToHR",
+    "description": "The ultimate 2026 Site Reliability Engineer (SRE) roadmap. Detailed month-by-month learning path, tools, certifications, projects, and interview preparation.",
+    "slug": "site-reliability-engineer-roadmap-2026",
+    "keywords": "SRE roadmap 2026, site reliability engineering roadmap, how to become an SRE, DevOps learning path, SRE tools",
+    "ogTitle": "Site Reliability Engineer (SRE) Roadmap 2026 — Step-by-Step Guide",
+    "ogDescription": "Learn how to go from zero infrastructure knowledge to a professional Site Reliability Engineer in 2026."
+  },
+  "hero": {
+    "title": "Site Reliability Engineer Roadmap 2026",
+    "shortDescription": "A comprehensive, step-by-step learning guide designed to take you from a developer or systems administrator to a professional Site Reliability Engineer (SRE).",
+    "averageSalary": "$155,000",
+    "growthRate": "+24%",
+    "learningDuration": "6 Months",
+    "difficultyLevel": "Hard",
+    "hiringDemand": "Very High"
+  },
+  "overview": {
+    "whatTheyDo": "Site Reliability Engineers apply software engineering methodologies to manage IT operations and infrastructure. They design automated self-healing software architectures, build observability pipelines, manage deployment pipelines, and optimize systems to ensure high availability, speed, and scaling reliability.",
+    "industriesHiring": ["Cloud Computing & SaaS", "FinTech & Digital Banking", "E-commerce Platforms", "Social Media Networks", "Streaming Platforms & Media Solutions"],
+    "responsibilities": [
+      "Building and maintaining automated Infrastructure as Code (IaC) templates.",
+      "Designing monitoring dashboards and alerting configurations.",
+      "Triaging production outages and leading blameless post-mortem reviews.",
+      "Collaborating with developer teams to define SLOs and manage error budgets.",
+      "Optimizing system bottlenecks, queries, and network latency issues."
+    ]
+  },
+  "skillsTimeline": {
+    "beginner": ["Linux Terminal Commands", "Bash Shell Scripting", "Networking Basics (TCP/IP, DNS, HTTP)", "Git Version Control"],
+    "intermediate": ["Python or Go programming", "Docker Containerization", "Kubernetes Orchestration", "Monitoring Fundamentals (Prometheus)"],
+    "advanced": ["Infrastructure as Code (Terraform)", "CI/CD Deployment Pipelines", "Systems Internals & Kernel tuning", "Chaos Engineering"]
+  },
+  "learningPath": [
+    {
+      "month": "Month 1: Linux Internals & Systems Fundamentals",
+      "description": "Develop a deep command of the Linux operating system. Study shell utilities, file permissions, processes, systemd services, filesystem inodes, and write basic Bash automation scripts."
+    },
+    {
+      "month": "Month 2: Networking Protocols & Core Scripting",
+      "description": "Master core networking protocols including TCP/IP, UDP, DNS routing, load balancing, and SSL/TLS handshakes. Learn Python or Go to write scripts that interact with system APIs and parse logs."
+    },
+    {
+      "month": "Month 3: Containerization (Docker) & Local Deployment",
+      "description": "Learn containerization principles. Write Dockerfiles, build lightweight container images, configure container networking, manage persistent volumes, and compile docker-compose stacks."
+    },
+    {
+      "month": "Month 4: Container Orchestration (Kubernetes)",
+      "description": "Understand Kubernetes (K8s) architectures. Master resource declarations including Pods, Deployments, Services, ConfigMaps, Secrets, Ingress Controllers, and troubleshoot pod lifecycle failures."
+    },
+    {
+      "month": "Month 5: Observability, Logging, & Alerting",
+      "description": "Configure observability tools. Set up Prometheus to scrape metrics, write PromQL queries, configure Alertmanager, and build rich visualization dashboards in Grafana."
+    },
+    {
+      "month": "Month 6: Infrastructure as Code (IaC) & CI/CD Pipelines",
+      "description": "Learn Terraform to provision cloud infrastructure declaratively. Build automated CI/CD pipelines (GitHub Actions/GitLab) to test and deploy containers safely to production."
+    }
+  ],
+  "toolsAndTech": ["Linux/Bash", "Python", "Go", "Docker", "Kubernetes", "Prometheus", "Grafana", "Terraform", "GitHub Actions", "Ansible"],
+  "projects": {
+    "beginner": ["Automated Log Rotation Script in Bash", "System Metrics Collector Script in Python", "Static Website Hosted on Nginx Container"],
+    "intermediate": ["Multi-container Web Application Stack via docker-compose", "Kubernetes-hosted Web App with Auto-scaling and Ingress", "Prometheus-monitored Web Server with Custom Grafana Dashboards"],
+    "advanced": ["Infrastructure Provisioned on AWS/GCP via Terraform", "Automated GitOps CI/CD Deployment using ArgoCD", "Chaos Testing Suite Simulating Service Outages and Auto-recovery"]
+  },
+  "certifications": [
+    "Certified Kubernetes Administrator (CKA)",
+    "AWS Certified DevOps Engineer - Professional",
+    "HashiCorp Certified: Terraform Associate",
+    "Google Cloud Professional Cloud DevOps Engineer"
+  ],
+  "salaryInsights": [
+    { "experience": "Junior (0-1 yr)", "salary": "$90,000 - $115,000" },
+    { "experience": "Mid-Level (2-5 yrs)", "salary": "$130,000 - $165,000" },
+    { "experience": "Senior (5-8 yrs)", "salary": "$175,000 - $215,000" },
+    { "experience": "Principal (8+ yrs)", "salary": "$230,000 - $310,000+" }
+  ],
+  "interviewPrep": {
+    "topQuestions": [
+      "Explain the OOM Killer and oom_score calculation in Linux.",
+      "How does a Kubernetes Deployment roll out an update without downtime?",
+      "Design a scalable, highly available logging architecture.",
+      "How would you troubleshoot a 504 Gateway Timeout error?"
+    ],
+    "commonMistakes": [
+      "Ignoring systems administration concepts and focusing exclusively on coding.",
+      "Failing to explain how your design choices affect MTTR and reliability metrics.",
+      "Recommending overly complex, expensive architectures for simple scenarios."
+    ],
+    "resumeTips": {
+      "sections": ["Professional Experience", "Infrastructure Projects", "Skills & Certifications", "Education"],
+      "keywords": ["Kubernetes", "Observability", "Infrastructure as Code", "MTTR Reduction", "Availability"],
+      "atsOptimization": "Keep formatting simple. Use bullet points that quantify achievements (e.g., 'Reduced downtime by 30% via automated failover'). Ensure exact skill keywords are listed."
+    }
+  },
+  "jobMarket": {
+    "futureDemand": "As companies migrate to complex cloud-native systems, SRE roles will grow 24% by 2030, representing one of the most secure tech professions.",
+    "remoteOpportunities": "Very High. Most infrastructure environments are managed remotely, making 65%+ of SRE roles remote-first or hybrid.",
+    "successStory": "Alex transitioned from a software developer role. By mastering Kubernetes, obtaining the CKA certification, and building a GitHub portfolio of Terraform deployment configurations, he bypassed the ATS screens and landed a remote Senior SRE role paying $180,000."
+  },
+  "faq": [
+    {
+      "q": "What is the pre-requisite to start the SRE roadmap?",
+      "a": "A basic understanding of computer science concepts, simple scripting logic, and computer networking is recommended before starting."
+    },
+    {
+      "q": "Do I need to learn both Python and Go?",
+      "a": "Start with one. Python is excellent for quick scripts and automation. Go is the industry standard for cloud-native tools like Kubernetes and Terraform. Learning both eventually is highly beneficial."
+    },
+    {
+      "q": "How long does it take to complete the SRE roadmap?",
+      "a": "With 15-20 hours of study per week, a dedicated candidate can complete this roadmap and build a strong portfolio in 6 months."
+    },
+    {
+      "q": "What is the difference between SRE and Cloud Engineering?",
+      "a": "Cloud Engineers build and configure cloud environments. SREs focus on the ongoing operational reliability, monitoring, and scaling automation of the software running inside those environments."
+    },
+    {
+      "q": "How important is LeetCode for SRE interviews?",
+      "a": "It is important for top product companies (FAANG), which test on algorithms. Startups focus more on take-home coding, system design, and real-world debugging scenarios."
+    },
+    {
+      "q": "What is toil, and how is it managed?",
+      "a": "Toil is repetitive, manual operational work. SREs target keeping toil below 50% of their bandwidth, automating the rest to focus on engineering improvements."
+    },
+    {
+      "q": "Which cloud provider should I learn first?",
+      "a": "AWS is recommended due to its dominant market share, though Azure is highly valued in enterprise environments and GCP is popular in Kubernetes-heavy organizations."
+    },
+    {
+      "q": "Is Kubernetes mandatory for SREs in 2026?",
+      "a": "Yes. Kubernetes has become the standard container orchestrator globally, and nearly all SRE positions require familiarity with it."
+    },
+    {
+      "q": "What is chaos engineering?",
+      "a": "Chaos engineering is the practice of proactively injecting failures into production to test system resiliency and verify auto-recovery logic."
+    },
+    {
+      "q": "How do SREs measure success?",
+      "a": "Success is measured by key metrics: SLO compliance rates, reduced MTTR (Mean Time to Resolution), and decreased time spent on manual toil."
+    }
+  ],
+  "resources": [
+    "Google SRE Book — Google's official guide to Site Reliability Engineering practices",
+    "CandidateToHR SRE Resume Example — [Site Reliability Engineer Resume](/resume-examples/site-reliability-engineer)",
+    "CandidateToHR Full Stack Developer Resume Example — [Full Stack Developer Resume](/resume-examples/full-stack-developer)",
+    "CandidateToHR SRE Interview Questions — [SRE Interview Questions](/interview-questions/site-reliability-engineer)",
+    "CandidateToHR Python Interview Questions — [Python Interview Questions](/interview-questions/python)",
+    "CandidateToHR How to Become a Cloud Engineer Guide — [How to Become a Cloud Engineer](/career-guides/how-to-become-cloud-engineer)",
+    "CandidateToHR Product Manager Salary Guide — [Product Manager Salary Guide India](/salary-guides/product-manager-india)",
+    "CandidateToHR Data Analyst Roadmap — [Data Analyst Roadmap](/roadmaps/data-analyst)"
+  ]
+}
