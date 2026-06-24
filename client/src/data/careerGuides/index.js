@@ -89,6 +89,13 @@ export const careerGuideCategories = [
     description: "Learn exactly how to become a Site Reliability Engineer (SRE). Required skills, DevOps certifications, and step-by-step career path roadmap.",
     topic: "Infrastructure",
     readTime: "11 min read"
+  },
+  {
+    id: "data-engineer",
+    title: "How to Become a Data Engineer in 2026: The Ultimate Career Guide",
+    description: "Learn exactly how to become a Data Engineer in 2026. Required skills, AWS/GCP data certifications, and step-by-step career path roadmap.",
+    topic: "Data & AI",
+    readTime: "10 min read"
   }
 ];
 

@@ -117,6 +117,13 @@ export const interviewCategories = [
     description: "Top 50+ SRE interview questions covering Linux, Kubernetes, DNS, networking, systems architecture, and debugging.",
     topic: "DevOps",
     count: 50
+  },
+  {
+    id: "data-engineer",
+    title: "Data Engineer Interview Questions",
+    description: "Top 50+ Data Engineer questions covering SQL, Python, Spark, Airflow, databases, and system design.",
+    topic: "Data & AI",
+    count: 50
   }
 ];
 

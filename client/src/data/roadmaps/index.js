@@ -262,5 +262,16 @@ export const roadmapList = [
     salary: "$155,000",
     growth: "+24%",
     isTrending: true,
+  },
+  {
+    id: "data-engineer",
+    title: "Data Engineer Roadmap 2026",
+    shortDescription: "Master Python, SQL, distributed compute with Spark, database modeling, and Airflow orchestration.",
+    category: "Data & AI",
+    difficulty: "Medium",
+    duration: "9 Months",
+    salary: "$128,500",
+    growth: "+28%",
+    isTrending: true,
   }
 ];

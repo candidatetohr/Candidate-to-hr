@@ -145,5 +145,12 @@ export const salaryCategories = [
     description: "Discover Site Reliability Engineer (SRE) salaries in 2026. Breakdowns by experience, city, and top paying companies.",
     role: "Infrastructure",
     country: "USA"
+  },
+  {
+    id: "data-engineer",
+    title: "Data Engineer Salary Guide (2026)",
+    description: "Detailed breakdown of Data Engineer salaries by experience, city, and top companies in the US.",
+    role: "Data & AI",
+    country: "USA"
   }
 ];
