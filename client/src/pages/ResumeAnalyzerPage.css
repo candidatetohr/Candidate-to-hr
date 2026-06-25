@@ -51,8 +51,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 1rem 2rem;
-  background: #e0f2fe; /* Light blue */
-  /* removed blur */
+  background: var(--bg-card, #111116);
   border-bottom: 1px solid var(--border-default);
 }
 .az-back-btn {
