@@ -1,4 +1,10 @@
 User-agent: *
 Allow: /
+Disallow: /dashboard
+Disallow: /jobs/create
+Disallow: /jobs/*/upload
+Disallow: /applications/
+Disallow: /analytics
+Disallow: /profile/
 
 Sitemap: https://candidatetohr.online/sitemap.xml
