@@ -90,5 +90,12 @@ export const resumeCategories = [
     description: "ATS-optimized templates and examples for Data Engineering roles.",
     role: "Data & AI"
   }
+,
+  {
+    id: "data-analyst",
+    title: "Data Analyst Resume Examples",
+    description: "Optimize your Data Analyst resume with our expert guide, featuring examples, tips, and ATS standards to increase your chances of landing an interview.",
+    role: "Data & AI"
+  }
 ];
 

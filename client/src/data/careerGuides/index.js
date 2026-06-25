@@ -96,6 +96,13 @@ export const careerGuideCategories = [
     description: "Learn exactly how to become a Data Engineer in 2026. Required skills, AWS/GCP data certifications, and step-by-step career path roadmap.",
     topic: "Data & AI",
     readTime: "10 min read"
+  },
+  {
+    id: "how-to-become-data-analyst",
+    title: "How to Become a Data Analyst in 2026: Complete Career Guide",
+    description: "Learn exactly how to become a Data Analyst in 2026. Required skills, job responsibilities, salary expectations, and a step-by-step learning roadmap.",
+    topic: "Data & AI",
+    readTime: "10 min read"
   }
 ];
 

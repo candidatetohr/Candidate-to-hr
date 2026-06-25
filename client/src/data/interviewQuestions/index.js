@@ -124,6 +124,13 @@ export const interviewCategories = [
     description: "Top 50+ Data Engineer questions covering SQL, Python, Spark, Airflow, databases, and system design.",
     topic: "Data & AI",
     count: 50
+  },
+  {
+    id: "data-analyst",
+    title: "Data Analyst Interview Questions",
+    description: "Master your next data analyst interview. Covers SQL, Python, Pandas, statistics, and business scenarios.",
+    topic: "Data & AI",
+    count: 50
   }
 ];
 

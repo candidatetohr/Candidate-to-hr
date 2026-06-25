@@ -1,0 +1,167 @@
+{
+  "seo": {
+    "title": "Data Analyst Roadmap 2026: Complete Career & Learning Path",
+    "description": "Follow our step-by-step 2026 Data Analyst roadmap. Learn SQL, Python, Excel, Tableau, and statistics. Gain real-world projects and interview prep.",
+    "slug": "data-analyst-roadmap-2026",
+    "keywords": "data analyst roadmap, how to become a data analyst, learn data analysis, analyst study guide, business intelligence roadmap",
+    "ogTitle": "Data Analyst Learning Path & Career Roadmap (2026)",
+    "ogDescription": "The definitive 6-month roadmap to becoming a Data Analyst. Master the technical skills and projects required to get hired."
+  },
+  "hero": {
+    "title": "Data Analyst Roadmap 2026",
+    "shortDescription": "Data Analysts are the translators who bridge technical database systems and commercial strategy. Learn how to extract, clean, analyze, and visualize data to drive business growth.",
+    "averageSalary": "$88,500",
+    "growthRate": "+15%",
+    "learningDuration": "6 Months",
+    "difficultyLevel": "Easy",
+    "hiringDemand": "Very High"
+  },
+  "overview": {
+    "whatTheyDo": "Data Analysts interpret complex datasets to answer pressing business questions, identify market trends, and build operational reports. They write optimized queries to pull data, clean anomalies, perform statistical EDA, and construct interactive BI dashboards. They collaborate with product managers, marketing leaders, and engineers to establish data-driven decision environments.",
+    "industriesHiring": ["Tech & E-commerce Platforms", "Finance & Investment Banking", "Healthcare & Analytics", "Marketing & Advertising Agencies", "Logistics & Supply Chain Management"],
+    "responsibilities": [
+      "Extracting and aggregating structured data using optimized SQL joins and aggregates.",
+      "Cleaning noisy datasets using Python scripting to resolve missing or duplicate values.",
+      "Developing interactive self-service dashboards in Tableau or Power BI.",
+      "Designing and analyzing randomized A/B tests to measure campaign conversion rates.",
+      "Presenting key findings and recommendations to business executives in plain language."
+    ]
+  },
+  "skillsTimeline": {
+    "beginner": ["Excel (Pivot Tables/VLOOKUP)", "SQL Basics (SELECT, WHERE, GROUP BY)", "Data Visualization Concepts", "Basic Descriptive Statistics"],
+    "intermediate": ["Advanced SQL (CTEs, Window Functions)", "Python Programming Fundamentals", "Pandas & NumPy Data Wrangling", "Dashboard Design (Tableau/Power BI)"],
+    "advanced": ["A/B Testing & Hypothesis Testing", "SQL Optimization (EXPLAIN)", "Git & Version Control", "Data Warehouse Querying (Snowflake)"]
+  },
+  "learningPath": [
+    {
+      "month": "Month 1: Spreadsheets & SQL Foundations",
+      "description": "Master Excel for quick analysis: formulas, Pivot Tables, and VLOOKUP. Transition directly into SQL fundamentals: table creation, filtering, and writing queries with aggregate functions and joins. To structure your initial studies, review our [Software Engineer Career Guide](/career-guides/how-to-become-software-engineer)."
+    },
+    {
+      "month": "Month 2: Advanced SQL & Data Warehousing",
+      "description": "Deep dive into SQL window functions, CTEs, and query optimization plans. Learn to load and query data inside modern cloud data warehouses like Snowflake. Practice optimization concepts using our [Python Interview Questions](/interview-questions/python)."
+    },
+    {
+      "month": "Month 3: Python & Pandas Wrangling",
+      "description": "Learn Python syntax, lists, loops, and custom functions. Master Pandas and NumPy: read files, handle missing values, merge DataFrames, and clean text. Learn how software engineering principles keep code clean, similar to concepts in the [Site Reliability Engineer Resume Example](/resume-examples/site-reliability-engineer)."
+    },
+    {
+      "month": "Month 4: Data Visualization & BI",
+      "description": "Choose Tableau or Power BI. Learn how to structure data connections, create calculated fields, and design dashboards that follow clean visual hierarchies, keeping stakeholders aligned. For advice on business analytics roles, see our [Business Analyst Roadmap](/roadmaps/business-analyst)."
+    },
+    {
+      "month": "Month 5: Applied Statistics & A/B Testing",
+      "description": "Study probability distributions, correlation, z-scores, hypothesis testing, and p-values. Design, run, and evaluate mock A/B tests to measure feature changes. Ensure database tests follow proper schemas; review our [QA Automation Questions](/interview-questions/qa-automation) guide for tips."
+    },
+    {
+      "month": "Month 6: Portfolios, Resume Prep & Job Search",
+      "description": "Construct 3 detailed projects on GitHub containing clean SQL and Python scripts. Optimize your resume for ATS parsers using our professional [Software Engineer Resume Examples](/resume-examples/software-engineer). Apply to analyst positions and prepare for interviews using our [Software Engineer Salary Guide](/salary-guides/software-engineer-us)."
+    }
+  ],
+  "toolsAndTech": ["Excel", "SQL", "PostgreSQL", "Python", "Pandas", "Tableau", "Power BI", "Snowflake", "Git", "Jupyter Notebooks"],
+  "projects": {
+    "beginner": [
+      "Analyze a retail sales dataset in Excel, using pivot tables to identify seasonal trends and top-performing products.",
+      "Write SQL queries to extract demographic statistics from a public census database and export the results to CSV.",
+      "Create a simple static dashboard in Tableau showing monthly sales targets vs. actual revenues."
+    ],
+    "intermediate": [
+      "Use Python and Pandas to clean and merge multiple messy customer transaction CSV files, resolving duplicates and null values.",
+      "Build an interactive Power BI dashboard tracking active website users, segmented by geography, device, and acquisition source.",
+      "Design a SQL query to identify duplicate accounts and compute monthly recurring revenue (MRR) metrics using window functions."
+    ],
+    "advanced": [
+      "Analyze the statistical significance of a simulated marketing A/B test in Python, calculating sample size and p-value metrics.",
+      "Optimize a slow-running SQL query containing nested subqueries, replacing them with Joins and CTEs to reduce database load.",
+      "Deploy a version-controlled analysis on GitHub, documenting data extraction from a public API, cleaning steps, and key findings."
+    ]
+  },
+  "certifications": [
+    "Google Data Analytics Professional Certificate",
+    "Microsoft Certified: Power BI Data Analyst Associate",
+    "Tableau Desktop Certified Associate",
+    "CAP (Certified Analytics Professional)"
+  ],
+  "salaryInsights": [
+    { "experience": "Fresher (0-2 yrs)", "salary": "$65,000 - $80,000" },
+    { "experience": "Mid-Level (3-5 yrs)", "salary": "$85,000 - $110,000" },
+    { "experience": "Senior (6-9 yrs)", "salary": "$115,000 - $145,000" },
+    { "experience": "Principal (10+ yrs)", "salary": "$155,000 - $210,000+" }
+  ],
+  "interviewPrep": {
+    "topQuestions": [
+      "What is the difference between WHERE and HAVING in SQL?",
+      "How do you handle missing or null values in Pandas?",
+      "Explain the difference between Type I and Type II errors.",
+      "How do you design a dashboard that answers a specific commercial metric?",
+      "What is the difference between correlation and causation?"
+    ],
+    "commonMistakes": [
+      "Focusing entirely on complex code instead of aligning the analysis with commercial objectives.",
+      "Not validating join outcomes, resulting in duplicated records or cartesian products.",
+      "Using overly complex visualizations that confuse non-technical business partners.",
+      "Failing to document data cleaning assumptions, making research irreproducible."
+    ],
+    "resumeTips": {
+      "sections": ["Technical Skills", "Professional Experience", "Analytics Projects", "Education", "Certifications"],
+      "keywords": ["SQL", "Python", "Pandas", "Tableau", "A/B Testing", "Data Modeling", "Excel"],
+      "atsOptimization": "Quantify your achievements (e.g. 'designed dashboard used by 50+ executives', 'reduced database query runtime by 40%'). Detail specific relational databases in your experience bullets."
+    }
+  },
+  "jobMarket": {
+    "futureDemand": "Data analytics continues to expand, with hiring demand projected to grow 15% annually. As organizations deploy AI-driven products, they require analysts who can monitor and translate operational data feeds to make strategic decisions.",
+    "remoteOpportunities": "Very High. Since all analytics databases, transformation servers, and dashboard portals are cloud-based, most data analytics teams fully support remote or hybrid schedules.",
+    "successStory": "Many successful analysts are self-taught or transitioned from non-technical fields (like sales or finance). By mastering SQL joins, building a solid portfolio of interactive Tableau dashboards, and structuring their resume correctly, they bypassed traditional educational requirements to land high-paying tech positions."
+  },
+  "faq": [
+    {
+      "q": "Do I need a Computer Science degree to be a Data Analyst?",
+      "a": "No, data analysis values practical, demonstrated skills over academic credentials. A strong portfolio of SQL and dashboard projects is highly effective to prove competence to recruiters."
+    },
+    {
+      "q": "Should I learn Python or R first?",
+      "a": "Python is highly recommended. It is widely adopted across tech startups and enterprise firms, is easier to learn, and integrates seamlessly with MERN and cloud software systems."
+    },
+    {
+      "q": "What is the difference between a Data Analyst and a Data Scientist?",
+      "a": "Data Analysts focus on analyzing historical data to answer specific business questions and build reports. Data Scientists focus on building predictive models, writing machine learning systems, and programming algorithms."
+    },
+    {
+      "q": "What is the most important skill for a Data Analyst?",
+      "a": "SQL is the absolute most important skill. You must write clean, optimized queries daily to retrieve and aggregate data from relational databases."
+    },
+    {
+      "q": "Can I self-teach Data Analysis?",
+      "a": "Yes, absolutely. By leveraging free datasets, taking targeted online courses, building public portfolios, and preparing for technical interviews, most active analysts transitioned into the role."
+    },
+    {
+      "q": "How long does the roadmap take to complete?",
+      "a": "If you study 15 to 20 hours a week, the roadmap takes approximately 6 months to complete, allowing you to transition from zero coding knowledge to an entry-level analyst."
+    },
+    {
+      "q": "What visualization tool should I learn?",
+      "a": "Both Tableau and Power BI are excellent, in-demand tools. Power BI is common in Windows-centric corporate environments, while Tableau is popular in modern tech startups."
+    },
+    {
+      "q": "What is exploratory data analysis (EDA)?",
+      "a": "EDA is the process of examining a dataset before formal modeling, using summary statistics and visualization charts to identify distributions, patterns, and anomalies."
+    },
+    {
+      "q": "How do you handle outliers in analytics?",
+      "a": "Outliers can be detected using boxplots or IQR limits. Depending on the context, they are investigated, transformed, capped, or analyzed separately if they represent anomalous business events."
+    },
+    {
+      "q": "Do Data Analysts write database schemas?",
+      "a": "Generally, Data Engineers design the core database structures. However, analysts should understand schema layouts (Star Schema, Snowflake Schema) to write queries efficiently."
+    }
+  ],
+  "resources": [
+    "https://candidatetohr.online/resume-examples/site-reliability-engineer",
+    "https://candidatetohr.online/resume-examples/software-engineer",
+    "https://candidatetohr.online/interview-questions/qa-automation",
+    "https://candidatetohr.online/interview-questions/python",
+    "https://candidatetohr.online/career-guides/how-to-become-software-engineer",
+    "https://candidatetohr.online/salary-guides/software-engineer-us",
+    "https://candidatetohr.online/roadmaps/business-analyst"
+  ]
+}

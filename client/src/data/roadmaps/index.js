@@ -273,5 +273,16 @@ export const roadmapList = [
     salary: "$128,500",
     growth: "+28%",
     isTrending: true,
+  },
+  {
+    id: "data-analyst-roadmap-2026",
+    title: "Data Analyst Roadmap 2026",
+    shortDescription: "Master Excel, SQL, Python, Tableau, and statistics to land your first data analyst position.",
+    category: "Data & AI",
+    difficulty: "Easy",
+    duration: "6 Months",
+    salary: "$88,500",
+    growth: "+15%",
+    isTrending: true,
   }
 ];

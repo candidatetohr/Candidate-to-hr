@@ -152,5 +152,12 @@ export const salaryCategories = [
     description: "Detailed breakdown of Data Engineer salaries by experience, city, and top companies in the US.",
     role: "Data & AI",
     country: "USA"
+  },
+  {
+    id: "data-analyst-salary-guide-2026",
+    title: "Data Analyst Salary Guide 2026 | Comprehensive US Pay",
+    description: "Discover how much Data Analysts earn in 2026. Detailed breakdowns by experience level, top hiring cities, companies, and market trends.",
+    role: "Data & AI",
+    country: "USA"
   }
 ];
