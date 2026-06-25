@@ -8,6 +8,7 @@ import RelatedResources from '../components/seo/RelatedResources';
 import { AdBanner, SidebarAd, InlineAd } from '../components/monetization/Ads';
 import { ATSCheckerCTA, MockInterviewCTA } from '../components/cta/PlatformCTAs';
 import { TrendingUp, MapPin, Briefcase, LineChart, Award } from 'lucide-react';
+import AuthorInfo from '../components/seo/AuthorInfo';
 import ReactMarkdown from 'react-markdown';
 import './SalaryDetail.css';
 
@@ -66,6 +67,7 @@ export default function SalaryDetail() {
       <header className="mb-32 border-b border-default pb-32 text-center">
         <h1 className="text-4xl font-bold mb-16">{hero.title}</h1>
         <p className="text-lg text-secondary container-seo">{hero.description}</p>
+        <AuthorInfo date={hero.date} author={hero.author} />
         
         <div className="mt-32 bg-slate-800/50 border border-amber-500/20 inline-block px-10 py-6">
           <div className="text-sm color-warning font-bold uppercase tracking-widest mb-8">Average Base Salary</div>

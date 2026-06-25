@@ -6,6 +6,7 @@ import { ChevronDown, ChevronUp, MapPin, Target, Zap, DollarSign, PenTool, Check
 import Breadcrumbs from '../components/seo/Breadcrumbs';
 import QuickLinks from '../components/seo/QuickLinks';
 import RelatedResources from '../components/seo/RelatedResources';
+import AuthorInfo from '../components/seo/AuthorInfo';
 import './RoadmapDetail.css';
 
 export default function RoadmapDetail() {
@@ -82,15 +83,7 @@ export default function RoadmapDetail() {
           <h1 className="rd-hero-title mt-24 mb-16">{hero.title}</h1>
           <p className="rd-hero-subtitle max-w-2xl text-secondary">{hero.shortDescription}</p>
           
-          <div className="author-block flex items-center justify-center gap-16 mt-24 mb-32">
-            <div className="author-avatar" style={{width: 48, height: 48, borderRadius: '50%', background: 'var(--bg-surface)', border: '1px solid var(--border-default)', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-              <span className="font-bold text-primary">HR</span>
-            </div>
-            <div className="author-info text-left">
-              <div className="font-bold">CandidateToHR Career Experts</div>
-              <div className="text-sm text-secondary">Updated {new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })} · {hero.learningDuration}</div>
-            </div>
-          </div>
+          <AuthorInfo date={hero.date} author={hero.author} />
           
           <div className="rd-hero-stats">
             <div className="rd-stat-box">

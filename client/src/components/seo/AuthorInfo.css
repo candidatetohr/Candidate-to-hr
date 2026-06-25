@@ -1,0 +1,117 @@
+.author-eeat-card {
+  max-width: 800px;
+  margin: 24px auto;
+  padding: 20px 24px;
+  background: var(--bg-surface, #0f172a);
+  border: 1px solid var(--border-default, rgba(255, 255, 255, 0.1));
+  border-radius: var(--radius-md, 12px);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: left;
+}
+
+.author-avatar-section {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.author-avatar-circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-primary, #38bdf8), #a855f7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--text-inverse, #020617);
+  flex-shrink: 0;
+}
+
+.author-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.author-name-title {
+  font-size: 16px;
+  color: var(--text-primary, #f8fafc);
+}
+
+.author-by {
+  color: var(--text-secondary, #94a3b8);
+  font-weight: 400;
+}
+
+.author-review-status {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: var(--text-secondary, #94a3b8);
+}
+
+.author-review-status strong {
+  color: var(--color-success, #34d399);
+}
+
+.icon-success {
+  color: var(--color-success, #34d399);
+}
+
+.author-badges-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  border-top: 1px solid var(--border-default, rgba(255, 255, 255, 0.1));
+  border-bottom: 1px solid var(--border-default, rgba(255, 255, 255, 0.1));
+  padding: 12px 0;
+}
+
+.author-badge-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text-secondary, #94a3b8);
+}
+
+.author-badge-item strong {
+  color: var(--text-primary, #f8fafc);
+}
+
+.author-policies-links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  flex-wrap: wrap;
+}
+
+.policy-link {
+  color: var(--color-primary, #38bdf8);
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.policy-link:hover {
+  color: var(--color-primary-hover, #0ea5e9);
+  text-decoration: underline;
+}
+
+.divider {
+  color: var(--text-muted, #64748b);
+  user-select: none;
+}
+
+@media (max-width: 640px) {
+  .author-badges-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}

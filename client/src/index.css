@@ -578,3 +578,34 @@ a:hover {
 .text-slate-500, .text-slate-600, .text-slate-700, .text-slate-800, .text-slate-900 { color: var(--text-primary) !important; }
 .bg-slate-800, .bg-slate-900 { background-color: var(--bg-primary) !important; color: var(--text-primary) !important; }
 .border-slate-700, .border-slate-800 { border-color: var(--border-default) !important; }
+
+/* ─── Accessibility & Keyboard Focus (WCAG 2.2 AA) ───────────────────────── */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid var(--color-primary, #38BDF8) !important;
+  outline-offset: 4px !important;
+  box-shadow: 0 0 0 6px rgba(56, 189, 248, 0.2) !important;
+}
+
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 16px;
+  background: var(--color-primary, #38BDF8);
+  color: var(--text-inverse, #020617);
+  padding: 10px 20px;
+  border-radius: 0 0 8px 8px;
+  z-index: 10000;
+  transition: top 0.2s ease-in-out;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.skip-link:focus {
+  top: 0;
+  outline: none;
+}

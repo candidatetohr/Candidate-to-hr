@@ -74,15 +74,26 @@ export default function LandingPage() {
           <p className="hero-subtitle">
             Whether you're a <strong>job seeker</strong> wanting to score your resume or a <strong>recruiter</strong> screening hundreds of candidates — Candidatetohr has you covered with NVIDIA NIM AI.
           </p>
-          <div className="hero-cta">
-            <button className="btn btn-primary btn-lg" onClick={() => navigate('/analyze')} id="hero-candidate-btn">
-              <Sparkles size={16} /> Analyse Resume
+          <div className="hero-cta-grid mt-24">
+            <button className="btn btn-primary btn-lg" onClick={() => navigate('/analyze')} id="hero-analyze-btn">
+              <Sparkles size={16} /> Analyze Resume
             </button>
-            <button className="btn btn-outline btn-lg" onClick={() => navigate('/live-editor')} style={{ color: '#10b981', borderColor: 'rgba(16,185,129,0.3)', background: 'rgba(16,185,129,0.05)' }}>
-              <Sparkles size={16} /> Live AI Editor
+            <button className="btn btn-outline btn-lg" onClick={() => navigate('/resume-builder')} style={{ color: '#c4b5fd', borderColor: 'rgba(168,85,247,0.3)', background: 'rgba(168,85,247,0.05)' }}>
+              <FileText size={16} /> Build Resume
             </button>
-            <button className="btn btn-ghost btn-lg hero-recruiter-btn" onClick={() => navigate('/login')} id="hero-recruiter-btn">
-              For Recruiters <ArrowRight size={16} />
+            <button className="btn btn-outline btn-lg" onClick={() => navigate('/roadmaps')} style={{ color: '#38bdf8', borderColor: 'rgba(56,189,248,0.3)', background: 'rgba(56,189,248,0.05)' }}>
+              <Map size={16} /> Tech Roadmaps
+            </button>
+            <button className="btn btn-outline btn-lg" onClick={() => navigate('/salary-guides')} style={{ color: '#34d399', borderColor: 'rgba(52,211,153,0.3)', background: 'rgba(52,211,153,0.05)' }}>
+              <DollarSign size={16} /> Salary Guides
+            </button>
+            <button className="btn btn-outline btn-lg" onClick={() => navigate('/interview-questions')} style={{ color: '#fbbf24', borderColor: 'rgba(251,191,36,0.3)', background: 'rgba(251,191,36,0.05)' }}>
+              <MessageSquare size={16} /> Interview Prep
+            </button>
+          </div>
+          <div className="mt-16 text-center">
+            <button className="btn btn-ghost hero-recruiter-btn" onClick={() => navigate('/login')} id="hero-recruiter-btn">
+              Are you a Recruiter? Sign In / Post a Job <ArrowRight size={16} />
             </button>
           </div>
           <div className="hero-stats">
@@ -309,13 +320,7 @@ export default function LandingPage() {
         </m.div>
       </section>
 
-      {/* Footer */}
-      <footer className="landing-footer">
-        <div className="logo-wrapper" style={{ justifyContent: 'center' }}>
-          <img src="/logo.png" alt="CandidateToHR Logo" width="28" height="28" style={{ height: '28px' }} />
-        </div>
-        <p>Built with MERN Stack + NVIDIA NIM AI</p>
-      </footer>
+      {/* Rendered global footer */}
     </div>
     </LazyMotion>
   );

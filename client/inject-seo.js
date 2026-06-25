@@ -179,6 +179,28 @@ pages.forEach(({ route, title, desc, type }) => {
     `;
     
     newHtml = newHtml.replace('</head>', `${ogTags}\n${schemaString}\n</head>`);
+    
+    // Inject semantic content summary inside noscript to assist search engine indexing of SPA pages without affecting hydration
+    const noscriptContent = `
+    <noscript>
+      <div class="noscript-seo-summary" style="padding: 2rem; max-width: 800px; margin: 0 auto;">
+        <h1>${title}</h1>
+        <p>${desc}</p>
+        <hr />
+        <p>CandidateToHR provides highly optimized, professional tech career resources including: Resume Examples, Tech Career Roadmaps, Interview Prep questions and answers, and Career Guides. Build, customize, and analyze your tech career credentials completely free.</p>
+        <ul>
+          <li><a href="${DOMAIN}/resume-examples">ATS Resume Templates & Examples</a></li>
+          <li><a href="${DOMAIN}/roadmaps">Career Roadmaps & Timelines</a></li>
+          <li><a href="${DOMAIN}/interview-questions">Top Job Interview Questions</a></li>
+          <li><a href="${DOMAIN}/salary-guides">Tech Salary Guides</a></li>
+          <li><a href="${DOMAIN}/career-guides">Career Growth Guides</a></li>
+          <li><a href="${DOMAIN}/analyze">Free AI Resume Analyzer</a></li>
+        </ul>
+      </div>
+    </noscript>
+    `;
+    
+    newHtml = newHtml.replace('<div id="root"></div>', `<div id="root"></div>\n${noscriptContent}`);
 
     // Ensure the folder and file are created correctly
     const isHome = route === '/';

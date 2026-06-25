@@ -88,7 +88,20 @@
   max-width: 480px;
 }
 
-.hero-cta { display: flex; flex-direction: column; gap: 20px; }
+.hero-cta-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.hero-cta-grid .btn {
+  flex: 1 1 calc(50% - 12px);
+  min-width: 170px;
+}
+@media (max-width: 640px) {
+  .hero-cta-grid .btn {
+    flex: 1 1 100%;
+  }
+}
 
 .hero-stats {
   display: flex;

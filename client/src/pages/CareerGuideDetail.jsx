@@ -7,6 +7,7 @@ import QuickLinks from '../components/seo/QuickLinks';
 import RelatedResources from '../components/seo/RelatedResources';
 import { AdBanner, SidebarAd, InlineAd } from '../components/monetization/Ads';
 import { ATSCheckerCTA, MockInterviewCTA } from '../components/cta/PlatformCTAs';
+import AuthorInfo from '../components/seo/AuthorInfo';
 import ReactMarkdown from 'react-markdown';
 import './CareerGuideDetail.css';
 
@@ -65,16 +66,7 @@ export default function CareerGuideDetail() {
       <header className="mb-48 text-center content-long-form container-seo">
         <h1 className="text-5xl font-bold mt-24 mb-24 leading-tight">{hero.title}</h1>
         <p className="text-xl text-secondary mb-24">{hero.description}</p>
-        
-        <div className="author-block flex items-center justify-center gap-16 mt-24 pb-32 border-b border-default">
-          <div className="author-avatar" style={{width: 48, height: 48, borderRadius: '50%', background: 'var(--bg-surface)', border: '1px solid var(--border-default)', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-            <span className="font-bold text-primary">{hero.author ? hero.author.charAt(0) : 'HR'}</span>
-          </div>
-          <div className="author-info text-left">
-            <div className="font-bold">{hero.author || 'CandidateToHR Career Experts'}</div>
-            <div className="text-sm text-secondary">Updated {hero.date || new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</div>
-          </div>
-        </div>
+        <AuthorInfo date={hero.date} author={hero.author} />
       </header>
 
       <AdBanner />

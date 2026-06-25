@@ -302,6 +302,7 @@ ADDITIONAL RULES:
 3. You must naturally embed the following 7 internal links in the content, sections, or resources list using standard Markdown syntax (e.g., [Text](URL)):
 ${internalLinks.map(link => `- ${link}`).join('\n')}
 4. Do not include markdown wraps (no \`\`\`json). Return raw JSON.
+5. Avoid generic AI writing clichés (e.g., "delve into", "embark on", "in today's world", "unlock your career", "in today's highly competitive tech environment"). Write in an active, direct, professional human career advisor style.
 `,
 
     interview: `
@@ -393,6 +394,7 @@ ADDITIONAL RULES:
 3. You must naturally embed the following 7 internal links in the content, sections, or resources list using standard Markdown syntax (e.g., [Text](URL)):
 ${internalLinks.map(link => `- ${link}`).join('\n')}
 4. Do not include markdown wraps (no \`\`\`json). Return raw JSON.
+5. Avoid generic AI writing clichés (e.g., "delve into", "embark on", "in today's world", "unlock your career", "in today's highly competitive tech environment"). Write in an active, direct, professional human career advisor style.
 `,
 
     salary: `
@@ -452,6 +454,7 @@ ADDITIONAL RULES:
 3. You must naturally embed the following 7 internal links in the content, sections, or resources list using standard Markdown syntax (e.g., [Text](URL)):
 ${internalLinks.map(link => `- ${link}`).join('\n')}
 4. Do not include markdown wraps (no \`\`\`json). Return raw JSON.
+5. Avoid generic AI writing clichés (e.g., "delve into", "embark on", "in today's world", "unlock your career", "in today's highly competitive tech environment"). Write in an active, direct, professional human career advisor style.
 `,
 
     roadmap: `
@@ -534,6 +537,7 @@ ADDITIONAL RULES:
 3. You must naturally embed the following 7 internal links in the content, sections, or resources list using standard Markdown syntax (e.g., [Text](URL)):
 ${internalLinks.map(link => `- ${link}`).join('\n')}
 4. Do not include markdown wraps (no \`\`\`json). Return raw JSON.
+5. Avoid generic AI writing clichés (e.g., "delve into", "embark on", "in today's world", "unlock your career", "in today's highly competitive tech environment"). Write in an active, direct, professional human career advisor style.
 `
   };
 

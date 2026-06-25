@@ -43,6 +43,14 @@ function Footer() {
         <div className="footer-col">
           <h3>AI Tools</h3>
           <ul>
+            <li><Link to="/analyze">Resume Analyzer</Link></li>
+            <li><Link to="/resume-builder">AI Resume Builder</Link></li>
+            <li><Link to="/live-editor">Live AI Editor</Link></li>
+            <li><Link to="/interview-sim">Interview Simulator</Link></li>
+            <li><Link to="/rejection-decoder">Rejection Decoder</Link></li>
+            <li><Link to="/learning-path">Learning Path Generator</Link></li>
+            <li><Link to="/placement-probability">Placement Probability</Link></li>
+            <li><Link to="/truth-detector">Truth Detector</Link></li>
             <li><Link to="/culture-fit">Culture Fit Analyzer</Link></li>
             <li><Link to="/offer-negotiator">Offer Negotiator</Link></li>
             <li><Link to="/skill-gap">Skill Gap Analyzer</Link></li>
@@ -57,7 +65,7 @@ function Footer() {
           <ul>
             <li><Link to="/privacy">Privacy Policy</Link></li>
             <li><Link to="/terms">Terms & Conditions</Link></li>
-            <li><Link to="/disclaimer">Disclaimer</Link></li>
+            <li><Link to="/disclaimer">Disclaimer & Cookie Policy</Link></li>
           </ul>
         </div>
 

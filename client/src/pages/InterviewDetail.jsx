@@ -8,6 +8,7 @@ import RelatedResources from '../components/seo/RelatedResources';
 import { AdBanner, InlineAd, SidebarAd } from '../components/monetization/Ads';
 import { MockInterviewCTA } from '../components/cta/PlatformCTAs';
 import { Eye, EyeOff, Search, X } from 'lucide-react';
+import AuthorInfo from '../components/seo/AuthorInfo';
 import './InterviewDetail.css';
 
 export default function InterviewDetail() {
@@ -137,15 +138,7 @@ export default function InterviewDetail() {
         <h1 className="text-4xl font-bold mt-24 mb-16">{data.hero.title}</h1>
         <p className="text-lg text-secondary">{data.hero.description}</p>
         
-        <div className="author-block flex items-center justify-center gap-16 mt-24 mb-16">
-          <div className="author-avatar" style={{width: 48, height: 48, borderRadius: '50%', background: 'var(--bg-surface)', border: '1px solid var(--border-default)', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-            <span className="font-bold text-primary">HR</span>
-          </div>
-          <div className="author-info text-left">
-            <div className="font-bold">CandidateToHR Career Experts</div>
-            <div className="text-sm text-secondary">Updated {new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</div>
-          </div>
-        </div>
+        <AuthorInfo date={data.hero.date} author={data.hero.author} />
 
         <div className="mt-24 flex items-center justify-center gap-16 pb-32 border-b border-default">
           <label className="flex items-center gap-8 bg-card px-16 py-8 cursor-pointer border border-default" style={{borderRadius: 'var(--radius-full)'}}>

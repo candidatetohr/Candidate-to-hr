@@ -85,6 +85,7 @@ export default function App() {
 
   return (
     <>
+      <a href="#main-content" className="skip-link">Skip to Content</a>
       <ScrollToTop />
       <Navbar />
       <main id="main-content">
