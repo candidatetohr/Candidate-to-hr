@@ -16,6 +16,8 @@ const publicLinks = [
   { to: '/interview-questions', label: 'Interview Questions' },
   { to: '/resume-examples', label: 'Resume Examples' },
   { to: '/career-guides', label: 'Career Guides' },
+  { to: '/salary-guides', label: 'Salary Guide' },
+  { to: '/roadmaps', label: 'Roadmap' },
   { to: '/analyze', label: 'Resume Score' },
   { to: '/resume-builder', label: 'AI Resume Builder' },
 ];
