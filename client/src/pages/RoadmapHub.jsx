@@ -65,8 +65,16 @@ export default function RoadmapHub() {
             {categories.map(cat => (
               <li 
                 key={cat} 
+                role="button"
+                tabIndex={0}
                 className={activeCategory === cat ? 'active' : ''}
                 onClick={() => setActiveCategory(cat)}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    setActiveCategory(cat);
+                  }
+                }}
               >
                 {cat}
               </li>
