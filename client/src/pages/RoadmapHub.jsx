@@ -39,20 +39,28 @@ export default function RoadmapHub() {
             Stop guessing. Follow our step-by-step, industry-vetted roadmaps to land your dream job in tech. See salary data, required skills, and interview questions.
           </p>
           
-          <div className="hub-search-bar">
-            <Search className="search-icon" size={20} />
-            <input 
-              type="text" 
-              placeholder="Search careers (e.g., Software Engineer, Data Scientist)..." 
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-            />
-            {searchTerm && (
-              <button className="hub-search-clear" onClick={() => setSearchTerm('')} aria-label="Clear search">
-                <X size={14} />
+          <form className="hub-search-form" onSubmit={(e) => e.preventDefault()}>
+            <div className="hub-search-bar">
+              <div className="hub-search-bar-input-wrapper">
+                <Search className="search-icon" size={22} />
+                <input 
+                  type="text" 
+                  placeholder="Search careers (e.g., Software Engineer, Data Scientist)..." 
+                  value={searchTerm}
+                  onChange={(e) => setSearchTerm(e.target.value)}
+                  aria-label="Search careers"
+                />
+                {searchTerm && (
+                  <button type="button" className="hub-search-clear" onClick={() => setSearchTerm('')} aria-label="Clear search">
+                    <X size={16} />
+                  </button>
+                )}
+              </div>
+              <button type="submit" className="hub-search-submit-btn">
+                Search
               </button>
-            )}
-          </div>
+            </div>
+          </form>
         </div>
       </section>
 

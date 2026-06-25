@@ -105,19 +105,55 @@ export default function CandidateDashboard() {
                 <p>Use our AI agents to optimize and prepare</p>
               </div>
               <motion.div className="toolkit-cards-row" variants={itemVars}>
-                <div className="toolkit-action-card bg-hover-gradient-blue" onClick={() => navigate('/analyze')}>
+                <div 
+                  className="toolkit-action-card bg-hover-gradient-blue" 
+                  onClick={() => navigate('/analyze')}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                      e.preventDefault();
+                      navigate('/analyze');
+                    }
+                  }}
+                  role="button"
+                  tabIndex={0}
+                  aria-label="Upload Resume for AI analysis"
+                >
                   <div className="toolkit-icon bg-blue"><UploadCloud size={24} /></div>
                   <h3>Upload Resume</h3>
                   <p>Get instant ATS scoring, structural feedback, and skills matching.</p>
                   <span className="action-link">Get Scanned <ChevronRight size={16} /></span>
                 </div>
-                <div className="toolkit-action-card bg-hover-gradient-purple" onClick={() => navigate('/live-editor')}>
+                <div 
+                  className="toolkit-action-card bg-hover-gradient-purple" 
+                  onClick={() => navigate('/live-editor')}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                      e.preventDefault();
+                      navigate('/live-editor');
+                    }
+                  }}
+                  role="button"
+                  tabIndex={0}
+                  aria-label="Build with AI"
+                >
                   <div className="toolkit-icon bg-purple"><FileText size={24} /></div>
                   <h3>Build with AI</h3>
                   <p>Generate a professional ATS-friendly CV dynamically from scratch.</p>
                   <span className="action-link">Start Creating <ChevronRight size={16} /></span>
                 </div>
-                <div className="toolkit-action-card bg-hover-gradient-green" onClick={() => navigate('/profile/edit')}>
+                <div 
+                  className="toolkit-action-card bg-hover-gradient-green" 
+                  onClick={() => navigate('/profile/edit')}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                      e.preventDefault();
+                      navigate('/profile/edit');
+                    }
+                  }}
+                  role="button"
+                  tabIndex={0}
+                  aria-label="Complete Profile"
+                >
                   <div className="toolkit-icon bg-green"><UserPlus size={24} /></div>
                   <h3>Complete Profile</h3>
                   <p>Manually edit skills, education, and target positions.</p>
@@ -137,6 +173,15 @@ export default function CandidateDashboard() {
                       key={goal.id} 
                       className={`goal-quiz-card ${activeGoal === goal.id ? 'quiz-active' : ''}`}
                       onClick={() => setActiveGoal(goal.id)}
+                      onKeyDown={(e) => {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                          e.preventDefault();
+                          setActiveGoal(goal.id);
+                        }
+                      }}
+                      role="button"
+                      tabIndex={0}
+                      aria-label={`Select career goal: ${goal.label}`}
                     >
                       <goal.icon size={26} className="goal-quiz-icon" />
                       <span>{goal.label}</span>
@@ -153,7 +198,20 @@ export default function CandidateDashboard() {
                 </div>
                 <div className="demand-roles-explorer">
                   {targetRoles.map((role, i) => (
-                    <div key={i} className="demand-role-row" onClick={() => navigate('/roadmaps')}>
+                    <div 
+                      key={i} 
+                      className="demand-role-row" 
+                      onClick={() => navigate('/roadmaps')}
+                      onKeyDown={(e) => {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                          e.preventDefault();
+                          navigate('/roadmaps');
+                        }
+                      }}
+                      role="button"
+                      tabIndex={0}
+                      aria-label={`Explore career roadmaps starting with ${role.title}`}
+                    >
                       <div className="role-details">
                         <h4>{role.title}</h4>
                         <span className="salary-meta">{role.salary} average pay</span>

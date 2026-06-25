@@ -6,6 +6,7 @@ import { resumeCategories } from '../data/resumeExamples';
 import { AdBanner, SidebarAd } from '../components/monetization/Ads';
 import { ResumeBuilderCTA } from '../components/cta/PlatformCTAs';
 import './ResumeHub.css';
+import './RoadmapHub.css';
 
 export default function ResumeHub() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -29,20 +30,28 @@ export default function ResumeHub() {
           <h1 className="hub-title">The Perfect Resume Examples</h1>
           <p className="hub-subtitle">Stop getting auto-rejected. Steal the exact resume structures, keywords, and action verbs that land interviews at top companies.</p>
           
-          <div className="hub-search-bar">
-            <Search className="search-icon" size={20} />
-            <input 
-              type="text" 
-              placeholder="Search roles (e.g., Data Scientist, Software Engineer)..." 
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-            />
-            {searchTerm && (
-              <button className="hub-search-clear" onClick={() => setSearchTerm('')} aria-label="Clear search">
-                <X size={14} />
+          <form className="hub-search-form" onSubmit={(e) => e.preventDefault()}>
+            <div className="hub-search-bar">
+              <div className="hub-search-bar-input-wrapper">
+                <Search className="search-icon" size={22} />
+                <input 
+                  type="text" 
+                  placeholder="Search roles (e.g., Data Scientist, Software Engineer)..." 
+                  value={searchTerm}
+                  onChange={(e) => setSearchTerm(e.target.value)}
+                  aria-label="Search resume roles"
+                />
+                {searchTerm && (
+                  <button type="button" className="hub-search-clear" onClick={() => setSearchTerm('')} aria-label="Clear search">
+                    <X size={16} />
+                  </button>
+                )}
+              </div>
+              <button type="submit" className="hub-search-submit-btn">
+                Search
               </button>
-            )}
-          </div>
+            </div>
+          </form>
         </div>
       </section>
 

@@ -6,6 +6,7 @@ import { salaryCategories } from '../data/salaryGuides';
 import { AdBanner, SidebarAd } from '../components/monetization/Ads';
 import { MockInterviewCTA } from '../components/cta/PlatformCTAs';
 import './SalaryHub.css';
+import './RoadmapHub.css';
 
 export default function SalaryHub() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -29,20 +30,28 @@ export default function SalaryHub() {
           <h1 className="hub-title">Tech Salary Guides</h1>
           <p className="hub-subtitle">Don't leave money on the table. Know exactly what you're worth with our 2026 salary data based on real offers.</p>
           
-          <div className="hub-search-bar">
-            <Search className="search-icon" size={20} />
-            <input 
-              type="text" 
-              placeholder="Search by role or country (e.g., India, Software Engineer)..." 
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-            />
-            {searchTerm && (
-              <button className="hub-search-clear" onClick={() => setSearchTerm('')} aria-label="Clear search">
-                <X size={14} />
+          <form className="hub-search-form" onSubmit={(e) => e.preventDefault()}>
+            <div className="hub-search-bar">
+              <div className="hub-search-bar-input-wrapper">
+                <Search className="search-icon" size={22} />
+                <input 
+                  type="text" 
+                  placeholder="Search by role or country (e.g., India, Software Engineer)..." 
+                  value={searchTerm}
+                  onChange={(e) => setSearchTerm(e.target.value)}
+                  aria-label="Search salaries"
+                />
+                {searchTerm && (
+                  <button type="button" className="hub-search-clear" onClick={() => setSearchTerm('')} aria-label="Clear search">
+                    <X size={16} />
+                  </button>
+                )}
+              </div>
+              <button type="submit" className="hub-search-submit-btn">
+                Search
               </button>
-            )}
-          </div>
+            </div>
+          </form>
         </div>
       </section>
 

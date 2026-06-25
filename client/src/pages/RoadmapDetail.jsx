@@ -245,8 +245,21 @@ export default function RoadmapDetail() {
           <section className="rd-section">
             <h2><HelpCircle size={22} className="text-purple"/> Frequently Asked Questions</h2>
             <div className="rd-faq-list">
-              {faq.map((item, i) => (
-                <div key={i} className={`rd-faq-item ${openFaq === i ? 'open' : ''}`} onClick={() => setOpenFaq(openFaq === i ? null : i)}>
+              {faq && faq.map((item, i) => (
+                <div 
+                  key={i} 
+                  role="button"
+                  tabIndex={0}
+                  aria-expanded={openFaq === i}
+                  className={`rd-faq-item ${openFaq === i ? 'open' : ''}`} 
+                  onClick={() => setOpenFaq(openFaq === i ? null : i)}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                      e.preventDefault();
+                      setOpenFaq(openFaq === i ? null : i);
+                    }
+                  }}
+                >
                   <div className="rd-faq-q">
                     {item.q}
                     {openFaq === i ? <ChevronUp size={18} /> : <ChevronDown size={18} />}

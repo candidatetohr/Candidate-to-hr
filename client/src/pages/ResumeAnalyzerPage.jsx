@@ -296,7 +296,20 @@ export default function ResumeAnalyzerPage() {
       {step !== 'results' && (
         <nav className="az-nav">
           <button className="az-back-btn" onClick={() => navigate('/')}><ArrowLeft size={16} /> Back</button>
-          <div className="az-logo" onClick={() => navigate('/')} style={{ cursor: 'pointer' }}>
+          <div 
+            className="az-logo" 
+            onClick={() => navigate('/')} 
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                navigate('/');
+              }
+            }}
+            role="button"
+            tabIndex={0}
+            aria-label="Go to homepage"
+            style={{ cursor: 'pointer' }}
+          >
             <img src="/logo.png" alt="CandidateToHR Logo" width="24" height="24" style={{ height: '24px' }} />
           </div>
           <div style={{ display: 'flex', gap: '8px' }}>

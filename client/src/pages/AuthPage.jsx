@@ -54,8 +54,20 @@ export default function AuthPage() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        {/* Logo */}
-        <div className="auth-logo" onClick={() => navigate('/')} style={{ cursor: 'pointer' }}>
+        <div 
+          className="auth-logo" 
+          onClick={() => navigate('/')} 
+          onKeyDown={(e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              navigate('/');
+            }
+          }}
+          role="button"
+          tabIndex={0}
+          aria-label="Go to homepage"
+          style={{ cursor: 'pointer' }}
+        >
           <img src="/logo.png" alt="CandidateToHR Logo" width="36" height="36" loading="lazy" style={{ height: '36px' }} />
         </div>
 

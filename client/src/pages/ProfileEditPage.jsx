@@ -85,7 +85,6 @@ export default function ProfileEditPage() {
       const payload = {
         name: basicInfo.name,
         company: basicInfo.headline // temporarily mapping headline to company
-        // TODO: Expand backend model to support skills, education, projects, goals
       };
       const res = await authAPI.updateProfile(payload);
       updateUser(res.data.user);

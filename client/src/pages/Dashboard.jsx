@@ -314,28 +314,76 @@ export default function Dashboard() {
                 <h3><Brain size={18} className="text-violet" /> AI Toolkit Shortcuts</h3>
                 <p className="subtext">Use our AI models to evaluate resumes, practice, or draft descriptions</p>
                 <div className="ai-buttons-list">
-                  <div className="ai-tool-item" onClick={() => navigate('/analyze')}>
+                  <div 
+                    className="ai-tool-item" 
+                    onClick={() => navigate('/analyze')}
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        navigate('/analyze');
+                      }
+                    }}
+                    role="button"
+                    tabIndex={0}
+                    aria-label="Launch AI Resume Scanner"
+                  >
                     <div className="tool-info">
                       <h4>AI Resume Scanner</h4>
                       <p>Run immediate multi-dimensional ATS evaluation</p>
                     </div>
                     <ArrowUpRight size={16} />
                   </div>
-                  <div className="ai-tool-item" onClick={() => navigate('/live-editor')}>
+                  <div 
+                    className="ai-tool-item" 
+                    onClick={() => navigate('/live-editor')}
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        navigate('/live-editor');
+                      }
+                    }}
+                    role="button"
+                    tabIndex={0}
+                    aria-label="Launch ATS Resume Editor"
+                  >
                     <div className="tool-info">
                       <h4>ATS Resume Editor</h4>
                       <p>Modify and test resume content live</p>
                     </div>
                     <ArrowUpRight size={16} />
                   </div>
-                  <div className="ai-tool-item" onClick={() => navigate('/jobs/create')}>
+                  <div 
+                    className="ai-tool-item" 
+                    onClick={() => navigate('/jobs/create')}
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        navigate('/jobs/create');
+                      }
+                    }}
+                    role="button"
+                    tabIndex={0}
+                    aria-label="Launch Job Description AI Writer"
+                  >
                     <div className="tool-info">
                       <h4>Job Description AI Writer</h4>
                       <p>Create professional description templates</p>
                     </div>
                     <ArrowUpRight size={16} />
                   </div>
-                  <div className="ai-tool-item" onClick={() => navigate('/interview-sim')}>
+                  <div 
+                    className="ai-tool-item" 
+                    onClick={() => navigate('/interview-sim')}
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        navigate('/interview-sim');
+                      }
+                    }}
+                    role="button"
+                    tabIndex={0}
+                    aria-label="Launch AI Mock Interview Simulator"
+                  >
                     <div className="tool-info">
                       <h4>AI Mock Interview Simulator</h4>
                       <p>Conduct mock speech/text grading sessions</p>
