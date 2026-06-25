@@ -69,8 +69,8 @@
   align-items: center;
   background: #ffffff;
   border: 1px solid #e2e8f0;
-  border-radius: 24px;
-  height: 64px;
+  border-radius: 12px; /* square rounded */
+  height: 72px; /* a little big */
   padding: 6px 6px 6px 20px;
   box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
   transition: border-color 300ms ease, box-shadow 300ms ease;
@@ -114,7 +114,7 @@
   background: transparent !important;
   color: #1e293b !important;
   font-family: 'Inter', sans-serif;
-  font-size: 18px;
+  font-size: 20px; /* a little big */
   font-weight: 500;
   outline: none !important;
   height: 100%;
@@ -151,13 +151,13 @@
 
 .hub-search-submit-btn {
   width: 170px;
-  height: 52px;
-  border-radius: 16px;
+  height: 60px; /* matching the 72px bar height minus paddings */
+  border-radius: 10px; /* square rounded to match container */
   background: linear-gradient(135deg, #6366f1 0%, #7c3aed 100%);
   color: #ffffff !important;
   font-family: 'Inter', sans-serif;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 17px; /* slightly bigger text */
   border: none;
   cursor: pointer;
   display: inline-flex;

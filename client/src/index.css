@@ -394,12 +394,12 @@ a:hover {
   background: rgba(15, 23, 42, 0.5); /* translucent input */
   backdrop-filter: blur(8px);
   border: 1px solid var(--border-default);
-  border-radius: var(--radius-md);
+  border-radius: 12px; /* square rounded */
   padding: 0 var(--spacing-16);
-  height: 48px;
+  height: 54px; /* a little big */
   color: var(--text-primary);
   font-family: 'Inter', sans-serif;
-  font-size: 16px;
+  font-size: 18px; /* a little big */
   width: 100%;
   transition: var(--transition);
   outline: none;
@@ -415,6 +415,7 @@ a:hover {
 .form-input::placeholder, .form-textarea::placeholder {
   color: rgba(148, 163, 184, 0.55);
   font-style: normal;
+  font-size: 18px; /* matching input size */
 }
 
 /* ─── Universal Input with Icon ────────────────────────────────────────────── */

@@ -39,7 +39,7 @@ function Footer() {
           </ul>
         </div>
 
-        {/* Column 4: AI Tools */}
+        {/* Column 4: AI Tools Part 1 */}
         <div className="footer-col">
           <h3>AI Tools</h3>
           <ul>
@@ -50,6 +50,13 @@ function Footer() {
             <li><Link to="/rejection-decoder">Rejection Decoder</Link></li>
             <li><Link to="/learning-path">Learning Path Generator</Link></li>
             <li><Link to="/placement-probability">Placement Probability</Link></li>
+          </ul>
+        </div>
+
+        {/* Column 5: AI Tools Part 2 */}
+        <div className="footer-col">
+          <h3>AI Tools</h3>
+          <ul>
             <li><Link to="/truth-detector">Truth Detector</Link></li>
             <li><Link to="/culture-fit">Culture Fit Analyzer</Link></li>
             <li><Link to="/offer-negotiator">Offer Negotiator</Link></li>

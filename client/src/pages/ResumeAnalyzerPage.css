@@ -289,13 +289,19 @@
   width: 100%;
   background: var(--bg-primary);
   border: 1px solid var(--border-default);
-  border-radius: 10px;
-  padding: 10px 14px;
+  border-radius: 12px;
+  padding: 12px 16px;
   color: var(--text-primary);
-  font-size: 0.9rem;
+  font-size: 18px;
   font-family: inherit;
   transition: border-color 0.2s;
   box-sizing: border-box;
+}
+.az-input {
+  height: 54px;
+}
+.az-input::placeholder, .az-textarea::placeholder {
+  font-size: 18px;
 }
 .az-input:focus, .az-textarea:focus {
   outline: none;
