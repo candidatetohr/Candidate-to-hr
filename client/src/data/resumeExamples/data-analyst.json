@@ -1,100 +1,154 @@
 {
   "seo": {
-    "title": "Data Analyst Resume Example & Writing Guide",
-    "description": "Optimize your Data Analyst resume with our expert guide, featuring examples, tips, and ATS standards to increase your chances of landing an interview.",
+    "title": "Data Analyst Resume Example & ATS Writing Guide (2026)",
+    "description": "Optimize your Data Analyst resume with our expert guide. Steal our ATS-compliant template and learn how to list skills, experience, and certifications.",
     "slug": "data-analyst",
-    "keywords": "Data Analyst, resume example, career guide, ATS standards, job description, skills, experience",
-    "ogTitle": "Data Analyst Resume Example & Writing Guide",
-    "ogDescription": "Get hired as a Data Analyst with our expert resume guide, featuring examples, tips, and ATS standards to increase your chances of landing an interview."
+    "keywords": "data analyst resume, data analyst resume template, data analyst skills, resume achievements, ats resume templates",
+    "ogTitle": "How to Write a Data Analyst Resume (2026 Guide)",
+    "ogDescription": "Get hired as a Data Analyst. Download our ATS-optimized resume template and view a complete 100/100 resume example."
   },
   "hero": {
     "title": "Data Analyst Resume Examples",
-    "description": "In today's competitive job market, a well-crafted resume is crucial for standing out as a Data Analyst. With the rise of automation and AI, it's essential to showcase your technical skills, experience, and achievements in a clear and concise manner. Our guide provides you with expert tips, examples, and ATS standards to help you create a winning resume. Whether you're a fresher, mid-level, or senior Data Analyst, our examples and advice will help you tailor your resume to the specific job you're applying for. For more inspiration, check out our [Site Reliability Engineer](https://candidatetohr.online/resume-examples/site-reliability-engineer) and [Software Engineer](https://candidatetohr.online/resume-examples/software-engineer) resume examples.",
-    "role": "Data Analyst",
-    "experienceLevel": "Mid-Level"
+    "description": "Stop getting filtered out by Applicant Tracking Systems. Here is the exact resume structure, high-impact keywords, and quantified achievements you need to land Data Analyst interviews in 2026."
   },
-  "sections": [
+  "score": {
+    "atsScore": 98,
+    "readability": "Excellent",
+    "keywordMatch": "High"
+  },
+  "keywords": [
+    "Data Analytics",
+    "SQL (PostgreSQL, MySQL)",
+    "Python (Pandas, NumPy)",
+    "Business Intelligence (Tableau, Power BI)",
+    "Data Visualization",
+    "Data Cleaning & Wrangling",
+    "A/B Testing",
+    "Statistical Analysis",
+    "Data Warehousing (Snowflake, BigQuery)",
+    "Git & Version Control"
+  ],
+  "mistakes": [
+    "Listing generic tasks (e.g. 'Ran weekly reports') instead of quantified impact (e.g. 'Optimized automated reporting pipelines, saving the team 10 hours weekly').",
+    "Using overly complex, multi-column resume layouts or templates that contain tables and graphics, which confuse ATS parsers.",
+    "Failing to list specific SQL aggregation or visualization tools in context, leading to keyword mismatches.",
+    "Using outdated tools or listing standard spreadsheets as your primary analytical tool in a tech-focused application.",
+    "Submitting the exact same resume for every job instead of tailoring the summary and skills to match each job description."
+  ],
+  "tips": [
+    "Quantify your experience using numbers, percentages, and metrics to prove your business impact.",
+    "Always include a link to your GitHub profile showcasing clean Python notebooks or SQL transformation scripts.",
+    "Structure your experience section using the STAR method (Situation, Task, Action, Result) to demonstrate problem-solving.",
+    "List your tech stack clearly, categorizing languages, databases, visualization tools, and cloud platforms.",
+    "Save and submit your resume as a clean PDF file to perfectly preserve formatting across all devices."
+  ],
+  "exampleResume": {
+    "name": "Sarah Jenkins",
+    "title": "Data Analyst",
+    "summary": "Detail-oriented Data Analyst with 4+ years of experience in translating complex datasets into actionable business insights. Proficient in SQL, Python, and Tableau, with a proven track record of optimizing database queries and designing self-service dashboards to support executive decision-making.",
+    "experience": [
+      {
+        "role": "Data Analyst",
+        "company": "AnalyticsCorp Solutions",
+        "date": "2022 - Present",
+        "bullets": [
+          "Developed and automated 15+ interactive Tableau dashboards for marketing and sales teams, reducing manual reporting hours by 35% and increasing dashboard adoption by 50%.",
+          "Wrote optimized SQL queries and CTEs in PostgreSQL to extract user activity metrics, identifying a product funnel drop-off that helped increase customer conversion by 12%.",
+          "Collaborated with data engineers to design structured schemas inside Snowflake, improving query response times by 40% and saving $8,000 annually in compute costs."
+        ]
+      },
+      {
+        "role": "Junior Data Analyst",
+        "company": "RetailForce Systems",
+        "date": "2020 - 2022",
+        "bullets": [
+          "Cleaned and preprocessed customer transaction datasets containing 1M+ rows using Python (Pandas and NumPy), resolving duplicate records and data entry anomalies.",
+          "Conducted statistical exploratory data analysis (EDA) and built boxplots to identify transaction outliers, helping the fraud detection team reduce false alerts by 15%."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "B.S. in Statistics",
+        "school": "University of Michigan",
+        "date": "2016 - 2020"
+      }
+    ],
+    "skills": "SQL (PostgreSQL, MySQL), Python (Pandas, NumPy, Seaborn), Tableau, Power BI, Excel (Pivot Tables, VLOOKUP), Git, Snowflake, Google BigQuery, Applied Statistics, A/B Testing",
+    "certifications": [
+      "Google Data Analytics Professional Certificate",
+      "Microsoft Certified: Power BI Data Analyst Associate",
+      "Tableau Desktop Certified Associate"
+    ],
+    "projects": [
+      {
+        "name": "Customer Churn Prediction Analysis",
+        "description": "Analyzed customer subscription logs using Python to evaluate churn indicators. Built a logistic regression model identifying product usage drop-offs, presenting insights that helped the product team improve retention."
+      },
+      {
+        "name": "E-commerce Sales Performance Dashboard",
+        "description": "Designed and deployed a public-facing Tableau dashboard visualizing global e-commerce revenues, allowing regional managers to filter performance by product category and shipping metrics."
+      }
+    ]
+  },
+  "extendedContent": [
     {
-      "heading": "Career Overview",
-      "content": "As a Data Analyst, you play a critical role in helping organizations make informed business decisions by analyzing and interpreting complex data. The career path for a Data Analyst typically involves starting as a junior analyst, progressing to a senior analyst, and eventually moving into leadership roles such as a Data Scientist or Business Analyst. Common roles for Data Analysts include working in finance, healthcare, marketing, and operations. To succeed in this field, you'll need to have a strong foundation in statistics, data visualization, and programming languages such as Python and R. For more information on how to become a Software Engineer, check out our [career guide](https://candidatetohr.online/career-guides/how-to-become-software-engineer)."
+      "heading": "How to Write a High-Converting Data Analyst Professional Summary",
+      "content": "A strong professional summary sits at the top of your resume and acts as your elevator pitch. Recruiters spend an average of six seconds reviewing a resume before deciding whether to read further. For a Data Analyst, your summary must immediately state your years of experience, core technical stack, and a high-impact achievement.\n\nAvoid generic descriptions like 'Hardworking analyst seeking opportunities.' Instead, use a metric-driven statement: 'Results-driven Data Analyst with 4+ years of experience leveraging SQL and Python to drive business metrics. Proven history of automating reporting pipelines and reducing manual workload by 35%.' Ensure that the top third of your resume includes key technologies to help you pass the automated ATS scan. For a broader context on tech careers, see our [Software Engineer Career Guide](/career-guides/how-to-become-software-engineer)."
     },
     {
-      "heading": "Resume Summary",
-      "content": "A professional resume summary is a brief overview of your experience, skills, and achievements as a Data Analyst. It should be tailored to the specific job you're applying for and highlight your unique value proposition. Here are three distinct examples of resume summaries for a Data Analyst: Fresher: 'Recent graduate with a degree in Statistics and experience with data analysis tools such as Excel and Tableau.' Mid-Level: 'Experienced Data Analyst with 3+ years of experience in analyzing complex data sets and developing predictive models using Python and R.' Senior: 'Seasoned Data Analyst with 5+ years of experience in leading cross-functional teams and driving business growth through data-driven insights.'"
+      "heading": "Formatting Your Experience Section with the STAR Method",
+      "content": "To write bullet points that impress hiring managers, you should use the STAR method: Situation, Task, Action, and Result. Every bullet point should start with a strong action verb (e.g. Developed, Automated, Designed) and end with a quantified business metric.\n\nInstead of writing: 'Responsible for writing SQL queries and maintaining dashboards,' rewrite it to show impact: 'Wrote optimized SQL joins and aggregates to analyze weekly user metrics, identifying a product funnel drop-off that helped marketing increase conversion by 12%.' This shows that you don't just execute tasks, but you understand the commercial outcome. Check out our [Site Reliability Engineer Resume Example](/resume-examples/site-reliability-engineer) for formatting inspiration."
     },
     {
-      "heading": "Skills Section",
-      "content": "When listing your skills as a Data Analyst, it's essential to categorize them into technical, soft, and tool skills. Technical skills include programming languages such as Python, R, and SQL, as well as data visualization tools like Tableau and Power BI. Soft skills include communication, teamwork, and problem-solving, while tool skills include proficiency in Microsoft Office, Excel, and data analysis software. For example, if you're applying for a role that requires experience with [QA Automation](https://candidatetohr.online/interview-questions/qa-automation), be sure to highlight your skills in this area."
+      "heading": "Industry Tech Stack: What Skills Command a Premium?",
+      "content": "To command a top salary in 2026, a Data Analyst must possess a modern, code-first technical stack. While spreadsheets are useful, the highest-paying roles require strong programming and database design capabilities:\n\n*   **Relational Databases:** Deep knowledge of PostgreSQL or MySQL is non-negotiable. You must understand database indexing, normalization, and window functions.\n*   **Programming Languages:** Python is the industry standard for advanced wrangling. Practicing [Python Interview Questions](/interview-questions/python) is crucial to pass technical screens.\n*   **Cloud Warehouses:** Experience querying Snowflake or BigQuery commands a salary premium. Learn how analytics fits into broader workflows; you can check out the [Business Analyst Roadmap](/roadmaps/business-analyst) for related systems.\n*   **Data Quality Automation:** Understanding validation checks and automated testing helps keep data pipelines clean. Review our [QA Automation Questions](/interview-questions/qa-automation) guide for testing principles."
     },
     {
-      "heading": "Work Experience Section",
-      "content": "When structuring your work experience section as a Data Analyst, it's essential to use a clear and concise format that showcases your achievements and responsibilities. Use bullet points to break up large blocks of text and focus on quantifiable achievements such as 'Increased sales by 25% through data-driven insights' or 'Improved process efficiency by 30% through automation.' Use the STAR method to provide context and detail to your achievements, and be sure to highlight your technical skills and tools used in each role. For example, if you're applying for a role that requires experience with [Python](https://candidatetohr.online/interview-questions/python), be sure to highlight your skills in this area."
-    },
-    {
-      "heading": "Projects Section",
-      "content": "The projects section of your resume as a Data Analyst is an opportunity to showcase your skills and achievements in a real-world context. Choose projects that demonstrate your technical skills, creativity, and problem-solving abilities, and be sure to include metrics and outcomes wherever possible. For example, you could describe a project where you 'Developed a predictive model using Python and scikit-learn that increased sales by 15%' or 'Created a data visualization dashboard using Tableau that improved stakeholder engagement by 20%.' Check out our [salary guide](https://candidatetohr.online/salary-guides/software-engineer-us) for Software Engineers to get an idea of the salary range for Data Analysts in the US."
-    },
-    {
-      "heading": "Certifications Section",
-      "content": "Certifications can be an excellent way to demonstrate your expertise and commitment to the field of Data Analysis. Some important certifications for Data Analysts include Certified Data Analyst (CDA), Certified Analytics Professional (CAP), and Google Data Analytics Certification. Be sure to highlight these certifications prominently on your resume, especially if you're applying for a role that requires specialized knowledge or skills. For more information on how to become a Business Analyst, check out our [roadmap](https://candidatetohr.online/roadmaps/business-analyst)."
-    },
-    {
-      "heading": "ATS Keywords",
-      "content": "ATS keywords are essential for getting your resume past applicant tracking systems and in front of hiring managers. To identify relevant keywords, study the job description and requirements, and use tools like LinkedIn and Glassdoor to research common keywords and phrases used in the industry. Insert these keywords naturally into your resume, especially in your summary, skills section, and work experience. Avoid keyword stuffing, which can make your resume look spammy and unprofessional."
-    },
-    {
-      "heading": "Recruiter Insights",
-      "content": "We spoke with top hiring managers and recruiters in the field of Data Analysis to get their insights on what makes a winning resume. According to our sources, the most important factors are a clear and concise format, relevant technical skills, and quantifiable achievements. Hiring managers also look for evidence of continuous learning and professional development, such as certifications and training programs. Finally, be sure to tailor your resume to the specific job you're applying for, and use language from the job description to describe your skills and experience."
-    },
-    {
-      "heading": "Why This Resume Works",
-      "content": "Our Data Analyst resume example works because it showcases a clear and concise format, relevant technical skills, and quantifiable achievements. The summary is tailored to the specific job, and the skills section is categorized and easy to scan. The work experience section uses bullet points and the STAR method to provide context and detail, and the projects section includes metrics and outcomes. Finally, the certifications section highlights important certifications and training programs, demonstrating a commitment to continuous learning and professional development."
-    },
-    {
-      "heading": "Common Resume Mistakes",
-      "content": "Here are five critical resume mistakes to avoid as a Data Analyst: 1) Typos and grammatical errors, which can make your resume look unprofessional and careless. 2) Lack of relevance to the job description, which can make it difficult for hiring managers to see your value proposition. 3) Insufficient technical skills, which can make you look unqualified for the role. 4) Poor formatting and design, which can make your resume difficult to read and scan. 5) Failure to include quantifiable achievements, which can make it difficult for hiring managers to evaluate your impact and effectiveness."
+      "heading": "Salary Negotiation and Technical Market Positioning",
+      "content": "When negotiating your salary, having a resume that highlights high-income skills puts you in a position of strength. Focus on how your database optimization saved previous employers cloud infrastructure costs. Saving money is a powerful negotiation lever. Always check the current market compensation rates; you can review the average pay scales in the [Software Engineer Salary Guide](/salary-guides/software-engineer-us) to compare analytics salaries with core software engineering bands."
     }
   ],
   "faq": [
     {
-      "q": "What is the average salary for a Data Analyst in the US?",
-      "a": "The average salary for a Data Analyst in the US is around $60,000 per year, according to the Bureau of Labor Statistics. However, salaries can range from $40,000 to over $100,000 per year, depending on factors such as location, experience, and industry."
+      "q": "How long should a Data Analyst resume be?",
+      "a": "For most candidates with less than 8 years of experience, a strictly one-page resume is highly recommended. Ensure it is packed with quantified achievements and contains no filler text."
     },
     {
-      "q": "What skills are required to become a Data Analyst?",
-      "a": "To become a Data Analyst, you'll need to have a strong foundation in statistics, data visualization, and programming languages such as Python and R. You'll also need to have excellent communication and problem-solving skills, as well as the ability to work with large datasets and complex systems."
+      "q": "Should I include a photo on my resume?",
+      "a": "In the US, UK, and Canada, you should not include a photo on your resume. This prevents potential bias and ensures compliance with equal employment opportunity guidelines."
     },
     {
-      "q": "How do I get started in a career as a Data Analyst?",
-      "a": "To get started in a career as a Data Analyst, you'll need to have a degree in a quantitative field such as mathematics, statistics, or computer science. You can also gain experience through internships or entry-level positions, and develop your skills through online courses and training programs."
+      "q": "Do I need a portfolio as a Data Analyst?",
+      "a": "Yes. A portfolio on GitHub containing clean SQL queries, Python scripts, and screenshots of Tableau dashboards is the best way to prove your capabilities to recruiters."
     },
     {
-      "q": "What is the difference between a Data Analyst and a Data Scientist?",
-      "a": "A Data Analyst is responsible for analyzing and interpreting data to inform business decisions, while a Data Scientist is responsible for developing and implementing complex data models and algorithms to drive business growth. Data Scientists typically have more advanced technical skills and experience, and are responsible for leading cross-functional teams and driving strategic initiatives."
+      "q": "What is the best format for an ATS-friendly resume?",
+      "a": "A clean, single-column layout using standard headings (Experience, Education, Skills) and web-safe fonts. Avoid tables, charts, or text boxes, which confuse ATS parsers."
     },
     {
-      "q": "How do I tailor my resume to a specific job description?",
-      "a": "To tailor your resume to a specific job description, study the job requirements and use language from the job description to describe your skills and experience. Use keywords and phrases from the job description in your summary, skills section, and work experience, and be sure to highlight your relevant technical skills and achievements."
+      "q": "How far back should my work history go?",
+      "a": "You should only list the last 10 years of relevant professional experience. Older positions can be omitted entirely or summarized in a brief, one-line summary at the bottom."
     },
     {
-      "q": "What are some common certifications for Data Analysts?",
-      "a": "Some common certifications for Data Analysts include Certified Data Analyst (CDA), Certified Analytics Professional (CAP), and Google Data Analytics Certification. These certifications can demonstrate your expertise and commitment to the field, and can be an excellent way to advance your career and increase your earning potential."
+      "q": "What is the STAR method?",
+      "a": "STAR stands for Situation, Task, Action, and Result. It is a structure used to write resume bullets that describe the context of a challenge, your action, and the outcome."
     },
     {
-      "q": "How do I highlight my technical skills on my resume?",
-      "a": "To highlight your technical skills on your resume, use a clear and concise format that categorizes your skills into technical, soft, and tool skills. Use bullet points to break up large blocks of text, and be sure to include relevant keywords and phrases from the job description. You can also include certifications, training programs, and online courses to demonstrate your expertise and commitment to continuous learning."
+      "q": "Should I list soft skills on my resume?",
+      "a": "Yes, but instead of writing a list of words like 'Communication' or 'Leadership', demonstrate these skills inside your experience bullet points (e.g. 'Presented statistical findings to 10+ business leaders')."
     },
     {
-      "q": "What is the importance of quantifiable achievements on a resume?",
-      "a": "Quantifiable achievements are essential on a resume because they provide concrete evidence of your impact and effectiveness in previous roles. By including metrics and outcomes, you can demonstrate your value proposition to hiring managers and help them evaluate your potential for success in the role."
+      "q": "What is the Google Data Analytics Professional Certificate?",
+      "a": "It is a popular entry-level certification that teaches foundational SQL, R, spreadsheets, and visualization, helping self-taught candidates build credibility."
     },
     {
-      "q": "How do I avoid keyword stuffing on my resume?",
-      "a": "To avoid keyword stuffing on your resume, use keywords and phrases from the job description in a natural and organic way. Avoid repeating the same keywords over and over, and focus on using language from the job description to describe your skills and experience. You can also use synonyms and related terms to add variety and depth to your resume."
+      "q": "Can I work remotely as a Data Analyst?",
+      "a": "Yes. Since databases, pipelines, and dashboards are hosted in cloud environments, data analyst roles are highly compatible with fully remote or hybrid schedules."
     },
     {
-      "q": "What are some common mistakes to avoid on a resume?",
-      "a": "Some common mistakes to avoid on a resume include typos and grammatical errors, lack of relevance to the job description, insufficient technical skills, poor formatting and design, and failure to include quantifiable achievements. By avoiding these mistakes, you can create a strong and effective resume that showcases your skills and experience and helps you stand out in a competitive job market."
+      "q": "How often should I update my resume?",
+      "a": "You should update your resume every 6 months to ensure you document new technical skills, recent certifications, and projects fresh in your mind."
     }
   ],
   "resources": [

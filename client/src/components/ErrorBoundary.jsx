@@ -50,7 +50,7 @@ class ErrorBoundaryInner extends React.Component {
             </div>
             <h1 style={{ marginBottom: '16px', fontSize: '1.5rem', fontWeight: 600 }}>Something went wrong</h1>
             <p style={{ color: 'var(--text-secondary)', marginBottom: '24px', lineHeight: 1.5 }}>
-              We're sorry, but the application encountered an unexpected error. Our team has been notified.
+              We're sorry, but the application encountered an unexpected error. Please report this issue directly to us at <a href="mailto:candidatetohr@gmail.com" style={{ color: 'var(--color-primary, #3b82f6)', textDecoration: 'underline' }}>candidatetohr@gmail.com</a> so we can resolve it.
             </p>
             <button 
               className="btn btn-primary"
