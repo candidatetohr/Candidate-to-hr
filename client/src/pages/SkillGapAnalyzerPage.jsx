@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { BookOpen, Crosshair, Map, Compass, Zap, BookMarked, GraduationCap } from 'lucide-react';
 import './SkillGapAnalyzerPage.css';
 
-import api from '../services/api';
+import { resumeAnalyzerAPI } from '../services/api';
 import SEO from '../components/SEO';
 import ToolEditorial from '../components/seo/ToolEditorial';
 
@@ -20,7 +20,7 @@ export default function SkillGapAnalyzerPage() {
     setResult(null);
 
     try {
-      const res = await api.resumeAnalyzerAPI.skillGapPublic({ resumeText, targetRole });
+      const res = await resumeAnalyzerAPI.skillGapPublic({ resumeText, targetRole });
       if (res.data?.success) {
         setResult(res.data.data);
       } else {

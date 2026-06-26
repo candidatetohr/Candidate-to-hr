@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import api from '../services/api';
+import { resumeAnalyzerAPI } from '../services/api';
 import SEO from '../components/SEO';
 import ToolEditorial from '../components/seo/ToolEditorial';
 import { Heart, Building, Briefcase, Zap, Users, ShieldCheck, CheckCircle2 } from 'lucide-react';
@@ -18,7 +18,7 @@ export default function CultureFitAnalyzerPage() {
     setResult(null);
 
     try {
-      const res = await api.resumeAnalyzerAPI.cultureFit({ resumeText: candidateProfile, companyValues: companyName });
+      const res = await resumeAnalyzerAPI.cultureFit({ resumeText: candidateProfile, companyValues: companyName });
       if (res.data?.success) {
         setResult(res.data.data);
       } else {

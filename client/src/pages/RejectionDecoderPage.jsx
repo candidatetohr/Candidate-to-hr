@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FileText, Briefcase, Mail, Zap, ChevronRight, AlertTriangle, CheckCircle, ArrowRight } from 'lucide-react';
-import api from '../services/api';
+import { resumeAnalyzerAPI } from '../services/api';
 import SEO from '../components/SEO';
 import ToolEditorial from '../components/seo/ToolEditorial';
 import './RejectionDecoderPage.css';
@@ -24,7 +24,7 @@ export default function RejectionDecoderPage() {
     setResult(null);
 
     try {
-      const res = await api.resumeAnalyzerAPI.rejectionDecoder({
+      const res = await resumeAnalyzerAPI.rejectionDecoder({
         resumeText,
         jobDescription,
         rejectionEmail

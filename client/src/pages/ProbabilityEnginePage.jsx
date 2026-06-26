@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { PieChart, GraduationCap, Code, Briefcase, Zap, TrendingUp, AlertTriangle, CheckCircle } from 'lucide-react';
-import api from '../services/api';
+import { resumeAnalyzerAPI } from '../services/api';
 import SEO from '../components/SEO';
 import ToolEditorial from '../components/seo/ToolEditorial';
 import './ProbabilityEnginePage.css';
@@ -25,7 +25,7 @@ export default function ProbabilityEnginePage() {
     setResult(null);
 
     try {
-      const res = await api.resumeAnalyzerAPI.placementProbability({
+      const res = await resumeAnalyzerAPI.placementProbability({
         cgpa,
         degree,
         skills,

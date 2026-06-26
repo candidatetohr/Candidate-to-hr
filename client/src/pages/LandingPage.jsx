@@ -3,7 +3,8 @@ import { m, LazyMotion } from 'framer-motion';
 import {
   Zap, Brain, Target, BarChart3, Users, Award,
   Shield, ArrowRight, CheckCircle, MessageSquare, TrendingUp,
-  FileSearch, Sparkles, AlertTriangle, Map, PieChart, ShieldAlert
+  FileSearch, Sparkles, AlertTriangle, Map, PieChart, ShieldAlert,
+  FileText, DollarSign
 } from 'lucide-react';
 import SEO from '../components/SEO';
 import './LandingPage.css';

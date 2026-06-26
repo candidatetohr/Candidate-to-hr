@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import api from '../services/api';
+import { resumeAnalyzerAPI } from '../services/api';
 import SEO from '../components/SEO';
 import ToolEditorial from '../components/seo/ToolEditorial';
 import { DollarSign, Target, MessageSquare, Zap, ShieldAlert, TrendingUp, Sparkles, ArrowRight } from 'lucide-react';
@@ -18,7 +18,7 @@ export default function OfferNegotiatorPage() {
     setResult(null);
 
     try {
-      const res = await api.resumeAnalyzerAPI.offerNegotiator({ offerDetails, targetSalary });
+      const res = await resumeAnalyzerAPI.offerNegotiator({ offerDetails, targetSalary });
       if (res.data?.success) {
         setResult(res.data.data);
       } else {

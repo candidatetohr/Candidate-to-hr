@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import api from '../services/api';
+import { resumeAnalyzerAPI } from '../services/api';
 import SEO from '../components/SEO';
 import ToolEditorial from '../components/seo/ToolEditorial';
 import { Layout, Search, Zap, PenTool, AlertCircle, CheckCircle } from 'lucide-react';
@@ -20,7 +20,7 @@ export default function PortfolioOptimizerPage() {
     setResult(null);
 
     try {
-      const res = await api.resumeAnalyzerAPI.portfolioOptimizer({
+      const res = await resumeAnalyzerAPI.portfolioOptimizer({
         portfolioDetails: portfolioDetails.trim(),
         resumeText: resumeText.trim(),
         targetRole: targetRole.trim(),

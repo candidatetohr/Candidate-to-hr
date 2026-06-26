@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Shield, ShieldAlert, FileText, Zap, AlertTriangle, AlertCircle, Crosshair, ChevronRight } from 'lucide-react';
-import api from '../services/api';
+import { resumeAnalyzerAPI } from '../services/api';
 import SEO from '../components/SEO';
 import ToolEditorial from '../components/seo/ToolEditorial';
 import './TruthDetectorPage.css';
@@ -22,7 +22,7 @@ export default function TruthDetectorPage() {
     setResult(null);
 
     try {
-      const res = await api.resumeAnalyzerAPI.truthDetector({ resumeText });
+      const res = await resumeAnalyzerAPI.truthDetector({ resumeText });
       setResult(res.data.data);
     } catch (err) {
       setError(err.response?.data?.message || 'Failed to analyze resume. Please try again.');

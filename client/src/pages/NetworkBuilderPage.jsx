@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import api from '../services/api';
+import { resumeAnalyzerAPI } from '../services/api';
 import SEO from '../components/SEO';
 import ToolEditorial from '../components/seo/ToolEditorial';
 import { Network, Search, Zap, UserPlus, Link, Mail, Copy } from 'lucide-react';
@@ -19,7 +19,7 @@ export default function NetworkBuilderPage() {
     setResult(null);
 
     try {
-      const res = await api.resumeAnalyzerAPI.networkBuilder({ resumeText: targetIndustry, networkingGoal: targetRole });
+      const res = await resumeAnalyzerAPI.networkBuilder({ resumeText: targetIndustry, networkingGoal: targetRole });
       if (res.data?.success) {
         setResult(res.data.data);
       } else {

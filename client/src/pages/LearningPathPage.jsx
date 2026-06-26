@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Target, ArrowRight, CheckCircle, Clock, Zap, AlertCircle, FileText, Map } from 'lucide-react';
-import api from '../services/api';
+import { resumeAnalyzerAPI } from '../services/api';
 import SEO from '../components/SEO';
 import ToolEditorial from '../components/seo/ToolEditorial';
 import './LearningPathPage.css';
@@ -24,7 +24,7 @@ export default function LearningPathPage() {
     setResult(null);
 
     try {
-      const res = await api.learningPath({
+      const res = await resumeAnalyzerAPI.learningPath({
         resumeText,
         targetRole,
         hoursPerWeek
