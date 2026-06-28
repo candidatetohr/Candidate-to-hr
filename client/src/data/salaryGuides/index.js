@@ -160,4 +160,19 @@ export const salaryCategories = [
     role: "Data & AI",
     country: "USA"
   }
+,
+  {
+    id: "database-administrator-salary-guide-2026",
+    title: "Database Administrator Salary Guide 2026: Trends and Insights",
+    description: "Discover the latest Database Administrator salary trends, bonuses, and stocks. Get insights on compensation, demand, and growth prospects in the industry.",
+    role: "Infrastructure",
+    country: "India"
+  },
+  {
+    id: "mobile-app-developer-salary-guide-2026",
+    title: "Mobile App Developer Salary Guide 2026",
+    description: "Get detailed insights into Mobile App Developer salaries in 2026. Find out how much you can earn based on your tech stack (Swift, Kotlin, React Native, Flutter), your location, and your years of experience.",
+    role: "Development",
+    country: "USA"
+  }
 ];

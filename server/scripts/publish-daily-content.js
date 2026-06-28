@@ -107,6 +107,9 @@ async function callAIWithRotation(prompt) {
   for (let i = 0; i < apiKeys.length; i++) {
     const key = apiKeys[i];
     console.log(`[AI Request] Trying API Key ${i + 1}/${apiKeys.length}...`);
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 240000); // 240 seconds timeout
+
     try {
       const response = await fetch(`${NVIDIA_BASE_URL}/chat/completions`, {
         method: 'POST',
@@ -114,6 +117,7 @@ async function callAIWithRotation(prompt) {
           'Content-Type': 'application/json',
           'Authorization': `Bearer ${key}`
         },
+        signal: controller.signal,
         body: JSON.stringify({
           model: MODEL,
           messages: [{ role: "user", content: prompt }],
@@ -121,6 +125,8 @@ async function callAIWithRotation(prompt) {
           max_tokens: 4000,
         })
       });
+
+      clearTimeout(timeoutId);
 
       const data = await response.json();
       if (data.error) {
@@ -131,6 +137,7 @@ async function callAIWithRotation(prompt) {
       }
       throw new Error("Empty response from NVIDIA NIM");
     } catch (err) {
+      clearTimeout(timeoutId);
       console.warn(`⚠️ Warning: API Key ${i + 1} failed: ${err.message}`);
       lastError = err;
     }
@@ -272,27 +279,77 @@ Follow this JSON schema structure EXACTLY:
   },
   "hero": {
     "title": "${selectedRole.name} Resume Examples",
-    "description": "Engaging introduction overview of the SRE/developer resume market, target formats, and ATS standards.",
-    "role": "${selectedRole.name}",
-    "experienceLevel": "Mid-Level"
+    "description": "Engaging introduction overview of the SRE/developer resume market, target formats, and ATS standards."
   },
-  "sections": [
-    { "heading": "Career Overview", "content": "Detailed overview of the ${selectedRole.name} career path, common roles, and ATS standard profiles." },
-    { "heading": "Resume Summary", "content": "Explain what a professional resume summary is and give 3 distinct, keyword-rich examples (fresher, mid-level, senior)." },
-    { "heading": "Skills Section", "content": "Explain how to list technical, soft, and tool skills. Provide a detailed categorization of skills for ${selectedRole.name}." },
-    { "heading": "Work Experience Section", "content": "Detail how to structure experience, bullet formatting, STAR method, and quantifiable achievements." },
-    { "heading": "Projects Section", "content": "Explain project impact on resumes and give 3 detailed projects with metrics." },
-    { "heading": "Certifications Section", "content": "Highlight important certifications that impress recruiters." },
-    { "heading": "ATS Keywords", "content": "Explain how to identify and insert ATS keywords naturally without keyword stuffing." },
-    { "heading": "Recruiter Insights", "content": "Exclusive tips and insights from top hiring managers." },
-    { "heading": "Why This Resume Works", "content": "Explain the formatting, design, and content choices of this ATS template." },
-    { "heading": "Common Resume Mistakes", "content": "List 5 critical resume formatting or content mistakes to avoid." }
+  "score": {
+    "atsScore": 98,
+    "readability": "Excellent",
+    "keywordMatch": "High"
+  },
+  "keywords": [
+    "ATS Keyword 1", "ATS Keyword 2", "ATS Keyword 3", "ATS Keyword 4", "ATS Keyword 5", "ATS Keyword 6", "ATS Keyword 7", "ATS Keyword 8", "ATS Keyword 9", "ATS Keyword 10"
+  ],
+  "mistakes": [
+    "Mistake 1", "Mistake 2", "Mistake 3", "Mistake 4", "Mistake 5"
+  ],
+  "tips": [
+    "Tip 1", "Tip 2", "Tip 3", "Tip 4", "Tip 5", "Tip 6"
+  ],
+  "exampleResume": {
+    "name": "Full Name",
+    "title": "${selectedRole.name}",
+    "summary": "Impactful ATS-optimized professional summary...",
+    "experience": [
+      {
+        "company": "Company Name",
+        "role": "Role Name",
+        "date": "Date Range",
+        "bullets": [
+          "STAR-formatted bullet point 1 with quantifiable metrics",
+          "STAR-formatted bullet point 2 with quantifiable metrics",
+          "STAR-formatted bullet point 3 with quantifiable metrics"
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "Degree Name",
+        "school": "University Name",
+        "date": "Date Range"
+      }
+    ],
+    "skills": "Comma-separated list of technical and soft skills...",
+    "certifications": [
+      "Certification Name 1",
+      "Certification Name 2"
+    ],
+    "projects": [
+      {
+        "name": "Project Name",
+        "description": "Detailed project description highlighting technologies used and metrics/outcomes."
+      }
+    ]
+  },
+  "extendedContent": [
+    {
+      "heading": "Detailed Professional Summary for ${selectedRole.name}",
+      "content": "Detailed guide and instructions on writing an impactful resume summary for this role, with examples."
+    },
+    {
+      "heading": "Resume Breakdown: Why This Resume Works",
+      "content": "Explanation of the formatting, design, and structural choices in the example resume."
+    },
+    {
+      "heading": "Recruiter Insights: What Hiring Managers Look For",
+      "content": "Insights from hiring managers on resume screening for this role, key traits, and common pitfalls."
+    },
+    {
+      "heading": "Industry Skills & Technologies for ${selectedRole.name}",
+      "content": "Deep dive into core technologies, frameworks, and methodologies required for this role in 2026."
+    }
   ],
   "faq": [
     { "q": "Question?", "a": "Answer..." }
-  ],
-  "resources": [
-    "Resource..."
   ]
 }
 
@@ -325,7 +382,7 @@ Follow this JSON schema structure EXACTLY:
   },
   "intro": "Detailed overview of what to expect in the interview stages, preparation strategies, and checklist.",
   "questions": [
-    { "category": "Beginner", "q": "Question?", "a": "Answer..." }
+    { "id": "${selectedRole.id}-q-b-1", "category": "Beginner", "q": "Question?", "a": "Answer..." }
   ],
   "tips": [
     "Tip..."
@@ -342,12 +399,13 @@ Follow this JSON schema structure EXACTLY:
 }
 
 ADDITIONAL RULES:
-1. The "questions" array MUST contain AT LEAST 50 questions with clear, accurate, and detailed answers, distributed across categories: "Beginner" (15 questions), "Intermediate" (15 questions), "Advanced" (10 questions), and "Scenario-Based" (10 questions). Each answer must contain 35-45 words of clear explanation.
+1. The "questions" array MUST contain AT LEAST 50 questions with clear, accurate, and detailed answers, distributed across categories: "Beginner" (15 questions), "Intermediate" (15 questions), "Advanced" (10 questions), and "Scenario-Based" (10 questions). Each answer must contain 32-42 words of clear explanation.
 2. The "faq" section MUST contain at least 10 questions and answers.
-3. The total word count across all fields MUST be between 1800 and 2500 words. Ensure that every question, answer, introduction, tip, mistake, and FAQ is highly descriptive to reach this length.
+3. The total word count across all fields MUST be between 1800 and 2300 words. Keep it within this range to prevent JSON response truncation.
 4. You must naturally embed the following 7 internal links in the content, sections, or resources list using standard Markdown syntax (e.g., [Text](URL)):
 ${internalLinks.map(link => `- ${link}`).join('\n')}
 5. Do not include markdown wraps (no \`\`\`json). Return raw JSON.
+6. Each question object in the "questions" array MUST contain a unique "id" string (e.g., "${selectedRole.id}-q-b-1", "${selectedRole.id}-q-i-1", "${selectedRole.id}-q-a-1", etc.) representing the category and question index.
 `,
 
     'career-guide': `
@@ -389,8 +447,8 @@ Follow this JSON schema structure EXACTLY:
 }
 
 ADDITIONAL RULES:
-1. Ensure the FAQ section contains at least 10 detailed questions and answers.
-2. The total word count across all fields MUST be between 1500 and 2500 words. Make the content extremely detailed and helpful.
+1. Ensure the FAQ section contains at least 10 detailed questions and answers, with each answer being at least 40-50 words.
+2. The total word count across all fields MUST be between 1800 and 2500 words. Make the content extremely detailed and helpful. Each of the 9 sections in the "sections" array must be highly detailed and comprehensive, containing at least 200-250 words of clear, actionable explanation with bullet points and real-world examples.
 3. You must naturally embed the following 7 internal links in the content, sections, or resources list using standard Markdown syntax (e.g., [Text](URL)):
 ${internalLinks.map(link => `- ${link}`).join('\n')}
 4. Do not include markdown wraps (no \`\`\`json). Return raw JSON.
@@ -533,7 +591,7 @@ Follow this JSON schema structure EXACTLY:
 
 ADDITIONAL RULES:
 1. Ensure the FAQ section contains at least 10 detailed questions and answers.
-2. The total word count across all fields MUST be between 1200 and 2000 words. Make all descriptions and strategies extremely thorough and detailed.
+2. The total word count across all fields MUST be between 1500 and 2000 words. Make all descriptions and strategies extremely thorough and detailed. Each learning milestone in the "learningPath" array must be highly detailed, containing at least 150-200 words of thorough explanation and specific tools/topics to master.
 3. You must naturally embed the following 7 internal links in the content, sections, or resources list using standard Markdown syntax (e.g., [Text](URL)):
 ${internalLinks.map(link => `- ${link}`).join('\n')}
 4. Do not include markdown wraps (no \`\`\`json). Return raw JSON.
@@ -661,7 +719,7 @@ ${internalLinks.map(link => `- ${link}`).join('\n')}
           }
         }
         console.log(` - Internal links check: ${presentLinks.length}/7 links present`);
-        if (presentLinks.length < 5) { // Enforce at least 5 links are contextually preserved
+        if (presentLinks.length < 7) { // Enforce at least 7 links are contextually preserved
           throw new Error(`Internal linking check failed: Only ${presentLinks.length}/7 required links are present.`);
         }
 
@@ -716,8 +774,13 @@ ${internalLinks.map(link => `- ${link}`).join('\n')}
           updateIndexFile('roadmap', {
             id: slug,
             title: parsed.seo.title.split('|')[0].trim(),
-            description: parsed.seo.description,
-            topic: selectedRole.roleGroup
+            shortDescription: parsed.hero.shortDescription,
+            category: selectedRole.roleGroup,
+            difficulty: parsed.hero.difficultyLevel || "Medium",
+            duration: parsed.hero.learningDuration || "6 Months",
+            salary: parsed.hero.averageSalary || "$100,000",
+            growth: parsed.hero.growthRate || "+15%",
+            isTrending: false
           });
         }
 

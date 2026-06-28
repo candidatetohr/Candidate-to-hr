@@ -132,5 +132,20 @@ export const interviewCategories = [
     topic: "Data & AI",
     count: 50
   }
+,
+  {
+    id: "database-administrator",
+    title: "Top Database Administrator Interview Questions Guide",
+    description: "Prepare for database administrator interviews with top questions, answers, and tips to succeed in your career as a DBA",
+    topic: "Database",
+    count: 50
+  },
+  {
+    id: "mobile-app-developer",
+    title: "Top Mobile App Developer Interview Questions & Answers 2026",
+    description: "Prepare for your mobile developer interview with our top 50 interview questions and answers, covering iOS, Android, cross-platform frameworks, and scenarios.",
+    topic: "Programming",
+    count: 50
+  }
 ];
 

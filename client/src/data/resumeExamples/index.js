@@ -97,5 +97,18 @@ export const resumeCategories = [
     description: "Optimize your Data Analyst resume with our expert guide, featuring examples, tips, and ATS standards to increase your chances of landing an interview.",
     role: "Data & AI"
   }
+,
+  {
+    id: "database-administrator",
+    title: "Database Administrator Resume Examples",
+    description: "Optimize your Database Administrator resume with our expert example, featuring ATS-optimized keywords, summary, and experience sections, to increase your chances of passing applicant tracking systems and impressing hiring managers.",
+    role: "Infrastructure"
+  },
+  {
+    id: "mobile-app-developer",
+    title: "Mobile App Developer Resume Examples",
+    description: "Optimize your Mobile App Developer resume with our expert guide, featuring templates, key skills, and examples to pass applicant tracking systems.",
+    role: "Development"
+  }
 ];
 

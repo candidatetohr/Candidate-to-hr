@@ -220,15 +220,15 @@ export const roadmapList = [
     isTrending: false,
   },
   {
-    id: "mobile-app-developer",
+    id: "mobile-app-developer-roadmap-2026",
     title: "Mobile App Developer Roadmap 2026",
-    shortDescription: "Create native and cross-platform apps for iOS and Android.",
+    shortDescription: "Follow this expert-structured, step-by-step curriculum to learn mobile development in 2026. Master native languages (Swift, Kotlin) or hybrid frameworks (React Native, Flutter).",
     category: "Development",
     difficulty: "Medium",
     duration: "6 Months",
-    salary: "$115,000",
-    growth: "+21%",
-    isTrending: false,
+    salary: "$118,500",
+    growth: "+18%",
+    isTrending: true,
   },
   {
     id: "game-developer",
@@ -284,5 +284,17 @@ export const roadmapList = [
     salary: "$88,500",
     growth: "+15%",
     isTrending: true,
+  }
+,
+  {
+    id: "database-administrator-roadmap-2026",
+    title: "Database Administrator Roadmap 2026: Expert Career Guidance",
+    shortDescription: "Become a successful Database Administrator with our comprehensive roadmap, featuring expert advice and resources. Learn the skills and strategies required to succeed in this in-demand field.",
+    category: "Infrastructure",
+    difficulty: "Hard",
+    duration: "6 Months",
+    salary: "$110,000",
+    growth: "+20%",
+    isTrending: false
   }
 ];

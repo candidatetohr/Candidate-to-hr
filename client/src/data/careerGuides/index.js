@@ -104,5 +104,20 @@ export const careerGuideCategories = [
     topic: "Data & AI",
     readTime: "10 min read"
   }
+,
+  {
+    id: "how-to-become-database-administrator",
+    title: "How to Become a Database Administrator: Career Guide",
+    description: "Learn how to become a database administrator with our comprehensive guide, including job responsibilities, skills required, and salary expectations.",
+    topic: "Database",
+    readTime: "9 min read"
+  },
+  {
+    id: "how-to-become-mobile-app-developer",
+    title: "How to Become a Mobile App Developer: Career Guide 2026",
+    description: "Learn how to become a successful Mobile App Developer. Explore essential skills, learning roadmaps, career paths, certifications, and salary expectations.",
+    topic: "Development",
+    readTime: "9 min read"
+  }
 ];
 
