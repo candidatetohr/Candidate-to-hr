@@ -118,6 +118,13 @@ export const careerGuideCategories = [
     description: "Learn how to become a successful Mobile App Developer. Explore essential skills, learning roadmaps, career paths, certifications, and salary expectations.",
     topic: "Development",
     readTime: "9 min read"
+  },
+  {
+    id: "how-to-become-product-designer",
+    title: "How to Become a Product Designer in 2026: Complete Career Guide",
+    description: "The definitive guide to becoming a Product Designer. Learn the skills, tools (Figma), UX process, portfolio strategy, salary expectations, and step-by-step learning roadmap.",
+    topic: "Design",
+    readTime: "11 min read"
   }
 ];
 

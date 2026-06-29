@@ -146,6 +146,13 @@ export const interviewCategories = [
     description: "Prepare for your mobile developer interview with our top 50 interview questions and answers, covering iOS, Android, cross-platform frameworks, and scenarios.",
     topic: "Programming",
     count: 50
+  },
+  {
+    id: "golang",
+    title: "Go (Golang) Interview Questions & Answers (2026)",
+    description: "Crack your Golang interview with 50+ real questions covering goroutines, channels, the GMP scheduler, interfaces, memory model, generics, and advanced concurrency patterns.",
+    topic: "Programming",
+    count: 55
   }
 ];
 

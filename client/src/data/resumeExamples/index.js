@@ -109,6 +109,12 @@ export const resumeCategories = [
     title: "Mobile App Developer Resume Examples",
     description: "Optimize your Mobile App Developer resume with our expert guide, featuring templates, key skills, and examples to pass applicant tracking systems.",
     role: "Development"
+  },
+  {
+    id: "generative-ai-engineer",
+    title: "Generative AI Engineer Resume Examples",
+    description: "ATS-optimized Generative AI Engineer resume templates with real LLM project examples, recruiter insights, and keyword strategies for landing roles at OpenAI, Anthropic, and top AI companies.",
+    role: "Data & AI"
   }
 ];
 

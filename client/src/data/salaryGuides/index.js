@@ -174,5 +174,12 @@ export const salaryCategories = [
     description: "Get detailed insights into Mobile App Developer salaries in 2026. Find out how much you can earn based on your tech stack (Swift, Kotlin, React Native, Flutter), your location, and your years of experience.",
     role: "Development",
     country: "USA"
+  },
+  {
+    id: "full-stack-developer-india",
+    title: "Full Stack Developer Salary in India (2026)",
+    description: "Complete 2026 salary guide for Full Stack Developers in India. Detailed breakdown by experience, city, tech stack (MERN, PERN, Java Spring), and top companies including Zepto, CRED, Razorpay, and Freshworks.",
+    role: "Development",
+    country: "India"
   }
 ];

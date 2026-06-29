@@ -296,5 +296,16 @@ export const roadmapList = [
     salary: "$110,000",
     growth: "+20%",
     isTrending: false
+  },
+  {
+    id: "security-engineer",
+    title: "Security Engineer Roadmap 2026",
+    shortDescription: "Master application security, penetration testing, cloud security, and incident response to protect organizations from modern threats.",
+    category: "Security",
+    difficulty: "Hard",
+    duration: "10 Months",
+    salary: "$135,000",
+    growth: "+35%",
+    isTrending: true
   }
 ];
