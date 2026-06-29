@@ -220,6 +220,17 @@ export const roadmapList = [
     isTrending: false,
   },
   {
+    id: "mobile-app-developer",
+    title: "Mobile App Developer Roadmap 2026",
+    shortDescription: "Put software in everyone's pocket. Build apps for iOS and Android using React Native, Flutter, Swift, and Kotlin.",
+    category: "Development",
+    difficulty: "Medium",
+    duration: "6 Months",
+    salary: "$115,000",
+    growth: "+21%",
+    isTrending: true,
+  },
+  {
     id: "mobile-app-developer-roadmap-2026",
     title: "Mobile App Developer Roadmap 2026",
     shortDescription: "Follow this expert-structured, step-by-step curriculum to learn mobile development in 2026. Master native languages (Swift, Kotlin) or hybrid frameworks (React Native, Flutter).",
