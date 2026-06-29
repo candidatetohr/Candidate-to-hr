@@ -51,11 +51,16 @@ export default function InterviewDetail() {
       return [
         ...(data.questions.beginner || []),
         ...(data.questions.intermediate || []),
-        ...(data.questions.advanced || [])
+        ...(data.questions.advanced || []),
+        ...(data.questions.scenarioBased || []),
+        ...(data.questions.scenario || []),
+        ...(data.questions.expert || []),
+        ...(data.questions.practical || [])
       ];
     }
     return [];
   };
+
 
   const allQuestions = getNormalizedQuestions(data);
   const filteredQuestions = allQuestions.filter(q => 

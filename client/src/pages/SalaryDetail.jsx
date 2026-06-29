@@ -31,7 +31,8 @@ export default function SalaryDetail() {
   if (loading) return <div className="p-48 text-center text-secondary">Loading salary data...</div>;
   if (!data) return <div className="p-48 text-center text-secondary">Salary data not found. <Link to="/salary-guides" className="color-primary">Go back</Link></div>;
 
-  const { seo, hero, experience, byCity, topCompanies, futureOutlook, marketAnalysis, careerPath, industryTrends, negotiationTips, certificationsAndSkills, faq, quickLinks } = data;
+  const { seo, hero, experience, byCity, topCompanies, byStack, skillsThatIncreaseSalary, skillsThatIncraseSalary, futureOutlook, marketAnalysis, careerPath, industryTrends, negotiationTips, certificationsAndSkills, faq, quickLinks } = data;
+  const skillsData = skillsThatIncreaseSalary || skillsThatIncraseSalary;
 
   return (
     <div className="sal-detail-page container-standard px-6 py-8">
@@ -144,6 +145,60 @@ export default function SalaryDetail() {
               </table>
             </div>
           </section>
+
+          {byStack && byStack.length > 0 && (
+            <section className="mb-48">
+              <h2 className="text-2xl font-bold mb-24 flex items-center gap-8"><Briefcase className="text-blue-400"/> Salary by Tech Stack</h2>
+              <div className="sal-table-wrapper">
+                <table className="w-full text-left">
+                  <thead>
+                    <tr>
+                      <th>Tech Stack</th>
+                      <th>Avg. Salary</th>
+                      <th>Demand</th>
+                      <th>Notes</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {byStack.map((s, i) => (
+                      <tr key={i}>
+                        <td className="font-bold text-inverse">{s.stack}</td>
+                        <td className="color-warning font-bold">{s.averageSalary}</td>
+                        <td><span className="bg-surface px-2 py-1 rounded text-xs">{s.demandLevel}</span></td>
+                        <td className="text-sm text-secondary">{s.notes}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          )}
+
+          {skillsData && skillsData.length > 0 && (
+            <section className="mb-48">
+              <h2 className="text-2xl font-bold mb-24 flex items-center gap-8"><Award className="text-yellow-400"/> Skills That Increase Salary</h2>
+              <div className="sal-table-wrapper">
+                <table className="w-full text-left">
+                  <thead>
+                    <tr>
+                      <th>Skill</th>
+                      <th>Salary Impact</th>
+                      <th>Why It Matters</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {skillsData.map((s, i) => (
+                      <tr key={i}>
+                        <td className="font-bold text-inverse">{s.skill}</td>
+                        <td className="text-green-400 font-bold">{s.salaryImpact}</td>
+                        <td className="text-sm text-secondary">{s.reason}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          )}
 
           <section className="mb-48 bg-blue-900/20 border border-blue-500/20 p-32">
             <h2 className="text-2xl font-bold mb-16 color-primary">Future Outlook (2026-2028)</h2>
