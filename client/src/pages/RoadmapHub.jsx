@@ -3,19 +3,24 @@ import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
 import { Search, Map, TrendingUp, Briefcase, ChevronRight, BarChart2, X } from 'lucide-react';
 import { roadmapList } from '../data/roadmaps';
+import SearchIntelligence from '../services/SearchIntelligence';
 import './RoadmapHub.css';
 
 export default function RoadmapHub() {
   const [searchTerm, setSearchTerm] = useState('');
   const [activeCategory, setActiveCategory] = useState('All');
+  const [showSuggestions, setShowSuggestions] = useState(false);
 
   const categories = ['All', ...new Set(roadmapList.map(r => r.category))];
 
-  const filteredRoadmaps = roadmapList.filter(roadmap => {
-    const matchesSearch = roadmap.title.toLowerCase().includes(searchTerm.toLowerCase());
-    const matchesCategory = activeCategory === 'All' || roadmap.category === activeCategory;
-    return matchesSearch && matchesCategory;
-  });
+  const baseFiltered = activeCategory === 'All' 
+    ? roadmapList 
+    : roadmapList.filter(r => r.category === activeCategory);
+
+  const filteredRoadmaps = SearchIntelligence.search(searchTerm, baseFiltered);
+
+  const suggestions = SearchIntelligence.getSuggestions(searchTerm);
+  const trendingSearches = SearchIntelligence.getTrending();
 
   const trendingRoadmaps = roadmapList.filter(r => r.isTrending && (activeCategory === 'All' || r.category === activeCategory)).slice(0, 3);
 
@@ -40,14 +45,19 @@ export default function RoadmapHub() {
           </p>
           
           <form className="hub-search-form" onSubmit={(e) => e.preventDefault()}>
-            <div className="hub-search-bar">
+            <div className="hub-search-bar" style={{ position: 'relative' }}>
               <div className="hub-search-bar-input-wrapper">
                 <Search className="search-icon" size={22} />
                 <input 
                   type="text" 
                   placeholder="Search careers (e.g., Software Engineer, Data Scientist)..." 
                   value={searchTerm}
-                  onChange={(e) => setSearchTerm(e.target.value)}
+                  onChange={(e) => {
+                    setSearchTerm(e.target.value);
+                    setShowSuggestions(true);
+                  }}
+                  onFocus={() => setShowSuggestions(true)}
+                  onBlur={() => setTimeout(() => setShowSuggestions(false), 200)}
                   aria-label="Search careers"
                 />
                 {searchTerm && (
@@ -59,6 +69,40 @@ export default function RoadmapHub() {
               <button type="submit" className="hub-search-submit-btn">
                 Search
               </button>
+
+              {/* Autocomplete suggestions panel */}
+              {showSuggestions && suggestions.length > 0 && (
+                <div className="search-autocomplete-dropdown">
+                  {suggestions.map(s => (
+                    <Link 
+                      key={s.id} 
+                      to={`/roadmaps/${s.slug}`} 
+                      className="autocomplete-item"
+                    >
+                      <span className="ac-title">{s.title}</span>
+                      <span className="ac-cat">{s.category}</span>
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            {/* Trending Careers Tags */}
+            <div className="trending-tags-row mt-12 text-sm text-secondary">
+              <span className="font-bold">Trending: </span>
+              {trendingSearches.map(t => (
+                <button 
+                  key={t.id} 
+                  type="button" 
+                  className="trending-tag-btn"
+                  onClick={() => {
+                    const node = roadmapList.find(r => r.slug.includes(t.id) || r.title.toLowerCase().includes(t.id));
+                    setSearchTerm(node ? node.title : t.title);
+                  }}
+                >
+                  {t.title}
+                </button>
+              ))}
             </div>
           </form>
         </div>

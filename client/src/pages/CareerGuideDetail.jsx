@@ -19,6 +19,7 @@ import CareerGraphSidebar from '../components/seo/CareerGraphSidebar';
 import CareerKnowledgeGraphCard from '../components/seo/CareerKnowledgeGraphCard';
 import AIOverviewBox from '../components/seo/AIOverviewBox';
 import FAQAccordion from '../components/seo/FAQAccordion';
+import AIRecommendations from '../components/seo/AIRecommendations';
 
 import './CareerGuideDetail.css';
 
@@ -126,6 +127,8 @@ export default function CareerGuideDetail() {
           <CareerKnowledgeGraphCard roleId={CareerKnowledgeGraph.getBySlug('careerGuide', slug)?.id || slug} />
           
           <FAQAccordion items={faq} />
+
+          <AIRecommendations roleId={CareerKnowledgeGraph.getBySlug('careerGuide', slug)?.id || slug} />
 
           <RelatedResources items={[
             { title: 'Interview Questions', description: `Top interview questions`, url: `/interview-questions/${CareerKnowledgeGraph.getBySlug('careerGuide', slug)?.id || slug}`, icon: '🎤' },

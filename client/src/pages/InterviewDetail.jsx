@@ -19,6 +19,7 @@ import CareerGraphSidebar from '../components/seo/CareerGraphSidebar';
 import CareerKnowledgeGraphCard from '../components/seo/CareerKnowledgeGraphCard';
 import AIOverviewBox from '../components/seo/AIOverviewBox';
 import FAQAccordion from '../components/seo/FAQAccordion';
+import AIRecommendations from '../components/seo/AIRecommendations';
 
 import './InterviewDetail.css';
 
@@ -221,6 +222,8 @@ export default function InterviewDetail() {
           )}
 
           <CareerKnowledgeGraphCard roleId={slug} />
+
+          <AIRecommendations roleId={slug} />
 
           <RelatedResources items={[
             { title: 'Salary Guide', description: `Explore salaries for ${data.hero?.title || 'this role'}`, url: `/salary-guides/${slug}`, icon: '💰' },

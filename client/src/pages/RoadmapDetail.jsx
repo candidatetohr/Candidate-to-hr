@@ -17,6 +17,7 @@ import CareerGraphSidebar from '../components/seo/CareerGraphSidebar';
 import CareerKnowledgeGraphCard from '../components/seo/CareerKnowledgeGraphCard';
 import AIOverviewBox from '../components/seo/AIOverviewBox';
 import FAQAccordion from '../components/seo/FAQAccordion';
+import AIRecommendations from '../components/seo/AIRecommendations';
 
 import './RoadmapDetail.css';
 
@@ -285,6 +286,8 @@ export default function RoadmapDetail() {
           <CareerKnowledgeGraphCard roleId={slug} />
           
           <FAQAccordion items={faq} />
+
+          <AIRecommendations roleId={slug} />
 
           <RelatedResources items={[
             { title: 'Interview Questions', description: `Top interview questions for ${seo.title.split(' Roadmap')[0]}`, url: `/interview-questions/${slug}`, icon: '🎤' },

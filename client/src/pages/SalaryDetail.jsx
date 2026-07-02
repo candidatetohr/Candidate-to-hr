@@ -20,6 +20,7 @@ import CareerGraphSidebar from '../components/seo/CareerGraphSidebar';
 import CareerKnowledgeGraphCard from '../components/seo/CareerKnowledgeGraphCard';
 import AIOverviewBox from '../components/seo/AIOverviewBox';
 import FAQAccordion from '../components/seo/FAQAccordion';
+import AIRecommendations from '../components/seo/AIRecommendations';
 
 import './SalaryDetail.css';
 
@@ -277,6 +278,8 @@ export default function SalaryDetail() {
           <CareerKnowledgeGraphCard roleId={slug.replace('-salary-guide-2026', '').replace('-us', '').replace('-india', '')} />
           
           <FAQAccordion items={faq} />
+
+          <AIRecommendations roleId={slug.replace('-salary-guide-2026', '').replace('-us', '').replace('-india', '')} />
 
           <RelatedResources items={[
             { title: 'Interview Questions', description: `Top interview questions`, url: `/interview-questions/${slug.replace('-salary-guide-2026', '').replace('-us', '').replace('-india', '')}`, icon: '🎤' },

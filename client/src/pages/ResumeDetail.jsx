@@ -19,6 +19,7 @@ import CareerGraphSidebar from '../components/seo/CareerGraphSidebar';
 import CareerKnowledgeGraphCard from '../components/seo/CareerKnowledgeGraphCard';
 import AIOverviewBox from '../components/seo/AIOverviewBox';
 import FAQAccordion from '../components/seo/FAQAccordion';
+import AIRecommendations from '../components/seo/AIRecommendations';
 
 import './ResumeDetail.css';
 
@@ -217,6 +218,8 @@ export default function ResumeDetail() {
           <CareerKnowledgeGraphCard roleId={slug} />
           
           <FAQAccordion items={faq} />
+
+          <AIRecommendations roleId={slug} />
 
         </main>
         
