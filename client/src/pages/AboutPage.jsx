@@ -1,5 +1,5 @@
 import SEO from '../components/SEO';
-import ReactMarkdown from 'react-markdown';
+import SafeMarkdown from '../components/seo/SafeMarkdown';
 import './StaticPage.css';
 
 const DOMAIN = 'https://candidatetohr.online';
@@ -147,7 +147,7 @@ export default function AboutPage() {
       />
       
       <div className="static-content prose">
-        <ReactMarkdown>{markdown}</ReactMarkdown>
+        <SafeMarkdown>{markdown}</SafeMarkdown>
       </div>
     </div>
   );

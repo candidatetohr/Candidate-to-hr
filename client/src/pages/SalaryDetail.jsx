@@ -9,7 +9,7 @@ import { AdBanner, SidebarAd, InlineAd } from '../components/monetization/Ads';
 import { ATSCheckerCTA, MockInterviewCTA } from '../components/cta/PlatformCTAs';
 import { TrendingUp, MapPin, Briefcase, LineChart, Award } from 'lucide-react';
 import AuthorInfo from '../components/seo/AuthorInfo';
-import ReactMarkdown from 'react-markdown';
+import SafeMarkdown from '../components/seo/SafeMarkdown';
 
 // SEO Upgrade Widgets
 import ReadingProgress from '../components/seo/ReadingProgress';
@@ -243,35 +243,35 @@ export default function SalaryDetail() {
           {marketAnalysis && (
             <section className="mb-48 content-long-form">
               <h2 className="text-2xl font-bold mb-16 flex items-center gap-8"><LineChart className="text-green-400"/> Market Analysis</h2>
-              <div className="prose text-secondary"><ReactMarkdown>{marketAnalysis}</ReactMarkdown></div>
+              <div className="prose text-secondary"><SafeMarkdown>{marketAnalysis}</SafeMarkdown></div>
             </section>
           )}
 
           {industryTrends && (
             <section className="mb-48 content-long-form">
               <h2 className="text-2xl font-bold mb-16 flex items-center gap-8"><TrendingUp className="text-blue-400"/> Industry Trends</h2>
-              <div className="prose text-secondary"><ReactMarkdown>{industryTrends}</ReactMarkdown></div>
+              <div className="prose text-secondary"><SafeMarkdown>{industryTrends}</SafeMarkdown></div>
             </section>
           )}
 
           {careerPath && (
             <section className="mb-48 content-long-form">
               <h2 className="text-2xl font-bold mb-16 flex items-center gap-8"><MapPin className="text-purple-400"/> Career Path & Progression</h2>
-              <div className="prose text-secondary"><ReactMarkdown>{careerPath}</ReactMarkdown></div>
+              <div className="prose text-secondary"><SafeMarkdown>{careerPath}</SafeMarkdown></div>
             </section>
           )}
 
           {certificationsAndSkills && (
             <section className="mb-48 content-long-form">
               <h2 className="text-2xl font-bold mb-16 flex items-center gap-8"><Award className="text-yellow-400"/> Certifications & Skills</h2>
-              <div className="prose text-secondary"><ReactMarkdown>{certificationsAndSkills}</ReactMarkdown></div>
+              <div className="prose text-secondary"><SafeMarkdown>{certificationsAndSkills}</SafeMarkdown></div>
             </section>
           )}
 
           {negotiationTips && (
             <section className="mb-48 content-long-form">
               <h2 className="text-2xl font-bold mb-16 flex items-center gap-8"><Briefcase className="text-red-400"/> Salary Negotiation Tips</h2>
-              <div className="prose text-secondary"><ReactMarkdown>{negotiationTips}</ReactMarkdown></div>
+              <div className="prose text-secondary"><SafeMarkdown>{negotiationTips}</SafeMarkdown></div>
             </section>
           )}
 

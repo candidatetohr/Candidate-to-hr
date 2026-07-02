@@ -610,3 +610,84 @@ select:focus-visible,
   top: 0;
   outline: none;
 }
+
+/* ─── Global Responsive Layout & Overflow Prevention ─────────────────────── */
+
+/* 1. Global text wrapping rules */
+p, li, span, a, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  hyphens: auto;
+}
+
+/* 2. Constrain long-form containers */
+.content-long-form {
+  width: 100%;
+  max-width: 850px;
+  margin-inline: auto;
+  padding-inline: clamp(16px, 4vw, 40px);
+  box-sizing: border-box;
+}
+
+/* 3. Fluid typography rules */
+.content-long-form p,
+.content-long-form li {
+  font-size: clamp(16px, 1.1vw, 18px) !important;
+  line-height: 1.75 !important;
+}
+
+/* 4. Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 5. Safe table wrapping */
+table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-collapse: collapse;
+}
+
+/* 6. Code block scroll boundaries */
+pre, code {
+  max-width: 100%;
+  overflow-x: auto;
+  white-space: pre;
+  background: var(--bg-primary);
+  border-radius: 6px;
+}
+
+code {
+  padding: 2px 6px;
+  font-family: monospace;
+}
+
+/* 7. Flex element overflow guards */
+.flex, .flex-col, [class*="flex-"] {
+  min-width: 0;
+}
+.flex-child, .flex > * {
+  min-width: 0;
+}
+
+/* 8. Prose container resets */
+.prose-wrapper {
+  width: 100%;
+}
+.prose-wrapper ul,
+.prose-wrapper ol {
+  padding-left: 24px;
+  margin-bottom: var(--spacing-16);
+}
+.prose-wrapper li {
+  margin-bottom: var(--spacing-8);
+}
+.prose-wrapper a {
+  overflow-wrap: anywhere;
+}
+

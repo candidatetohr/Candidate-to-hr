@@ -1,4 +1,4 @@
-import ReactMarkdown from 'react-markdown';
+import SafeMarkdown from '../components/seo/SafeMarkdown';
 import SEO from '../components/SEO';
 import SchemaMarkup from '../components/seo/SchemaMarkup';
 import './StaticPage.css';
@@ -51,7 +51,7 @@ export default function EditorialPolicyPage() {
         ]}
       />
       <div className="static-content prose">
-        <ReactMarkdown>{markdown}</ReactMarkdown>
+        <SafeMarkdown>{markdown}</SafeMarkdown>
       </div>
     </div>
   );

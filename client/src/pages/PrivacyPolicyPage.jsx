@@ -1,5 +1,5 @@
 import SEO from '../components/SEO';
-import ReactMarkdown from 'react-markdown';
+import SafeMarkdown from '../components/seo/SafeMarkdown';
 import './StaticPage.css';
 
 const markdown = `
@@ -134,7 +134,7 @@ export default function PrivacyPolicyPage() {
       />
       
       <div className="static-content prose">
-        <ReactMarkdown>{markdown}</ReactMarkdown>
+        <SafeMarkdown>{markdown}</SafeMarkdown>
       </div>
     </div>
   );

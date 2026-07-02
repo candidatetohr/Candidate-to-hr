@@ -8,7 +8,7 @@ import RelatedResources from '../components/seo/RelatedResources';
 import { AdBanner, SidebarAd, InlineAd } from '../components/monetization/Ads';
 import { ATSCheckerCTA, MockInterviewCTA } from '../components/cta/PlatformCTAs';
 import AuthorInfo from '../components/seo/AuthorInfo';
-import ReactMarkdown from 'react-markdown';
+import SafeMarkdown from '../components/seo/SafeMarkdown';
 
 // SEO Upgrade Widgets
 import ReadingProgress from '../components/seo/ReadingProgress';
@@ -105,7 +105,7 @@ export default function CareerGuideDetail() {
             <section key={idx} className="mb-48">
               <h2 className="text-3xl font-bold mb-24 text-fuchsia-400">{section.heading}</h2>
               <div className="prose max-w-none prose-lg text-primary">
-                <ReactMarkdown>{section.content}</ReactMarkdown>
+                <SafeMarkdown>{section.content}</SafeMarkdown>
               </div>
               
               {/* Insert inline ad after the 2nd section */}

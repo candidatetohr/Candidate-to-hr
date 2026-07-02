@@ -8,7 +8,7 @@ import { AdBanner, SidebarAd } from '../components/monetization/Ads';
 import { ATSCheckerCTA, ResumeBuilderCTA } from '../components/cta/PlatformCTAs';
 import { CheckCircle, XCircle, AlertTriangle } from 'lucide-react';
 import AuthorInfo from '../components/seo/AuthorInfo';
-import ReactMarkdown from 'react-markdown';
+import SafeMarkdown from '../components/seo/SafeMarkdown';
 
 // SEO Upgrade Widgets
 import ReadingProgress from '../components/seo/ReadingProgress';
@@ -210,7 +210,7 @@ export default function ResumeDetail() {
             <section key={idx} className="mb-48 content-long-form">
               <h2 className="text-2xl font-bold mb-16 text-blue-400">{section.heading}</h2>
               <div className="prose max-w-none text-secondary">
-                <ReactMarkdown>{section.content}</ReactMarkdown>
+                <SafeMarkdown>{section.content}</SafeMarkdown>
               </div>
             </section>
           ))}
