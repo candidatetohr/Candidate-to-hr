@@ -8,6 +8,6 @@ Disallow: /analytics
 Disallow: /profile/
 
 # CandidateToHR — AI Career Intelligence Platform
-Host: https://candidatetohr.online
+Host: candidatetohr.online
 
 Sitemap: https://candidatetohr.online/sitemap.xml

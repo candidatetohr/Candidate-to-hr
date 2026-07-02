@@ -26,7 +26,7 @@ const baseHtml = fs.readFileSync(baseHtmlPath, 'utf8');
 
 const pages = [
   // Static Routes
-  { route: '/', title: 'CandidateToHR — AI-Powered Applicant Tracking System & Career Hub', desc: 'Optimize your resume, discover career roadmaps, and land your dream tech job.', type: 'Organization' },
+  { route: '/', title: 'CandidateToHR — AI-Powered Applicant Tracking System & Career Hub', desc: 'CandidateToHR is an AI-powered career platform offering resume analysis, ATS optimization, interview preparation, salary guides, career roadmaps, skill gap analysis, and AI-powered job search tools.', type: 'Organization' },
   { route: '/about', title: 'About Us | CandidateToHR', desc: 'Learn about CandidateToHR and our mission to revolutionize tech hiring.', type: 'WebPage' },
   { route: '/contact', title: 'Contact | CandidateToHR', desc: 'Get in touch with the CandidateToHR team.', type: 'WebPage' },
   { route: '/privacy', title: 'Privacy Policy | CandidateToHR', desc: 'Read our Privacy Policy.', type: 'WebPage' },
