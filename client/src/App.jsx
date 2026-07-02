@@ -138,6 +138,8 @@ export default function App() {
           
           {/* SEO Hubs */}
           <Route path="/roadmaps" element={<RoadmapHub />} />
+          <Route path="/roadmaps/mobile-app-developer-roadmap-2026" element={<Navigate to="/roadmaps/mobile-app-developer" replace />} />
+          <Route path="/roadmaps/data-analyst-roadmap-2026" element={<Navigate to="/roadmaps/data-analyst" replace />} />
           <Route path="/roadmaps/:slug" element={<RoadmapDetail />} />
           <Route path="/interview-questions" element={<InterviewHub />} />
           <Route path="/interview-questions/:slug" element={<InterviewDetail />} />

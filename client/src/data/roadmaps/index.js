@@ -66,17 +66,6 @@ export const roadmapList = [
     "isTrending": false
   },
   {
-    "id": "data-analyst-roadmap-2026",
-    "title": "Data Analyst Roadmap 2026",
-    "shortDescription": "Data Analysts are the translators who bridge technical database systems and commercial strategy. Learn how to extract, clean, analyze, and visualize data to drive business growth.",
-    "category": "Data & AI",
-    "difficulty": "Easy",
-    "duration": "6 Months",
-    "salary": "$88,500",
-    "growth": "+15%",
-    "isTrending": false
-  },
-  {
     "id": "data-analyst",
     "title": "Data Analyst Roadmap 2026",
     "shortDescription": "Turn raw data into business decisions. The most accessible entry point into tech — no CS degree needed. Master SQL, Tableau, and Python to become an indispensable data analyst.",
@@ -217,17 +206,6 @@ export const roadmapList = [
     "duration": "8 Months",
     "salary": "$135,000",
     "growth": "+40%",
-    "isTrending": false
-  },
-  {
-    "id": "mobile-app-developer-roadmap-2026",
-    "title": "Mobile App Developer Roadmap 2026",
-    "shortDescription": "Follow this expert-structured, step-by-step curriculum to learn mobile development in 2026. Master native languages (Swift, Kotlin) or hybrid frameworks (React Native, Flutter), build portfolio-grade projects, and land your first professional role.",
-    "category": "Design",
-    "difficulty": "Medium to Hard",
-    "duration": "6 Months",
-    "salary": "$118,500",
-    "growth": "+18%",
     "isTrending": false
   },
   {
