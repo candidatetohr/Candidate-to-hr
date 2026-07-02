@@ -10,8 +10,8 @@
   margin: 0 auto;
   padding: 0 24px;
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr 1fr;
-  gap: 48px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 32px;
   margin-bottom: 48px;
 }
 

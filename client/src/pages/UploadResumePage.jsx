@@ -9,6 +9,7 @@ import {
 } from 'lucide-react';
 import toast from 'react-hot-toast';
 import SEO from '../components/SEO';
+import AnalyticsService from '../services/AnalyticsService';
 import './UploadResumePage.css';
 
 export default function UploadResumePage() {
@@ -63,6 +64,7 @@ export default function UploadResumePage() {
       fd.append('notes', form.notes);
       const res = await applicationsAPI.submit(fd);
       setSuccess({ id: res.data.data._id, name: form.candidateName });
+      AnalyticsService.resumeUpload(file.name, 'single');
       toast.success('Resume submitted! AI analysis running... ');
     } catch (err) {
       toast.error(err.response?.data?.message || 'Upload failed. Please try again.');
@@ -79,6 +81,7 @@ export default function UploadResumePage() {
       fd.append('jobId', jobId);
       files.forEach(f => fd.append('resumes', f));
       const res = await applicationsAPI.bulkSubmit(fd);
+      AnalyticsService.resumeUpload(`${files.length} files`, 'bulk');
       toast.success(`${res.data.data.filter(r => r.status === 'submitted').length} resumes submitted! AI analysis running... `);
       navigate(`/jobs/${jobId}`);
     } catch (err) {

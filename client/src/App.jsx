@@ -1,6 +1,7 @@
-import { Suspense, lazy } from 'react';
-import { Routes, Route, Navigate } from 'react-router-dom';
+import { Suspense, lazy, useEffect } from 'react';
+import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { useAuth } from './context/AuthContext';
+import AnalyticsService from './services/AnalyticsService';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import CookieConsent from './components/CookieConsent';
@@ -62,6 +63,13 @@ const AIUsagePolicyPage = lazy(() => import('./pages/AIUsagePolicyPage'));
 const ProgrammaticSalaryPage = lazy(() => import('./pages/ProgrammaticSalaryPage'));
 const ProgrammaticCounterOfferPage = lazy(() => import('./pages/ProgrammaticCounterOfferPage'));
 
+// Trust Center Pages
+const TrustCenterPage = lazy(() => import('./pages/TrustCenterPage'));
+const CookiePolicyPage = lazy(() => import('./pages/CookiePolicyPage'));
+const AccessibilityPage = lazy(() => import('./pages/AccessibilityPage'));
+const SecurityPage = lazy(() => import('./pages/SecurityPage'));
+const FactCheckingPolicyPage = lazy(() => import('./pages/FactCheckingPolicyPage'));
+
 const PageLoader = () => (
   <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: 'calc(100vh - 72px)', background: 'var(--bg-primary)' }}>
     <div className="spinner spinner-lg" />
@@ -88,6 +96,11 @@ const PublicRoute = ({ children }) => {
 
 export default function App() {
   const { user } = useAuth();
+  const location = useLocation();
+
+  useEffect(() => {
+    AnalyticsService.pageView(location.pathname + location.search);
+  }, [location]);
 
   return (
     <>
@@ -150,6 +163,11 @@ export default function App() {
           {/* E-E-A-T policy subpages */}
           <Route path="/editorial-policy" element={<EditorialPolicyPage />} />
           <Route path="/ai-policy" element={<AIUsagePolicyPage />} />
+          <Route path="/trust" element={<TrustCenterPage />} />
+          <Route path="/trust/cookies" element={<CookiePolicyPage />} />
+          <Route path="/trust/accessibility" element={<AccessibilityPage />} />
+          <Route path="/trust/security" element={<SecurityPage />} />
+          <Route path="/trust/fact-checking" element={<FactCheckingPolicyPage />} />
           
           <Route path="*" element={<NotFoundPage />} />
         </Routes>

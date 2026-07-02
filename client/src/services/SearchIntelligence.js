@@ -1,4 +1,5 @@
 import CareerKnowledgeGraph from './CareerKnowledgeGraph';
+import AnalyticsService from './AnalyticsService';
 
 /**
  * Levenshtein distance for fuzzy matching/typo correction
@@ -69,6 +70,15 @@ export const SearchIntelligence = {
     if (!query || query.trim().length === 0) return list;
     
     const cleanQuery = query.toLowerCase().trim();
+    
+    // Log search event (throttled/centralized)
+    if (this._lastLoggedQuery !== cleanQuery) {
+      this._lastLoggedQuery = cleanQuery;
+      clearTimeout(this._searchLogTimeout);
+      this._searchLogTimeout = setTimeout(() => {
+        AnalyticsService.search(cleanQuery, list.length);
+      }, 1000);
+    }
     
     // 1. Exact or substring matching (highest weight)
     const exactMatches = list.filter(item => 

@@ -69,21 +69,28 @@ function Footer() {
           </ul>
         </div>
 
-        {/* Column 5: Legal */}
+        {/* Column 5: Legal & EEAT Trust */}
         <div className="footer-col">
-          <h3>Legal</h3>
+          <h3>Trust &amp; Policies</h3>
           <ul>
+            <li><Link to="/trust">Trust Center Hub</Link></li>
             <li><Link to="/privacy">Privacy Policy</Link></li>
-            <li><Link to="/terms">Terms &amp; Conditions</Link></li>
-            <li><Link to="/disclaimer">Disclaimer &amp; Cookie Policy</Link></li>
+            <li><Link to="/terms">Terms of Service</Link></li>
+            <li><Link to="/editorial-policy">Editorial Standards</Link></li>
+            <li><Link to="/ai-policy">AI Ethics Disclosures</Link></li>
+            <li><Link to="/trust/cookies">Cookie Disclosures</Link></li>
+            <li><Link to="/trust/accessibility">Accessibility Statement</Link></li>
+            <li><Link to="/trust/security">Security Information</Link></li>
+            <li><Link to="/trust/fact-checking">Fact-Checking Policy</Link></li>
           </ul>
         </div>
 
         {/* Column 6: Contact */}
         <div className="footer-col">
-          <h3>Contact</h3>
+          <h3>Support</h3>
           <ul>
             <li><a href="mailto:support@candidatetohr.online">support@candidatetohr.online</a></li>
+            <li><Link to="/contact">Contact Page</Link></li>
           </ul>
         </div>
       </div>

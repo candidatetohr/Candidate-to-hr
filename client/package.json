@@ -7,8 +7,9 @@
     "dev": "vite",
     "sitemap": "node generate-sitemap.js",
     "prebuild": "npm run sitemap",
-    "build": "npm run sitemap && vite build && node inject-seo.js && npm run audit-seo",
+    "build": "npm run sitemap && vite build && node inject-seo.js && npm run audit-seo && npm run audit-quality",
     "audit-seo": "node audit-seo.js",
+    "audit-quality": "node audit-quality.js",
     "lint": "eslint .",
     "preview": "vite preview"
   },
