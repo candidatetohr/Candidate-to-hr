@@ -44,6 +44,29 @@ export default function PortfolioOptimizerPage() {
         title="AI Portfolio Optimizer | CandidateToHR"
         description="Get actionable feedback on your portfolio. Our AI analyzes your UX, content, and visuals to help you convert views into job interviews."
         canonical="/portfolio-optimizer"
+        type="SoftwareApplication"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": ["SoftwareApplication", "WebApplication"],
+          "@id": "https://candidatetohr.online/portfolio-optimizer/#app",
+          "name": "CandidateToHR AI Portfolio Optimizer",
+          "alternateName": "CandidateToHR Portfolio Grader",
+          "url": "https://candidatetohr.online/portfolio-optimizer",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Web",
+          "description": "Get actionable feedback on your portfolio. Our AI analyzes your UX, content, and visuals to help you convert views into job interviews.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "@id": "https://candidatetohr.online/#organization",
+            "name": "CandidateToHR"
+          }
+        }}
       />
 
       <div className="po-page">

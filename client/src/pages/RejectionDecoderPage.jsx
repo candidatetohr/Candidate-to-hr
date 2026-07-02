@@ -43,6 +43,29 @@ export default function RejectionDecoderPage() {
         title="AI Rejection Decoder | CandidateToHR"
         description="Paste your resume and job description to find out exactly why you were rejected. Get brutal, honest feedback and an action plan to fix it."
         canonical="/rejection-decoder"
+        type="SoftwareApplication"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": ["SoftwareApplication", "WebApplication"],
+          "@id": "https://candidatetohr.online/rejection-decoder/#app",
+          "name": "CandidateToHR AI Rejection Decoder",
+          "alternateName": "CandidateToHR Rejection Analyzer",
+          "url": "https://candidatetohr.online/rejection-decoder",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Web",
+          "description": "Paste your resume and job description to find out exactly why you were rejected. Get brutal, honest feedback and an action plan to fix it.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "@id": "https://candidatetohr.online/#organization",
+            "name": "CandidateToHR"
+          }
+        }}
       />
       <div className="container-seo">
         

@@ -10,7 +10,7 @@
   "hero": {
     "title": "How to Negotiate Your Salary in 2026",
     "description": "The average candidate who negotiates earns $7,500 more per year than those who don't. Over a career, that's $300,000. Here's the complete guide to salary negotiation.",
-    "author": "Candidatetohr Expert Team",
+    "author": "CandidateToHR Expert Team",
     "date": "June 2026"
   },
   "sections": [
@@ -20,7 +20,7 @@
     },
     {
       "heading": "Step 1: Do Your Research Before Negotiating",
-      "content": "Never negotiate without data. Your leverage comes from knowing your market value.\n\n**Research tools:**\n- **Levels.fyi**: Best for total compensation at tech companies (includes RSUs, bonuses)\n- **Glassdoor Salaries**: Self-reported salary data by company and role\n- **LinkedIn Salary Insights**: Aggregated data by location and experience level\n- **Payscale**: Good for non-tech roles and smaller companies\n- **Candidatetohr Salary Guides**: Our comprehensive 2026 breakdowns by role and market\n\n**What to research:**\n1. The specific company's salary range for this role level\n2. Competitor companies' ranges (your negotiation leverage)\n3. Your local market rate\n4. The total compensation package (base + bonus + equity + benefits)\n\n*Pro Tip: If you have another offer (even from a company you're less interested in), it's your single most powerful negotiation tool.*"
+      "content": "Never negotiate without data. Your leverage comes from knowing your market value.\n\n**Research tools:**\n- **Levels.fyi**: Best for total compensation at tech companies (includes RSUs, bonuses)\n- **Glassdoor Salaries**: Self-reported salary data by company and role\n- **LinkedIn Salary Insights**: Aggregated data by location and experience level\n- **Payscale**: Good for non-tech roles and smaller companies\n- **CandidateToHR Salary Guides**: Our comprehensive 2026 breakdowns by role and market\n\n**What to research:**\n1. The specific company's salary range for this role level\n2. Competitor companies' ranges (your negotiation leverage)\n3. Your local market rate\n4. The total compensation package (base + bonus + equity + benefits)\n\n*Pro Tip: If you have another offer (even from a company you're less interested in), it's your single most powerful negotiation tool.*"
     },
     {
       "heading": "Step 2: Never Give the First Number",
@@ -41,9 +41,9 @@
   ],
   "resources": [
     "Levels.fyi — Real total compensation data for tech companies",
-    "Candidatetohr Salary Guides — Market rate research by role and location",
+    "CandidateToHR Salary Guides — Market rate research by role and location",
     "Glassdoor — Company-specific salary and interview review data",
-    "Candidatetohr Resume Analyzer — Ensure your resume justifies your target salary"
+    "CandidateToHR Resume Analyzer — Ensure your resume justifies your target salary"
   ],
   "faq": [
     {

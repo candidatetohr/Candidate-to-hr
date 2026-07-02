@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import { Helmet } from 'react-helmet-async';
 import { useParams, Link } from 'react-router-dom';
+import SEO from '../components/SEO';
 import SchemaMarkup from '../components/seo/SchemaMarkup';
 import Breadcrumbs from '../components/seo/Breadcrumbs';
 import QuickLinks from '../components/seo/QuickLinks';
@@ -9,6 +9,17 @@ import { AdBanner, InlineAd, SidebarAd } from '../components/monetization/Ads';
 import { MockInterviewCTA } from '../components/cta/PlatformCTAs';
 import { Eye, EyeOff, Search, X } from 'lucide-react';
 import AuthorInfo from '../components/seo/AuthorInfo';
+
+// SEO Upgrade Widgets
+import ReadingProgress from '../components/seo/ReadingProgress';
+import TableOfContents from '../components/seo/TableOfContents';
+import ShareButtons from '../components/seo/ShareButtons';
+import BackToTop from '../components/seo/BackToTop';
+import CareerGraphSidebar from '../components/seo/CareerGraphSidebar';
+import CareerKnowledgeGraphCard from '../components/seo/CareerKnowledgeGraphCard';
+import AIOverviewBox from '../components/seo/AIOverviewBox';
+import FAQAccordion from '../components/seo/FAQAccordion';
+
 import './InterviewDetail.css';
 
 export default function InterviewDetail() {
@@ -109,31 +120,20 @@ export default function InterviewDetail() {
 
   return (
     <div className="int-detail-page container-standard px-6 py-8">
-      <Helmet>
-        <title>{data.seo?.title || data.hero.title}</title>
-        <meta name="description" content={data.seo?.description || data.hero.description} />
-        {data.seo?.keywords && <meta name="keywords" content={data.seo.keywords} />}
-        <link rel="canonical" href={`https://candidatetohr.online/interview-questions/${slug}`} />
-        <meta property="og:url" content={`https://candidatetohr.online/interview-questions/${slug}`} />
-        <meta property="og:title" content={data.seo?.ogTitle || data.hero.title} />
-        <meta property="og:description" content={data.seo?.ogDescription || data.hero.description} />
-        {data.faq && data.faq.length > 0 && (
-          <script type="application/ld+json">
-            {JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              "mainEntity": data.faq.map(f => ({
-                "@type": "Question",
-                "name": f.q,
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": f.a
-                }
-              }))
-            })}
-          </script>
-        )}
-      </Helmet>
+      <ReadingProgress />
+      <SEO
+        title={data.seo?.title || data.hero.title}
+        description={data.seo?.description || data.hero.description}
+        canonical={`/interview-questions/${slug}`}
+      />
+      <SchemaMarkup
+        type="BreadcrumbList"
+        data={[
+          { name: 'Home', url: '/' },
+          { name: 'Interview Prep', url: '/interview-questions' },
+          { name: data.hero.title, url: `/interview-questions/${slug}` }
+        ]}
+      />
       <SchemaMarkup type="FAQPage" data={allQuestions} />
       
       <Breadcrumbs />
@@ -144,6 +144,7 @@ export default function InterviewDetail() {
         <p className="text-lg text-secondary">{data.hero.description}</p>
         
         <AuthorInfo date={data.hero.date} author={data.hero.author} />
+        <ShareButtons title={data.seo?.title || data.hero.title} />
 
         <div className="mt-24 flex items-center justify-center gap-16 pb-32 border-b border-default">
           <label className="flex items-center gap-8 bg-card px-16 py-8 cursor-pointer border border-default" style={{borderRadius: 'var(--radius-full)'}}>
@@ -164,6 +165,17 @@ export default function InterviewDetail() {
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 mt-32">
         <main className="lg:col-span-2">
+          <TableOfContents contentSelector="main" />
+          
+          <AIOverviewBox
+            definition={data.hero.description}
+            quickAnswer={`Practice ${allQuestions.length} top selected interview questions. Check your skills with our interactive tools.`}
+            stats={{
+              "Total Questions": allQuestions.length,
+              "Hiring Outlook": "Stable"
+            }}
+            takeaways={allQuestions.slice(0, 6).map(q => q.q)}
+          />
           <div className="mb-24">
             <div className="int-search-bar">
               <Search className="search-icon" size={20} />
@@ -208,6 +220,8 @@ export default function InterviewDetail() {
             </div>
           )}
 
+          <CareerKnowledgeGraphCard roleId={slug} />
+
           <RelatedResources items={[
             { title: 'Salary Guide', description: `Explore salaries for ${data.hero?.title || 'this role'}`, url: `/salary-guides/${slug}`, icon: '💰' },
             { title: 'Learning Roadmap', description: `Step-by-step career path`, url: `/roadmaps/${slug}`, icon: '🗺️' },
@@ -218,10 +232,10 @@ export default function InterviewDetail() {
         </main>
         
         <aside className="space-y-6">
-          <MockInterviewCTA />
-          <SidebarAd />
+          <CareerGraphSidebar currentType="interview" currentSlug={slug} />
         </aside>
       </div>
+      <BackToTop />
     </div>
   );
 }

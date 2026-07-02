@@ -1,0 +1,42 @@
+.script-container-box {
+  background: rgba(255, 255, 255, 0.015);
+  border: 1px solid var(--border-default);
+  border-radius: 8px;
+  padding: 24px;
+  margin: 16px 0;
+  position: relative;
+}
+
+.script-container-box::before {
+  content: "SCRIPT";
+  position: absolute;
+  top: -9px;
+  left: 16px;
+  background: var(--bg-primary);
+  padding: 0 8px;
+  font-size: 0.65rem;
+  font-weight: 800;
+  color: var(--primary-light);
+  border: 1px solid var(--border-default);
+  border-radius: 4px;
+}
+
+.script-container-box.email::before {
+  content: "EMAIL DRAFT";
+}
+
+.script-text {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--text-primary);
+  font-style: italic;
+}
+
+.email-pre {
+  white-space: pre-wrap;
+  font-family: var(--font-mono, monospace);
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin: 0;
+}

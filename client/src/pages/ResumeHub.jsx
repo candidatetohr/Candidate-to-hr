@@ -18,8 +18,8 @@ export default function ResumeHub() {
   return (
     <div className="hub-page">
       <SEO 
-        title="ATS-Friendly Resume Examples & Templates"
-        description="Browse our library of ATS-optimized resume examples for software engineers, data scientists, and product managers."
+        title="ATS-Friendly Resume Examples & Templates | CandidateToHR"
+        description="Browse CandidateToHR's library of ATS-optimized resume examples for software engineers, data scientists, product managers, and 15+ more tech roles."
         canonical="/resume-examples"
         type="CollectionPage"
       />

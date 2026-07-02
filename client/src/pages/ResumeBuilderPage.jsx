@@ -48,6 +48,28 @@ export default function ResumeBuilderPage() {
         description="Turn your messy notes into a perfect, ATS-optimized resume. Our AI Resume Builder structures your experience and skills instantly."
         canonical="/resume-builder"
         type="SoftwareApplication"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": ["SoftwareApplication", "WebApplication"],
+          "@id": "https://candidatetohr.online/resume-builder/#app",
+          "name": "CandidateToHR AI Resume Builder",
+          "alternateName": "CandidateToHR CV Builder",
+          "url": "https://candidatetohr.online/resume-builder",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Web",
+          "description": "Turn your messy notes into a perfect, ATS-optimized resume. Our AI Resume Builder structures your experience and skills instantly.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "@id": "https://candidatetohr.online/#organization",
+            "name": "CandidateToHR"
+          }
+        }}
       />
       <div className="rb-bg">
         <div className="rb-orb rb-orb-1" />

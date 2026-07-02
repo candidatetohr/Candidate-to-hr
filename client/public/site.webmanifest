@@ -1,0 +1,35 @@
+{
+  "name": "CandidateToHR",
+  "short_name": "CandidateToHR",
+  "description": "CandidateToHR is an AI-powered career intelligence platform helping students and professionals improve resumes, prepare for interviews, discover career roadmaps, and optimize ATS scores.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#111827",
+  "theme_color": "#111827",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en-US",
+  "categories": ["career", "education", "productivity"],
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/og-image.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "label": "CandidateToHR AI Career Intelligence Platform"
+    }
+  ]
+}

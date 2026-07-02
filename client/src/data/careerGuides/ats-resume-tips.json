@@ -10,7 +10,7 @@
   "hero": {
     "title": "How to Beat the ATS in 2026",
     "description": "Applicant Tracking Systems auto-reject 75% of resumes. Most candidates never know why they didn't hear back. This guide explains how ATS works and exactly what to do to pass it.",
-    "author": "Candidatetohr Expert Team",
+    "author": "CandidateToHR Expert Team",
     "date": "June 2026"
   },
   "sections": [
@@ -24,7 +24,7 @@
     },
     {
       "heading": "The Keyword Strategy: How to Match the Job Description",
-      "content": "ATS systems are keyword-matching engines at their core. The higher your keyword match rate, the higher your score.\n\n**Step-by-step keyword optimization:**\n\n1. **Paste the job description** into a word cloud tool (WordArt, Wordle). The biggest words are the most important keywords.\n2. **Identify the top 10-15 keywords**: skills, tools, certifications, and methodologies\n3. **Match them exactly** — if they say 'React.js', don't write 'ReactJS'. If they say 'Agile methodologies', use that exact phrase.\n4. **Naturally incorporate** keywords throughout your resume — in your summary, experience bullets, and skills section\n5. **Don't keyword-stuff** — adding invisible white text keywords is unethical and companies are wise to it\n\nUsing Candidatetohr's resume analyzer, you can see your keyword match rate instantly against any job description.\n\n*Pro Tip: A 65%+ keyword match rate is the target. At 80%+, you're in the top 5% of applicants.*"
+      "content": "ATS systems are keyword-matching engines at their core. The higher your keyword match rate, the higher your score.\n\n**Step-by-step keyword optimization:**\n\n1. **Paste the job description** into a word cloud tool (WordArt, Wordle). The biggest words are the most important keywords.\n2. **Identify the top 10-15 keywords**: skills, tools, certifications, and methodologies\n3. **Match them exactly** — if they say 'React.js', don't write 'ReactJS'. If they say 'Agile methodologies', use that exact phrase.\n4. **Naturally incorporate** keywords throughout your resume — in your summary, experience bullets, and skills section\n5. **Don't keyword-stuff** — adding invisible white text keywords is unethical and companies are wise to it\n\nUsing CandidateToHR's resume analyzer, you can see your keyword match rate instantly against any job description.\n\n*Pro Tip: A 65%+ keyword match rate is the target. At 80%+, you're in the top 5% of applicants.*"
     },
     {
       "heading": "The Correct Resume Structure for ATS",
@@ -40,8 +40,8 @@
     }
   ],
   "resources": [
-    "Candidatetohr ATS Resume Analyzer — Free instant ATS score and keyword analysis",
-    "Candidatetohr Live Resume Editor — Build an ATS-optimized resume in minutes",
+    "CandidateToHR ATS Resume Analyzer — Free instant ATS score and keyword analysis",
+    "CandidateToHR Live Resume Editor — Build an ATS-optimized resume in minutes",
     "Jobscan.co — Alternative ATS keyword matching tool",
     "Google Docs — Best free tool for creating ATS-compatible resumes"
   ],

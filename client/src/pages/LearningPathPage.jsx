@@ -43,6 +43,29 @@ export default function LearningPathPage() {
         title="AI Learning Path Generator | CandidateToHR"
         description="Generate a personalized, step-by-step learning path to bridge the gap between your current skills and your dream job. Master the right tools faster."
         canonical="/learning-path"
+        type="SoftwareApplication"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": ["SoftwareApplication", "WebApplication"],
+          "@id": "https://candidatetohr.online/learning-path/#app",
+          "name": "CandidateToHR AI Learning Path Generator",
+          "alternateName": "CandidateToHR Custom Curriculum Builder",
+          "url": "https://candidatetohr.online/learning-path",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Web",
+          "description": "Generate a personalized, step-by-step learning path to bridge the gap between your current skills and your dream job. Master the right tools faster.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "@id": "https://candidatetohr.online/#organization",
+            "name": "CandidateToHR"
+          }
+        }}
       />
       <div className="lp-container">
         

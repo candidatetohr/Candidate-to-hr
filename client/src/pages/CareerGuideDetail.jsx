@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import { Helmet } from 'react-helmet-async';
 import { useParams, Link } from 'react-router-dom';
+import SEO from '../components/SEO';
 import SchemaMarkup from '../components/seo/SchemaMarkup';
 import Breadcrumbs from '../components/seo/Breadcrumbs';
 import QuickLinks from '../components/seo/QuickLinks';
@@ -9,6 +9,17 @@ import { AdBanner, SidebarAd, InlineAd } from '../components/monetization/Ads';
 import { ATSCheckerCTA, MockInterviewCTA } from '../components/cta/PlatformCTAs';
 import AuthorInfo from '../components/seo/AuthorInfo';
 import ReactMarkdown from 'react-markdown';
+
+// SEO Upgrade Widgets
+import ReadingProgress from '../components/seo/ReadingProgress';
+import TableOfContents from '../components/seo/TableOfContents';
+import ShareButtons from '../components/seo/ShareButtons';
+import BackToTop from '../components/seo/BackToTop';
+import CareerGraphSidebar from '../components/seo/CareerGraphSidebar';
+import CareerKnowledgeGraphCard from '../components/seo/CareerKnowledgeGraphCard';
+import AIOverviewBox from '../components/seo/AIOverviewBox';
+import FAQAccordion from '../components/seo/FAQAccordion';
+
 import './CareerGuideDetail.css';
 
 export default function CareerGuideDetail() {
@@ -34,32 +45,35 @@ export default function CareerGuideDetail() {
 
   return (
     <div className="guide-detail-page container-standard px-6 py-8">
-      <Helmet>
-        <title>{seo.title}</title>
-        <meta name="description" content={seo.description} />
-        {seo.keywords && <meta name="keywords" content={seo.keywords} />}
-        <link rel="canonical" href={`https://candidatetohr.online/career-guides/${slug}`} />
-        <meta property="og:url" content={`https://candidatetohr.online/career-guides/${slug}`} />
-        <meta property="og:title" content={seo.ogTitle || seo.title} />
-        <meta property="og:description" content={seo.ogDescription || seo.description} />
-        {data.faq && data.faq.length > 0 && (
-          <script type="application/ld+json">
-            {JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              "mainEntity": data.faq.map(f => ({
-                "@type": "Question",
-                "name": f.q,
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": f.a
-                }
-              }))
-            })}
-          </script>
-        )}
-      </Helmet>
-      <SchemaMarkup type="Article" data={{ title: seo.title, description: seo.description }} />
+      <ReadingProgress />
+      <SEO
+        title={seo.title}
+        description={seo.description}
+        canonical={`/career-guides/${slug}`}
+      />
+      <SchemaMarkup
+        type="BreadcrumbList"
+        data={[
+          { name: 'Home', url: '/' },
+          { name: 'Career Guides', url: '/career-guides' },
+          { name: hero.title, url: `/career-guides/${slug}` }
+        ]}
+      />
+      <SchemaMarkup
+        type="Article"
+        data={{
+          title: seo.title,
+          description: seo.description,
+          url: `https://candidatetohr.online/career-guides/${slug}`,
+          datePublished: hero.date || '2026-01-01'
+        }}
+      />
+      {faq && faq.length > 0 && (
+        <SchemaMarkup
+          type="FAQPage"
+          data={faq}
+        />
+      )}
       <Breadcrumbs />
       {quickLinks && <QuickLinks links={quickLinks} />}
 
@@ -67,12 +81,24 @@ export default function CareerGuideDetail() {
         <h1 className="text-5xl font-bold mt-24 mb-24 leading-tight">{hero.title}</h1>
         <p className="text-xl text-secondary mb-24">{hero.description}</p>
         <AuthorInfo date={hero.date} author={hero.author} />
+        <ShareButtons title={seo.title} />
       </header>
 
       <AdBanner />
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-48 mt-48">
         <main className="lg:col-span-2 article-content">
+          <TableOfContents contentSelector="main" />
+          
+          <AIOverviewBox
+            definition={hero.description}
+            quickAnswer={`Learn how to establish a successful career route. Get expert advice and step-by-step guidance.`}
+            stats={{
+              "Guide Type": "Career Deep Dive",
+              "Hiring Demand": "High Growth"
+            }}
+            takeaways={sections.map(s => s.heading)}
+          />
           
           {sections.map((section, idx) => (
             <section key={idx} className="mb-48">
@@ -97,36 +123,23 @@ export default function CareerGuideDetail() {
             </section>
           )}
 
-          {faq && faq.length > 0 && (
-            <section className="mt-48 mb-48">
-              <h2 className="text-2xl font-bold mb-16">Frequently Asked Questions</h2>
-              <div className="space-y-6">
-                {faq.map((item, idx) => (
-                  <div key={idx} className="bg-surface p-6 border border-default rounded">
-                    <h3 className="font-bold text-lg mb-2 color-primary">{item.q}</h3>
-                    <p className="text-secondary">{item.a}</p>
-                  </div>
-                ))}
-              </div>
-            </section>
-          )}
+          <CareerKnowledgeGraphCard roleId={CareerKnowledgeGraph.getBySlug('careerGuide', slug)?.id || slug} />
+          
+          <FAQAccordion items={faq} />
 
           <RelatedResources items={[
-            { title: 'Interview Questions', description: `Top interview questions`, url: `/interview-questions/${slug}`, icon: '🎤' },
-            { title: 'Learning Roadmap', description: `Step-by-step career path`, url: `/roadmaps/${slug}`, icon: '🗺️' },
-            { title: 'Salary Guide', description: `Explore salary data`, url: `/salary-guides/${slug}`, icon: '💰' }
+            { title: 'Interview Questions', description: `Top interview questions`, url: `/interview-questions/${CareerKnowledgeGraph.getBySlug('careerGuide', slug)?.id || slug}`, icon: '🎤' },
+            { title: 'Learning Roadmap', description: `Step-by-step career path`, url: `/roadmaps/${CareerKnowledgeGraph.getBySlug('careerGuide', slug)?.id || slug}`, icon: '🗺️' },
+            { title: 'Salary Guide', description: `Explore salary data`, url: `/salary-guides/${CareerKnowledgeGraph.getBySlug('careerGuide', slug)?.id || slug}`, icon: '💰' }
           ]} />
 
         </main>
         
         <aside className="space-y-8">
-          <div className="sticky top-24 space-y-8">
-            <ATSCheckerCTA />
-            <SidebarAd />
-            <MockInterviewCTA />
-          </div>
+          <CareerGraphSidebar currentType="careerGuide" currentSlug={slug} />
         </aside>
       </div>
+      <BackToTop />
     </div>
   );
 }

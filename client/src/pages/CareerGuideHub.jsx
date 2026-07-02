@@ -19,8 +19,8 @@ export default function CareerGuideHub() {
   return (
     <div className="hub-page">
       <SEO 
-        title="Tech Career Guides & Job Search Advice"
-        description="Expert career guides to help you navigate your tech career. Learn how to negotiate salary, pass interviews, and build a strong portfolio."
+        title="Career Guides & Job Search Resources | CandidateToHR"
+        description="CandidateToHR's expert career guides covering ATS optimization, salary negotiation, interview prep, and how to break into top tech roles in 2026."
         canonical="/career-guides"
         type="CollectionPage"
       />

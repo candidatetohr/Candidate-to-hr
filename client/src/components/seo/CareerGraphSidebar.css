@@ -1,0 +1,226 @@
+.career-graph-sidebar {
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-lg, 12px);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  position: sticky;
+  top: 96px;
+  height: fit-content;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.15);
+}
+
+.sidebar-header-card {
+  border-bottom: 1px solid var(--border-default);
+  padding-bottom: 16px;
+}
+
+.category-tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--primary-light);
+  letter-spacing: 0.05em;
+  margin-bottom: 6px;
+}
+
+.sidebar-career-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1.25;
+  margin: 0 0 4px 0;
+}
+
+.sidebar-description-helper {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.stats-grid-sidebar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.sidebar-stat-box {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-default);
+  border-radius: 8px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.stat-icon-color {
+  flex-shrink: 0;
+}
+
+.stat-icon-color.text-green {
+  color: #10b981;
+}
+
+.stat-icon-color.text-purple {
+  color: #a855f7;
+}
+
+.stat-label-sub {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.stat-value-sub {
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.stat-value-sub.text-green {
+  color: #10b981;
+}
+
+.stat-value-sub.text-purple {
+  color: #b57df5;
+}
+
+.section-title-sub {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0 0 12px 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border-left: 2px solid var(--primary-light);
+  padding-left: 8px;
+}
+
+.cluster-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cluster-link-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  transition: all 0.2s ease-in-out;
+  border: 1px solid transparent;
+}
+
+.cluster-link-item:hover {
+  background: rgba(79, 142, 247, 0.05);
+  color: var(--primary-light);
+}
+
+.cluster-link-item.active {
+  background: rgba(79, 142, 247, 0.1);
+  color: var(--primary-light);
+  font-weight: 700;
+  border-color: rgba(79, 142, 247, 0.2);
+}
+
+.link-icon-emoji {
+  font-size: 1.1rem;
+}
+
+.skills-badge-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.skill-badge-item {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-default);
+  padding: 4px 10px;
+  border-radius: 9999px;
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.cert-list-sidebar {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cert-list-item {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  position: relative;
+  padding-left: 12px;
+  line-height: 1.4;
+}
+
+.cert-list-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--primary-light);
+}
+
+.related-careers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.related-career-link {
+  background: rgba(255, 255, 255, 0.01);
+  border: 1px solid var(--border-default);
+  border-radius: 8px;
+  padding: 10px 14px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.2s ease-in-out;
+}
+
+.related-career-link:hover {
+  background: rgba(255, 255, 255, 0.03);
+  border-color: var(--primary-light);
+}
+
+.rel-title {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.rel-category {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+
+@media (max-width: 991px) {
+  .career-graph-sidebar {
+    position: static;
+    margin-top: 32px;
+  }
+}

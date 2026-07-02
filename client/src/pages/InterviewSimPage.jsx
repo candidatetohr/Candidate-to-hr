@@ -188,6 +188,28 @@ export default function InterviewSimPage() {
         description="Practice for your next job interview with our AI Interview Simulator. Featuring real-time voice recognition and instant grading to help you land the job."
         canonical="/interview-sim"
         type="SoftwareApplication"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": ["SoftwareApplication", "WebApplication"],
+          "@id": "https://candidatetohr.online/interview-sim/#app",
+          "name": "CandidateToHR AI Mock Interview Simulator",
+          "alternateName": "CandidateToHR AI Interview Practice",
+          "url": "https://candidatetohr.online/interview-sim",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Web",
+          "description": "Practice for your next job interview with our AI Interview Simulator. Featuring real-time voice recognition and instant grading to help you land the job.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "@id": "https://candidatetohr.online/#organization",
+            "name": "CandidateToHR"
+          }
+        }}
       />
       
       <div className="sim-bg"><div className="sim-orb sim-orb-1" /><div className="sim-orb sim-orb-2" /></div>

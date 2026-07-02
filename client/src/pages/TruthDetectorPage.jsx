@@ -55,6 +55,29 @@ export default function TruthDetectorPage() {
         title="AI Truth Detector | CandidateToHR"
         description="See if your resume passes the BS test. Our AI acts as a cynical recruiter, flagging exaggerated claims and predicting exact interview interrogation questions."
         canonical="/truth-detector"
+        type="SoftwareApplication"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": ["SoftwareApplication", "WebApplication"],
+          "@id": "https://candidatetohr.online/truth-detector/#app",
+          "name": "CandidateToHR AI Truth Detector",
+          "alternateName": "CandidateToHR Resume Truth Checker",
+          "url": "https://candidatetohr.online/truth-detector",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Web",
+          "description": "See if your resume passes the BS test. Our AI acts as a cynical recruiter, flagging exaggerated claims and predicting exact interview interrogation questions.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "@id": "https://candidatetohr.online/#organization",
+            "name": "CandidateToHR"
+          }
+        }}
       />
       <div className="container-seo">
         

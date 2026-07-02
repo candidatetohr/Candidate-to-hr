@@ -45,6 +45,29 @@ export default function ProbabilityEnginePage() {
         title="AI Placement Probability Engine | CandidateToHR"
         description="Calculate your exact statistical probability of landing your target role. Get salary estimates and identify your biggest blockers."
         canonical="/placement-probability"
+        type="SoftwareApplication"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": ["SoftwareApplication", "WebApplication"],
+          "@id": "https://candidatetohr.online/placement-probability/#app",
+          "name": "CandidateToHR AI Placement Probability Engine",
+          "alternateName": "CandidateToHR Placement Engine",
+          "url": "https://candidatetohr.online/placement-probability",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Web",
+          "description": "Calculate your exact statistical probability of landing your target role. Get salary estimates and identify your biggest blockers.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "@id": "https://candidatetohr.online/#organization",
+            "name": "CandidateToHR"
+          }
+        }}
       />
       <div className="prob-container">
         

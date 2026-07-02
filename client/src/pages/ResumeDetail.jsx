@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import { Helmet } from 'react-helmet-async';
 import { useParams, Link } from 'react-router-dom';
+import SEO from '../components/SEO';
 import SchemaMarkup from '../components/seo/SchemaMarkup';
 import Breadcrumbs from '../components/seo/Breadcrumbs';
 import QuickLinks from '../components/seo/QuickLinks';
@@ -9,6 +9,17 @@ import { ATSCheckerCTA, ResumeBuilderCTA } from '../components/cta/PlatformCTAs'
 import { CheckCircle, XCircle, AlertTriangle } from 'lucide-react';
 import AuthorInfo from '../components/seo/AuthorInfo';
 import ReactMarkdown from 'react-markdown';
+
+// SEO Upgrade Widgets
+import ReadingProgress from '../components/seo/ReadingProgress';
+import TableOfContents from '../components/seo/TableOfContents';
+import ShareButtons from '../components/seo/ShareButtons';
+import BackToTop from '../components/seo/BackToTop';
+import CareerGraphSidebar from '../components/seo/CareerGraphSidebar';
+import CareerKnowledgeGraphCard from '../components/seo/CareerKnowledgeGraphCard';
+import AIOverviewBox from '../components/seo/AIOverviewBox';
+import FAQAccordion from '../components/seo/FAQAccordion';
+
 import './ResumeDetail.css';
 
 export default function ResumeDetail() {
@@ -34,32 +45,35 @@ export default function ResumeDetail() {
 
   return (
     <div className="res-detail-page container-standard px-6 py-8">
-      <Helmet>
-        <title>{seo.title}</title>
-        <meta name="description" content={seo.description} />
-        {seo.keywords && <meta name="keywords" content={seo.keywords} />}
-        <link rel="canonical" href={`https://candidatetohr.online/resume-examples/${slug}`} />
-        <meta property="og:url" content={`https://candidatetohr.online/resume-examples/${slug}`} />
-        <meta property="og:title" content={seo.ogTitle || seo.title} />
-        <meta property="og:description" content={seo.ogDescription || seo.description} />
-        {data.faq && data.faq.length > 0 && (
-          <script type="application/ld+json">
-            {JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              "mainEntity": data.faq.map(f => ({
-                "@type": "Question",
-                "name": f.q,
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": f.a
-                }
-              }))
-            })}
-          </script>
-        )}
-      </Helmet>
-      <SchemaMarkup type="Article" data={{ title: seo.title, description: seo.description }} />
+      <ReadingProgress />
+      <SEO
+        title={seo.title}
+        description={seo.description}
+        canonical={`/resume-examples/${slug}`}
+      />
+      <SchemaMarkup
+        type="BreadcrumbList"
+        data={[
+          { name: 'Home', url: '/' },
+          { name: 'Resume Examples', url: '/resume-examples' },
+          { name: hero.title, url: `/resume-examples/${slug}` }
+        ]}
+      />
+      <SchemaMarkup
+        type="Article"
+        data={{
+          title: seo.title,
+          description: seo.description,
+          url: `https://candidatetohr.online/resume-examples/${slug}`,
+          datePublished: hero.date || '2026-01-01'
+        }}
+      />
+      {faq && faq.length > 0 && (
+        <SchemaMarkup
+          type="FAQPage"
+          data={faq}
+        />
+      )}
       <Breadcrumbs />
       {quickLinks && <QuickLinks links={quickLinks} />}
 
@@ -67,12 +81,25 @@ export default function ResumeDetail() {
         <h1 className="text-4xl font-bold mt-24 mb-16">{hero.title}</h1>
         <p className="text-lg text-secondary">{hero.description}</p>
         <AuthorInfo date={hero.date} author={hero.author} />
+        <ShareButtons title={seo.title} />
       </header>
 
       <AdBanner />
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 mt-32">
         <main className="lg:col-span-2">
+          <TableOfContents contentSelector="main" />
+          
+          <AIOverviewBox
+            definition={hero.description}
+            quickAnswer={`Get a perfect ATS score of ${score.atsScore}/100. Incorporate our keyword suggestions and avoid common resume mistakes.`}
+            stats={{
+              "Average ATS Score": `${score.atsScore}/100`,
+              "Readability": score.readability,
+              "Keyword Match": score.keywordMatch
+            }}
+            takeaways={keywords.slice(0, 8)}
+          />
           
           <div className="res-score-panel mb-32">
             <div className="score-circle">
@@ -187,28 +214,17 @@ export default function ResumeDetail() {
             </section>
           ))}
 
-          {faq && faq.length > 0 && (
-            <section className="mb-48">
-              <h2 className="text-2xl font-bold mb-16">Frequently Asked Questions</h2>
-              <div className="space-y-6">
-                {faq.map((item, idx) => (
-                  <div key={idx} className="bg-surface p-6 border border-default rounded">
-                    <h3 className="font-bold text-lg mb-2 color-primary">{item.q}</h3>
-                    <p className="text-secondary">{item.a}</p>
-                  </div>
-                ))}
-              </div>
-            </section>
-          )}
+          <CareerKnowledgeGraphCard roleId={slug} />
+          
+          <FAQAccordion items={faq} />
 
         </main>
         
         <aside className="space-y-6">
-          <ATSCheckerCTA />
-          <ResumeBuilderCTA />
-          <SidebarAd />
+          <CareerGraphSidebar currentType="resume" currentSlug={slug} />
         </aside>
       </div>
+      <BackToTop />
     </div>
   );
 }

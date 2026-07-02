@@ -45,6 +45,29 @@ export default function NetworkBuilderPage() {
         title="AI Network Builder | CandidateToHR"
         description="Build meaningful professional connections with our AI Network Builder. Get targeted outreach templates and networking strategies for your industry."
         canonical="/network-builder"
+        type="SoftwareApplication"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": ["SoftwareApplication", "WebApplication"],
+          "@id": "https://candidatetohr.online/network-builder/#app",
+          "name": "CandidateToHR AI Network Builder",
+          "alternateName": "CandidateToHR Outreach Generator",
+          "url": "https://candidatetohr.online/network-builder",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Web",
+          "description": "Build meaningful professional connections with our AI Network Builder. Get targeted outreach templates and networking strategies for your industry.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "@id": "https://candidatetohr.online/#organization",
+            "name": "CandidateToHR"
+          }
+        }}
       />
 
       <div className="nb-page">

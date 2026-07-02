@@ -18,8 +18,8 @@ export default function SalaryHub() {
   return (
     <div className="hub-page">
       <SEO 
-        title="Tech Salary Guides & Negotiation Strategies"
-        description="Discover how much you should be earning in top tech roles. Explore salary guides for developers, data scientists, and managers."
+        title="Tech Salary Guides & Compensation Data | CandidateToHR"
+        description="CandidateToHR's 2026 salary guides for tech roles. Discover market rates for Software Engineers, Data Scientists, DevOps, AI Engineers, and more."
         canonical="/salary-guides"
         type="CollectionPage"
       />

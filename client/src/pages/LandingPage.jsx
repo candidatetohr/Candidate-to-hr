@@ -41,10 +41,44 @@ export default function LandingPage() {
   return (
     <LazyMotion features={loadFeatures}>
       <SEO 
-        title="CandidateToHR — #1 AI Applicant Tracking System & Resume Analyzer" 
-        description="Revolutionize your job search with our AI-powered ATS. Analyze resumes, build perfect CVs, and practice mock interviews to land your dream tech job."
+        title="CandidateToHR | #1 AI Career Intelligence Platform — Resume Analyzer, ATS Optimizer & Interview Prep" 
+        description="CandidateToHR is an AI-powered career intelligence platform helping students and professionals analyze resumes, prepare for interviews, explore career roadmaps, and optimize ATS scores for free."
         canonical="/"
         type="Organization"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": ["SoftwareApplication", "WebApplication"],
+          "@id": "https://candidatetohr.online/#app",
+          "name": "CandidateToHR",
+          "alternateName": "CandidateToHR AI Career Platform",
+          "url": "https://candidatetohr.online",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Web",
+          "description": "CandidateToHR is an AI-powered career intelligence platform. Features include AI resume analysis, ATS optimization, career roadmaps, interview preparation, skill gap analysis, and placement probability prediction.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "@id": "https://candidatetohr.online/#organization",
+            "name": "CandidateToHR"
+          },
+          "featureList": [
+            "AI Resume Analyzer",
+            "ATS Score Optimizer",
+            "Career Roadmaps",
+            "Interview Preparation",
+            "Skill Gap Analysis",
+            "AI Mock Interview Simulator",
+            "Resume Builder",
+            "Placement Probability Engine",
+            "AI Career Coach",
+            "Salary Guides"
+          ]
+        }}
       />
       <div className="landing-page">
       {/* Background */}
@@ -68,12 +102,13 @@ export default function LandingPage() {
             <Zap size={12} /> Powered by NVIDIA NIM AI
           </div>
           <h1 className="hero-title">
+            <span style={{ display: 'block', fontSize: '0.55em', fontWeight: 700, letterSpacing: '0.05em', color: '#4f8ef7', marginBottom: '0.25rem' }}>CandidateToHR</span>
             AI-Powered{' '}
             <span className="gradient-text">Resume & Hiring</span>{' '}
             Intelligence
           </h1>
           <p className="hero-subtitle">
-            Whether you're a <strong>job seeker</strong> wanting to score your resume or a <strong>recruiter</strong> screening hundreds of candidates — Candidatetohr has you covered with NVIDIA NIM AI.
+            Whether you&apos;re a <strong>job seeker</strong> wanting to score your resume or a <strong>recruiter</strong> screening hundreds of candidates — <strong>CandidateToHR</strong> has you covered with NVIDIA NIM AI.
           </p>
           <div className="hero-cta-grid mt-24">
             <button className="btn btn-primary btn-lg" onClick={() => navigate('/analyze')} id="hero-analyze-btn">

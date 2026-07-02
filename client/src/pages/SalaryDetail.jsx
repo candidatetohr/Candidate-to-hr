@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import { Helmet } from 'react-helmet-async';
 import { useParams, Link } from 'react-router-dom';
+import SEO from '../components/SEO';
 import SchemaMarkup from '../components/seo/SchemaMarkup';
 import Breadcrumbs from '../components/seo/Breadcrumbs';
 import QuickLinks from '../components/seo/QuickLinks';
@@ -10,6 +10,17 @@ import { ATSCheckerCTA, MockInterviewCTA } from '../components/cta/PlatformCTAs'
 import { TrendingUp, MapPin, Briefcase, LineChart, Award } from 'lucide-react';
 import AuthorInfo from '../components/seo/AuthorInfo';
 import ReactMarkdown from 'react-markdown';
+
+// SEO Upgrade Widgets
+import ReadingProgress from '../components/seo/ReadingProgress';
+import TableOfContents from '../components/seo/TableOfContents';
+import ShareButtons from '../components/seo/ShareButtons';
+import BackToTop from '../components/seo/BackToTop';
+import CareerGraphSidebar from '../components/seo/CareerGraphSidebar';
+import CareerKnowledgeGraphCard from '../components/seo/CareerKnowledgeGraphCard';
+import AIOverviewBox from '../components/seo/AIOverviewBox';
+import FAQAccordion from '../components/seo/FAQAccordion';
+
 import './SalaryDetail.css';
 
 export default function SalaryDetail() {
@@ -36,32 +47,43 @@ export default function SalaryDetail() {
 
   return (
     <div className="sal-detail-page container-standard px-6 py-8">
-      <Helmet>
-        <title>{seo.title}</title>
-        <meta name="description" content={seo.description} />
-        {seo.keywords && <meta name="keywords" content={seo.keywords} />}
-        <link rel="canonical" href={`https://candidatetohr.online/salary-guides/${slug}`} />
-        <meta property="og:url" content={`https://candidatetohr.online/salary-guides/${slug}`} />
-        <meta property="og:title" content={seo.ogTitle || seo.title} />
-        <meta property="og:description" content={seo.ogDescription || seo.description} />
-        {data.faq && data.faq.length > 0 && (
-          <script type="application/ld+json">
-            {JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              "mainEntity": data.faq.map(f => ({
-                "@type": "Question",
-                "name": f.q,
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": f.a
-                }
-              }))
-            })}
-          </script>
-        )}
-      </Helmet>
-      <SchemaMarkup type="Article" data={{ title: seo.title, description: seo.description }} />
+      <ReadingProgress />
+      <SEO
+        title={seo.title}
+        description={seo.description}
+        canonical={`/salary-guides/${slug}`}
+      />
+      <SchemaMarkup
+        type="BreadcrumbList"
+        data={[
+          { name: 'Home', url: '/' },
+          { name: 'Salary Guides', url: '/salary-guides' },
+          { name: hero.title, url: `/salary-guides/${slug}` }
+        ]}
+      />
+      <SchemaMarkup
+        type="Article"
+        data={{
+          title: seo.title,
+          description: seo.description,
+          url: `https://candidatetohr.online/salary-guides/${slug}`,
+          datePublished: hero.date || '2026-01-01'
+        }}
+      />
+      <SchemaMarkup
+        type="Dataset"
+        data={{
+          name: `${hero.title} Dataset`,
+          description: `Compensation and salary data for ${hero.title.replace(' Salary Guide 2026', '')} showing base salaries, geographic distribution, and top paying companies.`,
+          url: `https://candidatetohr.online/salary-guides/${slug}`
+        }}
+      />
+      {faq && faq.length > 0 && (
+        <SchemaMarkup
+          type="FAQPage"
+          data={faq}
+        />
+      )}
       <Breadcrumbs />
       {quickLinks && <QuickLinks links={quickLinks} />}
 
@@ -69,6 +91,7 @@ export default function SalaryDetail() {
         <h1 className="text-4xl font-bold mb-16">{hero.title}</h1>
         <p className="text-lg text-secondary container-seo">{hero.description}</p>
         <AuthorInfo date={hero.date} author={hero.author} />
+        <ShareButtons title={seo.title} />
         
         <div className="mt-32 bg-slate-800/50 border border-amber-500/20 inline-block px-10 py-6">
           <div className="text-sm color-warning font-bold uppercase tracking-widest mb-8">Average Base Salary</div>
@@ -80,6 +103,17 @@ export default function SalaryDetail() {
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 mt-32">
         <main className="lg:col-span-2">
+          <TableOfContents contentSelector="main" />
+          
+          <AIOverviewBox
+            definition={hero.description}
+            quickAnswer={`The average base salary for this role is ${hero.averageSalary}. Growth is projected strongly in the near future.`}
+            stats={{
+              "Average Base Salary": hero.averageSalary,
+              "Hiring Status": "Highly Demanded"
+            }}
+            takeaways={skillsData}
+          />
           
           <section className="mb-48">
             <h2 className="text-2xl font-bold mb-24 flex items-center gap-8"><TrendingUp className="color-warning"/> Salary by Experience</h2>
@@ -240,34 +274,23 @@ export default function SalaryDetail() {
             </section>
           )}
 
-          {faq && faq.length > 0 && (
-            <section className="mb-48">
-              <h2 className="text-2xl font-bold mb-16">Frequently Asked Questions</h2>
-              <div className="space-y-6">
-                {faq.map((item, idx) => (
-                  <div key={idx} className="bg-surface p-6 border border-default rounded">
-                    <h3 className="font-bold text-lg mb-2 color-primary">{item.q}</h3>
-                    <p className="text-secondary">{item.a}</p>
-                  </div>
-                ))}
-              </div>
-            </section>
-          )}
+          <CareerKnowledgeGraphCard roleId={slug.replace('-salary-guide-2026', '').replace('-us', '').replace('-india', '')} />
+          
+          <FAQAccordion items={faq} />
 
           <RelatedResources items={[
-            { title: 'Interview Questions', description: `Top interview questions`, url: `/interview-questions/${slug}`, icon: '🎤' },
-            { title: 'Learning Roadmap', description: `Step-by-step career path`, url: `/roadmaps/${slug}`, icon: '🗺️' },
-            { title: 'Career Guide', description: `In-depth career advice`, url: `/career-guides/${slug}`, icon: '📈' }
+            { title: 'Interview Questions', description: `Top interview questions`, url: `/interview-questions/${slug.replace('-salary-guide-2026', '').replace('-us', '').replace('-india', '')}`, icon: '🎤' },
+            { title: 'Learning Roadmap', description: `Step-by-step career path`, url: `/roadmaps/${slug.replace('-salary-guide-2026', '').replace('-us', '').replace('-india', '')}`, icon: '🗺️' },
+            { title: 'Career Guide', description: `In-depth career advice`, url: `/career-guides/${slug.replace('-salary-guide-2026', '').replace('-us', '').replace('-india', '')}`, icon: '📈' }
           ]} />
 
         </main>
         
         <aside className="space-y-6">
-          <ATSCheckerCTA />
-          <MockInterviewCTA />
-          <SidebarAd />
+          <CareerGraphSidebar currentType="salary" currentSlug={slug} />
         </aside>
       </div>
+      <BackToTop />
     </div>
   );
 }

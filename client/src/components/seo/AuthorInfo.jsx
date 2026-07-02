@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
-import { Calendar, UserCheck, ShieldCheck, FileCheck } from 'lucide-react';
+import { Calendar, UserCheck, ShieldCheck, FileCheck, Clock } from 'lucide-react';
 import './AuthorInfo.css';
 
-export default function AuthorInfo({ date, author }) {
+export default function AuthorInfo({ date, author, readTime = '6 min read' }) {
   const displayAuthor = author || 'CandidateToHR Career Experts';
   const displayDate = date || new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
 
@@ -18,14 +18,18 @@ export default function AuthorInfo({ date, author }) {
           </div>
           <div className="author-review-status">
             <UserCheck size={14} className="icon-success" aria-hidden="true" />
-            <span>Reviewed by <strong>CandidateToHR Career Team</strong></span>
+            <span>Reviewed by <strong>CandidateToHR Editorial Board</strong></span>
           </div>
         </div>
       </div>
       <div className="author-badges-grid">
         <div className="author-badge-item">
           <Calendar size={14} aria-hidden="true" />
-          <span>Last Updated: <strong>{displayDate}</strong></span>
+          <span>Updated: <strong>{displayDate}</strong></span>
+        </div>
+        <div className="author-badge-item">
+          <Clock size={14} aria-hidden="true" />
+          <span>Est. Time: <strong>{readTime}</strong></span>
         </div>
         <div className="author-badge-item">
           <ShieldCheck size={14} className="icon-success" aria-hidden="true" />
@@ -39,9 +43,11 @@ export default function AuthorInfo({ date, author }) {
       <div className="author-policies-links">
         <Link to="/about" className="policy-link">About Us</Link>
         <span className="divider" aria-hidden="true">•</span>
-        <Link to="/terms" className="policy-link">Editorial Policy</Link>
+        <Link to="/editorial-policy" className="policy-link">Editorial Policy</Link>
         <span className="divider" aria-hidden="true">•</span>
-        <Link to="/contact" className="policy-link">Contact Career Team</Link>
+        <Link to="/ai-policy" className="policy-link">AI Disclosure</Link>
+        <span className="divider" aria-hidden="true">•</span>
+        <Link to="/contact" className="policy-link">Contact Team</Link>
       </div>
     </div>
   );

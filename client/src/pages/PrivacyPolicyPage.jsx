@@ -119,7 +119,7 @@ Continued use of the website after changes are posted constitutes acceptance of 
 
 If you have any questions regarding this Privacy Policy or our data practices, please contact us at:
 
-**Email:** [Candidatetohr@gmail.com](mailto:Candidatetohr@gmail.com)
+**Email:** [CandidateToHR@gmail.com](mailto:CandidateToHR@gmail.com)
 
 Thank you for trusting CandidateToHR.
 `;
@@ -127,7 +127,11 @@ Thank you for trusting CandidateToHR.
 export default function PrivacyPolicyPage() {
   return (
     <div className="static-page-container">
-      <SEO title="Privacy Policy | CandidateToHR" description="CandidateToHR Privacy Policy. Learn how we collect, use, and protect your information." />
+      <SEO 
+        title="Privacy Policy | CandidateToHR" 
+        description="CandidateToHR Privacy Policy. Learn how we collect, use, and protect your information." 
+        canonical="/privacy"
+      />
       
       <div className="static-content prose">
         <ReactMarkdown>{markdown}</ReactMarkdown>

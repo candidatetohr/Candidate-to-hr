@@ -1,12 +1,23 @@
 import { useState, useEffect } from 'react';
-import { Helmet } from 'react-helmet-async';
 import { useParams, Link } from 'react-router-dom';
 import SEO from '../components/SEO';
+import SchemaMarkup from '../components/seo/SchemaMarkup';
 import { ChevronDown, ChevronUp, MapPin, Target, Zap, DollarSign, PenTool, CheckCircle, HelpCircle } from 'lucide-react';
 import Breadcrumbs from '../components/seo/Breadcrumbs';
 import QuickLinks from '../components/seo/QuickLinks';
 import RelatedResources from '../components/seo/RelatedResources';
 import AuthorInfo from '../components/seo/AuthorInfo';
+
+// SEO Upgrade Widgets
+import ReadingProgress from '../components/seo/ReadingProgress';
+import TableOfContents from '../components/seo/TableOfContents';
+import ShareButtons from '../components/seo/ShareButtons';
+import BackToTop from '../components/seo/BackToTop';
+import CareerGraphSidebar from '../components/seo/CareerGraphSidebar';
+import CareerKnowledgeGraphCard from '../components/seo/CareerKnowledgeGraphCard';
+import AIOverviewBox from '../components/seo/AIOverviewBox';
+import FAQAccordion from '../components/seo/FAQAccordion';
+
 import './RoadmapDetail.css';
 
 export default function RoadmapDetail() {
@@ -48,32 +59,47 @@ export default function RoadmapDetail() {
 
   return (
     <div className="roadmap-detail-page">
+      <ReadingProgress />
       {/* ─── SEO METADATA ─────────────────────────── */}
-      <Helmet>
-        <title>{seo.title}</title>
-        <meta name="description" content={seo.description} />
-        <meta name="keywords" content={seo.keywords} />
-        <link rel="canonical" href={`https://candidatetohr.online/roadmaps/${slug}`} />
-        <meta property="og:url" content={`https://candidatetohr.online/roadmaps/${slug}`} />
-        <meta property="og:title" content={seo.ogTitle} />
-        <meta property="og:description" content={seo.ogDescription} />
-        {data.faq && data.faq.length > 0 && (
-          <script type="application/ld+json">
-            {JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              "mainEntity": data.faq.map(f => ({
-                "@type": "Question",
-                "name": f.q,
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": f.a
-                }
-              }))
-            })}
-          </script>
-        )}
-      </Helmet>
+      <SEO
+        title={seo.title}
+        description={seo.description}
+        canonical={`/roadmaps/${slug}`}
+      />
+      <SchemaMarkup
+        type="BreadcrumbList"
+        data={[
+          { name: 'Home', url: '/' },
+          { name: 'Roadmaps', url: '/roadmaps' },
+          { name: hero.title, url: `/roadmaps/${slug}` }
+        ]}
+      />
+      <SchemaMarkup
+        type="Article"
+        data={{
+          title: seo.title,
+          description: seo.description,
+          url: `https://candidatetohr.online/roadmaps/${slug}`,
+          datePublished: hero.date || '2026-01-01'
+        }}
+      />
+      {learningPath && learningPath.length > 0 && (
+        <SchemaMarkup
+          type="HowTo"
+          data={{
+            name: hero.title,
+            description: hero.shortDescription,
+            url: `https://candidatetohr.online/roadmaps/${slug}`,
+            steps: learningPath
+          }}
+        />
+      )}
+      {faq && faq.length > 0 && (
+        <SchemaMarkup
+          type="FAQPage"
+          data={faq}
+        />
+      )}
 
       {/* ─── HERO SECTION ─────────────────────────── */}
       <header className="rd-hero">
@@ -84,6 +110,7 @@ export default function RoadmapDetail() {
           <p className="rd-hero-subtitle max-w-2xl text-secondary">{hero.shortDescription}</p>
           
           <AuthorInfo date={hero.date} author={hero.author} />
+          <ShareButtons title={seo.title} />
           
           <div className="rd-hero-stats">
             <div className="rd-stat-box">
@@ -113,6 +140,20 @@ export default function RoadmapDetail() {
       <div className="container-seo rd-layout">
         
         <main className="rd-main">
+          <TableOfContents contentSelector=".rd-main" />
+          
+          <AIOverviewBox
+            definition={overview.whatTheyDo}
+            quickAnswer={hero.shortDescription}
+            stats={{
+              "Average Salary": hero.averageSalary,
+              "Growth Rate": hero.growthRate,
+              "Learning Duration": hero.learningDuration,
+              "Difficulty Level": hero.difficultyLevel,
+              "Hiring Demand": hero.hiringDemand
+            }}
+            takeaways={toolsAndTech}
+          />
           {/* ─── OVERVIEW ─────────────────────────── */}
           <section className="rd-section">
             <h2><Target size={22} className="text-purple"/> Career Overview</h2>
@@ -241,34 +282,9 @@ export default function RoadmapDetail() {
             </div>
           </section>
 
-          {/* ─── FAQ ─────────────────────────── */}
-          <section className="rd-section">
-            <h2><HelpCircle size={22} className="text-purple"/> Frequently Asked Questions</h2>
-            <div className="rd-faq-list">
-              {faq && faq.map((item, i) => (
-                <div 
-                  key={i} 
-                  role="button"
-                  tabIndex={0}
-                  aria-expanded={openFaq === i}
-                  className={`rd-faq-item ${openFaq === i ? 'open' : ''}`} 
-                  onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                  onKeyDown={(e) => {
-                    if (e.key === 'Enter' || e.key === ' ') {
-                      e.preventDefault();
-                      setOpenFaq(openFaq === i ? null : i);
-                    }
-                  }}
-                >
-                  <div className="rd-faq-q">
-                    {item.q}
-                    {openFaq === i ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
-                  </div>
-                  {openFaq === i && <div className="rd-faq-a">{item.a}</div>}
-                </div>
-              ))}
-            </div>
-          </section>
+          <CareerKnowledgeGraphCard roleId={slug} />
+          
+          <FAQAccordion items={faq} />
 
           <RelatedResources items={[
             { title: 'Interview Questions', description: `Top interview questions for ${seo.title.split(' Roadmap')[0]}`, url: `/interview-questions/${slug}`, icon: '🎤' },
@@ -279,32 +295,11 @@ export default function RoadmapDetail() {
         </main>
 
         <aside className="rd-sidebar">
-          {/* CTA Box */}
-          <div className="rd-sticky-cta">
-            <h3>Get Started Today</h3>
-            <p>Don't just read the roadmap—take action. Build your professional, ATS-friendly resume right now.</p>
-            <Link to="/live-editor" className="btn btn-primary mb-3 text-center">Create Resume with AI</Link>
-            <Link to="/analyze" className="btn btn-secondary mb-3 text-center">Check ATS Score</Link>
-            <Link to="/interview-sim" className="btn btn-secondary text-center">Mock Interview</Link>
-          </div>
-          
-          {/* Certifications Box */}
-          <div className="card mt-24">
-            <h3>Top Certifications</h3>
-            <ul className="rd-list mt-3">
-              {certifications.map((cert, i) => <li key={i}>{cert}</li>)}
-            </ul>
-          </div>
-          
-          {/* Market Insights */}
-          <div className="card mt-24">
-            <h3>Job Market Outlook</h3>
-            <p className="text-sm mt-3 text-muted"><strong>Demand:</strong> {jobMarket.futureDemand}</p>
-            <p className="text-sm mt-3 text-muted"><strong>Remote:</strong> {jobMarket.remoteOpportunities}</p>
-          </div>
+          <CareerGraphSidebar currentType="roadmap" currentSlug={slug} />
         </aside>
 
       </div>
+      <BackToTop />
     </div>
   );
 }

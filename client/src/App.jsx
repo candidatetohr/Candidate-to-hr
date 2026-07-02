@@ -56,6 +56,12 @@ const DisclaimerPage = lazy(() => import('./pages/DisclaimerPage'));
 const SitemapPage = lazy(() => import('./pages/SitemapPage'));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
 
+// E-E-A-T and Programmatic SEO Pages
+const EditorialPolicyPage = lazy(() => import('./pages/EditorialPolicyPage'));
+const AIUsagePolicyPage = lazy(() => import('./pages/AIUsagePolicyPage'));
+const ProgrammaticSalaryPage = lazy(() => import('./pages/ProgrammaticSalaryPage'));
+const ProgrammaticCounterOfferPage = lazy(() => import('./pages/ProgrammaticCounterOfferPage'));
+
 const PageLoader = () => (
   <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: 'calc(100vh - 72px)', background: 'var(--bg-primary)' }}>
     <div className="spinner spinner-lg" />
@@ -129,6 +135,10 @@ export default function App() {
           <Route path="/career-guides" element={<CareerGuideHub />} />
           <Route path="/career-guides/:slug" element={<CareerGuideDetail />} />
           
+          {/* Programmatic SEO Routes */}
+          <Route path="/salary-guides/:role/in/:city" element={<ProgrammaticSalaryPage />} />
+          <Route path="/resume-summaries/:role" element={<ProgrammaticCounterOfferPage />} />
+          
           {/* Static & Legal Pages */}
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
@@ -136,6 +146,10 @@ export default function App() {
           <Route path="/terms" element={<TermsPage />} />
           <Route path="/disclaimer" element={<DisclaimerPage />} />
           <Route path="/sitemap" element={<SitemapPage />} />
+          
+          {/* E-E-A-T policy subpages */}
+          <Route path="/editorial-policy" element={<EditorialPolicyPage />} />
+          <Route path="/ai-policy" element={<AIUsagePolicyPage />} />
           
           <Route path="*" element={<NotFoundPage />} />
         </Routes>

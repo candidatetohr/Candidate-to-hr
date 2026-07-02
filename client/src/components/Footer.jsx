@@ -1,19 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Zap } from 'lucide-react';
 import './Footer.css';
 
 function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footer" aria-label="CandidateToHR - AI Career Platform">
       <div className="footer-container">
         {/* Column 1: Brand */}
         <div className="footer-col brand-col">
-          <Link to="/" className="footer-logo">
+          <Link to="/" className="footer-logo" aria-label="CandidateToHR Homepage">
             <img src="/logo.png" alt="CandidateToHR Logo" width="40" height="40" loading="lazy" style={{ height: '40px' }} />
+            <span className="footer-brand-name">CandidateToHR</span>
           </Link>
           <p className="footer-description">
-            AI-Powered Resume Analysis & Interview Preparation
+            CandidateToHR is an AI-powered career intelligence platform helping students and professionals improve resumes, prepare for interviews, discover career roadmaps, and accelerate career growth.
+          </p>
+          <p className="footer-tagline">
+            <strong>AI Resume Analyzer</strong> &bull; <strong>ATS Optimizer</strong> &bull; <strong>Career Roadmaps</strong>
           </p>
         </div>
 
@@ -21,7 +24,7 @@ function Footer() {
         <div className="footer-col">
           <h3>Company</h3>
           <ul>
-            <li><Link to="/about">About Us</Link></li>
+            <li><Link to="/about">About CandidateToHR</Link></li>
             <li><Link to="/contact">Contact Us</Link></li>
             <li><Link to="/sitemap">HTML Sitemap</Link></li>
           </ul>
@@ -43,7 +46,7 @@ function Footer() {
         <div className="footer-col">
           <h3>AI Tools</h3>
           <ul>
-            <li><Link to="/analyze">Resume Analyzer</Link></li>
+            <li><Link to="/analyze">AI Resume Analyzer</Link></li>
             <li><Link to="/resume-builder">AI Resume Builder</Link></li>
             <li><Link to="/live-editor">Live AI Editor</Link></li>
             <li><Link to="/interview-sim">Interview Simulator</Link></li>
@@ -71,8 +74,8 @@ function Footer() {
           <h3>Legal</h3>
           <ul>
             <li><Link to="/privacy">Privacy Policy</Link></li>
-            <li><Link to="/terms">Terms & Conditions</Link></li>
-            <li><Link to="/disclaimer">Disclaimer & Cookie Policy</Link></li>
+            <li><Link to="/terms">Terms &amp; Conditions</Link></li>
+            <li><Link to="/disclaimer">Disclaimer &amp; Cookie Policy</Link></li>
           </ul>
         </div>
 
@@ -80,14 +83,14 @@ function Footer() {
         <div className="footer-col">
           <h3>Contact</h3>
           <ul>
-            <li><a href="mailto:Candidatetohr@gmail.com">Candidatetohr@gmail.com</a></li>
+            <li><a href="mailto:support@candidatetohr.online">support@candidatetohr.online</a></li>
           </ul>
         </div>
       </div>
 
       <div className="footer-bottom">
         <div className="footer-copyright">
-          &copy; {new Date().getFullYear()} CandidateToHR. All Rights Reserved.
+          &copy; {new Date().getFullYear()} <Link to="/" style={{ color: 'inherit', textDecoration: 'none' }}>CandidateToHR</Link>. All Rights Reserved. &bull; AI Career Intelligence Platform
         </div>
       </div>
     </footer>
@@ -95,3 +98,5 @@ function Footer() {
 }
 
 export default React.memo(Footer);
+
+

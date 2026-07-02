@@ -144,7 +144,7 @@ Any disputes arising from the use of CandidateToHR shall be subject to the juris
 
 If you have any questions regarding these Terms and Conditions, please contact us:
 
-**Email:** [Candidatetohr@gmail.com](mailto:Candidatetohr@gmail.com)
+**Email:** [CandidateToHR@gmail.com](mailto:CandidateToHR@gmail.com)
 
 Thank you for using CandidateToHR.
 `;
@@ -152,7 +152,11 @@ Thank you for using CandidateToHR.
 export default function TermsPage() {
   return (
     <div className="static-page-container">
-      <SEO title="Terms & Conditions | CandidateToHR" description="CandidateToHR Terms and Conditions. Please read these terms carefully before using our platform." />
+      <SEO 
+        title="Terms & Conditions | CandidateToHR" 
+        description="CandidateToHR Terms and Conditions. Please read these terms carefully before using our platform." 
+        canonical="/terms"
+      />
       
       <div className="static-content prose">
         <ReactMarkdown>{markdown}</ReactMarkdown>

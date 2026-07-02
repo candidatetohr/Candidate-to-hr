@@ -40,6 +40,29 @@ export default function SkillGapAnalyzerPage() {
         title="AI Skill Gap Analyzer | CandidateToHR"
         description="Compare your resume to your dream job. Our AI Skill Gap Analyzer identifies missing skills and generates a personalized learning path to get you hired."
         canonical="/skill-gap"
+        type="SoftwareApplication"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": ["SoftwareApplication", "WebApplication"],
+          "@id": "https://candidatetohr.online/skill-gap/#app",
+          "name": "CandidateToHR AI Skill Gap Analyzer",
+          "alternateName": "CandidateToHR Skill Assessor",
+          "url": "https://candidatetohr.online/skill-gap",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Web",
+          "description": "Compare your resume to your dream job. Our AI Skill Gap Analyzer identifies missing skills and generates a personalized learning path to get you hired.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "@id": "https://candidatetohr.online/#organization",
+            "name": "CandidateToHR"
+          }
+        }}
       />
 
       <div className="sga-page">

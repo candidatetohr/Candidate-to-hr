@@ -2,8 +2,30 @@ import SEO from '../components/SEO';
 import ReactMarkdown from 'react-markdown';
 import './StaticPage.css';
 
+const contactSchema = {
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "name": "Contact CandidateToHR",
+  "url": "https://candidatetohr.online/contact",
+  "description": "Contact the CandidateToHR team for support, feedback, or partnership inquiries. CandidateToHR is an AI-powered career intelligence platform.",
+  "isPartOf": {
+    "@id": "https://candidatetohr.online/#website"
+  },
+  "mainEntity": {
+    "@type": "Organization",
+    "@id": "https://candidatetohr.online/#organization",
+    "name": "CandidateToHR",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "support@candidatetohr.online",
+      "contactType": "customer support",
+      "availableLanguage": "English"
+    }
+  }
+};
+
 const markdown = `
-# Contact Us
+# Contact CandidateToHR
 
 We would love to hear from you.
 
@@ -50,7 +72,12 @@ Thank you for choosing CandidateToHR. We look forward to assisting you on your c
 export default function ContactPage() {
   return (
     <div className="static-page-container">
-      <SEO title="Contact Us | CandidateToHR" description="Get in touch with the CandidateToHR team for support, feedback, or partnership inquiries." />
+      <SEO 
+        title="Contact Us | CandidateToHR" 
+        description="Get in touch with the CandidateToHR team for support, feedback, or partnership inquiries about our AI-powered career intelligence platform."
+        canonical="/contact"
+        schema={contactSchema}
+      />
       
       <div className="static-content prose">
         <ReactMarkdown>{markdown}</ReactMarkdown>

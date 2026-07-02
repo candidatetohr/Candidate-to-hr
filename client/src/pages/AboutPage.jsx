@@ -2,44 +2,113 @@ import SEO from '../components/SEO';
 import ReactMarkdown from 'react-markdown';
 import './StaticPage.css';
 
+const DOMAIN = 'https://candidatetohr.online';
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "@id": `${DOMAIN}/about#webpage`,
+  "name": "About CandidateToHR — AI Career Intelligence Platform",
+  "url": `${DOMAIN}/about`,
+  "description": "Learn about CandidateToHR, our mission, our AI-powered career intelligence platform, and how we help students and professionals accelerate their careers.",
+  "isPartOf": {
+    "@id": `${DOMAIN}/#website`
+  },
+  "about": {
+    "@type": "Organization",
+    "@id": `${DOMAIN}/#organization`,
+    "name": "CandidateToHR",
+    "url": DOMAIN,
+    "description": "CandidateToHR is an AI-powered career intelligence platform helping students and professionals improve resumes, prepare for interviews, discover career roadmaps, and accelerate career growth.",
+    "foundingDate": "2024",
+    "knowsAbout": [
+      "AI Resume Analysis",
+      "ATS Optimization",
+      "Career Roadmaps",
+      "Interview Preparation",
+      "Skill Gap Analysis",
+      "Career Intelligence"
+    ]
+  }
+};
+
 const markdown = `
 # About CandidateToHR
 
-## Empowering Careers with AI
+## CandidateToHR — AI Career Intelligence Platform
 
-CandidateToHR is an AI-powered career development platform designed to help job seekers build stronger resumes, prepare confidently for interviews, and make informed career decisions.
+**CandidateToHR** is an AI-powered career intelligence platform designed to help students, fresh graduates, and seasoned professionals build stronger resumes, prepare confidently for interviews, identify skill gaps, and make smarter career decisions.
 
-In today's competitive job market, many candidates struggle with creating ATS-friendly resumes, identifying skill gaps, preparing for interviews, and understanding which career opportunities best match their abilities. CandidateToHR was created to solve these challenges by providing intelligent tools and resources that simplify the job search journey.
+Founded in 2024, CandidateToHR was built to solve a real and frustrating problem: talented candidates being filtered out by automated systems before a human recruiter ever sees their resume. Today, CandidateToHR serves thousands of job seekers every month, helping them navigate the modern job market with AI-driven insights.
 
 ## Our Mission
 
-Our mission is to make career growth accessible, personalized, and data-driven for everyone.
+CandidateToHR's mission is to make career growth accessible, personalized, and data-driven for everyone — regardless of background, experience level, or access to expensive career coaching.
 
-We believe that every candidate deserves access to professional-quality career guidance, regardless of their background or experience level. By leveraging artificial intelligence and modern technology, we aim to help job seekers improve their employability and achieve their career goals.
+We believe every candidate deserves professional-quality career guidance. By combining artificial intelligence, real-time market data, and evidence-based career science, CandidateToHR helps you understand where you stand, what you're missing, and exactly how to improve.
 
-## What We Offer
+## What Makes CandidateToHR Different
 
-### AI Resume Analysis
+Unlike generic job boards or static resume templates, CandidateToHR is built as a **career intelligence platform** — an active system that analyzes, scores, and gives you specific, actionable feedback tailored to your profile and target role.
 
-Our platform analyzes resumes and provides insights to help candidates improve formatting, keyword optimization, ATS compatibility, and overall resume quality.
+### AI Resume Analyzer
+
+CandidateToHR's resume analysis engine, powered by **NVIDIA NIM AI**, evaluates your resume across seven critical dimensions: Skills Match, Experience Relevance, Education Alignment, Communication Quality, ATS Compatibility, Keyword Density, and Overall Score. You get a 0–100 score in under 60 seconds.
+
+### ATS Score Optimizer
+
+75% of resumes are filtered out before a human ever reads them. CandidateToHR identifies exactly which keywords and phrases your resume is missing from any job description, and provides step-by-step fixes to improve your ATS pass rate.
+
+### Career Roadmaps
+
+CandidateToHR maintains comprehensive, regularly updated career roadmaps for 25+ technology roles — from Software Engineer to AI Engineer to DevSecOps. Each roadmap includes required skills, learning timelines, salary benchmarks, and interview preparation resources.
 
 ### Interview Preparation
 
-We provide extensive interview preparation resources, including technical, behavioral, and HR interview questions across multiple domains and industries.
+CandidateToHR provides thousands of real interview questions across 20+ technical domains, including System Design, Behavioral, JavaScript, Python, Data Science, Machine Learning, and more.
 
-### Career Guidance
+### AI Mock Interview Simulator
 
-CandidateToHR helps users understand potential career paths, identify required skills, and prepare for future opportunities through educational content and practical recommendations.
+CandidateToHR's AI Mock Interviewer conducts real-time voice-based interview sessions, grades your answers, identifies weak spots, and provides a detailed readiness report before your actual interview.
 
-### Resume Examples
+### Skill Gap Analyzer
 
-Our collection of resume examples and templates helps candidates create professional resumes that align with industry standards and recruiter expectations.
+CandidateToHR maps your current skills against the market demands for your target role, identifies exactly what you're missing, and generates a prioritized learning plan to close those gaps efficiently.
 
-### Skill Development Resources
+### Additional AI Tools
 
-We continuously publish career-related content, interview guides, and learning resources to support candidates in their professional development journey.
+CandidateToHR also offers:
 
-## Who We Serve
+* **Placement Probability Engine** — Predict your likelihood of landing specific roles
+* **Resume Truth Detector** — Scan for overclaiming, contradictions, and credibility risks
+* **Rejection Decoder** — Diagnose why your applications aren't converting
+* **Learning Path Optimizer** — AI-generated week-by-week curriculum for your target role
+* **Offer Negotiator** — Data-driven offer evaluation and negotiation strategies
+* **Culture Fit Analyzer** — Assess alignment between your values and company culture
+* **AI Career Coach** — Real-time chat with an AI coach that knows your resume
+
+## Technology
+
+CandidateToHR is built on a modern **MERN stack** (MongoDB, Express, React, Node.js) and powered by **NVIDIA NIM AI** for all generative AI features. Our infrastructure is designed for speed, reliability, and privacy.
+
+## Editorial Policy & Quality Standards
+
+At CandidateToHR, we adhere to strict editorial guidelines to ensure our content is accurate, trustworthy, and actionable.
+
+* **Expert Review:** All career guides, salary data, and interview questions are reviewed by experienced HR professionals, technical recruiters, and industry veterans.
+* **Data-Driven Insights:** Our tools leverage NVIDIA NIM AI and industry data to provide objective, unbiased feedback.
+* **Continuous Updates:** We regularly update our resources to reflect the latest hiring trends, ATS algorithms, and salary benchmarks.
+
+## E-E-A-T Commitment
+
+CandidateToHR is committed to the highest standards of **Experience, Expertise, Authoritativeness, and Trustworthiness** (E-E-A-T):
+
+* **Experience:** Built by professionals who have directly experienced the hiring process from both sides — as candidates and as recruiters.
+* **Expertise:** Our AI systems and editorial content are developed by engineers and HR professionals with deep domain knowledge.
+* **Authoritativeness:** CandidateToHR's career data is sourced from real hiring market research, industry databases, and verified recruiter input.
+* **Trustworthiness:** We are transparent about our AI methods, never fabricate statistics, and maintain strict privacy standards.
+
+## Who CandidateToHR Serves
 
 CandidateToHR is built for:
 
@@ -48,41 +117,21 @@ CandidateToHR is built for:
 * Professionals seeking career transitions
 * Experienced candidates pursuing better opportunities
 * Individuals looking to improve their resumes and interview performance
-
-## Why Choose CandidateToHR
-
-* AI-powered career assistance
-* User-friendly and accessible platform
-* ATS-focused resume recommendations
-* Comprehensive interview preparation resources
-* Regularly updated career content
-* Continuous innovation and improvement
+* Recruiters screening candidates with AI-powered tools
 
 ## Our Vision
 
-We envision a future where technology removes barriers to career success. CandidateToHR aims to become a trusted platform that connects talent with opportunity by providing intelligent career tools and actionable insights.
-
-## Editorial Policy & Quality Standards
-
-At CandidateToHR, we adhere to strict editorial guidelines to ensure our content is accurate, trustworthy, and actionable. 
-
-* **Expert Review:** All career guides, salary data, and interview questions are reviewed by experienced HR professionals, technical recruiters, and industry veterans.
-* **Data-Driven Insights:** Our tools leverage NVIDIA NIM AI and industry data to provide objective, non-biased feedback.
-* **Continuous Updates:** The job market changes rapidly. We regularly update our resources to reflect the latest hiring trends, ATS algorithms, and salary benchmarks.
-
-## Our Team of Experts
-
-CandidateToHR is built by a team of passionate engineers, data scientists, and former technical recruiters. We combine deep technical expertise with years of talent acquisition experience to build tools that genuinely bridge the gap between candidates and HR.
-
-Our advisory board includes professionals from top technology companies, ensuring our platform meets the high standards expected by modern recruiters.
+CandidateToHR envisions a future where technology removes barriers to career success. We aim to become the trusted career intelligence platform that bridges the gap between talented candidates and the right opportunities — at scale, and for everyone.
 
 ## Contact & Company Information
 
-**CandidateToHR**
-Email: support@candidatetohr.online
-Headquarters: San Francisco, CA
+**CandidateToHR** — AI Career Intelligence Platform
 
-If you have any questions regarding CandidateToHR, please visit our [Contact Us](/contact) page or reach out to our support team.
+Email: [support@candidatetohr.online](mailto:support@candidatetohr.online)
+
+Website: [candidatetohr.online](https://candidatetohr.online)
+
+If you have any questions about CandidateToHR, please visit our [Contact Us](/contact) page or reach out to our support team directly.
 
 Thank you for choosing CandidateToHR as your career development partner.
 `;
@@ -90,7 +139,12 @@ Thank you for choosing CandidateToHR as your career development partner.
 export default function AboutPage() {
   return (
     <div className="static-page-container">
-      <SEO title="About Us | CandidateToHR" description="Learn about CandidateToHR, our mission, and how we empower careers with AI." />
+      <SEO 
+        title="About CandidateToHR | AI Career Intelligence Platform" 
+        description="CandidateToHR is an AI-powered career intelligence platform helping students and professionals improve resumes, prepare for interviews, discover career roadmaps, and accelerate career growth."
+        canonical="/about"
+        schema={organizationSchema}
+      />
       
       <div className="static-content prose">
         <ReactMarkdown>{markdown}</ReactMarkdown>

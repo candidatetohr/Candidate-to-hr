@@ -41,8 +41,9 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="navbar-inner">
         {/* Logo */}
-        <Link to="/" className="navbar-logo">
+        <Link to="/" className="navbar-logo" aria-label="CandidateToHR - AI Career Platform">
           <img src="/logo.png" alt="CandidateToHR Logo" width="32" height="32" style={{ height: '32px' }} />
+          <span className="navbar-brand-text">CandidateToHR</span>
         </Link>
 
         {/* Desktop Nav Links */}

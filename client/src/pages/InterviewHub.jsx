@@ -19,8 +19,8 @@ export default function InterviewHub() {
   return (
     <div className="hub-page">
       <SEO 
-        title="Top Interview Questions & Answers | Technical & Behavioral"
-        description="Master your next tech interview with our comprehensive database of technical and behavioral questions, answers, and tips."
+        title="Interview Questions & Answers | CandidateToHR"
+        description="CandidateToHR's comprehensive database of technical and behavioral interview questions for Software Engineers, Data Scientists, and more. Practice with real interview Q&A."
         canonical="/interview-questions"
         type="CollectionPage"
       />

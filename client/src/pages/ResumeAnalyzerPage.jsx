@@ -289,6 +289,28 @@ export default function ResumeAnalyzerPage() {
         description="Upload your resume and get an instant AI review. We analyze your ATS score, skills gaps, and provide actionable tips to get hired faster."
         canonical="/analyze"
         type="SoftwareApplication"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": ["SoftwareApplication", "WebApplication"],
+          "@id": "https://candidatetohr.online/analyze/#app",
+          "name": "CandidateToHR AI Resume Analyzer",
+          "alternateName": "CandidateToHR ATS Score Checker",
+          "url": "https://candidatetohr.online/analyze",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Web",
+          "description": "Upload your resume and get an instant AI review. We analyze your ATS score, skills gaps, and provide actionable tips to get hired faster.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "@id": "https://candidatetohr.online/#organization",
+            "name": "CandidateToHR"
+          }
+        }}
       />
       <div className="analyzer-bg"><div className="az-orb az-orb-1" /><div className="az-orb az-orb-2" /><div className="az-grid" /></div>
       <div className="analyzer-container">
@@ -509,7 +531,7 @@ export default function ResumeAnalyzerPage() {
               <div className="results-footer-cta">
                 <div className="rfc-text">
                   <h3>Are you a recruiter?</h3>
-                  <p>Use Candidatetohr to screen hundreds of candidates with this same AI engine.</p>
+                  <p>Use CandidateToHR to screen hundreds of candidates with this same AI engine.</p>
                 </div>
                 <button className="az-btn-primary" onClick={() => navigate('/login')}>
                   <Star size={16} /> Get Recruiter Access <ArrowRight size={16} />

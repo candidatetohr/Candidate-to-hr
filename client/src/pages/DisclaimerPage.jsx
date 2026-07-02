@@ -108,7 +108,7 @@ Any changes will be posted on this page with an updated revision date.
 
 If you have any questions regarding this Disclaimer, please contact us:
 
-**Email:** [Candidatetohr@gmail.com](mailto:Candidatetohr@gmail.com)
+**Email:** [CandidateToHR@gmail.com](mailto:CandidateToHR@gmail.com)
 
 Thank you for using CandidateToHR.
 `;
@@ -116,7 +116,11 @@ Thank you for using CandidateToHR.
 export default function DisclaimerPage() {
   return (
     <div className="static-page-container">
-      <SEO title="Disclaimer | CandidateToHR" description="CandidateToHR Disclaimer regarding AI-generated content and employment outcomes." />
+      <SEO 
+        title="Disclaimer | CandidateToHR" 
+        description="CandidateToHR Disclaimer regarding AI-generated content and employment outcomes." 
+        canonical="/disclaimer"
+      />
       
       <div className="static-content prose">
         <ReactMarkdown>{markdown}</ReactMarkdown>

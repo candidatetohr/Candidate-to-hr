@@ -38,6 +38,29 @@ export default function OfferNegotiatorPage() {
         title="AI Offer Negotiator & Salary Scripts | CandidateToHR"
         description="Maximize your job offer with our AI Offer Negotiator. Get personalized negotiation scripts, leverage analysis, and salary counter-offer strategies."
         canonical="/offer-negotiator"
+        type="SoftwareApplication"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": ["SoftwareApplication", "WebApplication"],
+          "@id": "https://candidatetohr.online/offer-negotiator/#app",
+          "name": "CandidateToHR AI Offer Negotiator",
+          "alternateName": "CandidateToHR Salary Counter-Offer Helper",
+          "url": "https://candidatetohr.online/offer-negotiator",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Web",
+          "description": "Maximize your job offer with our AI Offer Negotiator. Get personalized negotiation scripts, leverage analysis, and salary counter-offer strategies.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "@id": "https://candidatetohr.online/#organization",
+            "name": "CandidateToHR"
+          }
+        }}
       />
 
       <div className="on-page">

@@ -44,6 +44,29 @@ export default function CultureFitAnalyzerPage() {
         title="AI Culture Fit Analyzer | CandidateToHR"
         description="Discover if you are a culture fit for your dream company. Our AI Culture Fit Analyzer compares your profile with company values to give you deep insights."
         canonical="/culture-fit"
+        type="SoftwareApplication"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": ["SoftwareApplication", "WebApplication"],
+          "@id": "https://candidatetohr.online/culture-fit/#app",
+          "name": "CandidateToHR AI Culture Fit Analyzer",
+          "alternateName": "CandidateToHR Culture Fit Assessor",
+          "url": "https://candidatetohr.online/culture-fit",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Web",
+          "description": "Discover if you are a culture fit for your dream company. Our AI Culture Fit Analyzer compares your profile with company values to give you deep insights.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "@id": "https://candidatetohr.online/#organization",
+            "name": "CandidateToHR"
+          }
+        }}
       />
 
       <div className="cfa-page">
