@@ -5,15 +5,17 @@ import { Search, DollarSign, ChevronRight, X } from 'lucide-react';
 import { salaryCategories } from '../data/salaryGuides';
 import { AdBanner, SidebarAd } from '../components/monetization/Ads';
 import { MockInterviewCTA } from '../components/cta/PlatformCTAs';
+import SearchIntelligence from '../services/SearchIntelligence';
 import './SalaryHub.css';
 import './RoadmapHub.css';
 
 export default function SalaryHub() {
   const [searchTerm, setSearchTerm] = useState('');
+  const [showSuggestions, setShowSuggestions] = useState(false);
   
-  const filteredCategories = salaryCategories.filter(cat => 
-    cat.title.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  const filteredCategories = SearchIntelligence.search(searchTerm, salaryCategories);
+  const suggestions = SearchIntelligence.getSuggestions(searchTerm);
+  const trendingSearches = SearchIntelligence.getTrending();
 
   return (
     <div className="hub-page">
@@ -31,14 +33,19 @@ export default function SalaryHub() {
           <p className="hub-subtitle">Don't leave money on the table. Know exactly what you're worth with our 2026 salary data based on real offers.</p>
           
           <form className="hub-search-form" onSubmit={(e) => e.preventDefault()}>
-            <div className="hub-search-bar">
+            <div className="hub-search-bar" style={{ position: 'relative' }}>
               <div className="hub-search-bar-input-wrapper">
                 <Search className="search-icon" size={22} />
                 <input 
                   type="text" 
                   placeholder="Search by role or country (e.g., India, Software Engineer)..." 
                   value={searchTerm}
-                  onChange={(e) => setSearchTerm(e.target.value)}
+                  onChange={(e) => {
+                    setSearchTerm(e.target.value);
+                    setShowSuggestions(true);
+                  }}
+                  onFocus={() => setShowSuggestions(true)}
+                  onBlur={() => setTimeout(() => setShowSuggestions(false), 200)}
                   aria-label="Search salaries"
                 />
                 {searchTerm && (
@@ -50,6 +57,40 @@ export default function SalaryHub() {
               <button type="submit" className="hub-search-submit-btn">
                 Search
               </button>
+
+              {/* Autocomplete suggestions panel */}
+              {showSuggestions && suggestions.length > 0 && (
+                <div className="search-autocomplete-dropdown">
+                  {suggestions.map(s => (
+                    <Link 
+                      key={s.id} 
+                      to={`/salary-guides/${s.id}`} 
+                      className="autocomplete-item"
+                    >
+                      <span className="ac-title">{s.title}</span>
+                      <span className="ac-cat">{s.category}</span>
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            {/* Trending Careers Tags */}
+            <div className="trending-tags-row mt-12 text-sm text-secondary">
+              <span className="font-bold">Trending: </span>
+              {trendingSearches.map(t => (
+                <button 
+                  key={t.id} 
+                  type="button" 
+                  className="trending-tag-btn"
+                  onClick={() => {
+                    const node = salaryCategories.find(s => s.id.includes(t.id) || s.title.toLowerCase().includes(t.id));
+                    setSearchTerm(node ? node.title : t.title);
+                  }}
+                >
+                  {t.title}
+                </button>
+              ))}
             </div>
           </form>
         </div>
