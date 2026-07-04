@@ -7,6 +7,7 @@ import { resumeAnalyzerAPI } from '../services/api';
 import SEO from '../components/SEO';
 import ToolEditorial from '../components/seo/ToolEditorial';
 import InternalLinksFooter from '../components/seo/InternalLinksFooter';
+import ComprehensiveSEOSection from '../components/seo/ComprehensiveSEOSection';
 
 export default function SkillGapAnalyzerPage() {
   const [resumeText, setResumeText] = useState('');
@@ -213,6 +214,7 @@ export default function SkillGapAnalyzerPage() {
           ]}
         />
       </div>
+      <ComprehensiveSEOSection topic="utilities" />
       <InternalLinksFooter />
     </>
   );

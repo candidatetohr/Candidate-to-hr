@@ -28,22 +28,108 @@ export default function SalaryDetail() {
   const { slug } = useParams();
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [localCity, setLocalCity] = useState(null);
 
   useEffect(() => {
-    import(`../data/salaryGuides/${slug}.json`)
-      .then((module) => {
-        setData(module.default);
+    const fetchLocalData = async () => {
+      setLoading(true);
+      let baseSlug = slug;
+      let cityMultiplier = 1;
+      let cityName = '';
+      
+      // Check if this is a localized page (e.g., software-engineer-in-austin-tx)
+      const inIndex = slug.lastIndexOf('-in-');
+      if (inIndex !== -1) {
+        baseSlug = slug.substring(0, inIndex);
+        const citySlug = slug.substring(inIndex + 4);
+        
+        // Dynamically import locations
+        try {
+          const { usTechHubs } = await import('../data/locations.js');
+          const cityData = usTechHubs.find(c => c.slug === citySlug);
+          if (cityData) {
+            cityMultiplier = cityData.multiplier;
+            cityName = cityData.name;
+            setLocalCity(cityData);
+          } else {
+            // fallback if city is not found but '-in-' is there
+            baseSlug = slug;
+          }
+        } catch (e) {
+          console.error("Failed to load locations");
+        }
+      }
+
+      try {
+        const module = await import(`../data/salaryGuides/${baseSlug}.json`);
+        // Deep clone to avoid mutating the cached module
+        const baseData = JSON.parse(JSON.stringify(module.default));
+        
+        if (cityName) {
+          // Apply multiplier to salary strings
+          const multiplySalaryStr = (str) => {
+            if (!str) return str;
+            return str.replace(/\$([\d,]+)/g, (match, numStr) => {
+              const num = parseInt(numStr.replace(/,/g, ''), 10);
+              const scaled = Math.round((num * cityMultiplier) / 1000) * 1000;
+              return '$' + scaled.toLocaleString();
+            });
+          };
+
+          // Recursively apply to all strings in the object
+          const applyMultiplierToObj = (obj) => {
+            if (typeof obj === 'string') {
+              // Replace "in the US", "in USA", "in India", "in 2026" safely
+              let newStr = obj.replace(/in (the )?US(A)?/gi, `in ${cityName}`);
+              newStr = newStr.replace(/in India/gi, `in ${cityName}`);
+              return multiplySalaryStr(newStr);
+            }
+            if (Array.isArray(obj)) {
+              return obj.map(item => applyMultiplierToObj(item));
+            }
+            if (obj && typeof obj === 'object') {
+              const newObj = {};
+              for (const key in obj) {
+                newObj[key] = applyMultiplierToObj(obj[key]);
+              }
+              return newObj;
+            }
+            return obj;
+          };
+
+          const localizedData = applyMultiplierToObj(baseData);
+          
+          // Force inject the city name into specific titles if needed
+          if (localizedData.hero && localizedData.hero.title) {
+            localizedData.hero.title = localizedData.hero.title.replace(/Guide (2026)?/i, `in ${cityName}`);
+            if (!localizedData.hero.title.includes(cityName)) {
+               localizedData.hero.title = `${localizedData.hero.title} in ${cityName}`;
+            }
+          }
+          if (localizedData.seo && localizedData.seo.title) {
+            localizedData.seo.title = `${baseData.hero?.title || 'Salary Guide'} in ${cityName} | CandidateToHR`;
+            localizedData.seo.description = multiplySalaryStr(localizedData.seo.description || '').replace(/in (the )?US(A)?|in India/gi, `in ${cityName}`);
+          }
+
+          setData(localizedData);
+        } else {
+          setData(baseData);
+        }
+      } catch (err) {
+        console.error(err);
+        setData(null);
+      } finally {
         setLoading(false);
-      })
-      .catch((err) => {
-        setLoading(false);
-      });
+      }
+    };
+
+    fetchLocalData();
   }, [slug]);
 
   if (loading) return <div className="p-48 text-center text-secondary">Loading salary data...</div>;
   if (!data) return <div className="p-48 text-center text-secondary">Salary data not found. <Link to="/salary-guides" className="color-primary">Go back</Link></div>;
 
-  const { seo, hero, experience, byCity, topCompanies, byStack, skillsThatIncreaseSalary, skillsThatIncraseSalary, futureOutlook, marketAnalysis, careerPath, industryTrends, negotiationTips, certificationsAndSkills, faq, quickLinks } = data;
+  const { seo, hero, experience, byCity, topCompanies, byStack, skillsThatIncreaseSalary, skillsThatIncraseSalary, futureOutlook, marketAnalysis, careerPath, industryTrends, negotiationTips, certificationsAndSkills, faq, quickLinks, longformAnalysis, comprehensiveDeepDive } = data;
   const skillsData = skillsThatIncreaseSalary || skillsThatIncraseSalary;
 
   return (
@@ -277,6 +363,35 @@ export default function SalaryDetail() {
 
           <CareerKnowledgeGraphCard roleId={slug.replace('-salary-guide-2026', '').replace('-us', '').replace('-india', '')} />
           
+          {longformAnalysis && longformAnalysis.length > 0 && (
+            <section className="mb-48 content-long-form">
+              {longformAnalysis.map((item, i) => (
+                <div key={i} className="mb-32">
+                  <h2 className="text-2xl font-bold mb-16 text-inverse">{item.heading}</h2>
+                  <div className="text-secondary leading-relaxed" style={{lineHeight: '1.75'}}>
+                    <SafeMarkdown>{item.content}</SafeMarkdown>
+                  </div>
+                </div>
+              ))}
+            </section>
+          )}
+
+          {comprehensiveDeepDive && comprehensiveDeepDive.length > 0 && (
+            <section className="mb-48 content-long-form">
+              <h2 className="text-3xl font-bold mb-24 text-blue-400">Definitive Guide & Deep Dive</h2>
+              <div className="space-y-32">
+                {comprehensiveDeepDive.map((item, i) => (
+                  <div key={i}>
+                    <h3 className="text-2xl font-bold mb-16 text-inverse">{item.heading}</h3>
+                    <div className="prose max-w-none prose-lg text-secondary">
+                      <SafeMarkdown>{item.content}</SafeMarkdown>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </section>
+          )}
+
           <FAQAccordion items={faq} />
 
           <AIRecommendations roleId={slug.replace('-salary-guide-2026', '').replace('-us', '').replace('-india', '')} />

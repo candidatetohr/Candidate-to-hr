@@ -6,6 +6,7 @@ import { interviewCategories } from '../data/interviewQuestions';
 import { AdBanner, SidebarAd } from '../components/monetization/Ads';
 import { MockInterviewCTA } from '../components/cta/PlatformCTAs';
 import SearchIntelligence from '../services/SearchIntelligence';
+import ComprehensiveSEOSection from '../components/seo/ComprehensiveSEOSection';
 import './InterviewHub.css';
 import './RoadmapHub.css';
 
@@ -124,6 +125,7 @@ export default function InterviewHub() {
           <SidebarAd />
         </aside>
       </div>
+      <ComprehensiveSEOSection topic="interview-prep" />
     </div>
   );
 }

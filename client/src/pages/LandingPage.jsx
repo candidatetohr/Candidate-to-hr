@@ -50,36 +50,80 @@ export default function LandingPage() {
         type="Organization"
         schema={{
           "@context": "https://schema.org",
-          "@type": ["SoftwareApplication", "WebApplication"],
-          "@id": "https://candidatetohr.online/#app",
-          "name": "CandidateToHR",
-          "alternateName": "CandidateToHR AI Career Platform",
-          "url": "https://candidatetohr.online",
-          "applicationCategory": "BusinessApplication",
-          "operatingSystem": "Web",
-          "description": "CandidateToHR is an AI-powered career intelligence platform. Features include AI resume analysis, ATS optimization, career roadmaps, interview preparation, skill gap analysis, and placement probability prediction.",
-          "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "USD",
-            "availability": "https://schema.org/InStock"
-          },
-          "publisher": {
-            "@type": "Organization",
-            "@id": "https://candidatetohr.online/#organization",
-            "name": "CandidateToHR"
-          },
-          "featureList": [
-            "AI Resume Analyzer",
-            "ATS Score Optimizer",
-            "Career Roadmaps",
-            "Interview Preparation",
-            "Skill Gap Analysis",
-            "AI Mock Interview Simulator",
-            "Resume Builder",
-            "Placement Probability Engine",
-            "AI Career Coach",
-            "Salary Guides"
+          "@graph": [
+            {
+              "@type": ["SoftwareApplication", "WebApplication"],
+              "@id": "https://candidatetohr.online/#app",
+              "name": "CandidateToHR",
+              "alternateName": "CandidateToHR AI Career Platform",
+              "url": "https://candidatetohr.online",
+              "applicationCategory": "BusinessApplication",
+              "operatingSystem": "Web",
+              "description": "CandidateToHR is an AI-powered career intelligence platform. Features include AI resume analysis, ATS optimization, career roadmaps, interview preparation, skill gap analysis, and placement probability prediction.",
+              "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock"
+              },
+              "publisher": {
+                "@id": "https://candidatetohr.online/#organization"
+              },
+              "featureList": [
+                "AI Resume Analyzer",
+                "ATS Score Optimizer",
+                "Career Roadmaps",
+                "Interview Preparation",
+                "Skill Gap Analysis",
+                "AI Mock Interview Simulator",
+                "Resume Builder",
+                "Placement Probability Engine",
+                "AI Career Coach",
+                "Salary Guides"
+              ]
+            },
+            {
+              "@type": "Organization",
+              "@id": "https://candidatetohr.online/#organization",
+              "name": "CandidateToHR",
+              "url": "https://candidatetohr.online",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://candidatetohr.online/logo.png",
+                "width": 512,
+                "height": 512
+              },
+              "description": "CandidateToHR is a free AI-powered career intelligence platform for job seekers and recruiters.",
+              "sameAs": [
+                "https://twitter.com/CandidateToHR",
+                "https://github.com/candidatetohr",
+                "https://www.linkedin.com/company/candidatetohr"
+              ],
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "contactType": "customer support",
+                "url": "https://candidatetohr.online/contact",
+                "availableLanguage": "English"
+              }
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://candidatetohr.online/#website",
+              "url": "https://candidatetohr.online",
+              "name": "CandidateToHR",
+              "description": "AI-powered career intelligence platform with resume analysis, roadmaps, salary guides, and interview prep.",
+              "publisher": {
+                "@id": "https://candidatetohr.online/#organization"
+              },
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://candidatetohr.online/roadmaps?q={search_term_string}"
+                },
+                "query-input": "required name=search_term_string"
+              }
+            }
           ]
         }}
       />

@@ -406,3 +406,156 @@
     font-size: 2.2rem;
   }
 }
+
+/* ─── KEY CONCEPTS DEEP DIVE ─────────────────────────── */
+.rd-concepts-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.rd-concept-card {
+  border-left: 3px solid var(--color-primary, #4f8ef7);
+  padding: 20px 24px !important;
+}
+
+.rd-concept-card h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0;
+}
+
+/* ─── EXPERT RESOURCES ─────────────────────────── */
+.rd-resources-block h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+.rd-books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.rd-book-card {
+  display: block;
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-lg, 12px);
+  padding: 16px;
+  text-decoration: none;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.rd-book-card:hover {
+  border-color: var(--color-primary, #4f8ef7);
+  transform: translateY(-2px);
+}
+
+.rd-book-title {
+  font-weight: 700;
+  color: var(--color-primary, #4f8ef7);
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+  line-height: 1.4;
+}
+
+.rd-book-author {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+.rd-book-desc {
+  font-size: 0.83rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  margin: 0;
+}
+
+.rd-docs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 12px;
+}
+
+.rd-doc-item {
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md, 8px);
+  padding: 12px 16px;
+}
+
+.rd-doc-link {
+  font-weight: 600;
+  color: var(--color-primary, #4f8ef7);
+  text-decoration: none;
+  font-size: 0.9rem;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.rd-doc-link:hover { text-decoration: underline; }
+
+.rd-doc-desc {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.rd-courses-table {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.rd-course-row {
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md, 8px);
+  padding: 14px 16px;
+}
+
+.rd-course-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 6px;
+  flex-wrap: wrap;
+}
+
+.rd-course-name {
+  font-weight: 700;
+  color: var(--color-primary, #4f8ef7);
+  text-decoration: none;
+  font-size: 0.93rem;
+}
+
+.rd-course-name:hover { text-decoration: underline; }
+
+.rd-course-platform {
+  font-size: 0.75rem;
+  background: rgba(79, 142, 247, 0.12);
+  color: var(--color-primary, #4f8ef7);
+  border: 1px solid rgba(79, 142, 247, 0.3);
+  border-radius: 100px;
+  padding: 2px 10px;
+}
+
+.rd-course-desc {
+  font-size: 0.83rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .rd-books-grid, .rd-docs-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

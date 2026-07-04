@@ -1,11 +1,11 @@
 import { Helmet } from 'react-helmet-async';
 
-export default function SEO({ title = 'CandidateToHR', description = '', canonical, type = 'WebPage', schema, noindex = false }) {
+export default function SEO({ title = 'CandidateToHR', description = '', canonical, type = 'WebPage', schema, noindex = false, image }) {
   const siteName = 'CandidateToHR';
   const DOMAIN = 'https://candidatetohr.online';
   const fullTitle = title.includes(siteName) ? title : `${title} | ${siteName}`;
   const url = canonical ? `${DOMAIN}${canonical}` : DOMAIN;
-  const ogImage = `${DOMAIN}/og-image.png`;
+  const ogImage = image || `${DOMAIN}/og-image.png`;
 
   return (
     <Helmet>

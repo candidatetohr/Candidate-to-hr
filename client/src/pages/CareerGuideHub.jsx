@@ -5,6 +5,7 @@ import { Search, BookOpen, ChevronRight, X } from 'lucide-react';
 import { careerGuideCategories } from '../data/careerGuides';
 import { AdBanner, SidebarAd } from '../components/monetization/Ads';
 import { ResumeBuilderCTA } from '../components/cta/PlatformCTAs';
+import ComprehensiveSEOSection from '../components/seo/ComprehensiveSEOSection';
 import './CareerGuideHub.css';
 
 export default function CareerGuideHub() {
@@ -77,6 +78,7 @@ export default function CareerGuideHub() {
           <SidebarAd />
         </aside>
       </div>
+      <ComprehensiveSEOSection topic="career-guides" />
     </div>
   );
 }

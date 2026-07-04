@@ -6,6 +6,8 @@ import { salaryCategories } from '../data/salaryGuides';
 import { AdBanner, SidebarAd } from '../components/monetization/Ads';
 import { MockInterviewCTA } from '../components/cta/PlatformCTAs';
 import SearchIntelligence from '../services/SearchIntelligence';
+import Breadcrumbs from '../components/seo/Breadcrumbs';
+import ComprehensiveSEOSection from '../components/seo/ComprehensiveSEOSection';
 import './SalaryHub.css';
 import './RoadmapHub.css';
 
@@ -124,6 +126,7 @@ export default function SalaryHub() {
           <SidebarAd />
         </aside>
       </div>
+      <ComprehensiveSEOSection topic="salary-guides" />
     </div>
   );
 }

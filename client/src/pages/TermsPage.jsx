@@ -1,6 +1,7 @@
 import SEO from '../components/SEO';
 import SafeMarkdown from '../components/seo/SafeMarkdown';
 import InternalLinksFooter from '../components/seo/InternalLinksFooter';
+import ComprehensiveSEOSection from '../components/seo/ComprehensiveSEOSection';
 import './StaticPage.css';
 
 const markdown = `
@@ -162,6 +163,7 @@ export default function TermsPage() {
       <div className="static-content prose">
         <SafeMarkdown>{markdown}</SafeMarkdown>
       </div>
+      <ComprehensiveSEOSection topic="utilities" />
       <InternalLinksFooter />
     </div>
   );

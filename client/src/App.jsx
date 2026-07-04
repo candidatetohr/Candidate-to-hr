@@ -4,6 +4,7 @@ import { useAuth } from './context/AuthContext';
 import AnalyticsService from './services/AnalyticsService';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import RelatedResources from './components/seo/RelatedResources';
 import CookieConsent from './components/CookieConsent';
 import ScrollToTop from './components/ScrollToTop';
 
@@ -175,6 +176,7 @@ export default function App() {
         </Routes>
       </Suspense>
       </main>
+      <RelatedResources />
       <Footer />
       <CookieConsent />
     </>

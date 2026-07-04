@@ -6,6 +6,7 @@ import { resumeCategories } from '../data/resumeExamples';
 import { AdBanner, SidebarAd } from '../components/monetization/Ads';
 import { ResumeBuilderCTA } from '../components/cta/PlatformCTAs';
 import SearchIntelligence from '../services/SearchIntelligence';
+import ComprehensiveSEOSection from '../components/seo/ComprehensiveSEOSection';
 import './ResumeHub.css';
 import './RoadmapHub.css';
 
@@ -124,6 +125,7 @@ export default function ResumeHub() {
           <SidebarAd />
         </aside>
       </div>
+      <ComprehensiveSEOSection topic="utilities" />
     </div>
   );
 }

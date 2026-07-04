@@ -221,6 +221,22 @@ export default function InterviewDetail() {
             </div>
           )}
 
+          {data.comprehensiveDeepDive && data.comprehensiveDeepDive.length > 0 && (
+            <section className="mb-48 content-long-form border-t border-default pt-48">
+              <h2 className="text-3xl font-bold mb-24 text-green-400">Definitive Guide & Deep Dive</h2>
+              <div className="space-y-32">
+                {data.comprehensiveDeepDive.map((item, i) => (
+                  <div key={i}>
+                    <h3 className="text-2xl font-bold mb-16 text-inverse">{item.heading}</h3>
+                    <div className="text-secondary leading-relaxed" style={{lineHeight: '1.75'}}>
+                      <SafeMarkdown>{item.content}</SafeMarkdown>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </section>
+          )}
+
           <CareerKnowledgeGraphCard roleId={slug} />
 
           <AIRecommendations roleId={slug} />

@@ -8,6 +8,60 @@ Disallow: /analytics
 Disallow: /profile/
 
 # CandidateToHR — AI Career Intelligence Platform
-Host: candidatetohr.online
+# https://candidatetohr.online
+
+User-agent: *
+Allow: /
+Allow: /roadmaps
+Allow: /roadmaps/
+Allow: /interview-questions
+Allow: /interview-questions/
+Allow: /salary-guides
+Allow: /salary-guides/
+Allow: /resume-examples
+Allow: /resume-examples/
+Allow: /career-guides
+Allow: /career-guides/
+Allow: /about
+Allow: /contact
+Allow: /privacy-policy
+Allow: /terms
+Allow: /disclaimer
+Allow: /sitemap
+
+# Private / authenticated routes — do not index
+Disallow: /dashboard
+Disallow: /candidate-dashboard
+Disallow: /profile-edit
+Disallow: /create-job
+Disallow: /analytics
+Disallow: /auth
+Disallow: /verify-email
+Disallow: /reset-password
+Disallow: /forgot-password
+Disallow: /jobs/create
+Disallow: /jobs/*/upload
+Disallow: /applications/
+
+# AI training crawlers — opt-out
+User-agent: GPTBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Generic rate limiting for non-Google bots
+User-agent: *
+Crawl-delay: 5
+
+User-agent: Googlebot
+Crawl-delay: 0
+Allow: /
 
 Sitemap: https://candidatetohr.online/sitemap.xml

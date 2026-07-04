@@ -5,6 +5,7 @@ import { resumeAnalyzerAPI } from '../services/api';
 import SEO from '../components/SEO';
 import ToolEditorial from '../components/seo/ToolEditorial';
 import InternalLinksFooter from '../components/seo/InternalLinksFooter';
+import ComprehensiveSEOSection from '../components/seo/ComprehensiveSEOSection';
 import './TruthDetectorPage.css';
 
 export default function TruthDetectorPage() {
@@ -220,6 +221,7 @@ export default function TruthDetectorPage() {
           bestPractices="<p>If the AI flags a metric that is 100% true, do not delete it! Instead, add a brief note on *how* you achieved it (e.g., instead of 'Increased traffic by 500%', write 'Increased traffic by 500% by migrating from legacy CMS to Next.js').</p>"
         />
       </div>
+      <ComprehensiveSEOSection topic="utilities" />
       <InternalLinksFooter />
     </div>
   );

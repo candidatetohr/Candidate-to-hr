@@ -21,6 +21,8 @@ import CareerKnowledgeGraph from '../services/CareerKnowledgeGraph';
 import AIOverviewBox from '../components/seo/AIOverviewBox';
 import FAQAccordion from '../components/seo/FAQAccordion';
 import AIRecommendations from '../components/seo/AIRecommendations';
+import SkillAssessmentQuiz from '../components/seo/SkillAssessmentQuiz';
+import LearningJourneyCTA from '../components/seo/LearningJourneyCTA';
 
 import './CareerGuideDetail.css';
 
@@ -43,7 +45,7 @@ export default function CareerGuideDetail() {
   if (loading) return <div className="p-48 text-center text-secondary">Loading guide...</div>;
   if (!data) return <div className="p-48 text-center text-secondary">Guide not found. <Link to="/career-guides" className="color-primary">Go back</Link></div>;
 
-  const { seo, hero, sections, resources, faq, quickLinks } = data;
+  const { seo, hero, sections, resources, faq, quickLinks, comprehensiveDeepDive } = data;
 
   return (
     <div className="guide-detail-page container-standard px-6 py-8">
@@ -113,6 +115,24 @@ export default function CareerGuideDetail() {
               {idx === 1 && <div className="my-10"><InlineAd /></div>}
             </section>
           ))}
+          
+          {comprehensiveDeepDive && comprehensiveDeepDive.length > 0 && (
+            <section className="mb-48 content-long-form">
+              <h2 className="text-3xl font-bold mb-24 text-fuchsia-400">Definitive Guide & Deep Dive</h2>
+              <div className="space-y-32">
+                {comprehensiveDeepDive.map((item, i) => (
+                  <div key={i}>
+                    <h3 className="text-2xl font-bold mb-16 text-inverse">{item.heading}</h3>
+                    <div className="prose max-w-none prose-lg text-secondary">
+                      <SafeMarkdown>{item.content}</SafeMarkdown>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </section>
+          )}
+          
+          <LearningJourneyCTA roleName={hero?.title || 'this role'} />
 
           {resources && resources.length > 0 && (
             <section className="mt-64 bg-slate-800/50 p-32 border border-default">
@@ -126,6 +146,8 @@ export default function CareerGuideDetail() {
           )}
 
           <CareerKnowledgeGraphCard roleId={CareerKnowledgeGraph.getBySlug('careerGuide', slug)?.id || slug} />
+
+          <SkillAssessmentQuiz roleId={slug} roleName={hero?.title || 'this role'} />
           
           <FAQAccordion items={faq} />
 

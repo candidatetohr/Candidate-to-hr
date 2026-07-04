@@ -48,6 +48,9 @@ export default function SchemaMarkup({ type, data }) {
           "height": 512
         }
       },
+      "wordCount": data.wordCount || 1500,
+      "articleSection": data.articleSection || "Career Development",
+      "inLanguage": "en-US",
       "isPartOf": {
         "@id": `${DOMAIN}/#website`
       }

@@ -18,6 +18,9 @@ import CareerKnowledgeGraphCard from '../components/seo/CareerKnowledgeGraphCard
 import AIOverviewBox from '../components/seo/AIOverviewBox';
 import FAQAccordion from '../components/seo/FAQAccordion';
 import AIRecommendations from '../components/seo/AIRecommendations';
+import SkillAssessmentQuiz from '../components/seo/SkillAssessmentQuiz';
+import LearningJourneyCTA from '../components/seo/LearningJourneyCTA';
+import InteractiveRoadmapTimeline from '../components/seo/InteractiveRoadmapTimeline';
 
 import './RoadmapDetail.css';
 
@@ -56,7 +59,7 @@ export default function RoadmapDetail() {
     );
   }
 
-  const { seo, hero, overview, skillsTimeline, learningPath, toolsAndTech, projects, certifications, salaryInsights, interviewPrep, jobMarket, faq, quickLinks } = data;
+  const { seo, hero, overview, skillsTimeline, learningPath, toolsAndTech, projects, certifications, salaryInsights, interviewPrep, jobMarket, faq, quickLinks, expertResources, keyConceptsDeepDive, communityAndPractice, comprehensiveDeepDive } = data;
 
   return (
     <div className="roadmap-detail-page">
@@ -178,17 +181,7 @@ export default function RoadmapDetail() {
           {/* ─── MONTH-BY-MONTH TIMELINE ─────────────────────────── */}
           <section className="rd-section">
             <h2><MapPin size={22} className="text-blue"/> Step-by-Step Learning Path</h2>
-            <div className="rd-timeline">
-              {learningPath.map((step, i) => (
-                <div key={i} className="timeline-item">
-                  <div className="rd-timeline-dot"></div>
-                  <div className="rd-timeline-content">
-                    <h3>{step.month}</h3>
-                    <p>{step.description}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
+            <InteractiveRoadmapTimeline learningPath={learningPath} />
           </section>
 
           {/* ─── SKILLS & TOOLS ─────────────────────────── */}
@@ -286,6 +279,161 @@ export default function RoadmapDetail() {
           <CareerKnowledgeGraphCard roleId={slug} />
           
           <FAQAccordion items={faq} />
+
+          {/* ─── KEY CONCEPTS DEEP DIVE ─────────────────────────── */}
+          {keyConceptsDeepDive && keyConceptsDeepDive.length > 0 && (
+            <section className="rd-section">
+              <h2>🔬 Key Concepts Deep Dive</h2>
+              <div className="rd-concepts-grid">
+                {keyConceptsDeepDive.map((item, i) => (
+                  <div key={i} className="card rd-concept-card">
+                    <h3>{item.concept}</h3>
+                    <p className="mt-8 text-secondary" style={{lineHeight: '1.75'}}>{item.explanation}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+          )}
+
+          {/* ─── EXPERT RESOURCES ─────────────────────────── */}
+          {expertResources && (
+            <section className="rd-section">
+              <h2>📚 Expert Resources & Learning Materials</h2>
+
+              {expertResources.books && expertResources.books.length > 0 && (
+                <div className="rd-resources-block">
+                  <h3>📖 Essential Books</h3>
+                  <div className="rd-books-grid">
+                    {expertResources.books.map((book, i) => (
+                      <a
+                        key={i}
+                        href={book.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="rd-book-card"
+                      >
+                        <div className="rd-book-title">{book.title}</div>
+                        <div className="rd-book-author">by {book.author}</div>
+                        <p className="rd-book-desc">{book.description}</p>
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {expertResources.officialDocs && expertResources.officialDocs.length > 0 && (
+                <div className="rd-resources-block mt-24">
+                  <h3>📄 Official Documentation</h3>
+                  <div className="rd-docs-grid">
+                    {expertResources.officialDocs.map((doc, i) => (
+                      <div key={i} className="rd-doc-item">
+                        <a href={doc.url} target="_blank" rel="noopener noreferrer" className="rd-doc-link">
+                          {doc.name} →
+                        </a>
+                        <p className="rd-doc-desc">{doc.description}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {expertResources.freeCourses && expertResources.freeCourses.length > 0 && (
+                <div className="rd-resources-block mt-24">
+                  <h3>🎓 Recommended Courses</h3>
+                  <div className="rd-courses-table">
+                    {expertResources.freeCourses.map((course, i) => (
+                      <div key={i} className="rd-course-row">
+                        <div className="rd-course-info">
+                          <a href={course.url} target="_blank" rel="noopener noreferrer" className="rd-course-name">{course.name}</a>
+                          <span className="rd-course-platform">{course.platform}</span>
+                        </div>
+                        <p className="rd-course-desc">{course.description}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </section>
+          )}
+
+          {/* ─── COMMUNITY & PRACTICE ─────────────────────────── */}
+          {communityAndPractice && (
+            <section className="rd-section">
+              <h2>🌐 Community & Practice</h2>
+
+              {communityAndPractice.subreddits && communityAndPractice.subreddits.length > 0 && (
+                <div className="rd-resources-block">
+                  <h3>💬 Communities to Join</h3>
+                  <div className="chips-container mt-8">
+                    {communityAndPractice.subreddits.map((sub, i) => (
+                      <a key={i} href={sub.url} target="_blank" rel="noopener noreferrer" className="chip chip-outline">
+                        {sub.name}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {communityAndPractice.githubRepos && communityAndPractice.githubRepos.length > 0 && (
+                <div className="rd-resources-block mt-16">
+                  <h3>⭐ GitHub Repos to Star</h3>
+                  <ul className="rd-list mt-8">
+                    {communityAndPractice.githubRepos.map((repo, i) => (
+                      <li key={i}>
+                        <a href={repo.url} target="_blank" rel="noopener noreferrer" className="color-primary font-semibold">
+                          {repo.name}
+                        </a> — {repo.description}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {communityAndPractice.practiceProjects && communityAndPractice.practiceProjects.length > 0 && (
+                <div className="rd-resources-block mt-16">
+                  <h3>🛠️ Advanced Practice Projects</h3>
+                  <ul className="rd-list mt-8">
+                    {communityAndPractice.practiceProjects.map((proj, i) => (
+                      <li key={i}>{proj}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {communityAndPractice.newsletters && communityAndPractice.newsletters.length > 0 && (
+                <div className="rd-resources-block mt-16">
+                  <h3>📰 Newsletters to Subscribe</h3>
+                  <div className="chips-container mt-8">
+                    {communityAndPractice.newsletters.map((nl, i) => (
+                      <a key={i} href={nl.url} target="_blank" rel="noopener noreferrer" className="chip">
+                        {nl.name}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </section>
+          )}
+
+          {comprehensiveDeepDive && comprehensiveDeepDive.length > 0 && (
+            <section className="rd-section content-long-form">
+              <h2><Zap size={22} className="text-yellow"/> Definitive Guide & Deep Dive</h2>
+              <div className="mt-24 space-y-32">
+                {comprehensiveDeepDive.map((item, i) => (
+                  <div key={i}>
+                    <h3 className="text-2xl font-bold mb-16 text-inverse">{item.heading}</h3>
+                    <div className="text-secondary leading-relaxed" style={{lineHeight: '1.75'}}>
+                      <SafeMarkdown>{item.content}</SafeMarkdown>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </section>
+          )}
+
+          <LearningJourneyCTA roleName={seo.title.split(' Roadmap')[0] || 'this role'} />
+
+          <SkillAssessmentQuiz roleId={slug} roleName={seo.title.split(' Roadmap')[0] || 'this role'} />
 
           <AIRecommendations roleId={slug} />
 

@@ -1,0 +1,72 @@
+.irt-container {
+  position: relative;
+  padding-left: 16px;
+  margin-top: 24px;
+}
+
+.irt-item {
+  position: relative;
+  padding-left: 32px;
+  padding-bottom: 24px;
+}
+
+.irt-item:last-child {
+  padding-bottom: 0;
+}
+
+.irt-line {
+  position: absolute;
+  left: 11px;
+  top: 24px;
+  bottom: -24px;
+  width: 2px;
+  background: var(--border-default);
+}
+
+.irt-item:last-child .irt-line {
+  display: none;
+}
+
+.irt-marker {
+  position: absolute;
+  left: 0;
+  top: 18px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.irt-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--border-default);
+  transition: background 0.2s;
+}
+
+.irt-open .irt-dot {
+  background: var(--color-primary);
+  box-shadow: 0 0 0 4px rgba(79, 142, 247, 0.2);
+}
+
+.irt-content {
+  padding: 16px 24px;
+}
+
+.irt-details {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+
+.irt-details.expanded {
+  max-height: 500px;
+  opacity: 1;
+}

@@ -12,6 +12,7 @@ import { salaryCategories } from './src/data/salaryGuides/index.js';
 import { interviewCategories } from './src/data/interviewQuestions/index.js';
 import { resumeCategories } from './src/data/resumeExamples/index.js';
 import { careerGuideCategories } from './src/data/careerGuides/index.js';
+import { usTechHubs } from './src/data/locations.js';
 
 const DOMAIN = 'https://candidatetohr.online';
 const TODAY = new Date().toISOString().split('T')[0]; // YYYY-MM-DD
@@ -71,8 +72,9 @@ function generateSitemap() {
   </url>`);
   });
 
-  // Add Salary Guides
+  // Add Salary Guides (Base + Localized)
   salaryCategories.forEach((item) => {
+    // 1. Add the base guide
     urls.push(`
   <url>
     <loc>${DOMAIN}/salary-guides/${item.id}</loc>
@@ -80,6 +82,17 @@ function generateSitemap() {
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>`);
+    
+    // 2. Add localized guides for all 25 tech hubs
+    usTechHubs.forEach(city => {
+      urls.push(`
+  <url>
+    <loc>${DOMAIN}/salary-guides/${item.id}-in-${city.slug}</loc>
+    <lastmod>${TODAY}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>`);
+    });
   });
 
   // Add Interview Questions

@@ -1,0 +1,35 @@
+.lj-cta-container {
+  position: relative;
+  background: linear-gradient(135deg, rgba(79, 142, 247, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+  border: 1px solid rgba(79, 142, 247, 0.3);
+  border-radius: var(--radius-lg, 12px);
+  padding: 48px 24px;
+  text-align: center;
+  margin: 48px 0;
+  overflow: hidden;
+}
+
+.lj-cta-content {
+  position: relative;
+  z-index: 2;
+}
+
+.lj-cta-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.lj-cta-decoration {
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.lj-cta-dec-1 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--color-primary);
+}

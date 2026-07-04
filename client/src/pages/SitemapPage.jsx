@@ -6,6 +6,7 @@ import { interviewCategories } from '../data/interviewQuestions';
 import { careerGuideCategories } from '../data/careerGuides';
 import { salaryCategories } from '../data/salaryGuides';
 import { roadmapList } from '../data/roadmaps';
+import ComprehensiveSEOSection from '../components/seo/ComprehensiveSEOSection';
 import './SitemapPage.css';
 
 export default function SitemapPage() {
@@ -113,6 +114,7 @@ export default function SitemapPage() {
           </strong> indexed resources
         </p>
       </div>
+      <ComprehensiveSEOSection topic="utilities" />
     </div>
   );
 }

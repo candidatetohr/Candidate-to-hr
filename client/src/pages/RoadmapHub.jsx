@@ -4,6 +4,7 @@ import SEO from '../components/SEO';
 import { Search, Map, TrendingUp, Briefcase, ChevronRight, BarChart2, X } from 'lucide-react';
 import { roadmapList } from '../data/roadmaps';
 import SearchIntelligence from '../services/SearchIntelligence';
+import ComprehensiveSEOSection from '../components/seo/ComprehensiveSEOSection';
 import './RoadmapHub.css';
 
 export default function RoadmapHub() {
@@ -170,6 +171,7 @@ export default function RoadmapHub() {
 
         </main>
       </div>
+      <ComprehensiveSEOSection topic="roadmaps" />
     </div>
   );
 }
