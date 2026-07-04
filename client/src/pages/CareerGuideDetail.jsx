@@ -17,6 +17,7 @@ import ShareButtons from '../components/seo/ShareButtons';
 import BackToTop from '../components/seo/BackToTop';
 import CareerGraphSidebar from '../components/seo/CareerGraphSidebar';
 import CareerKnowledgeGraphCard from '../components/seo/CareerKnowledgeGraphCard';
+import CareerKnowledgeGraph from '../services/CareerKnowledgeGraph';
 import AIOverviewBox from '../components/seo/AIOverviewBox';
 import FAQAccordion from '../components/seo/FAQAccordion';
 import AIRecommendations from '../components/seo/AIRecommendations';
