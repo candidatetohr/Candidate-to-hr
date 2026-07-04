@@ -9,6 +9,7 @@ import {
 import { interviewAPI } from '../services/api';
 import SEO from '../components/SEO';
 import ToolEditorial from '../components/seo/ToolEditorial';
+import InternalLinksFooter from '../components/seo/InternalLinksFooter';
 import './InterviewSimPage.css';
 
 const GRADE_COLOR = (g) => g >= 8 ? '#10b981' : g >= 6 ? '#4f8ef7' : g >= 4 ? '#f59e0b' : '#ef4444';
@@ -490,6 +491,8 @@ export default function InterviewSimPage() {
           bestPractices="<p>Treat it like a real interview. Use the audio input feature if possible so you practice speaking out loud, not just typing. Always use the STAR method. Review your 'Action Plan' at the end of the session to see which category (Behavioral vs Technical) needs the most work.</p>"
         />
       </div>
+
+      <InternalLinksFooter />
 
     </div>
   );

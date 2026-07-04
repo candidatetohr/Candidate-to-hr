@@ -1,5 +1,6 @@
 import SEO from '../components/SEO';
 import SafeMarkdown from '../components/seo/SafeMarkdown';
+import InternalLinksFooter from '../components/seo/InternalLinksFooter';
 import './StaticPage.css';
 
 const markdown = `
@@ -125,6 +126,7 @@ export default function DisclaimerPage() {
       <div className="static-content prose">
         <SafeMarkdown>{markdown}</SafeMarkdown>
       </div>
+      <InternalLinksFooter />
     </div>
   );
 }

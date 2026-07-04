@@ -1,5 +1,6 @@
 import SEO from '../components/SEO';
 import SafeMarkdown from '../components/seo/SafeMarkdown';
+import InternalLinksFooter from '../components/seo/InternalLinksFooter';
 import './StaticPage.css';
 
 const contactSchema = {
@@ -82,6 +83,7 @@ export default function ContactPage() {
       <div className="static-content prose">
         <SafeMarkdown>{markdown}</SafeMarkdown>
       </div>
+      <InternalLinksFooter />
     </div>
   );
 }

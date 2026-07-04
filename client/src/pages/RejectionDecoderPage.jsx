@@ -4,6 +4,7 @@ import { FileText, Briefcase, Mail, Zap, ChevronRight, AlertTriangle, CheckCircl
 import { resumeAnalyzerAPI } from '../services/api';
 import SEO from '../components/SEO';
 import ToolEditorial from '../components/seo/ToolEditorial';
+import InternalLinksFooter from '../components/seo/InternalLinksFooter';
 import './RejectionDecoderPage.css';
 
 export default function RejectionDecoderPage() {
@@ -225,6 +226,7 @@ export default function RejectionDecoderPage() {
           bestPractices="<p>Paste the exact job description you applied for (as companies often update them). Include the rejection email if possible, as sometimes recruiters leave subtle clues in the phrasing. Don't take the 'Brutal Truth' personally—use it as fuel to improve.</p>"
         />
       </div>
+      <InternalLinksFooter />
     </div>
   );
 }

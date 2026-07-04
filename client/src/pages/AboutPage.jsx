@@ -1,5 +1,6 @@
 import SEO from '../components/SEO';
 import SafeMarkdown from '../components/seo/SafeMarkdown';
+import InternalLinksFooter from '../components/seo/InternalLinksFooter';
 import './StaticPage.css';
 
 const DOMAIN = 'https://candidatetohr.online';
@@ -149,6 +150,7 @@ export default function AboutPage() {
       <div className="static-content prose">
         <SafeMarkdown>{markdown}</SafeMarkdown>
       </div>
+      <InternalLinksFooter />
     </div>
   );
 }

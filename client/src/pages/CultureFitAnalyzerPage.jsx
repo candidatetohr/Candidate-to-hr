@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { resumeAnalyzerAPI } from '../services/api';
 import SEO from '../components/SEO';
 import ToolEditorial from '../components/seo/ToolEditorial';
+import InternalLinksFooter from '../components/seo/InternalLinksFooter';
 import { Heart, Building, Briefcase, Zap, Users, ShieldCheck, CheckCircle2 } from 'lucide-react';
 
 export default function CultureFitAnalyzerPage() {
@@ -205,6 +206,7 @@ export default function CultureFitAnalyzerPage() {
           ]}
         />
       </div>
+      <InternalLinksFooter />
     </>
   );
 }

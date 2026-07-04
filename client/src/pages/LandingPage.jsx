@@ -1,12 +1,15 @@
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { m, LazyMotion } from 'framer-motion';
 import {
   Zap, Brain, Target, BarChart3, Users, Award,
   Shield, ArrowRight, CheckCircle, MessageSquare, TrendingUp,
   FileSearch, Sparkles, AlertTriangle, Map, PieChart, ShieldAlert,
-  FileText, DollarSign
+  FileText, DollarSign, ChevronRight
 } from 'lucide-react';
 import SEO from '../components/SEO';
+import { roadmapList } from '../data/roadmaps';
+import { salaryCategories } from '../data/salaryGuides';
+import { careerGuideCategories } from '../data/careerGuides';
 import './LandingPage.css';
 
 const loadFeatures = () => import('../framerFeatures.js').then(res => res.default);
@@ -321,6 +324,86 @@ export default function LandingPage() {
               </m.div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* ── SEO CONTENT HUB ── Crawlable links to all major content pages */}
+      <section className="lp-content-hub">
+        <div className="container">
+
+          {/* Roadmaps */}
+          <m.div
+            className="section-header-center"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <h2>Tech Career <span className="gradient-text">Roadmaps</span></h2>
+            <p>Step-by-step learning paths, salary data, and skill timelines for 25+ tech roles.</p>
+          </m.div>
+          <div className="lp-hub-grid">
+            {roadmapList.slice(0, 8).map((r) => (
+              <Link key={r.id} to={`/roadmaps/${r.id}`} className="lp-hub-card">
+                <span className="lp-hub-card-title">{r.title.replace(' Roadmap 2026', '').replace(' Roadmap', '')}</span>
+                <span className="lp-hub-card-meta">{r.salary} · {r.duration}</span>
+                <ChevronRight size={14} className="lp-hub-card-arrow" />
+              </Link>
+            ))}
+          </div>
+          <div className="lp-hub-see-all">
+            <Link to="/roadmaps" className="lp-see-all-link">See all {roadmapList.length} career roadmaps →</Link>
+          </div>
+
+          <div className="section-divider" />
+
+          {/* Salary Guides */}
+          <m.div
+            className="section-header-center"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <h2>Salary <span className="gradient-text">Guides</span> 2026</h2>
+            <p>Real compensation data for tech roles in India & USA — by experience, city, and company.</p>
+          </m.div>
+          <div className="lp-hub-grid">
+            {salaryCategories.slice(0, 8).map((s) => (
+              <Link key={s.id} to={`/salary-guides/${s.id}`} className="lp-hub-card">
+                <span className="lp-hub-card-title">{s.title}</span>
+                <span className="lp-hub-card-meta">{s.country} · {s.role}</span>
+                <ChevronRight size={14} className="lp-hub-card-arrow" />
+              </Link>
+            ))}
+          </div>
+          <div className="lp-hub-see-all">
+            <Link to="/salary-guides" className="lp-see-all-link">See all {salaryCategories.length} salary guides →</Link>
+          </div>
+
+          <div className="section-divider" />
+
+          {/* Career Guides */}
+          <m.div
+            className="section-header-center"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <h2>Career <span className="gradient-text">Guides</span></h2>
+            <p>Expert advice for breaking into tech, switching roles, and advancing your career.</p>
+          </m.div>
+          <div className="lp-hub-grid">
+            {careerGuideCategories.slice(0, 8).map((g) => (
+              <Link key={g.id} to={`/career-guides/${g.id}`} className="lp-hub-card">
+                <span className="lp-hub-card-title">{g.title}</span>
+                <span className="lp-hub-card-meta">{g.topic} · {g.readTime}</span>
+                <ChevronRight size={14} className="lp-hub-card-arrow" />
+              </Link>
+            ))}
+          </div>
+          <div className="lp-hub-see-all">
+            <Link to="/career-guides" className="lp-see-all-link">See all {careerGuideCategories.length} career guides →</Link>
+          </div>
+
         </div>
       </section>
 

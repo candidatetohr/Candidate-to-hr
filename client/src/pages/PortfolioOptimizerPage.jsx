@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { resumeAnalyzerAPI } from '../services/api';
 import SEO from '../components/SEO';
 import ToolEditorial from '../components/seo/ToolEditorial';
+import InternalLinksFooter from '../components/seo/InternalLinksFooter';
 import { Layout, Search, Zap, PenTool, AlertCircle, CheckCircle } from 'lucide-react';
 import toast from 'react-hot-toast';
 
@@ -216,6 +217,7 @@ export default function PortfolioOptimizerPage() {
           ]}
         />
       </div>
+      <InternalLinksFooter />
     </>
   );
 }

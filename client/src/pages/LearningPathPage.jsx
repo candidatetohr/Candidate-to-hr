@@ -4,6 +4,7 @@ import { Target, ArrowRight, CheckCircle, Clock, Zap, AlertCircle, FileText, Map
 import { resumeAnalyzerAPI } from '../services/api';
 import SEO from '../components/SEO';
 import ToolEditorial from '../components/seo/ToolEditorial';
+import InternalLinksFooter from '../components/seo/InternalLinksFooter';
 import './LearningPathPage.css';
 
 export default function LearningPathPage() {
@@ -231,6 +232,7 @@ export default function LearningPathPage() {
           bestPractices="<p>Treat the generated roadmap as a living document. When you hit a milestone, update your resume and run the tool again to see if the market requirements have shifted or if you are now ready to apply.</p>"
         />
       </div>
+      <InternalLinksFooter />
     </div>
   );
 }

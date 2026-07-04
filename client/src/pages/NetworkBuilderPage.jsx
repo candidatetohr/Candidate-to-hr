@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { resumeAnalyzerAPI } from '../services/api';
 import SEO from '../components/SEO';
 import ToolEditorial from '../components/seo/ToolEditorial';
+import InternalLinksFooter from '../components/seo/InternalLinksFooter';
 import { Network, Search, Zap, UserPlus, Link, Mail, Copy } from 'lucide-react';
 
 export default function NetworkBuilderPage() {
@@ -217,6 +218,7 @@ export default function NetworkBuilderPage() {
           ]}
         />
       </div>
+      <InternalLinksFooter />
     </>
   );
 }

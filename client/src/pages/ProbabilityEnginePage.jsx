@@ -4,6 +4,7 @@ import { PieChart, GraduationCap, Code, Briefcase, Zap, TrendingUp, AlertTriangl
 import { resumeAnalyzerAPI } from '../services/api';
 import SEO from '../components/SEO';
 import ToolEditorial from '../components/seo/ToolEditorial';
+import InternalLinksFooter from '../components/seo/InternalLinksFooter';
 import './ProbabilityEnginePage.css';
 
 export default function ProbabilityEnginePage() {
@@ -250,6 +251,7 @@ export default function ProbabilityEnginePage() {
           bestPractices="<p>Be brutally honest with your inputs. Don't list a skill unless you can pass a technical interview on it. Play around with the variables—add a new hypothetical project or skill to see how much it increases your probability score, then go build that project!</p>"
         />
       </div>
+      <InternalLinksFooter />
     </div>
   );
 }

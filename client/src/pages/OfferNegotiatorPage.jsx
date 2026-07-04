@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { resumeAnalyzerAPI } from '../services/api';
 import SEO from '../components/SEO';
 import ToolEditorial from '../components/seo/ToolEditorial';
+import InternalLinksFooter from '../components/seo/InternalLinksFooter';
 import { DollarSign, Target, MessageSquare, Zap, ShieldAlert, TrendingUp, Sparkles, ArrowRight } from 'lucide-react';
 
 export default function OfferNegotiatorPage() {
@@ -207,6 +208,7 @@ export default function OfferNegotiatorPage() {
           ]}
         />
       </div>
+      <InternalLinksFooter />
     </>
   );
 }

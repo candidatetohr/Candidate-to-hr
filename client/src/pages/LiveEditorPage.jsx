@@ -6,6 +6,7 @@ import html2pdf from 'html2pdf.js';
 import { resumeBuilderAPI } from '../services/api';
 import SEO from '../components/SEO';
 import ToolEditorial from '../components/seo/ToolEditorial';
+import InternalLinksFooter from '../components/seo/InternalLinksFooter';
 import './LiveEditorPage.css';
 
 const ResumePreview = ({ data }) => {
@@ -242,6 +243,8 @@ export default function LiveEditorPage() {
           bestPractices="<p>Include your dates of employment, specific technologies used, and the business impact of your work in the brain dump. After generating, always review the text manually to ensure the AI hasn't hallucinated any skills you don't actually possess.</p>"
         />
       </div>
+
+      <InternalLinksFooter />
 
     </div>
   );
