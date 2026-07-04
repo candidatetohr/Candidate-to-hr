@@ -138,7 +138,7 @@ export default function RoadmapDetail() {
         </div>
       </header>
 
-      <div className="container-seo rd-layout">
+      <div className="container-standard rd-layout">
         
         <main className="rd-main">
           <TableOfContents contentSelector=".rd-main" />
