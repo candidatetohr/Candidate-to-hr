@@ -131,5 +131,12 @@ export const careerGuideCategories = [
     "description": "Future-proof your career by mastering these high-demand technical skills in 2026. Learn AI, Cloud, Cybersecurity, Data Engineering, and Web3.",
     "topic": "Career Advice",
     "readTime": "2 min read"
+  },
+  {
+    "id": "how-to-become-blockchain-developer",
+    "title": "How to Become a Blockchain Developer",
+    "description": "The ultimate guide on how to become a Blockchain Developer in 2026. Discover required skills, languages, salaries, and step-by-step career path guidelines.",
+    "topic": "Development",
+    "readTime": "9 min read"
   }
 ];

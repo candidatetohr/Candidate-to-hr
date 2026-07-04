@@ -159,5 +159,12 @@ export const interviewCategories = [
     "description": "Crack your TypeScript interview. Covers interfaces vs types, generics, utility types, decorators, strict mode, and advanced TS architecture.",
     "topic": "Programming",
     "count": 50
+  },
+  {
+    "id": "blockchain-developer",
+    "title": "Top Blockchain Developer Interview Questions",
+    "description": "Ace your Web3 tech screen with our curated list of 50 Blockchain Developer interview questions, covering Solidity, Rust, DApp security, and EVM internals.",
+    "topic": "Programming",
+    "count": 50
   }
 ];

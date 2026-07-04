@@ -22,10 +22,10 @@ export const roadmapList = [
     "isTrending": false
   },
   {
-    "id": "blockchain-developer",
+    "id": "blockchain-developer-roadmap-2026",
     "title": "Blockchain Developer Roadmap 2026",
     "shortDescription": "Build the decentralized internet. Blockchain developers create smart contracts, DeFi protocols, and Web3 applications on Ethereum, Solana, and other leading blockchains.",
-    "category": "Data & AI",
+    "category": "Development",
     "difficulty": "Hard",
     "duration": "7 Months",
     "salary": "$145,000",

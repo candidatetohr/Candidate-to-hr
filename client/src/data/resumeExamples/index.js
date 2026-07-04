@@ -118,5 +118,11 @@ export const resumeCategories = [
     "title": "UI/UX Designer Resume Examples",
     "description": "Write a perfect UX Designer resume in 2026. Includes Figma skills, portfolio tips, and a complete product designer resume example that passes ATS.",
     "role": "Design"
+  },
+  {
+    "id": "blockchain-developer",
+    "title": "Blockchain Developer Resume Examples",
+    "description": "Learn how to write a perfect Blockchain Developer resume that passes the ATS. Discover the top keywords, common mistakes, and view a complete 100/100 resume example.",
+    "role": "Development"
   }
 ];

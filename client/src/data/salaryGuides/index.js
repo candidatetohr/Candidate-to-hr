@@ -187,5 +187,12 @@ export const salaryCategories = [
     "description": "UI/UX Designer salary in India for 2026. Salary breakdown for Figma designers, UX researchers, and product designers by experience, city, and company.",
     "role": "Design",
     "country": "India"
+  },
+  {
+    "id": "blockchain-developer-salary-guide-2026",
+    "title": "Blockchain Developer Salary Guide",
+    "description": "Discover the exact Blockchain Developer salary in 2026. Detailed compensation guides by experience, top hiring cities, tech firms, and key skills.",
+    "role": "Development",
+    "country": "USA"
   }
 ];
