@@ -2,9 +2,10 @@ import { Link } from 'react-router-dom';
 import { Calendar, UserCheck, ShieldCheck, FileCheck, Clock } from 'lucide-react';
 import './AuthorInfo.css';
 
-export default function AuthorInfo({ date, author, readTime = '6 min read' }) {
+export default function AuthorInfo({ date, author, reviewer, readTime = '6 min read' }) {
   const displayAuthor = author || 'CandidateToHR Career Experts';
-  const displayDate = date || new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+  const displayDate = date || 'Feb 18, 2026';
+  const displayReviewer = reviewer || 'CandidateToHR Editorial Board';
 
   return (
     <div className="author-eeat-card">
@@ -18,7 +19,7 @@ export default function AuthorInfo({ date, author, readTime = '6 min read' }) {
           </div>
           <div className="author-review-status">
             <UserCheck size={14} className="icon-success" aria-hidden="true" />
-            <span>Reviewed by <strong>CandidateToHR Editorial Board</strong></span>
+            <span>Reviewed by <strong>{displayReviewer}</strong></span>
           </div>
         </div>
       </div>

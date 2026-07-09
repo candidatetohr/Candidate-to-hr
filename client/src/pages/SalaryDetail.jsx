@@ -21,6 +21,7 @@ import CareerKnowledgeGraphCard from '../components/seo/CareerKnowledgeGraphCard
 import AIOverviewBox from '../components/seo/AIOverviewBox';
 import FAQAccordion from '../components/seo/FAQAccordion';
 import AIRecommendations from '../components/seo/AIRecommendations';
+import EEATFooter from '../components/seo/EEATFooter';
 
 import './SalaryDetail.css';
 
@@ -154,7 +155,14 @@ export default function SalaryDetail() {
           title: seo.title,
           description: seo.description,
           url: `https://candidatetohr.online/salary-guides/${slug}`,
-          datePublished: hero.date || '2026-01-01'
+          datePublished: hero.date || '2026-01-15',
+          dateModified: hero.date || '2026-02-18',
+          authorName: hero.author || 'CandidateToHR Career Board',
+          reviewerName: 'CandidateToHR Editorial Board',
+          citations: [
+            "https://www.bls.gov",
+            "https://www.onetonline.org"
+          ]
         }}
       />
       <SchemaMarkup
@@ -395,6 +403,8 @@ export default function SalaryDetail() {
           <FAQAccordion items={faq} />
 
           <AIRecommendations roleId={slug.replace('-salary-guide-2026', '').replace('-us', '').replace('-india', '')} />
+
+          <EEATFooter type="salary" />
 
           <RelatedResources items={[
             { title: 'Interview Questions', description: `Top interview questions`, url: `/interview-questions/${slug.replace('-salary-guide-2026', '').replace('-us', '').replace('-india', '')}`, icon: '🎤' },

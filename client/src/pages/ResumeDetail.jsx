@@ -20,6 +20,7 @@ import CareerKnowledgeGraphCard from '../components/seo/CareerKnowledgeGraphCard
 import AIOverviewBox from '../components/seo/AIOverviewBox';
 import FAQAccordion from '../components/seo/FAQAccordion';
 import AIRecommendations from '../components/seo/AIRecommendations';
+import EEATFooter from '../components/seo/EEATFooter';
 
 import './ResumeDetail.css';
 
@@ -66,7 +67,14 @@ export default function ResumeDetail() {
           title: seo.title,
           description: seo.description,
           url: `https://candidatetohr.online/resume-examples/${slug}`,
-          datePublished: hero.date || '2026-01-01'
+          datePublished: hero.date || '2026-01-15',
+          dateModified: hero.date || '2026-02-18',
+          authorName: hero.author || 'CandidateToHR Career Board',
+          reviewerName: 'CandidateToHR Editorial Board',
+          citations: [
+            "https://candidatetohr.online/editorial-policy",
+            "https://parwcc.com"
+          ]
         }}
       />
       {faq && faq.length > 0 && (
@@ -220,6 +228,8 @@ export default function ResumeDetail() {
           <FAQAccordion items={faq} />
 
           <AIRecommendations roleId={slug} />
+
+          <EEATFooter type="resume" />
 
         </main>
         

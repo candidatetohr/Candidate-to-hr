@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { PieChart, GraduationCap, Code, Briefcase, Zap, TrendingUp, AlertTriangle, CheckCircle } from 'lucide-react';
 import { resumeAnalyzerAPI } from '../services/api';
@@ -16,9 +16,19 @@ export default function ProbabilityEnginePage() {
   const [result, setResult] = useState(null);
   const [error, setError] = useState('');
 
-  const handlePredict = async () => {
-    if (!skills.trim() || !projects.trim()) {
-      setError('Skills and Projects/Experience are required.');
+  const skillsRef = useRef(null);
+  const projectsRef = useRef(null);
+
+  const handlePredict = async (e) => {
+    if (e) e.preventDefault();
+    if (!skills.trim()) {
+      setError('Skills are required.');
+      skillsRef.current?.focus();
+      return;
+    }
+    if (!projects.trim()) {
+      setError('Projects/Experience summary is required.');
+      projectsRef.current?.focus();
       return;
     }
     setError('');
@@ -35,6 +45,7 @@ export default function ProbabilityEnginePage() {
       setResult(res.data.data);
     } catch (err) {
       setError(err.response?.data?.message || 'Failed to predict placement. Please try again.');
+      skillsRef.current?.focus();
     } finally {
       setLoading(false);
     }
@@ -81,11 +92,12 @@ export default function ProbabilityEnginePage() {
         <div className="prob-grid">
           
           {/* Inputs */}
-          <div className="prob-inputs-card az-card">
+          <form className="prob-inputs-card az-card" onSubmit={handlePredict}>
             <div className="prob-row-inputs">
               <div className="prob-input-group">
-                <label><GraduationCap size={16} /> Degree / Major</label>
+                <label htmlFor="prob-degree"><GraduationCap size={16} /> Degree / Major</label>
                 <input 
+                  id="prob-degree"
                   type="text"
                   placeholder="e.g. B.Tech Computer Science"
                   value={degree}
@@ -93,8 +105,9 @@ export default function ProbabilityEnginePage() {
                 />
               </div>
               <div className="prob-input-group">
-                <label>CGPA</label>
+                <label htmlFor="prob-cgpa">CGPA</label>
                 <input 
+                  id="prob-cgpa"
                   type="text"
                   placeholder="e.g. 8.5/10"
                   value={cgpa}
@@ -104,8 +117,10 @@ export default function ProbabilityEnginePage() {
             </div>
 
             <div className="prob-input-group">
-              <label><Code size={16} /> Top Skills (Comma separated)</label>
+              <label htmlFor="prob-skills"><Code size={16} /> Top Skills (Comma separated)</label>
               <textarea 
+                ref={skillsRef}
+                id="prob-skills"
                 placeholder="Python, React, Node.js, AWS..."
                 value={skills}
                 onChange={e => setSkills(e.target.value)}
@@ -114,19 +129,21 @@ export default function ProbabilityEnginePage() {
             </div>
 
             <div className="prob-input-group">
-              <label><Briefcase size={16} /> Projects & Experience Summary</label>
+              <label htmlFor="prob-projects"><Briefcase size={16} /> Projects & Experience Summary</label>
               <textarea 
+                ref={projectsRef}
+                id="prob-projects"
                 placeholder="Built an e-commerce platform using MERN stack. Interned at XYZ corp as a frontend dev..."
                 value={projects}
                 onChange={e => setProjects(e.target.value)}
               />
             </div>
 
-            {error && <div className="prob-error">{error}</div>}
+            {error && <div className="prob-error" role="alert">{error}</div>}
 
             <button 
+              type="submit"
               className="btn btn-primary prob-submit-btn" 
-              onClick={handlePredict} 
               disabled={loading}
             >
               {loading ? (
@@ -135,7 +152,7 @@ export default function ProbabilityEnginePage() {
                 <><Zap size={18} /> Predict My Future</>
               )}
             </button>
-          </div>
+          </form>
 
           {/* Results */}
           <div className="prob-results-pane">

@@ -68,7 +68,19 @@ export default function AuthPage() {
           aria-label="Go to homepage"
           style={{ cursor: 'pointer' }}
         >
-          <img src="/logo.png" alt="CandidateToHR Logo" width="36" height="36" loading="lazy" style={{ height: '36px' }} />
+          <picture>
+            <source srcSet="/logo-36.avif 1x, /logo-72.avif 2x, /logo-108.avif 3x" type="image/avif" />
+            <source srcSet="/logo-36.webp 1x, /logo-72.webp 2x, /logo-108.webp 3x" type="image/webp" />
+            <img 
+              src="/logo-36.png" 
+              srcSet="/logo-36.png 1x, /logo-72.png 2x, /logo-108.png 3x" 
+              alt="CandidateToHR Logo" 
+              width="36" 
+              height="36" 
+              loading="lazy" 
+              style={{ height: '36px' }} 
+            />
+          </picture>
         </div>
 
         <div className="auth-header">
@@ -140,6 +152,7 @@ export default function AuthPage() {
 
               <div className="input-wrapper" style={{ marginTop: '1rem' }}>
                 <User size={16} className="input-icon" />
+                <label htmlFor="auth-name" className="sr-only">Full Name</label>
                 <input
                   id="auth-name"
                   type="text"
@@ -157,6 +170,7 @@ export default function AuthPage() {
           <div className="form-group">
             <div className="input-wrapper">
               <Mail size={16} className="input-icon" />
+              <label htmlFor="auth-email" className="sr-only">Email address</label>
               <input
                 id="auth-email"
                 type="email"
@@ -173,6 +187,7 @@ export default function AuthPage() {
           <div className="form-group">
             <div className="input-wrapper">
               <Lock size={16} className="input-icon" />
+              <label htmlFor="auth-password" className="sr-only">Password</label>
               <input
                 id="auth-password"
                 type={showPassword ? 'text' : 'password'}
@@ -213,6 +228,7 @@ export default function AuthPage() {
             >
               <div className="input-wrapper">
                 <Building2 size={16} className="input-icon" />
+                <label htmlFor="auth-company" className="sr-only">Company Name</label>
                 <input
                   id="auth-company"
                   type="text"

@@ -85,7 +85,36 @@ export default function CreateJobPage() {
     }
   };
 
+  const handleNext = () => {
+    if (step === 0) {
+      if (!form.title || form.title.length < 3) {
+        toast.error('Job title must be at least 3 characters.');
+        document.getElementById('job-title')?.focus();
+        return;
+      }
+      if (!form.description || form.description.length < 50) {
+        toast.error('Job description must be at least 50 characters.');
+        document.getElementById('job-description')?.focus();
+        return;
+      }
+    }
+    setStep(s => s + 1);
+  };
+
   const handleSubmit = async () => {
+    if (!form.title || form.title.length < 3) {
+      toast.error('Job title must be at least 3 characters.');
+      setStep(0);
+      setTimeout(() => document.getElementById('job-title')?.focus(), 100);
+      return;
+    }
+    if (!form.description || form.description.length < 50) {
+      toast.error('Job description must be at least 50 characters.');
+      setStep(0);
+      setTimeout(() => document.getElementById('job-description')?.focus(), 100);
+      return;
+    }
+
     setLoading(true);
     try {
       const payload = {
@@ -114,11 +143,13 @@ export default function CreateJobPage() {
     }
   };
 
-  const canProceed = () => {
-    if (step === 0) return form.title.length >= 3 && form.description.length >= 50;
-    if (step === 1) return true;
-    if (step === 2) return true;
-    return false;
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    if (step === 2) {
+      handleSubmit();
+    } else {
+      handleNext();
+    }
   };
 
   return (
@@ -144,7 +175,7 @@ export default function CreateJobPage() {
           ))}
         </div>
 
-        <div className="create-job-content">
+        <form className="create-job-content" onSubmit={handleFormSubmit}>
           <AnimatePresence mode="wait">
             {/* Step 0: Basic Info */}
             {step === 0 && (
@@ -400,15 +431,16 @@ export default function CreateJobPage() {
           {step < 3 && (
             <div className="step-nav">
               <button
+                type="button"
                 className="btn btn-ghost"
                 onClick={() => step > 0 ? setStep(s => s - 1) : navigate(-1)}
               >
                 <ArrowLeft size={14} /> {step === 0 ? 'Cancel' : 'Back'}
               </button>
               <button
+                type="submit"
                 className="btn btn-primary"
-                onClick={step === 2 ? handleSubmit : () => setStep(s => s + 1)}
-                disabled={!canProceed() || loading}
+                disabled={loading}
               >
                 {loading ? (
                   <><div className="spinner" /> Publishing...</>
@@ -420,7 +452,7 @@ export default function CreateJobPage() {
               </button>
             </div>
           )}
-        </div>
+        </form>
       </div>
     </div>
   );

@@ -12,6 +12,32 @@ export default function FAQAccordion({ items = [] }) {
     setOpenIndex(openIndex === idx ? null : idx);
   };
 
+  const handleKeyDown = (e, idx) => {
+    const triggers = document.querySelectorAll('.faq-question-trigger');
+    const total = triggers.length;
+
+    switch (e.key) {
+      case 'ArrowDown':
+        e.preventDefault();
+        triggers[(idx + 1) % total].focus();
+        break;
+      case 'ArrowUp':
+        e.preventDefault();
+        triggers[(idx - 1 + total) % total].focus();
+        break;
+      case 'Home':
+        e.preventDefault();
+        triggers[0].focus();
+        break;
+      case 'End':
+        e.preventDefault();
+        triggers[total - 1].focus();
+        break;
+      default:
+        break;
+    }
+  };
+
   return (
     <section className="faq-accordion-section" aria-label="Frequently Asked Questions">
       {/* Schema Injection */}
@@ -22,12 +48,18 @@ export default function FAQAccordion({ items = [] }) {
       <div className="faq-accordion-list">
         {items.map((item, idx) => {
           const isOpen = openIndex === idx;
+          const buttonId = `faq-btn-${idx}`;
+          const panelId = `faq-panel-${idx}`;
+          
           return (
             <div key={idx} className={`faq-accordion-item ${isOpen ? 'open' : ''}`}>
               <button 
+                id={buttonId}
                 className="faq-question-trigger"
                 onClick={() => toggleAccordion(idx)}
+                onKeyDown={(e) => handleKeyDown(e, idx)}
                 aria-expanded={isOpen}
+                aria-controls={panelId}
               >
                 <span className="faq-question-text">
                   <HelpCircle size={16} className="faq-icon-decoration" />
@@ -36,7 +68,13 @@ export default function FAQAccordion({ items = [] }) {
                 <ChevronDown size={18} className="chevron-toggle" />
               </button>
               
-              <div className="faq-answer-panel" aria-hidden={!isOpen}>
+              <div 
+                id={panelId}
+                className="faq-answer-panel" 
+                role="region"
+                aria-labelledby={buttonId}
+                aria-hidden={!isOpen}
+              >
                 <div className="faq-answer-content">
                   {item.a || item.answer}
                 </div>

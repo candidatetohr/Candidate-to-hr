@@ -332,7 +332,19 @@ export default function ResumeAnalyzerPage() {
             aria-label="Go to homepage"
             style={{ cursor: 'pointer' }}
           >
-            <img src="/logo.png" alt="CandidateToHR Logo" width="24" height="24" style={{ height: '24px' }} />
+            <picture>
+              <source srcSet="/logo-24.avif 1x, /logo-48.avif 2x, /logo-72.avif 3x" type="image/avif" />
+              <source srcSet="/logo-24.webp 1x, /logo-48.webp 2x, /logo-72.webp 3x" type="image/webp" />
+              <img 
+                src="/logo-24.png" 
+                srcSet="/logo-24.png 1x, /logo-48.png 2x, /logo-72.png 3x" 
+                alt="CandidateToHR Logo" 
+                width="24" 
+                height="24" 
+                loading="lazy" 
+                style={{ height: '24px' }} 
+              />
+            </picture>
           </div>
           <div style={{ display: 'flex', gap: '8px' }}>
             <button className="btn btn-secondary btn-sm" onClick={() => navigate('/live-editor')} style={{ color: '#10b981', borderColor: 'rgba(16,185,129,0.3)' }}>

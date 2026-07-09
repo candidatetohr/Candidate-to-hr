@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useRef } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useDropzone } from 'react-dropzone';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -20,6 +20,10 @@ export default function UploadResumePage() {
   const [files, setFiles] = useState([]);
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(null);
+
+  const nameRef = useRef(null);
+  const emailRef = useRef(null);
+  const phoneRef = useRef(null);
 
   const [form, setForm] = useState({
     candidateName: '',
@@ -49,8 +53,18 @@ export default function UploadResumePage() {
 
   const handleSingleSubmit = async (e) => {
     e.preventDefault();
-    if (!file || !form.candidateName || !form.candidateEmail) {
-      toast.error('Please fill in all required fields and upload a PDF.');
+    if (!form.candidateName) {
+      nameRef.current?.focus();
+      toast.error('Please enter candidate full name.');
+      return;
+    }
+    if (!form.candidateEmail) {
+      emailRef.current?.focus();
+      toast.error('Please enter candidate email address.');
+      return;
+    }
+    if (!file) {
+      toast.error('Please drag and drop or browse to upload a PDF resume.');
       return;
     }
     setLoading(true);
@@ -68,6 +82,7 @@ export default function UploadResumePage() {
       toast.success('Resume submitted! AI analysis running... ');
     } catch (err) {
       toast.error(err.response?.data?.message || 'Upload failed. Please try again.');
+      nameRef.current?.focus();
     } finally {
       setLoading(false);
     }
@@ -224,22 +239,22 @@ export default function UploadResumePage() {
                 <h2>Candidate Details</h2>
                 <form onSubmit={handleSingleSubmit}>
                   <div className="form-group">
-                    <label className="form-label">Full Name *</label>
-                    <input id="cand-name" type="text" className="form-input" placeholder="Jane Doe"
-                      value={form.candidateName} onChange={set('candidateName')} required />
+                    <label htmlFor="cand-name" className="form-label">Full Name *</label>
+                    <input ref={nameRef} id="cand-name" type="text" className="form-input" placeholder="Jane Doe"
+                      value={form.candidateName} onChange={set('candidateName')} autoComplete="name" required />
                   </div>
                   <div className="form-group">
-                    <label className="form-label">Email Address *</label>
-                    <input id="cand-email" type="email" className="form-input" placeholder="jane@example.com"
-                      value={form.candidateEmail} onChange={set('candidateEmail')} required />
+                    <label htmlFor="cand-email" className="form-label">Email Address *</label>
+                    <input ref={emailRef} id="cand-email" type="email" className="form-input" placeholder="jane@example.com"
+                      value={form.candidateEmail} onChange={set('candidateEmail')} autoComplete="email" required />
                   </div>
                   <div className="form-group">
-                    <label className="form-label">Phone Number</label>
-                    <input id="cand-phone" type="tel" className="form-input" placeholder="+1 (555) 000-0000"
-                      value={form.candidatePhone} onChange={set('candidatePhone')} />
+                    <label htmlFor="cand-phone" className="form-label">Phone Number</label>
+                    <input ref={phoneRef} id="cand-phone" type="tel" className="form-input" placeholder="+1 (555) 000-0000"
+                      value={form.candidatePhone} onChange={set('candidatePhone')} autoComplete="tel" />
                   </div>
                   <div className="form-group">
-                    <label className="form-label">Internal Notes</label>
+                    <label htmlFor="cand-notes" className="form-label">Internal Notes</label>
                     <textarea id="cand-notes" className="form-textarea" style={{ minHeight: '80px' }}
                       placeholder="Recruiter notes about this candidate..."
                       value={form.notes} onChange={set('notes')} />

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { authAPI } from '../services/api';
@@ -15,15 +15,27 @@ export default function ResetPasswordPage() {
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
 
+  const passwordRef = useRef(null);
+  const confirmPasswordRef = useRef(null);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!password || !confirmPassword) return;
+    if (!password) {
+      passwordRef.current?.focus();
+      return;
+    }
+    if (!confirmPassword) {
+      confirmPasswordRef.current?.focus();
+      return;
+    }
     if (password !== confirmPassword) {
       toast.error('Passwords do not match');
+      confirmPasswordRef.current?.focus();
       return;
     }
     if (password.length < 6) {
       toast.error('Password must be at least 6 characters');
+      passwordRef.current?.focus();
       return;
     }
 
@@ -35,6 +47,7 @@ export default function ResetPasswordPage() {
       setTimeout(() => navigate('/login'), 3000);
     } catch (err) {
       toast.error(err.response?.data?.message || 'Failed to reset password');
+      passwordRef.current?.focus();
     } finally {
       setLoading(false);
     }
@@ -65,30 +78,36 @@ export default function ResetPasswordPage() {
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="auth-form">
-            <div className="form-group">
-              <label>New Password</label>
+             <div className="form-group">
+              <label htmlFor="new-password">New Password</label>
               <div className="input-with-icon">
                 <Lock size={16} className="input-icon" />
                 <input
+                  ref={passwordRef}
+                  id="new-password"
                   type="password"
                   className="form-input pl-10"
                   placeholder="••••••••"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
+                  autoComplete="new-password"
                   required
                 />
               </div>
             </div>
             <div className="form-group">
-              <label>Confirm New Password</label>
+              <label htmlFor="confirm-password">Confirm New Password</label>
               <div className="input-with-icon">
                 <Lock size={16} className="input-icon" />
                 <input
+                  ref={confirmPasswordRef}
+                  id="confirm-password"
                   type="password"
                   className="form-input pl-10"
                   placeholder="••••••••"
                   value={confirmPassword}
                   onChange={(e) => setConfirmPassword(e.target.value)}
+                  autoComplete="new-password"
                   required
                 />
               </div>

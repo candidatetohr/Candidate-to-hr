@@ -21,6 +21,7 @@ import CareerKnowledgeGraphCard from '../components/seo/CareerKnowledgeGraphCard
 import AIOverviewBox from '../components/seo/AIOverviewBox';
 import FAQAccordion from '../components/seo/FAQAccordion';
 import AIRecommendations from '../components/seo/AIRecommendations';
+import EEATFooter from '../components/seo/EEATFooter';
 
 import './InterviewDetail.css';
 
@@ -136,6 +137,22 @@ export default function InterviewDetail() {
           { name: data.hero.title, url: `/interview-questions/${slug}` }
         ]}
       />
+      <SchemaMarkup
+        type="Article"
+        data={{
+          title: data.seo?.title || data.hero.title,
+          description: data.seo?.description || data.hero.description,
+          url: `https://candidatetohr.online/interview-questions/${slug}`,
+          datePublished: data.hero.date || '2026-01-15',
+          dateModified: data.hero.date || '2026-02-18',
+          authorName: data.hero.author || 'CandidateToHR Career Board',
+          reviewerName: 'CandidateToHR Editorial Board',
+          citations: [
+            "https://candidatetohr.online/editorial-policy",
+            "https://www.naceweb.org"
+          ]
+        }}
+      />
       <SchemaMarkup type="FAQPage" data={allQuestions} />
       
       <Breadcrumbs />
@@ -241,6 +258,8 @@ export default function InterviewDetail() {
           <CareerKnowledgeGraphCard roleId={slug} />
 
           <AIRecommendations roleId={slug} />
+
+          <EEATFooter type="interview" />
 
           <RelatedResources items={[
             { title: 'Salary Guide', description: `Explore salaries for ${data.hero?.title || 'this role'}`, url: `/salary-guides/${slug}`, icon: '💰' },

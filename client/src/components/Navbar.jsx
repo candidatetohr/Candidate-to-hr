@@ -1,11 +1,12 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { m, AnimatePresence, LazyMotion } from 'framer-motion';
 import {
   LayoutDashboard,
-  LogOut, User, Menu, X, Zap, ChevronDown, FileText, MessageSquare, BookOpen, MapPin, DollarSign, Plus
+  LogOut, User, Menu, X, Zap, ChevronDown, FileText, MessageSquare, BookOpen, MapPin, DollarSign, Plus, Search
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
+import GlobalSearch from './GlobalSearch';
 import './Navbar.css';
 
 const loadFeatures = () => import('../framerFeatures.js').then(res => res.default);
@@ -28,6 +29,45 @@ export default function Navbar() {
   const location = useLocation();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [userMenuOpen, setUserMenuOpen] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
+  const userMenuRef = useRef(null);
+
+  // Global Ctrl+K / Cmd+K listener to open search
+  useEffect(() => {
+    const handleGlobalSearchShortcut = (e) => {
+      if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
+        e.preventDefault();
+        setSearchOpen(prev => !prev);
+      }
+    };
+    window.addEventListener('keydown', handleGlobalSearchShortcut);
+    return () => window.removeEventListener('keydown', handleGlobalSearchShortcut);
+  }, []);
+
+  // H6: Close mobile menu on Escape key
+  useEffect(() => {
+    const handleEscape = (e) => {
+      if (e.key === 'Escape') {
+        setMobileOpen(false);
+        setUserMenuOpen(false);
+      }
+    };
+    document.addEventListener('keydown', handleEscape);
+    return () => document.removeEventListener('keydown', handleEscape);
+  }, []);
+
+  // H7: Close user dropdown on outside click
+  useEffect(() => {
+    const handleOutsideClick = (e) => {
+      if (userMenuRef.current && !userMenuRef.current.contains(e.target)) {
+        setUserMenuOpen(false);
+      }
+    };
+    if (userMenuOpen) {
+      document.addEventListener('mousedown', handleOutsideClick);
+    }
+    return () => document.removeEventListener('mousedown', handleOutsideClick);
+  }, [userMenuOpen]);
 
   const handleLogout = () => {
     logout();
@@ -42,7 +82,19 @@ export default function Navbar() {
       <div className="navbar-inner">
         {/* Logo */}
         <Link to="/" className="navbar-logo" aria-label="CandidateToHR - AI Career Platform">
-          <img src="/logo.png" alt="CandidateToHR Logo" width="32" height="32" style={{ height: '32px' }} />
+          <picture>
+            <source srcSet="/logo-32.avif 1x, /logo-64.avif 2x, /logo-96.avif 3x" type="image/avif" />
+            <source srcSet="/logo-32.webp 1x, /logo-64.webp 2x, /logo-96.webp 3x" type="image/webp" />
+            <img 
+              src="/logo-32.png" 
+              srcSet="/logo-32.png 1x, /logo-64.png 2x, /logo-96.png 3x" 
+              alt="CandidateToHR Logo" 
+              width="32" 
+              height="32" 
+              loading="lazy" 
+              style={{ height: '32px' }} 
+            />
+          </picture>
           <span className="navbar-brand-text">CandidateToHR</span>
         </Link>
 
@@ -61,6 +113,16 @@ export default function Navbar() {
 
         {/* Right Actions */}
         <div className="navbar-actions">
+          <button
+            className="navbar-search-trigger-btn"
+            onClick={() => setSearchOpen(true)}
+            aria-label="Search CandidateToHR (Ctrl+K)"
+          >
+            <Search size={16} />
+            <span>Search...</span>
+            <kbd>⌘K</kbd>
+          </button>
+
           {!user ? (
             <button
               className="btn btn-primary btn-sm"
@@ -80,7 +142,7 @@ export default function Navbar() {
                 </button>
               )}
               {/* User Menu */}
-              <div className="user-menu-wrapper">
+              <div className="user-menu-wrapper" ref={userMenuRef}>
                 <button
                   className="user-menu-trigger"
                   aria-label="User menu"
@@ -141,6 +203,18 @@ export default function Navbar() {
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.2 }}
           >
+            <button
+              className="mobile-search-bar-btn"
+              onClick={() => {
+                setSearchOpen(true);
+                setMobileOpen(false);
+              }}
+              aria-label="Search platform"
+            >
+              <Search size={16} />
+              <span>Search platform...</span>
+            </button>
+
             {publicLinks.map(({ to, label }) => (
               <Link
                 key={to}
@@ -176,6 +250,7 @@ export default function Navbar() {
           </m.div>
         )}
       </AnimatePresence>
+      <GlobalSearch isOpen={searchOpen} onClose={() => setSearchOpen(false)} />
     </nav>
     </LazyMotion>
   );

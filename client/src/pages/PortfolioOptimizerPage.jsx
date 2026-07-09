@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { resumeAnalyzerAPI } from '../services/api';
 import SEO from '../components/SEO';
@@ -13,10 +13,24 @@ export default function PortfolioOptimizerPage() {
   const [targetRole, setTargetRole] = useState('');
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState(null);
+  const [error, setError] = useState('');
 
-  const handleAnalyze = async () => {
-    if (!portfolioDetails.trim() || !targetRole.trim()) return;
-    
+  const roleRef = useRef(null);
+  const detailsRef = useRef(null);
+
+  const handleAnalyze = async (e) => {
+    if (e) e.preventDefault();
+    if (!targetRole.trim()) {
+      setError('Target role is required.');
+      roleRef.current?.focus();
+      return;
+    }
+    if (!portfolioDetails.trim()) {
+      setError('Portfolio details are required.');
+      detailsRef.current?.focus();
+      return;
+    }
+    setError('');
     setLoading(true);
     setResult(null);
 
@@ -29,11 +43,13 @@ export default function PortfolioOptimizerPage() {
       if (res.data?.success) {
         setResult(res.data.data);
       } else {
-        toast.error(res.data?.message || 'Error generating portfolio analysis.');
+        setError(res.data?.message || 'Error generating portfolio analysis.');
+        detailsRef.current?.focus();
       }
-    } catch (error) {
-      console.error(error);
-      toast.error('An error occurred. Please try again.');
+    } catch (err) {
+      console.error(err);
+      setError('An error occurred. Please try again.');
+      detailsRef.current?.focus();
     } finally {
       setLoading(false);
     }
@@ -81,10 +97,12 @@ export default function PortfolioOptimizerPage() {
 
           <div className="po-grid">
             {/* Inputs */}
-            <div className="po-inputs-card az-card">
+            <form className="po-inputs-card az-card" onSubmit={handleAnalyze}>
               <div className="po-input-group">
-                <label><Search size={16} /> Target Role</label>
+                <label htmlFor="po-role"><Search size={16} /> Target Role</label>
                 <input 
+                  ref={roleRef}
+                  id="po-role"
                   type="text"
                   placeholder="e.g., UX/UI Designer, Frontend Dev"
                   value={targetRole}
@@ -93,8 +111,10 @@ export default function PortfolioOptimizerPage() {
               </div>
 
               <div className="po-input-group mt-4">
-                <label><Layout size={16} /> Portfolio Details / Project Descriptions</label>
+                <label htmlFor="po-details"><Layout size={16} /> Portfolio Details / Project Descriptions</label>
                 <textarea 
+                  ref={detailsRef}
+                  id="po-details"
                   placeholder="Paste the text from your case studies, project descriptions, or GitHub readmes..."
                   value={portfolioDetails}
                   onChange={e => setPortfolioDetails(e.target.value)}
@@ -103,8 +123,9 @@ export default function PortfolioOptimizerPage() {
               </div>
 
               <div className="po-input-group mt-4">
-                <label>Your Resume (Optional — for context)</label>
+                <label htmlFor="po-resume">Your Resume (Optional — for context)</label>
                 <textarea 
+                  id="po-resume"
                   placeholder="Paste the text of your resume to give the AI more context about your background..."
                   value={resumeText}
                   onChange={e => setResumeText(e.target.value)}
@@ -112,10 +133,12 @@ export default function PortfolioOptimizerPage() {
                 />
               </div>
 
+              {error && <div className="po-error mt-4 text-red-500 text-sm" role="alert">{error}</div>}
+
               <button 
+                type="submit"
                 className="btn btn-primary po-submit-btn mt-6" 
-                onClick={handleAnalyze} 
-                disabled={loading || !portfolioDetails || !targetRole}
+                disabled={loading}
               >
                 {loading ? (
                   <><span className="spinner"></span> Scanning Portfolio...</>
@@ -123,7 +146,7 @@ export default function PortfolioOptimizerPage() {
                   <><Zap size={18} /> Analyze Portfolio</>
                 )}
               </button>
-            </div>
+            </form>
 
             {/* Results */}
             <div className="po-results-pane">

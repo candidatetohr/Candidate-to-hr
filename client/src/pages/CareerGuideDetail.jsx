@@ -23,6 +23,7 @@ import FAQAccordion from '../components/seo/FAQAccordion';
 import AIRecommendations from '../components/seo/AIRecommendations';
 import SkillAssessmentQuiz from '../components/seo/SkillAssessmentQuiz';
 import LearningJourneyCTA from '../components/seo/LearningJourneyCTA';
+import EEATFooter from '../components/seo/EEATFooter';
 
 import './CareerGuideDetail.css';
 
@@ -69,7 +70,14 @@ export default function CareerGuideDetail() {
           title: seo.title,
           description: seo.description,
           url: `https://candidatetohr.online/career-guides/${slug}`,
-          datePublished: hero.date || '2026-01-01'
+          datePublished: hero.date || '2026-01-15',
+          dateModified: hero.date || '2026-02-18',
+          authorName: hero.author || 'CandidateToHR Career Board',
+          reviewerName: 'CandidateToHR Editorial Board',
+          citations: [
+            "https://candidatetohr.online/editorial-policy",
+            "https://www.naceweb.org"
+          ]
         }}
       />
       {faq && faq.length > 0 && (
@@ -152,6 +160,8 @@ export default function CareerGuideDetail() {
           <FAQAccordion items={faq} />
 
           <AIRecommendations roleId={CareerKnowledgeGraph.getBySlug('careerGuide', slug)?.id || slug} />
+
+          <EEATFooter type="default" />
 
           <RelatedResources items={[
             { title: 'Interview Questions', description: `Top interview questions`, url: `/interview-questions/${CareerKnowledgeGraph.getBySlug('careerGuide', slug)?.id || slug}`, icon: '🎤' },

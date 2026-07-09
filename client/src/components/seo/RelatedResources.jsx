@@ -1,10 +1,12 @@
 import React, { useMemo } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { ArrowRight } from 'lucide-react';
 import { roadmapList } from '../../data/roadmaps/index.js';
 import { salaryCategories } from '../../data/salaryGuides/index.js';
 import { interviewCategories } from '../../data/interviewQuestions/index.js';
 import { resumeCategories } from '../../data/resumeExamples/index.js';
 import { careerGuideCategories } from '../../data/careerGuides/index.js';
+import './RelatedResources.css';
 
 // Helper to calculate string similarity for finding related topics if exact match fails
 const getRelevanceScore = (targetId, currentId) => {
@@ -21,7 +23,7 @@ const getRelevanceScore = (targetId, currentId) => {
   return score;
 };
 
-const RelatedResources = () => {
+export default function RelatedResources({ items }) {
   const location = useLocation();
   
   // Extract slug from URL (e.g. /roadmaps/data-engineer -> data-engineer)
@@ -30,6 +32,8 @@ const RelatedResources = () => {
   const currentSlug = pathParts.length > 1 ? pathParts[1] : null;
 
   const relatedLinks = useMemo(() => {
+    if (items && items.length > 0) return [];
+    
     const allLinks = [];
 
     const addLinks = (categoryData, basePath, label) => {
@@ -60,96 +64,60 @@ const RelatedResources = () => {
     // Sort by relevance score
     allLinks.sort((a, b) => b.score - a.score);
 
-    // Take top 25, filter out the exact page we are currently on
+    // Take top 4, filter out the exact page we are currently on
     return allLinks
       .filter(link => link.route !== location.pathname)
-      .slice(0, 25);
+      .slice(0, 4);
 
-  }, [currentSlug, location.pathname]);
+  }, [items, currentSlug, location.pathname]);
 
-  const coreTools = [
-    { route: '/resume-builder', title: 'AI Resume Builder' },
-    { route: '/analyze', title: 'Free ATS Scanner' },
-    { route: '/interview-sim', title: 'Mock Interview Simulator' },
-    { route: '/skill-gap', title: 'Skill Gap Analyzer' },
-  ];
+  // If we have custom items, render them
+  if (items && items.length > 0) {
+    return (
+      <div className="related-resources-wrapper">
+        <h2 className="related-title">Related Resources & Next Steps</h2>
+        <div className="related-grid">
+          {items.map((item, idx) => (
+            <Link key={idx} to={item.url} className="related-card">
+              <span className="related-icon" role="img" aria-hidden="true">
+                {item.icon || '🔗'}
+              </span>
+              <div className="related-content">
+                <h4>{item.title}</h4>
+                <p>{item.description}</p>
+              </div>
+              <div className="related-arrow">
+                <ArrowRight size={18} />
+              </div>
+            </Link>
+          ))}
+        </div>
+      </div>
+    );
+  }
 
+  // If no items, and we are not on an SEO content page, do not render anything
+  const isSEOPage = ['roadmaps', 'salary-guides', 'interview-questions', 'resume-examples', 'career-guides'].includes(currentCategory);
+  if (!isSEOPage) return null;
+
+  // Otherwise, render the fallback topically relevant links
   return (
-    <div style={{ backgroundColor: '#0f172a', padding: '4rem 1rem', marginTop: '4rem', borderTop: '1px solid #1e293b' }}>
-      <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        <h2 style={{ color: '#f8fafc', fontSize: '1.5rem', fontWeight: 'bold', marginBottom: '1.5rem' }}>
-          Related Resources & Next Steps
-        </h2>
-        
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem' }}>
-          
-          {/* Topically Relevant Links Cluster */}
-          <div style={{ gridColumn: '1 / -1', display: 'flex', flexWrap: 'wrap', gap: '1rem' }}>
-            {relatedLinks.map((link, idx) => (
-              <Link 
-                key={idx} 
-                to={link.route}
-                style={{ 
-                  display: 'inline-flex', 
-                  alignItems: 'center',
-                  backgroundColor: '#1e293b', 
-                  padding: '0.75rem 1rem', 
-                  borderRadius: '0.5rem',
-                  color: '#cbd5e1', 
-                  textDecoration: 'none',
-                  fontSize: '0.875rem',
-                  border: '1px solid #334155',
-                  transition: 'all 0.2s ease-in-out'
-                }}
-                onMouseOver={e => {
-                  e.currentTarget.style.backgroundColor = '#334155';
-                  e.currentTarget.style.borderColor = '#475569';
-                  e.currentTarget.style.color = '#fff';
-                }}
-                onMouseOut={e => {
-                  e.currentTarget.style.backgroundColor = '#1e293b';
-                  e.currentTarget.style.borderColor = '#334155';
-                  e.currentTarget.style.color = '#cbd5e1';
-                }}
-              >
-                <span style={{ color: '#60a5fa', marginRight: '0.5rem', fontSize: '0.75rem', fontWeight: 'bold', textTransform: 'uppercase' }}>
-                  {link.typeLabel}
-                </span>
-                {link.title}
-              </Link>
-            ))}
-          </div>
-          
-        </div>
-
-        {/* Core Hubs (Always present for breadcrumbing) */}
-        <div style={{ marginTop: '3rem', paddingTop: '2rem', borderTop: '1px dashed #334155' }}>
-          <h3 style={{ color: '#94a3b8', fontSize: '1rem', fontWeight: '600', marginBottom: '1rem' }}>
-            Core Career Tools
-          </h3>
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem' }}>
-            {coreTools.map((tool, idx) => (
-              <Link
-                key={idx}
-                to={tool.route}
-                style={{
-                  color: '#38bdf8',
-                  textDecoration: 'none',
-                  fontSize: '0.875rem',
-                  fontWeight: '500'
-                }}
-                onMouseOver={e => e.currentTarget.style.textDecoration = 'underline'}
-                onMouseOut={e => e.currentTarget.style.textDecoration = 'none'}
-              >
-                {tool.title} &rarr;
-              </Link>
-            ))}
-          </div>
-        </div>
-
+    <div className="related-resources-wrapper">
+      <h2 className="related-title">Related Resources & Next Steps</h2>
+      <div className="related-grid">
+        {relatedLinks.map((link, idx) => (
+          <Link key={idx} to={link.route} className="related-card">
+            <span className="related-icon" role="img" aria-hidden="true">💡</span>
+            <div className="related-content">
+              <h4>{link.title}</h4>
+              <p>Explore this verified {link.typeLabel.toLowerCase()} guide on CandidateToHR.</p>
+            </div>
+            <div className="related-arrow">
+              <ArrowRight size={18} />
+            </div>
+          </Link>
+        ))}
       </div>
     </div>
   );
-};
-
-export default RelatedResources;
+}

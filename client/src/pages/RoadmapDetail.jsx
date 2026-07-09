@@ -22,6 +22,7 @@ import AIRecommendations from '../components/seo/AIRecommendations';
 import SkillAssessmentQuiz from '../components/seo/SkillAssessmentQuiz';
 import LearningJourneyCTA from '../components/seo/LearningJourneyCTA';
 import InteractiveRoadmapTimeline from '../components/seo/InteractiveRoadmapTimeline';
+import EEATFooter from '../components/seo/EEATFooter';
 
 import './RoadmapDetail.css';
 
@@ -85,7 +86,14 @@ export default function RoadmapDetail() {
           title: seo.title,
           description: seo.description,
           url: `https://candidatetohr.online/roadmaps/${slug}`,
-          datePublished: hero.date || '2026-01-01'
+          datePublished: hero.date || '2026-01-15',
+          dateModified: hero.date || '2026-02-18',
+          authorName: hero.author || 'CandidateToHR Career Board',
+          reviewerName: 'CandidateToHR Editorial Board',
+          citations: [
+            "https://www.onetonline.org",
+            "https://github.com"
+          ]
         }}
       />
       {learningPath && learningPath.length > 0 && (
@@ -437,6 +445,8 @@ export default function RoadmapDetail() {
           <SkillAssessmentQuiz roleId={slug} roleName={seo.title.split(' Roadmap')[0] || 'this role'} />
 
           <AIRecommendations roleId={slug} />
+
+          <EEATFooter type="roadmap" />
 
           <RelatedResources items={[
             { title: 'Interview Questions', description: `Top interview questions for ${seo.title.split(' Roadmap')[0]}`, url: `/interview-questions/${slug}`, icon: '🎤' },

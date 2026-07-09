@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { resumeAnalyzerAPI } from '../services/api';
 import SEO from '../components/SEO';
@@ -11,10 +11,24 @@ export default function CultureFitAnalyzerPage() {
   const [companyName, setCompanyName] = useState('');
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState(null);
+  const [error, setError] = useState('');
 
-  const handleAnalyze = async () => {
-    if (!candidateProfile.trim() || !companyName.trim()) return;
-    
+  const companyRef = useRef(null);
+  const profileRef = useRef(null);
+
+  const handleAnalyze = async (e) => {
+    if (e) e.preventDefault();
+    if (!companyName.trim()) {
+      setError('Target company name is required.');
+      companyRef.current?.focus();
+      return;
+    }
+    if (!candidateProfile.trim()) {
+      setError('Profile/Resume summary is required.');
+      profileRef.current?.focus();
+      return;
+    }
+    setError('');
     setLoading(true);
     setResult(null);
 
@@ -23,11 +37,13 @@ export default function CultureFitAnalyzerPage() {
       if (res.data?.success) {
         setResult(res.data.data);
       } else {
-        alert(res.data?.message || 'Error generating culture fit analysis.');
+        setError(res.data?.message || 'Error generating culture fit analysis.');
+        profileRef.current?.focus();
       }
-    } catch (error) {
-      console.error(error);
-      alert('An error occurred. Please try again.');
+    } catch (err) {
+      console.error(err);
+      setError('An error occurred. Please try again.');
+      profileRef.current?.focus();
     } finally {
       setLoading(false);
     }
@@ -81,10 +97,12 @@ export default function CultureFitAnalyzerPage() {
 
           <div className="cfa-grid">
             {/* Inputs */}
-            <div className="cfa-inputs-card az-card">
+            <form className="cfa-inputs-card az-card" onSubmit={handleAnalyze}>
               <div className="cfa-input-group">
-                <label><Building size={16} /> Target Company</label>
+                <label htmlFor="cfa-company"><Building size={16} /> Target Company</label>
                 <input 
+                  ref={companyRef}
+                  id="cfa-company"
                   type="text"
                   placeholder="e.g., Google, Stripe, or a startup..."
                   value={companyName}
@@ -93,8 +111,10 @@ export default function CultureFitAnalyzerPage() {
               </div>
 
               <div className="cfa-input-group mt-4">
-                <label><Briefcase size={16} /> Your Profile or Resume Summary</label>
+                <label htmlFor="cfa-profile"><Briefcase size={16} /> Your Profile or Resume Summary</label>
                 <textarea 
+                  ref={profileRef}
+                  id="cfa-profile"
                   placeholder="Paste your professional summary, core values, or a brief description of how you like to work..."
                   value={candidateProfile}
                   onChange={e => setCandidateProfile(e.target.value)}
@@ -102,10 +122,12 @@ export default function CultureFitAnalyzerPage() {
                 />
               </div>
 
+              {error && <div className="cfa-error mt-4 text-red-500 text-sm" role="alert">{error}</div>}
+
               <button 
+                type="submit"
                 className="btn btn-primary cfa-submit-btn mt-6" 
-                onClick={handleAnalyze} 
-                disabled={loading || !candidateProfile || !companyName}
+                disabled={loading}
               >
                 {loading ? (
                   <><span className="spinner"></span> Analyzing Alignment...</>
@@ -113,7 +135,7 @@ export default function CultureFitAnalyzerPage() {
                   <><Zap size={18} /> Analyze Culture Match</>
                 )}
               </button>
-            </div>
+            </form>
 
             {/* Results */}
             <div className="cfa-results-pane">

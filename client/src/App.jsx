@@ -4,9 +4,9 @@ import { useAuth } from './context/AuthContext';
 import AnalyticsService from './services/AnalyticsService';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import RelatedResources from './components/seo/RelatedResources';
 import CookieConsent from './components/CookieConsent';
 import ScrollToTop from './components/ScrollToTop';
+import { MotionConfig } from 'framer-motion';
 
 import LandingPage from './pages/LandingPage';
 
@@ -104,14 +104,14 @@ export default function App() {
   }, [location]);
 
   return (
-    <>
+    <MotionConfig reducedMotion="user">
       <a href="#main-content" className="skip-link">Skip to Content</a>
       <ScrollToTop />
       <Navbar />
       <main id="main-content">
         <Suspense fallback={<PageLoader />}>
         <Routes>
-          <Route path="/" element={<PublicRoute><LandingPage /></PublicRoute>} />
+          <Route path="/" element={<LandingPage />} />
           <Route path="/login" element={<PublicRoute><AuthPage /></PublicRoute>} />
           <Route path="/forgot-password" element={<PublicRoute><ForgotPasswordPage /></PublicRoute>} />
           <Route path="/reset-password/:token" element={<PublicRoute><ResetPasswordPage /></PublicRoute>} />
@@ -176,9 +176,8 @@ export default function App() {
         </Routes>
       </Suspense>
       </main>
-      <RelatedResources />
       <Footer />
       <CookieConsent />
-    </>
+    </MotionConfig>
   );
 }

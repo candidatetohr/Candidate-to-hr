@@ -30,12 +30,25 @@ export default function SchemaMarkup({ type, data }) {
       "headline": data.title,
       "description": data.description,
       "url": data.url || DOMAIN,
-      "datePublished": data.datePublished || "2024-01-01",
-      "dateModified": data.dateModified || new Date().toISOString().split('T')[0],
-      "author": {
+      "datePublished": data.datePublished || "2026-01-15",
+      "dateModified": data.dateModified || data.datePublished || "2026-02-18",
+      "author": data.authorName ? {
+        "@type": "Person",
+        "name": data.authorName,
+        "jobTitle": data.authorTitle || "Career Advisor",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "CandidateToHR"
+        }
+      } : {
         "@type": "Organization",
         "name": "CandidateToHR",
         "url": DOMAIN
+      },
+      "reviewedBy": {
+        "@type": "Organization",
+        "name": data.reviewerName || "CandidateToHR Editorial Board",
+        "url": `${DOMAIN}/editorial-policy`
       },
       "publisher": {
         "@type": "Organization",
@@ -43,7 +56,7 @@ export default function SchemaMarkup({ type, data }) {
         "url": DOMAIN,
         "logo": {
           "@type": "ImageObject",
-          "url": `${DOMAIN}/logo.png`,
+          "url": `${DOMAIN}/logo-512.png`,
           "width": 512,
           "height": 512
         }
@@ -51,6 +64,10 @@ export default function SchemaMarkup({ type, data }) {
       "wordCount": data.wordCount || 1500,
       "articleSection": data.articleSection || "Career Development",
       "inLanguage": "en-US",
+      "citation": data.citations || [
+        "https://www.bls.gov",
+        "https://www.onetonline.org"
+      ],
       "isPartOf": {
         "@id": `${DOMAIN}/#website`
       }

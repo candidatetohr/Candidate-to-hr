@@ -9,7 +9,19 @@ function Footer() {
         {/* Column 1: Brand */}
         <div className="footer-col brand-col">
           <Link to="/" className="footer-logo" aria-label="CandidateToHR Homepage">
-            <img src="/logo.png" alt="CandidateToHR Logo" width="40" height="40" loading="lazy" style={{ height: '40px' }} />
+            <picture>
+              <source srcSet="/logo-40.avif 1x, /logo-80.avif 2x, /logo-120.avif 3x" type="image/avif" />
+              <source srcSet="/logo-40.webp 1x, /logo-80.webp 2x, /logo-120.webp 3x" type="image/webp" />
+              <img 
+                src="/logo-40.png" 
+                srcSet="/logo-40.png 1x, /logo-80.png 2x, /logo-120.png 3x" 
+                alt="CandidateToHR Logo" 
+                width="40" 
+                height="40" 
+                loading="lazy" 
+                style={{ height: '40px' }} 
+              />
+            </picture>
             <span className="footer-brand-name">CandidateToHR</span>
           </Link>
           <p className="footer-description">

@@ -1,5 +1,10 @@
 import CareerKnowledgeGraph from './CareerKnowledgeGraph';
 import AnalyticsService from './AnalyticsService';
+import { roadmapList } from '../data/roadmaps';
+import { interviewCategories } from '../data/interviewQuestions';
+import { careerGuideCategories } from '../data/careerGuides';
+import { salaryCategories } from '../data/salaryGuides';
+import { resumeCategories } from '../data/resumeExamples';
 
 /**
  * Levenshtein distance for fuzzy matching/typo correction
@@ -29,6 +34,62 @@ function getLevenshteinDistance(a, b) {
   }
   return tmp[a.length][b.length];
 }
+
+const aiToolsList = [
+  { id: 'analyze', title: 'AI Resume Analyzer', description: 'Score your resume against 7 AI metrics: skills match, ATS compatibility, and readability.', url: '/analyze', category: 'AI Tool' },
+  { id: 'resume-builder', title: 'AI Resume Builder', description: 'Generate professional, ATS-optimized resumes using AI tailors.', url: '/resume-builder', category: 'AI Tool' },
+  { id: 'live-editor', title: 'Live AI Editor', description: 'Edit your resume in real-time and see your ATS score update instantly.', url: '/live-editor', category: 'AI Tool' },
+  { id: 'interview-sim', title: 'Interview Simulator', description: 'Practice with a real-time AI interviewer that grades your answers.', url: '/interview-sim', category: 'AI Tool' },
+  { id: 'rejection-decoder', title: 'Rejection Decoder', description: 'Paste a rejection email and get the brutal truth on why you failed.', url: '/rejection-decoder', category: 'AI Tool' },
+  { id: 'learning-path', title: 'Learning Path Generator', description: 'Generate a personalized week-by-week curriculum for your target role.', url: '/learning-path', category: 'AI Tool' },
+  { id: 'placement-probability', title: 'Placement Probability', description: 'Predict your likelihood of landing specific tech roles.', url: '/placement-probability', category: 'AI Tool' },
+  { id: 'truth-detector', title: 'Truth Detector', description: 'Scan your resume for overclaiming, contradictions, and credibility risks.', url: '/truth-detector', category: 'AI Tool' },
+  { id: 'culture-fit', title: 'Culture Fit Analyzer', description: 'Assess alignment between your values and company culture.', url: '/culture-fit', category: 'AI Tool' },
+  { id: 'offer-negotiator', title: 'Offer Negotiator', description: 'Data-driven offer evaluation and negotiation strategies.', url: '/offer-negotiator', category: 'AI Tool' },
+  { id: 'skill-gap', title: 'Skill Gap Analyzer', description: 'Identify missing skills and get a plan to close them.', url: '/skill-gap', category: 'AI Tool' },
+  { id: 'network-builder', title: 'Network Builder', description: 'Generate a networking and outreach plan to connect with industry experts.', url: '/network-builder', category: 'AI Tool' },
+  { id: 'portfolio-optimizer', title: 'Portfolio Optimizer', description: 'Optimize your portfolio projects to impress tech recruiters.', url: '/portfolio-optimizer', category: 'AI Tool' }
+];
+
+// Pre-compiled global search index containing all search targets
+const globalIndex = [
+  ...roadmapList.map(item => ({
+    id: item.id,
+    title: item.title,
+    description: item.shortDescription || '',
+    category: 'Roadmap',
+    url: `/roadmaps/${item.id}`
+  })),
+  ...interviewCategories.map(item => ({
+    id: item.id,
+    title: item.title,
+    description: item.description || '',
+    category: 'Interview Prep',
+    url: `/interview-questions/${item.id}`
+  })),
+  ...careerGuideCategories.map(item => ({
+    id: item.id,
+    title: item.title,
+    description: item.description || '',
+    category: 'Career Guide',
+    url: `/career-guides/${item.id}`
+  })),
+  ...salaryCategories.map(item => ({
+    id: item.id,
+    title: item.title,
+    description: item.description || '',
+    category: 'Salary Guide',
+    url: `/salary-guides/${item.id}`
+  })),
+  ...resumeCategories.map(item => ({
+    id: item.id,
+    title: item.title,
+    description: item.description || '',
+    category: 'Resume Example',
+    url: `/resume-examples/${item.id}`
+  })),
+  ...aiToolsList
+];
 
 export const SearchIntelligence = {
   /**
@@ -64,14 +125,92 @@ export const SearchIntelligence = {
   },
 
   /**
-   * Search careers with typo correction & fuzzy matching
+   * Global multi-category search with relevance scoring
+   */
+  globalSearch(query) {
+    if (!query || query.trim().length === 0) return [];
+    const cleanQuery = query.toLowerCase().trim();
+    
+    // Log search event (throttled/centralized)
+    if (this._lastLoggedGlobalQuery !== cleanQuery) {
+      this._lastLoggedGlobalQuery = cleanQuery;
+      clearTimeout(this._globalSearchLogTimeout);
+      this._globalSearchLogTimeout = setTimeout(() => {
+        AnalyticsService.search(cleanQuery, 10);
+      }, 1500);
+    }
+
+    const scored = globalIndex.map(item => {
+      const titleLower = item.title.toLowerCase();
+      const descLower = item.description.toLowerCase();
+      const catLower = item.category.toLowerCase();
+      
+      let score = 0;
+      
+      // 1. Exact title match
+      if (titleLower === cleanQuery) {
+        score += 100;
+      }
+      // 2. Prefix title match
+      else if (titleLower.startsWith(cleanQuery)) {
+        score += 80;
+      }
+      // 3. Substring title match
+      else if (titleLower.includes(cleanQuery)) {
+        score += 60;
+      }
+      
+      // 4. Word-by-word matches
+      const titleWords = titleLower.split(/\s+/);
+      const queryWords = cleanQuery.split(/\s+/);
+      const matchedWords = queryWords.filter(w => titleWords.includes(w));
+      score += matchedWords.length * 15;
+      
+      // 5. Description match
+      if (descLower.includes(cleanQuery)) {
+        score += 30;
+      }
+      
+      // 6. Category match
+      if (catLower.includes(cleanQuery)) {
+        score += 20;
+      }
+      
+      // 7. Fuzzy matching for typos (fallback when score is very low)
+      if (score === 0) {
+        let minDistance = 999;
+        for (const tWord of titleWords) {
+          for (const qWord of queryWords) {
+            if (tWord.length > 2 && qWord.length > 2) {
+              const dist = getLevenshteinDistance(tWord, qWord);
+              if (dist < minDistance) {
+                minDistance = dist;
+              }
+            }
+          }
+        }
+        if (minDistance <= 2) {
+          score += (30 - minDistance * 10);
+        }
+      }
+      
+      return { ...item, score };
+    });
+
+    return scored
+      .filter(item => item.score > 0)
+      .sort((a, b) => b.score - a.score)
+      .slice(0, 10);
+  },
+
+  /**
+   * Backwards compatible search for single list filtering (used on hub pages)
    */
   search(query, list) {
     if (!query || query.trim().length === 0) return list;
     
     const cleanQuery = query.toLowerCase().trim();
     
-    // Log search event (throttled/centralized)
     if (this._lastLoggedQuery !== cleanQuery) {
       this._lastLoggedQuery = cleanQuery;
       clearTimeout(this._searchLogTimeout);
@@ -97,7 +236,6 @@ export const SearchIntelligence = {
       
       let minDistance = 999;
       
-      // Compare word-by-word
       for (const tWord of titleWords) {
         for (const qWord of queryWords) {
           const dist = getLevenshteinDistance(tWord, qWord);
@@ -110,7 +248,6 @@ export const SearchIntelligence = {
       return { item, minDistance };
     });
     
-    // Filter fuzzy matches where distance is small relative to word length (e.g. max 2 typos)
     const fuzzyMatches = scoredList
       .filter(scored => scored.minDistance <= 2)
       .sort((a, b) => a.minDistance - b.minDistance)

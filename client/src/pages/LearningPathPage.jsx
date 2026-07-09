@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Target, ArrowRight, CheckCircle, Clock, Zap, AlertCircle, FileText, Map } from 'lucide-react';
 import { resumeAnalyzerAPI } from '../services/api';
@@ -15,9 +15,19 @@ export default function LearningPathPage() {
   const [result, setResult] = useState(null);
   const [error, setError] = useState('');
 
-  const handleGenerate = async () => {
-    if (!resumeText.trim() || !targetRole.trim()) {
-      setError('Resume and Target Role are required.');
+  const resumeRef = useRef(null);
+  const roleRef = useRef(null);
+
+  const handleGenerate = async (e) => {
+    if (e) e.preventDefault();
+    if (!resumeText.trim()) {
+      setError('Resume content is required.');
+      resumeRef.current?.focus();
+      return;
+    }
+    if (!targetRole.trim()) {
+      setError('Target Role is required.');
+      roleRef.current?.focus();
       return;
     }
     setError('');
@@ -33,6 +43,7 @@ export default function LearningPathPage() {
       setResult(res.data.data);
     } catch (err) {
       setError(err.response?.data?.message || 'Failed to generate roadmap. Please try again.');
+      resumeRef.current?.focus();
     } finally {
       setLoading(false);
     }
@@ -79,10 +90,12 @@ export default function LearningPathPage() {
         <div className="lp-grid">
           
           {/* Inputs */}
-          <div className="lp-inputs-card az-card">
+          <form className="lp-inputs-card az-card" onSubmit={handleGenerate}>
             <div className="lp-input-group">
-              <label><FileText size={16} /> Your Resume (Text)</label>
+              <label htmlFor="lp-resume"><FileText size={16} /> Your Resume (Text)</label>
               <textarea 
+                ref={resumeRef}
+                id="lp-resume"
                 placeholder="Paste your resume content here..."
                 value={resumeText}
                 onChange={e => setResumeText(e.target.value)}
@@ -90,8 +103,10 @@ export default function LearningPathPage() {
             </div>
 
             <div className="lp-input-group">
-              <label><Target size={16} /> Target Role</label>
+              <label htmlFor="lp-role"><Target size={16} /> Target Role</label>
               <input 
+                ref={roleRef}
+                id="lp-role"
                 type="text"
                 className="lp-input"
                 placeholder="e.g. Senior Data Scientist"
@@ -101,9 +116,10 @@ export default function LearningPathPage() {
             </div>
 
             <div className="lp-input-group">
-              <label><Clock size={16} /> Hours Available Per Week</label>
+              <label htmlFor="lp-hours"><Clock size={16} /> Hours Available Per Week</label>
               <div className="lp-slider-container">
                 <input 
+                  id="lp-hours"
                   type="range"
                   min="2" max="40" step="1"
                   value={hoursPerWeek}
@@ -113,20 +129,20 @@ export default function LearningPathPage() {
               </div>
             </div>
 
-            {error && <div className="lp-error">{error}</div>}
+            {error && <div className="lp-error" role="alert">{error}</div>}
 
             <button 
+              type="submit"
               className="btn btn-primary lp-submit-btn" 
-              onClick={handleGenerate} 
               disabled={loading}
             >
               {loading ? (
                 <><span className="spinner"></span> Generating Roadmap...</>
               ) : (
-                <><Zap size={18} /> Generate My Roadmap</>
+                <><Zap size={18} /> Map Learning Path</>
               )}
             </button>
-          </div>
+          </form>
 
           {/* Results */}
           <div className="lp-results-pane">

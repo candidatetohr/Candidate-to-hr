@@ -7,12 +7,15 @@ export default function TableOfContents({ contentSelector = 'main' }) {
   const [activeId, setActiveId] = useState('');
 
   useEffect(() => {
+    let observer = null;
+    let elements = [];
+
     // Locate elements after rendering completes
     const timer = setTimeout(() => {
       const container = document.querySelector(contentSelector);
       if (!container) return;
 
-      const elements = container.querySelectorAll('h2, h3');
+      elements = container.querySelectorAll('h2, h3');
       const headingList = Array.from(elements).map((el, index) => {
         // Ensure element has an ID for hashing/linking
         if (!el.id) {
@@ -32,7 +35,7 @@ export default function TableOfContents({ contentSelector = 'main' }) {
       setHeadings(headingList);
 
       // Intersection Observer to track active header on scroll
-      const observer = new IntersectionObserver(
+      observer = new IntersectionObserver(
         (entries) => {
           const visibleEntry = entries.find((entry) => entry.isIntersecting);
           if (visibleEntry) {
@@ -43,13 +46,14 @@ export default function TableOfContents({ contentSelector = 'main' }) {
       );
 
       elements.forEach((el) => observer.observe(el));
-
-      return () => {
-        elements.forEach((el) => observer.unobserve(el));
-      };
     }, 500);
 
-    return () => clearTimeout(timer);
+    return () => {
+      clearTimeout(timer);
+      if (observer) {
+        observer.disconnect();
+      }
+    };
   }, [contentSelector]);
 
   if (headings.length === 0) return null;

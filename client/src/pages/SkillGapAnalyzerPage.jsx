@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { BookOpen, Crosshair, Map, Compass, Zap, BookMarked, GraduationCap } from 'lucide-react';
 import './SkillGapAnalyzerPage.css';
@@ -14,10 +14,24 @@ export default function SkillGapAnalyzerPage() {
   const [targetRole, setTargetRole] = useState('');
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState(null);
+  const [error, setError] = useState('');
 
-  const handleAnalyze = async () => {
-    if (!resumeText.trim() || !targetRole.trim()) return;
-    
+  const roleRef = useRef(null);
+  const resumeRef = useRef(null);
+
+  const handleAnalyze = async (e) => {
+    if (e) e.preventDefault();
+    if (!targetRole.trim()) {
+      setError('Target job title is required.');
+      roleRef.current?.focus();
+      return;
+    }
+    if (!resumeText.trim()) {
+      setError('Resume content is required.');
+      resumeRef.current?.focus();
+      return;
+    }
+    setError('');
     setLoading(true);
     setResult(null);
 
@@ -26,11 +40,13 @@ export default function SkillGapAnalyzerPage() {
       if (res.data?.success) {
         setResult(res.data.data);
       } else {
-        alert(res.data?.message || 'Error analyzing skill gap.');
+        setError(res.data?.message || 'Error analyzing skill gap.');
+        roleRef.current?.focus();
       }
-    } catch (error) {
-      console.error(error);
-      alert('An error occurred. Please try again.');
+    } catch (err) {
+      console.error(err);
+      setError('An error occurred. Please try again.');
+      resumeRef.current?.focus();
     } finally {
       setLoading(false);
     }
@@ -78,10 +94,12 @@ export default function SkillGapAnalyzerPage() {
 
           <div className="sga-grid">
             {/* Inputs */}
-            <div className="sga-inputs-card az-card">
+            <form className="sga-inputs-card az-card" onSubmit={handleAnalyze}>
               <div className="sga-input-group">
-                <label><Crosshair size={16} /> Target Job Title</label>
+                <label htmlFor="sga-role"><Crosshair size={16} /> Target Job Title</label>
                 <input 
+                  ref={roleRef}
+                  id="sga-role"
                   type="text"
                   placeholder="e.g., Senior Frontend Engineer"
                   value={targetRole}
@@ -90,8 +108,10 @@ export default function SkillGapAnalyzerPage() {
               </div>
 
               <div className="sga-input-group mt-4">
-                <label><BookOpen size={16} /> Your Resume</label>
+                <label htmlFor="sga-resume"><BookOpen size={16} /> Your Resume</label>
                 <textarea 
+                  ref={resumeRef}
+                  id="sga-resume"
                   placeholder="Paste your resume content or current skills..."
                   value={resumeText}
                   onChange={e => setResumeText(e.target.value)}
@@ -99,10 +119,12 @@ export default function SkillGapAnalyzerPage() {
                 />
               </div>
 
+              {error && <div className="sga-error mt-4 text-red-500 text-sm" role="alert">{error}</div>}
+
               <button 
+                type="submit"
                 className="btn btn-primary sga-submit-btn mt-6" 
-                onClick={handleAnalyze} 
-                disabled={loading || !resumeText || !targetRole}
+                disabled={loading}
               >
                 {loading ? (
                   <><span className="spinner"></span> Mapping Skills...</>
@@ -110,7 +132,7 @@ export default function SkillGapAnalyzerPage() {
                   <><Zap size={18} /> Analyze Skill Gap</>
                 )}
               </button>
-            </div>
+            </form>
 
             {/* Results */}
             <div className="sga-results-pane">

@@ -4,12 +4,10 @@ import {
   Zap, Brain, Target, BarChart3, Users, Award,
   Shield, ArrowRight, CheckCircle, MessageSquare, TrendingUp,
   FileSearch, Sparkles, AlertTriangle, Map, PieChart, ShieldAlert,
-  FileText, DollarSign, ChevronRight
+  FileText, DollarSign, ChevronRight, Star
 } from 'lucide-react';
 import SEO from '../components/SEO';
-import { roadmapList } from '../data/roadmaps';
-import { salaryCategories } from '../data/salaryGuides';
-import { careerGuideCategories } from '../data/careerGuides';
+import NewsletterSignup from '../components/NewsletterSignup';
 import './LandingPage.css';
 
 const loadFeatures = () => import('../framerFeatures.js').then(res => res.default);
@@ -448,6 +446,60 @@ export default function LandingPage() {
             <Link to="/career-guides" className="lp-see-all-link">See all {careerGuideCategories.length} career guides →</Link>
           </div>
 
+        </div>
+      </section>
+
+      {/* ── TESTIMONIALS / SOCIAL PROOF ── */}
+      <section className="lp-testimonials-section">
+        <div className="container">
+          <m.div
+            className="section-header-center"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <h2>What <span className="gradient-text">Users</span> Say</h2>
+            <p>Join thousands of students and professionals using CandidateToHR to accelerate their careers.</p>
+          </m.div>
+          <div className="lp-testimonials-grid">
+            {[
+              { name: 'Priya M.', role: 'Software Engineer', text: 'The AI resume analyzer scored my resume and showed me exactly what keywords I was missing. Landed 3 interviews in 2 weeks.', stars: 5 },
+              { name: 'Rahul S.', role: 'Data Analyst', text: 'Career roadmaps gave me a clear path from data analyst to data scientist. The salary guides helped me negotiate a 30% raise.', stars: 5 },
+              { name: 'Ananya K.', role: 'Fresh Graduate', text: 'As a fresh graduate, the mock interview simulator was a game-changer. I practiced until I felt confident and got placed in my first attempt.', stars: 5 },
+            ].map((t, i) => (
+              <m.div
+                key={t.name}
+                className="card lp-testimonial-card"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+              >
+                <div className="lp-testimonial-stars">
+                  {Array.from({ length: t.stars }).map((_, j) => (
+                    <Star key={j} size={14} fill="#fbbf24" color="#fbbf24" />
+                  ))}
+                </div>
+                <p className="lp-testimonial-text">"{t.text}"</p>
+                <div className="lp-testimonial-author">
+                  <strong>{t.name}</strong>
+                  <span>{t.role}</span>
+                </div>
+              </m.div>
+            ))}
+          </div>
+
+          <div className="section-divider" />
+
+          {/* Newsletter */}
+          <m.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            style={{ maxWidth: '700px', margin: '0 auto' }}
+          >
+            <NewsletterSignup />
+          </m.div>
         </div>
       </section>
 

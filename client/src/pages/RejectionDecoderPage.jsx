@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FileText, Briefcase, Mail, Zap, ChevronRight, AlertTriangle, CheckCircle, ArrowRight } from 'lucide-react';
 import { resumeAnalyzerAPI } from '../services/api';
@@ -16,9 +16,19 @@ export default function RejectionDecoderPage() {
   const [result, setResult] = useState(null);
   const [error, setError] = useState('');
 
-  const handleDecode = async () => {
-    if (!resumeText.trim() || !jobDescription.trim()) {
-      setError('Resume and Job Description are required.');
+  const resumeRef = useRef(null);
+  const jobRef = useRef(null);
+
+  const handleDecode = async (e) => {
+    if (e) e.preventDefault();
+    if (!resumeText.trim()) {
+      setError('Resume text is required.');
+      resumeRef.current?.focus();
+      return;
+    }
+    if (!jobDescription.trim()) {
+      setError('Job Description is required.');
+      jobRef.current?.focus();
       return;
     }
     setError('');
@@ -34,6 +44,7 @@ export default function RejectionDecoderPage() {
       setResult(res.data.data);
     } catch (err) {
       setError(err.response?.data?.message || 'Failed to decode rejection. Please try again.');
+      resumeRef.current?.focus();
     } finally {
       setLoading(false);
     }
@@ -63,9 +74,7 @@ export default function RejectionDecoderPage() {
             "availability": "https://schema.org/InStock"
           },
           "publisher": {
-            "@type": "Organization",
-            "@id": "https://candidatetohr.online/#organization",
-            "name": "CandidateToHR"
+            "@id": "https://candidatetohr.online/#organization"
           }
         }}
       />
@@ -80,10 +89,12 @@ export default function RejectionDecoderPage() {
         <div className="rd-grid">
           
           {/* Inputs */}
-          <div className="rd-inputs-card az-card">
+          <form className="rd-inputs-card az-card" onSubmit={handleDecode}>
             <div className="rd-input-group">
-              <label><FileText size={16} /> Your Resume (Text)</label>
+              <label htmlFor="rd-resume"><FileText size={16} /> Your Resume (Text)</label>
               <textarea 
+                ref={resumeRef}
+                id="rd-resume"
                 placeholder="Paste your resume content here..."
                 value={resumeText}
                 onChange={e => setResumeText(e.target.value)}
@@ -91,8 +102,10 @@ export default function RejectionDecoderPage() {
             </div>
 
             <div className="rd-input-group">
-              <label><Briefcase size={16} /> Job Description</label>
+              <label htmlFor="rd-job"><Briefcase size={16} /> Job Description</label>
               <textarea 
+                ref={jobRef}
+                id="rd-job"
                 placeholder="Paste the requirements and responsibilities..."
                 value={jobDescription}
                 onChange={e => setJobDescription(e.target.value)}
@@ -100,8 +113,9 @@ export default function RejectionDecoderPage() {
             </div>
 
             <div className="rd-input-group">
-              <label><Mail size={16} /> Rejection Email (Optional)</label>
+              <label htmlFor="rd-email"><Mail size={16} /> Rejection Email (Optional)</label>
               <textarea 
+                id="rd-email"
                 placeholder="Paste the 'Unfortunately, we will not be moving forward...' email here"
                 value={rejectionEmail}
                 onChange={e => setRejectionEmail(e.target.value)}
@@ -109,11 +123,11 @@ export default function RejectionDecoderPage() {
               />
             </div>
 
-            {error && <div className="rd-error">{error}</div>}
+            {error && <div className="rd-error" role="alert">{error}</div>}
 
             <button 
+              type="submit"
               className="btn btn-primary rd-submit-btn" 
-              onClick={handleDecode} 
               disabled={loading}
             >
               {loading ? (
@@ -122,7 +136,7 @@ export default function RejectionDecoderPage() {
                 <><Zap size={18} /> Decode My Rejection</>
               )}
             </button>
-          </div>
+          </form>
 
           {/* Results */}
           <div className="rd-results-pane">

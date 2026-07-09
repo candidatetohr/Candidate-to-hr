@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { resumeAnalyzerAPI } from '../services/api';
 import SEO from '../components/SEO';
@@ -11,10 +11,24 @@ export default function OfferNegotiatorPage() {
   const [targetSalary, setTargetSalary] = useState('');
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState(null);
+  const [error, setError] = useState('');
 
-  const handleAnalyze = async () => {
-    if (!offerDetails.trim() || !targetSalary.trim()) return;
-    
+  const salaryRef = useRef(null);
+  const detailsRef = useRef(null);
+
+  const handleAnalyze = async (e) => {
+    if (e) e.preventDefault();
+    if (!targetSalary.trim()) {
+      setError('Target salary is required.');
+      salaryRef.current?.focus();
+      return;
+    }
+    if (!offerDetails.trim()) {
+      setError('Initial offer details are required.');
+      detailsRef.current?.focus();
+      return;
+    }
+    setError('');
     setLoading(true);
     setResult(null);
 
@@ -23,11 +37,13 @@ export default function OfferNegotiatorPage() {
       if (res.data?.success) {
         setResult(res.data.data);
       } else {
-        alert(res.data?.message || 'Error generating negotiation strategy.');
+        setError(res.data?.message || 'Error generating negotiation strategy.');
+        detailsRef.current?.focus();
       }
-    } catch (error) {
-      console.error(error);
-      alert('An error occurred. Please try again.');
+    } catch (err) {
+      console.error(err);
+      setError('An error occurred. Please try again.');
+      detailsRef.current?.focus();
     } finally {
       setLoading(false);
     }
@@ -75,10 +91,12 @@ export default function OfferNegotiatorPage() {
 
           <div className="on-grid">
             {/* Inputs */}
-            <div className="on-inputs-card az-card">
+            <form className="on-inputs-card az-card" onSubmit={handleAnalyze}>
               <div className="on-input-group">
-                <label><Target size={16} /> Target Salary / Comp</label>
+                <label htmlFor="on-salary"><Target size={16} /> Target Salary / Comp</label>
                 <input 
+                  ref={salaryRef}
+                  id="on-salary"
                   type="text"
                   placeholder="e.g., $120,000 base + 10% bonus"
                   value={targetSalary}
@@ -87,8 +105,10 @@ export default function OfferNegotiatorPage() {
               </div>
 
               <div className="on-input-group mt-4">
-                <label><MessageSquare size={16} /> Initial Offer Details</label>
+                <label htmlFor="on-details"><MessageSquare size={16} /> Initial Offer Details</label>
                 <textarea 
+                  ref={detailsRef}
+                  id="on-details"
                   placeholder="Paste what the recruiter offered (base, bonus, equity, PTO)..."
                   value={offerDetails}
                   onChange={e => setOfferDetails(e.target.value)}
@@ -96,10 +116,12 @@ export default function OfferNegotiatorPage() {
                 />
               </div>
 
+              {error && <div className="on-error mt-4 text-red-500 text-sm" role="alert">{error}</div>}
+
               <button 
+                type="submit"
                 className="btn btn-primary on-submit-btn mt-6" 
-                onClick={handleAnalyze} 
-                disabled={loading || !offerDetails || !targetSalary}
+                disabled={loading}
               >
                 {loading ? (
                   <><span className="spinner"></span> Generating Strategy...</>
@@ -111,7 +133,7 @@ export default function OfferNegotiatorPage() {
               <div className="on-privacy">
                 <ShieldAlert size={14} /> Your offer details are not stored permanently.
               </div>
-            </div>
+            </form>
 
             {/* Results */}
             <div className="on-results-pane">

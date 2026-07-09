@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Shield, ShieldAlert, FileText, Zap, AlertTriangle, AlertCircle, Crosshair, ChevronRight } from 'lucide-react';
 import { resumeAnalyzerAPI } from '../services/api';
@@ -14,9 +14,13 @@ export default function TruthDetectorPage() {
   const [result, setResult] = useState(null);
   const [error, setError] = useState('');
 
-  const handleDetect = async () => {
+  const inputRef = useRef(null);
+
+  const handleDetect = async (e) => {
+    if (e) e.preventDefault();
     if (!resumeText.trim()) {
       setError('Please paste your resume text to analyze.');
+      inputRef.current?.focus();
       return;
     }
     setError('');
@@ -28,6 +32,7 @@ export default function TruthDetectorPage() {
       setResult(res.data.data);
     } catch (err) {
       setError(err.response?.data?.message || 'Failed to analyze resume. Please try again.');
+      inputRef.current?.focus();
     } finally {
       setLoading(false);
     }
@@ -92,21 +97,23 @@ export default function TruthDetectorPage() {
         <div className="td-grid">
           
           {/* Inputs */}
-          <div className="td-inputs-card az-card">
+          <form className="td-inputs-card az-card" onSubmit={handleDetect}>
             <div className="td-input-group">
-              <label><FileText size={16} /> Your Resume (Text)</label>
+              <label htmlFor="resume-text"><FileText size={16} /> Your Resume (Text)</label>
               <textarea 
+                ref={inputRef}
+                id="resume-text"
                 placeholder="Paste your complete resume content here..."
                 value={resumeText}
                 onChange={e => setResumeText(e.target.value)}
               />
             </div>
 
-            {error && <div className="td-error">{error}</div>}
+            {error && <div className="td-error" role="alert">{error}</div>}
 
             <button 
+              type="submit"
               className="btn btn-primary td-submit-btn" 
-              onClick={handleDetect} 
               disabled={loading}
             >
               {loading ? (
@@ -118,7 +125,7 @@ export default function TruthDetectorPage() {
             <div className="td-privacy">
               <ShieldAlert size={14} /> For internal/personal use. We don't share this data.
             </div>
-          </div>
+          </form>
 
           {/* Results */}
           <div className="td-results-pane">

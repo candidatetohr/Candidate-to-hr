@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { resumeAnalyzerAPI } from '../services/api';
 import SEO from '../components/SEO';
@@ -12,10 +12,24 @@ export default function NetworkBuilderPage() {
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState(null);
   const [copied, setCopied] = useState(null);
+  const [error, setError] = useState('');
 
-  const handleAnalyze = async () => {
-    if (!targetIndustry.trim() || !targetRole.trim()) return;
-    
+  const roleRef = useRef(null);
+  const industryRef = useRef(null);
+
+  const handleAnalyze = async (e) => {
+    if (e) e.preventDefault();
+    if (!targetRole.trim()) {
+      setError('Target role is required.');
+      roleRef.current?.focus();
+      return;
+    }
+    if (!targetIndustry.trim()) {
+      setError('Target industry/company is required.');
+      industryRef.current?.focus();
+      return;
+    }
+    setError('');
     setLoading(true);
     setResult(null);
 
@@ -24,11 +38,13 @@ export default function NetworkBuilderPage() {
       if (res.data?.success) {
         setResult(res.data.data);
       } else {
-        alert(res.data?.message || 'Error generating network strategy.');
+        setError(res.data?.message || 'Error generating network strategy.');
+        industryRef.current?.focus();
       }
-    } catch (error) {
-      console.error(error);
-      alert('An error occurred. Please try again.');
+    } catch (err) {
+      console.error(err);
+      setError('An error occurred. Please try again.');
+      industryRef.current?.focus();
     } finally {
       setLoading(false);
     }
@@ -82,10 +98,12 @@ export default function NetworkBuilderPage() {
 
           <div className="nb-grid">
             {/* Inputs */}
-            <div className="nb-inputs-card az-card">
+            <form className="nb-inputs-card az-card" onSubmit={handleAnalyze}>
               <div className="nb-input-group">
-                <label><Search size={16} /> Target Role</label>
+                <label htmlFor="nb-role"><Search size={16} /> Target Role</label>
                 <input 
+                  ref={roleRef}
+                  id="nb-role"
                   type="text"
                   placeholder="e.g., Product Designer"
                   value={targetRole}
@@ -94,8 +112,10 @@ export default function NetworkBuilderPage() {
               </div>
 
               <div className="nb-input-group mt-4">
-                <label><Network size={16} /> Target Industry / Company</label>
+                <label htmlFor="nb-industry"><Network size={16} /> Target Industry / Company</label>
                 <input 
+                  ref={industryRef}
+                  id="nb-industry"
                   type="text"
                   placeholder="e.g., FinTech, Stripe, Web3..."
                   value={targetIndustry}
@@ -103,10 +123,12 @@ export default function NetworkBuilderPage() {
                 />
               </div>
 
+              {error && <div className="nb-error mt-4 text-red-500 text-sm" role="alert">{error}</div>}
+
               <button 
+                type="submit"
                 className="btn btn-primary nb-submit-btn mt-6" 
-                onClick={handleAnalyze} 
-                disabled={loading || !targetIndustry || !targetRole}
+                disabled={loading}
               >
                 {loading ? (
                   <><span className="spinner"></span> Generating Strategy...</>
@@ -114,7 +136,7 @@ export default function NetworkBuilderPage() {
                   <><Zap size={18} /> Build Networking Plan</>
                 )}
               </button>
-            </div>
+            </form>
 
             {/* Results */}
             <div className="nb-results-pane">
