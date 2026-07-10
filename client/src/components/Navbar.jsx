@@ -91,7 +91,7 @@ export default function Navbar() {
               alt="CandidateToHR Logo" 
               width="32" 
               height="32" 
-              loading="lazy" 
+              fetchPriority="high"
               style={{ height: '32px' }} 
             />
           </picture>

@@ -46,91 +46,73 @@ const staticRoutes = [
 ];
 
 function generateSitemap() {
-  const urls = [];
+  const coreUrls = [];
 
-  // Add static routes
+  // ── CORE SITEMAP: Static routes + hub-level content pages ──
   staticRoutes.forEach((route) => {
-    // Core AI tools get max priority and daily crawling
     const isCoreTool = ['/analyze', '/resume-builder', '/live-editor', '/interview-sim', '/rejection-decoder'].includes(route);
-    urls.push(`
+    coreUrls.push(`
   <url>
     <loc>${DOMAIN}${route}</loc>
-    <lastmod>${TODAY}</lastmod>
     <changefreq>${(route === '/' || isCoreTool) ? 'daily' : 'weekly'}</changefreq>
     <priority>${(route === '/' || isCoreTool) ? '1.0' : '0.9'}</priority>
   </url>`);
   });
 
-  // Add Roadmaps
+  // Roadmaps → core
   roadmapList.forEach((item) => {
-    urls.push(`
+    coreUrls.push(`
   <url>
     <loc>${DOMAIN}/roadmaps/${item.id}</loc>
-    <lastmod>${TODAY}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>`);
   });
 
-  // Add Salary Guides (Base + Localized)
-  salaryCategories.forEach((item) => {
-    // 1. Add the base guide
-    urls.push(`
-  <url>
-    <loc>${DOMAIN}/salary-guides/${item.id}</loc>
-    <lastmod>${TODAY}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>`);
-    
-    // 2. Add localized guides for all 25 tech hubs
-    usTechHubs.forEach(city => {
-      urls.push(`
-  <url>
-    <loc>${DOMAIN}/salary-guides/${item.id}-in-${city.slug}</loc>
-    <lastmod>${TODAY}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>`);
-    });
-  });
-
-  // Add Interview Questions
+  // Interview Questions → core
   interviewCategories.forEach((item) => {
-    urls.push(`
+    coreUrls.push(`
   <url>
     <loc>${DOMAIN}/interview-questions/${item.id}</loc>
-    <lastmod>${TODAY}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>`);
   });
 
-  // Add Resume Examples
+  // Resume Examples → core
   resumeCategories.forEach((item) => {
-    urls.push(`
+    coreUrls.push(`
   <url>
     <loc>${DOMAIN}/resume-examples/${item.id}</loc>
-    <lastmod>${TODAY}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>`);
   });
 
-  // Add Career Guides
+  // Career Guides → core
   careerGuideCategories.forEach((item) => {
-    urls.push(`
+    coreUrls.push(`
   <url>
     <loc>${DOMAIN}/career-guides/${item.id}</loc>
-    <lastmod>${TODAY}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>`);
   });
 
+  // Salary Guides (base categories only) → core
+  salaryCategories.forEach((item) => {
+    coreUrls.push(`
+  <url>
+    <loc>${DOMAIN}/salary-guides/${item.id}</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>`);
+  });
+
+  // Build single XML file
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${urls.join('')}
+${coreUrls.join('')}
 </urlset>
 `;
 
@@ -139,9 +121,13 @@ ${urls.join('')}
     fs.mkdirSync(publicDir);
   }
 
-  const sitemapPath = path.join(publicDir, 'sitemap.xml');
-  fs.writeFileSync(sitemapPath, sitemap, 'utf8');
-  console.log(`✅ Sitemap successfully generated at: ${sitemapPath} with ${urls.length} URLs`);
+  fs.writeFileSync(path.join(publicDir, 'sitemap.xml'), sitemap, 'utf8');
+  
+  // Clean up old files if they exist
+  if (fs.existsSync(path.join(publicDir, 'sitemap-core.xml'))) fs.unlinkSync(path.join(publicDir, 'sitemap-core.xml'));
+  if (fs.existsSync(path.join(publicDir, 'sitemap-programmatic.xml'))) fs.unlinkSync(path.join(publicDir, 'sitemap-programmatic.xml'));
+  
+  console.log(`✅ Sitemap generated: ${coreUrls.length} high-priority URLs`);
   console.log(`✅ Canonical domain: ${DOMAIN}`);
 }
 

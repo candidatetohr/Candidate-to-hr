@@ -1,8 +1,8 @@
 export const resumeCategories = [
   {
     "id": "backend-developer",
-    "title": "Software Engineer Resume Examples",
-    "description": "Learn how to write a perfect Software Engineer resume that passes the ATS. Discover the top keywords, common mistakes, and view a complete 100/100 resume example.",
+    "title": "Backend Developer Resume Examples",
+    "description": "Learn how to write a perfect Backend Developer resume that passes the ATS. Discover the top keywords, common mistakes, and view a complete 100/100 resume example.",
     "role": "Development"
   },
   {

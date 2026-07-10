@@ -7,7 +7,9 @@ export default function SEO({ title = 'CandidateToHR', description = '', canonic
   const location = useLocation();
   
   const fullTitle = title.includes(siteName) ? title : `${title} | ${siteName}`;
-  const url = canonical ? `${DOMAIN}${canonical}` : `${DOMAIN}${location.pathname}`;
+  const pathname = canonical ? canonical : location.pathname;
+  const cleanPathname = pathname === '/' ? '' : (pathname.endsWith('/') ? pathname.slice(0, -1) : pathname);
+  const url = `${DOMAIN}${cleanPathname}`;
   const ogImage = image || `${DOMAIN}/og-image.png`;
 
   return (

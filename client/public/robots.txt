@@ -21,9 +21,6 @@ Disallow: /create-job
 Disallow: /jobs/create
 Disallow: /jobs/*/upload
 
-# Optional for Bing and other bots
-Crawl-delay: 5
-
 # AI Crawlers
 User-agent: GPTBot
 Disallow: /
