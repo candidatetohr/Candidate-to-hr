@@ -1,0 +1,200 @@
+{
+  "seo": {
+    "title": "Top 50+ Full Stack Developer Interview Questions & Answers (2026)",
+    "description": "Ace your Full Stack Developer interview. Practice the most common questions covering Frontend, Backend, Databases, System Design, and DevOps fundamentals.",
+    "slug": "full-stack-developer",
+    "keywords": "full stack developer interview questions, fullstack interview, frontend backend questions, system design interview, react nodejs interview",
+    "ogTitle": "Full Stack Developer Interview Questions & Answers",
+    "ogDescription": "Practice the most-asked Full Stack Developer interview questions."
+  },
+  "hero": {
+    "title": "Full Stack Developer Interview Questions",
+    "description": "A full stack developer must master both client-side and server-side architecture. Prepare for your interview with our curated list of 40+ real questions covering React, Node.js, databases, caching, and system architecture.",
+    "count": 40
+  },
+  "questions": {
+    "beginner": [
+      {
+        "id": "fs-b-1",
+        "q": "What is the difference between Frontend and Backend development?",
+        "a": "Frontend development deals with the client-side of the application (what the user sees and interacts with) using HTML, CSS, JavaScript, and frameworks like React or Vue. Backend development deals with the server-side, handling databases, business logic, authentication, and APIs using languages like Node.js, Python, or Java."
+      },
+      {
+        "id": "fs-b-2",
+        "q": "Explain the concept of a REST API.",
+        "a": "REST (Representational State Transfer) is an architectural style for designing networked applications. It relies on a stateless, client-server, cacheable communications protocol — almost always HTTP. RESTful applications use HTTP requests to POST (create), PUT (update), GET (read), and DELETE (delete) data."
+      },
+      {
+        "id": "fs-b-3",
+        "q": "What is the difference between SQL and NoSQL databases?",
+        "a": "SQL databases are relational, table-based, and have predefined schemas (e.g., PostgreSQL, MySQL). They are ideal for complex queries and transactional data (ACID compliance). NoSQL databases are non-relational, document, key-value, graph, or wide-column stores (e.g., MongoDB, Redis). They have dynamic schemas and are typically better for hierarchical data storage and horizontal scaling."
+      },
+      {
+        "id": "fs-b-4",
+        "q": "What is CORS?",
+        "a": "CORS (Cross-Origin Resource Sharing) is a security mechanism implemented by browsers that prevents a webpage from making requests to a different domain than the one that served the web page. To allow cross-origin requests, the server must include specific HTTP headers (like `Access-Control-Allow-Origin`) in its responses."
+      },
+      {
+        "id": "fs-b-5",
+        "q": "What is the Virtual DOM in React?",
+        "a": "The Virtual DOM is a lightweight JavaScript representation of the actual DOM. React keeps a copy of the UI in memory and syncs it with the real DOM using a process called reconciliation. This minimizes expensive real DOM operations, vastly improving performance."
+      },
+      {
+        "id": "fs-b-6",
+        "q": "What is package.json used for in Node.js?",
+        "a": "The `package.json` file holds various metadata relevant to a Node.js project. It is used to manage the project's dependencies, scripts, version, and configuration, allowing npm to easily install required packages and start the application."
+      },
+      {
+        "id": "fs-b-7",
+        "q": "Explain the Box Model in CSS.",
+        "a": "The CSS Box Model is essentially a box that wraps around every HTML element. It consists of: margins (outermost layer), borders, padding (space between content and border), and the actual content itself. Understanding this is crucial for accurate layout design."
+      },
+      {
+        "id": "fs-b-8",
+        "q": "What is Semantic HTML?",
+        "a": "Semantic HTML refers to using HTML tags that convey the meaning of the content, rather than just its presentation. For example, using `<article>`, `<footer>`, and `<nav>` instead of generic `<div>` tags. It improves accessibility for screen readers and SEO."
+      },
+      {
+        "id": "fs-b-9",
+        "q": "What is a Promise in JavaScript?",
+        "a": "A Promise is an object representing the eventual completion (or failure) of an asynchronous operation and its resulting value. It can be in one of three states: pending, fulfilled, or rejected. Promises help avoid 'callback hell'."
+      },
+      {
+        "id": "fs-b-10",
+        "q": "What is the role of Git?",
+        "a": "Git is a distributed version control system used to track changes in source code during software development. It allows multiple developers to work collaboratively, revert to previous versions, and manage branching and merging effectively."
+      }
+    ],
+    "intermediate": [
+      {
+        "id": "fs-i-1",
+        "q": "How does authentication differ from authorization?",
+        "a": "Authentication is the process of verifying who a user is (e.g., checking a username and password). Authorization is the process of verifying what specific applications, files, and data a user has access to (e.g., checking if a user has admin privileges)."
+      },
+      {
+        "id": "fs-i-2",
+        "q": "Explain how JWT (JSON Web Tokens) work.",
+        "a": "JWT is a compact, URL-safe means of representing claims between two parties. The token consists of three parts: Header, Payload, and Signature. Once a user logs in, the server signs a JWT and sends it to the client. The client stores it (e.g., in an HttpOnly cookie) and sends it with every request. The server verifies the signature to authenticate the request statelessly."
+      },
+      {
+        "id": "fs-i-3",
+        "q": "What is Server-Side Rendering (SSR) vs Client-Side Rendering (CSR)?",
+        "a": "In CSR, the server sends a barebones HTML file and a large JavaScript bundle; the browser executes the JS to render the UI. This can lead to slower initial loads and poor SEO. In SSR, the server pre-renders the HTML with data and sends a fully populated page to the client, improving SEO and Time-To-First-Byte (TTFB)."
+      },
+      {
+        "id": "fs-i-4",
+        "q": "What is Docker and why is it useful?",
+        "a": "Docker is a platform that uses OS-level virtualization to deliver software in packages called containers. Containers isolate software from its environment and ensure that it works uniformly regardless of differences in OS or infrastructure. It solves the 'it works on my machine' problem."
+      },
+      {
+        "id": "fs-i-5",
+        "q": "How do you handle state management in a large React application?",
+        "a": "In a large React app, local state (useState) is often insufficient. I would use Context API for simple global state (like theme or auth), and libraries like Redux Toolkit, Zustand, or Recoil for complex global state. For server state (fetching, caching), tools like React Query or RTK Query are best."
+      },
+      {
+        "id": "fs-i-6",
+        "q": "What is middleware in Node.js/Express?",
+        "a": "Middleware functions are functions that have access to the request object (req), the response object (res), and the next middleware function in the application's request-response cycle. They can execute any code, make changes to the request/response objects, end the response cycle, or call `next()`."
+      },
+      {
+        "id": "fs-i-7",
+        "q": "Explain Database Normalization and Denormalization.",
+        "a": "Normalization is the process of organizing data to reduce redundancy and improve data integrity (e.g., separating related data into different tables and using foreign keys). Denormalization is the deliberate addition of redundant data to improve read performance, often used in NoSQL databases or data warehouses."
+      },
+      {
+        "id": "fs-i-8",
+        "q": "What is the event loop in JavaScript?",
+        "a": "The event loop is a mechanism that allows Node.js (and browsers) to perform non-blocking I/O operations despite JavaScript being single-threaded. It offloads operations to the system kernel whenever possible, and when those operations complete, the kernel tells Node.js to add the appropriate callback to the poll queue to be executed."
+      },
+      {
+        "id": "fs-i-9",
+        "q": "How do you optimize the performance of a web application?",
+        "a": "On the frontend: bundle splitting, lazy loading, image optimization, minimizing reflows/repaints, using CDNs, and caching. On the backend: database indexing, caching (Redis), optimizing queries, load balancing, and using asynchronous processing for heavy tasks."
+      },
+      {
+        "id": "fs-i-10",
+        "q": "What is GraphQL and how does it compare to REST?",
+        "a": "GraphQL is a query language for APIs. Unlike REST, which requires loading from multiple URLs (endpoints) to fetch complex data, GraphQL allows clients to request exactly the data they need and nothing more in a single request. This prevents over-fetching and under-fetching."
+      }
+    ],
+    "advanced": [
+      {
+        "id": "fs-a-1",
+        "q": "Explain how you would design a scalable URL shortener like bit.ly.",
+        "a": "I'd start with a load balancer routing requests to web servers. For data, I'd use a relational DB (or NoSQL like Cassandra for high writes) to store the long URL, short hash, and user ID. To generate the short hash, I'd use Base62 encoding on an auto-incrementing ID or a distributed ID generator (like Snowflake) to prevent collisions. I'd add a caching layer (Redis) to store frequently accessed URLs to reduce DB read load. For analytics, asynchronous workers (Kafka/RabbitMQ) would process click events without blocking the redirect."
+      },
+      {
+        "id": "fs-a-2",
+        "q": "What are microservices and what are their pros and cons?",
+        "a": "Microservices are an architectural style structuring an application as a collection of loosely coupled, independently deployable services organized around business capabilities. Pros: independent scaling, technology flexibility, fault isolation. Cons: complex deployment, networking overhead, distributed data management, and difficult debugging/tracing."
+      },
+      {
+        "id": "fs-a-3",
+        "q": "How does a message broker like RabbitMQ or Kafka fit into a full-stack architecture?",
+        "a": "Message brokers enable asynchronous communication between microservices. They decouple the sender and receiver, allowing the system to handle spikes in traffic by queuing tasks (e.g., sending emails, processing images) to be executed by worker nodes later, rather than blocking the main web server thread."
+      },
+      {
+        "id": "fs-a-4",
+        "q": "Explain CI/CD.",
+        "a": "CI/CD stands for Continuous Integration and Continuous Deployment/Delivery. CI is the practice of automating the integration of code changes from multiple contributors into a single software project (running tests on every push). CD automates the release of the validated code to a repository and subsequently deploying it to production environments reliably."
+      },
+      {
+        "id": "fs-a-5",
+        "q": "What is the N+1 query problem and how do you fix it?",
+        "a": "The N+1 query problem occurs when an ORM executes one query to retrieve a list of N entities, and then N additional queries to load a related entity for each of them. This severely degrades performance. It is fixed by using eager loading (e.g., JOINs in SQL, `.populate()` in Mongoose, or DataLoader in GraphQL) to fetch all related data in a single, batched query."
+      },
+      {
+        "id": "fs-a-6",
+        "q": "How do you implement CSRF protection?",
+        "a": "Cross-Site Request Forgery (CSRF) is mitigated by using anti-CSRF tokens. The server generates a unique, cryptographically strong token and includes it in the user's session and in a hidden field on the form (or sends it via an HTTP header). When the form is submitted, the server verifies the token matches the session. Alternatively, using SameSite=Lax or SameSite=Strict attributes on cookies provides strong protection."
+      },
+      {
+        "id": "fs-a-7",
+        "q": "What are WebSockets and when would you use them?",
+        "a": "WebSockets provide full-duplex, bidirectional communication channels over a single TCP connection. Unlike HTTP (where the client must poll the server), WebSockets allow the server to push data to the client instantly. They are essential for real-time applications like chat apps, live sports updates, or collaborative editing tools."
+      },
+      {
+        "id": "fs-a-8",
+        "q": "Describe the CAP theorem.",
+        "a": "The CAP theorem states that a distributed data store can only simultaneously provide two of the following three guarantees: Consistency (every read receives the most recent write), Availability (every request receives a non-error response), and Partition tolerance (the system continues to operate despite network drops). During a network partition, you must choose between Consistency or Availability."
+      },
+      {
+        "id": "fs-a-9",
+        "q": "How does Redis improve application performance?",
+        "a": "Redis is an in-memory key-value data store. It improves performance by caching frequently accessed data (like user sessions, API responses, or database query results) in RAM, which has microsecond latency compared to the millisecond latency of traditional disk-based databases. It's also used for pub/sub messaging and rate limiting."
+      },
+      {
+        "id": "fs-a-10",
+        "q": "What are the common strategies for database sharding?",
+        "a": "Sharding is horizontal partitioning of a database. Strategies include: Range-based sharding (partitioning by a range of values, e.g., dates), Hash-based sharding (applying a hash function to the sharding key to distribute data evenly), and Directory-based sharding (using a lookup table to track which shard holds which data). Sharding improves scalability but makes joins and transactions across shards very complex."
+      }
+    ],
+    "scenario": [
+      {
+        "id": "fs-s-1",
+        "q": "Your e-commerce application is crashing during Black Friday due to high traffic. What steps do you take to diagnose and fix it?",
+        "a": "First, I'd check monitoring tools (Datadog/New Relic) to identify the bottleneck. If it's the database (high CPU/connections), I'd implement Redis caching for product catalogs, add read replicas, or throttle non-critical background jobs. If it's the web servers, I'd ensure horizontal auto-scaling is triggered and the load balancer is routing correctly. Long-term, I'd implement queueing for checkout processes to prevent database locks."
+      },
+      {
+        "id": "fs-s-2",
+        "q": "You are tasked with migrating a monolithic application to microservices. How do you approach it?",
+        "a": "I would not rewrite it all at once (the 'Big Bang' approach). Instead, I'd use the Strangler Fig pattern. I would identify a distinct, loosely coupled domain within the monolith (e.g., the billing module), build it as a separate microservice, and route traffic for billing to the new service via an API Gateway. I would repeat this process gradually until the monolith is completely replaced."
+      },
+      {
+        "id": "fs-s-3",
+        "q": "A user reports that a critical page takes 10 seconds to load. Walk me through your debugging process.",
+        "a": "I'd first open Chrome DevTools Network tab to see if it's the initial HTML (TTFB), large assets, or an API call causing the delay. If the API is slow, I'd trace the request backend. I'd check for N+1 query issues, missing database indexes, or synchronous blocking operations. If it's frontend rendering, I'd check for massive React re-renders or huge unminified bundles. I'd then implement caching, indexing, or lazy loading as appropriate."
+      },
+      {
+        "id": "fs-s-4",
+        "q": "How would you design a secure user authentication system from scratch?",
+        "a": "I would never store plain-text passwords. I'd hash them using bcrypt or Argon2 with a unique salt per user. I'd use HTTPS everywhere to prevent packet sniffing. For sessions, I'd use JWTs stored in HttpOnly, Secure cookies to prevent XSS. I'd implement rate limiting on the login endpoint to prevent brute-force attacks, and offer Two-Factor Authentication (2FA) via TOTP."
+      },
+      {
+        "id": "fs-s-5",
+        "q": "Your team is arguing over whether to use a NoSQL or SQL database for a new social media feed feature. How do you decide?",
+        "a": "I would evaluate the data access patterns. A social feed requires extremely fast, highly scalable reads and involves complex relationships (users, posts, likes, comments). While SQL handles relationships well, deep joins for a feed can be very slow at scale. I might suggest a hybrid approach: PostgreSQL for user accounts and financial transactions (where ACID is critical), and a NoSQL DB like Cassandra or DynamoDB (which scales horizontally) to store the pre-computed feeds for high-speed reads."
+      }
+    ]
+  }
+}

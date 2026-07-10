@@ -1,0 +1,135 @@
+{
+  "seo": {
+    "title": "Top 50+ UI/UX Designer Interview Questions & Answers (2026)",
+    "description": "Ace your UI/UX Designer interview with questions covering user research, prototyping, design systems, usability testing, and accessibility.",
+    "slug": "ui-ux-designer",
+    "keywords": "ui ux interview questions, product designer interview, figma questions, user experience interview, usability testing",
+    "ogTitle": "UI/UX Designer Interview Questions & Answers",
+    "ogDescription": "Practice the most-asked UI/UX Designer interview questions and secure your next role."
+  },
+  "hero": {
+    "title": "UI/UX Designer Interview Questions",
+    "description": "Prepare for your UI/UX Designer interview with our curated list of 30+ real questions covering the entire design thinking process, wireframing, prototyping, and accessibility.",
+    "count": 30
+  },
+  "questions": {
+    "beginner": [
+      {
+        "id": "ux-b-1",
+        "q": "What is the difference between UI and UX?",
+        "a": "UX (User Experience) focuses on the overall feel, usability, and journey of a user interacting with a product. It encompasses research, information architecture, and wireframing. UI (User Interface) focuses on the visual and interactive elements like buttons, typography, color schemes, and micro-interactions. UX is analytical; UI is visual."
+      },
+      {
+        "id": "ux-b-2",
+        "q": "What is a wireframe?",
+        "a": "A wireframe is a low-fidelity, structural representation of a web page or app screen. It outlines the layout, content placement, and functionality without focusing on visual design elements like color or typography. It acts as a blueprint for the final product."
+      },
+      {
+        "id": "ux-b-3",
+        "q": "Explain the concept of 'Design Thinking'.",
+        "a": "Design Thinking is an iterative, user-centric problem-solving methodology. It consists of five phases: Empathize (understand user needs), Define (state users' problems), Ideate (brainstorm solutions), Prototype (build low-fidelity models), and Test (test with real users to refine the solution)."
+      },
+      {
+        "id": "ux-b-4",
+        "q": "What is a User Persona?",
+        "a": "A User Persona is a semi-fictional character based on user research that represents a specific segment of your target audience. It includes demographics, goals, pain points, and behaviors. Personas help the design team build empathy and design for real users rather than themselves."
+      },
+      {
+        "id": "ux-b-5",
+        "q": "What is Information Architecture (IA)?",
+        "a": "Information Architecture is the practice of structuring, organizing, and labeling content in an effective and sustainable way. Good IA helps users easily find information and complete tasks (e.g., designing clear navigation menus and site maps)."
+      },
+      {
+        "id": "ux-b-6",
+        "q": "What is Usability Testing?",
+        "a": "Usability testing involves evaluating a product by testing it on representative users. Users are asked to complete tasks while observers watch, listen, and take notes. The goal is to identify usability problems, collect qualitative and quantitative data, and determine the participant's satisfaction."
+      },
+      {
+        "id": "ux-b-7",
+        "q": "What is the difference between a wireframe, a mockup, and a prototype?",
+        "a": "A wireframe is a low-fidelity blueprint showing layout. A mockup is a static, high-fidelity representation of the final design (including colors and typography). A prototype is a high-fidelity, interactive simulation of the final product that users can click through."
+      },
+      {
+        "id": "ux-b-8",
+        "q": "What is Mobile-First Design?",
+        "a": "Mobile-First Design is an approach where you start designing the UI and UX for the smallest screen (mobile) first, and then progressively enhance the design for larger screens (tablets, desktops). This ensures the core functionality is prioritized."
+      }
+    ],
+    "intermediate": [
+      {
+        "id": "ux-i-1",
+        "q": "How do you conduct User Research?",
+        "a": "User research combines qualitative and quantitative methods. I start by defining research goals. Then I might use surveys for quantitative data, and 1-on-1 user interviews or focus groups for qualitative insights. I synthesize this data using affinity diagrams to identify patterns, pain points, and create accurate personas."
+      },
+      {
+        "id": "ux-i-2",
+        "q": "What are Heuristic Evaluations?",
+        "a": "Heuristic evaluation is a usability inspection method where UX experts evaluate a user interface against a set of recognized usability principles (heuristics), such as Jakob Nielsen's 10 usability heuristics (e.g., visibility of system status, error prevention, consistency)."
+      },
+      {
+        "id": "ux-i-3",
+        "q": "Explain A/B Testing in the context of UX.",
+        "a": "A/B testing is a method of comparing two versions of a webpage or app against each other to determine which one performs better. Users are randomly shown either version A or version B, and statistical analysis is used to see which version drove more conversions or better user engagement."
+      },
+      {
+        "id": "ux-i-4",
+        "q": "What is a Design System?",
+        "a": "A design system is a comprehensive set of standards, documentation, and reusable components (like buttons, input fields, and typography) that govern the design of a product. It ensures visual consistency across different platforms and speeds up the design and development process."
+      },
+      {
+        "id": "ux-i-5",
+        "q": "How do you ensure your designs are accessible (a11y)?",
+        "a": "I ensure accessibility by following WCAG guidelines. This includes maintaining high color contrast ratios, ensuring the site is fully navigable via keyboard, adding descriptive alt text to images, using semantic HTML, and designing focus states for interactive elements."
+      },
+      {
+        "id": "ux-i-6",
+        "q": "What is 'Gestalt Psychology' and how does it apply to UI design?",
+        "a": "Gestalt psychology explores how humans group similar elements, recognize patterns, and simplify complex images. Principles like Proximity (grouping related items), Similarity (styling related items identically), and Closure (completing incomplete shapes) are used in UI to create intuitive layouts."
+      },
+      {
+        "id": "ux-i-7",
+        "q": "How do you handle negative feedback from stakeholders on a design?",
+        "a": "I try not to take it personally. I ask clarifying questions to uncover the root of their concern—often, their feedback stems from a business requirement I wasn't aware of. I rely on user data and research to defend design decisions objectively, but remain flexible to iterate based on valid constraints."
+      }
+    ],
+    "advanced": [
+      {
+        "id": "ux-a-1",
+        "q": "How do you measure the ROI of UX design?",
+        "a": "Measuring UX ROI involves tying design improvements to key business metrics. This can include tracking conversion rates, user retention/churn rates, time on task, and support ticket volume. For example, if a redesigned checkout flow reduces cart abandonment by 10%, that directly correlates to increased revenue."
+      },
+      {
+        "id": "ux-a-2",
+        "q": "Explain how you would conduct Card Sorting.",
+        "a": "Card sorting helps design Information Architecture. I'd write topics on cards and ask users to group them in a way that makes sense to them. In an 'Open' card sort, users create their own category names. In a 'Closed' sort, they place cards into predefined categories. I use tools like Optimal Workshop to analyze the dendrograms and find consensus."
+      },
+      {
+        "id": "ux-a-3",
+        "q": "What is the difference between generative and evaluative research?",
+        "a": "Generative research (exploratory) is done at the beginning of a project to understand user problems, behaviors, and opportunities (e.g., interviews, field studies) to figure out 'what to build'. Evaluative research is done later to test if the proposed solution actually works (e.g., usability testing, A/B testing)."
+      },
+      {
+        "id": "ux-a-4",
+        "q": "How do you balance user needs with business goals?",
+        "a": "This is the core challenge of UX. I start by deeply understanding both the business KPIs (e.g., increasing sign-ups) and user pain points. I look for the 'sweet spot' where helping the user achieve their goal also drives the business metric. If there's a conflict (like adding intrusive ads), I advocate for the user by demonstrating how short-term business gains might cause long-term churn."
+      }
+    ],
+    "scenario": [
+      {
+        "id": "ux-s-1",
+        "q": "You're designing an app for elderly users. What specific UI/UX decisions would you make?",
+        "a": "I would prioritize extreme clarity. I'd use high-contrast color schemes, larger typography (at least 16px body text), and larger tap targets (buttons) to accommodate reduced motor skills. I would avoid complex gestures (like swiping or pinching) in favor of simple taps. Navigation would be shallow, and instructions would be explicit, avoiding technical jargon."
+      },
+      {
+        "id": "ux-s-2",
+        "q": "Analytics show users are dropping off heavily on step 2 of a 5-step onboarding process. How do you investigate and fix this?",
+        "a": "First, I'd review the analytics to see if the drop-off occurs on mobile or desktop, and check for specific error messages triggering. Then, I'd run session recordings (e.g., Hotjar) to watch users interact with Step 2. I'd likely follow up with a quick usability test asking users to complete the onboarding while thinking aloud. If Step 2 asks for sensitive info too early, I'd move it later. If the UI is confusing, I'd simplify it."
+      },
+      {
+        "id": "ux-s-3",
+        "q": "The product manager wants to add 5 new features to the homepage, but you believe it will cause cognitive overload. How do you push back?",
+        "a": "I wouldn't just say 'no'. I would propose a rapid usability test: a preference test or a 5-second test comparing the current homepage with the proposed cluttered one. I'd use the resulting data to show the PM that users fail to find the primary CTA when overwhelmed. I would then offer a compromise: perhaps nesting the features in a secondary menu or personalizing the homepage based on user type."
+      }
+    ]
+  }
+}

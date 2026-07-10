@@ -194,5 +194,12 @@ export const salaryCategories = [
     "description": "Discover the exact Blockchain Developer salary in 2026. Detailed compensation guides by experience, top hiring cities, tech firms, and key skills.",
     "role": "Development",
     "country": "USA"
+  },
+  {
+    "id": "cyber-security-analyst-us",
+    "title": "Cybersecurity Analyst Salary in USA (2026)",
+    "description": "Cybersecurity Analyst salary in the USA for 2026. Breakdown for SOC analysts, InfoSec engineers, and penetration testers by experience level and location.",
+    "role": "Data & AI",
+    "country": "USA"
   }
 ];

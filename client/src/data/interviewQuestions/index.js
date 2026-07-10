@@ -166,5 +166,33 @@ export const interviewCategories = [
     "description": "Ace your Web3 tech screen with our curated list of 50 Blockchain Developer interview questions, covering Solidity, Rust, DApp security, and EVM internals.",
     "topic": "Programming",
     "count": 50
+  },
+  {
+    "id": "full-stack-developer",
+    "title": "Top Full Stack Developer Interview Questions",
+    "description": "Ace your Full Stack Developer interview. Practice the most common questions covering Frontend, Backend, Databases, and System Design.",
+    "topic": "Programming",
+    "count": 50
+  },
+  {
+    "id": "cybersecurity-analyst",
+    "title": "Cybersecurity Analyst Interview Questions",
+    "description": "Ace your Cybersecurity Analyst interview with questions covering networking, encryption, SOC, SIEM, and incident response.",
+    "topic": "Security",
+    "count": 50
+  },
+  {
+    "id": "ui-ux-designer",
+    "title": "UI/UX Designer Interview Questions",
+    "description": "Ace your UI/UX Designer interview with questions covering user research, prototyping, design systems, and usability testing.",
+    "topic": "Design",
+    "count": 50
+  },
+  {
+    "id": "prompt-engineer",
+    "title": "Prompt Engineer Interview Questions",
+    "description": "Ace your Prompt Engineering interview with questions covering LLMs, context windows, tokenization, and few-shot prompting.",
+    "topic": "Data & AI",
+    "count": 50
   }
 ];

@@ -1,0 +1,124 @@
+{
+  "seo": {
+    "title": "Cybersecurity Analyst Salary in USA (2026) | CandidateToHR",
+    "description": "Detailed Cybersecurity Analyst salary guide in the USA for 2026. See compensation for SOC analysts, InfoSec engineers, and penetration testers by experience, state, and company.",
+    "slug": "cyber-security-analyst-us",
+    "keywords": "cybersecurity analyst salary usa, soc analyst salary, infosec salary, information security salary 2026, penetration tester pay",
+    "ogTitle": "Cybersecurity Analyst Salary in USA (2026)",
+    "ogDescription": "Discover how much Cybersecurity Analysts earn in the USA in 2026, including bonuses and equity."
+  },
+  "hero": {
+    "title": "Cybersecurity Analyst Salary in the USA",
+    "description": "With cyber threats at an all-time high, the demand for skilled Cybersecurity Analysts continues to outpace supply in 2026. Explore comprehensive compensation data, including breakdowns by experience level, specialization, geographic location, and top tech companies.",
+    "lastUpdated": "July 2026"
+  },
+  "overview": {
+    "average": "$125,500",
+    "range": "$85,000 - $185,000",
+    "topEarners": "$210,000+",
+    "growth": "+12% YoY"
+  },
+  "contentSections": [
+    {
+      "title": "Salary by Experience Level",
+      "content": "Experience is the biggest driver of compensation in cybersecurity. Junior roles focus on log monitoring (SOC Tier 1), while senior roles involve threat hunting, architecture review, and incident response command.",
+      "data": [
+        {
+          "label": "Entry-Level (0-2 years)",
+          "value": "$85,000 - $105,000",
+          "subtext": "Typically SOC Analyst Tier 1. Requires CompTIA Security+ or similar."
+        },
+        {
+          "label": "Mid-Level (3-5 years)",
+          "value": "$105,000 - $145,000",
+          "subtext": "SOC Tier 2, Incident Responder. CySA+ or equivalent required."
+        },
+        {
+          "label": "Senior (6+ years)",
+          "value": "$145,000 - $185,000+",
+          "subtext": "Threat Hunter, Lead Analyst. CISSP highly preferred."
+        }
+      ]
+    },
+    {
+      "title": "Salary by Specialization",
+      "content": "Not all cybersecurity roles are paid equally. Niche skills, particularly in cloud security and offensive security, command significant premiums in the 2026 market.",
+      "data": [
+        {
+          "label": "SOC Analyst (Defense)",
+          "value": "$110,000 Average"
+        },
+        {
+          "label": "Penetration Tester (Offense)",
+          "value": "$135,000 Average"
+        },
+        {
+          "label": "Cloud Security Engineer",
+          "value": "$160,000 Average"
+        },
+        {
+          "label": "Application Security (AppSec)",
+          "value": "$155,000 Average"
+        }
+      ]
+    },
+    {
+      "title": "Highest Paying Cities in the USA",
+      "content": "Location significantly impacts base salary due to cost of living and the concentration of tech/finance hubs. However, remote work has somewhat flattened the curve.",
+      "data": [
+        {
+          "label": "San Francisco Bay Area, CA",
+          "value": "$155,000 Average"
+        },
+        {
+          "label": "New York City, NY",
+          "value": "$148,000 Average"
+        },
+        {
+          "label": "Washington, D.C. (Gov/Defense)",
+          "value": "$142,000 Average"
+        },
+        {
+          "label": "Seattle, WA",
+          "value": "$140,000 Average"
+        },
+        {
+          "label": "Austin, TX",
+          "value": "$125,000 Average"
+        }
+      ]
+    },
+    {
+      "title": "Total Compensation (Base + Bonus + Equity)",
+      "content": "While base salary is strong, total compensation at Big Tech and pre-IPO startups can push senior cybersecurity analyst pay past the $300k mark due to Restricted Stock Units (RSUs) and signing bonuses.",
+      "data": [
+        {
+          "label": "Base Salary",
+          "value": "70-85% of Total Comp"
+        },
+        {
+          "label": "Annual Bonus",
+          "value": "10-20% (Targeted)"
+        },
+        {
+          "label": "Equity / RSUs",
+          "value": "$20,000 - $100,000+ per year (Vesting)"
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "Does having a CISSP increase my salary?",
+      "answer": "Yes, significantly. In 2026, holding a CISSP certification can bump a mid-to-senior level analyst's salary by 15-20%. It is often a hard requirement for managerial and lead architect roles."
+    },
+    {
+      "question": "Is cybersecurity a remote-friendly field?",
+      "answer": "Yes. While government contractors and defense sectors often require on-site presence (SCIF), the private sector (Tech, Finance, Healthcare) heavily supports remote work for SOC analysts and security engineers."
+    },
+    {
+      "question": "Will AI replace Cybersecurity Analysts?",
+      "answer": "No. AI is replacing tedious log parsing, but it is actually increasing the demand for high-level analysts who can interpret AI-generated threat intelligence, tune models, and make critical incident response decisions."
+    }
+  ]
+}
