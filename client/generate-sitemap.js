@@ -124,8 +124,22 @@ ${coreUrls.join('')}
   fs.writeFileSync(path.join(publicDir, 'sitemap.xml'), sitemap, 'utf8');
   
   // Clean up old files if they exist
-  if (fs.existsSync(path.join(publicDir, 'sitemap-core.xml'))) fs.unlinkSync(path.join(publicDir, 'sitemap-core.xml'));
-  if (fs.existsSync(path.join(publicDir, 'sitemap-programmatic.xml'))) fs.unlinkSync(path.join(publicDir, 'sitemap-programmatic.xml'));
+  const legacySitemaps = [
+    'sitemap-core.xml',
+    'sitemap-programmatic.xml',
+    'sitemap-career.xml',
+    'sitemap-interview.xml',
+    'sitemap-main.xml',
+    'sitemap-resume.xml',
+    'sitemap-roadmaps.xml',
+    'sitemap-salary.xml'
+  ];
+  legacySitemaps.forEach(file => {
+    const filePath = path.join(publicDir, file);
+    if (fs.existsSync(filePath)) {
+      fs.unlinkSync(filePath);
+    }
+  });
   
   console.log(`✅ Sitemap generated: ${coreUrls.length} high-priority URLs`);
   console.log(`✅ Canonical domain: ${DOMAIN}`);
