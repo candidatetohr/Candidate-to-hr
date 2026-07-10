@@ -8,6 +8,9 @@ import {
 } from 'lucide-react';
 import SEO from '../components/SEO';
 import NewsletterSignup from '../components/NewsletterSignup';
+import { roadmapList } from '../data/roadmaps';
+import { salaryCategories } from '../data/salaryGuides';
+import { careerGuideCategories } from '../data/careerGuides';
 import './LandingPage.css';
 
 const loadFeatures = () => import('../framerFeatures.js').then(res => res.default);
