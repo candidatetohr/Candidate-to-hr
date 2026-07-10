@@ -33,10 +33,15 @@
     }
   ],
   "rewrites": [
-    {
-      "source": "/((?!api|assets|.*\\..*).*|$)",
-      "destination": "/index.html"
-    }
+    { "source": "/dashboard(.*)", "destination": "/index.html" },
+    { "source": "/login", "destination": "/index.html" },
+    { "source": "/forgot-password", "destination": "/index.html" },
+    { "source": "/reset-password(.*)", "destination": "/index.html" },
+    { "source": "/verify-email(.*)", "destination": "/index.html" },
+    { "source": "/jobs(.*)", "destination": "/index.html" },
+    { "source": "/applications(.*)", "destination": "/index.html" },
+    { "source": "/analytics", "destination": "/index.html" },
+    { "source": "/profile(.*)", "destination": "/index.html" }
   ]
 }
 

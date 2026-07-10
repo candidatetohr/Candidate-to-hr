@@ -698,3 +698,8 @@ pages.forEach(({ route, title, desc, type, dataType, dataId, localCity }) => {
 });
 
 console.log(`✅ Successfully injected SEO metadata for ${successCount}/${pages.length} routes.`);
+
+// Copy index.html to 404.html so Vercel can serve it with a native 404 status code
+const notFoundPath = path.join(distPath, '404.html');
+fs.copyFileSync(baseHtmlPath, notFoundPath);
+console.log(`✅ Generated 404.html fallback for Vercel soft-404 handling.`);
