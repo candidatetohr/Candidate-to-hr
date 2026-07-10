@@ -30,11 +30,11 @@ const candidateFeatures = [
   { icon: FileSearch, title: 'Instant Resume Score', desc: 'Get a 0–100 AI score across skills, experience, education, and communication.', color: '#4f8ef7' },
   { icon: Zap, title: 'Live AI Editor', desc: 'Watch your score update in real-time as you type and get instant feedback on fixes.', color: '#10b981' },
   { icon: Target, title: 'Career Intelligence Map', desc: "Map your profile against 50+ archetypes and see your salary potential.", color: '#06b6d4' },
-  { icon: Map, title: 'Learning Path Optimizer', desc: 'Tell AI your target role and available hours, get a week-by-week curriculum.', color: '#3b82f6' },
+  { icon: Map, title: 'Learning Path Optimizer', desc: 'Tell the AI your target role and available hours to get a week-by-week curriculum.', color: '#3b82f6' },
   { icon: PieChart, title: 'Placement Probability', desc: 'Input your academic and technical profile to predict exactly what roles you will land.', color: '#8b5cf6' },
   { icon: ShieldAlert, title: 'Resume Truth Detector', desc: 'Scan your resume for overclaiming, contradictions, and missing evidence.', color: '#ef4444' },
   { icon: MessageSquare, title: 'AI Mock Interviews', desc: 'Practice with a real-time AI interviewer that grades your answers and gives you a readiness report.', color: '#f59e0b' },
-  { icon: AlertTriangle, title: 'AI Rejection Decoder', desc: 'Paste a rejection email and job description. Get the brutal truth on exactly why you failed.', color: '#ef4444' },
+  { icon: AlertTriangle, title: 'AI Rejection Decoder', desc: 'Paste a rejection email and a job description to get the brutal truth on exactly why you failed.', color: '#ef4444' },
   { icon: TrendingUp, title: 'One-Click Resume Tailor', desc: 'Paste a job description and AI perfectly rewrites your experience to match it.', color: '#ec4899' },
   { icon: Brain, title: 'AI Career Coach', desc: 'Chat directly with an AI coach that knows your resume and can offer career advice.', color: '#a855f7' },
 ];
@@ -254,7 +254,7 @@ export default function LandingPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2>For <span className="gradient-text">Job Seekers</span> — Analyse Your Resume Free</h2>
+            <h2>For <span className="gradient-text">Job Seekers</span> — Analyze Your Resume Free</h2>
             <p>Upload your PDF and get a full AI report in under 60 seconds. No account needed.</p>
           </m.div>
 

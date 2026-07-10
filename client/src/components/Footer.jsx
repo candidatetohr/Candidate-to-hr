@@ -56,7 +56,7 @@ function Footer() {
 
         {/* Column 4: AI Tools Part 1 */}
         <div className="footer-col">
-          <h3>AI Tools</h3>
+          <h3>Core AI Features</h3>
           <ul>
             <li><Link to="/analyze">AI Resume Analyzer</Link></li>
             <li><Link to="/resume-builder">AI Resume Builder</Link></li>
@@ -70,7 +70,7 @@ function Footer() {
 
         {/* Column 5: AI Tools Part 2 */}
         <div className="footer-col">
-          <h3>AI Tools</h3>
+          <h3>Advanced Career Tools</h3>
           <ul>
             <li><Link to="/truth-detector">Truth Detector</Link></li>
             <li><Link to="/culture-fit">Culture Fit Analyzer</Link></li>

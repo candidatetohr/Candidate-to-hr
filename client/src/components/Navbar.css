@@ -65,6 +65,7 @@
   align-items: center;
   gap: 16px;
   flex: 1;
+  flex-wrap: wrap;
 }
 
 .navbar-actions {

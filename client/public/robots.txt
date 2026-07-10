@@ -1,37 +1,30 @@
-# CandidateToHR — AI Career Intelligence Platform
+# CandidateToHR
 # https://candidatetohr.online
 
 User-agent: *
-Allow: /
-# Allow public directories explicitly
-Allow: /roadmaps/
-Allow: /interview-questions/
-Allow: /salary-guides/
-Allow: /resume-examples/
-Allow: /career-guides/
-Allow: /about
-Allow: /contact
-Allow: /privacy-policy
-Allow: /terms
-Allow: /disclaimer
-Allow: /sitemap
 
-# Private, recruiter, and authenticated routes
+# Public pages
+Allow: /
+
+# Private pages
 Disallow: /dashboard
 Disallow: /candidate-dashboard
 Disallow: /profile/
 Disallow: /profile-edit
-Disallow: /create-job
 Disallow: /analytics
-Disallow: /auth/
-Disallow: /verify-email/
-Disallow: /reset-password/
-Disallow: /forgot-password/
+Disallow: /applications/
+Disallow: /auth
+Disallow: /verify-email
+Disallow: /reset-password
+Disallow: /forgot-password
+Disallow: /create-job
 Disallow: /jobs/create
 Disallow: /jobs/*/upload
-Disallow: /applications/
 
-# Block AI scrapers from harvesting content for models
+# Optional for Bing and other bots
+Crawl-delay: 5
+
+# AI Crawlers
 User-agent: GPTBot
 Disallow: /
 
@@ -41,11 +34,8 @@ Disallow: /
 User-agent: anthropic-ai
 Disallow: /
 
+# Google AI
 User-agent: Google-Extended
 Allow: /
-
-# Generic rate limiting for non-search crawler bots
-User-agent: *
-Crawl-delay: 5
 
 Sitemap: https://candidatetohr.online/sitemap.xml
