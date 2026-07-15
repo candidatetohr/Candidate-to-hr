@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useCallback } from 'react';
+import { useState, useEffect, useRef, useCallback, lazy, Suspense } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { m, AnimatePresence, LazyMotion } from 'framer-motion';
 import {
@@ -6,7 +6,7 @@ import {
   LogOut, User, Menu, X, Zap, ChevronDown, FileText, MessageSquare, BookOpen, MapPin, DollarSign, Plus, Search
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
-import GlobalSearch from './GlobalSearch';
+const GlobalSearch = lazy(() => import('./GlobalSearch'));
 import './Navbar.css';
 
 const loadFeatures = () => import('../framerFeatures.js').then(res => res.default);
@@ -250,7 +250,11 @@ export default function Navbar() {
           </m.div>
         )}
       </AnimatePresence>
-      <GlobalSearch isOpen={searchOpen} onClose={() => setSearchOpen(false)} />
+      {searchOpen && (
+        <Suspense fallback={null}>
+          <GlobalSearch isOpen={searchOpen} onClose={() => setSearchOpen(false)} />
+        </Suspense>
+      )}
     </nav>
     </LazyMotion>
   );

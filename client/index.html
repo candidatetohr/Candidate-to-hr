@@ -152,14 +152,40 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preload" as="image" href="/logo.png" />
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" media="print" onload="this.media='all'" />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'" />
     <noscript>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
     </noscript>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <style>
+        .skeleton-shell{display:flex;flex-direction:column;min-height:100vh;background:#0b0f1a;font-family:Inter,system-ui,sans-serif}
+        .skeleton-nav{height:64px;background:rgba(17,24,39,.95);border-bottom:1px solid rgba(255,255,255,.06);display:flex;align-items:center;padding:0 24px}
+        .skeleton-logo{width:32px;height:32px;border-radius:8px;background:rgba(255,255,255,.06)}
+        .skeleton-brand{width:120px;height:18px;border-radius:6px;background:rgba(255,255,255,.04);margin-left:12px}
+        .skeleton-hero{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:48px 24px}
+        .skeleton-line{border-radius:8px;background:rgba(255,255,255,.04)}
+        .skeleton-line-sm{width:160px;height:14px}
+        .skeleton-line-lg{width:min(480px,80%);height:32px}
+        .skeleton-line-md{width:min(360px,60%);height:16px}
+        .skeleton-spinner{width:28px;height:28px;border:3px solid rgba(79,142,247,.15);border-top-color:#4f8ef7;border-radius:50%;animation:sk-spin .7s linear infinite;margin-top:24px}
+        @keyframes sk-spin{to{transform:rotate(360deg)}}
+      </style>
+      <div class="skeleton-shell" aria-hidden="true">
+        <div class="skeleton-nav">
+          <div class="skeleton-logo"></div>
+          <div class="skeleton-brand"></div>
+        </div>
+        <div class="skeleton-hero">
+          <div class="skeleton-line skeleton-line-sm"></div>
+          <div class="skeleton-line skeleton-line-lg"></div>
+          <div class="skeleton-line skeleton-line-md"></div>
+          <div class="skeleton-spinner"></div>
+        </div>
+      </div>
+    </div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

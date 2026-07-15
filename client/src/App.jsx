@@ -8,7 +8,7 @@ import CookieConsent from './components/CookieConsent';
 import ScrollToTop from './components/ScrollToTop';
 import { MotionConfig } from 'framer-motion';
 
-import LandingPage from './pages/LandingPage';
+const LandingPage = lazy(() => import('./pages/LandingPage'));
 
 const AuthPage = lazy(() => import('./pages/AuthPage'));
 const DashboardRouter = lazy(() => import('./components/DashboardRouter'));
