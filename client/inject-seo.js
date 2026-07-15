@@ -672,7 +672,8 @@ pages.forEach(({ route, title, desc, type, dataType, dataId, localCity }) => {
     // solving the empty root div indexing issue. React createRoot will overwrite this on load.
     const preRenderedContent = getPreRenderedContent(route, title, desc, type, dataType, dataId, localCity);
     
-    newHtml = newHtml.replace('<div id="root"></div>', `<div id="root">\n${preRenderedContent}\n</div>`);
+    // Replace the root div and its contents (including the default skeleton) with the SEO content
+    newHtml = newHtml.replace(/<div id="root">[\s\S]*?<\/div>\s*<\/body>/i, `<div id="root">\n${preRenderedContent}\n</div>\n  </body>`);
 
     // Ensure the folder and file are created correctly
     const isHome = route === '/';
